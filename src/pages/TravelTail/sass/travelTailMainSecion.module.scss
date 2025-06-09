@@ -1,0 +1,87 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainSection {
+  background-color: var(--color-beige);
+  position: relative;
+  height: 100vh;
+  min-height: toRem(850);
+  max-height: toRem(1100);
+  overflow: hidden;
+
+  @media only screen and (max-width: $screen-xxl - 1) {
+    min-height: toRem(1030);
+  }
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    min-height: toRem(640);
+    max-height: toRem(640);
+  }
+  
+  .container {
+    padding-top: toRem(340);
+    
+    @media only screen and (max-width: $screen-xxl - 1) {
+      padding-top: toRem(194);
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      padding-top: toRem(139);
+    }
+    
+    
+    .logo {
+      position: relative;
+      width: toRem(247);
+      height: toRem(56);
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        width: toRem(176);
+        height: toRem(40);
+      }
+    }
+
+    .title {
+      max-width: toRem(529);
+      padding: toRem(40) 0 toRem(25);
+      
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(30) 0 toRem(25);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding: toRem(15) 0 toRem(15);
+      }
+    }
+  }
+
+  .imagesBlock {
+    position: absolute;
+    width: toRem(1600);
+    height: toRem(730);
+    bottom: 0;
+    left: toRem(216);
+    
+    @media only screen and (max-width: $screen-xxl - 1) {
+      width: toRem(1238);
+      height: toRem(564);
+      bottom: 0;
+      position: relative;
+      left: toRem(-115);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      width: toRem(694);
+      height: toRem(316);
+    }
+    
+    img {
+     object-fit: cover;
+    }
+  }
+}

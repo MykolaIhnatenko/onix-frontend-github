@@ -1,0 +1,115 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.ourSolutionsSection {
+
+  .container {
+    padding-bottom: toRem(20);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: 100%;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(30);
+    }
+
+    .ourSolutionsContainer {
+      @media only screen and (min-width: $screen-lg + 1) {
+        height: 100%;
+      }
+
+      .sectionTitle, .rightSubtitle {
+        padding-bottom: toRem(16);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(24);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: toRem(32);
+        }
+      }
+
+      .flexBlock {
+        @media only screen and (min-width: $screen-lg + 1) {
+          display: flex;
+          justify-content: space-between;
+          gap: toRem(60);
+        }
+
+        &:not(:last-of-type) {
+          padding-bottom: toRem(16);
+          border-bottom: 1px solid #36304F;
+
+          @media only screen and (min-width: $screen-md) {
+            padding-bottom: toRem(32);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-bottom: toRem(57);
+          }
+        }
+
+        &:last-of-type {
+          padding-top: toRem(16);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(32);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-top: toRem(72);
+          }
+        }
+
+        .leftBlock {
+          h2 {
+            padding-bottom: toRem(16);
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-bottom: toRem(24);
+              max-width: toRem(500);
+            }
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            flex-basis: 47%;
+          }
+        }
+
+        .rightBlock {
+          padding-top: toRem(16);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(24);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-top: 0;
+            flex-basis: 53%;
+          }
+
+          .lastText {
+            padding-top: toRem(16);
+
+            @media only screen and (min-width: $screen-md) {
+              padding-top: toRem(24);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-top: toRem(32);
+              max-width: toRem(630);
+            }
+          }
+        }
+
+        .lastSubheader {
+          @media only screen and (min-width: $screen-lg + 1) {
+            flex-basis: 47%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.sectionContainer {
+  position: relative;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(521);
+    z-index: 2;
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(264);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: toRem(170);
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(70);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+    }
+    img {
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}
+
+.container {
+  padding-top: toRem(38);
+  padding-bottom: toRem(60);
+  position: relative;
+  z-index: 10;
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(80);
+    padding-bottom: toRem(90);
+  }
+
+  .sectionTitle {
+    font-size: toRem(25);
+    line-height: toRem(35);
+    font-weight: 500;
+    margin-bottom: toRem(30);
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(40);
+      line-height: toRem(56);
+      max-width: toRem(580);
+      margin-bottom: toRem(40);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      font-size: toRem(50);
+      line-height: toRem(64);
+      max-width: toRem(729);
+      margin-bottom: toRem(20);
+    }
+  }
+
+  .sectionDescription {
+    font-size: toRem(16);
+    line-height: toRem(24);
+    margin: 0 0 toRem(60);
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(18);
+      line-height: toRem(26);
+      max-width: toRem(551);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(700);
+      margin-bottom: toRem(70);
+    }
+  }
+
+  .table {
+    font-family: var(--generalSans);
+
+    &_header {
+      padding: toRem(13);
+      font-size: toRem(20);
+      line-height: toRem(56);
+      font-weight: 500;
+      border: 2px solid var(--color-black);
+      margin-bottom: toRem(20);
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(30);
+        font-size: toRem(40);
+        line-height: toRem(56);
+        margin-bottom: toRem(30);
+      }
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(20);
+
+      @media only screen and (min-width: $screen-md) {
+        gap: toRem(30)
+      }
+
+      @media only screen and (min-width: ($screen-xl + 30)) {
+        flex-direction: row;
+        gap: 0;
+        width: 100%;
+      }
+
+      .part {
+        border: 2px solid var(--color-black);
+        min-height: toRem(330);
+
+        @media only screen and (min-width: $screen-md) {
+          min-height: toRem(466);
+        }
+
+        @media only screen and (min-width: ($screen-xl + 30)) {
+          flex-grow: 1;
+          &:not(:last-child) {
+            border-right: none;
+          }
+          &.lastPart {
+            max-width: 20%;
+          }
+        }
+
+        .stages {
+          border-bottom: 2px solid var(--color-black);
+          display: flex;
+
+          &_item {
+            flex-basis: 50%;
+            padding: toRem(15);
+
+            @media only screen and (min-width: $screen-md) {
+              padding: toRem(30);
+            }
+
+            &:not(:last-child) {
+              border-right: 2px solid var(--color-black);
+            }
+
+            .number {
+              font-size: toRem(24);
+              line-height: toRem(34);
+              font-weight: 500;
+              margin-bottom: toRem(10);
+
+              @media only screen and (min-width: $screen-md) {
+                font-size: toRem(50);
+                line-height: toRem(64);
+              }
+            }
+
+            .text {
+              font-size: toRem(18);
+              line-height: toRem(28);
+              font-weight: 500;
+
+              @media only screen and (min-width: $screen-md) {
+                font-size: toRem(30);
+                line-height: toRem(40);
+              }
+
+              @media only screen and (min-width: $screen-lg + 1) {
+                font-size: toRem(24);
+                line-height: toRem(34);
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+
+        .advantages {
+          padding: toRem(15);
+          min-height: toRem(170);
+
+          @media only screen and (min-width: $screen-md) {
+            padding: toRem(30);
+            min-height: toRem(206);
+          }
+
+          &_title {
+            font-size: toRem(18);
+            line-height: toRem(28);
+            font-weight: 500;
+            margin-bottom: toRem(20);
+
+            @media only screen and (min-width: $screen-md) {
+              font-size: toRem(30);
+              line-height: toRem(40);
+              margin-bottom: toRem(30);
+            }
+          }
+
+          &_item {
+            font-size: toRem(16);
+            line-height: toRem(20);
+            display: block;
+            font-family: var(--ibmPlexMono);
+
+            @media only screen and (min-width: $screen-md) {
+              font-size: toRem(18);
+              line-height: toRem(26);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              line-height: toRem(28);
+            }
+
+            &:not(:last-child) {
+              margin-bottom: toRem(20);
+            }
+          }
+        }
+
+        .conclusion {
+          padding: toRem(15);
+          font-size: toRem(14);
+          line-height: toRem(28);
+          font-weight: 500;
+          font-family: var(--generalSans);
+          border-top: 2px solid var(--color-black);
+
+          @media only screen and (min-width: $screen-md) {
+            padding: toRem(30);
+            font-size: toRem(20);
+            line-height: toRem(28);
+          }
+        }
+      }
+    }
+  }
+}

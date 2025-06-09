@@ -1,0 +1,33 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.showButton {
+  display: flex;
+  height: toRem(20);
+  overflow: hidden;
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    cursor: pointer;
+  }
+
+  .title {
+    font-family: var(--ibmPlexMono);
+    font-size: toRem(16);
+    line-height: getLineHeight(22, 16);
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+    font-weight: 500;
+    color: var(--color-black);
+    padding-right: toRem(10);
+  }
+
+  .icon {
+    transform: rotateX(180deg);
+    position: relative;
+    transition: transform 0.3s ease;
+
+    &.openIcon{
+      transform: rotateX(0deg);
+    }
+  }
+}

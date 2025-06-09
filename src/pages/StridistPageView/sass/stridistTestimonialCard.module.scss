@@ -1,0 +1,64 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.card {
+  background-color: var(--color-white);
+  border-radius: toRem(20);
+  padding: toRem(24);
+  position: relative;
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(60) 0;
+    max-width: toRem(704);
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(1100);
+  }
+  
+  .text {
+    color: var(--color-black) !important;
+  }
+  
+  .icon {
+    display: none;
+
+    @media only screen and (min-width: $screen-md) {
+      display: block;
+      position: absolute;
+      top: toRem(-40);
+      left: 0;
+      width: toRem(110);
+      height: toRem(80);
+    }
+  }
+
+  p {
+    font-size: toRem(18) !important;
+    line-height: getLineHeight(24, 18) !important;
+    text-align: center;
+    color: var(--color-black);
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(20) !important;
+      line-height: getLineHeight(26, 20) !important;
+      max-width: toRem(606);
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      font-size: toRem(24) !important;
+      line-height: getLineHeight(38, 24) !important;
+      max-width: toRem(756);
+    }
+
+    br {
+      display: none;
+
+      @media only screen and (min-width: $screen-md) {
+        display: block;
+      }
+    }
+  }
+}

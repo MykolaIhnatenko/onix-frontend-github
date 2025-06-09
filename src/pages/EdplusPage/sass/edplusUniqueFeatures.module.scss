@@ -1,0 +1,392 @@
+@import "../../App/sass/mixinsAnimation";
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+$edplus-shadow2: 0 toRem(40) toRem(60) 0 rgba(1, 0, 31, 0.1);
+
+.uniqueFeature {
+  margin-top: toRem(120);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(80);
+  }
+  
+  .background {
+    position: relative;
+    background-color: var(--color-edplus-light2);
+    border: 0;
+    @include radius(toRem(100) toRem(14) toRem(14) toRem(14));
+    padding: toRem(120) 0 toRem(787);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(60);
+      padding-bottom: toRem(684);
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+      padding-bottom: toRem(624);
+      @include radius(toRem(80) 0 0 toRem(14));
+    }
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+    }
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .subtitle {
+    width: 125%;
+
+    @media only screen and (max-width: $screen-lg) {
+      width: 100%;
+    }
+
+    .subtitleText {
+      white-space: nowrap;
+    }
+  }
+
+  .description {
+    padding-left: toRem(120);
+    max-width: toRem(520);
+
+    @media only screen and (max-width: $screen-xl) {
+      padding-left: toRem(75);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(20) toRem(24) toRem(22);
+    }
+
+    .edplusTextStyleBold {
+      color: var(--color-mister-bnb-dark-gray);
+      font-weight: 800;
+      font-size: toRem(18);
+      line-height: getLineHeight(30, 18);
+      font-family: var(--muktaVaani);
+      letter-spacing: toRem(0.3);
+      margin-top: toRem(40);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        line-height: getLineHeight(32, 18);
+      }
+
+      @media only screen and (max-width: $screen-sm) {
+        letter-spacing: 0;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(24);
+      }
+    }
+
+    .edplusTextStyle {
+      color: var(--color-mister-bnb-dark-gray);
+      font-weight: 400;
+      font-size: toRem(18);
+      line-height: getLineHeight(29, 18);
+      font-family: var(--muktaVaani);
+      letter-spacing: toRem(0.3);
+      margin-top: toRem(40);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(18);
+        line-height: getLineHeight(32, 18);
+        padding-left: toRem(17);
+      }
+
+      @media only screen and (max-width: $screen-sm) {
+        letter-spacing: 0;
+      }
+  
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(30);
+      }
+    }
+  }
+}
+
+.abstractionImage {
+  position: absolute;
+  top: toRem(12);
+  left: toRem(-111);
+  z-index: -1;
+  height: toRem(180);
+  width: toRem(282);
+
+  @media only screen and (max-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.itemList {
+  list-style-type: none;
+  margin-top: toRem(10);
+  margin-left: toRem(20);
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(16);
+  }
+}
+
+.imageBlock {
+  position: absolute;
+  right: toRem(420);
+
+  @media only screen and (max-width: $screen-xl) {
+    right: toRem(422);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    height: toRem(500);
+    right: 0;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    height: toRem(353);
+  }
+}
+
+.firstImg {
+  position: absolute;
+  background-size: cover;
+  width: toRem(465);
+  height: toRem(680);
+  left: toRem(-183);
+  top: toRem(110);
+  z-index: 1;
+
+  @media only screen and (max-width: $screen-xxl) {
+    width: toRem(370);
+    height: toRem(585);
+    left: toRem(-7);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    width: toRem(281);
+    height: toRem(452);
+    left: 50%;
+    transform: translateX(-75%);
+    top: 0;
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    width: toRem(251);
+    height: toRem(426);
+    left: 46.5%;
+    transform: translateX(-75%);
+  }
+
+  img {
+    object-position: top;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+    @media only screen and (min-width: $screen-xxl + 1) {
+      object-fit: contain;
+    }
+  }
+}
+
+.secondImg {
+  position: absolute;
+  width: toRem(350);
+  height: toRem(590);
+  top: toRem(125);
+  left: toRem(145);
+  z-index: 0;
+
+  @media only screen and (max-width: $screen-xxl) {
+    width: toRem(283);
+    height: toRem(485);
+    left: toRem(244);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    width: toRem(219);
+    height: toRem(352);
+    left: 50%;
+    transform: translateX(-6%);
+    top: toRem(15);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    width: toRem(205);
+    height: toRem(339);
+    left: 46.5%;
+    transform: translateX(-5%);
+    top: toRem(15);
+  }
+
+  img {
+    object-position: top;
+    object-fit: cover;
+    
+    @media only screen and (min-width: $screen-xxl + 1) {
+      object-fit: contain;
+    }
+  }
+}
+
+.girlImage {
+  position: absolute;
+  width: 100%;
+  height: toRem(784);
+  left: 0;
+  right: 0;
+  z-index: 0;
+  bottom: 100%;
+  margin-bottom: toRem(-140);
+
+  &:before {
+    content: "Photo: Amazon.com";
+    position: absolute;
+    display: block;
+    font-weight: 400;
+    font-size: toRem(16);
+    line-height: getLineHeight(27, 16);
+    color: var(--color-edplus-gray);
+    left: toRem(20);
+    bottom: toRem(20);
+    z-index: 1;
+
+    @media only screen and (max-width: $screen-xl) {
+      bottom: toRem(145);
+      left: toRem(185);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      bottom: toRem(55);
+      left: toRem(20);
+      color: var(--color-white);
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    height: toRem(314);
+    margin-bottom: toRem(-50);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
+  }
+}
+
+.technicalChallenges {
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: 100%;
+  }
+
+  .technicalChallengesBackground {
+    background: var(--color-edplus-light);
+    padding: toRem(80);
+    max-width: toRem(860);
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    @include radius(toRem(14));
+    box-shadow: $edplus-shadow2;
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(60) toRem(20) toRem(20) toRem(20);
+      width: 100%;
+      box-shadow: none;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: 0 toRem(8);
+      width: auto;
+      padding: toRem(80) toRem(16) toRem(32);
+    }
+  }
+
+  .technicalChallengesImageBlock {
+    max-width: toRem(860);
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .technicalChallengesImages {
+    width: toRem(231);
+    height: toRem(281);
+    position: absolute;
+    bottom: toRem(-125);
+    right: toRem(-45);
+    z-index: -1;
+
+    @media only screen and (max-width: $screen-lg) {
+      right: 0;
+      width: 22%;
+      height: toRem(221);
+      bottom: toRem(-165);
+      background-size: cover;
+      background-position: left;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      right: 0;
+      bottom: toRem(-145);
+      width: 30%;
+      background-size: cover;
+      background-position: left;
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+      right: 0;
+      bottom: toRem(-110);
+      width: 38%;
+      height: toRem(196);
+      background-size: cover;
+      background-position: left;
+    }
+  }
+}
+
+.edplusWrap {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 toRem(10);
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.edplusTitleStyle {
+  color: var(--color-mister-bnb-dark-gray);
+  font-weight: 800;
+  font-size: toRem(42);
+  line-height: getLineHeight(54, 42);
+  font-family: var(--muktaVaani);
+  letter-spacing: toRem(0.5);
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(36);
+    line-height: getLineHeight(44, 36);
+    letter-spacing: toRem(-0.3);
+  }
+}

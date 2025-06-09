@@ -1,0 +1,122 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.bstevrCaseStudy {
+  font-family: var(--muktaVaani);
+  :global {
+    section {
+      padding: toRem(100) 0;
+
+      @media only screen and (max-width: $screen-xl) {
+        padding: toRem(90) 0;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(80) 0;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: 0 0 toRem(30);
+      }
+
+      &.greySection {
+        background-color: var(--color-grey-bg);
+
+        .text {
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      &.solutions {
+        @media only screen and (max-width: ($screen-md - 1)) {
+          h2 {
+            br {
+              display: none;
+            }
+          }
+        }
+
+        .text {
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    h1,
+    h2 {
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 1em;
+    }
+
+    h2 {
+      color: var(--color-violet);
+      font: 800 toRem(70)/toRem(91) var(--muktaVaani), sans-serif;
+      margin-bottom: toRem(60);
+      letter-spacing: 0.015em;
+
+      @media only screen and (max-width: $screen-xl) {
+        font-size: toRem(60);
+        line-height: getLineHeight(78, 60);
+        margin-bottom: toRem(40);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(50);
+        line-height: getLineHeight(65, 50);
+        margin-bottom: toRem(30);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(30);
+        line-height: getLineHeight(39, 30);
+        margin-bottom: toRem(20);
+      }
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      align-self: center;
+
+      &:not(.challengeIcon, .homeArrow) {
+        height: auto;
+      }
+    }
+
+    .divider {
+      display: block;
+      margin-bottom: 0.8em;
+
+      @media only screen and (max-width: $screen-xl) {
+        margin-bottom: 0.75em;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-bottom: 0.85em;
+      }
+
+      @media only screen and (max-width: $screen-sm) {
+        margin-bottom: 0.9em;
+      }
+
+      &.bigDivider {
+        @media only screen and (max-width: $screen-xxxl) {
+          margin-bottom: 3em;
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-bottom: 0.7em;
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-bottom: 0.9em;
+        }
+      }
+    }
+  }
+}

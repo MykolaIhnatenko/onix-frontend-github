@@ -1,0 +1,30 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.radio {
+  label {
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      cursor: pointer;
+    }
+
+    input {
+      display: none;
+    }
+
+    .radioLabel {
+      width: 20px;
+      height: 20px;
+      border: toRem(1.5) solid var(--color-black);
+      border-radius: 50%;
+      margin-right: toRem(15);
+
+      &.active {
+        border: toRem(5) solid var(--color-blue);
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  width: 100%;
+  
+  .containerBg {
+    position: relative;
+    aspect-ratio: 16 / 5.3112;
+    
+    @media screen and (max-width: $screen-lg) {
+      aspect-ratio: 16 / 7.9585;
+    }
+      
+    @media screen and (max-width: ($screen-sm - 1)) {
+      aspect-ratio: 0.49861 / 1;
+    }
+  }
+}
+

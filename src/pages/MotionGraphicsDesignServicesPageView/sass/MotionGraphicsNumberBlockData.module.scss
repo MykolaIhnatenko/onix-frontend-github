@@ -1,0 +1,24 @@
+@import "../../../pages/App/sass/functions";
+
+.container {
+  position: relative;
+  background: transparent;
+  padding-bottom: toRem(76);
+
+  .bgContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+}

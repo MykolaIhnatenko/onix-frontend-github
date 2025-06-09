@@ -1,0 +1,165 @@
+@use '../../../../pages/App/sass/container';
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  @extend .container;
+  position: relative;
+  z-index: 3;
+  padding-top: toRem(56);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(60) toRem(30) 0;
+  }
+
+  @media only screen and (max-width: (($screen-md - 1))) {
+    padding: toRem(60) toRem(15) 0;
+  }
+
+  .titleWrapper {
+    display: flex;
+    gap: toRem(25);
+    justify-content: space-between;
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+    }
+    @media only screen and (max-width: ($screen-md - 1)) {
+      gap: toRem(20);
+    }
+
+    .mainTitle {
+      width: toRem(365);
+      min-width: toRem(365);
+      @media only screen and (max-width: $screen-lg) {
+        min-width: 0;
+        max-width: toRem(280);
+      }
+    }
+
+    .subtitle {
+      margin-top: toRem(24);
+      margin-bottom: 0;
+      max-width: toRem(542);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin: 0;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(18);
+        color: var(--color-black);
+      }
+    }
+  }
+
+  .dragWrapper {
+    position: relative;
+    margin-top: toRem(40);
+    height: toRem(830);
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(798);
+    }
+
+    @media only screen and (max-width: (($screen-md - 1))) {
+      height: toRem(619);
+    }
+
+    .contentItems {
+      position: absolute;
+      display: flex;
+      gap: toRem(50);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        cursor: none;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        gap: toRem(30);
+      }
+
+      .itemCard {
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        min-width: toRem(600);
+        padding: toRem(20);
+        background-color: var(--color-white);
+        border: 2px solid var(--color-black);
+
+        @media only screen and (max-width: $screen-lg) {
+          padding: toRem(20);
+        }
+
+        @media only screen and (max-width: (($screen-md - 1))) {
+          padding: 0;
+          min-width: unset;
+          max-width: toRem(301);
+        }
+
+        .titleCard {
+          pointer-events: none;
+          font-size: toRem(48);
+          line-height: normal;
+          width: toRem(500);
+          margin-bottom: toRem(40);
+          flex: 0 0 auto;
+
+          @media only screen and (max-width: $screen-lg) {
+            font-size: toRem(24);
+          }
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            font-size: toRem(20);
+            line-height: getLineHeight(28, 20);
+            margin-bottom: toRem(30);
+            padding: toRem(10) toRem(20) 0;
+          }
+        }
+
+        .imagesWrapper {
+          pointer-events: none;
+          overflow-y: hidden;
+          background-color: var(--color-black);
+          display: flex;
+          justify-content: center;
+          padding-top: toRem(40);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            max-height: toRem(300)!important;
+            padding-top: toRem(20);
+          }
+
+          img {
+            object-position: top;
+            object-fit: cover;
+            width: toRem(320);
+            height: toRem(480);
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              width: toRem(180);
+              height: toRem(270);
+            }
+          }
+        }
+
+        .text {
+          pointer-events: none;
+          flex: 0 0 auto;
+          margin: toRem(20) 0 0;
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+          color: var(--color-black);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            margin: 0;
+            padding: toRem(20) toRem(20) toRem(44);
+          }
+        }
+      }
+    }
+  }
+}

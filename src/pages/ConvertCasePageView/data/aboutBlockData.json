@@ -1,0 +1,25 @@
+{
+  "title": "This case study shares how the Onix team built an iOS app that allows users to send and receive money and exchange currencies on their smartphones in a matter of minutes.",
+  "content": [
+    {
+      "id": 1,
+      "title": "Fintech",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "5 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "Ukraine",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "6 weeks",
+      "text": "Project duration"
+    }
+  ]
+}

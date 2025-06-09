@@ -1,0 +1,441 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsAnimation.scss";
+
+$shadow: 0px 10px 20px rgba(0, 0, 0, .1);
+
+.videoImgWrapper {
+  position: relative;
+  border-radius: toRem(5);
+  height: toRem(145);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (min-width: $screen-sm) {
+    border-radius: toRem(10);
+  }
+
+  img {
+    border-radius: toRem(5);
+
+    @media only screen and (min-width: $screen-sm) {
+      border-radius: toRem(10);
+    }
+  }
+
+  &.banskaStavnicaBg {
+    background-color: var(--color-black);
+
+    img {
+      max-width: toRem(90);
+      max-height: toRem(90);
+      @media only screen and (min-width: $screen-sm) {
+        max-width: toRem(150);
+        max-height: toRem(150);
+      }
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(250);
+        max-height: toRem(250);
+      }
+    }
+  }
+
+  &.cinematicVrBg, &.vrBg, &.onixARBg, &.timescopeBg, &.unrealSpaceBg, &.holokitBg, &.unityDSMBg {
+    position: relative;
+    background-color: var(--color-black);
+  }
+
+  &.cinematicVrBg, &.vrBg, &.timescopeBg, &.unrealSpaceBg, &.holokitBg, &.unityDSMBg {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.onixARBg {
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  @media only screen and (min-width: $screen-sm) {
+    height: toRem(361);
+  }
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    height: toRem(500);
+  }
+
+  span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: toRem(36) toRem(36) toRem(36) toRem(33);
+    width: toRem(100);
+    height: toRem(100);
+    background-color: rgba(51, 51, 51, 0.6);
+    box-shadow: $shadow;
+    @include radius(100px);
+    transition: all 0.3s ease;
+    
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(26) toRem(26) toRem(26) toRem(23);
+      width: toRem(50);
+      height: toRem(50);
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      padding: toRem(26) toRem(26) toRem(26) toRem(23);
+      width: toRem(100);
+      height: toRem(100);
+      cursor: pointer;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      @include transition(transform 0.3s ease);
+
+      &::after {
+        @include transition(transform 0.3s ease);
+        transform: scale(1.1);
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left: toRem(5);
+      border-top: toRem(12) solid transparent;
+      border-left: toRem(20) solid var(--color-white);
+      border-bottom: toRem(12) solid transparent;
+
+      @media only screen and (min-width: $screen-md) {
+        margin-left: toRem(3);
+        border-top: toRem(5) solid transparent;
+        border-left: toRem(10) solid var(--color-white);
+        border-bottom: toRem(5) solid transparent;
+      }
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        margin-left: toRem(5);
+        border-top: toRem(12) solid transparent;
+        border-left: toRem(20) solid var(--color-white);
+        border-bottom: toRem(12) solid transparent;
+      }
+    }
+  }
+}
+
+.imgWrapper {
+  box-sizing: border-box;
+  margin-bottom: toRem(40);
+
+  @media only screen and (min-width: $screen-md) {
+    margin-bottom: toRem(50);
+    max-width: toRem(693);
+    max-height: toRem(400);
+  }
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    margin-bottom: toRem(107);
+    max-width: toRem(1110);
+    max-height: toRem(624);
+  }
+
+  & img {
+    border-radius: toRem(10);
+    width: 99%;
+    height: toRem(163);
+
+    @media only screen and (min-width: $screen-md) {
+      width: 98%;
+      height: 90%;
+    }
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      height: toRem(624);
+      width: 100%;
+    }
+  }
+}
+
+.cardImg {
+  height: toRem(172);
+  border-radius: toRem(10);
+  width: 98%;
+  position: relative;
+
+  @media only screen and (min-width: $screen-md) {
+    width: toRem(271);
+    max-width: toRem(333);
+    height: toRem(211);
+    flex-basis: 50%;
+  }
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    max-width: toRem(465);
+    height: toRem(294);
+  }
+}
+
+.shadowBanskaStavnica {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(77, 86, 246, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(77, 86, 246, 1);
+  box-shadow: 5px 5px 0 0 rgba(77, 86, 246, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(77, 86, 246, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(77, 86, 246, 1);
+    box-shadow: 15px 15px 0 0 rgba(77, 86, 246, 1);
+  }
+}
+.cardShadowBanskaStavnica {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(77, 86, 246, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(77, 86, 246, 1);
+  box-shadow: 5px 5px 0 0 rgba(77, 86, 246, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(77, 86, 246, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(77, 86, 246, 1);
+    box-shadow: 11px 11px 0 0 rgba(77, 86, 246, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(77, 86, 246, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(77, 86, 246, 1);
+    box-shadow: 15px 15px 0 0 rgba(77, 86, 246, 1);
+  }
+}
+.shadowVR {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(23, 47, 133, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(23, 47, 133, 1);
+  box-shadow: 5px 5px 0 0 rgba(23, 47, 133, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(23, 47, 133, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(23, 47, 133, 1);
+    box-shadow: 15px 15px 0 0 rgba(23, 47, 133, 1);
+  }
+}
+.cardShadowVR {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(23, 47, 133, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(23, 47, 133, 1);
+  box-shadow: 5px 5px 0 0 rgba(23, 47, 133, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(23, 47, 133, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(23, 47, 133, 1);
+    box-shadow: 11px 11px 0 0 rgba(23, 47, 133, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(23, 47, 133, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(23, 47, 133, 1);
+    box-shadow: 15px 15px 0 0 rgba(23, 47, 133, 1);
+  }
+}
+
+.shadowCinematicVR {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(30, 60, 114, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(30, 60, 114, 1);
+  box-shadow: 5px 5px 0 0 rgba(30, 60, 114, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(30, 60, 114, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(30, 60, 114, 1);
+    box-shadow: 15px 15px 0 0 rgba(30, 60, 114, 1);
+  }
+}
+.cardShadowCinematicVR {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(30, 60, 114, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(30, 60, 114, 1);
+  box-shadow: 5px 5px 0 0 rgba(30, 60, 114, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(30, 60, 114, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(30, 60, 114, 1);
+    box-shadow: 11px 11px 0 0 rgba(30, 60, 114, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(30, 60, 114, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(30, 60, 114, 1);
+    box-shadow: 15px 15px 0 0 rgba(30, 60, 114, 1);
+  }
+}
+
+.shadowTimescope {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(85, 110, 167, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(85, 110, 167, 1);
+  box-shadow: 5px 5px 0 0 rgba(85, 110, 167, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(85, 110, 167, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(85, 110, 167, 1);
+    box-shadow: 15px 15px 0 0 rgba(85, 110, 167, 1);
+  }
+}
+.cardShadowTimescope {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(85, 110, 167, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(85, 110, 167, 1);
+  box-shadow: 5px 5px 0 0 rgba(85, 110, 167, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(85, 110, 167, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(85, 110, 167, 1);
+    box-shadow: 11px 11px 0 0 rgba(85, 110, 167, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(85, 110, 167, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(85, 110, 167, 1);
+    box-shadow: 15px 15px 0 0 rgba(85, 110, 167, 1);
+  }
+}
+
+.shadowUnrealSpace {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(53, 143, 236, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(53, 143, 236, 1);
+  box-shadow: 5px 5px 0 0 rgba(53, 143, 236, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(53, 143, 236, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(53, 143, 236, 1);
+    box-shadow: 15px 15px 0 0 rgba(53, 143, 236, 1);
+  }
+}
+.cardShadowUnrealSpace {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(53, 143, 236, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(53, 143, 236, 1);
+  box-shadow: 5px 5px 0 0 rgba(53, 143, 236, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(53, 143, 236, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(53, 143, 236, 1);
+    box-shadow: 11px 11px 0 0 rgba(53, 143, 236, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(53, 143, 236, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(53, 143, 236, 1);
+    box-shadow: 15px 15px 0 0 rgba(53, 143, 236, 1);
+  }
+}
+
+.shadowHolokit {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(26, 89, 180, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(26, 89, 180, 1);
+  box-shadow: 5px 5px 0 0 rgba(26, 89, 180, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(26, 89, 180, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(26, 89, 180, 1);
+    box-shadow: 15px 15px 0 0 rgba(26, 89, 180, 1);
+  }
+}
+.cardShadowHolokit {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(26, 89, 180, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(26, 89, 180, 1);
+  box-shadow: 5px 5px 0 0 rgba(26, 89, 180, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(26, 89, 180, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(26, 89, 180, 1);
+    box-shadow: 11px 11px 0 0 rgba(26, 89, 180, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(26, 89, 180, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(26, 89, 180, 1);
+    box-shadow: 15px 15px 0 0 rgba(26, 89, 180, 1);
+  }
+}
+
+.shadowUnityDSM {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(46, 126, 245, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(46, 126, 245, 1);
+  box-shadow: 5px 5px 0 0 rgba(46, 126, 245, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(46, 126, 245, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(46, 126, 245, 1);
+    box-shadow: 15px 15px 0 0 rgba(46, 126, 245, 1);
+  }
+}
+.cardShadowUnityDSM {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(46, 126, 245, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(46, 126, 245, 1);
+  box-shadow: 5px 5px 0 0 rgba(46, 126, 245, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(46, 126, 245, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(46, 126, 245, 1);
+    box-shadow: 11px 11px 0 0 rgba(46, 126, 245, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(46, 126, 245, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(46, 126, 245, 1);
+    box-shadow: 15px 15px 0 0 rgba(46, 126, 245, 1);
+  }
+}
+
+.shadowOnixAR {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(55, 54, 208, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(55, 54, 208, 1);
+  box-shadow: 5px 5px 0 0 rgba(55, 54, 208, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(55, 54, 208, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(55, 54, 208, 1);
+    box-shadow: 15px 15px 0 0 rgba(55, 54, 208, 1);
+  }
+}
+.cardShadowOnixAR {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(55, 54, 208, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(55, 54, 208, 1);
+  box-shadow: 5px 5px 0 0 rgba(55, 54, 208, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(55, 54, 208, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(55, 54, 208, 1);
+    box-shadow: 11px 11px 0 0 rgba(55, 54, 208, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(55, 54, 208, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(55, 54, 208, 1);
+    box-shadow: 15px 15px 0 0 rgba(55, 54, 208, 1);
+  }
+}
+
+.shadowSalesforceTrackingApp {
+  -webkit-box-shadow: 15px 15px 0 0 rgba(2, 112, 210, 1);
+  -moz-box-shadow: 15px 15px 0 0 rgba(2, 112, 210, 1);
+  box-shadow: 15px 15px 0 0 rgba(2, 112, 210, 1);
+
+  @media only screen and (max-width: $screen-sm) {
+    -webkit-box-shadow: 5px 5px 0 0 rgba(2, 112, 210, 1);
+    -moz-box-shadow: 5px 5px 0 0 rgba(2, 112, 210, 1);
+    box-shadow: 5px 5px 0 0 rgba(2, 112, 210, 1);
+  }
+}
+.cardShadowSalesforceTrackingApp {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(2, 112, 210, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(2, 112, 210, 1);
+  box-shadow: 5px 5px 0 0 rgba(2, 112, 210, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(2, 112, 210, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(2, 112, 210, 1);
+    box-shadow: 11px 11px 0 0 rgba(2, 112, 210, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(2, 112, 210, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(2, 112, 210, 1);
+    box-shadow: 15px 15px 0 0 rgba(2, 112, 210, 1);
+  }
+}
+
+.shadowSalesforceSupportAutomationApp {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(50, 150, 237, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(50, 150, 237, 1);
+  box-shadow: 5px 5px 0 0 rgba(50, 150, 237, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(50, 150, 237, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(50, 150, 237, 1);
+    box-shadow: 15px 15px 0 0 rgba(50, 150, 237, 1);
+  }
+}
+.cardShadowSalesforceSupportAutomationApp {
+  -webkit-box-shadow: 5px 5px 0 0 rgba(50, 150, 237, 1);
+  -moz-box-shadow: 5px 5px 0 0 rgba(50, 150, 237, 1);
+  box-shadow: 5px 5px 0 0 rgba(50, 150, 237, 1);
+  @media only screen and (min-width: $screen-sm) {
+    -webkit-box-shadow: 11px 11px 0 0 rgba(50, 150, 237, 1);
+    -moz-box-shadow: 11px 11px 0 0 rgba(50, 150, 237, 1);
+    box-shadow: 11px 11px 0 0 rgba(50, 150, 237, 1);
+  }
+  @media only screen and (min-width: $screen-md) {
+    -webkit-box-shadow: 15px 15px 0 0 rgba(50, 150, 237, 1);
+    -moz-box-shadow: 15px 15px 0 0 rgba(50, 150, 237, 1);
+    box-shadow: 15px 15px 0 0 rgba(50, 150, 237, 1);
+  }
+}
+

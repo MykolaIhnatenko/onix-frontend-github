@@ -1,0 +1,195 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.result {
+  margin: toRem(200) 0 toRem(80);
+  height: toRem(815);
+  width: 100%;
+  position: relative;
+
+  @media only screen and (max-width: $screen-xl) {
+    margin-bottom: 0;
+    margin-top: toRem(100);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    height: auto;
+    margin-top: toRem(80);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: toRem(80) 0;
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    margin-top: toRem(126);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column-reverse;
+      height: auto;
+    }
+
+    .colLeft, .colRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+
+      @media only screen and (max-width: $screen-lg) {
+        width: 100%;
+      }
+    }
+    .colRight {
+      margin-left: toRem(120);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-left: 0;
+        align-items: center;
+      }
+    }
+
+    .colRightNotCenter {
+      @media only screen and (max-width: $screen-lg) {
+        align-items: start;
+      }
+    }
+  }
+
+  .imageBlock {
+    position: relative;
+    margin-right: toRem(60);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin: 0;
+    }
+
+    .background {
+      position: absolute;
+      left: 0;
+      top: toRem(200);
+      width: toRem(350);
+      height: toRem(460);
+      border: 0;
+      background-color: var(--color-edplus-yellow);
+      border-top-right-radius: toRem(230);
+      z-index: -1;
+
+      @media only screen and (max-width: $screen-xl) {
+        width: toRem(315);
+        height: toRem(414);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: toRem(210);
+        height: toRem(276);
+        top: toRem(90)
+      }
+
+      @media only screen and (max-width: $screen-sm) {
+        width: toRem(139);
+        height: toRem(284);
+        top: toRem(64);
+        border-bottom-right-radius: toRem(230);
+      }
+    }
+
+    .phoneImage {
+      width: toRem(649);
+      height: toRem(815);
+      left: toRem(60);
+      position: relative;
+
+      @media only screen and (max-width: $screen-xl) {
+        width: toRem(584);
+        height: toRem(733);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: toRem(337);
+        height: toRem(423);
+        left: toRem(60);
+      }
+
+      @media only screen and (max-width: $screen-sm) {
+        width: toRem(343);
+        height: toRem(431);
+        left: toRem(16);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-position: center;
+        object-fit: contain;
+      }
+    }
+
+    .abstractImage {
+      height: toRem(147);
+      width: toRem(201);
+      position: absolute;
+      bottom: toRem(43);
+      left: toRem(525);
+      z-index: -1;
+
+      @media only screen and (max-width: $screen-xl) {
+        width: toRem(132);
+        height: toRem(181);
+        bottom: toRem(-20);
+        left: toRem(530);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: toRem(105);
+        height: toRem(77);
+        left: toRem(307);
+        bottom: toRem(25);
+      }
+
+      @media only screen and (max-width: $screen-sm) {
+        width: toRem(101);
+        height: toRem(76);
+        left: unset;
+        right: toRem(16);
+        bottom: toRem(14);
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.textBlock {
+  margin: auto 10% auto toRem(60);
+  max-width: toRem(490);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: 0 10%;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: 0;
+    padding: toRem(20) toRem(24);
+  }
+
+  .edplusTitleStyle {
+    color: var(--color-mister-bnb-dark-gray);
+    font-weight: 800;
+    font-size: toRem(42);
+    line-height: getLineHeight(54, 42);
+    font-family: var(--muktaVaani);
+    letter-spacing: toRem(0.5);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(36);
+      line-height: getLineHeight(44, 36);
+      letter-spacing: toRem(-0.3);
+    }
+  }
+}

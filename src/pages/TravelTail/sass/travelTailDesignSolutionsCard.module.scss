@@ -1,0 +1,131 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.card {
+  @media only screen and (min-width: $screen-xl) {
+    display: flex;
+    gap: toRem(70);
+    padding-top: toRem(70);
+  }
+
+  &:nth-of-type(odd) {
+    @media only screen and (min-width: $screen-xl) {
+      flex-direction: row-reverse;
+
+      .textBlock {
+        padding-left: toRem(70);
+      }
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      .textBlock {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &:nth-of-type(even) {
+    @media only screen and (min-width: $screen-xl) {
+      .textBlock {
+        padding-right: toRem(70);
+      }
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      .textBlock {
+        padding-right: toRem(80);
+      }
+    }
+  }
+  
+  &:last-child {
+    .textBlock{
+      .cardText{
+        @media only screen and (max-width: $screen-xl) {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .cardImage {
+    position: relative;
+    width: 100%;
+    height: toRem(760);
+    max-width: toRem(850);
+
+    @media only screen and (max-width: $screen-xl) {
+      height: auto !important;
+      max-width: unset;
+    }
+    
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(686);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      height: toRem(321);
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      height: toRem(912);
+      max-width: toRem(1020);
+    }
+
+    img {
+      object-fit: cover;
+      
+      @media only screen and (max-width: $screen-xl) {
+        position: relative !important;
+      }
+    }
+  }
+
+  .textBlock {
+    flex: 36.626% 1;
+
+    @media only screen and (min-width: $screen-xl) {
+      max-width: 760px;
+    }
+
+    .cardTitle {
+      font-family: var(--generalSans);
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+      font-weight: 500;
+      padding: toRem(30) toRem(15) toRem(20);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(30);
+        line-height: getLineHeight(40, 24);
+        padding: toRem(30) toRem(30) toRem(20);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: toRem(30) toRem(70) toRem(30);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        padding: 0 0 toRem(30);
+      }
+    }
+
+    .cardText {
+      padding: 0 toRem(15) toRem(30);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+        padding: 0 toRem(30) toRem(60);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: 0 toRem(70) toRem(60);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        padding: 0;
+      }
+    }
+  }
+}

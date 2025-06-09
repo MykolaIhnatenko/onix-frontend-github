@@ -1,0 +1,128 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.expertise {
+  background: var(--color-black) url('../../../assets/images/uxAudit/img_bg_case_studies.webp') no-repeat center bottom/contain;
+  padding-top: toRem(80);
+  padding-bottom: toRem(120);
+  color: var(--color-white);
+  font-family: var(--ibmPlexMono);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-bottom: toRem(80);
+  }
+
+  .title {
+    font-family: var(--generalSans);
+    font-size: toRem(50);
+    line-height: getLineHeight(64, 50);
+    font-weight: 500;
+    margin-bottom: toRem(40);
+    
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(40);
+      line-height: getLineHeight(56, 40);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(25);
+      line-height: getLineHeight(35, 25);
+      margin-bottom: toRem(30);
+    }
+  }
+
+  .description {
+    margin-bottom: toRem(80);
+    display: flex;
+
+    p {
+      max-width: toRem(540);
+      font-size: toRem(18);
+      line-height: toRem(26);
+      font-weight: 400;
+  
+      @media only screen and (max-width: $screen-lg) {
+        max-width: none;
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(14);
+        line-height: getLineHeight(20, 14);
+      }
+    }
+
+    .commonProblems {
+      margin-left: toRem(126);
+      margin-top: toRem(130);
+      @media only screen and (max-width: $screen-xl) {
+        margin-left: toRem(80);
+      }
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(30);
+        margin-left: 0;
+      }
+    }
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(60);
+      display: block;
+    }
+  }
+
+  .card {
+    background-color: var(--color-white);
+    padding: toRem(40);
+    min-height: toRem(590);
+    width: toRem(590);
+    color: var(--color-black);
+    font-size: toRem(20);
+    line-height: toRem(30);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    margin-right: toRem(30);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(20);
+      font-size: toRem(14);
+      line-height: toRem(20);
+      min-height: toRem(390);
+      width: toRem(300);
+    }
+
+    p {
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    br {
+      padding-bottom: toRem(30);
+    }
+
+    h3 {
+      font-family: var(--generalSans);
+      font-size: toRem(36);
+      line-height: toRem(46);
+      font-weight: 500;
+      margin-bottom: toRem(30);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(20);
+        line-height: toRem(28);
+        margin-bottom: toRem(20);
+      }
+    }
+    .counter {
+      font-family: var(--generalSans);
+      font-weight: 500;
+      font-size: toRem(40);
+      margin-top: auto;
+
+      @media only screen and (max-width: $screen-md - 1) {
+        bottom: toRem(20);
+        left: toRem(20);
+        font-size: toRem(25);
+        line-height: toRem(35);
+      }
+    }
+  }
+}

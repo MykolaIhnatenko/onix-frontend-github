@@ -1,0 +1,256 @@
+@import "../../../App/sass/mixinsAnimation";
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables.scss";
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  margin: 0 toRem(30);
+
+  .left, .right {
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(32);
+    max-width: toRem(377);
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .right {
+    margin-left: toRem(-24);
+    @include translateY(37.5%);
+
+    @media only screen and (max-width: $screen-xl) {
+      @include translateY(56.5%);
+    }
+  }
+
+  .left {
+    z-index: 1;
+    @include translateY(-16.5%);
+
+    span {
+      box-shadow: 0 12.6523px 16.1949px rgba(27, 27, 27, 0.15);
+      border-radius: toRem(11);
+
+      @media only screen and (max-width: $screen-xl) {
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.tablet {
+  height: toRem(735);
+  margin: 0 toRem(30) toRem(56) toRem(30);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  .left, .right {
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(32);
+    max-width: toRem(377);
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .right {
+    margin-left: toRem(-45);
+    @include translateY(40%);
+  }
+
+  .left {
+    z-index: 1;
+    @include translateY(-15.5%);
+
+    span {
+      box-shadow: 0 12.6523px 16.1949px rgba(27, 27, 27, 0.15);
+      border-radius: 9px;
+    }
+  }
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: toRem(466);
+  transform: translateY(-7px);
+
+  .left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(16);
+    max-width: toRem(213);
+    width: 100%;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .left {
+    margin-bottom: toRem(16);
+  }
+}
+
+.desktopAnimateRightBlock, .desktopAnimateLeftBlock, .tabletAnimateRightBlock, .tabletAnimateLeftBlock,
+.mobileAnimateRightBlock, .mobileAnimateLeftBlock {
+  animation-duration: 4000ms;
+  animation-delay: 1000ms;
+}
+
+.desktopAnimateRightBlock {
+  animation-name: desktopAnimateRightBlock;
+
+  @media only screen and (max-width: $screen-xl) {
+    animation-name: desktopAnimateRightBlock1200px;
+  }
+}
+
+.desktopAnimateLeftBlock {
+  animation-name: desktopAnimateLeftBlock;
+}
+
+.tabletAnimateRightBlock {
+  animation-name: tabletAnimateRightBlock;
+}
+
+.tabletAnimateLeftBlock {
+  animation-name: tabletAnimateLeftBlock;
+}
+
+.mobileAnimateRightBlock {
+  animation-name: mobileAnimation;
+}
+
+.mobileAnimateLeftBlock {
+  animation-name: mobileAnimation;
+}
+
+// ----------DESKTOP ANIMATION---------- //
+
+@keyframes desktopAnimateLeftBlock {
+  0% {
+    @include translateY(-16.5%);
+  }
+  25% {
+    @include translateY(10%);
+  }
+  50% {
+    @include translateY(10%);
+  }
+  75% {
+    @include translateY(10%);
+  }
+  100% {
+    @include translateY(-16.5%);
+  }
+}
+
+@keyframes desktopAnimateRightBlock {
+  0% {
+    @include translateY(37.5%);
+  }
+  25% {
+    @include translateY(5%);
+  }
+  50% {
+    @include translateY(5%);
+  }
+  75% {
+    @include translateY(5%);
+  }
+  100% {
+    @include translateY(37.5%);
+  }
+}
+
+@keyframes desktopAnimateRightBlock1200px {
+  0% {
+    @include translateY(56.5%);
+  }
+  25% {
+    @include translateY(5%);
+  }
+  50% {
+    @include translateY(5%);
+  }
+  75% {
+    @include translateY(5%);
+  }
+  100% {
+    @include translateY(56.5%);
+  }
+}
+
+// ----------TABLET ANIMATION---------- //
+
+@keyframes tabletAnimateRightBlock {
+  0% {
+    @include translateY(40%);
+  }
+  25% {
+    @include translateY(22%);
+  }
+  50% {
+    @include translateY(22%);
+  }
+  75% {
+    @include translateY(22%);
+  }
+  100% {
+    @include translateY(40%);
+  }
+}
+
+@keyframes tabletAnimateLeftBlock {
+  0% {
+    @include translateY(-15.5%);
+  }
+  25% {
+    @include translateY(3%);
+  }
+  50% {
+    @include translateY(3%);
+  }
+  75% {
+    @include translateY(3%);
+  }
+  100% {
+    @include translateY(-15.5%);
+  }
+}
+
+// ----------MOBILE ANIMATION---------- //
+
+@keyframes mobileAnimation {
+  0% {
+    @include translateY(0%);
+  }
+  25% {
+    @include translateY(-66%);
+  }
+  50% {
+    @include translateY(-66%);
+  }
+  75% {
+    @include translateY(-66%);
+  }
+  100% {
+    @include translateY(0%);
+  }
+}

@@ -1,0 +1,147 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+@import "../../../App/sass/mixinsAnimation";
+
+$innerVRCardBg: #150430;
+$innerVRWhite2: #F4F9FE;
+
+.builtSection {
+  .left {
+    .subtitle {
+      padding: 22px 0;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: 32px 0 24px;
+      }
+    }
+  }
+
+  .right {
+    .accordion {
+      list-style: none;
+      padding-top: 8px;
+
+      @media only screen and (min-width: $screen-md) {
+        position: relative;
+        padding-top: 0;
+      }
+
+      .item {
+        &:first-of-type {
+          @media only screen and (min-width: $screen-lg + 1) {
+            .question {
+              padding-top: 0;
+
+              .arrow {
+                top: 3px;
+              }
+            }
+          }
+        }
+
+        &:last-of-type {
+          .question {
+            padding-bottom: 0;
+          }
+
+
+          &.active {
+            .answer {
+              padding-top: 24px;
+
+              @media only screen and (min-width: $screen-md) {
+                padding-top: 32px;
+              }
+            }
+          }
+        }
+
+        &:not(:last-of-type) {
+          border-bottom: 1px solid rgba(163, 116, 255, 0.15);
+
+          .answer {
+            .answerInner {
+              p {
+                padding-bottom: 24px;
+
+                @media only screen and (min-width: $screen-md) {
+                  padding-bottom: 32px;
+                }
+              }
+            }
+          }
+        }
+
+        .question {
+          background-color: $innerVRCardBg;
+          width: 100%;
+          position: relative;
+          outline: none;
+          padding: 24px 24px 24px 0;
+          z-index: 1;
+
+          @media only screen and (min-width: $screen-md) {
+            padding: 32px 24px 32px 0;
+          }
+
+          @media only screen and (min-width: ($screen-lg + 1)) {
+            cursor: pointer;
+          }
+
+          h3 {
+            color: $innerVRWhite2;
+            font-size: 20px;
+            line-height: 1.35;
+            font-weight: 500;
+            font-family: var(--satoshiFont);
+          }
+
+          .arrow {
+            position: absolute;
+            display: inline-block;
+            width: 20px;
+            height: 12px;
+            top: 24px;
+            right: 0;
+            @include transition(all .2s ease-out);
+
+            @media only screen and (min-width: $screen-md) {
+              top: 32px;
+            }
+          }
+
+          .rotate {
+            @include transition(transform .2s ease-in-out);
+            transform: rotate(-180deg);
+            transform-origin: bottom;
+          }
+        }
+
+        .answer {
+          display: none;
+        }
+
+        &.active {
+          .answer {
+            display: block;
+            z-index: 2;
+            position: relative;
+            margin-top: -8px;
+
+            @media only screen and (min-width: $screen-md) {
+              margin-top: 0;
+            }
+
+            .answerInner {
+              p {
+  
+                @media only screen and (min-width: $screen-md) {
+                  max-width: calc(100% - 32px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

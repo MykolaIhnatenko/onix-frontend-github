@@ -1,0 +1,175 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.containerColorBlock {
+  z-index: 3;
+  width: 100%;
+  position: relative;
+  padding: toRem(60) toRem(15);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(80) toRem(30);
+  }
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    padding: toRem(80) toRem(70);
+  }
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(80);
+  }
+
+  .titleColorBox {
+    @include generalPlexMono(20, 400, 28);
+    width: 100%;
+    color: var(--color-black);
+    font-family: var(--ibmPlexMono);
+    margin-bottom: toRem(20);
+
+    @media only screen and (max-width: $screen-lg) {
+      @include generalPlexMono(18, 400, 26);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      @include generalPlexMono(14, 400, 28);
+    }
+  }
+
+  .contentBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .secondBlock {
+      width: 100%;
+      margin-bottom: toRem(60);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(40);
+      }
+  
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+
+  &.travel {
+    .contentBox {
+      .secondBlock {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &.travelSecond {
+    padding: toRem(80) toRem(70) toRem(40);
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: toRem(80) toRem(80) toRem(40);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(80) toRem(30) toRem(40);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(80) toRem(15) toRem(40);
+    }
+    .contentBox {
+      .secondBlock {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+.textBlack {
+  @include generalSansFont(50, 500, 64);
+  width: 100%;
+  margin-bottom: toRem(60);
+  color: var(--color-black);
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    @include generalSansFont(40, 500, 56);
+    margin-bottom: toRem(40);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    @include generalSansFont(24, 500, 34);
+    margin-bottom: toRem(30);
+  }
+}
+
+.textGray {
+  @include generalSansFont(50, 500, 64);
+  width: 100%;
+  margin-bottom: toRem(60);
+  color: var(--color-gray-text);
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    @include generalSansFont(40, 500, 56);
+    margin-bottom: toRem(40);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    @include generalSansFont(24, 500, 34);
+    margin-bottom: toRem(30);
+  }
+}
+
+
+.fitnessPadding {
+  padding-top: toRem(60);
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: toRem(60) toRem(15) 0;
+  }
+
+  .titleColorBox {
+    @media only screen and (max-width: $screen-lg) {
+     font-size: toRem(20);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(14);
+     }
+  }
+}
+
+
+.eLearning {
+  padding: toRem(80) toRem(70) 0;
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(80) toRem(80) 0;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30) 0;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: toRem(40) toRem(15) 0;
+  }
+}

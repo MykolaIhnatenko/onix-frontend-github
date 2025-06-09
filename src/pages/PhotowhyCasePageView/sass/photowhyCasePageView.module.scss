@@ -1,0 +1,217 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$saphirePhotowhy: #3B456F;
+$whitePhotowhy: #FBFDFF;
+
+.photowhy {
+  background-color: $whitePhotowhy;
+
+  :global {
+    .container {
+      font-family: var(--muktaVaani), sans-serif;
+      max-width: none;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: toRem(16);
+      padding-right: toRem(16);
+      box-sizing: border-box;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-left: toRem(24);
+        padding-right: toRem(24);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1242);
+        padding-left: toRem(20);
+        padding-right: toRem(20);
+      }
+
+      h1 {
+        font-size: toRem(32);
+        font-weight: 500;
+        line-height: toRem(39);
+        text-align: center;
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(48);
+          line-height: toRem(58);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(80);
+          line-height: toRem(96);
+        }
+      }
+
+      h2 {
+        font-size: toRem(24);
+        font-weight: 500;
+        line-height: toRem(29);
+        text-align: center;
+        text-transform: uppercase;
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(32);
+          line-height: toRem(39);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(72);
+          line-height: toRem(86);
+        }
+      }
+
+      h3 {
+        font-size: toRem(24);
+        font-weight: 700;
+        line-height: toRem(24);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(32);
+          line-height: toRem(32);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(72);
+          line-height: toRem(72);
+        }
+      }
+
+      h4, .interfacesTitle {
+        font-size: toRem(16);
+        font-weight: 500;
+        line-height: toRem(27);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(20);
+          line-height: toRem(33);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(32);
+          line-height: toRem(53);
+        }
+      }
+
+      h5 {
+        font-size: toRem(20);
+        font-weight: 400;
+        line-height: toRem(33);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(20);
+          line-height: toRem(34);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(32);
+          line-height: toRem(48);
+        }
+      }
+
+      h6, .fs_16 {
+        font-size: toRem(16);
+        font-weight: 500;
+        line-height: toRem(27);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(20);
+          line-height: toRem(33);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(32);
+          line-height: toRem(53);
+        }
+      }
+
+      .lastTitle {
+        font-size: toRem(20);
+        font-weight: 400;
+        line-height: toRem(33);
+        text-transform: uppercase;
+        text-align: center;
+        color: $saphirePhotowhy;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(32);
+          line-height: toRem(48);
+        }
+      }
+
+      .leftAlign {
+        text-align: left;
+      }
+
+      p, li {
+        font-size: toRem(16);
+        font-weight: 400;
+        line-height: toRem(27);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(18);
+          line-height: toRem(30);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(24);
+          font-weight: 400;
+          line-height: toRem(40);
+        }
+      }
+    }
+
+    .mainContainer {
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1440);
+      }
+    }
+
+    .resultContainer {
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(32);
+        padding-right: 0;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(40);
+        padding-bottom: 0;
+        max-width: 100%;
+        justify-content: space-between;
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        margin: 0 auto;
+        max-width: toRem(1242);
+        position: unset;
+      }
+    }
+
+    .redContainer {
+      padding-top: toRem(200);
+      padding-bottom: toRem(37);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(380);
+        padding-bottom: toRem(40);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(440);
+        padding-bottom: toRem(90);
+      }
+
+      @media only screen and (min-width: $screen-lg) {
+        padding-top: toRem(490);
+        padding-bottom: toRem(90);
+        max-width: toRem(1320);
+      }
+    }
+  }
+}
+

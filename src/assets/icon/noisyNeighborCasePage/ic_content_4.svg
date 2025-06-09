@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none">
+    <g clip-path="url(#clip0_39200_28994)">
+        <path d="M20.945 42L19.125 49" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M12.5 49H29.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M1.5 36H29.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M33.049 17C31.447 14.568 28.666 13 25.5 13C20.529 13 16.5 17.029 16.5 22C16.5 26.971 20.529 31 25.5 31C26.952 31 28.305 30.68 29.5 30.093" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M20.9449 21.4451L24.4999 25.0001L30.0469 19.4531" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M32.5 44H41.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M57.5 51H44.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M55.5 4V0" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M55.5 12V8" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M57.5 6H60.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M53.5 6H50.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M51.5 30V22C51.5 20.895 50.604 20 49.5 20H34.5C33.396 20 32.5 20.895 32.5 22V49C32.5 50.104 33.396 51 34.5 51H41.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M56.5 33H45.5C44.948 33 44.5 33.448 44.5 34V55C44.5 55.552 44.948 56 45.5 56H56.5C57.052 56 57.5 55.552 57.5 55V34C57.5 33.448 57.052 33 56.5 33Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M49.5 17V11C49.5 9.343 48.157 8 46.5 8H4.5C2.843 8 1.5 9.343 1.5 11V39C1.5 40.657 2.843 42 4.5 42H27.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    </g>
+    <defs>
+        <clipPath id="clip0_39200_28994">
+            <rect width="60" height="60" fill="white" transform="translate(0.5)"/>
+        </clipPath>
+    </defs>
+</svg>

@@ -1,0 +1,1657 @@
+@import "../../App/sass/mixinsAnimation";
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.travelbid {
+  font-family: var(--poppinsFont), sans-serif;
+
+  p {
+    font-weight: 400;
+    font-size: toRem(18);
+    line-height: toRem(27);
+    color: #303034;
+
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(16);
+      line-height: toRem(24);
+    }
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: toRem(48);
+    line-height: toRem(72);
+    color: #19191B;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(32);
+      line-height: toRem(48);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(20);
+      line-height: toRem(30);
+    }
+  }
+
+  h3 {
+    color: #9090A7;
+    margin: toRem(88) auto toRem(64) toRem(60);
+    max-width: toRem(770);
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(590);
+      margin: toRem(52) auto toRem(40) toRem(30);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin: toRem(40) toRem(16) toRem(24) toRem(16);
+    }
+  }
+
+  h3, h3 span {
+    font-weight: 400;
+    font-size: toRem(32) !important;
+    line-height: toRem(48);
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(24) !important;
+      line-height: toRem(36);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(18) !important;
+      line-height: toRem(27);
+    }
+  }
+
+  h3 span {
+    background: linear-gradient(89.04deg, #FF6E04 1%, #FF0289 99.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .mainSection {
+    display: flex;
+    position: relative;
+    padding: toRem(244) toRem(56) toRem(100) toRem(64);
+    overflow: hidden;
+    background: linear-gradient(180deg, #FFE3CF 0.03%, rgba(227, 195, 253, 0) 85.03%);
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+      padding: toRem(155) toRem(30) toRem(56);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(139) toRem(15) toRem(45);
+    }
+
+    .bgWrapper {
+      position: absolute;
+      right: toRem(-215);
+      top: 0;
+      max-width: toRem(988);
+      width: 100%;
+      height: toRem(988);
+      
+      @media screen and (max-width: $screen-lg) {
+        right: 0;
+        height: toRem(477);
+      }
+
+      @media screen and (max-width: $screen-md - 1) {
+        height: toRem(375);
+        width: toRem(350);
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        object-position: right;
+      }
+    }
+
+    .description, .iconBlock {
+      z-index: 1;
+    }
+
+    .description {
+      flex-basis: 60.60%;
+
+      p {
+        max-width: toRem(780);
+
+        @media screen and (max-width: $screen-lg) {
+          max-width: toRem(708);
+          margin-right: 0;
+        }
+      }
+
+      .titleInnerBlock {
+        display: inline-block;
+      }
+    }
+
+    .iconBlock {
+      position: relative;
+      flex-basis: 41.70%;
+
+      @media only screen and (max-width: $screen-lg) {
+        display: flex;
+        justify-content: center;
+        column-gap: toRem(20);
+        row-gap: toRem(24);
+        flex-wrap: wrap;
+        padding-top: toRem(46);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        row-gap: toRem(16);
+        padding-top: toRem(35);
+      }
+
+      .tile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 toRem(40) toRem(40) toRem(-16) rgba(124, 92, 88, 0.1);
+        background: radial-gradient(80.44% 205.92% at 11.69% 11.7%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%);
+        border-radius: toRem(14);
+        width: toRem(126);
+        height: toRem(132);
+        transition: transform 0.5s;
+
+        &:nth-child(1) {
+          top: toRem(59);
+          left: 19%;
+          transform: rotate(-6deg);
+
+          @media screen and (max-width: $screen-xl) {
+            top: 30%;            
+          }
+        }
+
+        &:nth-child(2) {
+          transform: rotate(12deg);
+          top: toRem(12);
+          right: toRem(12);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(8deg);
+          top: toRem(321);
+          right: 23%;
+
+          @media screen and (max-width: $screen-xl) {
+            top: 60%;            
+          }
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          &:nth-child(n) {
+            position: relative;
+            min-width: toRem(185);
+            max-width: toRem(344);
+            width: 40%;
+            flex-grow: 1;
+            height: toRem(155);
+            top: unset;
+            left: unset;
+            bottom: unset;
+            right: unset;
+            transform: unset;
+          }
+        }
+
+        @media only screen and (min-width: $screen-lg) {
+          &:hover {
+            transition: transform 0.5s;
+
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+              .pinkCircle {
+                span {
+                  transition: transform 0.5s;
+                  @include scale(1.3);
+                }
+              }
+            }
+
+            &:nth-child(1) {
+              transform: rotate(6deg);
+            }
+
+            &:nth-child(2) {
+              transform: rotate(-12deg);
+            }
+
+            &:nth-child(3) {
+              transform: rotate(-8deg);
+            }
+          }
+        }
+
+        .pinkCircle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 47px;
+          height: 48px;
+          background: #FFF1E4;
+          border-radius: toRem(30);
+          span {
+            transition: transform 0.5s;
+          }
+        }
+
+        .tileHeader {
+          font-weight: 600;
+          font-size: toRem(16);
+          line-height: toRem(24);
+          margin: toRem(8) 0;
+          color: #19191B;
+        }
+
+        .tileDescription {
+          font-family: var(--mulishFont), sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: toRem(12);
+          line-height: toRem(16);
+          color: #303034;
+          opacity: 0.8;
+
+          @media only screen and (max-width: $screen-lg) {
+            font-family: var(--poppinsFont), sans-serif;
+            line-height: toRem(18);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-size: toRem(56);
+      line-height: toRem(72);
+      font-weight: 500;
+      margin-top: toRem(40);
+      margin-bottom: toRem(40);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-right: toRem(30);
+        font-size: toRem(48);
+        line-height: toRem(64);
+        margin-top: toRem(30);
+        margin-bottom: toRem(30);
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(32);
+        line-height: toRem(42);
+        margin-bottom: toRem(20);
+        margin-top: toRem(16);
+      }
+
+      div {
+        display: inline-block;
+      }
+
+      $animationSteps: 20;
+      $animationDuration: 10;
+      $animationElement: span;
+      $animationElementsCount: 32;
+      $delayBetweenLetters: 0.2;
+      $colorsIds: 328, 25, 29;
+
+      #{$animationElement} {
+        animation-name: anim-text-flow-keys;
+        animation-duration: #{$animationDuration}s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes anim-text-flow-keys {
+        @for $i from 0 through $animationSteps {
+          #{percentage($i * (1 / $animationSteps))} {
+            color: hsla(nth($colorsIds, random(length($colorsIds))), 100, 50, 1);
+          }
+        }
+      }
+
+      $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
+
+      @for $i from 1 through $animationElementsCount {
+        #{$animationElement}:nth-of-type(#{$i}) {
+          animation-delay: #{($i * $delayBetweenLetters) - $totalDelayTime}s;
+        }
+      }
+    }
+
+    p {
+      max-width: toRem(770);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-right: toRem(30);
+        max-width: toRem(590);
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-right: 0;
+        font-size: toRem(16);
+        line-height: toRem(24);
+      }
+
+      a {
+        text-decoration: underline;
+        color: #FF0289 !important;
+        font-weight: 500;
+      }
+    }
+
+    .contactUsWrapper {
+      margin-top: toRem(40);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(30);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-top: toRem(30);
+        max-width: toRem(338);
+      }
+
+      .contactUsStub {
+        min-height: toRem(59);
+      }
+    }
+  }
+
+  .parallaxStyle {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    border-top-left-radius: toRem(32);
+    border-top-right-radius: toRem(32);
+
+    @media only screen and (max-width: $screen-lg) {
+      position: relative;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      border-radius: 0;
+      padding: 0;
+    }
+  }
+
+  .mobileDesignPlx {
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .problems, .designProcess, .mobileDesign {
+    background: #19191B;
+    position: relative;
+    padding-top: toRem(96);
+    padding-bottom: toRem(96);
+    overflow: hidden;
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(56) 0;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(48) 0;
+    }
+
+    .blurBgDesignProcessTop {
+      @media only screen and (max-width: $screen-lg) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        min-height: toRem(48);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #19191B 100%);
+        z-index: 3;
+      }
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      column-gap: toRem(30);
+      padding: 0 toRem(60);
+
+      @media only screen and (max-width: $screen-lg) {
+        flex-wrap: wrap;
+        padding: 0 toRem(30);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding: 0 toRem(16);
+      }
+
+      &:nth-child(1) {
+        margin-bottom: toRem(96);
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-bottom: 0;
+        }
+      }
+
+      h2 {
+        flex-basis: 48.5%;
+        color: #FFFFFF;
+
+        @media only screen and (max-width: $screen-lg) {
+          flex-basis: 100%;
+          margin-bottom: toRem(16);
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      p {
+        flex-shrink: 2;
+        width: toRem(660);
+        color: #FFFFFF;
+        position: relative;
+
+        @media only screen and (max-width: $screen-lg) {
+          width: 100%;
+          font-size: toRem(16);
+          line-height: toRem(24);
+        }
+
+        .blurBg {
+          position: absolute;
+          left: -65%;
+          top: -18%;
+          width: toRem(530);
+          height: toRem(592);
+          background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.74) 44.79%, #FFF06C 100%);
+          opacity: 0.5;
+          filter: blur(150px);
+          transform: rotate(96.36deg);
+
+          @media only screen and (max-width: $screen-lg) {
+            left: 0;
+            top: -45%;
+            width: toRem(282);
+            height: toRem(315);
+            filter: blur(79.9px);
+          }
+
+          @media only screen and (max-width: $screen-md - 1) {
+            top: -17%;
+            left: -4%;
+            transform: rotate(0);
+          }
+        }
+
+        .blurBgDesignProcess {
+          position: absolute;
+          left: -75%;
+          top: -18%;
+          width: toRem(548);
+          height: toRem(490);
+          background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.74) 44.79%, #FFF06C 100%);
+          opacity: 0.5;
+          filter: blur(232.5px);
+          transform: rotate(164.5deg);
+
+          @media only screen and (max-width: $screen-lg) {
+            filter: blur(100px);
+            transform: rotate(145deg);
+            width: toRem(237);
+            height: toRem(303);
+            left: 20%;
+            top: 60%;
+          }
+
+          @media only screen and (max-width: $screen-md - 1) {
+            left: 40%;
+            top: 60%;
+            width: toRem(168);
+            @include rotate(0);
+          }
+        }
+      }
+
+      .marginBottom {
+        @media only screen and (max-width: $screen-lg) {
+          margin-bottom: toRem(56);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          margin-bottom: toRem(48);
+        }
+      }
+    }
+    h3 {
+      margin-top: toRem(96);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(56);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-top: toRem(48);
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .listWrapper {
+      position: relative;
+      display: flex;
+      margin-left: toRem(60);
+      gap: toRem(90);
+      
+      @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+        margin-left: toRem(30);
+        gap: 0;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-left: toRem(16);
+      }
+
+      .customerRoleSteps {
+        width: 56.5%;
+        grid-template-columns: 6fr 6fr;
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-bottom: toRem(40);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          margin-bottom: 0;
+        }
+      }
+
+      .designProcessSteps {
+        grid-template-columns: 4fr 4fr 4fr;
+        width: 100%;
+        margin-right: toRem(60);
+      }
+
+      .steps {
+        display: grid;
+        justify-content: space-between;
+        justify-items: stretch;
+        column-gap: toRem(56);
+        row-gap: toRem(29);
+        list-style: none;
+        
+        @media only screen and (max-width: $screen-lg) {
+          grid-template-columns: 4fr 4fr 4fr;
+          column-gap: toRem(40);
+          row-gap: toRem(16);
+          width: 100%;
+          padding-right: toRem(30);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          grid-template-columns: 1fr;
+          padding-right: toRem(16);
+          row-gap: toRem(24);
+        }
+
+        p {
+          @media only screen and (max-width: $screen-lg) {
+            font-size: toRem(16);
+            line-height: toRem(24);
+          }
+        }
+      }
+
+      .stepsSecond {
+        row-gap: toRem(89);
+
+        @media only screen and (max-width: $screen-lg) {
+          row-gap: toRem(40);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          row-gap: toRem(24);
+        }
+      }
+
+      .customerRoleImage {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+
+        @media only screen and (max-width: $screen-lg) {
+          width: 100%;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          display: none;
+        }
+
+        .overlay {
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: linear-gradient(90.97deg, rgba(25, 25, 27, 0) 0.47%, rgba(25, 25, 27, 0.8) 98.71%);
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .blurBgCustomerRole {
+        position: absolute;
+        left: -2%;
+        top: 28%;
+        width: toRem(494);
+        height: toRem(442);
+        background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.74) 44.79%, #FFF06C 100%);
+        opacity: 0.5;
+        filter: blur(150px);
+        transform: rotate(-176.35deg);
+
+        @media only screen and (max-width: $screen-lg) {
+          right: 0;
+          left: unset;
+          top: -20%;
+          width: toRem(263);
+          height: toRem(235);
+          filter: blur(79.9px);
+          transform: rotate(0deg);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          top: -9%;
+        }
+      }
+
+      .blurBgServiceRole {
+        position: absolute;
+        right: 41%;
+        top: 23%;
+        width: toRem(547);
+        height: toRem(490);
+        background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.74) 44.79%, #FFF06C 100%);
+        opacity: 0.5;
+        filter: blur(150px);
+        transform: rotate(60.32deg);
+
+        @media only screen and (max-width: $screen-lg) {
+          right: 20%;
+          top: 5%;
+          width: toRem(252);
+          height: toRem(236);
+          filter: blur(79.9px);
+          transform: rotate(3.34deg);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          top: -54%;
+          right: 3%;
+        }
+      }
+    }
+  }
+
+  .offerSection {
+    width: 100%;
+
+    @media only screen and (max-width: $screen-lg) {
+      position: relative;
+    }
+  }
+
+  .offerSectionSecond {
+    padding-bottom: toRem(100);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: toRem(60);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding-bottom: toRem(51);
+    }
+  }
+
+  .beginning, .logoDesign, .result, .bookingPlatform {
+    width: 100%;
+    padding: toRem(96) toRem(60) toRem(64);
+
+    @media only screen and (max-width: $screen-lg) {
+      position: relative;
+      padding: toRem(59) toRem(30) toRem(40);
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(51) toRem(16) toRem(24);
+    }
+
+    .introRow {
+      display: flex;
+      justify-content: space-between;
+      column-gap: toRem(20);
+
+      @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+      }
+
+      a {
+        text-decoration: underline;
+        color: #FF0289 !important;
+        font-weight: 500;
+      }
+
+      img {
+        top: toRem(9);
+        position: relative;
+      }
+
+      h2 {
+        max-width: toRem(550);
+        flex-shrink: 1;
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: 100%;
+          margin-bottom: toRem(16);
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      p {
+        position: relative;
+        max-width: toRem(659);
+        flex-shrink: 1.6;
+
+        .blurBg {
+          position: absolute;
+          right: 12%;
+          bottom: -205%;
+          width: toRem(565);
+          height: toRem(491);
+          background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.739583) 44.79%, #FFF06C 100%);
+          opacity: 0.5;
+          filter: blur(300px);
+          transform: rotate(-8.01deg);
+
+          @media only screen and (max-width: $screen-lg) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .coloredHeader {
+      margin: toRem(96) 0 0;
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(56);
+
+        span br {
+          display: none;
+        }
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin: toRem(48) 0 0;
+      }
+    }
+  }
+
+  .bookingPlatform {
+    padding-bottom: toRem(96);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(56);
+      padding-bottom: toRem(56);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding-bottom: toRem(48);
+      padding-top: toRem(48);
+    }
+
+    .bookingPlatformFlex {
+      display: flex;
+      gap: toRem(106);
+      padding-bottom: toRem(64);
+  
+      @media only screen and (max-width: $screen-lg) {
+        gap: toRem(40);
+        flex-direction: column;
+        padding-bottom: toRem(56);
+      }
+  
+      @media only screen and (max-width: $screen-md - 1) {
+        gap: toRem(16);
+        padding-bottom: toRem(48);
+      }
+  
+      .bookingPlatformMainTitle {
+        font-size: toRem(48);
+        line-height: getLineHeight(72, 48);
+        max-width: toRem(550);
+  
+        @media only screen and (max-width: $screen-lg) {
+          font-size: toRem(32);
+          line-height: getLineHeight(48, 32);
+          max-width: unset;
+        }
+  
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(20);
+          line-height: getLineHeight(30, 20);
+        }
+      }
+  
+      .bookingPlatformSubTitle {
+        margin: 0;
+        max-width: toRem(501);
+        font-size: toRem(32);
+        line-height: getLineHeight(48, 32);
+        color: #9090A7;
+        flex-shrink: 1.2;
+  
+        @media only screen and (max-width: $screen-lg) {
+          font-size: toRem(24);
+          line-height: getLineHeight(36, 24);
+          max-width: unset;
+        }
+  
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(18);
+          line-height: getLineHeight(27, 18);
+        }
+
+        span {
+          background: linear-gradient(89.04deg, #FF6E04 1%, #FF0289 99.38%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+        }
+      }
+    }
+
+    .bookingPlatformItemFlex {
+      display: flex;
+      gap: toRem(216);
+      padding-bottom: toRem(76);
+  
+      @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+        gap: toRem(56);
+        padding-bottom: toRem(56);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        gap: toRem(24);
+        padding-bottom: toRem(24);
+      }
+
+      &.withoutPadding {
+        padding-bottom: 0;
+      }
+  
+      .bookingPlatformItem {
+        max-width: toRem(440);
+        flex: 1;
+        padding-top: toRem(22);
+        border-top: toRem(2) solid var(--color-gray6);
+  
+        @media only screen and (max-width: $screen-lg) {
+          max-width: unset;
+          flex: none;
+        }
+  
+        .bookingPlatformItemTitle {
+          font-size: toRem(32);
+          line-height: getLineHeight(48, 32);
+          padding-bottom: toRem(16);
+          font-weight: 400;
+          margin: 0;
+          color: #000;
+    
+          @media only screen and (max-width: $screen-lg) {
+            font-size: toRem(20) !important;
+            line-height: getLineHeight(30, 20) !important;
+          }
+        }
+  
+        .bookingPlatformListItem {
+          display: flex;
+          gap: toRem(16);
+          padding-bottom: toRem(16);
+  
+          &:last-of-type {
+            padding-bottom: 0;
+          }
+  
+          .checkIcon {
+            margin: toRem(8) toRem(7.5);
+          }
+  
+          .bookingPlatformListText {
+            font-size: toRem(18);
+            line-height: getLineHeight(24, 18);
+            font-weight: 400;
+            color: var(--color-gray7);
+            
+            @media only screen and (max-width: $screen-lg) {
+              font-size: toRem(16);
+              line-height: getLineHeight(24, 16);
+            }
+          }
+        }
+      }
+    }
+
+    .bookingPlatformText {
+      max-width: toRem(1100);
+      padding-top: toRem(96);
+      font-size: toRem(32);
+      line-height: getLineHeight(48, 32);
+      color: #9090A7;
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-top: toRem(40);
+        font-size: toRem(24);
+        line-height: getLineHeight(36, 24);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-top: toRem(24);
+        font-size: toRem(18);
+        line-height: getLineHeight(27, 18);
+      }
+
+      span {
+        background: linear-gradient(89.04deg, #FF0289 1%, #FF6E04 99.38%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+    }
+  }
+
+  .beginningSlider {
+    width: 100%;
+    padding: 0 toRem(60) toRem(96);
+
+    @media only screen and (max-width: $screen-lg) {
+      position: relative;
+      padding: 0;
+    }
+  }
+
+  .designProcess {
+    @media only screen and (max-width: $screen-lg) {
+      position: relative;
+      border-radius: unset;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(48) 0;
+    }
+
+    .marginBottom {
+      @media screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(40) !important;
+      }
+
+      @media screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(24) !important;
+      }
+    }
+
+    .row:nth-child(1) {
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: 0;
+      }
+    }
+
+    .row {
+      @media only screen and (max-width: $screen-md - 1) {
+        .marginBottom {
+          margin-bottom: toRem(32);
+        }
+      }
+    }
+
+    div:nth-child(5) {
+      h3 {
+        @media only screen and (max-width: $screen-md - 1) {
+          margin-bottom: 0;
+          margin-top: toRem(24);
+        }
+      }
+    }
+
+    h3 {
+      position: relative;
+      margin-top: toRem(72);
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: 100%;
+        margin: 0 toRem(30) toRem(40);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin: 0 toRem(16) toRem(24);
+      }
+
+      .blurBgDesignProcessSlider {
+        position: absolute;
+        left: 72%;
+        top: -224%;
+        width: toRem(213);
+        height: toRem(527);
+        background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.739583) 44.79%, #FFF06C 100%);
+        opacity: 0.5;
+        filter: blur(150px);
+        transform: matrix(-0.02, 1, -1, -0.02, 0, 0);
+
+        @media only screen and (max-width: $screen-xl) {
+          left: 67%;
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          left: 40%;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          top: unset;
+          bottom: -231%;
+          left: 42%;
+          height: toRem(270);
+        }
+
+        @media only screen and (max-width: $screen-xs) {
+          height: toRem(200);
+          bottom: 176%;
+          left: 29%;
+        }
+      }
+    }
+
+    .chosenStyle {
+      h3 {
+        margin-top: toRem(64);
+        margin-bottom: 0;
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-top: toRem(40);
+        }
+      }
+    }
+  }
+
+  .logoDesign {
+    padding: 0;
+
+    .introRow {
+      padding: toRem(96) toRem(60);
+      background: linear-gradient(179.97deg, #FFE3CF 0.03%, rgba(227, 195, 253, 0) 85.03%);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(56) toRem(30);
+        background: unset;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding: toRem(48) toRem(16);
+      }
+    }
+
+    .coloredHeader {
+      margin: toRem(0) toRem(60);
+      max-width: toRem(1100);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin: 0 toRem(30);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin: 0 toRem(16);
+      }
+    }
+
+    .designDescription {
+      padding-bottom: toRem(64);
+      position: relative;
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-bottom: toRem(40);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-bottom: toRem(24);
+      }
+    }
+
+    .logoWrapper {
+      display: grid;
+      grid-template-areas: "currentLogo planeLogo"
+                           "currentLogo  bLogo";
+      grid-template-columns: 6fr 6fr;
+      margin: 0 toRem(60) toRem(96);
+      height: toRem(810);
+      overflow: hidden;
+
+      @media only screen and (max-width: $screen-lg) {
+        grid-template-areas: "currentLogo  currentLogo"
+                             "planeLogo  bLogo";
+        margin: 0 toRem(30) toRem(56);
+        height: toRem(876);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin: 0 toRem(16) toRem(48);
+        height: toRem(425);
+      }
+
+      .currentLogo, .planeLogo, .bLogo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 17%;
+
+        @media only screen and (max-width: $screen-lg) {
+          padding: 0 toRem(33);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          padding: 0 toRem(16);
+        }
+
+        .icon {
+          width: 100%;
+          height: auto;
+          z-index: 3;
+        }
+      }
+
+      .currentLogo {
+        grid-area: currentLogo;
+        overflow: hidden;
+        border: toRem(1) #DDDDDE solid;
+        padding: 0 9%;
+
+        @media only screen and (max-width: $screen-lg) {
+          padding: 0 toRem(75);
+          height: toRem(470);
+        }
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          height: toRem(227);
+          padding: 0 toRem(40);
+        }
+
+        .blurBgLogo {
+          position: absolute;
+          left: 12%;
+          top: -10%;
+          width: toRem(503);
+          height: toRem(660);
+          background: linear-gradient(180deg, #FFE3CF 0%, rgba(227, 195, 253, 0) 100%), linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.739583) 44.79%, #FFF06C 100%);
+          opacity: 0.7;
+          filter: blur(100px);
+          transform: rotate(-90deg);
+
+          @media only screen and (max-width: $screen-lg) {
+            width: toRem(338);
+            height: toRem(447);
+            left: 27%;
+            top: 4%;
+          }
+
+          @media only screen and (max-width: $screen-md - 1) {
+            width: toRem(163);
+            height: toRem(216);
+          }
+        }
+      }
+
+      .planeLogo {
+        height: toRem(406);
+        grid-area: planeLogo;
+        z-index: 1;
+        border-right: toRem(1) #DDDDDE solid;
+        border-top: toRem(1) #DDDDDE solid;
+        border-bottom: toRem(1) #DDDDDE solid;
+        
+        @media only screen and (max-width: $screen-lg) {
+          border-left: toRem(1) #DDDDDE solid;
+          border-top: none;
+        }
+      }
+      
+      .bLogo {
+        height: toRem(404);
+        grid-area: bLogo;
+        z-index: 1;
+        border-right: toRem(1) #DDDDDE solid;
+        border-bottom: toRem(1) #DDDDDE solid;
+      }
+
+      .planeLogo, .bLogo {
+        @media only screen and (max-width: $screen-lg) {
+          height: toRem(406);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          height: toRem(197);
+        }
+      }
+    }
+  }
+
+  .mobileDesign {
+    display: flex;
+    padding: 0 0 0 toRem(60);
+    gap: toRem(48);
+    justify-content: space-between;
+    position: relative;
+
+    @media only screen and (max-width: $screen-xl) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: toRem(40);
+      padding: toRem(96) toRem(60) 0;
+    }
+    
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(56) toRem(30) 0;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      width: unset;
+      padding: toRem(48) toRem(16) 0;
+      gap: toRem(24);
+    }
+
+    .mobileDesignDescription {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: toRem(450);
+      
+      @media only screen and (max-width: $screen-lg) {
+        min-width: unset;
+        align-items: flex-start;
+      }
+
+      .blurBgTop {
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        width: toRem(517);
+        height: toRem(493);
+        background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.739583) 44.79%, #FFF06C 100%);
+        opacity: 0.5;
+        filter: blur(150px);
+        transform: rotate(-90deg);
+
+        @media only screen and (max-width: $screen-xl) {
+          background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.74) 44.79%, #FFF06C 100%);
+          filter: blur(75px);
+          left: 31%;
+          top: -10%;
+          width: toRem(202);
+          height: toRem(610);
+          transform: rotate(-100deg);
+        }
+
+        @media screen and (max-width: $screen-lg) {
+          top: -14%;
+          z-index: 5;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          top: -17%;
+          left: 60%;
+        }
+      }
+
+      h3 {
+        margin: 0 0 toRem(24) 0;
+        max-width: toRem(550);
+
+        @media only screen and (max-width: $screen-xl) {
+          max-width: 100%;
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-bottom: toRem(16);
+
+          br {
+            display: none;
+          }
+        }
+
+      }
+
+      p {
+        color: #FFFFFF;
+        max-width: toRem(550);
+        position: relative;
+
+        @media only screen and (max-width: $screen-xl) {
+          max-width: 100%;
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: unset;
+        }
+
+        .blurBgBottom {
+          position: absolute;
+          left: 71%;
+          bottom: -120%;
+          width: toRem(351);
+          height: toRem(316);
+          background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.739583) 44.79%, #FFF06C 100%);
+          opacity: 0.5;
+          filter: blur(100px);
+          transform: rotate(115.53deg);
+
+          @media only screen and (max-width: $screen-xl) {
+            bottom: -370%;
+            left: 60%;
+          }
+
+          @media only screen and (max-width: $screen-lg) {
+            top: 345%;
+            left: 33%;
+          }
+        }
+      }
+    }
+
+    .shadowBgBottom {
+      display: none;
+
+      @media only screen and (max-width: $screen-xl) {
+        display: block;
+        position: absolute;
+        height: toRem(92);
+        background: linear-gradient(180deg, #19191B 0%, rgba(25, 25, 27, 0) 100%);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        height: toRem(20);
+      }
+    }
+  }
+
+  .result {
+    position: relative;
+    background: #19191B;
+    width: 100%;
+    padding-top: toRem(96);
+    padding-bottom: toRem(96);
+    overflow: hidden;
+    
+    @media only screen and (max-width: $screen-lg) {
+      position: relative;
+      padding-top: toRem(56);
+      padding-bottom: toRem(56);
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(48) toRem(16);
+    }
+
+    .blurBgTop {
+      position: absolute;
+      background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.739583) 44.79%, #FFF06C 100%);
+      opacity: 0.5;
+      filter: blur(232.5px);
+      width: toRem(350);
+      height: toRem(507);
+      top: 12%;
+      left: 20%;
+      transform: rotate(175.96deg);
+      
+      @media only screen and (max-width: $screen-lg) {
+        background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.739583) 44.79%, #FFF06C 100%);
+        width: toRem(202);
+        height: toRem(610);
+        transform: rotate(262.96deg);
+        top: -12%;
+        left: 39%;
+        filter: blur(75px);
+        opacity: 0.3;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        top: -16%;
+        left: 69%;
+      }
+    }
+
+    .imagesWrapper {
+      position: relative;
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+      top: 0;
+      z-index: 1;
+      max-width: toRem(1035);
+      max-height: toRem(542);
+
+      @media screen and (max-width: $screen-lg) {
+        padding: 0 toRem(30);
+      }
+
+      @media screen and (max-width: $screen-md - 1) {
+        padding: 0;
+      }
+
+      .bigPhone {
+        flex-basis: 86%;
+        flex-shrink: 2;
+
+        @media only screen and (max-width: $screen-lg) {
+          flex-basis: 88%;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .smallPhone {
+        margin-top: toRem(33);
+        z-index: 1;
+        flex-basis: 24.2%;
+        margin-right: toRem(-95);
+        flex-shrink: 1;
+
+        @media only screen and (max-width: $screen-lg) {
+          flex-basis: 24.5%;
+          margin-right: toRem(-68);
+          margin-top: toRem(20);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          margin-right: toRem(-36);
+          margin-top: toRem(12);
+        }
+
+        img {
+          box-shadow: 0 21.5379px 27.5685px rgba(27, 27, 27, 0.15);
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .introRow {
+      padding-bottom: toRem(96);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-bottom: toRem(56);
+      }
+  
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-bottom: toRem(24);
+      }
+
+      h2 {
+        color: var(--color-white);
+      }
+
+      ul {
+        list-style: none;
+  
+        li {
+          display: flex;
+          gap: toRem(16);
+          margin-bottom: toRem(16);
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+  
+          @media only screen and (max-width: $screen-md - 1) {
+            gap: toRem(12);
+          }
+  
+          span {
+            flex-shrink: 0;
+            margin-top: toRem(8) !important;
+          }
+  
+          div, p {
+            color: var(--color-white);
+            font-size: toRem(18);
+            line-height: toRem(24);
+            max-width: toRem(620);
+            word-break: break-word;
+  
+            br {
+              display: none;
+            }
+  
+            @media only screen and (max-width: $screen-lg) {
+              font-size: toRem(16);
+              max-width: unset;
+  
+              br {
+                display: initial;
+              }
+            }
+          }
+
+          .iconWrapper {
+            height: 24px;
+            min-width: 24px;
+            display: flex;
+            padding: toRem(7) toRem(6);
+
+            .icon {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .resultDescriptions {
+      position: relative;
+      padding-top: toRem(95);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-top: toRem(40);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-top: toRem(24);
+      }
+
+      p, h2 {
+        color: #FFFFFF;
+        text-align: center;
+      }
+
+      h2 {
+        margin-bottom: toRem(24);
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-bottom: toRem(16);
+        }
+      }
+
+      p {
+        max-width: toRem(660);
+        text-align: center;
+
+        br {
+          @media screen and (max-width: $screen-lg) {
+            display: none;
+          }
+        }
+
+        a {
+          text-decoration: underline;
+          color: #FF0289 !important;
+          font-weight: 600;
+        }
+      }
+
+      .blurBgBottom {
+        display: none;
+        position: absolute;
+        
+        @media only screen and (max-width: $screen-lg) {
+          display: block;
+          background: linear-gradient(180deg, #FB4DD2 0%, rgba(255, 148, 88, 0.739583) 44.79%, #FFF06C 100%);
+          width: toRem(202);
+          height: toRem(610);
+          transform: rotate(262.96deg);
+          top: -12%;
+          left: 39%;
+          filter: blur(100px);
+          opacity: 0.3;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          display: none;
+        }
+      }
+    }
+  }
+}

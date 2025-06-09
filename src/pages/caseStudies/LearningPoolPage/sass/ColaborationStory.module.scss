@@ -1,0 +1,176 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$soft-green: #5CAA9D;
+$light-gray: #FAFCFF;
+
+.storyTwo {
+  margin: 30px 0 0 calc(-50vw + 50%);
+  padding: 20px 30px 30px;
+  background-color: $light-gray;
+  display: flex;
+  width: 100vw;
+
+  .heading {
+    padding: 0 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--muktaVaani);
+    color: white;
+  }
+
+  .number {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--muktaVaani);
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+    @media only screen and (min-width: 768px) {
+      .number, .heading {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: var(--muktaVaani);
+    }
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .content {
+      .imageWrapper {
+        position: relative;
+        width: 100%;
+
+        .storyImage {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      .number {
+        width: 100%;
+        color: $soft-green;
+      }
+
+      .complexHeading {
+        width: 100%;
+        .heading {
+          width: fit-content;
+          display: block;
+          background-color: $soft-green;
+        }
+        .heading + .heading {
+          margin-top: -2px;
+        }
+      }
+
+      .text {
+        max-width: 100%;
+        width: 100%;
+
+        p {
+          max-width: 520px;
+          width: 100%;
+        }
+
+        div:not(:last-child) > p {
+          margin-bottom: 30px;
+        }
+      }
+
+      &:nth-child(2) {
+        .text {
+          margin-top: 50px;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 576px) {
+      width: 540px;
+      margin: 0 auto;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 720px;
+      margin: 0 auto;
+
+      .content {
+        .imageWrapper {
+          text-align: center;
+        }
+        .text p {
+          max-width: 100%;
+        }
+        &:first-child {
+          flex-flow: row nowrap;
+        }
+      }
+    }
+    @media only screen and (min-width: 1400px) {
+      width: 1140px;
+      margin: 0 auto;
+
+      .content {
+        flex-flow: row nowrap;
+
+        .imageWrapper {
+          text-align: start;
+        }
+
+        .number {
+          padding-left: 30px;
+        }
+
+        .complexHeading {
+          min-width: 500px;
+          width: auto;
+        }
+
+        &:not(:last-child) .text {
+          margin-top: 0;
+          max-width: 500px;
+          width: 100%;
+        }
+        &:nth-child(2) {
+          .text {
+            margin-top: 0;
+          }
+        }
+        &:last-child {
+          .text {
+            max-width: 700px;
+            margin: 20px auto 0;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    margin-top: 90px;
+    padding: 90px 50px;
+  }
+  @media only screen and (min-width: 992px) {
+    margin-top: 80px;
+    padding: 100px 0;
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.category {
+  position: relative;
+  width: fit-content;
+  border: toRem(2) solid var(--color-black);
+  font-family: var(--ibmPlexMono);
+  padding: toRem(9) toRem(16);
+  background-color: var(--color-white);
+  font-size: toRem(16);
+  border-radius: toRem(21);
+  line-height: getLineHeight(22, 16);
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  font-weight: 500;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  white-space: nowrap;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: inset 300px 0 0 0 var(--color-black);
+      background-color: var(--color-black);
+      color: #fff;
+    }
+  }
+
+  &.active, &:active {
+    background-color: var(--color-cruise);
+    box-shadow: inset 300px 0 0 0 var(--color-cruise);
+    border: toRem(2) solid var(--color-cruise);
+    color: var(--color-black);
+  }
+}

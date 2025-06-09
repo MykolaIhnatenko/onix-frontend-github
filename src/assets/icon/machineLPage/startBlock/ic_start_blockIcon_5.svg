@@ -1,0 +1,14 @@
+<svg viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="143" height="143" rx="71.5" fill="white"/>
+<rect x="0.5" y="0.5" width="143" height="143" rx="71.5" stroke="black"/>
+<path d="M64 85H56.953L47 92V85H45C43.896 85 43 84.104 43 83V65C43 63.896 43.896 63 45 63H52" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M52 81L57.257 67.1972C57.3644 66.9346 57.7362 66.9342 57.8441 67.1966L63.0533 81" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53.6387 77.5624H61.4394" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61.7378 50.563C61.2348 50.866 60.7478 51.192 60.2788 51.54" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M57.824 61.823C59.367 56.067 64.757 52 71 52C73.282 52 75.328 52.688 77.156 53.828L76.144 55.481C76.053 55.633 76 55.811 76 56C76 56.553 76.447 57 77 57H86C86.553 57 87 56.553 87 56C87 55.793 86.937 55.602 86.83 55.441L82.112 48.441C81.933 48.176 81.628 48 81.283 48C80.921 48 80.604 48.191 80.429 48.479L79.436 50.104C76.918 48.765 74.05 48 71 48C68.615 48 66.338 48.464 64.256 49.307" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M81 67H100C100.553 67 101 67.447 101 68V88V91C101 91.553 100.553 92 100 92H69C68.447 92 68 91.553 68 91V84.648" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M72.8999 75L76.6299 71.399C76.9259 71.142 77.3039 71 77.6969 71C78.1869 71 78.6499 71.221 78.9589 71.602L80.5249 73.538" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M80.5 73.5L86.752 81.69" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M84.5 83.58L91.597 77.625C92.077 77.222 92.629 77 93.257 77C93.713 77 94.201 77.131 94.592 77.354L101 81" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M59.047 85H64.5H69H71C72.104 85 73 84.104 73 83V65C73 63.896 72.104 63 71 63H62" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

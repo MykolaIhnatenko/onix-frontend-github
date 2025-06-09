@@ -1,0 +1,87 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  height: 100vh;
+  min-height: toRem(750);
+  max-height: toRem(1400);
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    height: toRem(1060);
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    min-height: 100%;
+    height: toRem(780);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    height: toRem(640);
+  }
+
+  .titleContainer {
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: toRem(640);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: toRem(222);
+    padding-left: toRem(70);
+  
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(80);
+    }
+  
+    @media only screen and (max-width: $screen-lg) {
+      padding-left: toRem(30);
+      padding-top: toRem(218);
+      height: 100%;
+      min-height: toRem(720);
+    }
+  
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: 100%;
+      min-height: toRem(522);
+      padding-top: toRem(149);
+      padding-left: toRem(15);
+    }
+  }
+  
+  .title {
+    @include generalPlexMono(18, 400, 26);
+    color: var(--color-white);
+    z-index: 1;
+  
+    @media only screen and (max-width: ($screen-md - 1)) {
+      @include generalPlexMono(16, 400, 24);
+    }
+  }
+}
+
+.bgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  @media only screen and (min-width: $screen-lg) {
+    height: 100%;
+  }
+
+  img {
+    object-fit: cover;
+
+    @media only screen and (max-width: $screen-xl) {
+      object-position: left;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      object-position: center;
+    }
+  }
+}

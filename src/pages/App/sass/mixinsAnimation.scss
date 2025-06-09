@@ -1,0 +1,108 @@
+@import "./functions.scss";
+
+@mixin content-middle($width: 760px, $padding: 30px) {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $padding;
+  max-width: $width;
+  box-sizing: border-box;
+}
+
+//transform
+@mixin transform($transform) {
+  -ms-transform: $transform;
+  /* IE 9 */
+  -webkit-transform: $transform;
+  /* Chrome, Safari, Opera */
+  -o-transform: $transform;
+  -moz-transform: $transform;
+  transform: $transform;
+}
+
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+// translate
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+@mixin translateX($x) {
+  @include transform(translateX($x));
+}
+
+@mixin translateY($y) {
+  @include transform(translateY($y));
+}
+
+// translate rotate
+@mixin translate-rotate($x, $y, $deg) {
+  @include transform(translate($x, $y) rotate(#{$deg}deg));
+}
+
+// transition
+@mixin transition($props) {
+  -webkit-transition: $props;
+  -moz-transition: $props;
+  -ms-transition: $props;
+  -o-transition: $props;
+  transition: $props;
+}
+
+// radius
+@mixin radius($props) {
+  -webkit-border-radius: $props;
+  -moz-border-radius: $props;
+  border-radius: $props;
+}
+
+// shadow
+@mixin shadow($props) {
+  -webkit-box-shadow: $props;
+  -moz-box-shadow: $props;
+  box-shadow: $props;
+}
+
+// box sizing
+@mixin box-sizing($box) {
+  box-sizing: $box;
+  -moz-box-sizing: $box;
+  -webkit-box-sizing: $box;
+}
+
+// retina
+@mixin retinaMedia {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+//animate
+@mixin animate($name, $duration, $iteration, $direction) {
+  -webkit-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  -o-animation-duration: $duration;
+  animation-duration: $duration;
+  -webkit-animation-iteration-count: $iteration;
+  -moz-animation-iteration-count: $iteration;
+  -o-animation-iteration-count: $iteration;
+  animation-iteration-count: $iteration;
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  -o-animation-name: $name;
+  animation-name: $name;
+  -webkit-animation-direction: $direction;
+  -moz-animation-direction: $direction;
+  -o-animation-direction: $direction;
+  animation-direction: $direction;
+}

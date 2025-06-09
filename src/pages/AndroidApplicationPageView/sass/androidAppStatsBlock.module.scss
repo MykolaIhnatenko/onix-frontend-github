@@ -1,0 +1,158 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container{
+  padding: toRem(100) toRem(70) 0;
+  background: var(--color-black);
+  color: var(--color-white);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(100) toRem(80) 0;
+  }
+
+  .border {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: toRem(44);
+    border-bottom: 2px #ffffff solid;
+    .containerItem {
+      position: relative;
+      .title {
+        position: absolute;
+        left: 0;
+        top: -14px;
+        font-size: toRem(30);
+        line-height: getLineHeight(40, 30);
+        font-weight: 500;
+      }
+      .number {
+        font-size: toRem(96);
+        line-height: getLineHeight(132, 96);
+        font-weight: 400;
+      }
+      .subTitle {
+        margin: toRem(8) 0 0 0;
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .container{
+    padding: toRem(10) toRem(30) toRem(22);
+
+    .border {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: toRem(62);
+      border-bottom: 2px #ffffff solid;
+      .containerItem {
+        position: relative;
+        .title {
+          top: 0;
+          font-size: toRem(24);
+          line-height: getLineHeight(34, 24);
+        }
+        .number {
+          font-size: toRem(60);
+          line-height: getLineHeight(132, 60);
+        }
+        .subTitle {
+          margin: 0;
+          font-size: toRem(18);
+          line-height: getLineHeight(26, 18);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md - 1) {
+  .container{
+    padding: toRem(10) toRem(15) toRem(21);
+
+    .border {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: toRem(30);
+      border-bottom: 2px #ffffff solid;
+      .containerItem {
+        position: relative;
+        .title {
+          top: -16px;
+          font-size: toRem(18);
+          line-height: getLineHeight(28, 18);
+        }
+        .number {
+          font-size: toRem(42);
+          line-height: getLineHeight(56, 42);
+        }
+        .subTitle {
+          margin: toRem(5) 0 0 0;
+          font-size: toRem(14);
+          line-height: getLineHeight(26, 14);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width: $screen-md) {
+  .container{
+    padding: toRem(100) toRem(30) toRem(22);
+
+    .border {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: toRem(62);
+      border-bottom: 2px #ffffff solid;
+      .containerItem {
+        position: relative;
+        .title {
+          top: 0;
+          font-size: toRem(24);
+          line-height: getLineHeight(34, 24);
+        }
+        .number {
+          font-size: toRem(60);
+          line-height: getLineHeight(132, 60);
+        }
+        .subTitle {
+          margin: 0;
+          font-size: toRem(18);
+          line-height: getLineHeight(26, 18);
+        }
+      }
+    }
+  }
+}
+
+.fintech {
+  padding-top: toRem(30);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(30) toRem(80) 0;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(10);
+  }
+}
+
+.hiddenItem {
+  display: none;
+  @media only screen and (max-width: $screen-lg) {
+    display: inline-block;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    display: none;
+  }
+}

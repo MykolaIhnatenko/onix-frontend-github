@@ -1,0 +1,87 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.worksSection {
+  position: relative;
+
+  .imageBlock {
+    @media only screen and (min-width: $screen-lg + 1) {
+      align-items: center;
+    }
+
+    .left {
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: 32px;
+      }
+
+      .subtitle {
+        padding: 22px 0;
+
+        @media only screen and (min-width: $screen-md) {
+          padding: 32px 0 30px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding: 32px 0 24px;
+          max-width: 500px;
+        }
+      }
+    }
+
+    .right {
+      .image {
+        width: 100%;
+        height: auto;
+        margin: 16px 0 24px;
+        display: block;
+
+        @media only screen and (min-width: $screen-md) {
+          margin: 30px 0;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          margin: 0 0 32px 0;
+        }
+      }
+    }
+  }
+
+  .listBlock {
+    .left {
+      .subtitle {
+        padding: 24px 0;
+
+        @media only screen and (min-width: $screen-md) {
+          padding: 30px 0 24px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding: 32px 0 0;
+        }
+      }
+    }
+
+    .right {
+      .list {
+        list-style: none;
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: 554px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-top: 32px;
+        }
+
+        .item {
+          br {
+            display: none;
+
+            @media only screen and (min-width: $screen-md) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

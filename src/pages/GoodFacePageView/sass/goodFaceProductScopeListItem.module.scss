@@ -1,0 +1,24 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.item {
+  padding-left: toRem(6);
+  padding-top: toRem(16);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(24);
+    padding-left: toRem(8);
+    letter-spacing: 0.5px;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(408);
+    padding-top: toRem(34);
+    padding-left: toRem(16);
+  }
+
+  &::marker {
+    color: #303539;
+    font-size: toRem(14);
+  }
+}

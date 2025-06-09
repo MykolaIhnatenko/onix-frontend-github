@@ -1,0 +1,121 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.topics {
+  margin-bottom:  toRem(30);
+  position: relative;
+
+  @media only screen and (min-width: $screen-xl) {
+    flex-basis: 24.6%;
+    max-width: 24.6%;
+  }
+
+  .dropdown {
+    height: toRem(56);
+    padding: toRem(10) toRem(15) toRem(7);
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-black);
+    display: flex;
+    justify-content: space-between;
+
+    &.activeDropdown {
+      background-color: var(--color-pale-gray);
+    }
+
+    .checkedItemsContainer {
+      display: flex;
+      overflow-x: auto;
+      width: 100%;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 2px;
+        background-color: var(--color-blogs-light-gray);
+        border-radius: 0;
+        opacity: 0.2;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-black);
+      }
+
+      .topicsTitleBlock {
+        background-color: var(--color-light-blue);
+        padding: toRem(5) toRem(10);
+        display: flex;
+        align-items: center;
+        margin-right: toRem(5);
+        flex-shrink: 0;
+        height: toRem(36);
+
+        &:not(:first-of-type) {
+          margin-left: 5px;
+        }
+
+        .topicTitle {
+          display: inline;
+          margin: 0;
+        }
+      }
+    }
+
+    .placeholder {
+      font-family: var(--ibmPlexMono);
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+      font-weight: 400;
+      color: var(--color-dark-gray);
+      position: relative;
+      top: toRem(5);
+    }
+
+    .icon {
+      margin-left: toRem(10);
+      display: flex;
+      transform: rotate(180deg);
+      transition: transform .3s ease-in-out;
+      cursor: pointer;
+
+      @media only screen and (max-width: $screen-lg) {
+        cursor: default;
+      }
+    }
+
+    .openIcon {
+      transition: transform .3s ease-in-out;
+      transform: rotate(0deg);
+    }
+  }
+
+  .topicsWrapper {
+    background-color: var(--color-pale-gray);
+    padding-top: toRem(16);
+    padding-bottom: toRem(16);
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: toRem(346);
+    z-index: 10;
+    border-bottom: 2px solid var(--color-cruise);
+    border-left: 2px solid var(--color-cruise);
+    border-right: 2px solid var(--color-cruise);
+
+    .topicsList {
+      background-color: var(--color-pale-gray);
+      max-height: toRem(316);
+      overflow-y: auto;
+      margin: 0 toRem(15);
+
+      &::-webkit-scrollbar {
+        width: 2px;
+        background-color: var(--color-blogs-light-gray);
+        border-radius: 0;
+        opacity: 0.2;
+        margin-right: toRem(15)
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-black);
+      }
+    }
+  }
+}

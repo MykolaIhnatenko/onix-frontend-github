@@ -1,0 +1,38 @@
+@use '../../../../pages/App/sass/container';
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.item {
+  width: toRem(400);
+  height: toRem(400);
+  margin-right: toRem(50);
+  border: 1px solid var(--color-white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $screen-lg) {
+    width: toRem(300);
+    height: toRem(330);
+    margin-right: toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    width: toRem(280);
+    height: toRem(280);
+    margin-right: toRem(25);
+  }
+
+  .id, .itemTitle {
+    font-size: toRem(30);
+    line-height: getLineHeight(40, 30);
+    color: var(--color-white);
+    font-weight: 500;
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+    }
+  }
+}

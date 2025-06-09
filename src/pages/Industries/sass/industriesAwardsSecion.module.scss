@@ -1,0 +1,44 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.awardsSection {
+  background-color: var(--color-black);
+
+  .container {
+    padding-top: toRem(40);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 0;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(32);
+    }
+
+    .title, .text {
+      color: var(--color-white);
+    }
+
+    .title {
+      @media only screen and (min-width: $screen-md) {
+        max-width: 600px;
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: unset;
+      }
+    }
+
+    .text {
+      margin-bottom: 0;
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(700);
+      }
+    }
+  }
+}

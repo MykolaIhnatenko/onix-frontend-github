@@ -1,0 +1,16 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.videoSection {
+  position: relative;
+  background-color: var(--color-black);
+  padding-bottom: toRem(67);
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(27) 0 toRem(47);
+  }
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: 0 0 toRem(60);
+  }
+}

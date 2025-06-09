@@ -1,0 +1,314 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.stridist {
+  overflow: hidden;
+  
+  :global {
+    .stridistContainer {
+      font-family: var(--satoshiFont), sans-serif;
+      max-width: none;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: toRem(16);
+      padding-right: toRem(16);
+      box-sizing: border-box;
+      
+      @media only screen and (min-width: $screen-md) {
+        padding-left: toRem(32);
+        padding-right: toRem(32);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1360);
+        padding-left: toRem(20);
+        padding-right: toRem(20);
+      }
+      
+      h1 {
+        font-weight: 700;
+        font-size: toRem(40);
+        line-height: getLineHeight(46, 40);
+        color: var(--color-white);
+        text-align: start;
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(64);
+          line-height: getLineHeight(64, 64);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(120);
+          line-height: getLineHeight(148, 120);
+        }
+      }
+      
+      h2, h3, h4, h5 {
+        color: #20222C;
+      }
+      
+      h2 {
+        font-weight: 500;
+        font-size: toRem(16);
+        line-height: getLineHeight(20, 16);
+      }
+      
+      .h3Big {
+        font-weight: 400;
+        font-size: toRem(28);
+        line-height: getLineHeight(34, 28);
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(40);
+          line-height: getLineHeight(46,40);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(56);
+          line-height: getLineHeight(69, 56);
+        }
+      }
+      
+      h5, .fs_24 {
+        font-weight: 400;
+        font-size: toRem(24);
+        line-height: getLineHeight(30, 24);
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(32);
+          line-height: getLineHeight(40, 32);
+        }
+      }
+      
+      p {
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: getLineHeight(22, 16);
+        color: #494B53;
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(20);
+          line-height: getLineHeight(25, 20);
+        }
+      }
+      
+      .fs_20 {
+        font-weight: 400;
+        font-size: toRem(20);
+        line-height: getLineHeight(25, 20);
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(32);
+          line-height: getLineHeight(40, 32);
+        }
+      }
+      
+      .technicalTitle {
+        padding-bottom: toRem(73);
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: getLineHeight(22, 16);
+        color: #494b53;
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(18);
+          line-height: getLineHeight(22, 18);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: toRem(164);
+          font-size: toRem(20);
+          line-height: getLineHeight(24, 20);
+          max-width: toRem(750);
+          margin-left: auto;
+        }
+      }
+      
+      .realizationTitle {
+        font-size: toRem(24);
+        line-height: getLineHeight(30, 24);
+        font-weight: 400;
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(32);
+          line-height: getLineHeight(40, 32);
+        }
+      }
+      
+      .realizationText {
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(18);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(20);
+        }
+      }
+      
+      .testimonialTitle {
+        font-weight: 400;
+        text-align: center;
+        font-size: toRem(32);
+        line-height: getLineHeight(38, 32);
+        margin-bottom: toRem(40);
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(40);
+          line-height: getLineHeight(46, 40);
+          margin-bottom: toRem(96);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(56);
+          line-height: getLineHeight(69, 56);
+          margin-bottom: toRem(56);
+        }
+      }
+      
+      .valueTitle {
+        font-weight: 400;
+        font-size: toRem(32);
+        line-height: getLineHeight(38, 32);
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(56);
+          line-height: getLineHeight(69, 56);
+        }
+      }
+      
+      .technologiesListTitle {
+        color: #20222C;
+        font-weight: 500;
+        font-size: toRem(20);
+        line-height: getLineHeight(25, 20);
+        text-transform: capitalize;
+        padding-bottom: toRem(12);
+        
+        @media only screen and (min-width: $screen-md) {
+          padding: 0 0 toRem(32) toRem(4);
+        }
+      }
+      
+      .author {
+        font-weight: 500;
+        font-size: toRem(14);
+        line-height: getLineHeight(20, 14);
+        color: #6F7886;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: toRem(32);
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(16);
+          line-height: getLineHeight(22, 16);
+          padding-top: toRem(40);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(18);
+          line-height: getLineHeight(38, 18);
+          padding-top: toRem(56);
+        }
+      }
+    }
+    
+    .mainContainer {
+      padding-top: 0;
+      padding-bottom: toRem(64);
+      
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(64);
+        padding-bottom: toRem(66);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1440);
+        padding: toRem(67) toRem(30);
+      }
+    }
+    
+    .realizationContainer {
+      padding-top: toRem(48);
+      padding-bottom: toRem(8);
+      
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(64);
+        padding-bottom: toRem(16);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(88);
+        padding-bottom: toRem(148);
+        max-width: toRem(1420);
+      }
+    }
+  }
+  
+  .contactUsTitleBlock {
+    display: flex;
+    justify-content: center;
+    
+    h3 {
+      font-weight: 400;
+      font-size: toRem(28);
+      line-height: getLineHeight(34, 28);
+      color: #20222C;
+      font-family: var(--satoshiFont), sans-serif;
+      text-align: center;
+      
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(40);
+        line-height: getLineHeight(58, 40);
+        padding-bottom: toRem(40);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        font-size: toRem(56);
+        line-height: getLineHeight(69, 56);
+        padding-bottom: toRem(64);
+      }
+    }
+    
+    .contactUsTitle {
+      text-align: center;
+      font-weight: 400;
+      padding-bottom: toRem(32);
+      font-size: toRem(28);
+      line-height: getLineHeight(34, 28);
+      
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(40);
+        line-height: getLineHeight(46, 40);
+        padding-bottom: toRem(40);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(64);
+        font-size: toRem(56);
+        line-height: getLineHeight(69, 56);
+        max-width: toRem(900);
+      }
+    }
+    
+    .contactUsSecondTitle {
+      text-align: center;
+      font-weight: 400;
+      padding-bottom: toRem(32);
+      font-size: toRem(28);
+      line-height: getLineHeight(34, 28);
+      
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(40);
+        line-height: getLineHeight(46, 40);
+        padding-bottom: toRem(56);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(64);
+        font-size: toRem(56);
+        line-height: getLineHeight(69, 56);
+        max-width: toRem(900);
+      }
+    }
+  }
+}

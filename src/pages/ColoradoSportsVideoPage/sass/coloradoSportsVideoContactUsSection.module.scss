@@ -1,0 +1,99 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.contactUsSection {
+  .container {
+    padding-bottom: toRem(56);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(64);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(74);
+      padding-bottom: toRem(104);
+      height: 100%;
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+      color: #9B8CD7;
+      text-align: center;
+      padding-bottom: toRem(24);
+
+      span {
+        color: #9E98B2;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(28);
+        line-height: getLineHeight(39, 28);
+        padding-bottom: toRem(32);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        font-size: toRem(40);
+        line-height: getLineHeight(54, 40);
+      }
+
+      .breakMobile {
+        @media only screen and (min-width: $screen-md) {
+          display: none;
+        }
+      }
+
+      .break {
+        display: none;
+
+        @media only screen and (min-width: $screen-md) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  letter-spacing: 0.02px;
+  border: none;
+  background-color: #9E98B2;
+  border-radius: toRem(24);
+  padding: toRem(12) 0;
+  font-size: toRem(20);
+  font-weight: 500;
+  color: #FEFFFF;
+  line-height: getLineHeight(27, 20);
+  font-family: var(--satoshiFont), sans-serif;
+  text-transform: unset;
+  max-width: 100%;
+  margin: 0 auto;
+  transition: all .2s ease-in-out;
+
+  &:active {
+    background-color: #9B8CD7;
+    box-shadow: 0 0 8px #9B8CD7;
+  }
+
+  @media only screen and (min-width: $screen-sm) {
+    max-width: toRem(240);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    flex-basis: toRem(360);
+    cursor: pointer;
+
+    &:active {
+      background-color: #9B8CD7;
+      box-shadow: none;
+    }
+
+    &:hover {
+      background-color: #9B8CD7;
+      box-shadow: 0 0 8px #9B8CD7;
+    }
+  }
+}

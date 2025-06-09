@@ -1,0 +1,156 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.container {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: toRem(80) toRem(70);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: toRem(60) toRem(15);
+  }
+
+  .title {
+    @include generalSansFont(50, 500, 64);
+    display: inline-block;
+    width: 60%;
+    margin-bottom: toRem(40);
+    font-size: toRem(50);
+    line-height: toRem(64);
+    font-weight: 500;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(40);
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(25);
+      line-height: getLineHeight(35, 25);
+    }
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: toRem(33) 0;
+    border-bottom: 2px solid var(--color-black);
+
+    &:last-child {
+      border-bottom: 2px solid transparent;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      display: flex;
+      flex-direction: column;
+      padding: toRem(30) 0;
+      gap: 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(20) 0;
+    }
+
+    .titleBox {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 10% 90%;
+      gap: 10px;
+
+      .textItem {
+        @include generalSansFont(24, 500, 34);
+
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+        }
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(20);
+      }
+    }
+
+    .descItem {
+      font-weight: 400;
+      font-family: var(--ibmPlexMono);
+      font-size: toRem(18);
+      line-height: toRem(26);
+    }
+
+  }
+
+  &.travel {
+    background-color: var(--color-black);
+
+    .title {
+      color: var(--color-white);
+    }
+
+    .titleBox {
+      .textItem {
+        color: var(--color-white);
+        font-size: toRem(24);
+        line-height: getLineHeight(34, 24);
+
+        @media only screen and (max-width: $screen-lg) {
+          width: auto;
+          max-width: toRem(572);
+          font-size: toRem(20);
+          line-height: getLineHeight(24, 20);
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .item {
+      color: var(--color-white);
+
+      border-bottom: 2px solid var(--color-white);
+
+      &:last-child {
+        border-bottom: 2px solid transparent;
+      }
+    }
+  }
+
+  &.booking {
+    .title {
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(40);
+      }
+    }
+
+    .item {
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(21) 0;
+        gap: 0;
+      }
+
+      .textItem {
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+        }
+      }
+
+      .descItem {
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(16);
+          line-height: getLineHeight(24, 16);
+        }
+      }
+    }
+  }
+}

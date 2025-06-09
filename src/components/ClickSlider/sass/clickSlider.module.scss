@@ -1,0 +1,23 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.button {
+  svg {
+    circle {
+      transition: .4s;
+      opacity: 0.3;
+
+      @media only screen and (max-width: $screen-lg) {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    svg {
+      circle {
+        opacity: 1;
+      }
+    }
+  }
+}

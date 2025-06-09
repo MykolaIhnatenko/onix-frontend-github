@@ -1,0 +1,167 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.resultSection {
+  background-color: var(--color-bracketology-background);
+  overflow: hidden;
+
+  .container {
+    padding-bottom: toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(40);
+      padding-bottom: toRem(40);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(1160);
+      padding-bottom: toRem(120);
+      padding-top: toRem(80);
+    }
+
+    h2 {
+      padding-bottom: toRem(24);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(40);
+      }
+    }
+
+    p {
+      letter-spacing: -0.2px;
+    }
+
+    p:not(:first-of-type) {
+      padding-top: toRem(24);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(24);
+      }
+    }
+
+    .paragraph {
+      padding-top: toRem(16) !important;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(24) !important;
+      }
+    }
+
+    .resultVideoBlock {
+      @media only screen and (min-width: $screen-md) {
+        position: relative;
+      }
+
+      .resultContent {
+        display: flex;
+
+        .apos {
+          width: toRem(28);
+          height: toRem(24);
+          flex-basis: 9%;
+
+          @media only screen and (min-width: $screen-md) {
+            width: toRem(36);
+            height: toRem(31);
+            flex-basis: 11%;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            flex-basis: 9%;
+            width: toRem(40);
+            height: toRem(35);
+          }
+        }
+
+        p {
+          padding-left: toRem(8);
+          padding-top: toRem(4);
+          flex-basis: 91%;
+          font-weight: 400;
+          font-size: toRem(18);
+          line-height: toRem(24);
+          letter-spacing: 0.1px;
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(20);
+            font-size: toRem(20);
+            line-height: toRem(28);
+            flex-basis: 89%;
+            letter-spacing: -0.2px;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            flex-basis: 91%;
+            font-size: toRem(24);
+            line-height: toRem(36);
+          }
+        }
+      }
+
+      .author {
+        text-align: right;
+        padding-top: toRem(16);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-top: toRem(24);
+        }
+      }
+
+      .resultVideo {
+        position: relative;
+        z-index: 1;
+
+        @media only screen and (min-width: $screen-md) {
+          width: toRem(500);
+          height: toRem(650);
+          top: toRem(-150);
+          right: 0;
+          position: absolute;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          top: toRem(-600);
+          right: toRem(-150);
+          width: toRem(920);
+          height: toRem(1196);
+        }
+
+        video {
+          object-fit: cover;
+          z-index: 1;
+          width: toRem(400);
+          height: toRem(600);
+
+          @media only screen and (min-width: $screen-md) {
+            width: toRem(500);
+            height: toRem(650);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            width: toRem(920);
+            height: toRem(1196);
+          }
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          mix-blend-mode: normal;
+
+          @media only screen and (min-width: $screen-md) {
+            background: radial-gradient(50.03% 49.99% at 53.71% 50%, rgba(0, 0, 0, 0) 0%, #000000 100%);
+          }
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

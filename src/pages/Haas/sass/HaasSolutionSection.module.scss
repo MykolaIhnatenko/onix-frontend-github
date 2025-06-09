@@ -1,0 +1,217 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.solution {
+  height: auto;
+  background-color: var(--color-black);
+  padding-top: toRem(120);
+  padding-bottom: toRem(120);
+  @media screen and (max-width: $screen-lg) {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: toRem(1300);
+
+    .title {
+      color: var(--color-white);
+      margin-bottom: toRem(20);
+    }
+  
+    .subTitle {
+      color: var(--color-gray-haas2);
+      padding-bottom: toRem(40);
+  
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(60);
+      }
+  
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(550);
+        padding-bottom: toRem(80);
+      }
+    }
+  
+    .accordionBlock {
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 18.1%;
+      }
+  
+      .carousel {
+        .frame {
+          margin: 0 auto;
+          max-width: toRem(348);
+          position: relative;
+          overflow: hidden;
+  
+          img {
+            position: relative;
+            z-index: 2;
+  
+            @media only screen and (max-width: ($screen-md - 1)) {
+              object-fit: contain;
+              width: 100%;
+            }
+          }
+  
+          .mockups {
+            position: absolute;
+            top: toRem(15);
+            left: toRem(18);
+            right: toRem(18);
+            overflow: hidden;
+  
+            .mockup {
+              opacity: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+  
+            .active {
+              opacity: 1;
+              z-index: 1;
+              position: relative;
+  
+              img {
+                height: unset;
+                border-radius: 35px;
+              }
+            }
+          }
+        }
+      }
+  
+      .accordion {
+        list-style: none;
+        padding-top: toRem(40);
+  
+        @media only screen and (min-width: $screen-md) {
+          position: relative;
+          padding-top: toRem(60);
+        }
+  
+        @media only screen and (min-width: $screen-lg + 1) {
+          flex: 0 1 toRem(550);
+          padding-top: 0;
+          padding-bottom: toRem(50);
+        }
+  
+        .item {
+          border-bottom: 1px solid var(--color-white);
+  
+          &:first-of-type {
+            .question {
+              padding-top: 0;
+  
+              .plus {
+                top: toRem(8);
+              }
+            }
+          }
+  
+          .question {
+            width: 100%;
+            position: relative;
+            outline: none;
+            padding: 24px 40px 24px 0;
+            background-color: var(--color-black-haas);
+  
+            @media only screen and (min-width: ($screen-lg + 1)) {
+              cursor: pointer;
+            }
+  
+            .plus {
+              display: inline-block;
+              width: toRem(18);
+              height: toRem(18);
+              position: absolute;
+              top: toRem(32);
+              right: toRem(9);
+              padding-right: 0;
+  
+              &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                background-color: rgba(255, 255, 255, 0.9);
+                height: toRem(2);
+                top: toRem(8);
+                left: 0;
+                right: 0;
+                z-index: 9;
+              }
+  
+              &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                background-color: rgba(255, 255, 255, 0.9);
+                width: toRem(2);
+                left: toRem(8);
+                top: 0;
+                bottom: 0;
+                z-index: 9;
+              }
+            }
+  
+            h3 {
+              font-weight: 400;
+              font-size: toRem(20);
+              line-height: toRem(30);
+              color: var(--color-white);
+  
+              @media only screen and (min-width: $screen-md) {
+                font-size: toRem(24);
+                line-height: toRem(36);
+              }
+            }
+          }
+  
+          .answer {
+            display: none;
+          }
+  
+          &.active {
+            .question {
+              h5, span {
+                color: var(--color-white);
+              }
+  
+              .plus {
+                &::after{
+                  background-color: var(--color-white);
+                }
+  
+                &::before {
+                  background-color: var(--color-white);
+                  transform: rotate(90deg);
+                }
+              }
+            }
+  
+            .answer {
+              display: block;
+              margin-top: toRem(-14);
+              background-color: var(--color-black);
+  
+              .answerInner {
+                p {
+                  padding-bottom: toRem(25);
+                  color: var(--color-gray-haas2);
+                  z-index: 2;
+                  position: relative;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
+}

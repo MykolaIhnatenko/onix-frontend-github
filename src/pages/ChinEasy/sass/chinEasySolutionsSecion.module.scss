@@ -1,0 +1,119 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.solutionsSection {
+  background-color: var(--color-white);
+
+  .container {
+    padding-top: toRem(120);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(80);
+    }
+
+    .content {
+      position: relative;
+
+      @media only screen and (min-width: $screen-xl) {
+        margin-top: toRem(80);
+        max-width: toRem(1300);
+      }
+
+      @media only screen and (min-width: $screen-xxl + 1) {
+        max-width: toRem(1920);
+      }
+
+      .textBlock {
+        padding-bottom: toRem(40);
+
+        @media only screen and (min-width: $screen-xl) {
+          max-width: 46%;
+          padding-top: toRem(80);
+          padding-bottom: toRem(172);
+          position: sticky;
+          top: toRem(10);
+        }
+
+        .subtitle {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+          padding-top: toRem(40);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+          }
+
+          @media only screen and (min-width: $screen-xl) {
+            padding-top: 0;
+          }
+        }
+
+        .text {
+          margin: 0;
+          padding-top: toRem(20);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(30);
+          }
+        }
+
+        div:nth-of-type(2) {
+          .text {
+            padding-top: toRem(20);
+
+            @media only screen and (min-width: $screen-md) {
+              padding-top: toRem(40);
+            }
+          }
+        }
+      }
+
+      .imageBlock {
+        @media only screen and (min-width: $screen-xl) {
+          height: 100vh;
+        }
+
+        .empty {
+          display: none;
+
+          @media only screen and (min-width: $screen-xl) {
+            display: block;
+            width: toRem(500);
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            right: toRem(-20);
+          }
+        }
+        .image {
+          max-width: toRem(250);
+          max-height: toRem(355);
+          margin-left: auto;
+
+          @media only screen and (min-width: $screen-md) {
+            max-width: toRem(373);
+            max-height: toRem(530);
+            margin: 0 auto;
+          }
+
+          @media only screen and (min-width: $screen-xl) {
+            max-width: toRem(500);
+            max-height: toRem(709);
+            margin: 0;
+            position: absolute;
+            top: calc(100vh - toRem(5));
+            right: toRem(-20);
+            width: toRem(500);
+            height: toRem(709);
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,224 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  padding: toRem(120) 0;
+  background: var(--color-black);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) 0;
+  }
+
+  .titleWrapper {
+    display: flex;
+    padding: 0 toRem(70);
+    gap: toRem(40);
+    justify-content: space-between;
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: 0 toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+      padding: 0 toRem(30);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      gap: toRem(30);
+      padding: 0 toRem(15);
+    }
+
+    .mainTitle {
+      width: toRem(400);
+      min-width: toRem(365);
+      color: var(--color-white);
+
+      @media only screen and (max-width: $screen-lg) {
+        min-width: 0;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        width: auto;
+      }
+    }
+
+    .subtitle {
+      margin: 0;
+      max-width: toRem(630);
+      color: var(--color-white);
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: unset;
+      }
+      
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(710);
+      }
+    }
+  }
+
+  .dragWrapper {
+    position: relative;
+    overflow-x: hidden;
+    margin-top: toRem(80);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      cursor: none;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      height: fit-content;
+      margin-top: toRem(60);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-top: toRem(40);
+    }
+
+    .contentItems {
+      display: flex;
+      gap: toRem(30);
+      padding-left: toRem(70);
+      padding-right: toRem(70);
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
+      cursor: none;
+
+      @media only screen and (min-width: $screen-xxxl) {
+        padding-left: toRem(80);
+        padding-right: toRem(80);
+      }
+      
+      &::-webkit-scrollbar {
+        display: none;
+        width: 6px;
+        position: absolute;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background: transparent;
+        position: absolute;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 5px;
+        position: absolute;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-left: toRem(30);
+        padding-right: toRem(30);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-left: toRem(15);
+        padding-right: toRem(15);
+        gap: toRem(15);
+      }
+
+      .itemCard {
+        display: flex;
+        min-width: toRem(1160);
+        height: toRem(580);
+        background-color: var(--color-white);
+
+        @media only screen and (max-width: $screen-lg) {
+          min-width: toRem(580);
+          flex-direction: column;
+          height: auto;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          min-width: toRem(300);
+        }
+
+        .imagesWrapper {
+          flex: 1 50%;
+          background-color: var(--color-black);
+          display: flex;
+          justify-content: center;
+          padding-top: toRem(40);
+          overflow: hidden;
+          position: relative;
+
+          @media only screen and (max-width: $screen-lg) {
+            height: toRem(580);
+            flex: unset;
+          }
+
+          @media only screen and (max-width: $screen-md - 1) {
+            padding-top: toRem(30);
+            height: toRem(300);
+          }
+
+          .imagesWrapperBg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .phone {
+            position: relative;
+            height: toRem(540);
+            width: auto;
+
+            @media only screen and (max-width: $screen-md - 1) {
+              height: toRem(270);
+            }
+          }
+        }
+
+        .itemCardContent {
+          flex: 1 50%;
+          padding: toRem(30);
+
+          @media only screen and (max-width: $screen-lg) {
+            flex: unset;
+          }
+
+          @media only screen and (max-width: $screen-md - 1) {
+            padding: toRem(30) toRem(15);
+          }
+    
+          .titleCard {
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+            padding-bottom: toRem(30);
+
+            @media only screen and (max-width: $screen-md - 1) {
+              font-size: toRem(20);
+              line-height: getLineHeight(28, 20);
+              padding-bottom: toRem(20);
+            }
+          }
+
+          .text {
+            margin: 0;
+
+            .textPadding {
+              display: block;
+              padding-bottom: toRem(30);
+
+              @media only screen and (max-width: $screen-md - 1) {
+                padding-bottom: toRem(20);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

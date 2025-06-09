@@ -1,0 +1,19 @@
+@import '../../App/sass/functions.scss';
+@import '../../App/sass/breakpointsVariables.scss';
+
+.container {
+  width: 100%;
+}
+
+.backgroundTop {
+  &:after {
+    content: '';
+    width: 100%;
+    height: toRem(50);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+  }
+}
+

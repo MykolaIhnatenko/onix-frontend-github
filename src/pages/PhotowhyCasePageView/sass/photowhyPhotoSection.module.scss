@@ -1,0 +1,11 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.photoSection {
+  position: relative;
+  height: toRem(317);
+
+  img {
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,54 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.edplusTextStyle {
+  color: var(--color-dark-gray3);
+  font-weight: 400;
+  font-size: toRem(18);
+  line-height: getLineHeight(29, 18);
+  font-family: var(--muktaVaani);
+  letter-spacing: toRem(0.3);
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(18);
+    line-height: getLineHeight(32, 18);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    letter-spacing: 0;
+  }
+
+  &.topMargin {
+    margin-top: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: toRem(30);
+    }
+  }
+
+  &.topMargin24 {
+    margin-top: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: toRem(24);
+    }
+  }
+
+  &.topMarginFirstChild {
+    margin-top: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: toRem(30);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      &:first-of-type {
+        margin-top: toRem(24);
+      }
+    }
+  }
+
+  &.withoutMargin {
+    margin: 0;
+  }
+}

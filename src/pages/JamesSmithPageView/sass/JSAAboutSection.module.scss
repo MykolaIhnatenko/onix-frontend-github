@@ -1,0 +1,84 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.aboutSection {
+  position: relative;
+
+  .content {
+    display: flex;
+    padding: toRem(60) 0 toRem(60) toRem(90);
+    gap: toRem(10);
+    justify-content: space-between;
+    background: var(--color-jsa-main-background-color);
+    backdrop-filter: blur(50px);
+    border-radius: toRem(32);
+    overflow: hidden;
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(24) toRem(16);
+      flex-direction: column;
+    }
+
+    .bigEllipse {
+      position: absolute;
+      right: toRem(-183);
+      top: toRem(-431);
+      width: toRem(992);
+      height: toRem(1039);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        display: none;
+      }
+    }
+
+    .description {
+      @media only screen and (max-width: $screen-lg) {
+        order: 2;
+      }
+
+      h2 {
+        max-width: toRem(505);
+        text-align: left;
+        margin-bottom: toRem(24);
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: toRem(674);
+          margin-bottom: toRem(16);
+        }
+      }
+
+      p {
+        font-size: toRem(18);
+        line-height: 163.38%;
+        max-width: toRem(538);
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: toRem(620);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(16);
+          line-height: toRem(26);
+        }
+      }
+    }
+
+    .picture {
+      flex-basis: 51.6%;
+      max-height: toRem(718);
+      z-index: 1;
+
+      @media only screen and (max-width: $screen-lg) {
+        order: 1;
+        max-width: toRem(466);
+        align-self: center;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

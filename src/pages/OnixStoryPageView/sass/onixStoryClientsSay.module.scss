@@ -1,0 +1,19 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section{
+  padding: 0 toRem(70) toRem(120);
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: 0 toRem(30) toRem(80);
+  }
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: 0 toRem(15) toRem(80);
+  }
+
+  .title{
+    padding-bottom: toRem(40);
+  }
+}

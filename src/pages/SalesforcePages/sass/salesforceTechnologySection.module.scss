@@ -1,0 +1,115 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+$blueSalesforceSupportAutomationApp: #3296ED;
+$blueSalesforceTrackingApp: #0270D2;
+
+.technologySection {
+  padding: toRem(40) 0;
+
+  @media only screen and (min-width: $screen-sm) {
+    padding: toRem(50) 0;
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(100) 0;
+  }
+
+  .container {
+    padding: 0 toRem(25);
+    width: 100%;
+
+    @media only screen and (min-width: $screen-sm) {
+      padding: 0 toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding: 0;
+    }
+
+    h2 {
+      color: $blueSalesforceTrackingApp;
+      padding-bottom: toRem(5);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: 0;
+      }
+    }
+
+    .technologiesContainer {
+      @media only screen and (min-width: $screen-sm) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: toRem(570);
+        margin: 0 auto;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(604);
+      }
+
+      @media only screen and (min-width: $screen-sm) {
+        max-width: toRem(604);
+      }
+
+      .technology {
+        width: toRem(270);
+        height: toRem(160);
+        margin: toRem(15) auto 0;
+        border-radius: toRem(10);
+        background-color: rgba(235, 234, 237, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (min-width: $screen-sm) {
+          max-width: toRem(270);
+          width: toRem(270);
+          flex-basis: 100%;
+          margin: toRem(15) 0 0 toRem(15);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          margin-left: toRem(30);
+          margin-top: toRem(30);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          flex-basis: 50%;
+        }
+      }
+    }
+  }
+}
+
+.processAutomation {
+  .container {
+    h2 {
+      color: $blueSalesforceSupportAutomationApp;
+    }
+
+    .technologiesContainer {
+      @media only screen and (min-width: $screen-sm) {
+        max-width: toRem(300);
+        margin: 0 auto;
+      }
+
+      @media only screen and (min-width: ($screen-md - 100)) {
+        justify-content: flex-start;
+        max-width: toRem(570);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(604);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(900);
+      }
+    }
+    }
+}
+

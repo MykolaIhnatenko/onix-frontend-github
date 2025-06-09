@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "title": "Business",
+    "items": [
+      "Final product vision",
+      "Functional decomposition",
+      "Product roadmap"
+    ]
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "title": "Design",
+    "items": [
+      "Prototype or wireframes (if\u00A0needed)",
+      "Screen flows",
+      "Style guide (if needed)"
+    ]
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "title": "Architecture",
+    "items": [
+      "Solution architecture",
+      "Technology stack",
+      "Non-functional requirements"
+    ]
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "title": "Project plan",
+    "items": [
+      "Software requirements specification",
+      "Time and cost estimation",
+      "Team composition",
+      "Implementation roadmap"
+    ]
+  }
+]

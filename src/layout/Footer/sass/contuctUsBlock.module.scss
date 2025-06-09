@@ -1,0 +1,74 @@
+@import '../../../pages/App/sass/functions';
+@import '../../../pages/App/sass/breakpointsVariables';
+
+.contactUs {
+  .contacts {
+    @media only screen and (min-width: $screen-md) {
+      display: flex;
+      gap: toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      display: block;
+    }
+
+    .contact {
+      @media only screen and (min-width: $screen-md) {
+        flex: 0 1 calc((100% - 30px) / 2);
+      }
+    }
+  }
+  .emailLink {
+    display: block;
+    margin-bottom: toRem(30);
+    text-decoration: underline;
+
+    @media only screen and (min-width: $screen-xl) {
+      margin-bottom: toRem(40);
+    }
+  }
+
+  .social {
+    margin-bottom: toRem(30);
+
+    @media only screen and (min-width: $screen-xl) {
+      margin-bottom: toRem(40);
+    }
+
+    a {
+      display: inline-block;
+
+      &:not(:last-of-type) {
+        margin-right: toRem(30);
+
+        @media only screen and (min-width: $screen-xl) {
+          margin-right: toRem(10);
+        }
+      }
+
+      svg {
+        rect, circle {
+          transition: all 0.3s;
+        }
+      }
+
+      &:active {
+        svg {
+          rect, circle {
+            fill: var(--color-cruise);
+          }
+        }
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        &:hover {
+          svg {
+            rect, circle {
+              fill: var(--color-cruise);
+            }
+          }
+        }
+      }
+    }
+  }
+}

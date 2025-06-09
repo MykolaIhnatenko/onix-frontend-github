@@ -1,0 +1,307 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: toRem(800);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    min-height: toRem(920);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    min-height: 100vh;
+    height: auto;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    min-height: fit-content;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .leftColum {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      @media only screen and (max-width: $screen-lg) {
+        height: auto;
+        margin-top: toRem(154);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-top: toRem(144);
+      }
+
+      .title {
+        max-width: toRem(720);
+
+        @media only screen and (max-width: $screen-xxxl - 1) {
+          max-width: toRem(534);
+        }
+
+        @media only screen and (max-width: $screen-xl) {
+          max-width: toRem(400);
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: toRem(708);
+          font-size: toRem(40);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(25);
+        }
+      }
+    }
+
+    .videoContainer {
+      width: calc(100vw - 664px);
+      padding-top: toRem(120);
+      max-width: toRem(820);
+      display: flex;
+      align-items: center;
+
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1020);
+      }
+
+      @media only screen and (max-width: $screen-xl) {
+        width: calc(100vw - 534px);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-top: toRem(60);
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        height: auto;
+        padding-bottom: toRem(80);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding: 0;
+        margin-top: toRem(30);
+        margin-bottom: toRem(20);
+        position: relative;
+      }
+
+      .video {
+        border-radius: 18px;
+        height: fit-content;
+        position: relative;
+
+        @media only screen and (max-width: $screen-md - 1) {
+          max-width: 100%;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &.animatedConcept {
+    color: var(--color-white);
+
+    @media only screen and (max-width: $screen-xl) {
+      min-height: 100vh;
+      height: auto;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      height: auto;
+      min-height: unset;
+    }
+
+    .container {
+      @media only screen and (max-width: $screen-xl) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .leftColum {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        @media only screen and (max-width: $screen-xl) {
+          height: auto;
+          margin-top: toRem(146);
+        }
+
+        .title {
+          padding-bottom: toRem(40);
+  
+          @media only screen and (max-width: $screen-xl) {
+            max-width: unset;
+            font-size: toRem(40);
+            line-height: getLineHeight(56, 40);
+            padding-bottom: toRem(30);
+          }
+  
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(25);
+            line-height: getLineHeight(35, 25);
+            padding-bottom: toRem(15);
+            br {
+              display: none;
+            }
+          }
+        }
+
+        .text {
+          max-width: toRem(482);
+          margin: 0;
+
+          @media only screen and (max-width: $screen-xl) {
+            max-width: unset;
+          }
+
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+          }
+        }
+      }
+
+      .videoContainer {
+        @media only screen and (min-width: $screen-xxxl) {
+          max-width: toRem(900);
+        }
+
+        @media only screen and (max-width: $screen-xl) {
+          padding-top: toRem(60);
+          max-width: 100%;
+          width: 100%;
+          display: flex;
+          height: auto;
+          padding-bottom: toRem(80);
+  
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          padding-top: toRem(30);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.spatio {
+  color: var(--color-white);
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    min-height: toRem(640);
+    height: 100vh;
+  }
+  
+  .container {
+    .leftColum {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(156);
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-top: toRem(139);
+      }
+      
+      .title {
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+        max-width: toRem(440);
+        margin-bottom: toRem(40);
+        
+        @media only screen and (max-width: $screen-lg) {
+          font-size: toRem(40);
+          line-height: getLineHeight(56, 40);
+          max-width: toRem(708);
+          margin-bottom: toRem(30);
+        }
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(25);
+          line-height: getLineHeight(35, 25);
+          margin-bottom: toRem(15);
+        }
+      }
+      
+      .text {
+        margin: 0;
+        max-width: toRem(400);
+        font-family: var(--generalSans);
+        font-size: toRem(30);
+        line-height: getLineHeight(40, 30);
+        
+        @media only screen and (max-width: $screen-lg) {
+          font-size: toRem(24);
+          line-height: getLineHeight(36, 24);
+          max-width: toRem(708);
+        }
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+        }
+      }
+    }
+    
+    .videoContainer {
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: 0;
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-top: toRem(60);
+      }
+      
+      .video {
+        max-width: toRem(800);
+        height: auto;
+        max-height: toRem(450);
+        
+        @media only screen and (max-width: $screen-lg) {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+.hideTablet {
+  display: block;
+  
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
+}

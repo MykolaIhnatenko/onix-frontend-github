@@ -1,0 +1,265 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../App/sass/mixinsFonts";
+
+.contactUs {
+  position: relative;
+  min-height: toRem(360);
+  padding-bottom: toRem(70);
+
+  @media only screen and (min-width: $screen-sm) {
+    min-height: toRem(415);
+    padding-bottom: toRem(134);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    min-height: toRem(520);
+    padding-bottom: toRem(200);
+  }
+
+  .background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .container {
+      padding: toRem(109) 0;
+      position: relative;
+      z-index: 2;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: toRem(144) 0;
+      }
+
+      .content {
+        max-width: toRem(268);
+        margin: 0 auto;
+
+        @media only screen and (min-width: $screen-sm) {
+          max-width: toRem(531);
+        }
+
+        h2 {
+          font-weight: 500;
+          font-size: toRem(24);
+          line-height: getLineHeight(32, 24);
+          color: var(--color-white);
+          font-family: var(--playfairDisplayFont), serif;
+          text-align: center;
+          padding-bottom: toRem(24);
+
+          @media only screen and (min-width: $screen-sm) {
+            font-size: toRem(36);
+            line-height: getLineHeight(48, 36);
+            padding-bottom: toRem(40);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(48);
+            line-height: getLineHeight(64, 48);
+          }
+        }
+      }
+
+      .btn {
+        display: block;
+        @include font-style(var(--color-white), 500, 14px);
+        text-align: center;
+        letter-spacing: 0.02px;
+        border: none;
+        background-color: var(--color-pink2);
+        border-radius: unset;
+        padding: toRem(16) 0;
+        @include font-style(var(--color-white), 400, 16px);
+        font-family: var(--satoshiFont), sans-serif;
+        text-transform: none;
+        line-height: 22px;
+        max-width: toRem(220);
+        margin: 0 auto;
+        transition: all .2s ease-in-out;
+
+        &:active {
+          background-color: #FE7888;
+        }
+
+        @media only screen and (min-width: $screen-sm) {
+          padding: toRem(16) toRem(36);
+          max-width: toRem(350);
+          @include font-style(var(--color-white), 400, 24px);
+          line-height: 32px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          cursor: pointer;
+
+          &:hover {
+            background-color: #FE7888;
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              .titleContainer {
+                padding-left: toRem(50);
+
+                .arrow {
+                  opacity: 1;
+                  transform: translate(30px);
+                }
+              }
+            }
+          }
+
+          &:active {
+            .titleContainer {
+              padding-left: toRem(15);
+
+              @media only screen and (min-width: $screen-md) {
+                padding-left: toRem(50);
+              }
+
+              .arrow {
+                opacity: 1;
+                transform: translate(30px);
+
+                @media only screen and (min-width: $screen-sm) {
+                  transform: translate(30px);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .titleContainer {
+        position: relative;
+        transition: all .2s ease-in-out;
+
+        .arrow {
+          width: 14px;
+          height: 12px;
+          opacity: 0;
+          position: absolute;
+          top: -2px;
+          left: 0;
+          transition: all .2s ease-in-out;
+
+          @media only screen and (min-width: $screen-sm) {
+            width: 21px;
+            height: 12px;
+            top: -3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.second {
+  padding-bottom: 0;
+
+  .background {
+    img {
+      @media only screen and (min-width: $screen-sm) {
+        object-position: right;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        object-position: center;
+      }
+    }
+
+    .container {
+      padding: 93px 0;
+
+      @media only screen and (min-width: $screen-sm) {
+        padding: 108px 10px;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: 144px 0;
+      }
+
+      .content {
+        max-width: 328px;
+
+        @media only screen and (min-width: $screen-sm) {
+          max-width: 684px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: 880px;
+        }
+
+        h2 {
+          br {
+            display: none;
+
+            @media only screen and (min-width: $screen-sm) {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .btn:active {
+        .titleContainer {
+          padding-left: 10px;
+
+          @media only screen and (min-width: $screen-sm) {
+            padding-left: 10px;
+          }
+
+          .arrow {
+            opacity: 1;
+            transform: translate(40px);
+
+            @media only screen and (min-width: $screen-sm) {
+              transform: translate(50px);
+            }
+          }
+        }
+      }
+
+      .btn:hover {
+        @media only screen and (min-width: $screen-lg + 1) {
+          .titleContainer {
+            padding-left: 10px;
+
+            .arrow {
+              opacity: 1;
+              transform: translate(50px);
+            }
+          }
+        }
+      }
+
+      .titleContainer {
+        position: relative;
+        transition: all .2s ease-in-out;
+
+        .arrow {
+          width: 14px;
+          height: 12px;
+          opacity: 0;
+          position: absolute;
+          top: -2px;
+          left: 15px;
+          transition: all .2s ease-in-out;
+
+          @media only screen and (min-width: $screen-sm) {
+            width: 21px;
+            height: 12px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

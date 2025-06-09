@@ -1,0 +1,273 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  padding: toRem(120) toRem(70);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(120) toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(60) toRem(15);
+  }
+
+  .background {
+    position: absolute;
+    top: toRem(280);
+    left: 0;
+    height: toRem(716);
+    width: 100%;
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(650);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: 60%;
+    }
+
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: toRem(100);
+      position: absolute;
+      top: toRem(-10);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #ffffff 100%);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        z-index: 1;
+      }
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(120);
+      position: absolute;
+      bottom: toRem(-50);
+      left: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #ffffff 100%);
+    }
+
+    img {
+      object-fit: cover;
+      object-position: top;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        object-position: center;
+      }
+    }
+  }
+
+  .title {
+    position: relative;
+
+    span {
+      @media only screen and (max-width: $screen-lg) {
+        display: block;
+      }
+    }
+  }
+
+  .text {
+    position: relative;
+    margin: toRem(40) 0 toRem(140);
+    max-width: toRem(980);
+    z-index: 5;
+
+    @media only screen and (max-width: $screen-lg) {
+      margin: toRem(40) 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: toRem(30) 0 toRem(85);
+    }
+
+    span {
+      display: block;
+      position: relative;
+      margin-bottom: toRem(20);
+      z-index: 2;
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+
+  .timelineContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+
+    .timeline {
+      display: flex;
+      width: toRem(327);
+      height: toRem(582);
+      margin-right: toRem(50);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-right: toRem(30);
+        height: toRem(431);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        display: none;
+      }
+
+      .imageWrapper {
+        margin-top: toRem(10);
+        margin-bottom: toRem(10);
+        position: relative;
+        height: toRem(554);
+        width: toRem(22);
+        margin-right: toRem(54);
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-top: toRem(40);
+          height: toRem(346);
+          width: toRem(13);
+        }
+      }
+
+      .dataContainer {
+        display: flex;
+        flex-direction: column;
+        padding-top: toRem(87);
+        padding-bottom: toRem(93);
+        justify-content: space-between;
+
+        h2 {
+          @media only screen and (max-width: $screen-lg) {
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+          }
+        }
+      }
+    }
+
+    .itemWrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: toRem(50);
+
+      @media only screen and (max-width: $screen-lg) {
+        row-gap: toRem(30);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: 100%;
+        row-gap: toRem(70);
+      }
+
+      .item {
+        display: flex;
+        outline: 2px solid var(--color-black);
+        outline-offset: -2px;
+        padding: toRem(50);
+        width: toRem(783);
+        column-gap: toRem(96);
+        background-color: var(--color-white);
+
+        @media only screen and (max-width: $screen-xl) {
+          width: toRem(620);
+          column-gap: toRem(60);
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          padding: toRem(30);
+          width: auto;
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding: toRem(25);
+          width: 100%;
+          max-width: toRem(708);
+          column-gap: toRem(25);
+        }
+
+        > div {
+          width: toRem(254);
+
+          @media only screen and (max-width: $screen-lg) {
+            width: toRem(180);
+          }
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            padding-right: toRem(5);
+          }
+
+          .bigNumber {
+            font-size: toRem(96);
+            line-height: getLineHeight(132, 96);
+            font-weight: 400;
+
+            @media only screen and (max-width: $screen-xl) {
+              font-size: toRem(80);
+            }
+
+            @media only screen and (max-width: $screen-lg) {
+              font-size: toRem(58);
+              line-height: getLineHeight(82, 58);
+            }
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              font-size: toRem(40);
+              line-height: getLineHeight(56, 40);
+              font-weight: 500;
+            }
+          }
+
+          .subTxt {
+            margin: toRem(8) 0 0;
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              font-size: toRem(18);
+            }
+          }
+        }
+
+        &:first-child {
+          position: relative;
+
+          &:after {
+            @media only screen and (max-width: ($screen-md - 1)) {
+              content: "2002";
+              font-family: var(--generalSans);
+              font-size: toRem(30);
+              line-height: getLineHeight(40, 30);
+              font-weight: 500;
+              position: absolute;
+              left: 0;
+              top: toRem(-45);
+            }
+          }
+        }
+
+        &:last-child {
+          position: relative;
+
+          &:after {
+            @media only screen and (max-width: ($screen-md - 1)) {
+              content: "2023";
+              font-family: var(--generalSans);
+              font-size: toRem(30);
+              line-height: getLineHeight(40, 30);
+              font-weight: 500;
+              position: absolute;
+              left: 0;
+              top: toRem(-45);
+            }
+          }
+        }
+      }
+    }
+  }
+}

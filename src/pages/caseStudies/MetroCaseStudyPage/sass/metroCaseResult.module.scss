@@ -1,0 +1,221 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  max-width: toRem(1170);
+  margin: toRem(100) auto toRem(130);
+  font-family: var(--muktaVaani);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(50) auto toRem(100);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: toRem(50) auto toRem(50);
+  }
+}
+
+.contentContainer {
+  padding: 0 toRem(30);
+}
+
+.contentTitle {
+  font-weight: bold;
+  font-size: toRem(46);
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #0B2F6E;
+  text-align: center;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(311);
+    font-size: toRem(38);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    max-width: toRem(260);
+    font-size: toRem(24);
+  }
+}
+
+.contentTextContainer {
+  max-width: toRem(730);
+  margin: toRem(30) auto 0;
+  font-weight: normal;
+  font-size: toRem(20);
+  line-height: 150%;
+  color: #333333;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(15) auto 0;
+    font-size: toRem(16);
+  }
+
+  p {
+    &:not(:first-child) {
+      margin-top: toRem(17);
+    }
+  }
+}
+
+.resultCardContainer {
+  background-color: #0B2F6E;
+  color: #FFFFFF;
+  line-height: 150%;
+  box-shadow: 0 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+  border-radius: toRem(10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: toRem(40) auto 0;
+  height: toRem(260);
+  width: toRem(260);
+  flex-direction: column;
+
+  @media only screen and (min-width: $screen-md) {
+    height: toRem(120);
+    width: auto;
+    flex-direction: row;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    height: toRem(244);
+    margin: toRem(50) auto 0;
+  }
+
+
+  .cardTextContainer {
+    &:not(:last-child) {
+      margin: 0 0 toRem(20) 0;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      &:not(:last-child) {
+        margin: 0 toRem(60) 0 0;
+      }
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      &:not(:last-child) {
+        margin: 0 toRem(70) 0 0;
+      }
+    }
+
+    .cardTitle {
+      font-size: toRem(36);
+      font-weight: 600;
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(24);
+      }
+    }
+
+    .cardText {
+      margin-top: toRem(20);
+      font-size: toRem(20);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(10);
+        font-size: toRem(16);
+      }
+    }
+  }
+}
+
+.contentSubTitleContainer {
+  max-width: toRem(730);
+  margin: toRem(50) auto 0;
+  font-weight: 500;
+  font-size: toRem(22);
+  line-height: 150%;
+  text-align: center;
+  color: #333333;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(40) auto 0;
+    font-size: toRem(17);
+    text-align: start;
+  }
+}
+
+.linksContainer {
+  margin-top: toRem(50);
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(69);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(61);
+  }
+
+  .linksContainerItem {
+    &:first-child {
+      margin-right: toRem(20);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-right: toRem(15);
+      }
+    }
+  }
+
+  .appStoreImageWrapper {
+    width: toRem(120);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: toRem(115);
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      cursor: pointer;
+    }
+  }
+
+  .googlePlayImageWrapper {
+    width: toRem(135);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: toRem(130);
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      cursor: pointer;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.contactUsWrapper {
+  max-width: toRem(320);
+  height: auto;
+  margin: toRem(90) auto 0;
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(690);
+    height: toRem(294);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(50);
+  }
+}
+
+.contactUsText {
+  font-weight: bold;
+  font-size: toRem(20);
+  line-height: 130%;
+  color: #F8F8F8;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(23);
+  }
+}

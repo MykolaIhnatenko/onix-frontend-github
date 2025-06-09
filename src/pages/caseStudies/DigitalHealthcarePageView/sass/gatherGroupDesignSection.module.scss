@@ -1,0 +1,54 @@
+@use '../../../../pages/App/sass/container';
+@import '../../../../pages/App/sass/breakpointsVariables.scss';
+
+
+.designSection {
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+
+  .container {
+    @extend .container;
+    padding-bottom: 80px;
+
+    @media only screen and (min-width: $screen-lg) {
+      padding-bottom: 184px;
+      padding-top: 40px;
+    }
+
+    .subtitle {
+      padding-bottom: 20px;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: 40px;
+      }
+    }
+
+    .text {
+      &:not(:last-of-type) {
+        padding-bottom: 20px;
+
+        @media only screen and (min-width: $screen-lg) {
+          padding-bottom: 40px;
+        }
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: 630px;
+      }
+    }
+
+    .list {
+      list-style: none;
+      padding-bottom: 20px;
+    }
+
+    .bottomTextBlock {
+      max-width: 630px;
+
+      @media only screen and (min-width: $screen-lg) {
+        margin-left: auto;
+      }
+    }
+  }
+}

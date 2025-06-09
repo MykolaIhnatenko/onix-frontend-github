@@ -1,0 +1,61 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.benefitsSection {
+  .container {
+    padding-top: toRem(27);
+    padding-bottom: toRem(56);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(40);
+      padding-bottom: toRem(48);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      padding-top: toRem(82);
+      padding-bottom: toRem(115);
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    h2 {
+      max-width: toRem(194);
+      padding-bottom: toRem(32);
+      font-weight: 400;
+      font-size: toRem(28);
+      line-height: getLineHeight(34, 28);
+      
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(270);
+        padding-bottom: toRem(48);
+        font-size: toRem(40);
+        line-height: getLineHeight(46,40);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(440);
+        font-size: toRem(56);
+        line-height: getLineHeight(69, 56);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        padding-bottom: 0;
+        padding-right: toRem(10);
+        flex-basis: 31.7%;
+      }
+    }
+    
+    .benefitsCards {
+      @media only screen and (min-width: $screen-md) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 toRem(-12);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        flex-basis: 68.3%;
+        margin: 0 toRem(-15);
+      }
+    }
+  }
+}

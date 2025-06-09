@@ -1,0 +1,27 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.contentContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: toRem(30);
+  padding-top: toRem(40);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(30);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    gap: toRem(20);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .comingSoon {
+    text-align: center;
+  }
+}

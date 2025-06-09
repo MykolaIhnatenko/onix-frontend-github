@@ -1,0 +1,135 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$cobaltPhotowhy: #0F1C53;
+$whitePhotowhy: #FBFDFF;
+
+.mainSection {
+  background-color: $whitePhotowhy;
+
+  .container {
+    padding-top: toRem(156);
+    padding-bottom: toRem(168);
+    position: relative;
+    
+    @media only screen and (min-width: 469px) {
+      padding-bottom: toRem(208);
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(196);
+      padding-bottom: toRem(148);
+      max-width: toRem(767);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(306);
+      padding-bottom: toRem(277);
+      max-width: toRem(1440);
+    }
+    
+    @media only screen and (min-width: 1132px) {
+      padding-bottom: toRem(373);
+    }
+
+    h1 {
+      text-transform: uppercase;
+      color: $cobaltPhotowhy;
+    }
+
+    .carouselContainer {
+      height: toRem(260);
+      width: 100%;
+      position: absolute;
+      top: toRem(353);
+      left: 0;
+
+      @media only screen and (min-width: $screen-md) {
+        height: toRem(398);
+        top: toRem(424);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        height: toRem(729);
+        top: toRem(626);
+      }
+
+      .photoBlock {
+        position: absolute;
+        height: toRem(260);
+        width: toRem(125);
+        top: toRem(-4);
+        left: calc(50% - 2px);
+        transform: translateX(-50%);
+        z-index: 10;
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(398);
+          width: toRem(194);
+          top: toRem(-6);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          height: toRem(729);
+          width: toRem(350);
+          top: toRem(-5);
+        }
+      }
+
+      .photowhyCarousel {
+        width: 100%;
+        height: toRem(117);
+        margin: toRem(40) auto 0;
+        overflow: hidden;
+        position: relative;
+
+        @media only screen and (min-width: $screen-md) {
+          width: 100%;
+          margin: toRem(62) auto 0;
+          height: toRem(180);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          width: 100%;
+          margin: toRem(120) auto 0;
+          height: toRem(322);
+        }
+
+
+        .image {
+          height: toRem(117);
+          width: toRem(117);
+          @media only screen and (min-width: $screen-md) {
+            height: toRem(180);
+            width: toRem(180);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            height: toRem(322);
+            width: toRem(320);
+          }
+
+          &:hover {
+            cursor: grab;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sliderContainer {
+  position: absolute !important;
+  width: toRem(650) !important;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media only screen and (min-width: $screen-md) {
+    width: toRem(1000) !important;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    width: toRem(1740) !important;
+  }
+}
+

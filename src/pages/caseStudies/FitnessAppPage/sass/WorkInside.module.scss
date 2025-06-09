@@ -1,0 +1,188 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+@import "../../../App/sass/mixinsAnimation";
+
+
+$workInside-light: #f6f6f6;
+$workInside-dark: #22262b;
+$workInside-grey: #7b818d;
+$workInside-grey2: #a19d98;
+$colorTextMedium2: #4a4a4a;
+
+/* triangle banner */
+.workInsideBanner {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 90px;
+  &:after,
+  &:after {
+    display: block;
+    content: "";
+    position: relative;
+  }
+  h2 {
+    font: 700 32px/48px $main-font-family;
+    letter-spacing: 0.36px;
+    padding: 0 20px;
+  }
+  &__logo {
+    display: block;
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+}
+.workInsideBanner__bg {
+  @include box-sizing(border-box);
+  padding-top: 145px;
+  display: block;
+  height: auto;
+}
+.article_container {
+  article.project {
+    color: $colorTextMedium;
+    .project_context {
+      p {
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        font-weight: 400;
+      }
+    }
+    .center {
+      text-align: center;
+    }
+    .article__content:first-child {
+      padding-top: 0;
+      padding-bottom: 80px;
+    }
+    p {
+      color: $colorTextMedium;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+      @media only screen and (max-width: $screen-md) {
+        letter-spacing: 0.2px;
+      }
+    }
+    .appStoreLink {
+      display: inline-block;
+      width: 175px;
+      height: 64px;
+      background-image: url("../../../../../public/static/images/common/app-store-btn.jpg");
+      background-repeat: no-repeat;
+      background-size: 175px 64px;
+      margin-right: 30px;
+      color: transparent;
+      @media #{$retina} {
+        background-image: url("../../../../../public/static/images/common/2x/app-store-btn@2x.jpg");
+      }
+    }
+    .googlePlayLink {
+      color: transparent;
+      display: inline-block;
+      width: 175px;
+      height: 64px;
+      background-image: url("../../../../../public/static/images/common/google-play-btn.jpg");
+      background-repeat: no-repeat;
+      background-size: 175px 64px;
+      @media #{$retina} {
+        background-image: url("../../../../../public/static/images/common/2x/google-play-btn@2x.jpg");
+      }
+    }
+  }
+  .project__sequenceGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    & > * {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      & > * {
+        flex-basis: 50%;
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  .article__content {
+    & + .article__content__grey:not(:first-child) {
+      padding-top: 80px;
+    }
+    &__grey {
+      background-color: $workInside-light;
+      p {
+        color: $workInside-grey;
+      }
+      & + .article__content:not(:first-child) {
+        padding-top: 80px;
+      }
+    }
+  }
+  .project__features {
+    @include content-middle(1110px, 20px);
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    & > * {
+      @include box-sizing(border-box);
+      margin-bottom: 40px;
+      flex-basis: calc(50% - 60px);
+    }
+    h4 {
+      display: block;
+      color: $workInside-dark;
+      font: 600 18px $main-font-family;
+      letter-spacing: 0.3px;
+    }
+    small {
+      color: $workInside-grey2;
+      font: 400 14px $main-font-family;
+      letter-spacing: 0.15px;
+    }
+  }
+}
+@media only screen and (max-width: $screen-md){
+  .article_container {
+    article.project {
+      .project_context {
+        p {
+          font-size: 16px;
+        }
+      }
+      .project__sequenceGrid > *:nth-child(even),
+      .project__sequenceGrid > * {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .article_container {
+    article.project {
+      .appStoreLink, .googlePlayLink {
+        display: inline-block !important;
+        width: 49% !important;
+        max-width: 158px;
+        height: 58px !important;
+        background-size: 100% auto !important;
+      }
+      .appStoreLink {
+        float: left;
+        margin-right: 0 !important;
+      }
+      .googlePlayLink {
+        float: right;
+      }
+      .project__features {
+        &__wineCase li {
+          flex-basis: initial;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

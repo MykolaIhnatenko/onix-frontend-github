@@ -1,0 +1,64 @@
+@use '../../../../pages/App/sass/container';
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.technologiesSection {
+  background-color: var(--color-white);
+
+  .container {
+    @extend .container;
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-lg) {
+      padding-bottom: toRem(260);
+      padding-top: toRem(120);
+    }
+
+    .subtitle {
+      padding-bottom: toRem(40);
+    }
+
+    .technologies {
+      list-style: none;
+      background-color: var(--color-black);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: toRem(2) toRem(1.5);
+      border: toRem(2) solid var(--color-black);
+
+      .technology {
+        background-color: var(--color-white);
+        flex: 0 1 calc(50% - 1px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (min-width: $screen-md) {
+          flex: 0 1 calc(33.3% - 1.5px);
+        }
+
+        @media only screen and (min-width: $screen-lg) {
+          flex: 0 1 calc(25% - 1.5px);
+        }
+
+        &:nth-of-type(10) {
+          .technologyText {
+            max-width: toRem(127);
+
+            @media only screen and (min-width: $screen-lg) {
+              max-width: unset;
+            }
+          }
+        }
+
+        .technologyText {
+          margin: 0;
+          padding: toRem(20) 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

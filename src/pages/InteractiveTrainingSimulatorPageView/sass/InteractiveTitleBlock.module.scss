@@ -1,0 +1,60 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+$whiteColor: #FBFDFF;
+$grayColor: #6F7D8A;
+$purpleColor: #9067C6;
+
+.titleBlock {
+  display: flex;
+  align-items: center;
+  gap: toRem(12);
+
+  @media only screen and (min-width: $screen-md) {
+    gap: toRem(29);
+  }
+
+  span {
+    position: relative;
+    width: toRem(60);
+    height: toRem(60);
+    border-radius: toRem(100);
+    background-color:  $purpleColor;
+    color: $whiteColor;
+    font-weight: 500;
+    font-size: toRem(20);
+    line-height: toRem(27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: toRem(16);
+    line-height: toRem(22);
+    padding-top: 0 !important;
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(20);
+      line-height: toRem(27);
+    }
+  }
+
+  .gray {
+    color: $grayColor;
+  }
+
+  .white {
+    color: $whiteColor !important;
+  }
+
+  .flow {
+    max-width: toRem(185);
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: unset;
+    }
+  }
+}

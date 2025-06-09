@@ -1,0 +1,21 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.cardsBox {
+  background-color: var(--color-black);
+  padding-bottom: toRem(60);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: toRem(40);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-bottom: 0;
+  }
+
+  &.whiteBlock {
+    background-color: var(--color-white);
+  }
+}

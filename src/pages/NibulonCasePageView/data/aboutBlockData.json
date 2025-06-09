@@ -1,0 +1,26 @@
+{
+  "title": "We take pride in showcasing our collaboration with Nibulon, a prominent Ukrainian company renowned for its dominance in the agrarian, agricultural, and logistics sectors on an international scale.",
+  "subtitle": "Nibulon approached our team with the aspiration to enhance its online presence, expand platform’s functionality, and improve overall user experience.",
+  "content": [
+    {
+      "id": 1,
+      "title": "Agriculture",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "6 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "Ukraine",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "2023 — present",
+      "text": "Project duration"
+    }
+  ]
+}

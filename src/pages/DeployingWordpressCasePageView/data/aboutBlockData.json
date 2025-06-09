@@ -1,0 +1,25 @@
+{
+  "title": "Learn how we used Kubernetes for deploying WordPress to ensure the client has a scalable and secure website.",
+  "content": [
+    {
+      "id": 1,
+      "title": "DevOps",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "6 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "USA",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "3 months",
+      "text": "Project duration"
+    }
+  ]
+}

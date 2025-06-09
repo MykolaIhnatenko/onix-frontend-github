@@ -1,0 +1,14 @@
+{
+  "Frontend development": [
+    "Vue.js"
+  ],
+  "Backend development": [
+    "Node.js"
+  ],
+  "Payment System": [
+    "Stripe"
+  ],
+  "Email Services": [
+    "MailChimp"
+  ]
+}

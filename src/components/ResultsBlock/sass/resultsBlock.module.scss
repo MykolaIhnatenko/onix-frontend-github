@@ -1,0 +1,119 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.blockContainer {
+  position: relative;
+  padding: toRem(120) 0;
+  overflow-y: hidden;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) 0;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    img {
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .container {
+    position: relative;
+    margin: 0;
+
+    .name {
+      margin: 0 0 toRem(20);
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin: 0 0 toRem(15);
+        font-size: toRem(14);
+        line-height: getLineHeight(20, 14);
+      }
+    }
+
+    .title {
+      padding-bottom: toRem(80);
+      max-width: toRem(1080);
+      
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1480);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(60);
+      }
+    }
+
+    .contentContainer {
+      max-width: toRem(692);
+      margin-left: auto;
+      display: flex;
+      
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(850);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-left: 0;
+        max-width: toRem(708);
+      }
+
+      .line {
+        width: toRem(2);
+        height: 100%;
+        background-color: var(--track-color);
+        margin-right: toRem(18);
+        
+        .lineActive {
+          width: toRem(2);
+          background-color: var(--color-black);
+        }
+      }
+
+      .content {
+        > div {
+          &:last-of-type {
+            .contentText {
+              margin: 0 ;
+            }
+          }
+        }
+
+        .contentText {
+          color: var(--color-black);
+          margin: 0 0 toRem(30) 0;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            margin: 0 0 toRem(20) 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.titleBlock {
+  @include generalPlexMono(18, 400, 26);
+  color: var(--color-white);
+  z-index: 1;
+  margin-bottom: toRem(20);
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    @include generalPlexMono(14, 400, 20);
+    margin-bottom: toRem(15);
+  }
+}
+
+
+.salesMargin {
+  padding: toRem(120) 0 toRem(0);
+}

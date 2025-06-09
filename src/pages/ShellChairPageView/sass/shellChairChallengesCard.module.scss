@@ -1,0 +1,70 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.card {
+  padding: toRem(20) toRem(15);
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(30) 0;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: toRem(40) 0;
+    display: flex;
+  }
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid var(--color-white);
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .titleBlock {
+    padding-bottom: toRem(20);
+    display: flex;
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      flex-basis: 49.2%;
+    }
+
+    .number, .title {
+      color: var(--color-white);
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(24);
+        line-height: getLineHeight(34, 24);
+      }
+    }
+
+    .number {
+      flex-basis: toRem(34);
+      flex-grow: 0;
+
+      @media only screen and (min-width: $screen-md) {
+        flex-basis: toRem(60);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        flex-basis: toRem(75);
+      }
+    }
+  }
+
+  .text {
+    margin: 0;
+    color: var(--color-white);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      flex-basis: 50.8%;
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      max-width: toRem(850);
+      margin-left: auto;
+    }
+  }
+}

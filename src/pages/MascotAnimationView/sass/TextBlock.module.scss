@@ -1,0 +1,29 @@
+@import "../../App/sass/breakpointsVariables.scss";
+@import "../../App/sass/mixinsFonts.scss";
+@import "../../App/sass/functions.scss";
+
+.container {
+  width : 100%;
+  padding-top: toRem(80);
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: 0;
+  }
+  
+  .title {
+    @include generalSansFont(40,500,56);
+    width: 100%;
+    margin: 0;
+    
+    @media only screen and (max-width: $screen-lg) {
+      @include generalSansFont(36,500,46);
+      padding-top: toRem(40);
+      padding-bottom: 0;
+    }
+  
+    @media only screen and (max-width: $screen-md - 1) {
+      @include generalSansFont(20, 500, 28);
+      padding-top: toRem(50);
+    }
+  }
+}

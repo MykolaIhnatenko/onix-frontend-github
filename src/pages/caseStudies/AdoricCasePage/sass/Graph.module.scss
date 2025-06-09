@@ -1,0 +1,94 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.graph {
+
+  .graphDots {
+    z-index: 2;
+  }
+
+  .animateDots {
+    path {
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      animation-name: line;
+      animation-duration: 4s;
+      animation-delay: 0s;
+      stroke-dasharray: 150;
+      stroke-dashoffset: 150;
+      animation-iteration-count: 1;
+    }
+  }
+
+  .graphLine {
+    z-index: 1;
+  }
+
+  .animateLine {
+    path {
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      animation-name: line;
+      animation-duration: 4s;
+      animation-delay: 0s;
+      stroke-dasharray: 1250;
+      stroke-dashoffset: 1250;
+      animation-iteration-count: 1;
+    }
+  }
+
+  .graphBackground {
+    z-index: 0;
+  }
+
+  .animateBackground {
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+  }
+
+  .absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media only screen and (max-width: $screen-xl) {
+      bottom: -100px;
+    }
+
+    @media only screen and (max-width: 968px) {
+      bottom: -140px;
+    }
+
+    @media only screen and (max-width: $screen-md) {
+      top: 0;
+      bottom: unset;
+    }
+  }
+
+  .none {
+    display: none;
+  }
+}
+
+@keyframes line {
+  20% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

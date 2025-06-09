@@ -1,0 +1,55 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.expertise {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding-top: toRem(80);
+
+  .title {
+    font-size: toRem(25);
+    line-height: toRem(35);
+    margin-bottom: toRem(30);
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(40);
+      line-height: toRem(56);
+      margin-bottom: toRem(40);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      font-size: toRem(50);
+      line-height: toRem(64);
+    }
+  }
+
+  .description {
+    font-size: toRem(18);
+    line-height: toRem(26);
+    font-family: var(--ibmPlexMono);
+    display: flex;
+
+    @media only screen and (max-width: $screen-xl) {
+      display: block;
+    }
+
+    p {
+      max-width: toRem(540);
+      @media only screen and (max-width: $screen-xl) {
+        max-width: none;
+      }
+    }
+
+    .commonProblems {
+      margin: toRem(130) 0 toRem(80) toRem(126);
+
+      @media only screen and (max-width: $screen-xl) {
+        margin: toRem(30) 0 toRem(100);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin: toRem(30) 0 toRem(60);
+      }
+    }
+  }
+}

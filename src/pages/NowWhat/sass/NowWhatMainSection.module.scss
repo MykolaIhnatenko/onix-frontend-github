@@ -1,0 +1,110 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainSection {
+  position: relative;
+  overflow: hidden;
+  height: toRem(640);
+  background: linear-gradient(111.34deg, #EBF7FF 0%, #DFF1FF 50%);
+
+  @media only screen and (min-width: $screen-sm) {
+    height: toRem(800);
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    height: toRem(989);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    height: toRem(700);
+    background-color: var(--color-black);
+  }
+
+  @media only screen and (min-width: $screen-xl) {
+    height: 100vh;
+    min-height: toRem(850);
+    max-height: toRem(1200);
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(154);
+      justify-content: unset;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding-top: toRem(139);
+    }
+
+    .logo {
+      @media screen and (max-width: $screen-xl) {
+        width: toRem(187);
+        height: toRem(70);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        width: toRem(160);
+        height: toRem(60);
+      }
+    }
+ 
+    .title {
+      color: var(--color-white);
+      font-size: toRem(30);
+      line-height: getLineHeight(40, 30);
+      padding-top: toRem(40);
+
+      @media only screen and (max-width: $screen-xl) {
+        font-size: toRem(24);
+        line-height: getLineHeight(34, 24);
+        padding-top: toRem(30);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+        padding-top: toRem(15);
+      }
+    }
+  }
+
+  .imageBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+
+      @media only screen and (min-width: $screen-sm) {
+        object-position: center 65%;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        object-position: center 33%;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        object-position: 18% 45%;
+      }
+
+      @media only screen and (min-width: 1600px) {
+        object-position: 18% 25%;
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        object-position: 18% top;
+      }
+    }
+  }
+}

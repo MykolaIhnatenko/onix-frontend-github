@@ -1,0 +1,25 @@
+{
+  "title": "Case study of mental health app development",
+  "content": [
+    {
+      "id": 1,
+      "title": "Healthcare",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "7 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "Germany",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "2 months",
+      "text": "Project duration"
+    }
+  ]
+}

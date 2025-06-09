@@ -1,0 +1,86 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.item {
+  padding-bottom: toRem(44);
+  z-index: 2;
+  position: relative;
+
+  @media only screen and (min-width: $screen-md) {
+    padding-bottom: toRem(48);
+    align-items: center;
+  }
+
+  &:first-of-type {
+    padding-bottom: toRem(66);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(48);
+    }
+  }
+
+  &:nth-of-type(5) {
+    padding-bottom: toRem(66);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(48);
+    }
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .itemInner {
+    display: flex;
+
+    @media only screen and (min-width: $screen-md) {
+      align-items: center;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: toRem(20);
+      line-height: getLineHeight(25, 30);
+      color: #20222C;
+      width: toRem(40);
+      height: toRem(40);
+      flex-shrink: 0;
+      flex-grow: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 1px solid #E0E4E9;
+      position: relative;
+      background-color: var(--color-white);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(24);
+        line-height: getLineHeight(30, 24);
+        width: toRem(61);
+        height: toRem(62);
+      }
+    }
+
+    p {
+      padding-left: toRem(8);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(552);
+        padding-left: toRem(18);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(558);
+      }
+
+      a {
+        color: #494b53;
+        text-decoration: underline;
+        text-decoration-color: #97a0b0;
+        text-underline-offset: toRem(5);
+      }
+    }
+  }
+}

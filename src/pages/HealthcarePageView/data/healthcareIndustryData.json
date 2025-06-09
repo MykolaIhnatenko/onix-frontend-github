@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Data Science",
+    "text": "Utilizes data analytics, machine learning, and AI to extract insights from healthcare data for improved decision-making."
+  },
+  {
+    "id": 2,
+    "title": "Blockchain",
+    "text": "Implements secure and immutable storage of healthcare records using blockchain technology for data integrity and privacy."
+  },
+  {
+    "id": 3,
+    "title": "Cloud Computing",
+    "text": "Utilizes cloud infrastructure for secure and scalable storage, processing, and analysis of healthcare data and applications."
+  },
+  {
+    "id": 4,
+    "title": "Virtual Reality",
+    "text": "Develops immersive experiences and training simulations for healthcare professionals, enhancing training and surgical planning."
+  },
+  {
+    "id": 5,
+    "title": "Augmented Reality",
+    "text": "Creates augmented reality solutions to enhance visualization and assist in medical procedures and training for healthcare providers."
+  },
+  {
+    "id": 6,
+    "title": "Mixed Reality",
+    "text": "Combines virtual and augmented reality to create interactive and immersive healthcare experiences for training and patient education."
+  },
+  {
+    "id": 7,
+    "title": "Telemedicine",
+    "text": "Creates software platforms for remote consultations, video conferencing, and virtual care, improving accessibility and convenience."
+  },
+  {
+    "id": 8,
+    "title": "Electronic Health Records",
+    "text": "Designs secure and user-friendly EHR systems for efficiently managing patient records, treatment plans, and clinical workflows."
+  }
+]

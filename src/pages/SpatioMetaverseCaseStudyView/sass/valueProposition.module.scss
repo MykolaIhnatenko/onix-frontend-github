@@ -1,0 +1,93 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.section {
+  position: relative;
+  padding: toRem(120) 0;
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) 0;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(528);
+    object-fit: cover;
+    
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(480);
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      height: toRem(431);
+    }
+  }
+  
+  .container {
+    position: relative;
+    
+    .title {
+      margin-bottom: toRem(80);
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(60);
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(40);
+      }
+    }
+    
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: toRem(80);
+      max-width: 100%;
+      
+      @media only screen and (max-width: $screen-lg) {
+        gap: toRem(60);
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        gap: toRem(40);
+      }
+      
+      .item {
+        flex: 1 1 calc(33.33% - 80px);
+        
+        @media only screen and (max-width: $screen-lg) {
+          flex: 1 1 calc(50% - 60px);
+        }
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          flex: 1 1 calc(50% - 40px);
+        }
+        
+        
+        .icon {
+          width: toRem(60);
+          height: toRem(60);
+          margin-top: toRem(20);
+          margin-bottom: toRem(30);
+          
+          @media only screen and (max-width: $screen-md - 1) {
+            width: toRem(48);
+            height: toRem(48);
+            margin-top: 0;
+            margin-bottom: toRem(20);
+          }
+        }
+        
+        .text {
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+          }
+        }
+      }
+    }
+  }
+}

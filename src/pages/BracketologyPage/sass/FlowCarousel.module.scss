@@ -1,0 +1,183 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.carousel {
+  position: relative;
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(707);
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    max-width: toRem(800);
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: $screen-xl) {
+    max-width: unset;
+    margin: unset;
+  }
+
+  .carouselItemWrapper {
+    padding: 1px;
+    position: relative;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(93deg, #503929 0%, #22100C 56.33%, #52251F 100%);
+    opacity: 0.5;
+    z-index: 2;
+    width: 100%;
+
+    @media only screen and (min-width: $screen-sm) {
+      height: toRem(370);
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(528);
+      margin: 0 auto;
+      height: toRem(295);
+    }
+    
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(355);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      width: unset;
+      height: toRem(395);
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      height: toRem(330);
+    }
+
+    .carouselItem {
+      background-color: rgba(16, 13, 12, 0.15);
+      height: 100%;
+      padding: toRem(16);
+      opacity: 0.9;
+
+      @media only screen and (min-width: $screen-sm) {
+        padding: toRem(32);
+      }
+
+      h3 {
+        color: var(--color-white);
+        text-align: center;
+        padding-bottom: toRem(12);
+      }
+
+      p {
+        text-align: center;
+        letter-spacing: -0.2px;
+        opacity: 0.9;
+        font-size: toRem(18);
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+         font-size: toRem(20);
+        }
+      }
+    }
+
+    .secondItem {
+      @media only screen and (min-width: $screen-sm) {
+        padding: toRem(52);
+      }
+
+      h3 {
+        padding-bottom: toRem(28);
+      }
+    }
+
+    .thirdItem {
+      h3 {
+        max-width: toRem(240);
+        margin: 0 auto;
+
+        @media only screen and (min-width: $screen-sm) {
+          max-width: toRem(350);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(400);
+        }
+      }
+    }
+  }
+
+  .activeCarouselItemWrapper {
+    border-image-source: linear-gradient(93deg, #E35F00 0%, #100D0C 37.7%, #100D0C 56.33%, #E31B00 100%);
+    opacity: 0.85;
+    max-width: toRem(560);
+
+    .carouselItem {
+      opacity: 1;
+
+      h3 {
+        color: var(--color-bracketology-red);
+      }
+    }
+  }
+
+  .buttonsContainer {
+    padding-top: toRem(16);
+    padding-bottom: toRem(6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  .prevButton {
+    display: none;
+
+    @media only screen and (min-width: $screen-md) {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: calc(50% - 24px);
+      z-index: 10;
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      top: calc(50% - 36px);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      left: 22vw;
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      left: toRem(500);
+    }
+  }
+
+  .nextButton {
+    display: none;
+
+    @media only screen and (min-width: $screen-md) {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: calc(50% - 24px);
+      z-index: 10;
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      top: calc(50% - 36px);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      right: 22vw;
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      right: toRem(500);
+    }
+  }
+}

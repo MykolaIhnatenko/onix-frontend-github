@@ -1,0 +1,15 @@
+<svg width="100%" height="100%" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38 44H1V46C1 48.209 2.791 50 5 50H41" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M50 27V14C50 11.791 48.209 10 46 10H7C4.791 10 3 11.791 3 14V44" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M45 46C44.447 46 44 46.447 44 47V49C44 49.553 44.447 50 45 50H58C58.553 50 59 49.553 59 49V47C59 46.447 58.553 46 58 46H55" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M55 42H42C41.447 42 41 42.447 41 43V45C41 45.553 41.447 46 42 46H55C55.553 46 56 45.553 56 45V43C56 42.447 55.553 42 55 42Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M55 42H58C58.553 42 59 41.553 59 41V39C59 38.447 58.553 38 58 38H54" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M45 38C44.447 38 44 38.447 44 39V41C44 41.553 44.447 42 45 42" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M54 34H41C40.447 34 40 34.447 40 35V37C40 37.553 40.447 38 41 38H54C54.553 38 55 37.553 55 37V35C55 34.447 54.553 34 54 34Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M54 34H57C57.553 34 58 33.553 58 33V31C58 30.447 57.553 30 57 30H44C43.447 30 43 30.447 43 31V33C43 33.553 43.447 34 44 34" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M12 36V29H8V40" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M21 34V24H17V38" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M30 32V19H26V36" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M46 21V15H40" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M46 15L39 22H34" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

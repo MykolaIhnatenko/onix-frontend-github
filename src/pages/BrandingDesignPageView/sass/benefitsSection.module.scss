@@ -1,0 +1,337 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  background-color: var(--color-black);
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: toRem(608);
+    width: 100%;
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(520);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      height: toRem(302);
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    position: relative;
+    padding: toRem(80) toRem(70);
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: toRem(80) toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      padding: toRem(80) toRem(40);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(80) toRem(30);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(80) toRem(0) toRem(0);
+    }
+
+    .title {
+      color: var(--color-white);
+      font-size: toRem(50);
+      line-height: getLineHeight(64, 50);
+      width: toRem(583);
+      margin-bottom: toRem(40);
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(40);
+        line-height: getLineHeight(56, 40);
+        width: 100%;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: fit-content;
+        margin-left: toRem(15);
+        margin-right: toRem(15);
+        font-size: toRem(25);
+        line-height: getLineHeight(35, 25);
+      }
+    }
+
+    .cardsBlock {
+      display: grid;
+      grid-gap: toRem(30);
+      grid-template-areas: "first fourth"
+                           "second fifth"
+                           "third  sixth";
+
+      @media only screen and (max-width: $screen-lg) {
+        display: flex;
+        flex-direction: column;
+        grid-gap: toRem(20);
+      }
+      @media only screen and (max-width: ($screen-md - 1)) {
+        grid-gap: toRem(15);
+      }
+
+
+      .card {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        padding: toRem(30);
+        border-bottom: 2px solid var(--color-white);
+        transition: 0.4s;
+
+        &:last-child{
+          @media only screen and (max-width: ($screen-md - 1)) {
+            .text{
+              border: none;
+            }
+          }
+        }
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          &:hover {
+            background-color: var(--color-white);
+            color: var(--color-black);
+          }
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          pointer-events: none;
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          border: none;
+          padding-bottom: 0;
+          padding-right: toRem(15);
+          padding-left: toRem(15);
+        }
+
+        &:nth-child(1) {grid-area: first;}
+        &:nth-child(2) {grid-area: second;}
+        &:nth-child(3) {grid-area: third;}
+        &:nth-child(4) {grid-area: fourth;}
+        &:nth-child(5) {grid-area: fifth;}
+        &:nth-child(6) {grid-area: sixth;}
+
+        .number {
+          font-size: toRem(36);
+          line-height: getLineHeight(46, 36);
+          margin-bottom: toRem(120);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            margin-bottom: toRem(40);
+            font-size: toRem(24);
+            line-height: getLineHeight(34, 24);
+          }
+        }
+
+        .text {
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            padding-bottom: toRem(28);
+            border-bottom: 2px solid var(--color-white);
+            font-size: toRem(20);
+            line-height: getLineHeight(28, 20);
+          }
+        }
+      }
+    }
+  }
+
+  &.devopsSolutions {
+    background: var(--color-black);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-top: toRem(40);
+    }
+
+    .background {
+      position: absolute;
+      bottom: 0;
+      top: auto;
+      left: 0;
+      height: toRem(608);
+      width: 100%;
+
+      @media only screen and (max-width: $screen-lg) {
+        height: toRem(520);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        display: none;
+      }
+
+      @media only screen and (width: $screen-md) {
+        display: block;
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .title {
+      width: auto;
+    }
+
+    .cardsBlock {
+      .card {
+        height: toRem(266);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media only screen and (max-width: $screen-lg) {
+          pointer-events: none;
+          background: transparent;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          height: toRem(230);
+        }
+
+        @media only screen and (width: $screen-md) {
+          height: toRem(266);
+        }
+
+        .number {
+          font-size: toRem(36);
+          line-height: getLineHeight(46, 36);
+          margin-bottom: 0;
+
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(24);
+            line-height: getLineHeight(34, 24);
+          }
+
+          @media only screen and (width: $screen-md) {
+            font-size: toRem(36);
+            line-height: getLineHeight(46, 36);
+          }
+        }
+
+        .text {
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(20);
+            line-height: getLineHeight(28, 30);
+          }
+
+          @media only screen and (width: $screen-md) {
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+          }
+        }
+      }
+    }
+  }
+
+  &.travel {
+    .container {
+      background-color: var(--color-black);
+      .title {
+        width: auto;
+        max-width: toRem(1080);
+      }
+
+      .cardsBlock {
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+
+        grid-template-areas: "first third"
+                            "second fourth";
+        @media only screen and (max-width: $screen-lg) {
+          display: flex;
+          flex-direction: column;
+          grid-gap: toRem(20);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          grid-gap: toRem(15);
+          padding-bottom: toRem(60);
+        }
+
+        .card {
+          background-color: var(--color-black);
+          color: var(--color-white);
+          padding: toRem(30);
+          border-bottom: 2px solid var(--color-white);
+          transition: 0.4s;
+
+          &:nth-child(1) {grid-area: first;}
+          &:nth-child(2) {grid-area: second;}
+          &:nth-child(3) {grid-area: third;}
+          &:nth-child(4) {grid-area: fourth;}
+          &:nth-child(5) {grid-area: auto;}
+          &:nth-child(6) {grid-area: auto;}
+
+          @media only screen and (min-width: ($screen-lg + 1)) {
+            &:hover {
+              background-color: var(--color-white);
+              color: var(--color-black);
+            }
+          }
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            padding-bottom: 0;
+            padding-right: toRem(15);
+            padding-left: toRem(15);
+            margin-right: toRem(15);
+            margin-left: toRem(15);
+          }
+
+          .number {
+            font-size: toRem(36);
+            line-height: getLineHeight(46, 36);
+            margin-bottom: toRem(120);
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              margin-bottom: toRem(40);
+              font-size: toRem(24);
+              line-height: getLineHeight(34, 24);
+            }
+          }
+
+          .text {
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+            max-width: toRem(565);
+
+            &.textMode {
+              max-width: toRem(519);
+            }
+
+            @media only screen and (max-width: $screen-lg) {
+              max-width: toRem(648);
+              &.textMode {
+                max-width: toRem(648);
+              }
+            }
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              padding-bottom: toRem(28);
+              border-bottom: none;
+              font-size: toRem(20);
+              line-height: getLineHeight(28, 20);
+            }
+          }
+        }
+      }
+    }
+  }
+}

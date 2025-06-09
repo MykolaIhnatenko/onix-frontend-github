@@ -1,0 +1,51 @@
+@import "../../../pages/App/sass/functions.scss";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.title {
+  font-size: toRem(50);
+  line-height: getLineHeight(64, 50);
+  margin: 0 toRem(70);
+  max-width: toRem(1083);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    margin-left: toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(40);
+    line-height: getLineHeight(56, 40);
+    margin-left: toRem(30);
+    margin-right: toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(25);
+    line-height: getLineHeight(35, 25);
+    margin-left: toRem(15);
+    margin-right: toRem(15);
+  }
+}
+
+.description {
+  font-size: toRem(20);
+  line-height: getLineHeight(28, 20);
+  margin: toRem(16) toRem(70) toRem(40) !important;
+  max-width: toRem(1083);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    margin-left: toRem(80) !important;
+  }
+
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(18);
+    line-height: getLineHeight(26, 18);
+    margin: toRem(16) toRem(30) toRem(40) !important;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(14);
+    line-height: getLineHeight(20, 14);
+    margin: toRem(20) toRem(15) toRem(40) !important;
+  }
+}

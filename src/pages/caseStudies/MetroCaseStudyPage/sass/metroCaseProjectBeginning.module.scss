@@ -1,0 +1,71 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  padding: toRem(100) toRem(30);
+  background: linear-gradient(2.21deg, #F7F8FC 1.08%, #F6F6FC 59.68%, #F0F3FF 115.89%);
+  font-family: var(--muktaVaani);
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(50) toRem(30);
+  }
+}
+
+.innerConteiner {
+  max-width: toRem(1170);
+  margin: 0 auto;
+}
+
+.contentTitle {
+  font-size: toRem(46);
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0B2F6E;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(38);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(24);
+  }
+}
+
+.contentTextWrapper {
+  max-width: toRem(730);
+  margin: toRem(30) auto 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(15) auto 0;
+  }
+}
+
+.contentText {
+  font-size: toRem(20);
+  line-height: 150%;
+  color: #333333;
+
+  &:not(:first-child) {
+    margin-top: toRem(17);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(16);
+  }
+}
+
+.contentImageWrapper {
+  max-width: toRem(1110);
+  margin: toRem(50) auto 0;
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(40);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,166 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.accordion {
+  list-style: none;
+
+  @media only screen and (min-width: $screen-md) {
+    position: relative;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    flex-basis: toRem(660);
+    padding-right: toRem(110);
+  }
+
+  .item {
+    background-color: var(--color-white);
+    border-bottom: 1px solid #E0E4E9;
+
+    &:first-of-type {
+
+      .question {
+        @media only screen and (min-width: $screen-md) {
+          padding-top: toRem(24);
+        }
+
+        .arrow {
+          @media only screen and (min-width: $screen-md) {
+            top: toRem(32);
+          }
+        }
+
+        h3 {
+          max-width: toRem(159px);
+
+          @media only screen and (min-width: $screen-md) {
+            max-width: unset;
+          }
+        }
+      }
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    .question {
+      width: 100%;
+      position: relative;
+      outline: none;
+      padding: toRem(32) toRem(24) toRem(32) 0;
+      background-color: var(--color-white);
+      z-index: 1;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(40) toRem(24) toRem(40) 0;
+      }
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        cursor: pointer;
+      }
+
+      .arrow {
+        position: absolute;
+        display: inline-block;
+        width: toRem(16);
+        height: toRem(8);
+        top: toRem(44);
+        right: 0;
+        transform-origin: center;
+        transition: all .2s ease-out;
+
+        @media only screen and (min-width: $screen-md) {
+          top: toRem(50);
+        }
+      }
+
+      .arrow:before {
+        transform: rotate(45deg);
+        transform-origin: left;
+        left: 0;
+      }
+
+      .arrow:after {
+        transform: rotate(-45deg);
+        transform-origin: right;
+        left: toRem(4);
+      }
+
+      .arrow:after, .arrow:before {
+        position: absolute;
+        width: toRem(12);
+        height: toRem(1);
+        background-color: #20222C;
+        display: block;
+        content: "";
+      }
+
+      .rotate {
+        transition: transform .2s ease-in-out;
+        transform: rotate(-180deg);
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: toRem(18);
+        line-height: getLineHeight(24, 18);
+        color: #20222C;
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(20);
+          line-height: getLineHeight(25, 20);
+        }
+      }
+    }
+
+    .answer {
+      display: none;
+    }
+
+    &.active {
+
+      .answer {
+        display: block;
+        margin-top: toRem(-22);
+        z-index: 2;
+        position: relative;
+        background-color: var(--color-white);
+
+        @media only screen and (min-width: $screen-md) {
+          margin-top: toRem(-30);
+        }
+
+        .answerInner {
+          @media only screen and (min-width: $screen-lg + 1) {
+            background-color: var(--color-white);
+            height: 100%;
+          }
+
+          p {
+            padding-bottom: toRem(32);
+            max-width: toRem(320);
+            letter-spacing: -0.1px;
+            font-weight: 400;
+            font-size: toRem(16);
+            line-height: getLineHeight(22, 16);
+            color: #313F53;
+
+            @media only screen and (min-width: $screen-md) {
+              line-height: getLineHeight(22, 18);
+              max-width: toRem(694);
+              font-size: toRem(18);
+              padding-bottom: toRem(40);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              font-size: toRem(20);
+              line-height: getLineHeight(25, 20);
+              max-width: toRem(465);
+            }
+          }
+        }
+      }
+    }
+  }
+}

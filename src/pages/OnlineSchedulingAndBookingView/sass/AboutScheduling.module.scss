@@ -1,0 +1,157 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.aboutOurScheduling {
+  z-index: 3;
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  padding: toRem(80) toRem(70);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(60) toRem(15);
+  }
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(80);
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .titleAbout {
+      width: 100%;
+      font-weight: 400;
+      font-family: var(--ibmPlexMono);
+      font-size: toRem(20);
+      margin-bottom: toRem(20);
+      line-height: toRem(26);
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(18);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(14);
+      }
+    }
+
+    .contentBox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .textBlack {
+        width: 100%;
+        font-weight: 500;
+        font-family: var(--generalSans);
+        font-size: toRem(50);
+        margin-bottom: toRem(60);
+        line-height: toRem(64);
+        color: var(--color-black);
+
+        &:last-child {
+          margin-bottom: 0;
+          margin-right: 0;
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          font-size: toRem(40);
+          line-height: toRem(56);
+          margin-bottom: toRem(40);
+        }
+  
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(24);
+          line-height: toRem(34);
+          margin-bottom: toRem(30);
+        }
+      }
+
+      .textGray {
+        width: 100%;
+        font-weight: 500;
+        font-family: var(--generalSans);
+        font-size: toRem(50);
+        margin-bottom: toRem(60);
+        line-height: 64px;
+        color: var(--color-gray-text);
+
+        &:last-child {
+          margin-bottom: 0;
+          margin-right: 0;
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          font-size: toRem(40);
+          line-height: toRem(56);
+          margin-bottom: toRem(40);
+        }
+  
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(24);
+          line-height: toRem(34);
+          margin-bottom: toRem(30);
+        }
+      }
+
+      .reverseText {
+        margin-bottom: toRem(60);
+  
+        &:last-child {
+          margin-bottom: toRem(60);
+        }
+      }
+    }
+
+    .reverse {
+      flex-direction: column-reverse; 
+    }
+  }
+
+  &.lmsBottomPadding {
+    padding: toRem(80) toRem(70) toRem(40);
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: toRem(80) toRem(80) toRem(40);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(80) toRem(30) toRem(80);
+    }
+  
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(60) toRem(15) 0;
+    }
+
+    .content {
+      .contentBox {
+        .textBlack {
+          margin-bottom: 0;
+        }
+
+        .reverseText {
+          margin-bottom: toRem(60);
+    
+          &:last-child {
+            margin-bottom: toRem(60);
+
+            @media only screen and (max-width: $screen-lg) {
+              margin-bottom: toRem(40);
+            }
+          
+            @media only screen and (max-width: ($screen-md - 1)) {
+              margin-bottom: toRem(30);
+            }
+          }
+        }
+      }
+    }
+  }
+}

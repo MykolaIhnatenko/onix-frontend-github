@@ -1,0 +1,16 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+  
+.container {
+  padding-top: toRem(120);
+  padding-bottom: toRem(80);
+  
+  @media screen and (max-width: $screen-lg) {
+    padding-top: toRem(80);
+    padding-bottom: toRem(60);
+  }
+
+  @media screen and (max-width: ($screen-md - 1)) {
+    padding-bottom: toRem(40);
+  }
+}

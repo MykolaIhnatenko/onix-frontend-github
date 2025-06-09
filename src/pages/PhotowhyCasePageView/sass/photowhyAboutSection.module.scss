@@ -1,0 +1,397 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$whitePhotowhy: #FBFDFF;
+$blackPhotowhy: #010101;
+$redPhotowhy: #CE4B46;
+$coralPhotowhy: #EEC8C7;
+$orangeBlurPhotowhy: #FF844F;
+$redBlurPhotowhy: #FF0900;
+
+.aboutPlatformSection {
+  background-color: $blackPhotowhy;
+  overflow: hidden;
+
+  .container {
+    padding-top: toRem(40);
+    padding-bottom: toRem(10);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(56);
+      padding-bottom: toRem(65);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(90);
+      padding-bottom: toRem(180);
+      max-width: toRem(1480);
+    }
+
+    h2 {
+      color: $whitePhotowhy;
+      z-index: 5;
+      position: relative;
+
+      br {
+        display: none;
+
+        @media only screen and (min-width: $screen-md) {
+          display: block;
+        }
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(450);
+        margin: 0 auto;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1080);
+      }
+    }
+
+    .contentBlock {
+      padding-top: toRem(67);
+      margin: 0 auto;
+      max-width: toRem(343);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(46);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: toRem(533);
+
+        div:nth-child(2){
+          order: 2;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            margin-bottom: toRem(30);
+          }
+        }
+
+        div:nth-child(3){
+          order: 4;
+          margin-bottom: toRem(15);
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            margin-bottom: toRem(30);
+          }
+        }
+        div:nth-child(4){
+          order: 3;
+          margin-bottom: toRem(15);
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            margin-bottom: toRem(30);
+          }
+        }
+        div:nth-child(5){
+          order: 5;
+        }
+        div:nth-child(6){
+          order: 6;
+        }
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(108);
+        max-width: toRem(1202);
+      }
+
+      .imgContainer {
+        max-width: toRem(236);
+        max-height: toRem(484);
+        margin: 0 auto;
+        position: relative;
+
+        &:first-child {
+          order: 1;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            margin-bottom: toRem(30);
+          }
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(198);
+          max-height: toRem(406);
+          flex-basis: 37%;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(413);
+          max-height: toRem(877);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 5;
+        }
+
+        .orangeBlur {
+          background-color: $orangeBlurPhotowhy;
+          position: absolute;
+          z-index: 0;
+        }
+
+        .redBlur {
+          background-color: $redBlurPhotowhy;
+          position: absolute;
+          z-index: 0;
+        }
+
+        .firstOrangeBlurBlock {
+          z-index: 2;
+          filter: blur(70px);
+          width: toRem(131);
+          height: toRem(131);
+          top: toRem(10);
+          left: toRem(-46);
+
+          @media only screen and (min-width: $screen-md) {
+            filter: blur(106px);
+            width: toRem(203);
+            height: toRem(203);
+            top: toRem(30);
+            left: toRem(-244);
+            z-index: 3;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            filter: blur(115px);
+            width: toRem(220);
+            height: toRem(180);
+            top: toRem(170);
+            left: toRem(-230);
+            z-index: 2;
+          }
+        }
+
+        .firstRedBlurBlock {
+          z-index: 1;
+          filter: blur(70px);
+          width: toRem(373);
+          height: toRem(403);
+          top: toRem(30);
+          left: toRem(-135);
+          opacity: 49%;
+
+          @media only screen and (min-width: $screen-md) {
+            filter: blur(61px);
+            top: toRem(70);
+            left: toRem(-240);
+            width: toRem(300);
+            height: toRem(300);
+            opacity: 30%;
+            z-index: 2;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            filter: blur(115px);
+            width: toRem(476);
+            height: toRem(676);
+            opacity: 49%;
+            top: toRem(90);
+            left: toRem(-209);
+            z-index: 1;
+          }
+        }
+
+        .firstPeachBlock {
+          display: none;
+
+          @media only screen and (min-width: $screen-md) {
+            display: block;
+            position: absolute;
+            background-color: rgba(255, 220, 204, 0.5);
+            filter: blur(55px);
+            top: toRem(256);
+            left: toRem(-53);
+            width: toRem(107);
+            height: toRem(107);
+            z-index: 1;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: none;
+          }
+        }
+
+        .secondOrangeBlurBlock {
+          z-index: 2;
+          filter: blur(70px);
+          top: toRem(300);
+          left: toRem(137);
+          width: toRem(131);
+          height: toRem(131);
+
+          @media only screen and (min-width: $screen-md) {
+            filter: blur(70px);
+            width: toRem(129);
+            height: toRem(129);
+            top: toRem(180);
+            left: toRem(138);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            filter: blur(141px);
+            top: toRem(600);
+            left: toRem(260);
+            width: toRem(269);
+            height: toRem(200);
+          }
+        }
+
+        .secondRedBlurBlock {
+          z-index: 1;
+          filter: blur(70px);
+          width: toRem(403);
+          height: toRem(403);
+          opacity: 49%;
+          top: toRem(-50);
+          left: toRem(209);
+
+          @media only screen and (min-width: $screen-md) {
+            filter: blur(70px);
+            top: toRem(-64);
+            left: toRem(80);
+            width: toRem(200);
+            height: toRem(269);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            filter: blur(141px);
+            top: toRem(80);
+            left: toRem(150);
+            width: toRem(460);
+            height: toRem(560);
+          }
+        }
+
+        .thirdOrangeBlurBlock {
+          z-index: 2;
+          filter: blur(70px);
+          top: toRem(310);
+          left: toRem(-93);
+          width: toRem(131);
+          height: toRem(131);
+
+          @media only screen and (min-width: $screen-md) {
+            display: none;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: block;
+            filter: blur(140px);
+            top: toRem(96);
+            left: toRem(-34);
+            width: toRem(269);
+            height: toRem(200);
+          }
+        }
+
+        .thirdRedBlurBlock {
+          z-index: 1;
+          filter: blur(70px);
+          top: toRem(-26);
+          left: toRem(-139);
+          width: toRem(403);
+          height: toRem(403);
+          opacity: 30%;
+
+          @media only screen and (min-width: $screen-md) {
+            display: none;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: block;
+            filter: blur(140px);
+            width: toRem(553);
+            height: toRem(550);
+            opacity: 49%;
+            top: toRem(270);
+            left: toRem(-214);
+          }
+        }
+      }
+
+      .contentContainer {
+        padding-top: toRem(32);
+        padding-bottom: toRem(50);
+        background-size: toRem(45) toRem(45);
+        background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+        position: relative;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-top: toRem(43);
+          background-size: toRem(110) toRem(110);
+          background-image:
+                  linear-gradient(to right, $coralPhotowhy 1px, transparent 1px),
+                  linear-gradient(to bottom, $coralPhotowhy 1px, transparent 1px);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: radial-gradient(rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0) 40.39%, #000000 76.63%);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(286);
+          height: toRem(286);
+          flex-basis: 63%;
+        }
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(718);
+          height: toRem(718);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        h3 {
+          text-transform: uppercase;
+          color: $redPhotowhy;
+          text-align: center;
+          padding-bottom: toRem(12);
+          position: relative;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-bottom: toRem(20);
+          }
+        }
+
+        p {
+          color: $whitePhotowhy;
+          position: relative;
+          text-align: center;
+
+          @media only screen and (min-width: $screen-md) {
+            margin: 0 0 0 toRem(10);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            max-width: toRem(560);
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  .text {
+    z-index: 5;
+    position: relative;
+  }
+}

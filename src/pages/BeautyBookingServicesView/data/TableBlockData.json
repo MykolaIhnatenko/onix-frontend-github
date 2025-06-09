@@ -1,0 +1,11 @@
+{
+  "title": "Mani serves two primary types\u00A0of\u00A0users",
+  "titleDesc": "Solutions we provide",
+  "desc": "Our approach was centered on enhancing the user experience significantly. Rather than simply replicating the existing service, we aimed to improve it, focusing on making the\u00A0client more satisfied. To do this, we followed a\u00A0structured design process.",
+  "data" : [
+    [
+      "who are looking for beauty services", "who are offering their expertise"
+    ]
+  ],
+  "headers": [ "Customers", "Professionals" ]
+}

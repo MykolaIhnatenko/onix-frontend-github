@@ -1,0 +1,100 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.mainContainer {
+  text-align: center;
+  padding: 0 16px;
+  max-width: 992px;
+  margin: 100px auto;
+
+  @media only screen and (max-width: 968px) {
+    margin: 50px auto;
+  }
+}
+
+.title {
+  font-size: 44px;
+  line-height: 130%;
+  max-width: 880px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 968px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+.imageWrapper {
+  max-width: 960px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.textWrapper {
+  margin-top: 40px;
+  text-align: start;
+
+  .subTitle {
+    font-weight: bold;
+    font-size: 24px;
+
+    @media only screen and (max-width: 968px) {
+      font-size: 20px;
+      line-height: 150%;
+    }
+  }
+
+  .secondSubTitle {
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media only screen and (max-width: 968px) {
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
+
+  .text {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 150%;
+    list-style-position: inside;
+
+    @media only screen and (max-width: 968px) {
+      font-size: 16px;
+    }
+
+    &.mt32 {
+      margin-top: 32px;
+      list-style-type: disc;
+    }
+  }
+}
+
+.mt80 {
+  margin-top: 80px;
+
+  @media only screen and (max-width: 968px) {
+    margin-top: 32px;
+  }
+}
+
+.mt70 {
+  margin-top: 70px;
+
+  @media only screen and (max-width: 968px) {
+    margin-top: 32px;
+  }
+}
+
+.mt60 {
+  margin-top: 60px;
+
+  @media only screen and (max-width: 968px) {
+    margin-top: 32px;
+  }
+}

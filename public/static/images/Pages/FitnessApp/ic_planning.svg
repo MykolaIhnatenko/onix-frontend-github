@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="80px" viewBox="0 0 65 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Planning</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="44.8026583%" y1="92.1287381%" x2="52.2500359%" y2="-12.3358198%" id="linearGradient-1">
+            <stop stop-color="#C8D7F6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="42.1271037%" y1="92.1287381%" x2="53.4083384%" y2="-12.3358198%" id="linearGradient-2">
+            <stop stop-color="#C8D7F6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50.3396784%" x2="100%" y2="49.6743339%" id="linearGradient-3">
+            <stop stop-color="#302B96" offset="0%"></stop>
+            <stop stop-color="#615AD3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fitness-landing-Upd" transform="translate(-296.000000, -14433.000000)">
+            <g id="Planning" transform="translate(296.000000, 14433.000000)">
+                <g id="1634874-copy">
+                    <polygon id="Path" fill="url(#linearGradient-1)" points="65 80 0 80 0 21.4648438 21.4648438 0 65 0"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-2)" points="21.4648438 21.4648438 21.4648438 0 0 21.4648438"></polygon>
+                </g>
+                <g id="Group-Copy" transform="translate(13.000000, 32.000000)" fill="url(#linearGradient-3)">
+                    <path d="M37.5,5 L10,5 L10,0 L37.5,0 C38.8806153,0 40,1.11938469 40,2.5 C40,3.88061531 38.8806153,5 37.5,5 Z M5,5 L0,5 L0,0 L5,0 L5,5 Z" id="Shape"></path>
+                    <path d="M37.5,15 L10,15 L10,10 L37.5,10 C38.8806153,10 40,11.1193847 40,12.5 C40,13.8806153 38.8806153,15 37.5,15 Z M5,15 L0,15 L0,10 L5,10 L5,15 Z" id="Shape"></path>
+                    <path d="M37.5,25 L10,25 L10,20 L37.5,20 C38.8806153,20 40,21.1193847 40,22.5 C40,23.8806153 38.8806153,25 37.5,25 Z M5,25 L0,25 L0,20 L5,20 L5,25 Z" id="Shape"></path>
+                    <path d="M37.5,35 L10,35 L10,30 L37.5,30 C38.8806153,30 40,31.1193847 40,32.5 C40,33.8806153 38.8806153,35 37.5,35 Z M5,35 L0,35 L0,30 L5,30 L5,35 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

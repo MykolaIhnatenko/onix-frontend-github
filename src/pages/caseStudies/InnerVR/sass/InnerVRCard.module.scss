@@ -1,0 +1,21 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.card {
+  border-radius: 16px;
+  border: 1.07px solid rgba(163, 116, 255, 0.05);
+  background-color: #150430;
+  padding: 25px;
+
+  @media only screen and (min-width: $screen-md) {
+   padding: 40px 25px;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: 60px;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+  max-width: 1360px;
+}

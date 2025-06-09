@@ -1,0 +1,70 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsDisplay";
+
+.downloadForm {
+  padding-top: toRem(60);
+
+  @media only screen and (min-width: $screen-xl) {
+    flex-basis: 38%;
+    padding-top: toRem(22);
+    padding-bottom: toRem(22);
+  }
+
+  .formFields {
+    @media only screen and (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: toRem(40) toRem(30);
+      padding-bottom: toRem(50);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      display: block;
+      padding-bottom: toRem(0);
+    }
+
+    .name, .email, .company, .additionalInfo {
+      margin-bottom: toRem(30);
+
+      @media only screen and (min-width: $screen-md) {
+        margin-bottom: 0;
+        @include flex-basis(30px, 2);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        margin-bottom: toRem(40);
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+}
+
+.whitepapersForm {
+  padding-top: 0;
+  padding-bottom: toRem(30);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-bottom: toRem(40);
+  }
+
+  @media only screen and (min-width: 1130px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .formFields {
+    @media only screen and (min-width: 1130px) {
+      display: block;
+      padding-bottom: 0;
+    }
+    .name, .email, .company, .additionalInfo {
+      @media only screen and (min-width: 1130px) {
+        margin-bottom: toRem(40);
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container{
+  padding: toRem(200) 0;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .content{
+    z-index: 1;
+    color: var(--color-white);
+    text-align: center;
+    font-size: toRem(20);
+  }
+  .btn {
+    height: toRem(56);
+    width: toRem(420);
+    margin-top: toRem(12);
+    &:before {
+      background: var(--color-alabaster) !important;
+    }
+  }
+  .title {
+    text-transform: none;
+    color: var(--color-white);
+    z-index: 1;
+    text-align: center;
+    .brLg{
+      display: block;
+    }
+    .brMd{
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md - 1) {
+  .container{
+    padding: toRem(80) 0;
+    .title{
+      font-size: toRem(40);
+      line-height: getLineHeight(56,40);
+      .brLg{
+        display: none;
+      }
+      .brMd{
+        display: block;
+      }
+    }
+    .content{
+      font-size: toRem(18);
+      line-height: getLineHeight(26,18);
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-sm) {
+  .container{
+    padding: toRem(100) toRem(15);
+    .title{
+      font-size: toRem(25);
+      line-height: getLineHeight(35,25);
+      text-align: left;
+      br{
+        display: none!important;
+      }
+    }
+    .content{
+      font-size: toRem(16);
+      line-height: getLineHeight(24,16);
+      margin-bottom: toRem(60);
+      margin-top: toRem(15);
+      text-align: left;
+    }
+    .btn {
+      width: toRem(330);
+    }
+  }
+}

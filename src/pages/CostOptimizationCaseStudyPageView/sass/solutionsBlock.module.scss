@@ -1,0 +1,195 @@
+@import '../../../pages/App/sass/breakpointsVariables';
+@import '../../../pages/App/sass/functions';
+
+.blockContainer {
+  position: relative;
+  padding: 0 0 toRem(120);
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: 0 0 toRem(80);
+  }
+
+  .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .blockContent {
+    position: relative;
+    .titleContainer {
+      padding-bottom: toRem(80);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-bottom: toRem(60);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(40);
+      }
+
+      .upTitle {
+        margin: 0;
+        padding-bottom: toRem(20);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding-bottom: toRem(15);
+          font-size: toRem(14);
+          line-height: getLineHeight(20, 14);
+        }
+      }
+
+      .title {
+        padding-bottom: toRem(40);
+        max-width: toRem(1080);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(25);
+          line-height: getLineHeight(35, 25);
+          padding-bottom: toRem(20);
+        }
+      }
+
+      .text {
+        margin: 0;
+        max-width: toRem(1080);
+        font-size: toRem(24);
+        line-height: getLineHeight(34, 24);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      gap: toRem(70);
+      padding-bottom: toRem(120);
+      
+      @media only screen and (max-width: $screen-lg) {
+        flex-direction: column-reverse;
+        padding-bottom: toRem(80);
+        gap: toRem(30);
+      }
+
+      .leftItem {
+        flex: 1 39.5%;
+        display: flex;
+        flex-direction: column;
+        padding-left: toRem(70);
+
+        @media only screen and (min-width: $screen-xxxl) {
+          padding-left: toRem(80);
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          padding: 0 toRem(30);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding: 0 toRem(15);
+        }
+
+        .contentTitle {
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+          padding-bottom: toRem(30);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            font-size: toRem(20);
+            line-height: getLineHeight(28, 20);
+            padding-bottom: toRem(20);
+          }
+        }
+
+        .contentText {
+          margin: 0;
+          padding-bottom: toRem(20);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+          }
+        }
+
+        > div {
+          &:last-of-type {
+            .contentText {
+              margin: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .rightItem {
+        flex: 1 64.5%;
+        height: auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .bottomImage {
+      margin: 0 auto;
+      width: 100%;
+      max-width: toRem(1022);
+      height: toRem(520);
+      margin-top: toRem(40);
+
+      @media only screen and (min-width: $screen-xxxl) {
+        margin-top: 0;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(708);
+        height: auto;
+        margin-top: 0;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: 0 toRem(15);
+        margin-top: toRem(20);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+      }
+    }
+
+    .bottomTextContainer {
+      padding-top: toRem(40);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(30) toRem(15) 0;
+      }
+
+      .bottomText {
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: toRem(16);
+        line-height: getLineHeight(22, 16);
+      }
+    }
+  }
+}

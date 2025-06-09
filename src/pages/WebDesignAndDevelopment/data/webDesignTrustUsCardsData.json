@@ -1,0 +1,52 @@
+[
+  {
+    "id": "01",
+    "title": "Custom web project",
+    "content": "We offer web development services to build a custom web solution tailored to your unique business goals and needs. Our experts assist you in creating a solid solution for your specific industry regardless of the project's complexity and scale."
+  },
+  {
+    "id": "02",
+    "title": "Web app (B2B/B2C)",
+    "content": "Onix helps B2B/B2C businesses boost their efficiency with solid and reliable web apps. Leveraging the most robust technologies, our team creates highly competitive web solutions tailored to your business and customers' needs."
+  },
+  {
+    "id": "03",
+    "title": "Enterprise solution",
+    "content": "Our specialists help you build enterprise-grade solutions to boost your business efficiency. We create top-of-the-line web software that's secure, flexible, customizable, scalable, and operates properly on various devices and platforms."
+  },
+  {
+    "id": "04",
+    "title": "Ecommerce website",
+    "content": "The Onix team builds eCommerce websites to help you sell more efficiently and grow faster. Using our offshore website development services, you can create an online store that is reliable, secure, and highly scalable. Build your own fully-fledged eCommerce business right now!"
+  },
+  {
+    "id": "05",
+    "title": "SaaS",
+    "content": "We assist you in creating a new cloud-based app or improving an existing product. Our experts help your business stand out from competitors with a cost-effective, stable, reliable and a user-centric SaaS solution."
+  },
+  {
+    "id": "06",
+    "title": "CMS",
+    "content": "Our developers have extensive experience building tailored CMS solutions for any specific industry. We're here to create a feature-rich, flexible, and user-friendly CMS that enhances and elevates your website and content management."
+  },
+  {
+    "id": "07",
+    "title": "CRM systems",
+    "content": "We have keen knowledge of building custom CRM software aligned with your business processes. Our solution allows you to store customer and prospect contact information, automate sales, and effectively manage marketing campaigns — all in one place. Boost productivity and meet client needs using our solution!"
+  },
+  {
+    "id": "08",
+    "title": "ERP systems",
+    "content": "Our experts build ERP systems that digitize the business management process by collecting, storing, managing, and interpreting data from all units of a company in one digital place. Our solutions provide internal process automation, business data analytics, effective financial management, and many more."
+  },
+  {
+    "id": "09",
+    "title": "Web design",
+    "content": "We deliver offshore web design services that allow your product to stand out from the crowd. Onix's experts combine years of experience in designing, understanding the UI/UX best practices, and attention to each client's requirements and target audience's needs to offer unique, highly aesthetic, and innovative designs."
+  },
+  {
+    "id": "10",
+    "title": "Support and maintenance",
+    "content": "After the development process is over, our team can help you with the web solution upgrade based on real users’ feedback, software performance, and changing needs or requirements. Or you can scale up the project if you are ready to go forward."
+  }
+]

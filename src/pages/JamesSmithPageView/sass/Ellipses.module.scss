@@ -1,0 +1,107 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.topLeftEllipse {
+  position: absolute;
+  left: toRem(-71);
+  top: toRem(147);
+  width: toRem(847);
+  height: toRem(877);
+
+  @media only screen and (max-width: $screen-lg) {
+    left: toRem(-134);
+    top: toRem(248);
+  }
+
+  @media only screen and (max-width: $screen-md + 1) {
+    width: toRem(422);
+    height: toRem(436);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    left: toRem(22);
+    top: toRem(250);
+    width: toRem(220);
+    height: toRem(228);
+  }
+}
+
+.topRightEllipse {
+  position: absolute;
+  right: toRem(-298);
+  top: toRem(-190);
+  width: toRem(847);
+  height: toRem(877);
+
+  @media only screen and (max-width: $screen-lg) {
+    right: toRem(-368);
+    top: toRem(-465);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    right: toRem(-104);
+    top: toRem(-71);
+    width: toRem(286);
+    height: toRem(295);
+  }
+}
+
+.bottomLeftEllipse {
+  position: absolute;
+  left: toRem(-285);
+  top: toRem(400);
+  width: toRem(847);
+  height: toRem(877);
+
+  @media only screen and (max-width: $screen-lg) {
+    left: toRem(-285);
+    top: toRem(400);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    left: toRem(-221);
+    top: toRem(261);
+    width: toRem(470);
+    height: toRem(486);
+  }
+}
+
+.bottomRightEllipse {
+  position: absolute;
+  right: toRem(-256);
+  top: toRem(82);
+  width: toRem(847);
+  height: toRem(877);
+
+  @media only screen and (max-width: $screen-lg) {
+    right: toRem(-326);
+    top: toRem(-193);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    right: toRem(-90);
+    top: toRem(21);
+    width: toRem(285);
+    height: toRem(295);
+  }
+}
+
+.centerEllipse {
+  @media only screen and (max-width: $screen-lg) {
+    position: absolute;
+    left: toRem(-71);
+    top: toRem(147);
+    width: toRem(847);
+    height: toRem(877);
+  }
+}
+
+.leftMiddleEllipse {
+  @media only screen and (max-width: $screen-lg) {
+    position: absolute;
+    left: toRem(-240);
+    top: toRem(374);
+    width: toRem(422);
+    height: toRem(436);
+  }
+}

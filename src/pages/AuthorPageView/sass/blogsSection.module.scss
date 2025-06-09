@@ -1,0 +1,49 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.blogsSection {
+
+  @media only screen and (min-width: $screen-xxl) {
+    width: toRem(1440);
+    margin: 0 auto;
+  }
+
+  .container {
+    padding-top: toRem(80);
+
+    .title {
+      padding-bottom: toRem(30);
+    }
+
+    hr {
+      border-top: 0.5px solid var(--color-dark-gray2);
+      border-bottom: 0.5px solid var(--color-black);
+      border-left: 1px solid var(--color-black);
+      border-right: 1px solid var(--color-black);
+      margin: 0;
+    }
+  }
+
+  .blogsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0 toRem(37);
+
+    @media only screen and (max-width: $screen-lg + 1) {
+      gap: 0 toRem(20);
+    }
+
+    > div {
+      @media only screen and (min-width: $screen-lg + 1) {
+        flex: 0 0 calc((100% / 3) - 25px);
+      }
+      @media only screen and (max-width: $screen-lg) {
+        flex: 0 0 calc((100% / 2) - 10px);
+      }
+      @media only screen and (max-width: $screen-md - 1) {
+        flex: 0 0 100%;
+      }
+    }
+  }
+}

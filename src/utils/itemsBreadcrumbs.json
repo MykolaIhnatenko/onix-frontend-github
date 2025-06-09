@@ -1,0 +1,612 @@
+[
+  {
+    "id": 3,
+    "title": "Booking System and Online Scheduling",
+    "path": "/scheduling-and-booking-system-development-services"
+  },
+  {
+    "id": 3,
+    "title": "Sports & Fitness Development Services",
+    "path": "/sports-and-fitness-development-services"
+  },
+  {
+    "id": 3,
+    "title": "Fintech Development",
+    "path": "/fintech-software-and-app-development"
+  },
+  {
+    "id": 3,
+    "title": "Case Studies",
+    "path": "/case-studies"
+  },
+  {
+    "id": 3,
+    "title": "Design Portfolio",
+    "path": "/design-portfolio"
+  },
+  {
+    "id": 3,
+    "title": "The Onix Story",
+    "path": "/the-onix-story"
+  },
+  {
+    "id": 3,
+    "title": "Healthcare Dev",
+    "path": "/healthcare-software-development-services"
+  },
+  {
+    "id": 3,
+    "title": "About Ukraine",
+    "path": "/about-ukraine"
+  },
+  {
+    "id": 3,
+    "title": "Travel and Hospitality Software Development Company",
+    "path": "/travel-software-development-services"
+  },
+  {
+    "id": 3,
+    "title": "Motion Design",
+    "path": "/motion-graphics-design-services"
+  },
+  {
+    "id": 3,
+    "title": "Web development",
+    "path": "/web-design-and-development"
+  },
+  {
+    "id": 3,
+    "title": "National Holidays",
+    "path": "/national-holidays-in-ukraine"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX design",
+    "path": "/ui-ux-design-and-development-services"
+  },
+  {
+    "id": 3,
+    "title": "Product Discovery",
+    "path": "/product-discovery"
+  },
+  {
+    "id": 3,
+    "title": "QA",
+    "path": "/software-testing-qa-services"
+  },
+  {
+    "id": 3,
+    "title": "3D Art",
+    "path": "/3d-game-art-development-services"
+  },
+  {
+    "id": 3,
+    "title": "DevOps",
+    "path": "/devops-services"
+  },
+  {
+    "id": 3,
+    "title": "Skincare & cosmetics analysis AI app",
+    "path": "/cosmetics-analysis-ai-app-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Metro UA",
+    "path": "/metro-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Stridist",
+    "path": "/stridist-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Salesforce application",
+    "path": "/salesforce-process-automation-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Phlex",
+    "path": "/phlex-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Digital Healthcare at Home",
+    "path": "/digital-healthcare-at-home-case-study"
+  },
+  {
+    "id": 3,
+    "title": "BSTEVR",
+    "path": "/bstevr-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Clubhouse",
+    "path": "/clubhouse-case-study"
+  },
+  {
+    "id": 3,
+    "title": "NowWhat",
+    "path": "/nowwhat-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Services Overview",
+    "path": "/services"
+  },
+  {
+    "id": 3,
+    "title": "Android dev",
+    "path": "/android-application-development"
+  },
+  {
+    "id": 3,
+    "title": "iOS dev",
+    "path": "/ios-development"
+  },
+  {
+    "id": 3,
+    "title": "ML Dev",
+    "path": "/machine-learning-development-services"
+  },
+  {
+    "id": 3,
+    "title": "VR/AR Dev",
+    "path": "/ar-vr-development-services"
+  },
+  {
+    "id": 3,
+    "title": "Dedicated Team",
+    "path": "/dedicated-team"
+  },
+  {
+    "id": 3,
+    "title": "Salesforce",
+    "path": "/salesforce-dev-services"
+  },
+  {
+    "id": 3,
+    "title": "E-learning Software Development Services",
+    "path": "/elearning-development-services"
+  },
+  {
+    "id": 3,
+    "title": "LMS Software Development Services",
+    "path": "/lms-development-services"
+  },
+  {
+    "id": 3,
+    "title": "Peer-to-peer learning app development for PhotoWhy",
+    "path": "/photowhy-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Edplus",
+    "path": "/edplus-study-case"
+  },
+  {
+    "id": 3,
+    "title": "Adoric",
+    "path": "/adoric-case"
+  },
+  {
+    "id": 3,
+    "title": "Bracketology",
+    "path": "/bracketology-case-study"
+  },
+  {
+    "id": 3,
+    "title": "MisterB&B",
+    "path": "/misterbnb-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Fayno Market App",
+    "path": "/grocery-mobile-app-development-case-study"
+  },
+  {
+    "id": 3,
+    "title": "BetterMe",
+    "path": "/betterme-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Colorado's Premier Video Production Platform",
+    "path": "/colorado-sports-video-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Learning Pool",
+    "path": "/learning-pool-case"
+  },
+  {
+    "id": 3,
+    "title": "James Smith Academy",
+    "path": "/james-smith-academy-case-study"
+  },
+  {
+    "id": 3,
+    "title": "ProjectX",
+    "path": "/project-x-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Banská Štiavnica Historical VR Tour",
+    "path": "/banska-stiavnica"
+  },
+  {
+    "id": 3,
+    "title": "Timescope",
+    "path": "/timescope"
+  },
+  {
+    "id": 3,
+    "title": "MiPaddle",
+    "path": "/mipaddle-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Netstat",
+    "path": "/netstat-case"
+  },
+  {
+    "id": 3,
+    "title": "Marine Safety",
+    "path": "/marine-safety-case"
+  },
+  {
+    "id": 3,
+    "title": "Banská Štiavnica Historical VR Tour",
+    "path": "/banska-stiavnica"
+  },
+  {
+    "id": 3,
+    "title": "Timescope",
+    "path": "/timescope"
+  },
+  {
+    "id": 3,
+    "title": "Onix AR",
+    "path": "/onix-ar-app"
+  },
+  {
+    "id": 3,
+    "title": "HoloKit X",
+    "path": "/mixed-reality-holokit"
+  },
+  {
+    "id": 3,
+    "title": "Unity: DSM. We make it possible",
+    "path": "/unity-dsm"
+  },
+  {
+    "id": 3,
+    "title": "AHTS VR Simulator",
+    "path": "/ship-vr-simulator-case"
+  },
+  {
+    "id": 3,
+    "title": "Scheduler For Medical Doctors",
+    "path": "/scheduler-for-medical-doctors-case"
+  },
+  {
+    "id": 3,
+    "title": "Unreal Space",
+    "path": "/unreal-space"
+  },
+  {
+    "id": 3,
+    "title": "Construction VR/MR",
+    "path": "/construction-vr-mr"
+  },
+  {
+    "id": 3,
+    "title": "Data-driven Design",
+    "path": "/data-driven-design"
+  },
+  {
+    "id": 3,
+    "title": "bonus",
+    "path": "/bonus"
+  },
+  {
+    "id": 3,
+    "title": "InnerVR",
+    "path": "/innervr-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Haas",
+    "path": "/haas-automation-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Wine Picker",
+    "path": "/wine-case"
+  },
+  {
+    "id": 3,
+    "title": "The 4D Insight Interactive Simulator",
+    "path": "/interactive-training-simulator-case-study"
+  },
+  {
+    "id": 3,
+    "title": "360° Shower",
+    "path": "/duscholux-360-shower-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Cryptocurrency Exchange Platform",
+    "path": "/cryptocurrency-exchange-platform-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Cinematic Virtual Reality Distribution",
+    "path": "/one-touch-vr"
+  },
+  {
+    "id": 3,
+    "title": "TravelBid",
+    "path": "/travelbid-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Heroku to AWS",
+    "path": "/application-migration-from-heroku-to-aws-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Nestb",
+    "path": "/nestb-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Volkswagen Beetle",
+    "path": "/volkswagen-beetle-car-website-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Convert",
+    "path": "/convert-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Adoric",
+    "path": "/adoric-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Mani",
+    "path": "/beauty-booking-services-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "ChinEasy",
+    "path": "/chineasy-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Space News Portal Hero Section Design",
+    "path": "/space-news-portal-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Progress 247",
+    "path": "/fitness-coaching-platform-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Usability Testing",
+    "path": "/usability-testing-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Motion Design Saga: Custom Animated Concept For a Dynamic Digital Agency",
+    "path": "/animated-concept-digital-agency-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Space News Portal Hero Section Design",
+    "path": "/space-news-portal-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Shell Chair Design",
+    "path": "/webflow-shell-chair-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Solomiya",
+    "path": "/mental-health-app-development-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Progress 247",
+    "path": "/fitness-coaching-platform-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Keybok",
+    "path": "/keybok-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Trvlpage",
+    "path": "/trvlpage-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Onix News and Updates Coverage",
+    "path": "/status"
+  },
+  {
+    "id": 3,
+    "title": "Hunter",
+    "path": "/hunter-ecommerce-platform-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Deploying WordPress on Kubernetes",
+    "path": "/deploying-wordpress-on-kubernetes-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Usability Testing",
+    "path": "/usability-testing-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Image Classification",
+    "path": "/ai-image-classification-solution-case-study"
+  },
+  {
+    "id": 3,
+    "title": "LSTM News Categorizer",
+    "path": "/lstm-news-categorizer-case-study"
+  },
+  {
+    "id": 3,
+    "title": "10Adventures Travel Marketplace Redesign and Brand Identity Development",
+    "path": "/travel-marketplace-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Replacing Faces in a Video Stream",
+    "path": "/ai-face-replacing-solution-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Referral Program",
+    "path": "/referral-program"
+  },
+  {
+    "id": 3,
+    "title": "Solomiya",
+    "path": "/mental-health-app-development-case-study"
+  },
+  {
+    "id": 3,
+    "title": "TravelTail",
+    "path": "/pet-travel-platform-development-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Anija Manor — VR museum development case study",
+    "path": "/interactive-vr-museum-development-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Webflow Website Development and Design for Gaming Production Company",
+    "path": "/webflow-design-development-gaming-production-company-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Vyra",
+    "path": "/learning-platform-development-case-study"
+  },
+  {
+    "id": 3,
+    "title": "InnerAI – meditation and mindfulness app",
+    "path": "/innerai-meditation-app-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Switzerland Living Cost Calculator",
+    "path": "/switzerland-living-cost-calculator-case-study"
+  },
+  {
+    "id": 3,
+    "title": "How Onix reduced the cost of project infrastructure using AWS resources",
+    "path": "/cost-optimization-of-project-infrastructure-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Noisy Neighbor",
+    "path": "/noisy-neighbor-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "VR medical training solution",
+    "path": "/vr-medical-training-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Golf Live",
+    "path": "/online-golf-coaching-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Testimonials",
+    "path": "/video-testimonials"
+  },
+  {
+    "id": 3,
+    "title": "A spending card & banking app for kids",
+    "path": "/kids-banking-app-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Healthcare customer relationship management case study",
+    "path": "/custom-crm-healthcare-insurance-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Spatio",
+    "path": "/spatio-metaverse-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Exposure Lights",
+    "path": "/product-3d-modeling-animation-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Apartment booking website case study",
+    "path": "/apartment-booking-website-case-study"
+  },
+  {
+    "id": 3,
+    "title": "The design creation for agrarian website by Onix",
+    "path": "/agriculture-industry-website-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Apartments Rental Company Case Study",
+    "path": "/apartment-rental-company-website-case-study"
+  },
+  {
+    "id": 3,
+    "title": "HCP portal development",
+    "path": "/healthcare-provider-portal-case-study"
+  },
+  {
+    "id": 3,
+    "title": "TriptoVR",
+    "path": "/virtual-tours-app-development-case-study"
+  },
+  {
+    "id": 3,
+    "title": "The creation of 3D mascot animation",
+    "path": "/3d-mascot-animation-design-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Web Application Development for Analytics Company",
+    "path": "/unified-data-analytics-platform-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Livbox",
+    "path": "/creativity-management-app-case-study"
+  },
+  {
+    "id": 3,
+    "title": "AR Car Showroom",
+    "path": "/ar-car-showroom-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Joobs",
+    "path": "/job-search-experience-platform-case-study"
+  }
+]

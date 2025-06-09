@@ -1,0 +1,160 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: toRem(80) 0;
+
+  .title {
+    width: toRem(543);
+    margin-left: toRem(70);
+    margin-bottom: toRem(58);
+
+    @media only screen and (min-width: $screen-xxxl) {
+      margin-left: toRem(80);
+      margin-right: toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-left: toRem(30);
+      margin-right: toRem(30);
+      width: auto;
+      max-width: 100%;
+      margin-bottom: toRem(20);
+      font-size: toRem(40);
+      line-height: getLineHeight(56, 40);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-left: toRem(15);
+      margin-right: toRem(15);
+      margin-bottom: toRem(20);
+      font-size: toRem(25);
+      line-height: getLineHeight(35, 25);
+    }
+  }
+
+  .row {
+    padding: 0 toRem(70);
+    transition: 0.4s;
+    position: relative;
+    background: transparent;
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: 0 toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-left: toRem(30);
+      padding-right: toRem(30);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-left: toRem(15);
+      padding-right: toRem(15);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity .4s;
+      z-index: 0;
+    }
+
+
+    &:nth-child(odd) {
+      &:after {
+        background: linear-gradient(90deg, rgba(48, 211, 179, 0.50) 10.7%, rgba(49, 140, 194, 0.50) 93.3%), #FFF;
+      }
+    }
+
+    &:nth-child(even) {
+      &:after {
+        background: linear-gradient(90deg, rgba(49, 140, 194, 0.50) 10.7%, rgba(48, 211, 179, 0.50) 93.3%), #FFF;
+      }
+    }
+
+    &:hover {
+      .text {
+        position: relative;
+        color: var(--color-black);
+        border-color: #ffffff00;
+        z-index: 2;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    .text {
+      padding-bottom: toRem(30);
+      padding-top: toRem(30);
+      font-size: toRem(30);
+      line-height: getLineHeight(40, 30);
+      text-transform: uppercase;
+      border-top: 2px solid var(--color-white);
+
+      @media only screen and (max-width: $screen-lg) {
+        text-align: center;
+        font-size: toRem(28);
+        line-height: getLineHeight(40, 28);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(20);
+        padding-top: toRem(20);
+        font-size: toRem(18);
+        line-height: getLineHeight(24, 18);
+      }
+    }
+  }
+}
+
+
+.textCenter {text-align: center;}
+
+.textStart {text-align: start;}
+
+.textEnd {text-align: end;}
+
+.rowsBlock{
+  .row{
+    &:first-child{
+      .text{
+        border: none;
+      }
+    }
+    &:last-child{
+      .text{
+        border-bottom:  2px solid var(--color-white);
+      }
+    }
+    &:nth-child(1):hover ~ :nth-child(2){
+      .text{
+        border-color: transparent;
+      }
+    }
+    &:nth-child(2):hover ~ :nth-child(3){
+      .text{
+        border-color: transparent;
+      }
+    }
+    &:nth-child(3):hover ~ :nth-child(4){
+      .text{
+        border-color: transparent;
+      }
+    }
+    &:nth-child(4):hover ~ :nth-child(5){
+      .text{
+        border-top-color: transparent;
+      }
+    }
+  }
+}

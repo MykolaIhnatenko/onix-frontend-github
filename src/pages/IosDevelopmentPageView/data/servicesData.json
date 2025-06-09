@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01",
+    "title": "iOS Development Consulting",
+    "content": "Our consulting services provide expert advice and guidance to identify potential problems and devise solutions that fit their particular project needs."
+  },
+  {
+    "id": "02",
+    "title": "iOS Native Development",
+    "content": "We specialize in native iOS development using the latest tools like Swift and Xcode to create your needed app."
+  },
+  {
+    "id": "03",
+    "title": "Third-Party Integrations",
+    "content": "We can integrate third-party services into your app, allowing for a seamless user experience and better performance."
+  },
+  {
+    "id": "04",
+    "title": "QA & Testing",
+    "content": "Our team of experts ensures your app is properly tested for quality assurance before being released on the App Store."
+  },
+  {
+    "id": "05",
+    "title": "Maintenance & Support",
+    "content": "We provide ongoing maintenance and support for your iOS app after its release so it remains bug-free and up-to-date with the latest features."
+  },
+  {
+    "id": "06",
+    "title": "App Store Optimization",
+    "content": "We provide ASO services to help ensure that your app reaches its full potential on the App Store, optimizing its visibility to potential users."
+  },
+  {
+    "id": "07",
+    "title": "UI/UX Design",
+    "content": "Our UI/UX designers are experienced in creating beautiful and intuitive designs that give users an enjoyable experience when using your app."
+  },
+  {
+    "id": "08",
+    "title": "Cross-Platform Development",
+    "content": "We can build apps that work both on Android and iOS devices, allowing you to reach more users with one unified product."
+  }
+]

@@ -1,0 +1,109 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.responsibilitySection {
+  position: relative;
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: toRem(250);
+    left: 0;
+    z-index: 1;
+    bottom: 0;
+    
+    img{
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(70);
+      background: linear-gradient(0deg, rgba(253, 253, 253, 0) 15%, #000000 100%);
+      top: 0;
+      left: 0;
+      position: absolute;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        height: toRem(110);
+      }
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      width: 100%;
+      height: toRem(495);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: 100%;
+      height: toRem(301);
+    }
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    background-size: 100% toRem(495);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    background-size: 100% toRem(493);
+  }
+
+  &::before {
+    @media only screen and (min-width: $screen-lg + 1) {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: toRem(-293);
+      width: 100%;
+      height: toRem(207);
+      background: linear-gradient(180deg, var(--color-black) 7.81%, rgba(0, 0, 0, 0) 100%);
+      transform: rotate(180deg);
+      z-index: 1;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    padding-top: toRem(60);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(90);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: 0;
+      padding-bottom: toRem(92);
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(80);
+      padding-right: toRem(80);
+    }
+
+    .title {
+      color: var(--color-white);
+      padding-bottom: toRem(30);
+      max-width: toRem(205);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(60);
+        max-width: unset;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(80);
+      }
+    }
+
+    .cardsBlock {
+      @media only screen and (min-width: $screen-xl) {
+        display: flex;
+        gap: toRem(40);
+      }
+    }
+  }
+}

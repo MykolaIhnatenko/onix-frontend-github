@@ -1,0 +1,88 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.aboutProject {
+  display: flex;
+  flex-wrap: wrap;
+  gap: toRem(15);
+  padding-top: toRem(24);
+  
+  @media only screen and (min-width: $screen-sm) {
+    max-width: toRem(368);
+  }
+  
+  @media only screen and (min-width: $screen-md) {
+    display: block;
+    padding-top: toRem(40);
+  }
+  
+  @media only screen and (min-width: $screen-lg + 1) {
+    display: flex;
+    gap: toRem(60);
+    max-width: toRem(540);
+    padding-top: toRem(68);
+  }
+  
+  .projectItem {
+    display: flex;
+    align-items: center;
+    gap: toRem(4);
+    flex: 0 1 calc((100% - 15px) / 2);
+    padding: toRem(28) 0;
+    
+    @media only screen and (min-width: $screen-md) {
+      gap: toRem(16);
+      padding: 0;
+    }
+    
+    @media only screen and (min-width: $screen-lg + 1) {
+      flex: 0 1 calc((100% - 60px) / 2);
+      max-width: toRem(240);
+      padding: toRem(14) 0;
+    }
+    
+    &:not(:first-child) {
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(59);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(14);
+      }
+    }
+    
+    .imgContainer {
+      flex-shrink: 0;
+    }
+    
+    .content {
+      .subtitle {
+        font-weight: 400;
+        font-size: toRem(14);
+        line-height: getLineHeight(16, 14);
+        color: #DBD9E7;
+        padding-bottom: toRem(4);
+        opacity: 0.8;
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(16);
+          line-height: getLineHeight(16, 16);
+          padding-bottom: toRem(8);
+        }
+      }
+      
+      .itemTitle {
+        font-weight: 500;
+        font-size: toRem(18);
+        line-height: getLineHeight(24, 18);
+        color: #FAFAFB;
+        font-family: var(--satoshiFont), sans-serif;
+        
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(24);
+          line-height: getLineHeight(32, 24);
+        }
+      }
+    }
+  }
+}

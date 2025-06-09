@@ -1,0 +1,137 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding: toRem(120) 0 toRem(96);
+  position: relative;
+
+  .background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 460px;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(80);
+      background: linear-gradient(0deg, rgba(253, 253, 253, 0) 15%, #ffffff 100%);
+      top: 0;
+      left: 0;
+      position: absolute;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        height: toRem(110);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      height: 240px;
+    }
+
+    @media only screen and (width: $screen-md) {
+      height: 460px;
+    }
+  }
+
+  .containerContent {
+    position: relative;
+    .content {
+      padding-bottom: toRem(140);
+      @media only screen and (min-width: $screen-xxl) {
+        padding-left: toRem(70);
+        padding-right: toRem(70);
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        padding-left: toRem(80);
+        padding-right: toRem(80);
+      }
+
+      .title{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 1020px;
+        padding-bottom: toRem(60);
+        font-size: toRem(36);
+        line-height: getLineHeight(46, 36);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .container {
+    padding: toRem(120) toRem(30) toRem(60);
+    .containerContent {
+      .content {
+        max-width: 1020px;
+        padding-bottom: toRem(120);
+        .title{
+          padding-bottom: toRem(60);
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md - 1) {
+  .container {
+    padding: toRem(80) toRem(15) toRem(60);
+    
+    .containerContent {
+      .content {
+        max-width: 1020px;
+        padding-bottom: toRem(80);
+        .title{
+          padding-bottom: toRem(60);
+          font-size: toRem(24);
+          line-height: getLineHeight(35, 24);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width: $screen-md) {
+  .container {
+    padding: toRem(120) toRem(30) toRem(60);
+    
+    .containerContent {
+      .content {
+        max-width: 1020px;
+        padding-bottom: toRem(120);
+        .title{
+          padding-bottom: toRem(60);
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+        }
+      }
+    }
+  }
+}
+
+.test {
+  padding: toRem(70);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(30);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: toRem(15);
+  }
+
+  @media only screen and (width: $screen-md) {
+    padding: toRem(30);
+  }
+}

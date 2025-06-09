@@ -1,0 +1,93 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.resultsSection {
+  background-color: var(--color-black);
+  position: relative;
+
+  .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(520);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: toRem(271);
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(70);
+      background: linear-gradient(0deg, rgba(253, 253, 253, 0) 15%, #000000 100%);
+      top: 0;
+      left: 0;
+      position: absolute;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        height: toRem(85);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    padding-top: toRem(80);
+    z-index: 2;
+    position: relative;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(74);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(40);
+      max-width: toRem(1360);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      padding-top: toRem(70);
+    }
+
+    .title {
+      color: var(--color-white);
+      text-align: center;
+      max-width: toRem(330);
+      margin: 0 auto;
+      padding-bottom: toRem(5);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(708);
+        padding-bottom: toRem(60);
+        font-size: toRem(36);
+        line-height: toRem(46);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1080);
+        font-size: toRem(40);
+        line-height: toRem(56);
+        padding-bottom: toRem(40);
+      }
+    }
+
+    .items {
+      list-style: none;
+
+      @media only screen and (min-width: $screen-md) {
+        display: flex;
+        gap: toRem(15);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        gap: toRem(40);
+      }
+    }
+  }
+}

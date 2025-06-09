@@ -1,0 +1,284 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+@import "../../../App/sass/mixinsAnimation";
+
+$soft-red: #C9333A;
+$blue: #0055B4;
+$gray: #767B84;
+$light-gray: #FAFCFF;
+$default-box-shadow: 0 20px 50px 5px #EDF0F7;
+$heading-color: #333;
+
+.storyFour {
+  margin: 20px 0 0 calc(-50vw + 50%);
+  padding: 20px 30px;
+  background-color: $light-gray;
+  display: flex;
+  width: 100vw;
+
+  .number {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--muktaVaani);
+  }
+
+  .heading {
+    padding: 0 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--muktaVaani);
+    color: white;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    @media only screen and (min-width: 768px) {
+      .number, .heading {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: var(--muktaVaani);
+    }
+  }
+
+  .contentWrapper {
+    .content {
+      .number {
+        color: $soft-red;
+      }
+      .heading {
+        width: fit-content;
+        background-color: $soft-red;
+      }
+
+      .projectsContainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-top: 30px;
+
+        .projectContainer {
+          position: relative;
+          padding: 60px 20px 20px;
+          flex: 1 1 350px;
+          display: flex;
+          flex-flow: column nowrap;
+          background-color: white;
+          border-top-left-radius: 40px;
+          box-shadow: $default-box-shadow;
+
+          .subtitle {
+            text-align: center;
+            color: $blue;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 32px;
+            font-family: var(--muktaVaani);
+          }
+
+          .text {
+            margin-top: 10px;
+            p:not(:last-child) {
+              margin-bottom: 30px;
+            }
+          }
+
+          .projectImage {
+            position: absolute;
+            top: -5%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            @include translateX(-50%);
+          }
+        }
+        & > .projectContainer ~ .projectContainer {
+          margin-top: 50px;
+          border-top-left-radius: 0;
+          border-bottom-right-radius: 40px;
+        }
+      }
+      .developers {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        .developer {
+          margin-bottom: 20px;
+          max-width: 204px;
+          .imageWrapper {
+            text-align: center;
+            img {
+              display: block;
+              max-width: 100%;
+            }
+          }
+          .subtitle {
+            margin: 10px 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 26px;
+            font-family: var(--muktaVaani);
+            color: $gray;
+          }
+          .text {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            font-family: var(--muktaVaani);
+            margin-top: 5px;
+            color: $heading-color;
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      &.center {
+        div:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+      &.mLeft {
+        margin-top: 55px;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      &:nth-child(2) {
+        .text {
+          div:first-child > p {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: 576px) {
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    @media only screen and (min-width: 768px) {
+      max-width: 720px;
+      margin: 0 auto;
+      .content {
+        &:first-child {
+          flex-flow: row nowrap;
+        }
+        .projectsContainer {
+          margin-top: 80px;
+          .projectContainer {
+            flex-basis: 500px;
+            flex-grow: 0;
+          }
+          & > .projectContainer ~ .projectContainer {
+            margin-top: 70px;
+          }
+        }
+        .developers {
+          flex-flow: row wrap;
+          justify-content: flex-start;
+          margin-right: -60px;
+          .developer {
+            margin: 0 18px 30px 0;
+            &:nth-child(even) {
+              margin-top: 25px;
+            }
+            .subtitle {
+              font-size: 25px;
+              line-height: 32.5px;
+            }
+            .text {
+              font-size: 18px;
+              line-height: 23.4px;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: 1400px) {
+      max-width: 1140px;
+      margin: 0 auto;
+      .content {
+        .projectsContainer {
+          margin-top: 100px;
+          justify-content: center;
+          .projectContainer {
+            margin-right: 40px;
+            max-width: 350px;
+          }
+          & > .projectContainer ~ .projectContainer {
+            margin: 0;
+          }
+        }
+        .developers {
+          justify-content: space-between;
+        }
+        &.wide {
+          width: 100vw;
+          margin-left: calc(-50vw + 50%);
+          .developers {
+            max-width: 1200px;
+            margin: 0 auto;
+            .developer {
+              .imageWrapper {
+                img {
+                  max-width: 218px;
+                  width: 218px;
+                  height: 245px;
+                }
+              }
+            }
+          }
+        }
+        .number {
+          width: 60%;
+        }
+        .complexHeading {
+          width: 40%;
+        }
+        &:nth-child(2) {
+          flex-flow: row nowrap;
+          justify-content: flex-end;
+          .text {
+            max-width: 40%;
+          }
+        }
+        &.mLeft {
+          margin-left: 100px;
+          margin-top: 100px;
+          margin-bottom: 100px;
+        }
+        &.center {
+          .text {
+            max-width: 700px;
+            margin: 70px auto 0;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    margin-top: 90px;
+    padding: 90px 50px;
+  }
+  @media only screen and (min-width: 992px) {
+    margin-top: 120px;
+    padding: 100px 0;
+  }
+}
+
+

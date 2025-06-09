@@ -1,0 +1,132 @@
+@import '../../../pages/App/sass/functions';
+@import '../../../pages/App/sass/breakpointsVariables';
+
+.text{
+  margin-bottom: toRem(30) !important;
+
+  @media only screen and (max-width: $screen-xl) {
+    margin-bottom: toRem(40) !important;
+  }
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-bottom: toRem(15) !important;
+  }
+}
+
+.firstContent, .secondContent, .thirdContent{
+  font-family: var(--ibmPlexMono);
+  font-size: toRem(16);
+  font-weight: 400;
+  line-height: getLineHeight(24, 16);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(18);
+    line-height: getLineHeight(26, 18);
+  }
+}
+
+.firstContent{
+  .list{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: toRem(213) toRem(202);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: toRem(187);
+    grid-row-gap: toRem(15);
+
+    @media only screen and (max-width: $screen-lg) {
+      grid-column-gap: toRem(150);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    li{
+      &:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+      &:nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
+      &:nth-child(3) { grid-area: 1 / 2 / 2 / 3; }
+      &:nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
+    }
+  }
+}
+
+.secondContent{
+  .list{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: toRem(365) toRem(202);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: toRem(70);
+    grid-row-gap: toRem(15);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      grid-template-columns: toRem(265) ;
+      grid-column-gap: toRem(15);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    li{
+      &:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+      &:nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
+      &:nth-child(3) { grid-area: 3 / 1 / 4 / 2; }
+      &:nth-child(4) { grid-area: 1 / 2 / 2 / 3; }
+      &:nth-child(5) { grid-area: 2 / 2 / 3 / 3; }
+    }
+  }
+}
+
+.thirdContent{
+  .list{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: toRem(300) toRem(245) toRem(206);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: toRem(100);
+    grid-row-gap: toRem(15);
+
+    @media only screen and (max-width: $screen-xxl) {
+      grid-column-gap: toRem(60);
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      grid-column-gap: toRem(100);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: toRem(100);
+      text-align: start;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    li{
+      &:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+      &:nth-child(2) { grid-area: 2 / 1 / 2 / 2; }
+      &:nth-child(3) { grid-area: 3 / 1 / 4 / 2; }
+      &:nth-child(4) { grid-area: 1 / 3 / 2 / 4; }
+      &:nth-child(5) { grid-area: 2 / 2 / 2 / 3; }
+      &:nth-child(6) { grid-area: 3 / 2 / 4 / 3; }
+      &:nth-child(7) { grid-area: 1 / 2 / 2 / 3; }
+
+      @media only screen and (max-width: $screen-xl) {
+        &:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+        &:nth-child(2) { grid-area: 2 / 1 / 2 / 2; }
+        &:nth-child(3) { grid-area: 3 / 1 / 4 / 2; }
+        &:nth-child(4) { grid-area: 3 / 2 / 4 / 3; }
+        &:nth-child(5) { grid-area: 1 / 2 / 2 / 3; }
+        &:nth-child(6) { grid-area: 2 / 2 / 3 / 3; }
+        &:nth-child(7) { grid-area: 4 / 1 / 5 / 2; }
+      }
+    }
+  }
+}

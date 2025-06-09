@@ -1,0 +1,227 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  max-width: toRem(1170);
+  margin: toRem(100) auto toRem(90);
+  color: #333333;
+  font-family: var(--muktaVaani);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(50) auto toRem(63);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: toRem(50) auto toRem(50);
+  }
+}
+
+.mainContentContainer {
+  padding: 0 toRem(30);
+}
+
+.contentTitle {
+  font-weight: bold;
+  font-size: toRem(46);
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0B2F6E;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(38);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(24);
+  }
+}
+
+.contentText {
+  font-size: toRem(18);
+  line-height: 150%;
+  font-weight: 400;
+  max-width: toRem(730);
+  margin: toRem(30) auto 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(16);
+    margin: toRem(15) auto 0;
+  }
+}
+
+.contentFeatureIntro {
+  font-size: toRem(22);
+  line-height: 150%;
+  font-weight: 500;
+  margin-top: toRem(40);
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(17);
+    margin-top: toRem(20);
+  }
+}
+
+.rewardTypeContainer {
+  max-width: toRem(730);
+  margin: toRem(50) auto 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(40) auto 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: toRem(30) auto 0;
+  }
+}
+
+.rewardTypeTitle {
+  font-size: toRem(22);
+  line-height: 150%;
+  font-weight: 500;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(17);
+  }
+}
+
+.rewardTypeItemsContainer {
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $screen-lg) {
+    flex-wrap: wrap;
+  }
+}
+
+.rewardTypeItemWrapper {
+  margin-top: toRem(30);
+  @media only screen and (max-width: $screen-lg) {
+    width: 100%;
+  }
+
+  .rewardTypeItem {
+    max-width: toRem(350);
+
+    .rewardTypeItemIcon {
+      img {
+        display: block;
+      }
+    }
+
+    .rewardTypeItemTitle {
+      font-size: toRem(24);
+      line-height: 150%;
+      font-weight: 600;
+      margin-top: toRem(15);
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(16);
+      }
+    }
+
+    .rewardTypeItemText {
+      font-size: toRem(20);
+      line-height: 150%;
+      font-weight: 400;
+      margin-top: toRem(10);
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(16);
+      }
+    }
+  }
+}
+
+.functionalitiesListContainer {
+  max-width: toRem(730);
+  margin: toRem(50) auto 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(40) auto 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: toRem(30) auto 0;
+  }
+}
+
+.functionalitiesListTitle {
+  font-size: toRem(22);
+  line-height: 150%;
+  font-weight: 500;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(17);
+  }
+}
+
+.functionalitiesList {
+  font-size: toRem(20);
+  line-height: 150%;
+  font-weight: 400;
+  margin: toRem(30) 0 0 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(16);
+    margin: toRem(22) 0 0 0;
+  }
+
+  li {
+    display: flex;
+    
+    &:not(:first-child) {
+      margin-top: toRem(20);
+    }
+    
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(268);
+    }
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      max-width: toRem(260);
+    }
+
+    .icon {
+      margin-top: toRem(5);
+      margin-right: toRem(5);
+      min-width: fit-content;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      &:not(:first-child) {
+        margin-top: toRem(15);
+      }
+    }
+  }
+}
+
+.contactUsWrapper {
+  max-width: toRem(320);
+  height: auto;
+  margin: toRem(90) auto 0;
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(690);
+    height: toRem(294);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(70);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(50);
+  }
+
+  .contactUsText {
+    font-weight: bold;
+    font-size: toRem(20);
+    line-height: 130%;
+    color: #F8F8F8;
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(25);
+    }
+  }
+}

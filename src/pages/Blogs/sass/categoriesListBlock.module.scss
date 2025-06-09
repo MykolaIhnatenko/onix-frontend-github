@@ -1,0 +1,104 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.categoriesListBlock {
+  overflow: hidden;
+  padding-top: toRem(30);
+  padding-bottom: toRem(30);
+
+  @media only screen and (min-width: $screen-md) {
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+  }
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    padding: toRem(8) 0;
+    flex-basis: 70%;
+    gap: 3.3%;
+  }
+
+  .categoriesContainer {
+    position: relative;
+
+    @media only screen and (min-width: $screen-md) {
+      left: 0;
+      max-width: toRem(530);
+      overflow: hidden;
+      flex-basis: 76%;
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      max-width: unset;
+      flex-basis: 82%;
+    }
+
+    .categories {
+      display: flex;
+      justify-items: flex-start;
+      gap: toRem(10);
+      padding: 0;
+      margin: 0;
+
+      @media only screen and (min-width: $screen-md) {
+        flex-wrap: wrap;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+        &::-webkit-scrollbar {
+          display: none;
+          width: 6px;
+          position: absolute;
+        }
+        &::-webkit-scrollbar-track {
+          border-radius: 5px;
+          background: transparent;
+          position: absolute;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: transparent;
+          border-radius: 5px;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .categoriesContainerOpen {
+    @media only screen and (min-width: $screen-md) {
+      max-height: toRem(272);
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      max-height: toRem(320);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      max-height: toRem(210);
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      max-height: toRem(170);
+    }
+  }
+
+  .showAllWrapper {
+    flex-basis: 15%;
+    padding-top: toRem(11);
+    white-space: nowrap;
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      flex-basis: 12.1%;
+    }
+  }
+}
+
+.displayNone {
+  display: none;
+}
+

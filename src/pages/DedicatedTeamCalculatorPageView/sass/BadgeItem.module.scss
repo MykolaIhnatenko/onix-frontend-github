@@ -1,0 +1,30 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.badge {
+  background-color: var(--color-light-blue);
+  width: max-content;
+  padding: toRem(5) toRem(10);
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: var(--ibmPlexMono);
+
+  .close {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      cursor: pointer;
+    }
+
+    .closeIcon {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+}

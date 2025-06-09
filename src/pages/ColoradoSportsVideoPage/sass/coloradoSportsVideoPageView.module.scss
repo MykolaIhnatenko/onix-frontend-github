@@ -1,0 +1,178 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.coloradoSportsVideo {
+  font-family: var(--satoshiFont), sans-serif;
+  background-color: #15151F;
+  position: relative;
+  overflow-x: hidden;
+  
+  :global {
+    .coloradoContainer {
+      padding-left: toRem(16);
+      padding-right: toRem(16);
+      
+      @media only screen and (min-width: $screen-md) {
+        padding-left: toRem(30);
+        padding-right: toRem(30);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1440);
+        margin: 0 auto;
+      }
+      
+      .cardContainer {
+        padding: toRem(32);
+        background-color: #201B33;
+        border-radius: toRem(24);
+        
+        @media only screen and (min-width: $screen-md) {
+          padding: toRem(40);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding: toRem(60);
+          max-width: toRem(1380);
+        }
+      }
+      
+      .projectsCard {
+        padding: toRem(20) 0;
+        background-color: unset;
+        
+        @media only screen and (min-width: $screen-md) {
+          padding: toRem(34) 0;
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding: toRem(60);
+          max-width: toRem(1380);
+          background-color: #201B33;
+        }
+        
+        .title {
+          padding-bottom: toRem(32);
+          text-align: center;
+          
+          @media only screen and (min-width: $screen-md) {
+            padding-bottom: toRem(40);
+          }
+        }
+      }
+    }
+    
+    .mainContainer {
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-left: toRem(60);
+      }
+    }
+    
+    .rightContainer {
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-left: 0;
+      }
+    }
+    
+    .leftContainer {
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-right: 0;
+      }
+    }
+    
+    .sectionTitle {
+      font-family: var(--satoshiFont), sans-serif;
+      font-weight: 500;
+      font-size: toRem(16);
+      line-height: getLineHeight(22, 16);
+      text-transform: uppercase;
+      color: #9E9CA6;
+      
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(18);
+        line-height: getLineHeight(25, 18);
+      }
+    }
+    
+    h2, .testimonialText {
+      font-weight: 500;
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+      color: #9B8CD7;
+      
+      span {
+        color: #9E98B2;
+      }
+      
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(28);
+        line-height: getLineHeight(40, 28);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        font-size: toRem(32);
+        line-height: getLineHeight(45, 32);
+      }
+    }
+    
+    .fs12 {
+      font-weight: 500;
+      font-size: toRem(12);
+      line-height: getLineHeight(20, 12);
+      color: #A6A4AD;
+      
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(10);
+        line-height: getLineHeight(14, 10);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        font-size: toRem(14);
+        line-height: getLineHeight(20, 14);
+      }
+    }
+    
+    .fs16 {
+      font-weight: 400;
+      font-size: toRem(16);
+      line-height: getLineHeight(24, 16);
+      color: #A6A4AD;
+      
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+      }
+    }
+    
+    .fs18 {
+      font-weight: 400;
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+      color: #A6A4AD;
+    }
+  }
+  
+  .doubleSection {
+    padding-bottom: toRem(20);
+    
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(30);
+    }
+    @media only screen and (min-width: $screen-lg + 1) {
+      display: flex;
+      gap: toRem(30);
+      max-width: toRem(1440);
+      margin: 0 auto;
+      padding-bottom: toRem(30);
+    }
+    
+    .rightCol {
+      @media only screen and (min-width: $screen-lg + 1) {
+        flex: 0 1 calc((100% - 30px) / 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+      }
+    }
+  }
+}

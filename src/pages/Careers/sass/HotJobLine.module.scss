@@ -1,0 +1,166 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.container {
+  display: block;
+  width: 100%;
+  background: var(--color-white);
+  margin: 0 auto;
+  padding-left: toRem(70);
+  padding-right: toRem(70);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-left: toRem(30);
+    padding-right: toRem(30);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, rgba(49, 140, 194, 0.50) 10.7%, rgba(48, 211, 179, 0.50) 93.3%);
+  }
+
+  .jobLine {
+    cursor: pointer;
+    gap: toRem(30);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: toRem(20);
+    padding-right: toRem(20);
+    padding-top: toRem(33);
+    padding-bottom: toRem(33);
+    border-top: 2px solid var(--color-black);
+
+    &:hover {
+      border-top: 2px solid transparent;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-left: toRem(15);
+      padding-right: toRem(15);
+      cursor: default;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      gap: 0;
+      padding-top: toRem(15);
+      padding-bottom: toRem(15)
+    }
+
+    .number {
+      @include generalSansFont(36, 500, 46);
+      margin-right: toRem(20);
+      min-width: toRem(42.5);
+
+      @media only screen and (max-width: $screen-lg) {
+        @include generalSansFont(30, 500, 40);
+        min-width: toRem(38);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        @include generalSansFont(20, 500, 28);
+        margin-right: toRem(20);
+        min-width: toRem(26);
+      }
+    }
+
+    .textContainer {
+      display: flex;
+      align-items: center;
+      width: auto;
+
+      @media only screen and (max-width: $screen-md - 1) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .jobName {
+        @include generalSansFont(30, 500, 40);
+        width: toRem(517);
+        white-space: pre-line;
+
+        @media only screen and (max-width: $screen-lg) {
+          @include generalSansFont(24, 500, 34);
+          width: toRem(440);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          @include generalSansFont(20, 500, 28);
+          width: initial;
+        }
+      }
+
+      .tagName {
+        font-family: var(--ibmPlexMono);
+        font-size: toRem(18);
+        font-weight: 400;
+        line-height: 1.44;
+        padding-top: toRem(8);
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(14);
+          line-height: getLineHeight(20, 14);
+        }
+      }
+    }
+
+    .arrow {
+      display: flex;
+      width: toRem(32);
+      height: toRem(32);
+      margin-left: auto;
+
+      @media only screen and (max-width: $screen-md - 1) {
+        height: toRem(24);
+        width: toRem(24);
+      }
+    }
+  }
+
+  .hideBorder {
+    border-top: 2px solid transparent;
+  }
+}
+
+
+.darkMode {
+  background: var(--color-black);
+
+  &:hover {
+    background: var(--color-black);
+  }
+
+  .jobLine {
+    border-top: 2px solid var(--color-white);
+
+    &:hover {
+      border-top: 2px solid var(--color-white);
+    }
+
+    .number {
+      color: var(--color-white);
+    }
+
+    .textContainer {
+      .jobName {
+        color: var(--color-white);
+      }
+
+      .tagName {
+        color: var(--color-white);
+      }
+    }
+  }
+}
+

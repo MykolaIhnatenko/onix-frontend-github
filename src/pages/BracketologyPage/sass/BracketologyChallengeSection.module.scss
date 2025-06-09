@@ -1,0 +1,104 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.challengeSection {
+  background-color: var(--color-bracketology-background);
+  overflow: hidden;
+
+  h2 {
+    font-weight: 700;
+    padding-bottom: toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      font-weight: 800;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(40);
+    }
+  }
+  
+  .challengeCards {
+    padding-bottom: toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 toRem(-12);
+      padding-bottom: toRem(40);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        justify-content: center;
+        max-width: toRem(1122);
+        padding-bottom: toRem(72);
+      }
+    }
+  }
+
+  .challengeRoseBlock {
+    padding: toRem(40) 0 toRem(8);
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(80) 0 toRem(56);
+      position: relative;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(88);
+    }
+
+    .challengeRoseImg {
+      display: none;
+
+      @media only screen and (min-width: $screen-md) {
+        position: absolute;
+        display: block;
+        top: toRem(80);
+        left: toRem(-180);
+        width: toRem(605);
+        height: toRem(700);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        width: toRem(908);
+        height: toRem(1000);
+        top: toRem(30);
+        left: toRem(-300);
+      }
+    }
+
+    .challengeRoseContent {
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(362);
+        margin-left: auto;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(408);
+      }
+    }
+  }
+}
+
+.challengeTitle {
+  font-weight: 700;
+  font-size: toRem(20);
+  line-height: toRem(28);
+  opacity: 0.9;
+  padding-top: toRem(24);
+  z-index: 2;
+  position: relative;
+  color: var(--color-white);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-bottom: toRem(16);
+    font-size: toRem(32);
+    line-height: toRem(40);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(24);
+    line-height: toRem(32);
+    padding-top: toRem(48);
+  }
+}

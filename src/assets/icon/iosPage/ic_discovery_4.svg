@@ -1,0 +1,16 @@
+<svg width="100%" height="100%" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29.051 46H17.154" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M5 52.9999V47.6839C5 46.5639 4.889 45.4479 4.67 44.3499L3.17 36.8519C3.057 36.2849 3 35.7089 3 35.1319C3 33.1069 3.701 31.1439 4.984 29.5769L11 22.2339" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M11 21V38H11.425C12.094 38 12.718 37.666 13.089 37.109L16.418 32.115C16.866 31.443 17.631 31 18.5 31C19.881 31 21 32.119 21 33.5C21 34.012 20.846 34.488 20.582 34.885L18 38.775C18 43.343 17.801 45.38 16.57 46.921C16.209 47.371 16 47.926 16 48.502V53" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M54.029 45.21C54.625 44.662 55 43.875 55 43V14C55 12.343 53.656 11 52 11H25" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M47 11V36.106" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M47.268 58.843L46.199 56.986C45.493 55.758 44.448 54.77 43.181 54.137C39.975 52.534 33.598 49.346 30.382 47.737C29.563 47.326 29 46.479 29 45.5C29 44.119 30.119 43 31.5 43C31.902 43 32.28 43.098 32.616 43.263C34 43.944 38.172 45.943 38.172 45.943C38.697 46.188 39.217 45.596 38.906 45.108L31.303 33.061C31.111 32.753 31 32.39 31 32C31 30.896 31.896 30 33 30C33.717 30 34.338 30.38 34.697 30.942C36.005 32.988 40.013 39.071 40.013 39.071L46.251 36.361C46.745 36.146 47.276 36.005 47.814 36C49.546 36 51.039 37.066 51.625 38.662L57.528 54.748" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M52 28H50V30H52V28Z" fill="white"/>
+<path d="M15 4V7" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M12 13C12 14.104 12.896 15 14 15H16C17.104 15 18 14.104 18 13C18 11.896 17.104 11 16 11H14C12.896 11 12 10.104 12 9C12 7.896 12.896 7 14 7H16C17.104 7 18 7.896 18 9" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M15 18V15" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M24.263 23.917L20.004 21H7C5.896 21 5 20.104 5 19V3C5 1.896 5.896 1 7 1H23C24.104 1 25 1.896 25 3V23.528C25 23.907 24.575 24.131 24.263 23.917V23.917Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M43.703 18.4692L35 26.0002L30 23.0002L24.391 30.7192" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M29 15H40" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M29 19H36" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

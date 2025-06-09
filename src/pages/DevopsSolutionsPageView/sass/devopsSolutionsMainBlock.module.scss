@@ -1,0 +1,108 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: toRem(890);
+    &:after{
+      content: '';
+      width: 100%;
+      height: toRem(120);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 15%, #ffffff 100%);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .content {
+    padding-top: toRem(154);
+    position: relative;
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(154) 0 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-top: toRem(139);
+    }
+
+    .title {
+      padding: 0 toRem(70) toRem(40);
+
+      @media only screen and (min-width: $screen-xxxl) {
+        padding: 0 toRem(80) toRem(40);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: 0 toRem(30) toRem(30);
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+        max-width: toRem(531);
+      }
+  
+      @media only screen and (max-width: $screen-md - 1) {
+        padding: 0 toRem(15) toRem(15);
+        font-size: toRem(40);
+        line-height: getLineHeight(50, 40);
+        max-width: unset;
+      }
+    }
+
+    .textContainer {
+      padding: 0 toRem(70) toRem(80);
+
+      @media only screen and (min-width: $screen-xxxl) {
+        padding: 0 toRem(80) toRem(80);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: 0 toRem(30) toRem(80);
+      }
+  
+      @media only screen and (max-width: $screen-md - 1) {
+        padding: 0 toRem(15) toRem(30);
+      }
+
+      .text {
+        margin: 0;
+        padding-bottom: toRem(40);
+        max-width: toRem(630);
+
+        @media only screen and (max-width: $screen-lg) {
+          padding-bottom: toRem(120);
+          max-width: toRem(460);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          padding-bottom: toRem(30);
+          max-width: unset;
+        }
+      }
+
+      .secondText {
+        margin: 0 0 0 auto;
+        max-width: toRem(630);
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: toRem(460);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          max-width: unset;
+        }
+      }
+    }
+  }
+}

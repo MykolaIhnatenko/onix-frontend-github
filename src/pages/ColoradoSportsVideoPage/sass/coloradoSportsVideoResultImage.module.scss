@@ -1,0 +1,55 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.imgContainer {
+  max-width: 100%;
+  height: toRem(97);
+  margin: toRem(16) 0;
+  clip-path: inset(0 round 12px);
+
+  @media only screen and (min-width: $screen-md) {
+    height: toRem(154);
+    margin: toRem(24) 0;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    height: 270px;
+    margin: toRem(66) 0 0 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    object-position: 90% center;
+
+    @media only screen and (min-width: $screen-md) {
+      object-position: right center;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      object-position: center;
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.mobile {
+  @media only screen and (min-width: $screen-lg + 1) {
+    display: none;
+  }
+}
+
+.desk {
+  display: none;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    display: block;
+  }
+}

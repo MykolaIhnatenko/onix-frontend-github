@@ -1,0 +1,141 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.inputBox {
+  position: relative;
+  gap: toRem(10);
+
+  @media only screen and (max-width: $screen-sm) {
+    gap: toRem(8);
+  }
+
+  &.inputBlockHeight {
+    height: toRem(56);
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: toRem(22) 0 toRem(7) toRem(15);
+    border: none;
+    font-family: var(--ibmPlexMono);
+    border-bottom: 1px solid var(--color-black);
+    background-color: var(--color-white);
+    outline: none;
+    line-height: toRem(26);
+    font-size: toRem(18);
+
+    @media only screen and (max-width: $screen-sm) {
+      padding-top: toRem(20);
+    }
+
+    &:focus {
+      border-bottom: 2px solid var(--color-cruise);
+      background-color: var(--color-pale-gray);
+    }
+  }
+
+  textarea {
+    resize: none;
+    min-height: toRem(82);
+    max-height: toRem(82);
+  }
+
+  textarea::-webkit-resizer {
+    display: none;
+  }
+
+  input:focus ~ .label,
+  input:valid ~ .label,
+  textarea:focus ~ .label,
+  textarea:valid ~ .label {
+    font-size: toRem(12);
+    padding: 0 0 0 toRem(15);
+    line-height: toRem(16);
+
+    @media only screen and (max-width: $screen-sm) {
+      line-height: toRem(24);
+    }
+  }
+
+  input:focus ~ .label,
+  input:valid ~ .label {
+    transform: translateY(toRem(-35));
+  }
+
+  textarea:focus ~ .label,
+  textarea:valid ~ .label {
+    top: toRem(-15);
+
+    @media only screen and (max-width: $screen-sm) {
+      top: toRem(-18);
+    }
+  }
+
+  .label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: toRem(15);
+    pointer-events: none;
+    line-height: toRem(26);
+    font-size: toRem(18);
+    font-family: var(--ibmPlexMono);
+    color: var(--color-dark-gray);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+
+    .asterisk {
+      position: relative;
+      top: -4px;
+    }
+
+    &.spanTop {
+      bottom: auto;
+      top: 26px
+    }
+  }
+
+  .error {
+    color: var(--color-red);
+    font-family: var(--ibmPlexMono);
+    font-size: toRem(14);
+
+    @media only screen and (max-width: $screen-sm) {
+      font-size: toRem(12);
+    }
+  }
+
+  &.leavingForm {
+    .error {
+      color: var(--color-red);
+      font-family: var(--ibmPlexMono);
+      font-size: toRem(14);
+      position: absolute;
+  
+      @media only screen and (max-width: $screen-sm) {
+        font-size: toRem(12);
+      }
+    }
+    
+    .spanTop {
+      bottom: auto;
+      top: 0;
+    }
+  }
+}
+
+.inputBoxError {
+  input, textarea {
+    border-bottom: toRem(1) solid var(--color-red) !important;
+
+    &:focus {
+      border-bottom: toRem(1) solid var(--color-red) !important;
+    }
+  }
+}
+
+.additionalInfo {
+  display: none;
+}

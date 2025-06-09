@@ -1,0 +1,114 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.banner {
+  position: relative;
+  min-height: calc(880px - 70px);
+
+  @media only screen and (min-width: $screen-sm) {
+    min-height: calc(1140px - 85px);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    min-height: calc(880px - 171px);
+  }
+
+  .bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    img {
+      object-fit: cover;
+      object-position: top;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: toRem(246);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+      z-index: 1;
+
+      @media only screen and (min-width: $screen-sm) {
+        height: toRem(312);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: none;
+      }
+    }
+  }
+
+  .container {
+    padding-top: toRem(134);
+    padding-bottom: toRem(40);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(144);
+      padding-bottom: 0;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(186);
+      max-width: toRem(1440);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: toRem(80);
+    }
+
+    .whitepapperPreview {
+      @media only screen and (min-width: $screen-xl) {
+        flex-basis: 64%;
+      }
+
+      .title {
+        font-size: toRem(25);
+        line-height: getLineHeight(35, 25);
+        font-weight: 500;
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(40);
+          line-height: getLineHeight(56, 40);
+        }
+      }
+
+      .imgContainer {
+        width: 100%;
+        height: toRem(210);
+        position: relative;
+        margin: toRem(30) 0 toRem(15);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(450);
+          margin: toRem(40) 0 toRem(15);
+        }
+
+        @media only screen and (min-width: $screen-xl) {
+          height: toRem(407);
+          width: toRem(635);
+          margin: toRem(60) 0 toRem(13);
+        }
+
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+
+    .form {
+      @media only screen and (min-width: $screen-xl) {
+        flex-basis: 36%;
+        padding-bottom: toRem(44);
+      }
+    }
+  }
+}

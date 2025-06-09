@@ -1,0 +1,222 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainSection {
+  position: relative;
+  overflow: visible;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    min-height: 100vh;
+  }
+
+  .bgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: 100%;
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 90px;
+      position: absolute;
+      bottom: toRem(-1);
+      background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+
+    .contentItemLeft {
+      padding-top: toRem(154);
+      width: 52%;
+      display: flex;
+
+      .contentBlock {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 toRem(70) toRem(70);
+
+        @media only screen and (min-width: $screen-xxxl) {
+          padding: 0 toRem(80) toRem(80);
+        }
+
+        .textContainer {
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            padding-bottom: toRem(40);
+            font-size: toRem(50);
+            line-height: getLineHeight(64, 50);
+          }
+
+          .firstText {
+            display: flex;
+            align-self: end;
+            max-width: 460px;
+            margin: 0;
+            font-size: toRem(18);
+            line-height: getLineHeight(26, 18);
+          }
+        }
+
+        .secondText {
+          max-width: 460px;
+          margin: 0;
+          font-size: toRem(18);
+          line-height: getLineHeight(26, 18);
+          padding-bottom: toRem(40);
+        }
+      }
+    }
+
+    .contentItemRight {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 48%;
+      height: calc(100vh + 1px);
+      min-height: toRem(669);
+
+      .imageBlock {
+        width: 100%;
+        height: 100%;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xl) {
+  .mainSection {
+    .bgContainer {
+      height: 50%;
+    }
+
+    .container {
+      flex-direction: column;
+      max-height: none;
+      height: auto;
+      .contentItemLeft {
+        width: 100%;
+        height: calc((var(--vh, 1vh) * 100));
+        min-height: toRem(722);
+
+        .contentBlock {
+          padding-top: 0;
+          padding-bottom: toRem(60);
+          .contactBtn {
+            max-width: toRem(460);
+          }
+        }
+      }
+
+      .contentItemRight {
+        min-height: 100vh;
+        top: 0;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .mainSection {
+    .container {
+      height: auto;
+
+      .contentItemLeft {
+        height: auto;
+        min-height: auto;
+
+        .contentBlock {
+          padding: 0 toRem(30) toRem(80);
+          .textContainer {
+            .title {
+              padding-bottom: toRem(30);
+              max-width: toRem(708);
+              br {
+                display: none;
+              }
+            }
+          }
+
+          .secondText {
+            padding: toRem(120) 0 toRem(30);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md - 1) {
+  .mainSection {
+    .bgContainer {
+      height: 100%;
+    }
+  
+    .container {
+      height: 100%;
+      .contentItemLeft {
+        padding-top: toRem(139);
+
+        .contentBlock {
+          padding: 0 toRem(15) toRem(30);
+
+          .textContainer {
+            .title {
+              padding-bottom: toRem(15);
+              font-size: toRem(40);
+              line-height: getLineHeight(50, 40);
+              max-width: none;
+
+              br {
+                display: none;
+              }
+            }
+            .firstText {
+              align-self: normal;
+              font-size: toRem(16);
+              line-height: getLineHeight(24, 16);
+              max-width: none;
+            }
+          }
+
+          .secondText {
+            padding: toRem(30) 0;
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            max-width: none;
+          }
+
+          .contactBtn {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .contentItemRight {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainSection {
+  position: relative;
+  min-height: 100vh;
+
+  @media only screen and (max-width: $screen-lg) {
+    min-height: auto;
+  }
+
+  .bgContainer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+
+    img {
+      object-fit: cover;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: toRem(291);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+    }
+
+    .imgContainer {
+      display: none;
+
+      @media only screen and (min-width: $screen-xxl) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 48%;
+        height: 100%;
+        z-index: 2;
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  .container {
+    padding-top: toRem(144);
+    padding-bottom: toRem(30);
+    z-index: 1;
+    position: relative;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(154);
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(154) toRem(70) toRem(70);
+      height: 100vh;
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: toRem(154) toRem(80) toRem(80);
+    }
+
+    .contentBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+
+      .title {
+        font-size: toRem(40);
+        line-height: getLineHeight(50, 40);
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(708);
+          font-size: toRem(50);
+          line-height: getLineHeight(64, 50);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(610);
+        }
+      }
+
+      .text {
+        &:first-of-type {
+          margin-top: toRem(15);
+          margin-bottom: toRem(30);
+
+          @media only screen and (min-width: $screen-md) {
+            margin-top: toRem(30);
+            margin-bottom: toRem(120);
+            max-width: toRem(708);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            margin-top: toRem(40);
+            margin-bottom: toRem(40);
+            max-width: toRem(610);
+          }
+        }
+      }
+
+      .btnContainer {
+        display: flex;
+        gap: toRem(20);
+        flex-direction: column;
+
+        @media only screen and (max-width: $screen-lg) {
+          flex-direction: row;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          flex-direction: column;
+          gap: toRem(15);
+        }
+
+        .contactBtn {
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(18) !important;
+          }
+  
+          @media only screen and (min-width: $screen-md) {
+            max-width: toRem(344);
+            width: 50%;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            max-width: toRem(610);
+            width: 100%;
+          }
+
+          @media only screen and (min-width: $screen-xxxl) {
+            max-width: calc(50% - 50px);
+          }
+        }
+      }
+    }
+  }
+}

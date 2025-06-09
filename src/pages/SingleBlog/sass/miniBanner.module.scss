@@ -1,0 +1,84 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.miniBanner {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+
+  @media only screen and (min-width: 1130px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: toRem(234);
+  }
+
+  a {
+    position: absolute;
+    z-index: 2;
+    height: inherit;
+    text-decoration: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: initial;
+
+    h4 {
+      margin-top: 143px;
+      text-align: center;
+      color: var(--color-white);
+      font-weight: 600;
+      font-size: toRem(30);
+    }
+
+    span {
+      width: 168px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333533;
+      font-size: toRem(14);
+      border-radius: 3%;
+      background-color: #fee00c;
+      margin-top: 30px;
+    }
+  }
+
+  .backgroundWrapper {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+    @media only screen and (min-width: $screen-xxl) {
+      position: relative;
+      height: inherit;
+    }
+
+    .miniBannerImg {
+      object-fit: cover;
+    }
+  }
+
+  .miniBannerContent {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    .spanTopMargin {
+      margin-top: 273px;
+    }
+  }
+}
+
+.miniBannerLink {
+  z-index: 10;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+}

@@ -1,0 +1,12 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding-top: toRem(80);
+  pointer-events: none;
+  
+  .title {
+    text-align: center;
+    padding-bottom: toRem(40);
+  }
+}

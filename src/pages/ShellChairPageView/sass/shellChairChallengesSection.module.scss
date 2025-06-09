@@ -1,0 +1,80 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.challengesSection {
+  background-color: var(--color-black);
+  position: relative;
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(330);
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(590);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(560);
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: toRem(80);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+
+      @media only screen and (min-width: $screen-md) {
+        height: toRem(120);
+      }
+    }
+
+    img {
+      object-position: top;
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    padding: toRem(80) 0 toRem(60);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-left: toRem(30);
+      padding-right: toRem(30);
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(120) toRem(70);
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(80);
+      padding-right: toRem(80);
+    }
+
+    .title {
+      color: var(--color-white);
+      padding-left: toRem(15);
+      padding-right: toRem(15);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .cardsBlock {
+      padding-top: toRem(30);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(40);
+      }
+    }
+  }
+}

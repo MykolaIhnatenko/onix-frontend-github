@@ -1,0 +1,23 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.accordion {
+  
+  .accordionHeader{
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(30) !important;
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(20) !important;
+    }
+  }
+  .accordionItem {
+    &:last-child {
+      @media only screen and (max-width: $screen-lg) {
+        border-bottom: none !important;
+      }
+    }
+  }
+}
+

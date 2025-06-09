@@ -1,0 +1,47 @@
+{
+  "fieldsArray": [
+    {
+      "name": "name",
+      "label": "Your Name",
+      "isAsterisk": true,
+      "tag": "input",
+      "styles": "nameInput"
+    },
+    {
+      "name": "email",
+      "label": "Your Email",
+      "isAsterisk": true,
+      "tag": "input",
+      "styles": "emailInput"
+    },
+    {
+      "name": "phone",
+      "label": "Your Phone",
+      "isAsterisk": true,
+      "tag": "input",
+      "styles": "phoneInput"
+    },
+    {
+      "name": "country",
+      "label": "Country",
+      "isAsterisk": true,
+      "tag": "input",
+      "styles": "countryInput"
+    },
+    {
+      "name": "howFoundOutAboutUs",
+      "label": "How did you find out about us?",
+      "isAsterisk": true,
+      "tag": "input",
+      "styles": "howFoundOutAboutUsInput"
+    },
+    {
+      "name": "message",
+      "label": "Your Message",
+      "isAsterisk": true,
+      "tag": "textarea",
+      "styles": "messageInput"
+    }
+  ]
+}
+

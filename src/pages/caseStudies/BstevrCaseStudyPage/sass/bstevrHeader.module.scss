@@ -1,0 +1,121 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+@keyframes arrowMove {
+  from {
+    bottom: 15%;
+  }
+  50% {
+    bottom: 10%;
+  }
+  to {
+    bottom: 15%;
+  }
+}
+
+.header {
+  position: relative;
+  height: toRem(840);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-white);
+  font-family: var(--muktaVaani);
+
+  @media only screen and (max-width: $screen-xxl) {
+    height: toRem(770);
+  }
+
+  @media only screen and (max-width: $screen-xl) {
+    height: toRem(640);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    height: toRem(560);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    height: toRem(450);
+    padding: 0;
+  }
+
+  img {
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+  }
+
+  .offer {
+    text-transform: unset;
+    font-size: toRem(90);
+    margin-top: toRem(-30);
+    position: relative;
+    z-index: 1;
+    max-width: toRem(1090);
+    font-weight: 800;
+
+    @media only screen and (max-width: $screen-xxl) {
+      font-size: toRem(90);
+      margin-top: toRem(-80);
+    }
+  
+    @media only screen and (max-width: $screen-xl) {
+      font-size: toRem(90);
+      max-width: toRem(802);
+      margin-top: toRem(20);
+    }
+  
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(64);
+      margin-top: toRem(29);
+    }
+  
+    @media only screen and (max-width: $screen-sm) {
+      font-size: toRem(29);
+      max-width: toRem(390);
+    }
+  }
+
+  .descr {
+    font-size: toRem(30);
+    line-height: getLineHeight(39, 30);
+    font-weight: 400;
+    font-family: var(--muktaVaani), sans-serif;
+    color: var(--color-descriptor-blue);
+    margin-top: toRem(5);
+    position: relative;
+    z-index: 1;
+    max-width: toRem(700);
+
+    @media only screen and (max-width: $screen-xl) {
+      font-size: toRem(25);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(16);
+      line-height: getLineHeight(20, 16);
+      max-width: toRem(300);
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    animation: arrowMove 1s infinite;
+    z-index: 5;
+    color: var(--color-descriptor-blue);
+    width: toRem(53);
+    height: toRem(52);
+
+    @media only screen and (max-width: $screen-xl) {
+      width: toRem(37);
+      height: toRem(36);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: toRem(21);
+      height: toRem(20);
+    }
+  }
+}

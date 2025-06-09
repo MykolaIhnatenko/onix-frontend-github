@@ -1,0 +1,110 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.contactUs {
+  .container {
+    padding: toRem(48) 0;
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(64) 0;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(80) 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: toRem(20);
+    }
+
+    .contentBlock {
+      h2, h6, p {
+        color: #FBFDFF;
+        text-align: center;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          text-align: left;
+        }
+      }
+
+      h2, h6 {
+        font-weight: 500 !important;
+        font-size: toRem(24) !important;
+        line-height: toRem(32) !important;
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(32) !important;
+          line-height: toRem(43) !important;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(40) !important;
+          line-height: toRem(54) !important;
+        }
+
+        br {
+          display: none;
+
+          @media only screen and (min-width: $screen-md) {
+            display: block;
+          }
+        }
+      }
+
+      p {
+        font-weight: 500;
+        font-size: toRem(16);
+        line-height: toRem(21);
+        padding: toRem(16) 0 toRem(40);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(20);
+          line-height: toRem(27);
+          padding: toRem(16) 0 toRem(32);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding: toRem(24) 0 0 0;
+        }
+      }
+    }
+
+    .button {
+      display: block;
+      
+      text-align: center;
+      letter-spacing: 0.02px;
+      border: none;
+      background-color: #0C0E14;
+      border-radius: toRem(48);
+      padding: toRem(16) 0;
+      font-size: toRem(20);
+      font-weight: 700;
+      color: #FBFDFF;
+      line-height: toRem(27);
+      font-family: var(--satoshiFont), sans-serif;
+      text-transform: unset;
+      margin: 0 auto;
+      transition: all .2s ease-in-out;
+      max-width: toRem(360);
+
+      &:active {
+        background-color: #171820;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        margin: unset;
+        cursor: pointer;
+      }
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        flex-basis: toRem(360);
+        &:hover {
+          background-color: #171820;
+          color: #9067C6;
+          box-shadow: 0 4px 12px rgba(48, 27, 74, 0.12);
+        }
+      }
+    }
+  }
+}

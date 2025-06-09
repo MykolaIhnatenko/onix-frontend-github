@@ -1,0 +1,96 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+
+  .background {
+    height: toRem(1000);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: toRem(940);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .contentContainer {
+    padding-top: toRem(120);
+    padding-bottom: toRem(120);
+    position: relative;
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(80);
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-top: toRem(80);
+      padding-bottom: toRem(80);
+    }
+
+    .title {
+      padding: 0 0 toRem(80) toRem(70);
+
+      @media only screen and (min-width: $screen-xxxl) {
+        padding: 0 0 toRem(80) toRem(80);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: 0 0 toRem(60) toRem(30);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: 0 0 toRem(40) toRem(15);
+      }
+    }
+
+    .content {
+      padding: toRem(40) 0;
+      margin: 0 toRem(70);
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+
+      @media only screen and (min-width: $screen-xxxl) {
+        margin: 0 toRem(80);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin: 0 toRem(30);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(20) 0;
+        margin: 0 toRem(15);
+      }
+
+      .contentItem {
+        display: flex;
+        gap: toRem(30);
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .itemText {
+          margin: 0;
+          padding: 0;
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            padding: 0;
+            font-size: toRem(16);
+          }
+        }
+      }
+    }
+  }
+}

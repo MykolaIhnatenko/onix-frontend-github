@@ -1,0 +1,73 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.structureSection {
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-bottom: toRem(80);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    padding-top: toRem(80);
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      padding-top: toRem(120);
+    }
+
+    .title {
+      max-width: toRem(320);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(540);
+      }
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        max-width: toRem(660);
+      }
+    }
+
+    .text {
+      padding: toRem(30) 0 0;
+      margin: 0;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(40) 0 0;
+        max-width: 100%;
+      }
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        max-width: toRem(1080);
+        padding: toRem(40) 0 toRem(80);
+      }
+    }
+  }
+
+  .accordionContainer {
+    padding-bottom: toRem(80);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: 0;
+    }
+
+    .subtitle {
+      padding: 0 0 toRem(40);
+      font-size: toRem(40);
+      line-height: getLineHeight(56, 40);
+  
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(60) toRem(30) toRem(40);
+        font-size: toRem(36);
+        line-height: getLineHeight(46, 36);
+      }
+  
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(60) toRem(15) toRem(30);
+        font-size: toRem(20);
+        line-height: getLineHeight(35, 20);
+      }
+    }
+  }
+}

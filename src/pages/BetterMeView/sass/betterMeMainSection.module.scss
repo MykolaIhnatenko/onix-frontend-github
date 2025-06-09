@@ -1,0 +1,139 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.main {
+  min-height: 100vh;
+  padding: toRem(146) 0 toRem(30) 0;
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-bottom: toRem(24);
+  }
+
+  .mainWrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: toRem(20);
+    background: linear-gradient(108.75deg, #E2F0EF 42.85%, #E3F1F0 77.01%);
+    border-radius: toRem(4);
+    padding-left: toRem(70);
+    height: calc(100vh - 174px);
+    overflow: hidden;
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+      padding: toRem(78) toRem(48) toRem(60) toRem(48);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(38) toRem(16) toRem(18) toRem(16);
+    }
+
+    .description {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      @media only screen and (max-width: $screen-lg) {
+        flex-basis: unset;
+      }
+
+      .bag {
+        position: relative;
+        margin-right: toRem(10);
+        bottom: toRem(-12);
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-right: toRem(8);
+          bottom: toRem(-10);
+        }
+      }
+
+      .shopify {
+        margin-right: toRem(13);
+        bottom: toRem(-11);
+        position: relative;
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-right: toRem(16);
+          bottom: toRem(-9);
+        }
+      }
+
+      p {
+        max-width: toRem(260);
+        margin-top: toRem(48);
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-top: toRem(24);
+        }
+      }
+    }
+
+    .image {
+      flex-basis: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: toRem(47) 0;
+      overflow: hidden;
+
+      @media only screen and (max-width: $screen-lg) {
+        flex-basis: unset;
+        justify-content: center;
+        overflow: unset;
+        padding: unset;
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+
+        @media only screen and (max-width: $screen-xl) {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .circles {
+        position: absolute;
+        width: 100%;
+        top: -5%;
+        bottom: 0;
+        right: 0;
+
+        @media only screen and (max-width: $screen-xl) {
+          top: 20%;
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          top: toRem(-40);
+          left: 17%;
+          max-width: toRem(442);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          top: toRem(-27);
+          left: 2%;
+        }
+      }
+
+      .phones {
+        max-height: toRem(638);
+        z-index: 1;
+        position: relative;
+        padding-left: toRem(64);
+
+        @media only screen and (max-width: $screen-lg) {
+          padding-left: unset;
+          max-width: toRem(435);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          max-width: toRem(290);
+        }
+      }
+    }
+  }
+}

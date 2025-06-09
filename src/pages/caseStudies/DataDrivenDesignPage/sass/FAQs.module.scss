@@ -1,0 +1,45 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.faqsContainer {
+  margin-top: 164px;
+
+  @media only screen and (max-width: 968px) {
+    margin-top: 82px;
+  }
+}
+
+.title {
+  font-size: 44px;
+
+  @media only screen and (max-width: 968px) {
+    font-size: 28px;
+  }
+}
+
+.itemsContainer {
+  margin: 60px auto 0;
+  max-width: 960px;
+  text-align: start;
+
+  @media only screen and (max-width: 968px) {
+    margin: 24px auto 0;
+  }
+
+  ol {
+    margin-left: 25px;
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul > li {
+    text-indent: 10px;
+  }
+
+  ul > li:before {
+    content: "–";
+    margin-right: 10px;
+  }
+}

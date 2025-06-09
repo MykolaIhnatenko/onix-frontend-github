@@ -1,0 +1,80 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+
+.mainTitle, .fs64 {
+  font-weight: 900;
+  font-size: toRem(64);
+  line-height: toRem(94);
+  color: var(--color-jsa-main-heading-color);
+
+  @media only screen and (max-width: $screen-xl) {
+    font-size: toRem(40);
+    line-height: toRem(59);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    font-size: toRem(22);
+    line-height: toRem(32);
+  }
+}
+
+.mainTitle {
+  text-align: center;
+  margin-bottom: toRem(24);
+}
+
+.fs16 {
+  font-weight: 700;
+  font-size: toRem(16);
+  line-height: toRem(24);
+  text-transform: uppercase;
+  color: var(--color-jsa-secondary-heading-color);
+
+  @media only screen and (max-width: $screen-xl) {
+    font-size: toRem(14);
+    line-height: toRem(21);
+  }
+}
+
+.middleTitle {
+  font-weight: 900;
+  font-size: toRem(40);
+  line-height: toRem(59);
+  color: var(--color-jsa-main-heading-color);
+
+  @media only screen and (max-width: $screen-xl) {
+    font-size: toRem(32);
+    line-height: toRem(47);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    font-size: toRem(20);
+    line-height: toRem(29);
+  }
+}
+
+.fs38 {
+  font-weight: 900;
+  font-size: toRem(38);
+  line-height: 131%;
+  color: var(--color-jsa-main-heading-color);
+
+  @media only screen and (max-width: $screen-xl) {
+    font-size: toRem(20);
+    line-height: 130.87%;
+  }
+}
+
+.fs20 {
+  font-weight: 900;
+  font-size: toRem(20);
+  line-height: 123%;
+}
+
+.blueText {
+  color: var(--color-jsa-blue-color);
+}
+
+
+

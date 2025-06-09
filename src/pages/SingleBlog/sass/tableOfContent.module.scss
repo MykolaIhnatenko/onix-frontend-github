@@ -1,0 +1,84 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.tabletOfContent {
+  &.tabletOfContentHidden {
+    @media only screen and (min-width: 1130px) {
+      padding-bottom: 40px;
+    }
+
+    @media only screen and (max-width: 1129px) {
+      padding: 60px 0;
+    }
+
+    @media only screen and (max-width: #{$screen-md - 1}) {
+      padding: 40px 0;
+    }
+
+    .tabletOfContentTitle {
+      @media only screen and (min-width: 1130px) {
+        display: none;
+      }
+    }
+    
+    .tabletOfContentList {
+      @media only screen and (min-width: 1130px) {
+        display: none;
+      }
+      .tabletOfContentListItem {
+        line-height: 20px !important;
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .tabletOfContentTitle {
+    margin-bottom: 15px;
+    font-family: var(--ibmPlexMono);
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+  }
+  
+  .tabletOfContentList {
+    background-color: var(--color-white) !important;
+    list-style: none;
+  
+    .tabletOfContentListItem {
+      position: relative;
+      padding-bottom: 15px;
+
+      &:before {
+        display: none !important;
+      }
+
+      &:last-of-type {
+        padding-bottom: 25px;
+      }
+  
+      .linkAnchor {
+        font-family: var(--ibmPlexMono) !important;
+        color: var(--color-black) !important;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  
+    .tabletOfContentListItem:hover {
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        cursor: pointer;
+      }
+
+      .linkAnchor {
+        text-decoration: underline;
+      }
+    }
+  
+    .tabletOfContentListItem:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

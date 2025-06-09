@@ -1,0 +1,67 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.businessContext {
+  .businessContextCard {
+    border: 1px solid rgba(125, 127, 128, 0.2);
+    border-radius: toRem(8);
+    padding: toRem(40) 0;
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(72) 0;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(160) 0;
+    }
+
+    h2 {
+      text-align: center;
+      padding-bottom: toRem(24);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(40);
+      }
+    }
+
+    p {
+      text-align: center;
+      padding: 0 toRem(32);
+      max-width: 100%;
+      margin: 0 auto;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: 0 toRem(84);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: 0;
+        max-width: toRem(1100);
+      }
+    }
+
+    .businessImg {
+      display: inline-block;
+      margin: 0 toRem(5);
+      width: toRem(42);
+      height: toRem(20);
+      vertical-align: middle;
+
+      @media only screen and (min-width: $screen-md) {
+        width: toRem(74);
+        height: toRem(34);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        width: toRem(90);
+        height: toRem(44);
+        margin: 0 toRem(8);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.card {
+  border-radius: toRem(16);
+  background-color: #F3F5F8;
+}
+
+.businessChallengeContent {
+  padding: toRem(24);
+  
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(60);
+  }
+  
+  @media only screen and (min-width: $screen-lg + 1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.approach {
+  @media only screen and (min-width: $screen-lg + 1) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.benefits {
+  padding: toRem(24);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: toRem(224);
+  
+  @media only screen and (min-width: $screen-md) {
+    flex-basis: 50%;
+    min-height: toRem(342);
+    padding: toRem(32) toRem(24) toRem(32) toRem(32);
+  }
+  
+  @media only screen and (min-width: $screen-xl) {
+    padding: toRem(60);
+    min-height: toRem(468);
+  }
+}
+
+.value {
+  padding: toRem(24) toRem(44) toRem(24) toRem(24);
+  min-height: toRem(252);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(32) toRem(36) toRem(32) toRem(32);
+    min-height: toRem(400);
+  }
+  
+  @media only screen and (min-width: $screen-xl) {
+    min-height: toRem(468);
+    padding: toRem(40) toRem(67) toRem(40) toRem(40);
+  }
+}

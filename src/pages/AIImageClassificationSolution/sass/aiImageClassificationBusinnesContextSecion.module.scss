@@ -1,0 +1,81 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/mixinsDisplay";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.businessContextSection {
+  background-color: var(--color-white);
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(120);
+      padding-bottom: toRem(120);
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(70);
+      padding-right: toRem(70);
+    }
+
+    .title {
+      margin: 0;
+      font-size: toRem(14);
+      line-height: getLineHeight(20, 14);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+      }
+    }
+
+    .subtitle {
+      padding: toRem(15) 0 toRem(30);
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(20) 0 toRem(40);
+        font-size: toRem(40);
+        line-height: getLineHeight(56, 40);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: toRem(16) 0 toRem(40);
+        max-width: toRem(1080);
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1480);
+      }
+    }
+
+    .contentBlock {
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: flex;
+        gap: 40px;
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        gap: 60px;
+      }
+
+      .content {
+        margin: 0;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          @include flex-basis(40px, 2);
+        }
+
+        .divider {
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

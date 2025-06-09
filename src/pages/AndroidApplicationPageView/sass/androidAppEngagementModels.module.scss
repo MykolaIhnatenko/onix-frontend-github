@@ -1,0 +1,377 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.container {
+  padding: toRem(80) toRem(70);
+  background: var(--color-black);
+  color: var(--color-white);
+  .contentContainer {
+    padding-top: toRem(42);
+    .firstItemContainer,
+    .secondItemContainer {
+      display: flex;
+      .itemFlex {
+        width: 50%;
+        .itemContent {
+          .itemTitle {
+            padding-bottom: toRem(30);
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+            font-weight: 500;
+
+            span {
+              margin-right: toRem(9);
+            }
+          }
+          .itemTextContainer {
+            font-size: toRem(18);
+            line-height: getLineHeight(26, 18);
+            .itemTextTop,
+            .itemTextBottom {
+              margin: 0;
+            }
+            .itemTextTop {
+              margin-bottom: toRem(30);
+            }
+          }
+        }
+      }
+      .imageContainer {
+        width: 50%;
+        .image {
+          height: auto;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .firstItemContainer {
+      padding-bottom: toRem(70);
+      border-bottom: 2px solid #fff;
+      .itemFlex {
+        padding-right: toRem(60);
+      }
+    }
+
+    .secondItemContainer {
+      padding-top: toRem(70);
+      .itemFlex {
+        padding-left: toRem(60);
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  &.webDesign {
+    .pageTitle {
+      max-width: toRem(784);
+    }
+
+    .pageTextContainer {
+      padding: toRem(60) 0 toRem(80);
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        max-width: toRem(1300);
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1480);
+      }
+
+      .pageText {
+        max-width: toRem(550);
+        margin: 0;
+
+        @media only screen and (max-width: $screen-xl - 100) {
+          padding-bottom: toRem(20);
+        }
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          max-width: toRem(630);
+        }
+        
+        @media only screen and (min-width: $screen-xxxl) {
+          max-width: toRem(710);
+        }
+      }
+
+      .pageTextSecond {
+        max-width: toRem(550);
+        margin: 0 0 0 auto;
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          padding-top: toRem(40);
+          max-width: toRem(630);
+        }
+        
+        @media only screen and (min-width: $screen-xxxl) {
+          max-width: toRem(710);
+        }
+      }
+    }
+
+    .contentContainer {
+      padding-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-xxxl) {
+  .container {
+    padding: toRem(80) toRem(80);
+    .contentContainer {
+      .firstItemContainer,
+      .secondItemContainer {
+        display: flex;
+        justify-content: space-between;
+        .itemFlex {
+          width: 50%;
+        }
+        .imageContainer {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .container {
+    padding: toRem(80) toRem(30);
+    .contentContainer {
+      padding-top: toRem(60);
+      .firstItemContainer,
+      .secondItemContainer {
+        display: flex;
+        flex-wrap: wrap;
+        .itemFlex {
+          width: 100%;
+          padding-bottom: toRem(20);
+          .itemContent {
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            .itemTitle {
+              padding-bottom: toRem(15);
+              font-size: toRem(30);
+              line-height: getLineHeight(40, 30);
+            }
+            .itemTextContainer {
+              font-size: toRem(18);
+              line-height: getLineHeight(26, 18);
+              .itemTextTop,
+              .itemTextBottom {
+                margin: 0;
+              }
+              .itemTextTop {
+                margin-bottom: toRem(20);
+              }
+            }
+          }
+        }
+        .imageContainer {
+          width: 100%;
+          .image {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+      }
+
+      .firstItemContainer {
+        padding-bottom: toRem(30);
+        border-bottom: 2px solid #fff;
+        .itemFlex {
+          padding-right: toRem(60);
+        }
+      }
+
+      .secondItemContainer {
+        flex-direction: column-reverse;
+        padding-top: toRem(30);
+        .itemFlex {
+          padding-left: toRem(0);
+        }
+      }
+    }
+
+    &.webDesign {
+      .pageTitle {
+        max-width: toRem(547);
+      }
+
+      .pageTextContainer {
+        padding: toRem(60) 0 toRem(80);
+        .pageText {
+          margin: 0;
+          padding-bottom: toRem(30);
+        }
+
+        .pageTextSecond {
+          margin: 0;
+        }
+      }
+
+      .contentContainer {
+        .firstItemContainer,
+        .secondItemContainer {
+          .itemFlex {
+            .itemContent {
+              .itemTitle {
+                padding-bottom: toRem(15);
+                font-size: toRem(30);
+                line-height: getLineHeight(40, 30);
+              }
+              .itemTextContainer {
+                .itemTextTop,
+                .itemTextBottom {
+                  font-size: toRem(16);
+                  line-height: getLineHeight(24, 16);
+                }
+                .itemTextTop {
+                  margin-bottom: toRem(30);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md - 1) {
+  .container {
+    padding: toRem(80) toRem(15);
+    .contentContainer {
+      padding-top: toRem(40);
+      .firstItemContainer,
+      .secondItemContainer {
+        .itemFlex {
+          padding-bottom: toRem(20);
+          .itemContent {
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            .itemTitle {
+              padding-bottom: toRem(15);
+              font-size: toRem(20);
+              line-height: getLineHeight(28, 20);
+            }
+            .itemTextContainer {
+              font-size: toRem(16);
+              line-height: getLineHeight(24, 16);
+              .itemTextTop,
+              .itemTextBottom {
+                margin: 0;
+              }
+              .itemTextTop {
+                margin-bottom: toRem(20);
+              }
+            }
+          }
+        }
+      }
+
+      .firstItemContainer {
+        padding-bottom: toRem(20);
+        border-bottom: 2px solid #fff;
+        .itemFlex {
+          padding-right: toRem(0);
+        }
+      }
+
+      .secondItemContainer {
+        flex-direction: column-reverse;
+        padding-top: toRem(20);
+        .itemFlex {
+          padding-left: toRem(0);
+        }
+      }
+    }
+
+    &.webDesign {
+      .pageTextContainer {
+        padding: toRem(40) 0;
+      }
+
+      .contentContainer {
+        .firstItemContainer,
+        .secondItemContainer {
+          .itemFlex {
+            .itemContent {
+              .itemTitle {
+                font-size: toRem(20);
+                line-height: getLineHeight(28, 20);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width: $screen-md) {
+  .container {
+    padding: toRem(80) toRem(30);
+
+    &.webDesign {
+      .pageTextContainer {
+        padding: toRem(60) 0 toRem(80);
+      }
+
+      .contentContainer {
+        .firstItemContainer,
+        .secondItemContainer {
+          .itemFlex {
+            .itemContent {
+              .itemTitle {
+                font-size: toRem(30);
+                line-height: getLineHeight(40, 30);
+              }
+            }
+          }
+        }
+
+        .firstItemContainer {
+          .itemFlex {
+            padding-right: toRem(60);
+          }
+        }
+      }
+    }
+  }
+}
+
+.pageTitleFintech {
+  display: flex;
+  flex-direction: column;
+
+  .textSubTitle {
+    @include generalPlexMono(20, 400, 28);
+    margin-bottom: toRem(20);
+
+    @media only screen and (max-width: $screen-md - 1) {
+      @include generalPlexMono(14, 400, 16);
+    }
+  }
+}
+
+.fintechTitleDev {
+  @include generalSansFont(30, 500, 40);
+  font-size: 30px !important;
+
+  @media only screen and (max-width: $screen-md - 1) {
+    @include generalSansFont(20, 500, 28);
+    font-size: 20px !important;
+  }
+}
+
+.fintechContentDev {
+  @include generalPlexMono(18, 400, 26);
+
+  @media only screen and (max-width: $screen-lg) {
+    @include generalPlexMono(16, 400, 24);
+  }
+}

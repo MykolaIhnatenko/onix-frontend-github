@@ -1,0 +1,49 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.sectionsWrapper {
+  padding-bottom: toRem(131);
+  font-family: var(--heeboFont);
+
+  @media only screen and (max-width: $screen-xl) {
+    padding-bottom: toRem(99);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-bottom: toRem(35);
+  }
+}
+
+.hideTablet {
+  display: inline-block;
+
+  @media only screen and (max-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.showMobile {
+  display: none;
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    display: inline-block !important;
+  }
+}
+
+.hideMobile {
+  display: inline-block;
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    display: none;
+  }
+}
+
+.contactUsSecond {
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(48) toRem(24) toRem(24);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(56) toRem(24) toRem(28);
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../../pages/App/sass/breakpointsVariables';
+@import '../../../pages/App/sass/functions';
+
+.buttonControls {
+  @media only screen and (min-width: $screen-lg + 1) {
+    &:not(:disabled):hover {
+      svg {
+        path {
+          stroke: #0072FF;
+        }
+        
+        rect {
+          fill-opacity: 1;
+          fill: rgba(255, 255, 255);
+        }
+      }
+    }
+  }
+  
+  &:disabled {
+    svg {
+      path {
+        opacity: .3;
+      }
+      
+      rect {
+        fill-opacity: 0.3;
+        fill: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}

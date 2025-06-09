@@ -1,0 +1,123 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.solutionsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  
+  @media only screen and (min-width: $screen-md) {
+    padding-bottom: 80px;
+  }
+  
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-bottom: 100px;
+  }
+
+  .wrapperBlock {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: 48px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .subtitle {
+    padding: 22px 0 24px;
+
+    @media only screen and (min-width: $screen-md) {
+      padding: 32px 0;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: 1100px;
+    }
+  }
+
+  .solutionsBlock {
+    list-style: none;
+
+    .item {
+      &:not(:last-of-type) {
+        padding-bottom: 24px;
+
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: 32px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: 65px;
+        }
+
+        .text {
+          p {
+            @media only screen and (min-width: $screen-lg + 1) {
+              max-width: 508px;
+            }
+          }
+        }
+      }
+
+      &:last-of-type {
+        .text {
+          p {
+            @media only screen and (min-width: $screen-lg + 1) {
+              max-width: 400px;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        .text {
+          p {
+            @media only screen and (min-width: $screen-lg + 1) {
+              max-width: 445px;
+            }
+          }
+        }
+      }
+
+      .title {
+        font-family: var(--satoshiFont), sans-serif;
+        display: flex;
+
+        span {
+          padding-right: 10px;
+
+          @media only screen and (min-width: $screen-md) {
+            padding-right: 16px;
+          }
+        }
+      }
+
+      .text {
+        padding-top: 8px;
+
+        @media only screen and (min-width: $screen-md) {
+          padding-top: 16px;
+          padding-left: 43px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-top: 0;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

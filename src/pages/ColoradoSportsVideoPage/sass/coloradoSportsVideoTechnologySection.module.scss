@@ -1,0 +1,102 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.technologySection {
+  .container {
+    padding-bottom: toRem(20);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(30);
+    }
+
+    .technologiesCard {
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: flex;
+        gap: 10.7%;
+      }
+
+      .titles {
+        @media only screen and (min-width: $screen-lg + 1) {
+          flex: 0 1 calc((100% - 10.7%) / 2);
+        }
+
+        .sectionTitle {
+          padding-bottom: toRem(24);
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-bottom: toRem(32);
+          }
+          
+          @media only screen and (max-width: $screen-sm - 100) {
+            letter-spacing: -0.4px
+          }
+        }
+      }
+
+      .listBlock {
+        padding-top: toRem(24);
+
+        @media only screen and (min-width: $screen-md) {
+          display: flex;
+          gap: toRem(24);
+          padding-top: toRem(40);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          gap: toRem(32);
+          flex: 0 1 calc((100% - 10.7%) / 2);
+          padding-top: 0;
+        }
+
+        .list {
+          @media only screen and (min-width: $screen-md) {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            flex: 0 1 calc((100% - 32px) / 2);
+          }
+
+          h3 {
+            font-weight: 500;
+            font-size: toRem(20);
+            line-height: getLineHeight(25, 20);
+            color: #9B8CD7;
+            padding-bottom: toRem(16);
+
+            @media only screen and (min-width: $screen-md) {
+              padding-bottom: toRem(10);
+            }
+          }
+
+          ul {
+            list-style: none;
+
+            li {
+              padding: toRem(16) 0;
+
+              &:not(:last-of-type) {
+                border-bottom: 1px solid #36304F;
+              }
+
+              &:last-of-type {
+                padding-bottom: 0;
+              }
+            }
+          }
+
+          &:last-of-type {
+            padding-top: toRem(48);
+
+            @media only screen and (min-width: $screen-md) {
+              padding-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

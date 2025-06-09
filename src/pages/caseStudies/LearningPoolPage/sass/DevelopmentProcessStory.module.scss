@@ -1,0 +1,333 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$light-orange: #E16738;
+$default-box-shadow: 0 20px 50px 5px #EDF0F7;
+$blue: #0068d0;
+
+.storyThree {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    position: relative;
+
+    .number {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      font-family: var(--muktaVaani);
+      color: $light-orange;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .number, .heading {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: var(--muktaVaani);
+    }
+  }
+
+  .esp {
+    margin-bottom: 10px;
+  }
+
+  .heading {
+    padding: 0 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--muktaVaani);
+    color: white;
+    width: fit-content;
+    background-color: $light-orange;
+  }
+
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .card {
+      box-shadow: $default-box-shadow;
+      background: white;
+      flex: 1 1 300px;
+      max-width: 350px;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      padding: 0 10px 30px;
+
+      img {
+        max-width: 100%;
+        max-height: 240px;
+        width: auto;
+      }
+      p {
+        max-width: 250px;
+        height: 125px;
+        .card-number {
+          display: block;
+          color: $blue;
+          font-weight: 600;
+          font-size: 23px;
+          line-height: 30px;
+          font-family: var(--muktaVaani);
+        }
+      }
+    }
+  }
+
+  .cards.mobile {
+    display: flex;
+  }
+
+  .cards:not(.mobile) {
+    display: none;
+  }
+
+  .processes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .process {
+      margin-bottom: 30px;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+
+      .imageWrapper {
+        margin-bottom: 15px;
+      }
+
+      .text {
+        text-align: center;
+        p {
+          max-width: 320px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .full {
+    width: 100%;
+
+    div:not(:last-child) > p {
+      margin-bottom: 30px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      width: 100vw;
+    }
+  }
+
+  .upperImage {
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    left: 200px;
+    width: 130px;
+    height: 130px;
+    visibility: hidden;
+  }
+
+  .lowerImage {
+    position: absolute;
+    z-index: -1;
+    bottom: -5px;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    visibility: hidden;
+
+    img {
+      object-fit: cover;
+    }
+
+    @media only screen and (min-width: 1400px) {
+      visibility: visible;
+    }
+  }
+
+  @media only screen and (min-width: 576px) {
+    .content {
+
+      .processes {
+        min-height: 350px;
+        justify-content: flex-start;
+
+        .process {
+          width: 100%;
+          flex-flow: row nowrap;
+
+          .text {
+            margin-left: 20px;
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .content {
+
+      .esp {
+        margin-bottom: 30px;
+        max-width: 668px;
+      }
+
+      &:first-child {
+        flex-flow: row nowrap;
+      }
+
+      .processes {
+        margin-right: -60px;
+
+        .process {
+          margin-right: 40px;
+          flex: 0 1 300px;
+          align-items: flex-start;
+          &:nth-child(1) p {
+            max-width: 154px;
+          }
+          &:nth-child(2) p {
+            max-width: 265px;
+          }
+          &:nth-child(3) p {
+            max-width: 224px;
+          }
+          &:nth-child(4) p {
+            max-width: 295px;
+          }
+          &:nth-child(5) p {
+            width: 243px;
+            max-width: 390px;
+          }
+        }
+      }
+
+      &.full {
+
+        .text {
+          max-width: 668px;
+          margin: 0 auto;
+          div:not(:last-child) > p {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .content.animated {
+      flex-flow: row nowrap;
+      width: 100vw;
+
+      .cards:not(.mobile) {
+        display: flex;
+      }
+
+      .cards.mobile {
+        display: none;
+      }
+
+      .cards {
+        padding: 0 10px 40px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        .card {
+          margin: 0 15px;
+          flex: 0 0 350px;
+          width: 350px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+
+    .upperImage, .lowerImage {
+      visibility: visible;
+    }
+
+    .content {
+
+      .esp {
+        margin-bottom: 0;
+      }
+      .processes {
+        margin-top: 60px;
+        justify-content: flex-start;
+
+        .process {
+          margin-right: 30px;
+          flex-grow: 0;
+          flex-basis: 350px;
+
+          &:nth-child(1) p {
+            width: 218px;
+            max-width: 218px;
+          }
+          &:nth-child(2) p {
+            width: 265px;
+            max-width: 265px;
+          }
+          &:nth-child(4) p {
+            width: 295px;
+            max-width: 295px;
+          }
+          &:nth-child(5) p {
+            width: 390px;
+            max-width: 390px;
+          }
+        }
+      }
+      &:nth-child(2) {
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        .text {
+          max-width: 455px;
+        }
+      }
+      &:nth-child(4) {
+        .text {
+          margin-top: 30px;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+  }
+  @media only screen and (min-width: 1400px) {
+    max-width: 1340px;
+    margin-top: 120px;
+  }
+}

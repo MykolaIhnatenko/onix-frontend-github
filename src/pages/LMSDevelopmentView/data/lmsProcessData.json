@@ -1,0 +1,59 @@
+[
+  {
+    "id": "01",
+    "title": "Consulting Assistance",
+    "content": "",
+    "list": [
+      "Business goals analysis",
+      "Creating a project's roadmap",
+      "Determining the strategy",
+      "Lean Inception",
+      "Planning and scheduling"
+    ]
+  },
+  {
+    "id": "02",
+    "title": "Research",
+    "content": "",
+    "list":[ 
+      "Generating ideas and concepts",
+      "Choosing a development methodology",
+      "Selecting a team",
+      "Conducting the project's audit",
+      "Developing a user journey",
+      "Planning features development",
+      "Preparing a timeline"
+    ]
+  },
+  {
+    "id": "03",
+    "title": "UI/UX Design",
+    "content": "",
+    "list": [
+      "Creating prototypes",
+      "Facilitating the workflows",
+      "Managing complex data",
+      "Meeting end-users needs",
+      "Creating user flow"
+    ]
+  },
+  {
+    "id": "04",
+    "title": "Development",
+    "content": "",
+    "list": [
+      "Ensuring all the transparency in accordance with the Agile approach",
+      "Delivering software based on iteration requirements"
+    ]
+  },
+  {
+    "id": "05",
+    "title": "Testing + Maintenance",
+    "content": "",
+    "list": [
+      "Conducting QA testing",
+      "Preparing the final iteration for product release",
+      "Product upgrade based on real users’ feedback, software performance, and changing needs or requirements"
+    ]
+  }
+]

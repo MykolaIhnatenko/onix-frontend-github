@@ -1,0 +1,46 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  width: 100%;
+  position: relative;
+  background-image: url('../../../assets/images/work/img_work_mobile_bg.webp');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  overflow-x: hidden;
+
+  @media only screen and (min-width: $screen-md) {
+    background-image: url('../../../assets/images/work/img_work_tablet_bg.webp');
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    background-image: url('../../../assets/images/work/img_work_bg.webp');
+  }
+}
+
+.page {
+  position: relative;
+}
+
+.bgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: toRem(2100);
+
+  @media only screen and (max-width: $screen-lg) {
+    top: 0;
+    height: toRem(1900);
+  }
+
+  img {
+    object-fit: cover;
+    object-position: center top;
+
+    @media only screen and (min-width: $screen-md) {
+      object-position: center;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  padding: toRem(120) 0 0;
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) 0 0;
+  }
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(80) 0 0;
+  }
+  
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: toRem(1440);
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: 100%;
+    }
+    
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      @media only screen and (max-width: ($screen-md - 1)) {
+        max-height: toRem(1440);
+      }
+    }
+    
+    &:before {
+      content: '';
+      width: 100%;
+      height: toRem(130);
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #ffffff 100%);
+    }
+  }
+  
+  .container {
+    position: relative;
+    
+    .title {
+      margin-bottom: toRem(60);
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(40);
+      }
+      
+      span{
+        display: inline-block;
+      }
+    }
+    
+    .cardBlock {
+      display: flex;
+      max-width: toRem(1300);
+      gap: toRem(30);
+      
+      @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        gap: toRem(30);
+      }
+      
+      .card {
+        .icon{
+          width: toRem(60);
+          height: toRem(60);
+          
+          @media only screen and (max-width: $screen-lg) {
+            width: toRem(50);
+            height: toRem(50);
+          }
+        }
+        
+        .cardTitle {
+          font-size: toRem(20);
+          font-weight: 500;
+          line-height: getLineHeight(28, 20);
+          margin-top: toRem(15);
+          margin-bottom: toRem(10);
+        }
+        
+        .cardText {
+          font-size: toRem(18);
+          font-weight: 400;
+          line-height: getLineHeight(26, 18);
+          
+          @media only screen and (max-width: ($screen-md - 1)) {
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+          }
+        }
+      }
+    }
+  }
+}

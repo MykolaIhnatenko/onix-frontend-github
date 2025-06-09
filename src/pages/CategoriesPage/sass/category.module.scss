@@ -1,0 +1,60 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.category {
+  padding-top: toRem(40);
+
+  @media only screen and (min-width: $screen-md) {
+    flex-basis: 50%;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(80);
+  }
+
+  @media only screen and (min-width: $screen-xl) {
+    flex-basis: 33.33%;
+  }
+
+  &:not(:last-of-type) {
+    padding-bottom: toRem(40);
+    border-bottom: 2px solid var(--color-black);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(60);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(80);
+    }
+  }
+
+  &.lastEvenCategory {
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  &.lastOddCategory {
+    @media only screen and (min-width: $screen-xl) {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  .title {
+    padding-bottom: toRem(10);
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(30);
+      line-height: getLineHeight(40, 30);
+      padding-bottom: toRem(20);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      font-size: toRem(36);
+      line-height: getLineHeight(46, 36);
+    }
+  }
+}

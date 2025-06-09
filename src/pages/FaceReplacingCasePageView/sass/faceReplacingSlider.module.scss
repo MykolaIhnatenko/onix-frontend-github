@@ -1,0 +1,58 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  background-color: var(--color-black);
+  padding: toRem(120) 0;
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) 0;
+  }
+  
+  .background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: toRem(520);
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(540);
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      height: toRem(270);
+    }
+    
+    img {
+      object-fit: cover;
+    }
+  }
+  
+  .title {
+    color: var(--color-white);
+    padding-bottom: toRem(80);
+    max-width: toRem(1080);
+    
+    @media only screen and (min-width: $screen-xxxl) {
+      max-width: toRem(1480);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: toRem(60);
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding-bottom: toRem(40);
+    }
+  }
+
+  .contentContainer {
+    padding-bottom: toRem(120);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: toRem(80);
+    }
+  }
+}

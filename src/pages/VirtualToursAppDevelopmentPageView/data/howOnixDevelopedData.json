@@ -1,0 +1,25 @@
+{
+  "blockTitle": "Learn how we built a VR app to offer users immersive virtual tours of various countries around the world.",
+  "data": [
+    {
+      "id": 1,
+      "title": "Travel",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "2 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "Netherlands",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "1 year",
+      "text": "Project duration"
+    }
+  ]
+}

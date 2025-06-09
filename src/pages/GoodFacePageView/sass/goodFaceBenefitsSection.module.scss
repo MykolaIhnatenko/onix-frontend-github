@@ -1,0 +1,85 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.benefitsSection {
+  h2 {
+    padding-bottom: toRem(8);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(32);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(70);
+    }
+  }
+
+  .benefitsContent {
+    list-style: none;
+    position: relative;
+    z-index: 4;
+
+    @media only screen and (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: toRem(50) toRem(60);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(750);
+      gap: toRem(60) toRem(110);
+    }
+
+    .benefit {
+      padding-top: toRem(16);
+
+      @media only screen and (min-width: $screen-md) {
+        flex: 0 1 calc((100% - 60px) / 2);
+        padding-top: 0;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        flex: 0 1 calc((100% - 110px) / 2);
+      }
+
+      h3 {
+        margin-bottom: toRem(8);
+
+        @media only screen and (min-width: $screen-md) {
+          margin-bottom: toRem(8);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          margin-bottom: toRem(16);
+        }
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .spotContainer {
+    position: absolute;
+    z-index: 3;
+    width: toRem(198);
+    height: toRem(181);
+    overflow-x: hidden;
+    right: 0;
+    bottom: toRem(-75);
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(277);
+      height: toRem(270);
+      bottom: toRem(-121);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: toRem(720);
+      height: toRem(659);
+      right: toRem(-60);
+      bottom: toRem(50);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.result {
+  padding-top: toRem(16);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(32);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    flex: 0 1 calc((100% - 110px) / 2);
+
+    &:last-of-type {
+      flex: 0 1 100%;
+    }
+  }
+
+  h3 {
+    color: var(--color-pink2) !important;
+    padding-bottom: toRem(8);
+  }
+}

@@ -1,0 +1,126 @@
+@import "../../../App/sass/mixinsAnimation";
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables.scss";
+
+.desktop {
+  width: toRem(1500);
+  margin: toRem(75) 0 toRem(35) toRem(30);
+  height: toRem(719);
+
+  @media only screen and (max-width: $screen-xl) {
+    margin-top: toRem(30);
+    width: toRem(1000);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: toRem(609);
+  }
+
+  .imageWrapper {
+    display: flex;
+    column-gap: toRem(30);
+  }
+}
+
+.tablet {
+  width: calc(100vw - 47px);
+  margin: 0 0 toRem(56) toRem(30);
+  overflow-x: hidden;
+
+  .imageWrapper {
+    display: flex;
+    column-gap: toRem(30);
+    width: toRem(1500);
+  }
+}
+
+.mobile {
+  width: calc(100vw - 33px);
+  margin-left: toRem(16);
+  margin-top: toRem(-7);
+  overflow-x: hidden;
+
+  .imageWrapper {
+    display: flex;
+    column-gap: toRem(16);
+    width: toRem(1000);
+    max-height: toRem(300);
+  }
+}
+
+.desktopAnimateThirdSlide, .tabletAnimateThirdSlide, .mobileAnimateThirdSlide {
+  animation-duration: 4000ms;
+  animation-delay: 1000ms;
+}
+
+.desktopAnimateThirdSlide {
+  animation-name: desktopAnimateThirdSlide;
+
+  @media only screen and (max-width: $screen-xl) {
+    animation-name: desktopAnimateThirdSlide1200px;
+  }
+}
+
+.tabletAnimateThirdSlide {
+  animation-name: tabletAnimateThirdSlide;
+}
+
+.mobileAnimateThirdSlide {
+  animation-name: mobileAnimateThirdSlide;
+}
+
+// ----------DESKTOP ANIMATION---------- //
+
+@keyframes desktopAnimateThirdSlide {
+  0% {
+    @include translateX(0%);
+  }
+  50% {
+    @include translateX(-32.5%);
+  }
+  100% {
+    @include translateX(0%);
+  }
+}
+
+@keyframes desktopAnimateThirdSlide1200px {
+  0% {
+    @include translateX(0%);
+  }
+  50% {
+    @include translateX(-50.5%);
+  }
+  100% {
+    @include translateX(0%);
+  }
+}
+
+// ----------TABLET ANIMATION---------- //
+
+@keyframes tabletAnimateThirdSlide {
+  0% {
+    @include translateX(0%);
+  }
+  50% {
+    @include translateX(-34.5%);
+  }
+  100% {
+    @include translateX(0%);
+  }
+}
+
+// ----------MOBILE ANIMATION---------- //
+
+@keyframes mobileAnimateThirdSlide {
+  0% {
+    @include translateX(0%);
+  }
+  50% {
+    @include translateX(-29.5%);
+  }
+  100% {
+    @include translateX(0%);
+  }
+}

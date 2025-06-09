@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "content": "Ensured an effective and transparent development process;"
+  },
+  {
+    "id": "2",
+    "content": "Gathered requirements to define objectives and product scope;"
+  },
+  {
+    "id": "3",
+    "content": "Developed a multistep videographer assignment process;"
+  },
+  {
+    "id": "4",
+    "content": "Created a calendar view for all scheduled games and a calendar view for each videographer’s scheduled games;"
+  },
+  {
+    "id": "5",
+    "content":"Added one-tap videographer notifications where the admin can send an email to a selected videographer with all the games assigned to them;"
+  },
+  {
+    "id": "6",
+    "content": "Implemented eight possible statuses any game can pass based on its history."
+  }
+]

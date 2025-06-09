@@ -1,0 +1,85 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.customSoftwareSection {
+  padding-bottom: toRem(80);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-bottom: 0;
+  }
+
+  .container {
+    padding-top: toRem(80);
+    padding-bottom: toRem(30);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(80);
+    }
+
+    .title {
+      max-width: toRem(330);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(500);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(600);
+      }
+    }
+
+    .textBlock {
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .textContainer {
+        &:first-of-type {
+          @media only screen and (min-width: $screen-lg + 1) {
+            flex-basis: 51.2%;
+          }
+
+          .text {
+            padding: toRem(50) 0 toRem(30);
+
+            @media only screen and (min-width: $screen-md) {
+              padding: toRem(30) 0;
+              max-width: toRem(540);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding: toRem(40) 0 0;
+            }
+          }
+        }
+
+        &:last-of-type {
+          @media only screen and (min-width: $screen-lg + 1) {
+            flex-basis: 48.8%;
+          }
+
+          .text {
+            @media only screen and (min-width: $screen-md) {
+              max-width: toRem(540);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-top: toRem(170);
+              max-width: toRem(564);
+            }
+          }
+        }
+
+        .text {
+          margin: 0;
+          max-width: toRem(330);
+
+          @media only screen and (min-width: $screen-md) {
+            max-width: toRem(590);
+          }
+        }
+      }
+    }
+  }
+}

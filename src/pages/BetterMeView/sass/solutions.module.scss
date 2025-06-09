@@ -1,0 +1,168 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.solutions {
+  padding-top: toRem(180);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(120);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-top: toRem(72);
+  }
+
+  h2 {
+    margin-bottom: toRem(48);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(40);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-bottom: toRem(24);
+    }
+  }
+
+  .alignRight {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: toRem(140);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(60);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-bottom: toRem(40);
+    }
+
+    div {
+      flex-basis: 58.2%;
+
+      @media only screen and (max-width: $screen-lg) {
+        flex-basis: unset;
+      }
+
+      p {
+        max-width: toRem(660);
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: unset;
+        }
+      }
+    }
+  }
+
+  .biggerText {
+    font-weight: 400;
+    font-size: toRem(24);
+    line-height: 150%;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(20);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(18);
+    }
+  }
+
+  .images {
+    display: flex;
+    gap: toRem(40);
+    height: toRem(549);
+    margin-bottom: toRem(140);
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(285);
+      gap: toRem(20);
+      margin-bottom: toRem(60);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      flex-direction: column;
+      height: unset;
+      gap: toRem(10);
+      margin-bottom: toRem(40);
+    }
+
+    .imageLeft, .imageRight {
+      position: relative;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .imageLeft {
+      flex-basis: 40%;
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+       height: toRem(369);
+       flex-basis: unset;
+      }
+    }
+
+    .imageRight {
+      flex-basis: 60%;
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        height: toRem(245);
+        flex-basis: unset;
+       }
+
+      img {
+        @media only screen and (max-width: $screen-lg) {
+          object-position: top;
+        }
+      }
+    }
+  }
+
+  .listHeader {
+    margin-bottom: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(24);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-bottom: toRem(8);
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li:not(:last-child) {
+      border-bottom: 1px solid #EDEDED;
+    }
+  }
+
+  .listItem {
+    display: flex;
+    gap: toRem(40);
+    justify-content: space-between;
+    align-items: center;
+    padding: toRem(32) 0;
+
+    @media only screen and (max-width: $screen-lg) {
+      justify-content: unset;
+      padding: toRem(24) 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(16) 0;
+      gap: toRem(32);
+    }
+
+    p {
+      flex-basis: 58.33%;
+
+      @media only screen and (max-width: $screen-lg) {
+        flex-basis: unset;
+      }
+    }
+  }
+}

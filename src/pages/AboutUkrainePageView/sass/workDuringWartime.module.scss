@@ -1,0 +1,159 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  padding: toRem(120) toRem(70);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(120) toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(80) toRem(15);
+  }
+
+  .background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: toRem(460);
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(70);
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.00) 15%, #FFFFFF 100%);
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(570) !important;
+    }
+
+    @media only screen and (width: $screen-lg) {
+      height: toRem(450) !important;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: toRem(316) !important;
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+      height: toRem(204) !important;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .mainTitle {
+    width: toRem(830);
+
+    @media only screen and (max-width: $screen-lg) {
+      width: 100%;
+    }
+  }
+
+  .subtitle {
+    max-width: toRem(830);
+    font-size: toRem(18);
+    font-weight: 500;
+    line-height: getLineHeight(28, 18);
+    margin: toRem(40) 0 toRem(80);
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: 100%;
+      margin: toRem(40) 0 toRem(60);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: toRem(30) 0 toRem(60);
+      font-size: toRem(16);
+    }
+  }
+
+  .quote {
+    max-width: toRem(830);
+    font-weight: 500;
+    font-size: toRem(24);
+    line-height: getLineHeight(34, 24);
+    margin: 0;
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(20);
+    }
+  }
+
+  .authorQuote {
+    margin: toRem(20) 0 toRem(40);
+    width: toRem(830);
+
+    @media only screen and (max-width: $screen-lg) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(16);
+      margin-bottom: toRem(30);
+    }
+  }
+
+  .photo {
+    max-width: toRem(964);
+    height: toRem(500);
+    width: 100%;
+    object-fit: cover;
+
+    @media only screen and (max-width: $screen-lg) {
+      height: calc(100vw - 403px);
+      max-height: toRem(440);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      min-height: toRem(170);
+      height: calc(100vw - 203px);
+      max-height: toRem(340);
+    }
+  }
+
+  .bottomText {
+    font-family: var(--generalSans);
+    position: relative;
+    margin: toRem(40) 0 0;
+    font-weight: 500;
+    max-width: toRem(830);
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: 100%;
+      margin-top: toRem(60);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(16);
+      margin-top: toRem(30);
+    }
+
+    span {
+      display: block;
+      padding-bottom: toRem(28);
+    }
+  }
+}

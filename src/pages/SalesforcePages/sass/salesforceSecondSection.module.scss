@@ -1,0 +1,102 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.secondSection {
+  margin: 0 auto;
+  padding-top: toRem(100);
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: none;
+  }
+
+  .container {
+    @media only screen and (min-width: $screen-lg + 1) {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    .contentContainer {
+      margin-bottom: 0;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: toRem(100);
+      }
+
+      p {
+        @media only screen and (min-width: $screen-lg + 1) {
+          flex-basis: toRem(530);
+        }
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        padding: toRem(7) 0 toRem(40) 0;
+
+        @media only screen and (min-width: $screen-md) {
+          flex-direction: row;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          max-width: toRem(360);
+          padding: toRem(30) 0 toRem(51) 0;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(560);
+          padding: 0 0 0 toRem(111);
+          justify-content: space-between;
+          flex-basis: toRem(580);
+        }
+
+        div:nth-child(2) {
+          h3 {
+            @media only screen and (min-width: $screen-md) {
+              padding-right: 0;
+              width: 100%;
+            }
+          }
+        }
+
+        div:nth-child(3) {
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-left: toRem(8);
+          }
+
+          h3 {
+            @media only screen and (min-width: $screen-md) {
+              padding-right: toRem(150);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-right: 0;
+            }
+          }
+        }
+
+        div:nth-child(4) {
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-left: toRem(8);
+          }
+        }
+      }
+    }
+  }
+}
+
+.processAutomation {
+  margin: 0 auto;
+  padding-top: toRem(50);
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(100);
+    max-width: none;
+  }
+}
+

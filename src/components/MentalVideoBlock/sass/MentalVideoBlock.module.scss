@@ -1,0 +1,143 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/mixinsAnimation.scss";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  height: 100vh;
+  min-height: toRem(550);
+  max-height: toRem(1400);
+  position: relative;
+  overflow: hidden;
+
+  @media only screen and (max-width: $screen-lg) {
+    height: 100vh;
+    min-height: toRem(1024);
+    max-height: 100%;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    height: 100vh;
+    min-height: toRem(640);
+    max-height: 100%;
+  }
+
+  .videoWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100vh + 1px);
+    min-height: toRem(669);
+    
+    .imageBlock {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      min-height: toRem(1024);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      min-height: toRem(640);
+    }
+  }
+
+  .titleScreen {
+    width: 100%;
+    height: 100%;
+    padding: 0 toRem(70) 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    pointer-events: none;
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: 0 toRem(80) 0;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(154) toRem(30) 0;
+      align-items: start;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(154) toRem(15) 0;
+    }
+  }
+
+  .animContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: toRem(584);
+    max-height: toRem(832);
+    z-index: 2;
+    right: toRem(50);
+    bottom: toRem(-200);
+    animation-name: animContainer;
+    animation-duration: 1s;
+    pointer-events: none;
+
+    @media only screen and (max-width: $screen-xl) {
+      right: toRem(-120);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(478);
+      max-height: toRem(680);
+      right: toRem(-80);
+      bottom: toRem(-170);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      display: none;
+    }
+  }
+}
+
+@keyframes animContainer {
+  0% {
+    transform: translateY(350px) rotate(-60deg);
+
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.product3dModelingAnimation {
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+    
+    @media only screen and (max-width: $screen-lg) {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+    }
+  }
+  
+  .titleScreen {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    padding: toRem(294) toRem(70) 0;
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: toRem(294) toRem(80) 0;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(154) toRem(30) 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(139) toRem(15) 0;
+    }
+  }
+}

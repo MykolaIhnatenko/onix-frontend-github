@@ -1,0 +1,110 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.hireSection {
+  position: relative;
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: toRem(158);
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(304);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(380);
+      top: 0;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(88);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(80);
+      display: flex;
+      justify-content: space-between;
+      gap: 3%;
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(80);
+      padding-right: toRem(80);
+    }
+
+      .title {
+        padding-bottom: toRem(50);
+        max-width: toRem(244);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(60);
+          max-width: toRem(569);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          flex: 0 1 46.7%;
+        }
+      }
+
+    .itemsBlock {
+      @media only screen and (min-width: $screen-lg + 1) {
+        flex: 0 1 50%;
+      }
+
+      .item {
+        border: 2px solid var(--color-black);
+        padding: toRem(21) 0 toRem(21) toRem(15);
+
+        @media only screen and (min-width: $screen-md) {
+          padding: toRem(40) 0 toRem(40) toRem(30);
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: toRem(10);
+
+          @media only screen and (min-width: $screen-md) {
+            margin-bottom: toRem(20);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            margin-bottom: toRem(30);
+          }
+        }
+
+        .itemTitle {
+          font-size: toRem(18);
+          line-height: getLineHeight(28, 18);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+          }
+
+          span {
+            padding-right: toRem(10);
+
+            @media only screen and (min-width: $screen-md) {
+              padding-right: toRem(38);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-right: toRem(30);
+            }
+          }
+        }
+      }
+    }
+  }
+}

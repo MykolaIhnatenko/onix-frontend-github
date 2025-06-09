@@ -1,0 +1,145 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+
+.resultBlock {
+  background-color: var(--color-black);
+  color: var(--color-white);
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-bottom: toRem(60);
+  }
+
+  .background {
+    top: 0;
+    height: toRem(520);
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(50);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: toRem(280);
+    }
+  }
+
+  .container {
+    .name {
+      margin: 0;
+      padding-bottom: toRem(16);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-bottom: toRem(20);
+      }
+    }
+
+    .title {
+      padding-bottom: toRem(40);
+      max-width: toRem(1480);
+      
+      @media only screen and (max-width: ($screen-xxxl - 1)) {
+        max-width: toRem(921);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(704);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(20);
+      }
+    }
+
+    .textContainer {
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        max-width: toRem(1300);
+      }
+
+      @media screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1480);
+      }
+
+      .text, .textSecond {
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          max-width: toRem(630);
+        }
+
+        @media screen and (min-width: $screen-xxxl) {
+          max-width: toRem(710);
+        }
+      }
+
+      .text {
+        margin: 0;
+        padding-bottom: toRem(40);
+
+        @media only screen and (max-width: $screen-lg) {
+          padding-bottom: toRem(40);
+          max-width: toRem(542);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding-bottom: toRem(20);
+        }
+      }
+
+      .textSecond {
+        margin: 0 0 0 auto;
+        padding-bottom: toRem(80);
+
+        @media only screen and (max-width: $screen-lg) {
+          margin: 0;
+          max-width: toRem(542);
+          padding-bottom: toRem(40);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding-bottom: toRem(20);
+        }
+      }
+    }
+
+    .contentContainer {
+      margin-left: auto;
+      display: flex;
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(542);
+        margin-left: 0;
+      }
+
+      .line {
+        background-color: var(--color-track-gray);
+        .lineActive {
+          background-color: var(--color-white);
+        }
+
+      }
+
+      .content {
+        > div {
+          &:last-child {
+            .contentText {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .contentText {
+          color: var(--color-white);
+          margin: 0 0 toRem(30) 0;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            margin: 0 0 toRem(20) 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+$blueSalesforceTrackingApp: #0270D2;
+$blueSalesforceSupportAutomationApp: #3296ED;
+
+.ourSolutionsSection {
+  background-color: #F5F9FD;
+
+  .container {
+    padding-top: toRem(40);
+    padding-bottom: toRem(20);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(50);
+      padding-bottom: toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(100);
+      padding-bottom: toRem(70);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h2 {
+      color: $blueSalesforceTrackingApp;
+      padding-bottom: toRem(20);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(30);
+      }
+    }
+
+    p {
+      max-width: toRem(700);
+    }
+  }
+}
+
+.processAutomation {
+  .container {
+    h2 {
+      color: $blueSalesforceSupportAutomationApp;
+    }
+  }
+}
+

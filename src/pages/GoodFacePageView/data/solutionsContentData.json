@@ -1,0 +1,14 @@
+[
+  {
+    "id": "01",
+    "text": "A highly-skilled team of Onix specialists followed the sophisticated process to build an iOS mobile app powered by AI and data science that helps people choose skin care products based on their age, unique skin type, needs, and lifestyle. The consumer-facing solution also recommends products to users based on their individual needs."
+  },
+  {
+    "id": "02",
+    "text": "The users fill in a questionnaire, and the science-backed AI-powered recommendation engine of the app offers the most fitting products. The app lets users vet product formulations for safety and creates personalized skincare recommendations."
+  },
+  {
+    "id": "03",
+    "text": "The main challenge we faced was data collection and maintaining a vast database. With the help of ML, we created and categorized all possible ingredients used in personal care products."
+  }
+]

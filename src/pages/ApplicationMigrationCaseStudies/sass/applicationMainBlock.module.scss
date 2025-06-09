@@ -1,0 +1,100 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  .background {
+    position: absolute;
+    width: 100%;
+    height: toRem(898);
+    top: 0;
+    left: 0;
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: toRem(623);
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .contentContainer {
+    position: relative;
+
+    .content {
+      padding-bottom: toRem(70);
+      padding-top: toRem(178);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-bottom: toRem(40);
+        padding-top: toRem(188);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-top: toRem(140);
+      }
+
+      .title {
+        max-width: toRem(779);
+        padding-bottom: toRem(40);
+        
+        @media only screen and (max-width: $screen-lg) {
+          font-size: toRem(50);
+          line-height: getLineHeight(64, 50);
+          padding-bottom: toRem(30);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding-bottom: toRem(15);
+          font-size: toRem(40);
+          line-height: getLineHeight(50, 40);
+        }
+      }
+
+      .firstText {
+        max-width: toRem(416);
+        margin: 0;
+        padding-bottom: toRem(10);
+
+        @media only screen and (max-width: $screen-lg) {
+          padding-bottom: toRem(30);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding-bottom: toRem(40);
+        }
+      }
+
+      .secondText {
+        max-width: toRem(590);
+        margin: 0 0 0 auto;
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: toRem(450);
+        }
+      }
+    }
+
+    .image {
+      width: 100%;
+      height: toRem(810);
+
+      @media only screen and (max-width: $screen-lg) {
+        height: toRem(432);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        height: toRem(202);
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

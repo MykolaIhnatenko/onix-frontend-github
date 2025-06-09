@@ -1,0 +1,98 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.contactUs {
+  padding-top: toRem(180);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(120);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-top: toRem(72);
+  }
+
+  .background {
+    padding: toRem(147) toRem(110);
+    background: linear-gradient(108.75deg, #E2F0EF 42.85%, #E3F1F0 77.01%);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(70);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(72) toRem(30);
+    }
+
+    h2 {
+      font-size: toRem(48);
+      margin-bottom: toRem(48);
+      font-weight: 500;
+      line-height: 140%;
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(36);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(24);
+        margin-bottom: toRem(30);
+      }
+    }
+
+    .link {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: toRem(64);
+      max-width: toRem(280);
+      color: white;
+      background-color: #020204;
+      border-radius: 2px;
+      padding-left: toRem(30);
+      transition: opacity 0.3s ease;
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: unset;
+        padding-left: 0;
+      }
+
+      &:hover {
+        svg {
+          opacity: 1;
+          transform: translateX(75px);
+        }
+
+        span {
+          transform: translateX(0);
+        }
+      }
+
+      svg {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transform: translateX(50px);
+        transition: all 0.5s ease;
+
+        @media only screen and (max-width: $screen-lg) {
+          display: none;
+        }
+
+        path {
+          fill: white;
+        }
+      }
+
+      span {
+        transform: translateX(-15px);
+        transition: all 0.5s ease;
+
+        @media only screen and (max-width: $screen-lg) {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

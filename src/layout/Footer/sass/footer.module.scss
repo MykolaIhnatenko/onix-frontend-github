@@ -1,0 +1,192 @@
+@import '../../../pages/App/sass/functions';
+@import '../../../pages/App/sass/breakpointsVariables';
+
+.footer {
+  font-family: var(--generalSans);
+  font-weight: 400;
+  font-size: toRem(14);
+  line-height: getLineHeight(20, 14);
+  color: var(--color-white);
+
+  @media only screen and (min-width: $screen-md) {
+    line-height: getLineHeight(20, 14);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    line-height: 1.25;
+  }
+
+  .container {
+    padding: toRem(20) toRem(15) toRem(40);
+    background-color:  var(--color-black);
+    position: relative;
+    z-index: 3;
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(40) toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: var(--max-container-width);
+      padding: toRem(80) toRem(70);
+      margin: 0 auto;
+    }
+
+    .mobile {
+      @media only screen and (min-width: $screen-xl) {
+        display: none;
+      }
+
+      .tabletFlex {
+        @media only screen and (min-width: $screen-md) {
+          gap: 0 toRem(30);
+        }
+        :nth-child(1) {
+          @media only screen and (min-width: $screen-md) {
+            order: 1;
+          }
+        }
+
+        :nth-child(2) {
+          @media only screen and (min-width: $screen-md) {
+            order: 3;
+          }
+        }
+
+        :nth-child(3) {
+          @media only screen and (min-width: $screen-md) {
+            order: 2;
+          }
+        }
+      }
+    }
+
+    .desk {
+      display: none;
+
+      @media only screen and (min-width: $screen-xl) {
+        display: block;
+      }
+    }
+
+    .row {
+      gap: toRem(30);
+      flex-direction: column;
+
+      @media only screen and (min-width: $screen-md) {
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        flex-wrap: nowrap;
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        gap: toRem(140);
+        margin-left: toRem(10);
+      }
+
+      > div {
+        @media only screen and (min-width: $screen-md) {
+          flex:  0 1 calc((100% - 30px) / 2)
+        }
+
+        @media only screen and (min-width: $screen-xl) {
+          flex-basis: 25%;
+        }
+      }
+
+      &.locations {
+        position: relative;
+        z-index: 2;
+        padding-top: toRem(30);
+        background-color: var(--color-black);
+      }
+
+      .location {
+        &:nth-child(1) {
+          @media only screen and (min-width: $screen-md) {
+            order: 1;
+          }
+        }
+
+        &:nth-of-type(2) {
+          @media only screen and (min-width: $screen-md) {
+            order: 3;
+          }
+
+          @media only screen and (min-width: $screen-xl) {
+            order: 2;
+          }
+        }
+
+        &:nth-of-type(3) {
+          @media only screen and (min-width: $screen-md) {
+            order: 2;
+          }
+
+          @media only screen and (min-width: $screen-xl) {
+            order: 3;
+          }
+        }
+
+        &:nth-of-type(4) {
+          @media only screen and (min-width: $screen-md) {
+            order: 4;
+          }
+        }
+      }
+    }
+
+    .dFlex {
+      @media only screen and (min-width: $screen-md) {
+        display: flex;
+      }
+    }
+
+    hr {
+      border-top: 1px solid var(--color-dark-gray2);
+      border-bottom: 1px solid var(--color-black);
+      border-left: 1px solid var(--color-black);
+      border-right: 1px solid var(--color-black);
+      margin: toRem(30) 0;
+      z-index: 1;
+      position: relative;
+
+      @media only screen and (min-width: $screen-xl) {
+        margin: toRem(10) 0 toRem(40) 0;
+      }
+    }
+
+    .tabletDivider {
+      display: none;
+
+      @media only screen and (min-width: $screen-md) {
+        display: block;
+        margin-top: 0;
+      }
+    }
+
+    .itemDivider {
+      margin: 0;
+
+      @media only screen and (min-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    .contactUsDivider {
+      margin-bottom: 0;
+
+      @media only screen and (min-width: $screen-md) {
+        margin-bottom: toRem(30);
+      }
+    }
+
+    .itemsDivider {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,178 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.testimonials {
+  padding: toRem(120) toRem(70) 0;
+  position: relative;
+  background-color: var(--color-black);
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30) 0;
+  }
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(80) toRem(15) 0;
+  }
+  
+  .background {
+    height: toRem(520);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: toRem(270);
+      
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: toRem(100);
+      background: linear-gradient(180deg, rgba(145, 32, 32, 0) 15%, #000000 100%);
+      bottom: 0;
+      left: 0;
+    }
+    
+    img {
+      object-fit: cover;
+    }
+  }
+  
+  .title {
+    position: relative;
+    color: var(--color-white);
+    font-size: toRem(50);
+    line-height: getLineHeight(64, 50);
+    margin-bottom: toRem(80);
+    width: 100%;
+    text-align: center;
+    
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(40);
+      line-height: getLineHeight(56, 40);
+    }
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-bottom: toRem(60);
+      font-size: toRem(25);
+      line-height: getLineHeight(35, 25);
+    }
+  }
+  
+  .contentBlock {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: toRem(40);
+    row-gap: toRem(100);
+    
+    @media only screen and (max-width: $screen-lg) {
+      row-gap: toRem(60);
+    }
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      row-gap: toRem(40);
+    }
+  }
+}
+
+.dragContainer {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+  height: toRem(620);
+  padding: toRem(120) 0;
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) 0;
+    height: toRem(540);
+  }
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    height: toRem(556);
+  }
+  
+  .wrapper {
+    display: flex;
+    column-gap: toRem(30);
+    padding: 0 toRem(70);
+    position: absolute;
+    cursor: grab;
+    
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: 0 toRem(80);
+    }
+    
+    @media only screen and (max-width: $screen-lg) {
+      padding: 0 toRem(30);
+    }
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: 0 toRem(15);
+      column-gap: toRem(15);
+      height: toRem(396);
+    }
+    
+    .item {
+      position: relative;
+      min-width: toRem(620);
+      min-height: toRem(380);
+      padding: toRem(30);
+      color: var(--color-white);
+      border: 1px solid var(--color-alto-opacity-30);
+      background-color: var(--color-white-opacity-5);
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        padding: toRem(20);
+        min-width: toRem(300);
+        min-height: toRem(396);
+      }
+      
+      .text {
+        width: 100%;
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+        font-weight: 400;
+        font-family: var(--ibmPlexMono);
+        margin-bottom: toRem(15);
+        
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-bottom: toRem(10);
+          font-size: toRem(14);
+          line-height: getLineHeight(20, 14);
+        }
+      }
+      
+      .position {
+        display: block;
+        font-family: var(--generalSans);
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+        font-weight: 500;
+        margin-bottom: toRem(10);
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(16);
+          line-height: getLineHeight(24, 16);
+          margin-bottom: toRem(5);
+        }
+      }
+      
+      .name {
+        display: block;
+        font-family: var(--ibmPlexMono);
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+        font-weight: 400;
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(16);
+          line-height: getLineHeight(24, 16);
+        }
+      }
+    }
+  }
+}

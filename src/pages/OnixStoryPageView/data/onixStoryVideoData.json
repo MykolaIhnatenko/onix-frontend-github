@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "src": "/static/video/eric-roberts.mp4"
+  },
+  {
+    "id": 1,
+    "src": "/static/video/now-what.mp4"
+  },
+  {
+    "id": 2,
+    "src": "/static/video/tal-revivo.mp4"
+  },
+  {
+    "id": 3,
+    "src": "/static/video/phlex.mp4"
+  },
+  {
+    "id": 4,
+    "src": "/static/video/vyra.mp4"
+  },
+  {
+    "id": 5,
+    "src": "/static/video/golf-live.mp4"
+  }
+]

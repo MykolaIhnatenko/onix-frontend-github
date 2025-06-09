@@ -1,0 +1,43 @@
+@import "../../../pages/App/sass/functions.scss";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.menuDesktop {
+  display: block;
+
+  .container {
+    width: 100%;
+    position: fixed;
+    font-family: var(--ibmPlexMono);
+    mix-blend-mode: difference;
+    color: var(--color-white);
+    z-index: 10;
+    transition: color .3s;
+    transition: mix-blend-mode .3s;
+    
+    &.white {
+      mix-blend-mode: unset;
+      transition: background-color 0.3s ease;
+      background: var(--color-white);
+      color: var(--color-black);
+  
+      svg path{
+        color:var(--color-black);
+        mix-blend-mode: initial !important;
+      }
+    }
+  
+    .headerContainer {
+      padding: toRem(12) toRem(20);
+      max-width: var(--max-container-width);
+      margin: 0 auto;
+    }
+  
+    .navigationBrand {
+      cursor: pointer;
+
+      @media only screen and (max-width: $screen-lg) {
+        cursor: default;
+      }
+    }
+  }
+}

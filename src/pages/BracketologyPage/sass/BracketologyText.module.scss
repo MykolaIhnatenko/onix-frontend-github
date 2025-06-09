@@ -1,0 +1,145 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainTitle {
+  font-weight: 800;
+  font-size: toRem(40);
+  line-height: toRem(56);
+  letter-spacing: 0.01px;
+  color: var(--color-white);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(48);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(64);
+    line-height: toRem(80);
+  }
+}
+
+.title {
+  font-weight: 800;
+  font-size: toRem(28);
+  line-height: toRem(36);
+  color: var(--color-white);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(32);
+    line-height: toRem(40);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(40);
+    line-height: toRem(56);
+  }
+}
+
+.subtitle {
+  font-weight: 800;
+  font-size: toRem(20);
+  line-height: toRem(28);
+  color: var(--color-white);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(28);
+    line-height: toRem(36);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(32);
+    line-height: toRem(40);
+  }
+}
+
+.fs_28 {
+  font-weight: 700;
+  font-size: toRem(28);
+  line-height: toRem(36);
+  color: var(--color-white);
+  z-index: 2;
+  position: relative;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(32);
+    line-height: toRem(40);
+  }
+}
+
+.fs_30 {
+  font-weight: 700;
+  font-size: toRem(30);
+  line-height: toRem(24);
+  color: var(--color-bracketology-red);
+  opacity: 0.8;
+}
+
+.fs_18 {
+  font-weight: 400;
+  font-size: toRem(18);
+  line-height: toRem(28);
+  color: var(--color-white);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(20);
+    line-height: toRem(32);
+  }
+}
+
+.flowCardTitle {
+  font-weight: 800;
+  font-size: toRem(20);
+  line-height: toRem(28);
+  color: var(--color-bracketology-red);
+  opacity: 0.9;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(28);
+    line-height: toRem(36);
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    font-size: toRem(32);
+    line-height: toRem(40);
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: toRem(18);
+  line-height: toRem(28);
+  color: var(--color-white);
+  opacity: 0.8;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(20);
+    line-height: toRem(33);
+  }
+}
+
+.challengeCardTitle {
+  font-weight: 700;
+  font-size: toRem(28);
+  line-height: toRem(32);
+  padding: toRem(8) 0 toRem(12);
+  color: var(--color-white);
+}
+
+.challengeCardContent {
+  font-weight: 500;
+  font-size: toRem(28);
+  line-height: toRem(32);
+  letter-spacing: -0.2px;
+  padding-top: 0;
+  color: var(--color-white);
+}
+
+.number {
+  font-weight: 400;
+  font-size: toRem(32);
+  line-height: toRem(32);
+  color: var(--color-bracketology-red2);
+  padding-bottom: toRem(8);
+  z-index: 5;
+  position: relative;
+}

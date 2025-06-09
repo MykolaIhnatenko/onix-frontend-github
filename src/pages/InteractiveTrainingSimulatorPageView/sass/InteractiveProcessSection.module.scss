@@ -1,0 +1,104 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.processSection {
+  z-index: 8;
+
+  @media only screen and (min-width: $screen-md) {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container {
+    padding: toRem(48) 0;
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(64) 0;
+      z-index: 2;
+      position: relative;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(104) 0;
+    }
+
+    .content {
+      padding-top: toRem(32);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(40);
+        max-width: toRem(454);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(64);
+        max-width: toRem(630);
+      }
+
+      .item {
+        &:not(:last-of-type) {
+          padding-bottom: toRem(40);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-bottom: toRem(56);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-bottom: toRem(80);
+          }
+        }
+
+        h6, h3 {
+          color: #0B041A;
+          font-weight: 500;
+          font-size: toRem(32);
+          line-height: toRem(40);
+          padding-bottom: toRem(24);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(48);
+            line-height: toRem(65);
+            padding-bottom: toRem(16);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(64);
+            line-height: toRem(86);
+            padding-bottom: toRem(24);
+          }
+        }
+
+        .itemContent {
+          @media only screen and (min-width: $screen-md) {
+            max-width: toRem(448);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            max-width: toRem(630);
+          }
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    display: none;
+
+    @media only screen and (min-width: 769px) {
+      display: block;
+      position: absolute;
+      width: toRem(672);
+      height: toRem(1411);
+      right: toRem(-40);
+      top: toRem(5);
+      z-index: 1;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: toRem(600);
+      height: toRem(1505);
+      right: toRem(60);
+      top: toRem(104);
+    }
+  }
+}

@@ -1,0 +1,228 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  background-color: var(--color-black);
+  padding: 0 toRem(15) toRem(80);
+
+  @media only screen and (min-width: $screen-md) {
+    min-height: toRem(1900);
+    padding: 0 toRem(30);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: 0 toRem(70);
+  }
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: 0 toRem(80);
+  }
+
+  .flow {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      position: sticky;
+      top: 0;      
+      height: toRem(866);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(120);
+      height: toRem(782);
+    }
+
+    @media screen and (min-width: $screen-xxl) {
+      height: toRem(852);      
+    }
+
+    .titleBlock {
+      z-index: 2;
+      padding-bottom: toRem(60);
+      
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(80);
+      }
+
+      h2 {
+        color: var(--color-white);
+        padding-bottom: toRem(20);
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(245);
+          padding-bottom: toRem(30);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(327);
+        }
+      }
+
+      h3 {
+        color: var(--color-gray-haas2);
+        font-size: toRem(16);
+        line-height: toRem(24);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(18);
+          line-height: toRem(27);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(450);
+          font-size: toRem(32);
+          line-height: toRem(48);
+        }
+      }
+    }
+
+    .cardsContainer {
+      margin: 0 auto;
+      z-index: 3;
+
+      @media only screen and (min-width: $screen-md) {
+        position: relative;
+        height: toRem(100);
+        max-width: toRem(708);
+        width: 100%;
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        top: toRem(-398);
+        max-width: toRem(852);
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        max-width: toRem(1300);
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--color-white);
+        background-color: rgba(0, 0, 0, 0.16);
+        padding: toRem(30) toRem(20);
+        backdrop-filter: blur(13.1625px);
+        height: toRem(330);
+        max-width: toRem(330);
+        margin-bottom: toRem(15);
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+        
+        @media only screen and (min-width: $screen-md) {
+          justify-content: unset;
+          position: absolute;
+          max-width: toRem(216);
+          height: toRem(216);
+          margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: $screen-xxl) {
+          max-width: toRem(420);
+          height: toRem(420);
+          padding: toRem(39) toRem(32);
+        }
+
+        &:nth-of-type(1) {
+          z-index: 4;
+
+          @media only screen and (min-width: $screen-md) {
+            top: toRem(0);
+            right: toRem(196);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            top: toRem(-40);
+            right: toRem(196);
+          }
+
+          @media only screen and (min-width: $screen-xxl) {
+            top: toRem(-80);
+            right: toRem(346);
+          }
+        }
+
+        &:nth-of-type(2) {
+          z-index: 2;
+
+          @media only screen and (min-width: $screen-md) {
+            top: toRem(44);
+            right: 0;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            top: toRem(4);
+          }
+
+          @media only screen and (min-width: $screen-xxl) {
+            top: toRem(-20);
+          }
+        }
+
+        &:nth-of-type(3) {
+          z-index: 3;
+
+          @media only screen and (min-width: $screen-md) {
+            top: toRem(189);
+            right: toRem(145);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            top: toRem(149);
+          }
+
+          @media only screen and (min-width: $screen-xxl) {
+            top: toRem(310);
+            right: toRem(238);
+          }
+        }
+
+        .cardImg {
+          width: toRem(70);
+          height: toRem(70);
+          position: relative;
+
+          @media only screen and (min-width: $screen-md) {
+            width: toRem(87);
+            height: toRem(87);
+            transform: translateY(-50%);
+            top: 50%;
+          }
+
+          @media only screen and (min-width: $screen-xxl) {
+            width: toRem(168);
+            height: toRem(168);
+          }
+        }
+
+        .cardText {
+          @media only screen and (min-width: $screen-md) {
+            opacity: 0;
+          }
+
+          p {
+            color: var(--color-white);
+            font-weight: 400;
+            font-size: toRem(18);
+            line-height: toRem(27);
+            text-align: center;
+            padding-top: toRem(30);
+
+            @media only screen and (min-width: $screen-xxl) {
+              font-size: toRem(32);
+              line-height: toRem(48);
+              padding-top: toRem(32);
+            }
+          }
+        }
+      }
+    }
+  }
+}

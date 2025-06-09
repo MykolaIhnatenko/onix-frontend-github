@@ -1,0 +1,25 @@
+{
+  "blockTitle": "This online apartment booking system case study demonstrates Onix’s ability to create visually appealing and user-friendly web applications for the travel industry.",
+  "data": [
+    {
+      "id": 1,
+      "title": "Travel",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "7 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "Indonesia",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "7 months",
+      "text": "Project duration"
+    }
+  ]
+}

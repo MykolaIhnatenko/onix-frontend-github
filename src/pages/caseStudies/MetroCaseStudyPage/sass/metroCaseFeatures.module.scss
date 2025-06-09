@@ -1,0 +1,246 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  padding: toRem(109) toRem(30) toRem(110);
+  background: linear-gradient(2.21deg, #F7F8FC 1.08%, #F6F6FC 59.68%, #F0F3FF 115.89%);
+  color: #333333;
+  font-family: var(--muktaVaani);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(57) toRem(30) toRem(43);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(50) toRem(30) toRem(49);
+  }
+}
+
+.contentContainer {
+  max-width: toRem(1110);
+  margin: 0 auto;
+}
+
+.contentTitle {
+  max-width: toRem(660);
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: toRem(46);
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0B2F6E;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(380);
+    font-size: toRem(38);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    max-width: toRem(260);
+    font-size: toRem(24);
+  }
+}
+
+.featureItemContainer {
+  margin-top: toRem(130);
+
+  &:first-child {
+    margin-top: toRem(50);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(50);
+
+    &:first-child {
+      margin-top: toRem(15);
+    }
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(40);
+  }
+}
+
+.featureItemTitle {
+  font-size: toRem(30);
+  font-weight: 600;
+  line-height: 150%;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(18);
+  }
+}
+
+.featureItemTextContainer {
+  margin-top: toRem(20);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(15);
+  }
+
+  .featureItemText {
+    font-size: toRem(20);
+    font-weight: 400;
+    line-height: 150%;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(16);
+    }
+
+    &:not(:first-child) {
+      margin-top: toRem(17);
+    }
+  }
+  .featureFirstText {
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(500);
+    }
+  }
+}
+
+.featureItemListContainer {
+  margin-top: toRem(30);
+
+  .featureItemListTitle {
+    font-size: toRem(22);
+    font-weight: 500;
+    line-height: 150%;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(17);
+    }
+  }
+
+  .featureItemList {
+    font-size: toRem(20);
+    font-weight: 400;
+    line-height: 150%;
+    margin: toRem(30) 0 0 0;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(16);
+      margin: toRem(22) 0 0 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: toRem(20) 0 0 0;
+    }
+
+    li {
+      display: flex;
+      &:not(:first-child) {
+        margin-top: toRem(20);
+      }
+
+      .icon {
+        min-width: fit-content;
+        margin: toRem(6) toRem(5) 0 0;
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-top: toRem(3);
+        }
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(268);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        max-width: toRem(260);
+        
+        &:not(:first-child) {
+          margin-top: toRem(15);
+        }
+      }
+    }
+  }
+}
+
+.featureItemStrongText {
+  font-size: toRem(22);
+  font-weight: 500;
+  line-height: 150%;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(17);
+  }
+}
+
+.featureItemSubTitleContainer {
+  margin-top: toRem(50);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(22);
+  }
+
+  .featureItemSubTitle {
+    font-size: toRem(24);
+    font-weight: 600;
+    line-height: 150%;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(16);
+    }
+  }
+}
+
+.resultContainer {
+  max-width: toRem(730);
+  margin: toRem(100) auto 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(500);
+    margin: toRem(50) auto 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: toRem(40) auto 0;
+  }
+}
+
+.resultimageContainer {
+  max-width: toRem(200);
+  margin: 0 auto;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(114);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    width: toRem(73);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.resultTextContainer {
+  margin-top: toRem(70);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(30);
+  }
+
+  .resultText {
+    text-align: center;
+    font-size: toRem(22);
+    font-weight: 500;
+    line-height: 150%;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(17);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      text-align: start;
+    }
+  }
+}

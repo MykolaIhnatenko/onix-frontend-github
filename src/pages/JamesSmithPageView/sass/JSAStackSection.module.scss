@@ -1,0 +1,133 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.stackSection {
+  position: relative;
+  padding-top: toRem(72);
+  padding-bottom: toRem(123);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(48);
+    padding-bottom: toRem(32);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-top: toRem(24);
+    padding-bottom: toRem(72);
+  }
+
+  h2 {
+    margin-bottom: toRem(120);
+    text-align: center;
+
+    @media only screen and (max-width: $screen-xl) {
+      margin-bottom: toRem(127);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-bottom: toRem(37);
+    }
+  }
+
+  .technologiesWrapper {
+    display: flex;
+    gap: toRem(16);
+    justify-content: space-between;
+    padding: 0 toRem(160);
+    font-size: toRem(20);
+
+    div:first-child {
+      @media only screen and (max-width: $screen-lg) {
+        width: 100%;
+      }
+    }
+
+    br {
+      display: none;
+    }
+
+    .listTitle {
+      font-family: var(--satoshiFont),var(--muktaVaani), sans-serif;
+      margin-bottom: toRem(40);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        text-align: center;
+        margin-bottom: toRem(16);
+      }
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        line-height: 123%;
+        color: var(--color-jsa-stack-item-text-color);
+        padding: toRem(16) 0;
+        width: toRem(280);
+        font-family: var(--muktaVaani), sans-serif;
+
+        @media only screen and (max-width: $screen-lg) {
+          width: toRem(219);
+          display: flex;
+          align-items: center;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    .front {
+      display: grid;
+      column-gap: toRem(16);
+      grid-template-columns: repeat(2, 1fr);
+
+      li:not(:nth-child(9), :nth-child(10)) {
+        border-bottom: 1px solid var(--color-jsa-border-color);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        column-gap: toRem(69);
+        grid-template-columns: repeat(auto-fit, 219px);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        grid-template-columns: repeat(1, 1fr);
+        li:not(:nth-child(10)) {
+          border-bottom: 1px solid var(--color-jsa-border-color);
+        }
+      }
+    }
+
+    .back {
+      li:not(:last-child) {
+        border-bottom: 1px solid var(--color-jsa-border-color);
+      }
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      flex-wrap: wrap;
+      gap: toRem(32);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      gap: toRem(32);
+      padding: 0 0 0 toRem(80);
+
+      br {
+        display: block;
+      }
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: 0;
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+}

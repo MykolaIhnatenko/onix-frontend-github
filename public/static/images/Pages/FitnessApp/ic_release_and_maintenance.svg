@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Release and maintenance</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="42.1271037%" y1="92.1287381%" x2="53.4083384%" y2="-12.3358198%" id="linearGradient-1">
+            <stop stop-color="#C8D7F6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="16.7184023%" y1="71.7394171%" x2="83.2815977%" y2="29.1573701%" id="linearGradient-2">
+            <stop stop-color="#302B96" offset="0%"></stop>
+            <stop stop-color="#615AD3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="71.7394171%" x2="100%" y2="29.1573701%" id="linearGradient-3">
+            <stop stop-color="#302B96" offset="0%"></stop>
+            <stop stop-color="#615AD3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fitness-landing-Upd" transform="translate(-1060.000000, -14433.000000)">
+            <g id="Release-and-maintenance" transform="translate(1060.000000, 14433.000000)">
+                <polygon id="Path" fill="url(#linearGradient-1)" points="45.7000733 80 34.2999267 80 29.7125244 70.3125 25.8422852 68.7072753 15.7476806 72.3150634 7.68493656 64.2523194 11.2927247 54.1577148 9.6875 50.2874756 0 45.7000733 0 34.2999267 9.6875 29.7125244 11.2927247 25.8422852 7.68493656 15.7476806 15.7476806 7.68493656 25.8477783 11.2951659 29.710083 9.69482422 34.2999267 -2.84217094e-14 45.7000733 -2.84217094e-14 50.289917 9.69482422 54.1522217 11.2951659 64.2523194 7.68493656 72.3150634 15.7476806 68.7072753 25.8422852 70.3125 29.7125244 80 34.2999267 80 45.7000733 70.3125 50.2874756 68.7072753 54.1577148 72.3150634 64.2523194 64.2523194 72.3150634 54.1577148 68.7072753 50.2874756 70.3125"></polygon>
+                <g id="Group" transform="translate(24.843750, 24.843750)">
+                    <path d="M15.15625,5.15625 C20.6793213,5.15625 25.15625,9.63317875 25.15625,15.15625 L30.15625,15.15625 C30.1586914,7.28637688 24.0789795,0.752563438 16.2292481,0.189819375 C8.37951656,-0.372924844 1.42944344,5.22583 0.308837813,13.015747 C-0.811157188,20.8050537 4.27856438,28.1365967 11.9689941,29.80896 L8.38867188,33.3886719 L11.9238281,36.9238281 L20.6988525,28.1488037 L14.9060059,16.5386962 L10.4315186,18.7738037 L13.5412597,24.991455 C8.40637203,24.1546631 4.77539063,19.5141602 5.19714359,14.3286133 C5.61950688,9.14306641 9.95361328,5.15136719 15.15625,5.15625 L15.15625,5.15625 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                    <polygon id="Path" fill="url(#linearGradient-3)" points="25.15625 20.15625 30.15625 20.15625 30.15625 25.15625 25.15625 25.15625"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

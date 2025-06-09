@@ -1,0 +1,58 @@
+{
+  "title": "Mental health app design",
+  "left": {
+    "title": "UX/UI design solutions",
+    "content": [
+      {
+        "id": "01",
+        "title": "Color palette:",
+        "content": "Soft shades of blue, green, and other pastels dominate the app interface. These colors help evoke a sense of tranquility, peace, and hope, and contribute to  the users’ emotional healing and mood stability."
+      },
+      {
+        "id": "02",
+        "title": "User-friendly interface:",
+        "content": "The app interface is clean, intuitive, and easy to navigate. The focus is on the video programs and activities. Clear icons and labels help users identify app sections and activities quickly and easily. Large easily legible fonts and well-positioned elements contribute to a comfortable app use."
+      },
+      {
+        "id": "03",
+        "title": "Images:",
+        "content": "The app includes images that help users calm down and find inner peace and promote emotional well-being. Natural landscapes and abstract visualizations of emotion help create a positive mood."
+      },
+      {
+        "id": "04",
+        "title": "Animations:",
+        "content": "Sophisticated video animations, such as flowing water, clouds, and animals help catch the users’ attention, add dynamism to the user experience, and create a sense of movement and progress on the user’s journey to better mental health."
+      }
+    ]
+  },
+  "right": {
+    "title": "Logo & branding",
+    "content":[
+      {
+        "id": "11",
+        "title": "The app’s name and logo:",
+        "content": "The name Solomiya, besides associations with shalom-peace, also implies a pioneering spirit. The logo includes an icon that looks gentle but confident, a stylized image of a lotus flower associated with enlightenment combined with outstretched arms symbolizing growth and resilience. Petrekivka-style flowers are immediately recognizable, adding Ukrainian flavor to the logo."
+      },
+      {
+        "id": "12",
+        "title": "Brand voice:",
+        "content": "The brand voice is compassionate, supportive, and encouraging. The language used in the app conveys understanding, hope, and reassurance."
+      },
+      {
+        "id": "13",
+        "title": "Cultural sensitivity:",
+        "content": "Targeting displaced Ukrainians means that the app may incorporate Ukrainian symbols or other references that resonate with them."
+      },
+      {
+        "id": "14",
+        "title": "Connection and support:",
+        "content": "The branding should emphasize a sense of community and cohesion."
+      },
+      {
+        "id": "15",
+        "title": "Offline symbolism:",
+        "content": "Incorporating symbols of strength and growth, such as trees, leaves, or lotus flowers, the design should convey a message of resilience, hope, and renewal."
+      }
+    ]
+  }
+}

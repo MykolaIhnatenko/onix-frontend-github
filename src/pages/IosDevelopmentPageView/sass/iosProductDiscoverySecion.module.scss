@@ -1,0 +1,106 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.productDiscoverySection {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-black);
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(360);
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(520);
+    }
+
+    
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(70);
+      background: linear-gradient(180deg, rgba(253, 253, 253, 0) 15%, #000000 100%);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        height: toRem(110);
+      }
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(120);
+      padding-bottom: toRem(120);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(160);
+    }
+
+    .title, .text {
+      color: var(--color-white);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1004);
+      }
+    }
+
+    .title {
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+      }
+    }
+
+    .text {
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+      margin-bottom: toRem(40);
+
+      @media only screen and (min-width: $screen-md) {
+        margin-bottom: toRem(50);
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6%;
+
+      @media only screen and (min-width: $screen-md) {
+        gap: 10%;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        gap: 8%;
+      }
+    }
+
+    .buttonWrapper {
+      padding-top: toRem(40);
+      max-width: toRem(330);
+      margin: 0 auto;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(30);
+        max-width: toRem(420);
+        margin: 0 auto;
+      }
+    }
+  }
+}

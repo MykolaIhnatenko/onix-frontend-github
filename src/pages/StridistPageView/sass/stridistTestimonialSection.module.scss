@@ -1,0 +1,34 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.testimonialSection {
+  background-color: #F3F5F8;
+
+  .container {
+    padding-top: toRem(24);
+    padding-bottom: toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(60);
+      padding-bottom: toRem(60);
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      padding-top: toRem(80);
+      padding-bottom: toRem(273);
+    }
+
+    h3 {
+      padding-bottom: toRem(40);
+      text-align: center;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(96);
+      }
+
+      @media only screen and (min-width: $screen-lg) {
+        padding-bottom: toRem(56);
+      }
+    }
+  }
+}

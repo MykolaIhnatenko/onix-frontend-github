@@ -1,0 +1,120 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.reedMore {
+  .content {
+    display: block;
+    padding-bottom: toRem(30);
+  }
+
+  .contentHide {
+    display: none;
+  }
+
+  .reedMoreBlock {
+    display: inline-flex;
+    gap: toRem(14);
+    transition: all 2s ease;
+
+    &:active {
+      p {
+        color: var(--color-blue-haas);
+      }
+
+      .arrow:after, .arrow:before {
+        background-color: var(--color-blue-haas);
+      }
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      cursor: pointer;
+
+      &:hover {
+        p {
+          color: var(--color-blue-haas);
+        }
+
+        .arrow:after, .arrow:before {
+          background-color: var(--color-blue-haas);
+        }
+      }
+    }
+
+    .arrow {
+      position: relative;
+      display: inline-block;
+      width: toRem(12);
+      height: toRem(6);
+      top: toRem(15);
+      left: 0;
+      transform-origin: center;
+
+      @media only screen and (max-width: $screen-md - 1) {
+        top: toRem(10);
+      }
+    }
+
+    .arrow:before {
+      transform: rotate(45deg);
+      transform-origin: left;
+      left: 0;
+    }
+
+    .arrow:after {
+      transform: rotate(-45deg);
+      transform-origin: right;
+      left: toRem(2.5);
+    }
+
+    .arrow:after, .arrow:before {
+      position: absolute;
+      width: toRem(9);
+      height: toRem(2);
+      background-color: var(--color-black);
+      display: block;
+      content: "";
+      transition: all .5s ease;
+    }
+
+    .rotate {
+      transition: transform .2s ease-in-out;
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.results {
+  color: var(--color-white);
+  
+  .content {
+    p {
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(24) !important;
+        line-height: getLineHeight(36, 24);
+      }
+      
+      @media only screen and (max-width: $screen-sm - 1) {
+        font-size: toRem(16) !important;
+        line-height: getLineHeight(24, 16);
+      }
+    }
+  }
+
+  .reedMoreBlock {
+    p {
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(24) !important;
+        line-height: getLineHeight(36, 24);
+      }
+      
+      @media only screen and (max-width: $screen-sm - 1) {
+        font-size: toRem(16) !important;
+        line-height: getLineHeight(24, 16);
+      }
+    }
+    
+    .arrow:after, .arrow:before {
+      background-color: var(--color-white);
+    }
+  }
+}

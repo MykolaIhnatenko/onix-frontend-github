@@ -1,0 +1,91 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+@import "../../../../pages/App/sass/mixinsAnimation.scss";
+
+.video {
+  width: 100%;
+  height: toRem(531);
+
+  @media only screen and (max-width: $screen-xxl) {
+    height: toRem(456);
+  }
+
+  @media only screen and (max-width: $screen-xl) {
+    height: toRem(378);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    height: calc((100vw) * 9 / 16);
+  }
+
+  iframe {
+    border: none;
+  }
+
+  .videoImgWrapper {
+    height: 100%;
+    width: 100%;
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: 96%;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .videoControlsWrapper {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: rgba(48, 55, 77, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .videoControl {
+      padding: toRem(36) toRem(36) toRem(36) toRem(33);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 toRem(10) toRem(20) rgba(0, 0, 0, .1);
+      @include radius(100px);
+      cursor: pointer;
+
+      @media only screen and (max-width: $screen-lg) {
+        cursor: default;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(26) toRem(26) toRem(26) toRem(23);
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        @include transition(transform 0.3s ease);
+
+        &::after {
+          @include transition(transform 0.3s ease);
+          transform: scale(1.1);
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: toRem(5);
+        border-top: toRem(10) solid transparent;
+        border-left: toRem(20) solid var(--color-white);
+        border-bottom: toRem(10) solid transparent;
+      }
+    }
+  }
+}

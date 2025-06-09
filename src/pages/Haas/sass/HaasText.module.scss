@@ -1,0 +1,135 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.title {
+  font-weight: 400;
+  font-size: toRem(28);
+  line-height: toRem(42);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(48);
+    line-height: toRem(72);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(64);
+    line-height: toRem(96);
+  }
+}
+
+.results {
+  font-weight: 400;
+  font-size: toRem(28);
+  line-height: toRem(42);
+
+  @media only screen and (min-width: $screen-sm) {
+    font-size: toRem(48);
+    line-height: toRem(72);
+  }
+
+  @media only screen and (min-width: $screen-xxl) {
+    font-size: toRem(64);
+    line-height: toRem(96);
+  }
+}
+
+.fs20 {
+  font-size: toRem(20);
+  line-height: toRem(30);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(24);
+    line-height: toRem(36);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(32);
+    line-height: toRem(48);
+  }
+}
+
+.fs18 {
+  font-size: toRem(16);
+  line-height: toRem(24);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(18);
+    line-height: toRem(27);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(32);
+    line-height: toRem(48);
+  }
+}
+
+.fs16 {
+  font-size: toRem(16);
+  line-height: toRem(24);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(24);
+    line-height: toRem(36);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(32);
+    line-height: toRem(48);
+  }
+}
+
+.resultsFS16 {
+  font-size: toRem(16);
+  line-height: toRem(24);
+
+  @media only screen and (min-width: $screen-sm) {
+    font-size: toRem(24);
+    line-height: toRem(36);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(32);
+    line-height: toRem(48);
+  }
+}
+
+.fs18_27 {
+  font-size: toRem(18);
+  line-height: toRem(27);
+}
+
+.fs16_24 {
+  font-size: toRem(16);
+  line-height: toRem(24);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(18);
+    line-height: toRem(27);
+  }
+}
+
+.testimonialText {
+  font-size: toRem(16);
+  line-height: toRem(24);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(18);
+    line-height: toRem(27);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(24);
+    line-height: toRem(36);
+  }
+}
+
+.readMore {
+  font-size: toRem(16);
+  line-height: toRem(24);
+  transition: all .5s ease;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(24);
+    line-height: toRem(36);
+  }
+}

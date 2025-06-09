@@ -1,0 +1,164 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.section {
+  position: relative;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contentContainer {
+    position: relative;
+    padding-top: toRem(120);
+    padding-bottom: toRem(120);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(120);
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-top: toRem(80);
+      padding-bottom: toRem(80);
+    }
+
+    .title {
+      padding-bottom: toRem(60);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(30);
+      }
+    }
+
+    .content {
+      border: 2px solid var(--color-black);
+      display: flex;
+      flex-direction: column;
+
+      .contentItem {
+        padding: toRem(40) toRem(30) toRem(60);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: toRem(30);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding: toRem(30) toRem(15) toRem(60);
+        }
+
+        &:first-of-type {
+          @media only screen and (max-width: $screen-lg) {
+            border-right: none;
+            border-bottom: 2px solid var(--color-black);
+          }
+        }
+
+        .textContainer {
+          &:first-of-type {
+            .itemTitle {
+              font-size: toRem(30);
+              line-height: getLineHeight(40, 30);
+              padding-bottom: toRem(30);
+
+              @media only screen and (max-width: ($screen-md - 1)) {
+                font-size: toRem(20);
+                line-height: getLineHeight(28, 20);
+              }
+            }
+          }
+
+          .itemTitle {
+            font-size: toRem(24);
+            line-height: getLineHeight(34, 24);
+            padding-bottom: toRem(20);
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              font-size: toRem(16);
+              line-height: getLineHeight(24, 16);
+            }
+          }
+
+          .itemText {
+            margin: 0;
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              font-size: toRem(16);
+              line-height: getLineHeight(24, 16);
+            }
+          }
+        }
+      }
+
+      .deskContentItem {
+        display: flex;
+
+        .deskTextContainer {
+          flex: 1 50%;
+
+          &:first-of-type {
+            border-right: 2px solid var(--color-black);
+          }
+        }
+
+        &:nth-of-type(1) {
+          align-items: flex-end;
+          .deskTextContainer {
+            padding: toRem(40) toRem(30) toRem(30);
+
+            .deskText {
+              font-family: var(--generalSans);
+              font-weight: 500;
+              font-size: toRem(30);
+              line-height: getLineHeight(40, 30);
+            }
+          }
+        }
+
+        &:nth-of-type(2n) {
+          .deskTextContainer {
+            padding: 0 toRem(30) toRem(30);
+
+            .deskText {
+              font-family: var(--ibmPlexMono);
+              font-weight: 400;
+              font-size: toRem(18);
+              line-height: getLineHeight(26, 18);
+            }
+          }
+        }
+
+        &:nth-of-type(3),
+        &:nth-of-type(5) {
+          .deskTextContainer {
+            padding: 0 toRem(30) toRem(20);
+
+            .deskText {
+              font-family: var(--generalSans);
+              font-weight: 500;
+              font-size: toRem(24);
+              line-height: getLineHeight(34, 24);
+            }
+          }
+        }
+
+        &:last-of-type {
+          .deskTextContainer {
+            padding: 0 toRem(30) toRem(60);
+          }
+        }
+      }
+    }
+  }
+}

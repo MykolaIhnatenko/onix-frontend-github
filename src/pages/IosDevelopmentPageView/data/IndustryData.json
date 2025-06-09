@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Retail",
+    "text": "Creating custom shopping experiences and integrating payment systems."
+  },
+  {
+    "id": 2,
+    "title": "Entertainment",
+    "text": "Building loyalty with programs and engaging users with entertaining apps."
+  },
+  {
+    "id": 3,
+    "title": "Healthcare",
+    "text": "Collecting and analyzing patient data to create personalized health plans."
+  },
+  {
+    "id": 4,
+    "title": "Education",
+    "text": "Developing collaborative tools and creating virtual learning platforms."
+  },
+  {
+    "id": 5,
+    "title": "Finance",
+    "text": "Streamlining banking procedures for customers and improving money management."
+  },
+  {
+    "id": 6,
+    "title": "Transportation",
+    "text": "Enhancing customer service, providing real-time tracking options, and integrating payment methods."
+  },
+  {
+    "id": 7,
+    "title": "Insurance",
+    "text": "Automating processes for agents, streamlining paperwork, and improving customer service"
+  },
+  {
+    "id": 8,
+    "title": "Travel",
+    "text": "Improving the booking experience by offering discounts, adding features, and optimizing the checkout process."
+  }
+]

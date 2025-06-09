@@ -1,0 +1,21 @@
+{
+  "Backend development": [
+    "PHP", "Python", "Node.js", "Java", "Ruby"
+  ],
+  "Frontend development": [
+    "HTML5", "CSS", "Angular", "Vue.js", "React",  "Javascript"
+  ],
+  "Mobile development": [
+    "Android", "Kotlin", "Flutter", "IOS SDK", "Swift", "Objective-C", "React Native"
+  ],
+  "Frameworks and CMS": [
+    "Shopify", "CakePHP", "Django", "WordPress", "Laravel"
+  ],
+  "Database": [
+    "MongoDB", "PostgreSQL", "MySQL", "Elasticsearch", "Dynamo DB"
+  ],
+  "Cloud platforms": [
+    "AWS", "GCP", "Azure"
+  ]
+}
+

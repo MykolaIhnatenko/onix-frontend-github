@@ -1,0 +1,361 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.chapterSection {
+  background-color: var(--color-bracketology-background);
+  position: relative;
+
+  .chapterBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    overflow: hidden;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.3) 48.44%, #000000 100%);
+    }
+
+    video {
+      object-fit: cover;
+      position: absolute;
+      width: toRem(450);
+      height: 60%;
+      top: 0;
+      left: 0;
+      object-position: 20%;
+
+      @media only screen and (min-width: $screen-md) {
+        min-width: 100%;
+        min-height: 100%;
+        object-position: 30%;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-position: center;
+      }
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .container {
+    padding-top: toRem(16);
+    padding-bottom: toRem(56);
+    z-index: 2;
+    position: relative;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(80);
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(160);
+    }
+
+    .logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      max-width: toRem(300);
+      margin:  0 auto;
+
+      @media only screen and (min-width: $screen-md) {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        max-width: toRem(135);
+        flex-basis: toRem(135);
+        justify-content: center;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(198);
+        flex-basis: toRem(198);
+      }
+
+      .aloa {
+        max-width: toRem(124);
+        max-height: toRem(55);
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(135);
+          max-height: toRem(60);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(198);
+          max-height: toRem(87);
+        }
+
+        img {
+          width: toRem(124);
+          height: toRem(55);
+
+          @media only screen and (min-width: $screen-md) {
+            width: toRem(135);
+            height: toRem(60);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            width: toRem(198);
+            height: toRem(87);
+          }
+        }
+      }
+
+      span {
+        color: var(--color-white);
+        font-weight: 800;
+        font-size: toRem(32);
+        line-height: toRem(44);
+        padding: 0 toRem(13);
+        align-self: flex-end;
+
+        @media only screen and (min-width: $screen-md) {
+          align-self: unset;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(40);
+          line-height: toRem(56);
+        }
+      }
+
+      .onix {
+        max-width: toRem(125);
+        max-height: toRem(30);
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(135);
+          max-height: toRem(33);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(198);
+          max-height: toRem(48);
+        }
+
+        img {
+          width: toRem(135);
+          height: toRem(30);
+
+          @media only screen and (min-width: $screen-md) {
+            width: toRem(135);
+            height: toRem(33);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            width: toRem(198);
+            height: toRem(48);
+          }
+        }
+      }
+    }
+
+    .chapterContent {
+      @media only screen and (min-width: $screen-md) {
+        flex-basis: toRem(460);
+        padding-left: toRem(38);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        flex-basis: toRem(740);
+        padding-left: toRem(80);
+      }
+
+      h2 {
+        color: rgba(255, 255, 255, 0.9);
+        padding: toRem(38) 0 toRem(24);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-top: 0;
+          max-width: toRem(300);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: toRem(40);
+          max-width: 100%;
+        }
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.64);
+        @media only screen and (min-width: $screen-md) {
+          letter-spacing: -0.3px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          letter-spacing: unset;
+        }
+      }
+
+      p:last-of-type {
+        padding-top: toRem(16);
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-top: toRem(24);
+        }
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.64);
+        text-decoration: underline;
+        text-decoration-color: rgba(255, 255, 255, 0.3);
+        text-underline-offset: toRem(5);
+      }
+
+    }
+
+    h3 {
+      padding-top: toRem(32);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(48);
+        padding-bottom: toRem(16);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        text-align: center;
+        padding-top: toRem(64);
+      }
+    }
+
+    .chapterCardsContainer {
+      @media only screen and (min-width: $screen-sm) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 toRem(-12);
+
+        @media only screen and (min-width: $screen-md) {
+          justify-content: center;
+          max-width: toRem(1122);
+          margin: 0 auto;
+        }
+      }
+
+      .cardContainer {
+        padding-top: toRem(24);
+        position: relative;
+
+        @media only screen and (min-width: $screen-sm) {
+          flex-basis: 50%;
+          padding-left: toRem(12);
+          padding-right: toRem(12);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          flex-basis: 33%;
+
+          &:hover {
+            .chapterCard {
+              border-image-source: linear-gradient(93deg, #E35F00 0%, #100D0C 37.7%,  #100D0C 56.33%,  #E31B00 100%);
+
+              .iconBlock {
+                span {
+                  color: var(--color-bracketology-red);
+                }
+                svg {
+                  g {
+                    path {
+                      fill: var(--color-bracketology-red);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .chapterCard {
+          z-index: 3;
+          position: relative;
+          padding: toRem(24);
+          min-height: toRem(188);
+          background: rgba(255, 255, 255, 0.04);
+          border: 1px solid;
+          border-image-slice: 1;
+          border-image-source: linear-gradient(93deg, #503929 0%, #22100C 56.33%, #52251F 100%);
+          transition: all 1s ease-out;
+          pointer-events: none;
+
+          @media only screen and (min-width: $screen-sm) {
+            height: 100%;
+          }
+
+          .iconBlock {
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+
+            svg {
+              g {
+                path {
+                  fill: var(--color-bracketology-brown);
+                  transition: all 1s ease-out;
+                }
+              }
+            }
+
+            span {
+              color: var(--color-bracketology-brown);
+              font-weight: 400;
+              font-size: toRem(30);
+              line-height: toRem(32);
+              transition: all 1s ease-in;
+            }
+          }
+        }
+
+        p {
+          padding-top: toRem(12);
+          font-weight:500;
+          font-size: toRem(20);
+          line-height: toRem(32);
+          letter-spacing: -0.2px;
+        }
+      }
+    }
+
+    .lastChapterContent {
+      padding-top: toRem(8);
+
+      @media only screen and (min-width: $screen-md) {
+        margin: 0 auto;
+        padding-top: toRem(16);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(120);
+        max-width: toRem(840);
+      }
+
+      p {
+        padding-top: toRem(24);
+        letter-spacing: 0.02px;
+
+        @media only screen and (min-width: $screen-md) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

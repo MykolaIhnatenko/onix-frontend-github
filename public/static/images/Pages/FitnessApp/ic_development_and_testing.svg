@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="80px" viewBox="0 0 65 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Development and testing</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="44.8026583%" y1="92.1287381%" x2="52.2500359%" y2="-12.3358198%" id="linearGradient-1">
+            <stop stop-color="#C8D7F6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="41.9648051%" y1="71.7394171%" x2="58.0351949%" y2="29.1573701%" id="linearGradient-2">
+            <stop stop-color="#302B96" offset="0%"></stop>
+            <stop stop-color="#615AD3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="42.1271037%" y1="92.1287381%" x2="53.4083384%" y2="-12.3358198%" id="linearGradient-3">
+            <stop stop-color="#C8D7F6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fitness-landing-Upd" transform="translate(-688.000000, -14433.000000)">
+            <g id="Development-and-testing" transform="translate(688.000000, 14433.000000)">
+                <polygon id="Path" fill="url(#linearGradient-1)" points="65 80 0 80 0 21.4648438 21.4648438 0 65 0"></polygon>
+                <path d="M27.5,70 L25,70 C20.8648681,70 17.5,66.6351319 17.5,62.5 L17.5,56.0351562 L11.4648438,50 L17.5,43.9648438 L17.5,37.5 C17.5,33.3648681 20.8648681,30 25,30 L27.5,30 L27.5,35 L25,35 C23.6224366,35 22.5,36.1224366 22.5,37.5 L22.5,46.0351562 L18.5351562,50 L22.5,53.9648438 L22.5,62.5 C22.5,63.8775634 23.6224366,65 25,65 L27.5,65 L27.5,70 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                <path d="M40,70 L37.5,70 L37.5,65 L40,65 C41.3775634,65 42.5,63.8775634 42.5,62.5 L42.5,53.9648438 L46.4648438,50 L42.5,46.0351562 L42.5,37.5 C42.5,36.1224366 41.3775634,35 40,35 L37.5,35 L37.5,30 L40,30 C44.1351319,30 47.5,33.3648681 47.5,37.5 L47.5,43.9648438 L53.5351562,50 L47.5,56.0351562 L47.5,62.5 C47.5,66.6351319 44.1351319,70 40,70 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                <polygon id="Path" fill="url(#linearGradient-3)" points="21.4648438 21.4648438 21.4648438 0 0 21.4648438"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

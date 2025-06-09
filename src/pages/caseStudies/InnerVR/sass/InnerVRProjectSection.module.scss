@@ -1,0 +1,32 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.projectSection {
+
+  .subtitle {
+    padding-top: 22px;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 32px;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: 854px;
+    }
+  }
+
+  .text {
+    padding-top: 22px;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 24px;
+    }
+  }
+
+  .textBlock {
+    .text {
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: 389px;
+      }
+    }
+  }
+}

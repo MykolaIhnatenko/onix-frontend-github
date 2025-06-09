@@ -1,0 +1,14 @@
+{
+  "AWS Cost Explorer": [
+    "Visualize, understand, and manage AWS costs and usage over time"
+  ],
+  "AWS Budgets": [
+    "AWS Budgets lets you set custom cost and usage budgets that alert you when your budget thresholds are exceeded"
+  ],
+  "AWS Budget Reports": [
+    "Preparing diverse reports regarding expenses, forecasts, etc."
+  ],
+  "AWS Cost Anomaly Detection": [
+    "Automated cost anomaly detection and root cause analysis"
+  ]
+}

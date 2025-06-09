@@ -1,0 +1,78 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsDisplay";
+
+.businessContextSection {
+  .container {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(120);
+      padding-bottom: toRem(120);
+    }
+
+    .businessContext {
+      margin: 0;
+
+      @media only screen and (max-width: $screen-md) {
+        font-size: toRem(14);
+      }
+    }
+
+    .title {
+      padding: toRem(20) 0;
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(40);
+        line-height: getLineHeight(56, 40);
+        padding: toRem(20) 0 toRem(40);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+        padding: toRem(20) 0 toRem(40);
+      }
+    }
+
+    .subtitle {
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+
+      @media only screen and (max-width: $screen-md) {
+        font-size: toRem(20);
+        margin-bottom: toRem(10);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(24);
+        line-height: getLineHeight(32, 20);
+      }
+    }
+
+    .textBlock {
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(40);
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+      }
+
+      @media only screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+        display: block;
+        padding-top: 0;
+      }
+
+      .text {
+        margin: 0;
+        padding-top: toRem(30);
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-top: 0;
+          @include flex-basis(40px, 2);
+        }
+      }
+    }
+  }
+}

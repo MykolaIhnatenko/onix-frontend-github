@@ -1,0 +1,49 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$innerVRWhite2: #F4F9FE;
+
+.worldsSection {
+  .container {
+    position: relative;
+    padding-top: 0 !important;
+
+    .title {
+      @media only screen and (min-width: $screen-md) {
+        max-width: 284px;
+      }
+    }
+
+    .subtitle {
+      padding: 22px 0 48px;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 1.08;
+      color: $innerVRWhite2;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: 32px 0 30px;
+        letter-spacing: -0.2px;
+        font-size: 38px;
+        line-height: 1.1;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        position: absolute;
+        max-width: 400px;
+        font-size: 25px;
+        line-height: 1.08;
+        z-index: 3;
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        font-size: 38px;
+        line-height: 1.1;
+        max-width: 520px;
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        max-width: 540px;
+      }
+    }
+  }
+}

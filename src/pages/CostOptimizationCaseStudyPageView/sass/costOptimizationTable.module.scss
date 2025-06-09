@@ -1,0 +1,84 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  @media only screen and (max-width: $screen-lg) {
+    padding-bottom: toRem(107);
+  }
+
+  overflow-x: hidden;
+  overflow-y: visible;
+
+  .table {
+    margin: 0 toRem(70) toRem(120);
+
+    @media only screen and (min-width: $screen-xxxl) {
+      margin: 0 toRem(80) toRem(120);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      margin: 0 0 0 toRem(30);
+      padding-bottom: toRem(70);
+      padding-right: toRem(30);
+  
+      &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+      }
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: 0 0 0 toRem(15);
+      padding-bottom: toRem(60);
+      padding-right: toRem(15);
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+  
+      @media only screen and (max-width: $screen-lg) {
+        width: toRem(1300);
+      }
+    }
+
+    .tableDrag {
+      @media only screen and (max-width: $screen-lg) {
+        width: toRem(1300);
+      }
+    }
+  }
+
+
+  .scrollbarContainer {
+    display: none;
+    @media only screen and (max-width: $screen-lg) {
+      display: block;
+      margin: 0 toRem(30);
+      .scrollbar {
+        width: 100%;
+        border: 1px solid var(--color-black);
+        position: relative;
+
+        .scrollbarButton {
+          position: absolute;
+          top: toRem(-27);
+          width: toRem(54);
+          height: toRem(54);
+          border: 1px solid var(--color-black);
+          border-radius: 1000px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #fff;
+          font-size: toRem(10);
+          line-height: getLineHeight(13.5, 10);
+        }
+      }
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: 0 toRem(15);
+    }
+  }
+}

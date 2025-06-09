@@ -1,0 +1,52 @@
+@import "../../../pages/App/sass/functions.scss";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.menuMobile {
+  display: none;
+  @media only screen and (max-width: $screen-lg) {
+    display: block;
+  }
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(70);
+    background: transparent;
+    z-index: 9;
+    transition: background-color 0.3s ease;
+  }
+
+  &.white {
+    &::before {
+      background: var(--color-white);
+    }
+  }
+}
+
+.menuDesktop {
+  display: block;
+  @media only screen and (max-width: $screen-lg) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(70);
+    background: transparent;
+    z-index: 9;
+    transition: background-color 0.3s ease;
+  }
+
+  &.white {
+    &::before {
+      background: var(--color-white);
+    }
+  }
+}

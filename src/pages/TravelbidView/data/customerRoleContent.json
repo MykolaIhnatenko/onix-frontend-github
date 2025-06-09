@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "content": "A customer looking for an airport transfer on October 10th places a request on the website."
+  },
+  {
+    "id": 2,
+    "content": "The customer views the offers from local taxi and transfer companies and selects the most suitable one."
+  },
+  {
+    "id": 3,
+    "content": "They can communicate with a vendor using the in-app chat."
+  },
+  {
+    "id": 4,
+    "content": "The customer books the chosen service on the platform and pays with a credit card or via PayPal."
+  },
+  {
+    "id": 5,
+    "content": "The customer receives an invoice."
+  }
+]

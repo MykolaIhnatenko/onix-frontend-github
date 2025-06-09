@@ -1,0 +1,20 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.btn {
+  border: none;
+  background: none;
+  color: var(--color-link-blue);
+  text-decoration-line: underline;
+  text-underline-offset: toRem(3.8);
+  font-size: toRem(18);
+  line-height: getLineHeight(26, 18);
+  font-weight: 400;
+  font-family: var(--ibmPlexMono);
+  cursor: pointer;
+  margin-top: toRem(40);
+
+  @media only screen and (max-width: $screen-lg) {
+    cursor: default;
+  }
+}

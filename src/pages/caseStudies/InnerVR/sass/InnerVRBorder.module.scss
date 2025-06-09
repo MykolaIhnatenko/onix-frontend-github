@@ -1,0 +1,9 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$innerVRPurple: #A374FF;
+
+.border {
+  border-top: 1px solid $innerVRPurple;
+  border-bottom: 0;
+  opacity: 0.15;
+}

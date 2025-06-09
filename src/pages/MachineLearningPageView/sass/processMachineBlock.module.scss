@@ -1,0 +1,107 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.title, .subtitle {
+  padding: 0 toRem(15);
+
+  @media only screen and (min-width: $screen-md) {
+    padding: 0;
+  }
+}
+
+.title {
+  margin-top: 0;
+}
+
+.subtitle {
+  margin: 0;
+  text-transform: none;
+
+  @media only screen and (min-width: $screen-md) {
+    margin-bottom: toRem(0);
+  }
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    max-width: toRem(1033);
+    margin-bottom: toRem(40);
+  }
+}
+
+.firstNoteText, .secondNoteText {
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    max-width: toRem(630);
+  }
+  
+  @media only screen and (min-width: $screen-xxxl) {
+    max-width: toRem(710);
+  }
+}
+
+.firstNoteText{
+  margin-bottom: 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(540);
+    br {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(30);
+    padding: 0 toRem(15);
+  }
+}
+
+.secondNoteTextContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: 0 toRem(15);
+    margin-left: 0;
+  }
+  
+  .secondNoteText{
+    margin: toRem(40) 0;
+    
+    @media only screen and (max-width: $screen-lg) {
+      margin: toRem(40) 0 toRem(60);
+      max-width: toRem(540);
+      br {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: toRem(30) 0 toRem(40);
+    }
+
+    .inlineBlock {
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    justify-content: flex-start;
+  }
+
+  @media only screen and (width: $screen-md) {
+    justify-content: flex-end;
+  }
+}
+
+.number {
+  min-width: toRem(35);
+  max-width: toRem(35);
+
+  @media only screen and (max-width: $screen-xl) {
+    min-width: toRem(30);
+    max-width: toRem(30);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    min-width: toRem(25);
+  }
+}

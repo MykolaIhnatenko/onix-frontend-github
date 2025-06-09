@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "type": "postTrip",
+    "header": "Post your trip",
+    "content": "She divided the inquiry form into several steps to facilitate a quick and easy understanding and filling out.",
+    "height": 196,
+    "mobileHeight": 174,
+    "activeHeight": 989,
+    "activeMobileHeight": 666
+  },
+  {
+    "id": 1,
+    "type": "inquiries",
+    "header": "My inquiries",
+    "content": "The page ‘My inquiries‘ displays the inquiries as cards with essential information and the number of offers for each, so the user instantly understands how many options they have.",
+    "height": 223,
+    "mobileHeight": 223,
+    "activeHeight": 954,
+    "activeMobileHeight": 484
+  },
+  {
+    "id": 2,
+    "type": "offerDetails",
+    "header": "Offer details",
+    "content": "Displaying the traveler’s requirements on the offers page along with detailed information on each offer helps users quickly compare what they need with what each provider offers.",
+    "height": 223,
+    "mobileHeight": 223,
+    "activeHeight": 890,
+    "activeMobileHeight": 551
+  }
+]

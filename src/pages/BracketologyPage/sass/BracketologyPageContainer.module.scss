@@ -1,0 +1,47 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  font-family: var(--muktaVaani);
+  max-width: none;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: toRem(15);
+  padding-right: toRem(15);
+  box-sizing: border-box;
+
+  @media only screen and (min-width: $screen-md) {
+    padding-left: toRem(30);
+    padding-right: toRem(30);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(1280);
+    padding-left: toRem(40);
+    padding-right: toRem(40);
+  }
+}
+
+.technologiesContainer {
+  @media only screen and (min-width: $screen-md) {
+    padding-left: toRem(2);
+    padding-right: toRem(2);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(1440);
+  }
+}
+
+.challengeContainer {
+  padding-bottom: toRem(56);
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(920);
+    padding-bottom: toRem(40);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-bottom: toRem(120);
+  }
+}

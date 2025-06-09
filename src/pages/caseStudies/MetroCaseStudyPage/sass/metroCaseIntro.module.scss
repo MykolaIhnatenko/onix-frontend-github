@@ -1,0 +1,172 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  height: toRem(425);
+  width: 100%;
+  position: relative;
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    height: toRem(568);
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #0B2F6E;
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    height: toRem(500);
+    background-image: url("../../../../assets/images/caseStudiesPage/MetroCaseStudyPage/img_metroIntroImage.webp");
+    background-position: 69% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    height: toRem(680);
+  }
+}
+
+.headerContainer {
+  position: relative;
+  z-index: 1;
+  max-width: toRem(1170);
+  padding-top: toRem(186);
+  margin: 0 auto;
+
+  .innerContainer {
+    @media only screen and (max-width: $screen-xl) {
+      padding: 0 toRem(30) 0 toRem(30);
+    }
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(146);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(188);
+  }
+}
+
+.metroImage {
+  max-width: toRem(260);
+  height: toRem(32);
+  margin: 0 auto;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(391);
+    height: toRem(48);
+    margin: 0;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(524);
+    height: toRem(64);
+  }
+}
+
+.title {
+  max-width: toRem(260);
+  font-size: toRem(18);
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-white);
+  margin: 0;
+  padding-bottom: toRem(20);
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(379);
+    font-size: toRem(22);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(445);
+    font-size: toRem(24);
+  }
+  @media only screen and (max-width: $screen-md - 1) {
+    margin: 0 auto;
+  }
+}
+
+.textContainer {
+  max-width: toRem(260);
+  font-size: toRem(18);
+  line-height: 150%;
+  color: var(--color-white);
+  margin: toRem(15) auto 0;
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(379);
+    font-size: toRem(22);
+    margin: toRem(15) 0 0;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(445);
+    font-size: toRem(24);
+  }
+}
+
+.linksContainer {
+  max-width: toRem(260);
+  display: flex;
+  margin: toRem(31) auto 0;
+
+  @media only screen and (min-width: $screen-md) {
+    margin: toRem(50) 0 0;
+    max-width: toRem(276);
+  }
+
+  .linksContainerItem {
+    &:first-child {
+      margin-right: toRem(15);
+
+      @media only screen and (min-width: $screen-md) {
+        margin-right: toRem(20);
+      }
+    }
+  }
+
+  .appStoreImageWrapper {
+    width: toRem(115);
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(120);
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      cursor: pointer;
+    }
+  }
+
+  .googlePlayImageWrapper {
+    width: toRem(130);
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(135);
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      cursor: pointer;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

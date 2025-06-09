@@ -1,0 +1,132 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  padding: toRem(120) toRem(70);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(120) toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(120) toRem(30) toRem(60);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(60) toRem(15);
+  }
+
+  img {
+    object-fit: fill;
+    height: 60% !important;
+  }
+
+  .contentText {
+    position: relative;
+
+    .title {
+      max-width: toRem(460);
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(383);
+      }
+    }
+
+    .text {
+      max-width: toRem(980);
+      margin-bottom: toRem(97);
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(18);
+        margin-bottom: toRem(84);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-bottom: toRem(74);
+        margin-top: toRem(30);
+      }
+
+      span, p {
+        display: block;
+        padding-bottom: toRem(26);
+      }
+    }
+  }
+
+  .blockList {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: toRem(20);
+
+    @media only screen and (max-width: $screen-lg) {
+      row-gap: toRem(54);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      row-gap: toRem(34);
+    }
+
+    .itemBlock {
+      width: calc(25% - 20px);
+      position: relative;
+      border: 2px solid var(--color-black);
+      padding: toRem(42) toRem(20) 0;
+      height: toRem(183);
+
+      @media only screen and (max-width: $screen-lg) {
+        width: calc(50% - 20px);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: 100%;
+        height: toRem(140);
+        border-top: none;
+        border-left: none;
+        &:before{
+          content: '';
+          position: absolute;
+          width: calc(100vw - 75px);
+          height: 2px;
+          background-color: var(--color-black);
+          top: 0;
+          right: -1px;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          width: 2px;
+          height: toRem(119);
+          background-color: var(--color-black);
+          bottom: -2px;
+          left: 0;
+        }
+      }
+
+      div {
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+        position: absolute;
+        background-color: var(--color-white);
+        top: toRem(-34);
+        left: toRem(-3);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(36);
+          background-color: transparent;
+          top: toRem(-24);
+        }
+      }
+
+      h3 {
+        font-size: toRem(24);
+        line-height: getLineHeight(34, 24);
+        width: 100%;
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(20);
+        }
+      }
+    }
+  }
+}

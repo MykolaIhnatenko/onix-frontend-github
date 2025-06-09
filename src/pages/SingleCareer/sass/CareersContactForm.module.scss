@@ -1,0 +1,242 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+@mixin input {
+  input {
+    color: var(--color-white);
+    background: transparent;
+    font-family: var(--ibmPlexMono);
+    border-bottom: toRem(1) solid var(--color-white);
+
+    &:focus {
+      background: #0E0E0E;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: toRem(80);
+  background: var(--color-black);
+  padding: toRem(64) toRem(80) toRem(110);
+
+  @media only screen and (max-width: $screen-lg) {
+    flex-direction: column;
+    padding: toRem(60) toRem(30) toRem(40);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: toRem(42) toRem(15) toRem(30);
+    gap: 0;
+  }
+
+  .bg{
+    object-fit: cover;
+    object-position: left -5px;
+
+    @media only screen and (max-width: $screen-lg) {
+      height: 50% !important;
+      object-position: left -5px;
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+      height: 63% !important;
+    }
+  }
+
+  .contactForm {
+    position: relative;
+    width: 100%;
+    max-width: toRem(670);
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: initial;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-bottom: 47px;
+    }
+
+    .heading {
+      @include generalSansFont(50, 500, 64);
+      color: var(--color-white);
+      margin-bottom: toRem(20);
+
+      @media only screen and (max-width: $screen-lg) {
+        @include generalSansFont(40, 500, 56);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        @include generalSansFont(30, 500, 40);
+        margin-bottom: toRem(10);
+      }
+    }
+
+    .description {
+      font-family: var(--ibmPlexMono);
+      color: var(--color-white);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: getLineHeight(26, 18);
+      margin-bottom: toRem(40);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(15);
+        font-size: toRem(16);
+        line-height: getLineHeight(24, 16);
+      }
+    }
+  }
+
+  .inputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: toRem(40);
+    column-gap: toRem(30);
+
+    .nameInput {
+      @include input;
+      width: 47%;
+      max-width: toRem(320);
+
+      @media only screen and (max-width: 1256px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        width: 47%;
+        max-width: toRem(320);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .emailInput {
+      @include input;
+      width: 47%;
+      max-width: toRem(320);
+
+      @media only screen and (max-width: 1256px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        width: 47%;
+        max-width: toRem(320);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .phoneInput {
+      @include input;
+      width: 47%;
+      max-width: toRem(320);
+
+      @media only screen and (max-width: 1256px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        width: 47%;
+        max-width: toRem(320);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .countryInput {
+      @include input;
+      width: 47%;
+      max-width: toRem(320);
+
+      @media only screen and (max-width: 1256px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        width: 47%;
+        max-width: toRem(320);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .howFoundOutAboutUsInput {
+      @include input;
+      width: 100%;
+    }
+
+    .messageInput {
+      width: 100%;
+
+      textarea {
+        color: var(--color-white);
+        background: transparent;
+        font-family: var(--ibmPlexMono);
+        border-color: var(--color-white);
+
+        &:focus {
+          background: #0E0E0E;
+        }
+      }
+    }
+
+    .resumeText {
+      color: var(--color-white);
+      font-family: var(--ibmPlexMono);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: getLineHeight(26, 18);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: 16px;
+        line-height: getLineHeight(24, 16);
+      }
+    }
+
+    .resumeInput {
+      @include input;
+      width: 100%;
+    }
+  }
+
+  .inputError {
+    input {
+      border-bottom: toRem(1) solid var(--color-red)!important;
+    }
+  }
+
+  .inputErrorTextArea {
+    input {
+      border-bottom: toRem(1) solid var(--color-red)!important;
+    }
+
+    span {
+      bottom: 23px;
+    }
+  }
+}

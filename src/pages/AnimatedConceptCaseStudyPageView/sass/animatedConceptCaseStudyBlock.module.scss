@@ -1,0 +1,80 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  width: 100%;
+  background-color: var(--color-black);
+  position: relative;
+  z-index: 2;
+
+  .bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(880);
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(90);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    }
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: toRem(90);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      bottom: toRem(187);
+      height: toRem(702);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      bottom: 0;
+      height: toRem(661);
+      &:before {
+        display: none;
+      }
+    }
+
+    img {
+      object-fit: cover;
+      object-position: top left;
+    }
+  }
+
+  .sliderContainer {
+    padding: toRem(120) 0 0 0;
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(80) 0 0 0;
+    }
+
+    .title {
+      position: relative;
+      z-index: 1;
+      color: white;
+      margin-left: toRem(70);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-left: toRem(30);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        max-width: toRem(448);
+        margin-left: toRem(15);
+      }
+    }
+  }
+}
+

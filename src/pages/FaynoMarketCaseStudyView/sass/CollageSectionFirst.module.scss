@@ -1,0 +1,54 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: toRem(10);
+  overflow: hidden;
+
+  @media screen and (max-width: $screen-lg) {
+    gap: toRem(5);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .containerImages {
+    display: flex;
+    gap: toRem(10);
+    width: 100%;
+
+    @media screen and (max-width: $screen-lg) {
+      gap: toRem(5);
+    }
+
+    @media screen and (max-width: ($screen-md - 1)) {
+      flex-direction: column;
+    }
+
+    .image {
+      height: auto;
+
+      &:nth-child(1) {
+        width: 32.7%;
+
+        @media screen and (max-width: ($screen-md - 1)) {
+          width: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 67.3%;
+
+        @media screen and (max-width: ($screen-md - 1)) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

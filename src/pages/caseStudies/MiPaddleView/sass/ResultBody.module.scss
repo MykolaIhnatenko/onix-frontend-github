@@ -1,0 +1,126 @@
+@import "../../../../pages/App/sass/breakpointsVariables.scss";
+
+.resultsBody {
+  font-family: var(--ceraGRFont);
+  font-size: 50px;
+  letter-spacing: -0.03em;
+  margin: 60px auto 0;
+  width: 70%;
+  text-align: center;
+  position: relative;
+
+  @media (max-width: 850px) {
+    font-size: 40px;
+    width: 90%;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 30px;
+    width: 90%;
+    margin-top: 237px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 30px;
+    width: 91%;
+    margin-top: 237px;
+  }
+
+  h2 {
+    display: inline-block;
+    margin-top: 166px;
+    font-size: inherit;
+    font-weight: 400;
+    max-width: 1010px;
+    line-height: 64px;
+
+    @media (max-width: 768px) {
+      margin-top: 325px;
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 120px auto 408px;
+    height: 60px;
+    width: 213px;
+    text-transform: uppercase;
+    background: #00A4D2;
+    border: 1px solid #00A4D2;
+    font-family: var(--ceraGRFont);
+    font-size: 14px;
+    color: white;
+    clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
+    position: relative;
+    z-index: 1000;
+
+    &:hover {
+      background: #3CC4EA;
+    }
+
+    &.active {
+      background: #3CC4EA;
+      width: 263px;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      cursor: default;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 75px;
+      margin-bottom: 350px;
+
+      &:hover {
+        background: #00A4D2;
+      }
+    }
+  }
+
+  .resultsArrowBg {
+    transition: all 1s ease;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+    @media (max-width: 768px) {
+      left: 38%;
+    }
+
+    @media (max-width: 500px) {
+      left: 35%;
+      top: 45%;
+    }
+
+    @media (max-width: 390px) {
+      left: 15%;
+      top: 50%;
+    }
+
+    &.arrowActive {
+      animation: 2s ease arrowMove;
+    }
+  }
+
+  @media (max-width: 500px) {
+    span {
+      margin-top: 260px;
+    }
+
+    a {
+      width: 95%;
+    }
+  }
+}
+
+@keyframes arrowMove {
+  from {
+    transform: translateX(0vh);
+  }
+  to {
+    transform: translateX(100vh);
+  }
+}

@@ -1,0 +1,147 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.tableRow {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: $screen-lg) {
+    border-bottom: 2px solid var(--color-black);
+  }
+
+  .tableCol {
+    width: 33%;
+
+    @media only screen and (max-width: $screen-lg) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      width: 100%;
+    }
+
+    .title {
+      border-bottom: 2px solid var(--color-black);
+      margin-bottom: toRem(20);
+
+      span {
+        font-size: toRem(96);
+        font-weight: 400;
+        font-style: normal;
+        line-height: getLineHeight(132, 96);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        border: none;
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+        margin-bottom: 0;
+
+        span{
+          font-size: toRem(80);
+          line-height: getLineHeight(132, 80);
+        }
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(40);
+        line-height: getLineHeight(56, 40);
+        
+        span {
+          font-size: toRem(64);
+          line-height: getLineHeight(80, 64);
+        }
+      }
+    }
+  }
+  
+  &.vyra {
+    position: relative;
+    border-top: 2px solid var(--color-black);
+    
+    @media only screen and (max-width: $screen-lg) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      border-top: none;
+      border-bottom: none;
+    }
+    
+    .tableCol {
+      @media only screen and (max-width: $screen-lg) {
+        border-bottom: 2px solid var(--color-black);
+        padding-top: toRem(30);
+        width: 100%;
+
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+      
+      &:last-child {
+        @media only screen and (max-width: $screen-lg) {
+          border-bottom: none;
+        }
+        
+        .text {
+          margin-bottom: 0;
+        }
+      }
+      
+      
+      .title {
+        border: none;
+        padding-top: toRem(80);
+        font-size: toRem(96);
+        font-weight: 400;
+        line-height: getLineHeight(132, 96);
+        margin-bottom: toRem(9);
+        
+        @media only screen and (max-width: $screen-lg) {
+          padding-top: 0;
+          font-size: toRem(50);
+          font-weight: 500;
+          line-height: getLineHeight(64, 50);
+          
+          > span {
+            font-size: toRem(50);
+            font-weight: 500;
+            line-height: getLineHeight(64, 50);
+          }
+        }
+      }
+      
+      .text {
+        margin-top: 0;
+        
+        @media only screen and (max-width: $screen-lg) {
+          max-width: 100%;
+        }
+        
+        span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.text {
+  font-family: var(--ibmPlexMono);
+  max-width: toRem(350);
+  font-size: toRem(18);
+  line-height: getLineHeight(26, 18);
+  margin-right: toRem(30);
+  margin-top: toRem(20);
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(317);
+    margin-top: 0;
+    margin-bottom: toRem(30);
+  }
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(16);
+    line-height: getLineHeight(24, 16);
+    max-width: toRem(600);
+  }
+}

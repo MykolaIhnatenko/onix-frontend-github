@@ -1,0 +1,32 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.tagContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 8px 12px -6px rgba(24, 39, 75, 0.12), -4px -5px 24px -4px rgba(24, 39, 75, 0.08);
+  border-radius: 100px;
+  min-height: 60px;
+  padding: 16px 32px;
+  margin: 8px;
+
+  @media only screen and (max-width: 968px) {
+    margin: 8px 0;
+  }
+
+  img {
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+  }
+
+  div {
+    font-size: 18px;
+    line-height: 150%;
+
+    @media only screen and (max-width: 450px) {
+      font-size: 13px;
+      text-align: start;
+    }
+  }
+}

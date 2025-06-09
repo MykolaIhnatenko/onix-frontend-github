@@ -1,0 +1,104 @@
+@import '../../../pages/App/sass/functions';
+@import '../../../pages/App/sass/breakpointsVariables';
+
+.mobileMenu {
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  
+  &.fixHeader {
+   right: -50% !important;
+    @media only screen and (max-width: ($screen-md - 1)) {
+      right: 0 !important;
+    }
+  }
+
+  .logoTablet {
+    mix-blend-mode: difference;
+    position: absolute;
+    top: toRem(18);
+    left: calc(-100% + 30px);
+    z-index: 3;
+
+    path {
+      fill: black;
+    }
+  }
+
+  .subMenuLink {
+    color: var(--color-white);
+    div{
+      &:last-child{
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .container {
+    overflow-y: auto;
+    background: transparent;
+    padding: toRem(13) toRem(30);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(13) toRem(15);
+    }
+
+    svg {
+      color: var(--color-white);
+
+      path {
+        mix-blend-mode: initial !important;
+      }
+    }
+
+    &.open {
+      background: var(--color-black) !important;
+
+      svg {
+        color: var(--color-white);
+        display: block;
+      }
+
+      .menuBtn {
+        background: var(--color-white);
+
+        .rectangle {
+          background: var(--color-black);
+        }
+      }
+    }
+
+    .menuBtn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-white);
+      margin-left: 30px;
+
+      .rectangle {
+        height: 2px;
+        width: 28px;
+        background: var(--color-black);
+      }
+    }
+  }
+}
+
+.link {
+  display: block;
+  width: 128px;
+  height: 32px;
+}
+
+.menuPosition {
+  @media only screen and (max-width: ($screen-md - 1)) {
+    position: absolute;
+    width: 100% !important;
+  }
+}
+
+.hideMobile {
+  @media only screen and (max-width: ($screen-md - 1)) {
+    display: none;
+  }
+}

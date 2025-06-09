@@ -1,0 +1,61 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.container {
+  margin-top: 0;
+  margin-bottom: toRem(80);
+  background-color: var(--color-black);
+  padding: toRem(80) 0;
+
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-top: toRem(40);
+    padding: toRem(40) 0;
+  }
+
+  .career {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(20);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+ 
+    .titleContainer {
+      display: flex;
+      align-items: center;
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(20);
+      }
+
+      .title {
+        @include generalSansFont(50, 500, 64);
+        color: var(--color-white);
+    
+        @media only screen and (max-width: $screen-lg) {
+          @include generalSansFont(40, 500, 56);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          @include generalSansFont(30, 500, 40);
+        }
+      }
+
+      .iconBox {
+        margin-left: toRem(15);
+      }
+    }
+  }
+
+  .jobsContainer {
+    width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.bannerHidden {
+  margin-bottom: toRem(60);
+  top: toRem(174);
+  position: fixed;
+  z-index: 1;
+  padding: 0 toRem(70);
+  mix-blend-mode: difference;
+  color: var(--color-white);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: 0 toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(174) toRem(30) 0;
+    margin-bottom: toRem(40);
+    top: 0;
+  }
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(154) toRem(15) 0;
+    margin-bottom: toRem(30);
+  }
+}
+
+.titleBanner {
+  width: 100%;
+  font-weight: 500;
+  font-family: var(--generalSans);
+  font-size: toRem(86);
+  line-height: normal;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(44);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(30);
+  }
+}

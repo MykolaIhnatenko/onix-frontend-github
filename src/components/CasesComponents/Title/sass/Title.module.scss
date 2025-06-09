@@ -1,0 +1,15 @@
+@import '../../../../pages/App/sass/breakpointsVariables.scss';
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  font-family: var(--ibmPlexMono), sans-serif;
+  padding-bottom: 20px;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: 18px;
+    line-height: 1.44;
+    padding-bottom: 16px;
+  }
+}

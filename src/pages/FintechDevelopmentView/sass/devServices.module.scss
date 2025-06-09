@@ -1,0 +1,8 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.hiddenItem {
+  @media screen and (max-width: $screen-lg) {
+    display: none;
+  }
+}

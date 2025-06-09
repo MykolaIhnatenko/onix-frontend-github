@@ -1,0 +1,76 @@
+@use '../../../../pages/App/sass/container';
+@import '../../../../pages/App/sass/breakpointsVariables.scss';
+
+$white: #fff;
+
+.whiteSection {
+  background-color: $white;
+
+  .container {
+    @extend .container;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media only screen and (min-width: $screen-lg) {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    
+    .subtitleText{
+      max-width: 1300px;
+    }
+
+    .subtitleContainer {
+      &:last-of-type {
+        h4 {
+          @media only screen and (min-width: $screen-lg) {
+            max-width: 720px;
+          }
+        }
+      }
+    }
+
+    h4 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.44;
+      padding-top: 20px;
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: 20px;
+        line-height: 1.6;
+        padding-top: 30px;
+      }
+
+      @media only screen and (min-width: $screen-lg) {
+        font-size: 24px;
+        line-height: 1.49;
+        padding-top: 40px;
+      }
+    }
+
+    .textBlock {
+      @media only screen and (min-width: $screen-lg) {
+        display: flex;
+        gap: 40px;
+      }
+
+      .textContainer {
+        padding-top: 20px;
+
+        @media only screen and (min-width: $screen-md) {
+          padding-top: 30px;
+        }
+
+        @media only screen and (min-width: $screen-lg) {
+          padding-top: 40px;
+          flex: 0 1 calc((100% - 40px) / 2);
+        }
+
+        .text {
+          color: var(--color-black);
+        }
+      }
+    }
+  }
+}

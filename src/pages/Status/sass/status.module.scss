@@ -1,0 +1,100 @@
+@import './../../../pages/App/sass/functions';
+
+$white: #fff;
+
+.main {
+  width: 100%;
+  min-height: toRem(609);
+  padding-top: toRem(185);
+  padding-bottom: toRem(80);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font-family: var(--muktaVaani), sans-serif;
+  .titleMessage{
+    color:var(--color-white);
+    font-weight: 400;
+  }
+  img {
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 51, 57, 0.63);
+  }
+  h1 {
+    position: relative;
+    color: $white;
+    letter-spacing: 0.06px;
+    font: 700 48px/72px var(--muktaVaani),sans-serif;
+    line-height: 120%;
+    padding-bottom: toRem(30);
+  }
+  p {
+    position: relative;
+    color: #2d3339;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    font-size: toRem(18);
+    line-height: toRem(30);
+  }
+}
+.content {
+  padding-top: toRem(80);
+  padding-bottom: toRem(80);
+  color: #2D3339;
+  line-height: toRem(30);
+  font-size: toRem(18);
+  font-weight: 500;
+  .blueGradient {
+    position: absolute;
+    opacity: 0.2;
+    top: toRem(550);
+    right: 0;
+    width: toRem(480);
+    height: toRem(480);
+    background: radial-gradient(ellipse, #005bbb 30%, white 70%) no-repeat 240px;
+    z-index: -1;
+  }
+  .yellowGradient {
+    position: absolute;
+    opacity: 0.2;
+    top: toRem(900);
+    right: 0;
+    width: toRem(1000);
+    height: toRem(1000);
+    background: radial-gradient(ellipse, #ffd500 30%, white 70%) no-repeat toRem(600);
+    z-index: -2;
+  }
+  .contentTitle {
+    color: #2D3339;
+    letter-spacing: 0.3px;
+    font: 800 32px/48px var(--muktaVaani),sans-serif;
+  }
+  .contentDescription {
+    padding: 20px 0 80px;
+    color: #2D3339;
+    letter-spacing: 0.3px;
+    font: 400 18px/29.92px var(--muktaVaani),sans-serif;
+    & span {
+      font-weight: 600;
+    }
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+  ul {
+    list-style: disc;
+    margin-left: toRem(20);
+  }
+  a {
+    color: #0093FF;
+  }
+}

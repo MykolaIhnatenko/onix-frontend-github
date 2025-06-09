@@ -1,0 +1,38 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.offerSection {
+  padding: 0 0 toRem(40) 0;
+  background-color: #F5F9FD;
+
+  @media only screen and (min-width: $screen-md) {
+    padding: 0 0 toRem(50) 0;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: 0 0 toRem(100) 0;
+  }
+
+  .container {
+    .cardsWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(708);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1110);
+      }
+
+      .animationBlock {
+        width: 100%;
+      }
+    }
+  }
+}
+

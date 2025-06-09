@@ -1,0 +1,72 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.wrapper {
+  @media only screen and (min-width: $screen-md) {
+    padding: 0 toRem(32);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: 0 toRem(60);
+    max-width: toRem(1440);
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: toRem(40) toRem(16);
+    background-color: #F3F5F8;
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(60) toRem(30);
+      border-radius: toRem(12);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(104) toRem(100);
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      letter-spacing: 0.02px;
+      background-color: #EB5757;
+      border-radius: toRem(12);
+      padding: toRem(16) 0;
+      font-weight: 500;
+      font-size: toRem(20);
+      line-height: getLineHeight(25, 20);
+      color: var(--color-white);
+      max-width: 100%;
+      font-family: var(--satoshiFont), sans-serif;
+      text-transform: unset;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(16) 0;
+        max-width: toRem(330);
+        margin: 0 auto;
+      }
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.lastSection {
+  padding-bottom: toRem(46);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-bottom: toRem(80);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-bottom: toRem(164);
+  }
+
+  .container {
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(104) toRem(40);
+    }
+  }
+}

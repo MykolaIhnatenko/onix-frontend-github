@@ -1,0 +1,136 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.wrapper {
+  background-color: var(--color-bracketology-background);
+
+  .content {
+    position: relative;
+
+    img {
+      object-fit: cover;
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(714);
+        margin-left: auto !important;
+        margin-right: 0 !important;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1118);
+      }
+      
+      @media only screen and (max-width: $screen-lg) {
+        opacity: .7;
+      }
+    }
+
+    .container {
+      max-width: none;
+      width: 100%;
+      margin: 0 auto;
+      padding: toRem(24) toRem(15);
+      box-sizing: border-box;
+      position: relative;
+
+      @media only screen and (min-width: $screen-sm) {
+        padding-top: toRem(48);
+        padding-bottom: toRem(48);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        padding-left: toRem(30);
+        padding-right: toRem(30);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: toRem(56) toRem(40) toRem(48);
+        max-width: toRem(1280);
+      }
+
+      h2 {
+        font-weight: 800;
+        font-size: toRem(22);
+        line-height: toRem(28);
+        letter-spacing: -0.1px;
+        color: var(--color-white);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(32);
+          line-height: toRem(40);
+          letter-spacing: 0.1px;
+          max-width: toRem(476);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(40);
+          line-height: toRem(48);
+          max-width: toRem(601);
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: toRem(24);
+        letter-spacing: -0.2px;
+        padding: toRem(16) 0;
+        opacity: 0.67;
+        color: var(--color-white);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(20);
+          line-height: toRem(28);
+          padding: toRem(24) 0;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(24);
+          line-height: toRem(32);
+        }
+      }
+
+      .btn {
+        display: block;
+        text-align: center;
+        border: none;
+        background-color: var(--color-bracketology-red);
+        opacity: 1;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        height: 48px;
+        border-radius: 4px;
+        padding: 12px 10px;
+        color: var(--color-white);
+        font-weight: 600;
+        font-size: toRem(20);
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        margin: 0 auto;
+        text-transform: unset;
+        position: relative;
+
+        &:active {
+          background-color: var(--color-bracketology-red-hover);
+          opacity: 0.9;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--color-bracketology-red-hover);
+            opacity: 0.9;
+          }
+        }
+
+        @media only screen and (min-width: $screen-sm) {
+          margin: 0;
+          width: toRem(176);
+          color: rgba(255, 255, 255, 0.9)
+        }
+      }
+    }
+  }
+}
+

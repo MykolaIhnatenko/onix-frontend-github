@@ -1,0 +1,7 @@
+[
+  { "id": 1, "content": "To view a request for their service on October 10th" },
+  { "id": 2, "content": "To submit a quote for the trip" },
+  { "id": 3, "content": "To chat with the customer" },
+  { "id": 4, "content": "To receive a confirmation of the booking" },
+  { "id": 5, "content": "To receive the payment" }
+]

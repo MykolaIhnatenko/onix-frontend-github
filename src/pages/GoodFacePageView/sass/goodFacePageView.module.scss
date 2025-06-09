@@ -1,0 +1,289 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.goodFace {
+  background-color: var(--color-bg-good-face);
+  position: relative;
+  
+  :global {
+    .container {
+      max-width: 1360px;
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: toRem(35) toRem(15);
+      
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(50) toRem(30);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1360);
+        padding: toRem(100) toRem(20);
+      }
+      
+      h1, h2 {
+        font-family: var(--playfairDisplayFont), serif;
+      }
+      
+      h4, h5, p {
+        font-family: var(--satoshiFont), sans-serif;
+      }
+      
+      h2 {
+        font-weight: 500;
+        font-size: toRem(24);
+        line-height: getLineHeight(32, 24);
+        color: var(--color-black2);
+        
+        @media only screen and (min-width: $screen-sm) {
+          font-size: toRem(36);
+          line-height: getLineHeight(48, 32);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(48);
+          line-height: getLineHeight(64, 48);
+        }
+        
+        span {
+          color: var(--color-pink2);
+          font-size: toRem(24) !important;
+          
+          @media only screen and (min-width: $screen-sm) {
+            font-size: toRem(36) !important;
+          }
+          
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(48) !important;
+          }
+        }
+      }
+      
+      .h5 {
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: getLineHeight(24, 18);
+        color: var(--color-black2);
+        
+        @media only screen and (min-width: $screen-sm) {
+          font-size: toRem(24);
+          line-height: getLineHeight(32, 24);
+        }
+      }
+      
+      p, li {
+        font-weight: 300;
+        font-size: toRem(16);
+        line-height: getLineHeight(22, 16);
+        color: #7D7F80;
+        
+        @media only screen and (min-width: $screen-sm) {
+          font-size: toRem(18);
+          line-height: getLineHeight(24, 18);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(24);
+          line-height: getLineHeight(32, 24);
+        }
+      }
+      
+      .font_lgall {
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(18);
+          line-height: getLineHeight(24, 18);
+        }
+      }
+      
+      .font_big {
+        font-weight: 300;
+        font-size: toRem(16);
+        line-height: getLineHeight(22, 16);
+        color: #7D7F80;
+        
+        @media only screen and (min-width: $screen-sm) {
+          font-size: toRem(24);
+          line-height: getLineHeight(36, 24);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(28);
+          line-height: getLineHeight(42, 28);
+        }
+      }
+      
+      .fs_18 {
+        font-family: var(--satoshiFont), sans-serif;
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: getLineHeight(24, 18);
+        color: var(--color-black2);
+        
+        @media only screen and (min-width: $screen-sm) {
+          font-size: toRem(24);
+          line-height: getLineHeight(32, 24);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(32);
+          line-height: getLineHeight(43, 32);
+        }
+      }
+      
+      .numberTitle {
+        font-weight: 700;
+        font-size: toRem(32);
+        line-height: getLineHeight(43, 32);
+        color: var(--color-pink2);
+        letter-spacing: 2px;
+        font-family: var(--playfairDisplayFont), serif;
+        
+        @media only screen and (min-width: $screen-sm) {
+          font-size: toRem(40);
+          line-height: getLineHeight(53, 40);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(54);
+          line-height: getLineHeight(72, 54);
+          
+        }
+      }
+      
+      .number {
+        font-family: var(--playfairDisplayFont), serif;
+        font-weight: 700;
+        font-size: toRem(40);
+        line-height: getLineHeight(40,40);
+        color: var(--color-pink2);
+        letter-spacing: 2px;
+        
+        @media only screen and (min-width: $screen-sm) {
+          font-size: toRem(80);
+          line-height: getLineHeight(80, 80);
+        }
+      }
+      
+      .context {
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: getLineHeight(22, 16);
+        
+        @media only screen and (min-width: $screen-sm) {
+          font-size: toRem(18);
+          line-height: getLineHeight(24, 18);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(394);
+        }
+      }
+      
+      .effortTitle {
+        padding: toRem(12) 0;
+        max-width: toRem(290);
+        
+        @media only screen and (min-width: $screen-sm) {
+          padding: toRem(16) 0;
+          max-width: toRem(390);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(24);
+          line-height: toRem(32);
+        }
+      }
+      
+      .effortText {
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(18);
+          line-height: getLineHeight(24, 18);
+          letter-spacing: 0.2px;
+          max-width: toRem(498);
+          margin-right: toRem(40);
+        }
+      }
+      
+      .technologyTitle {
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: getLineHeight(24, 18);
+        color: var(--color-black2);
+      }
+    }
+    
+    .mainContainer {
+      padding-top: toRem(163);
+      
+      @media only screen and (min-width: $screen-sm) {
+        padding-top: toRem(204);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(289);
+      }
+    }
+    
+    .benefitsContainer {
+      padding-bottom: toRem(70);
+      position: relative;
+      
+      @media only screen and (min-width: $screen-sm) {
+        padding-bottom: toRem(100);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(200);
+        overflow-x: hidden;
+      }
+    }
+    
+    .businessContainer {
+      padding-top: 0;
+      
+      @media only screen and (min-width: $screen-sm) {
+        padding-top: 0;
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: 0;
+      }
+    }
+    
+    .effortContainer {
+      @media only screen and (min-width: $screen-sm) {
+        padding-bottom: toRem(100);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(57);
+      }
+    }
+    
+    .lastContainer {
+      padding-bottom: toRem(153);
+      
+      @media only screen and (min-width: $screen-sm) {
+        padding-bottom: toRem(100);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(200);
+      }
+    }
+    
+    .technologyContainer {
+      padding-bottom: toRem(65);
+      
+      @media only screen and (min-width: $screen-sm) {
+        padding-bottom: toRem(55);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(100);
+      }
+    }
+  }
+}
+

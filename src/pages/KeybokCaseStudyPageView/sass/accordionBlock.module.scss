@@ -1,0 +1,48 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  .container {
+    .title {
+      padding: toRem(120) 0 toRem(80);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(80) 0 toRem(60);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(80) 0 toRem(40);
+      }
+    }
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .accordion {
+    max-width: toRem(630);
+
+    @media only screen and (min-width: $screen-xxxl) {
+      max-width: toRem(850);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: 100%;
+    }
+
+    .accordionItem{
+      .accordionItemTitle {
+        @media only screen and ((min-width: ($screen-md - 1)) and (max-width: $screen-lg)) {
+          padding: toRem(30) 0;
+        }
+      }
+
+      .accordionItemContent {      
+        @media only screen and ((min-width: ($screen-md - 1)) and (max-width: $screen-lg)) {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

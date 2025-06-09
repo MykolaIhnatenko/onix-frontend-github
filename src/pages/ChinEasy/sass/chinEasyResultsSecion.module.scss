@@ -1,0 +1,79 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsDisplay";
+
+.resultsSection {
+  background-color: var(--color-white);
+
+  .container {
+    padding-bottom: toRem(80);
+    margin: 0;
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(120);
+    }
+
+    .subtitle {
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+      padding: toRem(30) 0;
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(24);
+        line-height: getLineHeight(36, 24);
+        padding: toRem(40) 0;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1080);
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1480);
+      }
+    }
+
+    .textBlock {
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: flex;
+        gap: 0 40px;
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        gap: 0 60px;
+      }
+
+      .wrapper {
+        @media only screen and (min-width: $screen-lg + 1) {
+          @include flex-basis(40px, 2);
+        }
+
+        .textWrapper {
+          padding-bottom: toRem(20);
+          
+          @media only screen and (min-width: $screen-md) {
+            padding-bottom: toRem(30);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            &:last-of-type {
+              padding-bottom: 0;
+            }
+          }
+
+          .text {
+            margin: 0;
+            color: var(--color-black);
+          }
+        }
+        &:last-of-type {
+          .textWrapper {
+            &:last-of-type {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

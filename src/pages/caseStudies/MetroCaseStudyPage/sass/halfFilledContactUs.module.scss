@@ -1,0 +1,134 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  max-width: toRem(320);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(690);
+    height: toRem(294);
+    flex-wrap: nowrap;
+  }
+}
+
+.outerImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: toRem(10) 0 toRem(8);
+
+  @media only screen and (min-width: $screen-md) {
+    margin: toRem(14) toRem(17) 0 toRem(22);
+  }
+
+  .imageWrapper {
+    width: toRem(100);
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(184);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .buttonContainer {
+    display: none;
+
+    @media only screen and (min-width: $screen-md) {
+      margin-top: toRem(16);
+      display: flex;
+      justify-content: flex-start;
+
+      span {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: toRem(14);
+        line-height: toRem(32);
+        text-transform: uppercase;
+        color: #333333;
+        background: #FBEA51;
+        border-radius: toRem(3);
+        padding: toRem(9) 0;
+        width: toRem(155);
+        transition: 0.3s;
+
+        &:hover {
+          background: #FBD651;
+        }
+      }
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      cursor: pointer;
+    }
+  }
+}
+
+.outerTextContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: toRem(362);
+  padding: toRem(59) 0 toRem(31) 0;
+  background-color: #5A36FF;
+  clip-path: ellipse(100% 100% at 50% 100%);
+
+  @media only screen and (min-width: $screen-md) {
+    justify-content: center;
+    clip-path: ellipse(59% 100% at 60% 50%);
+    height: auto;
+    padding: 0;
+  }
+
+  .textWrapper {
+    margin: 0 auto;
+    max-width: toRem(280);
+
+    @media only screen and (min-width: $screen-md) {
+      margin-left: toRem(33);
+      max-width: toRem(410);
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+
+    span {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: toRem(14);
+      line-height: toRem(32);
+      text-transform: uppercase;
+      color: #333333;
+      background: #FBEA51;
+      border-radius: toRem(3);
+      padding: toRem(9) 0;
+      width: toRem(155);
+      transition: 0.3s;
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        cursor: pointer;
+      }
+
+      &:hover {
+        background: #FBD651;
+      }
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+}

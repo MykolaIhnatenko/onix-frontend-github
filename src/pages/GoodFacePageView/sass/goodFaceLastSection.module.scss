@@ -1,0 +1,96 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.lastSection {
+  overflow-x: hidden;
+
+  h2 {
+    padding-bottom: toRem(8);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(32);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(50);
+    }
+  }
+
+  .lastContentContainer {
+    @media only screen and (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+      gap: toRem(57);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      gap: toRem(110);
+    }
+
+    .lastContent {
+      list-style: none;
+      padding-bottom: toRem(24);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: 0;
+        flex: 0 1 45%;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        flex: 0 1 60%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: toRem(74) toRem(110);
+      }
+    }
+
+    .lastImg {
+      max-width: toRem(343);
+      max-height: toRem(570);
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(345);
+        max-height: toRem(627);
+        flex: 0 1 55%;
+        margin: 0;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(440);
+        max-height: toRem(800);
+        flex: 0 1 40%;
+      }
+
+      .lastSpot {
+        position: absolute;
+        width: toRem(167);
+        height: toRem(167);
+        right: toRem(-15);
+        bottom: toRem(-60);
+        z-index: 2;
+
+        @media only screen and (min-width: $screen-md) {
+          right: toRem(-30);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          width: toRem(261);
+          height: toRem(261);
+          right: toRem(-60);
+          bottom: toRem(-110);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        clip-path: inset(0 round 8px);
+      }
+    }
+  }
+}

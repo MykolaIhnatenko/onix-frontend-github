@@ -1,0 +1,116 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.flowSection {
+  background-color: white;
+
+  .flowContent {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media only screen and (min-width: 450px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 437px;
+      position: relative;
+      left: -240px;
+      z-index: 5;
+    }
+
+    p {
+      padding-top: 8px;
+
+      @media only screen and (min-width: 450px) {
+        max-width: 335px;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: 437px;
+      }
+    }
+  }
+
+  .runningWomanImgMobile {
+    max-width: 207px;
+    max-height: 535px;
+
+    @media only screen and (min-width: 450px) {
+      display: none;
+    }
+  }
+
+  .runningWomanImg {
+    display: none;
+
+    .img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media only screen and (min-width: 450px) {
+      display: block;
+      max-width: 360px;
+      max-height: 730px;
+      position: relative;
+      top: -20px;
+      flex-basis: 79%;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      flex-basis: 96%;
+      top: -155px;
+      max-width: 875px;
+      max-height: 1431px;
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      flex-basis: 62%;
+      top: -170px;
+    }
+  }
+
+  .schemeImgMobile {
+    max-width: 256px;
+    max-height: 320px;
+    position: absolute;
+    top: 170px;
+    right: -3px;
+
+    @media only screen and (min-width: 450px) {
+      display: none;
+    }
+  }
+
+  .schemeImg {
+    display: none;
+
+    @media only screen and (min-width: 450px) {
+      display: block;
+      position: absolute;
+      max-width: 465px;
+      max-height: 567px;
+      top: 190px;
+      left: 0;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: 815px;
+      max-height: 1468px;
+      top: 250px;
+      left: unset;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      left: 0;
+    }
+
+    @media only screen and (max-width: $screen-md) {
+      left: unset;
+    }
+  }
+}
+

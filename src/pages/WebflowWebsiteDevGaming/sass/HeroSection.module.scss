@@ -1,0 +1,111 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  height: 100vh;
+  min-height: toRem(760);
+  max-height: toRem(1400);
+  position: relative;
+  background: linear-gradient(176.93deg, #080421 41.82%, #050D7C 111.6%, #2B36B5 120%);
+
+  @media only screen and (min-width: ($screen-xxl + 1)) {
+    min-height: toRem(830);
+  }
+
+  @media only screen and (max-width: $screen-xl) {
+    min-height: toRem(830);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    height: 100vh;
+    min-height: toRem(880);
+    max-height: 100%;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    min-height: toRem(400);
+    max-height: toRem(620);
+  }
+
+  @media only screen and (max-width: ($screen-sm - 1)) {
+    min-height: toRem(620);
+  }
+
+  .titleContainer {
+    height: 100vh;
+    max-height: toRem(1400);
+    min-height: toRem(640);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(80);
+    }
+  
+    @media only screen and (max-width: $screen-xl) {
+      padding-left: toRem(30);
+      padding-top: toRem(154);
+      height: 100%;
+      min-height: toRem(720);
+      justify-content: space-between;
+    }
+  
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: 100%;
+      min-height: toRem(522);
+      padding-top: toRem(149);
+      padding-left: toRem(15);
+    }
+  }
+}
+
+.bgContainer {
+  position: absolute;
+  bottom: toRem(35);
+  right: toRem(15);
+  width: 75vw;
+  max-width: toRem(1150);
+  height: toRem(670);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    right: toRem(140);
+    width: toRem(1150);
+    height: toRem(690);
+  }
+
+  @media only screen and (max-width: $screen-xxl) {
+    right: 0;
+    width: 70vw;
+    height: toRem(595);
+  }
+  
+  @media only screen and (max-width: $screen-xl) {
+    right: 0;
+    width: toRem(760);
+    height: toRem(440);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    right: toRem(10);
+    width: toRem(790);
+    height: toRem(440);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    right: 0;
+    width: toRem(410);
+    height: toRem(230);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+
+    @media only screen and (max-width: ($screen-lg - 1)) {
+      object-position: unset;
+    }
+  }
+}

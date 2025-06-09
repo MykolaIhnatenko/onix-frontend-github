@@ -1,0 +1,18 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.requirementsSection {
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-bottom: 0;
+  }
+
+  .container {
+    .sectionTitle {
+      padding-bottom: toRem(24);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(32);
+      }
+    }
+  }
+}

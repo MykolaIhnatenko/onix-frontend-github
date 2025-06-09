@@ -1,0 +1,22 @@
+[
+  {
+    "id": "01",
+    "title": "Real-time image analysis",
+    "content": "The software offers real-time image classification and analysis, eliminating delays commonly experienced with cloud-based solutions."
+  },
+  {
+    "id": "02",
+    "title": "Data privacy and security",
+    "content": "With edge computing capabilities, businesses can assure customers that their images are processed locally and aren't uploaded or stored in the cloud, thereby addressing data privacy concerns."
+  },
+  {
+    "id": "03",
+    "title": "Cost-effective solution",
+    "content": "Businesses can reduce infrastructure expenses tied to maintaining large cloud-based processing servers."
+  },
+  {
+    "id": "04",
+    "title": "Scalability",
+    "content": "Since the computational load is distributed and not centralized, businesses can easily scale the solution to more users without significant backend enhancements."
+  }
+]

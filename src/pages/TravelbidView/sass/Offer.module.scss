@@ -1,0 +1,37 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.offer {
+  padding: toRem(96) toRem(60) 0 toRem(60);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(179.97deg, #FFE3CF 0.03%, rgba(227, 195, 253, 0) 85.03%);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(56) toRem(30) 0 toRem(30);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: toRem(48) toRem(16) 0 toRem(16);
+  }
+
+  h2 {
+    font-size: toRem(48);
+    line-height: toRem(72);
+    text-align: center;
+    color: #19191B;
+    margin-bottom: toRem(59);
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(32);
+      line-height: toRem(48);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(20);
+      line-height: toRem(30);
+      margin-bottom: toRem(35);
+    }
+  }
+}

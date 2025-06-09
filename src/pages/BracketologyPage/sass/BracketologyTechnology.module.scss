@@ -1,0 +1,78 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.technology {
+  @media only screen and (min-width: $screen-md) {
+    flex-basis: 50%;
+    padding-left: toRem(12);
+    padding-right: toRem(12);
+    max-width: toRem(290);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    flex-basis: 25%;
+    max-width: unset;
+  }
+
+  .icon {
+    margin: 0 auto;
+    width: toRem(120);
+    height: toRem(120);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      margin: 0;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    padding: toRem(16) 0;
+
+    @media only screen and (min-width: $screen-md) {
+      text-align: start;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: toRem(20) !important;
+    line-height: toRem(24);
+    opacity: 0.8;
+    text-align: center;
+    max-width: toRem(280);
+    margin: 0 auto;
+
+    @media only screen and (min-width: $screen-md) {
+      text-align: start;
+      margin: 0;
+    }
+  }
+
+  &:not(:first-child) {
+    padding-top: toRem(32);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(48);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: 0;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 0;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: 0;
+    }
+  }
+}

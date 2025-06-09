@@ -1,0 +1,20 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.numbersSection {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-black);
+  color: var(--color-white);
+
+  .container {
+    position: relative;
+    z-index: 1;
+
+    .title {
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1085);
+      }
+    }
+  }
+}

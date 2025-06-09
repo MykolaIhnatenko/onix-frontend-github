@@ -1,0 +1,122 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.mainSection {
+  font-family: var(--muktaVaani);
+  .imgContainer {
+    position: relative;
+    min-height: toRem(370);
+
+    .overlay {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(3, 2, 21, 0.5);
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(450);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(800);
+    }
+
+    .mainBgImg {
+      object-fit: cover;
+    }
+
+    .container {
+      @media only screen and (min-width: $screen-lg + 1) {
+        margin: 0 auto;
+      }
+
+      .mainTitle {
+        font-size: toRem(28);
+        font-weight: 700;
+        line-height: getLineHeight(36, 28);
+        letter-spacing: 0.06px;
+        color: #FAFAFA;
+        max-width: 100%;
+        padding-top: toRem(150);
+        text-align: start;
+        font-family: var(--muktaVaani);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(40);
+          font-weight: 700;
+          line-height: getLineHeight(52, 40);
+          letter-spacing: 0.06px;
+          max-width: toRem(550);
+          padding-top: toRem(140);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(60);
+          line-height: getLineHeight(78, 60);
+          max-width: toRem(930);
+          padding-top: toRem(270);
+          text-align: left;
+        }
+      }
+
+      .mainDescription {
+        font-size: toRem(16);
+        font-weight: 500;
+        line-height: getLineHeight(24, 16);
+        color: #EEEFF2;
+        max-width: 100%;
+        padding-top: toRem(10);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(18);
+          line-height: getLineHeight(27, 18);
+          max-width: toRem(550);
+          padding-top: toRem(15);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(20);
+          font-weight: 500;
+          line-height: getLineHeight(30, 20);
+          max-width: toRem(563);
+          text-align: left;
+          padding-top: toRem(10);
+        }
+      }
+    }
+  }
+}
+
+.processAutomation {
+  .imgContainer {
+    min-height: toRem(450);
+
+    .overlay {
+      background-color: rgba(3, 2, 21, 0.4);
+    }
+
+    .container {
+      .mainTitle {
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(600);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(930);
+        }
+      }
+
+      .mainDescription {
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(609);
+        }
+      }
+    }
+  }
+}
+

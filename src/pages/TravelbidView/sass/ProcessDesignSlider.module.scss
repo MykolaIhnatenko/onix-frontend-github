@@ -1,0 +1,147 @@
+@import "../../App/sass/mixinsAnimation";
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.processDesignSlider {
+  overflow: hidden;
+  margin: toRem(72) 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(40) 0;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    margin: toRem(24) 0 0 0;
+  }
+
+  .topRow, .bottomRow {
+    display: flex;
+    gap: toRem(40);
+    width: toRem(4700);
+    z-index: 1;
+
+    @media only screen and (max-width: $screen-lg) {
+      gap: toRem(23);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      gap: toRem(16);
+    }
+  }
+
+  .topRow {
+    margin-bottom: toRem(40);
+    @include translateX(150px);
+
+    @media only screen and (max-width: $screen-lg) {
+      @include translateX(0);
+      margin-left: toRem(30);
+      margin-bottom: toRem(23);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-left: toRem(16);
+    }
+  }
+
+  .bottomRow {
+    @include translateX(-1200px);
+
+    @media only screen and (max-width: $screen-lg) {
+      @include translateX(-500px);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      @include translateX(-260px);
+    }
+  }
+
+  .topRowMobileAnime, .bottomRowMobileAnime {
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+  }
+
+  .topRowMobileAnime {
+    animation-name: topRowMobileAnimation768px;
+
+    @media only screen and (max-width: $screen-md - 1) {
+      animation-name: topRowMobileAnimation449px;
+    }
+  }
+
+  .bottomRowMobileAnime {
+    animation-name: bottomRowMobileAnimation768px;
+
+    @media only screen and (max-width: $screen-md - 1) {
+      animation-name: bottomRowMobileAnimation449px;
+    }
+  }
+
+  @keyframes topRowMobileAnimation768px {
+    0% {
+      @include translateX(0);
+    }
+    50% {
+      @include translateX(-18%);
+    }
+    100% {
+      @include translateX(0);
+    }
+  }
+
+  @keyframes bottomRowMobileAnimation768px {
+    0% {
+      @include translateX(-500px);
+    }
+    50% {
+      @include translateX(1%);
+    }
+    100% {
+      @include translateX(-500px);
+    }
+  }
+
+  @keyframes topRowMobileAnimation449px {
+    0% {
+      @include translateX(0);
+    }
+    50% {
+      @include translateX(-9.3%);
+    }
+    100% {
+      @include translateX(0);
+    }
+  }
+
+  @keyframes bottomRowMobileAnimation449px {
+    0% {
+      @include translateX(-260px);
+    }
+    50% {
+      @include translateX(0.5%);
+    }
+    100% {
+      @include translateX(-260px);
+    }
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
+}
+
+.topRowAnimation {
+  animation: slide-left 8s linear infinite;
+}
+
+.bottomRowAnimation {
+  animation: slide-left 8s linear infinite reverse;
+}

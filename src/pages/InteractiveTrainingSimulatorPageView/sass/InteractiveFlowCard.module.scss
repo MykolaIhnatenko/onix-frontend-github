@@ -1,0 +1,126 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.card {
+  display: flex;
+  flex: 0 1 calc((100% - 92px) * 2/3);
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    min-height: unset;
+    position: relative;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: toRem(56);
+
+    @media only screen and (min-width: $screen-md) {
+      margin-top: toRem(32);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      margin-top: 0;
+    }
+  }
+
+  &:nth-of-type(1) {
+    min-height: toRem(205);
+
+    @media only screen and (min-width: $screen-md) {
+      min-height: toRem(410);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(410);
+    }
+  }
+
+  &:nth-of-type(2) {
+    min-height: toRem(229);
+
+    @media only screen and (min-width: $screen-md) {
+      min-height: toRem(442);
+    }
+
+    .content {
+      max-width: toRem(240);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(350);
+      }
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(442);
+      top: toRem(110);
+    }
+  }
+
+  &:nth-of-type(3) {
+    min-height: toRem(253);
+
+    @media only screen and (min-width: $screen-md) {
+      min-height: toRem(438);
+    }
+
+    .content {
+      max-width: toRem(311);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(320);
+      }
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(438);
+      top: toRem(240);
+    }
+  }
+
+  .cardContent {
+    padding-left: toRem(32);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    span  {
+      font-weight: 500;
+      font-size: toRem(56);
+      line-height: toRem(66);
+      color: #0B041A;
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(96);
+        line-height: toRem(110);
+      }
+    }
+
+    .contentBlock {
+      .blackColor {
+        color: #0B041A;
+      }
+
+      .contentBlockTitle {
+        padding-bottom: 0;
+      }
+
+      .content {
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: toRem(24);
+        color: #6F7D8A;
+        padding-top: toRem(27);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(24);
+          line-height: toRem(32);
+          padding-top: toRem(24);
+          padding-bottom: toRem(32);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-top: toRem(13);
+        }
+      }
+    }
+  }
+}

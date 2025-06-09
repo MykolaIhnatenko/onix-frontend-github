@@ -1,0 +1,114 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mobileApplications {
+  margin-top: toRem(112);
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(40);
+  }
+
+  .edplusWrap {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 toRem(10);
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: 100%;
+      padding: 0;
+    }
+
+    .titleBlock {
+      max-width: toRem(519);
+  
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(80) toRem(24) toRem(24);
+        max-width: 100%;
+      }
+
+      .edplusTitleStyle {
+        color: var(--color-mister-bnb-dark-gray);
+        font-weight: 800;
+        font-size: toRem(42);
+        line-height: getLineHeight(54, 42);
+        font-family: var(--muktaVaani);
+        letter-spacing: toRem(0.5);
+  
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(36);
+          line-height: getLineHeight(44, 36);
+          letter-spacing: toRem(-0.3);
+        }
+      }
+
+      .edplusTextStyle {
+        color: var(--color-mister-bnb-dark-gray);
+        font-weight: 400;
+        font-size: toRem(18);
+        line-height: getLineHeight(29, 18);
+        font-family: var(--muktaVaani);
+        letter-spacing: toRem(0.3);
+        margin-top: toRem(40);
+        
+        @media only screen and (max-width: $screen-lg) {
+          margin-top: toRem(24);
+        }
+  
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(18);
+          line-height: getLineHeight(32, 18);
+        }
+  
+        @media only screen and (max-width: $screen-sm) {
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
+
+.abstractImage {
+  position: absolute;
+  height: toRem(285);
+  width: toRem(165);
+  right: 0;
+  bottom: toRem(250);
+  z-index: -5;
+
+  @media only screen and (max-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.boxList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: toRem(60);
+  gap: toRem(30);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(20);
+    gap: toRem(15) 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: 0;
+    gap: toRem(16) 0;
+  }
+}
+
+.description {
+  max-width: toRem(700);
+  margin: toRem(110) auto 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(80) auto 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(32) toRem(24) 0;
+    margin-top: 0;
+  }
+}

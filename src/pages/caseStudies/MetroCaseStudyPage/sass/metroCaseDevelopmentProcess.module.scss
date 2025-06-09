@@ -1,0 +1,103 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  max-width: toRem(790);
+  margin: toRem(100) auto;
+  padding: 0 toRem(30);
+  font-family: var(--muktaVaani);
+
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(50) auto;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: toRem(79) auto toRem(50);
+  }
+}
+
+.contentTitle {
+  max-width: toRem(600);
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: toRem(46);
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0B2F6E;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(388);
+    font-size: toRem(38);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    max-width: toRem(260);
+    font-size: toRem(24);
+  }
+}
+
+.contentTextContainer {
+  margin-top: toRem(30);
+  font-weight: normal;
+  font-size: toRem(20);
+  line-height: 150%;
+  color: #333333;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(15);
+    font-size: toRem(16);
+  }
+
+  p {
+    &:not(:first-child) {
+      margin-top: toRem(17);
+    }
+  }
+}
+
+.contentImagesContainer {
+  margin-top: toRem(50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(40);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    flex-direction: column;
+    margin-top: toRem(30);
+  }
+}
+
+.imageContainer {
+  width: toRem(100);
+  height: toRem(100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 18px -6px rgba(24, 39, 75, 0.12), 0 12px 42px -4px rgba(24, 39, 75, 0.12);
+  border-radius: toRem(10);
+
+  &:not(:last-child) {
+    margin: 0 toRem(40) 0 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    &:not(:last-child) {
+      margin: 0 0 toRem(15) 0;
+    }
+  }
+
+  .innerImageContainer {
+    max-width: toRem(65);
+
+    img {
+      display: block;
+      height: auto;
+    }
+  }
+}

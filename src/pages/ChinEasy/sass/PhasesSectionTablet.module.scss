@@ -1,0 +1,20 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.section {
+  background: var(--color-black);
+  padding: toRem(80) 0;
+
+  @media screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(80) 0 toRem(60);
+  }
+
+  .title {
+    color: var(--color-white);
+    padding-bottom: toRem(60);
+
+    @media screen and (max-width: ($screen-md - 1)) {
+      padding-bottom: toRem(40);
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.responsibleSection {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: toRem(20);
+  padding-top: toRem(104);
+  padding-bottom: toRem(52);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(46);
+    padding-bottom: toRem(36);
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-top: toRem(40);
+    padding-bottom: toRem(20);
+  }
+
+  h3 {
+    @media only screen and (max-width: $screen-lg) {
+      text-align: center;
+      margin-bottom: toRem(24);
+    }
+  }
+
+  .responsibilities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: toRem(60);
+
+    @media only screen and (max-width: $screen-md - 1) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: toRem(24);
+    }
+
+    .responsibilityItem {
+      padding-top: toRem(16);
+      max-width: toRem(270);
+      width: 100%;
+      border-top: 1px solid var(--color-jsa-blue-color);
+
+      &:nth-child(odd) {
+        justify-self: end;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        max-width: unset;
+      }
+
+      p {
+        line-height: toRem(29);
+        color: var(--color-jsa-secondary-text-color);
+
+        @media only screen and (max-width: $screen-xl) {
+          font-size: toRem(20);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          line-height: toRem(24);
+          font-size: toRem(16);
+
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

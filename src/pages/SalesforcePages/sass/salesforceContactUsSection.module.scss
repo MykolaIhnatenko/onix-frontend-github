@@ -1,0 +1,55 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+
+.contactUs {
+  padding: toRem(40) 0 toRem(75) 0;
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(50) 0 toRem(90) 0;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: toRem(100) 0 toRem(100) 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      padding-bottom: toRem(20);
+      max-width: toRem(280);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(400);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(30);
+        max-width: toRem(750);
+      }
+    }
+
+    .btn {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.processAutomation {
+  .container {
+    h2 {
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(550);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(980);
+      }
+    }
+  }
+}

@@ -1,0 +1,270 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+@mixin imageSmall {
+  position: absolute;
+
+}
+
+.container {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 0 0 toRem(80);
+  height: 100%;
+  position: relative;
+
+  .background {
+    background: var(--color-black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+  }
+
+  .imageBg {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: toRem(580);
+    max-width: toRem(1920);
+    img {
+      width: 100%;
+      height: toRem(580);
+    }
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-bottom: toRem(60);
+  }
+
+  .titleContainer {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: toRem(146) toRem(70) toRem(80);
+    z-index: 3;
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: toRem(146) toRem(80) toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      padding: toRem(146) toRem(30) toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(146);
+      position: relative;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(136) toRem(15) 0;
+    }
+
+    span{
+      display: block;
+    }
+
+    .titleAnimate {
+      position: relative;
+    }
+    .title {
+      font-size: toRem(96);
+      line-height: getLineHeight(132, 96);
+      font-family: var(--generalSans);
+      font-weight: 500;
+
+      @media only screen and (max-width: $screen-xl) {
+        font-size: toRem(86);
+        line-height: getLineHeight(122, 86);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(56);
+        line-height: getLineHeight(72, 56);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(40);
+        line-height: getLineHeight(50, 40);
+      }
+
+      &.second {
+        margin-left: toRem(637);
+
+        @media only screen and (max-width: $screen-xl) {
+          margin-left: toRem(567);
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          margin-left: toRem(286);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-left: toRem(85);
+        }
+      }
+    }
+  }
+
+  .imageContainer {
+    overflow: hidden;
+    position: relative;
+    .content {
+      display: flex;
+      padding-top: toRem(490);
+      width: 100%;
+      justify-content: space-around;
+      position: relative;
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: 0
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(30) 0 0;
+      }
+
+      .imagePairContainer {
+        transition: all 0s ease-in-out;
+        position: relative;
+        height: fit-content;
+        width: 30%;
+        min-width: toRem(400);
+        margin: 0 toRem(80);
+
+        .imageTransition {
+          @media only screen and (max-width: $screen-lg) {
+            transform: translateX(0)!important;
+          }
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          min-width: 40%;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          min-width: toRem(240);
+        }
+
+        .imageBig {
+          height: 100%;
+          width: 101%;
+          object-fit: cover;
+          object-position: top;
+        }
+        .image {
+          max-width: toRem(320);
+          min-width: toRem(320);
+          height: auto;
+
+          @media only screen and (max-width: $screen-lg) {
+            max-width: toRem(200);
+          }
+
+          @media only screen and (max-width: $screen-sm) {
+            display: none;
+          }
+        }
+
+        .imageSmall {
+          display: none;
+        }
+
+        .imageSmall1 {
+          @include imageSmall;
+          left: 30%;
+          top: 40%;
+          transform: translate(-50%);
+        }
+
+        .imageSmall2 {
+          @include imageSmall;
+          bottom: -10%;
+          right: -10%;
+        }
+
+        .imageSmall3 {
+          @include imageSmall;
+          bottom: -30%;
+          right: 10%;
+        }
+
+        &.visibilImg {
+          position: relative;
+          transition: all 0.1s linear;
+          width: 100%;
+          margin: 0;
+          img {
+            object-fit: cover;
+            height: auto;
+            width: 100%;
+          }
+
+          @media only screen and (max-width: $screen-lg) {
+            display: block !important;
+            width: 100% !important;
+          }
+        }
+
+
+      }
+    }
+
+    .textContainer {
+      padding: toRem(60) toRem(70) 0;
+
+      @media only screen and (min-width: $screen-xxxl) {
+        padding: toRem(60) toRem(80) 0;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(40) toRem(30) 0;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(40) toRem(15) 0;
+      }
+
+      .contentContainer {
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          max-width: toRem(1300);
+        }
+    
+        @media only screen and (min-width: $screen-xxxl) {
+          max-width: toRem(1480);
+        }
+      }
+
+      .text {
+        margin: 0;
+        padding-bottom: toRem(40);
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: toRem(708);
+          padding-bottom: toRem(20);
+        }
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          max-width: toRem(630);
+        }
+        
+        @media only screen and (min-width: $screen-xxxl) {
+          max-width: toRem(710);
+        }
+
+        &.second {
+          margin: 0 0 0 auto;
+          padding-bottom: 0;
+
+          @media only screen and (max-width: $screen-lg) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

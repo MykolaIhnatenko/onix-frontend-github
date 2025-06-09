@@ -1,0 +1,352 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  max-width: var(--max-container-width);
+  padding-top: toRem(80);
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--color-white);
+
+  .bgMobile {
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  img {
+    z-index: 0;
+  }
+
+  .sectionTitle {
+    text-transform: none;
+    margin-bottom: toRem(40);
+    padding: 0 toRem(15);
+    z-index: 2;
+    position: relative;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-left: toRem(30);
+      margin-bottom: toRem(60);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      margin-bottom: toRem(80);
+      padding-left: toRem(70);
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(80);
+    }
+  }
+
+  .sectionSubTitle {
+    text-transform: none;
+    margin-bottom: toRem(40);
+    padding: 0 toRem(15);
+    z-index: 2;
+    position: relative;
+    max-width: toRem(670);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-left: toRem(30);
+      margin-bottom: toRem(60);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      margin-bottom: toRem(80);
+      padding-left: toRem(70);
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(80);
+    }
+  }
+
+  .buttonWrapper {
+    padding: 0 toRem(15) toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding: 0 toRem(30) toRem(60);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: 0 toRem(70) toRem(40);
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: 0 toRem(80) toRem(40);
+    }
+
+    .button {
+      max-width: toRem(420);
+      font-size: toRem(18);
+      line-height: getLineHeight(24, 18);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(420);
+      }
+    }
+  }
+
+  &.machineLearning {
+    .sectionTitle {
+      margin-bottom: toRem(30);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        margin-bottom: toRem(40);
+      }
+    }
+
+    .sectionSubTitle {
+      margin-top: 0;
+      max-width: none;
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(735);
+      }
+    }
+  }
+
+  &.salesforce {
+    .sectionTitle {
+      @media only screen and (min-width: $screen-md) {
+        margin-bottom: toRem(40);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        max-width: toRem(680);
+        margin-bottom: toRem(80);
+      }
+    }
+  }
+
+  &.designAudit {
+    .sectionTitle {
+      margin-bottom: toRem(40);
+      @media only screen and (min-width: $screen-xxl) {
+        max-width: toRem(1100);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(30);
+      }
+
+      @media only screen and (width: $screen-md) {
+        margin-bottom: toRem(40);
+      }
+    }
+  }
+
+  &.gameArt {
+    .sectionTitle {
+      max-width: toRem(920);
+      margin-bottom: toRem(40);
+
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(930);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(850);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+
+  &.uiUx {
+    .bgMobile {
+      object-fit: cover;
+    }
+
+    .sectionTitle {
+      margin-bottom: toRem(40);
+      @media only screen and (min-width: $screen-xxl) {
+        max-width: 1100px;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(30);
+
+      }
+
+      @media only screen and (width: $screen-md) {
+        margin-bottom: toRem(40);
+      }
+    }
+  }
+
+  &.motionGraphics {
+    .sectionTitle {
+      @media only screen and (min-width: $screen-md) {
+        margin-bottom: toRem(60);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        max-width: toRem(1000);
+        margin-bottom: toRem(40);
+      }
+    }
+  }
+
+  &.webDesign {
+    .sectionTitle {
+      margin-bottom: toRem(40);
+      max-width: toRem(850);
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(708);
+      }
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-bottom: toRem(30);
+        max-width: toRem(314);
+      }
+    }
+  }
+
+  &.application {
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-top: toRem(80);
+    }
+    
+    .sectionTitle {
+      margin-bottom: toRem(40);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+
+  &.android {
+    .sectionTitle {
+      max-width: toRem(1078);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(40);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+}
+
+.services {
+  padding-top: 0;
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(80);
+  }
+
+  .sectionTitle {
+    margin-bottom: toRem(50);
+    max-width: toRem(368);
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(565);
+      margin-bottom: toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(800);
+      margin-bottom: toRem(40);
+    }
+  }
+
+  .sectionSubTitle {
+    margin: 0;
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(1066);
+    }
+  }
+
+  .lastSectionSubTitle {
+    padding-top: toRem(30);
+    padding-bottom: toRem(30);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(40);
+      padding-bottom: toRem(56);
+      max-width: toRem(933);
+    }
+  }
+}
+
+.devopsSolutions {
+  .sectionTitle {
+    margin-bottom: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(30);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-bottom: toRem(40);
+    }
+
+    @media only screen and (width: $screen-md) {
+      margin-bottom: toRem(30);
+    }
+  }
+
+  .sectionSubTitle {
+    margin: 0;
+    padding-bottom: toRem(40);
+    max-width: toRem(720);
+    padding-right: 0;
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: toRem(30);
+      max-width: toRem(680);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding-bottom: toRem(40);
+      padding-right: toRem(15);
+    }
+
+    @media only screen and (width: $screen-md) {
+      padding-bottom: toRem(30);
+      padding-right: 0;
+    }
+  }
+}
+
+.devopsSolutionsSecond {
+  .sectionTitle {
+    margin-bottom: toRem(40);
+  }
+}
+
+.aiImageClassification {
+  padding-top: toRem(20);
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(80);
+  }
+
+  .sectionTitle {
+    margin-bottom: toRem(30);
+
+    @media only screen and (min-width: $screen-md) {
+      margin-bottom: toRem(40);
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(70);
+    }
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.inlineBlock {
+  display: inline-block;
+}

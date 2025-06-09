@@ -1,0 +1,90 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.productScopeSection {
+  .containerBlock {
+    @media only screen and (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: toRem(40);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      gap: toRem(110);
+    }
+
+    .productScopeImg {
+      margin: 0 auto;
+      max-width: toRem(340);
+      max-height: toRem(570);
+      position: relative;
+
+      @media only screen and (min-width: $screen-md) {
+        flex: 0 1 57%;
+        margin: unset;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        margin: unset;
+        max-width: toRem(660);
+        max-height: toRem(1100);
+        flex: 0 1 55%;
+      }
+
+      .productScopeSpot {
+        position: absolute;
+        width: toRem(149);
+        height: toRem(149);
+        top: toRem(-50);
+        left: toRem(-20);
+        z-index: 2;
+
+        @media only screen and (min-width: $screen-md) {
+          width: toRem(162);
+          height: toRem(162);
+          top: toRem(30);
+          left: toRem(-30);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          width: toRem(261);
+          height: toRem(261);
+          top: toRem(-40);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        clip-path: inset(0 round 8px);
+        z-index: 1;
+      }
+    }
+
+    .productScopeContents {
+      @media only screen and (min-width: $screen-md) {
+        flex: 0 1 43%;
+      }
+
+      h2 {
+        padding-top: toRem(40);
+        padding-bottom: toRem(8);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-top: 0;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: toRem(21);
+        }
+      }
+
+      ul {
+        padding-left: toRem(16);
+        list-style-type: disc;
+      }
+    }
+  }
+}

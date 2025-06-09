@@ -1,0 +1,31 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  max-width: toRem(1440);
+  padding-left: toRem(60);
+  padding-right: toRem(60);
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: toRem(20);
+  line-height: toRem(29);
+  color: var(--color-jsa-main-text-color);
+
+  @media only screen and (max-width: $screen-xl) {
+    font-size: toRem(18);
+    line-height: toRem(26);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-left: toRem(30);
+    padding-right: toRem(30);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-left: toRem(15);
+    padding-right: toRem(15);
+    font-size: toRem(16);
+    line-height: toRem(24);
+  }
+}

@@ -1,0 +1,95 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.container {
+  margin-top: toRem(80);
+  margin-bottom: toRem(76);
+
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-top: toRem(40);
+    margin-bottom: 0;
+  }
+
+  .career {
+    .titleBox {
+      margin-bottom: toRem(40);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(40);
+        margin-bottom: toRem(30);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: toRem(20);
+      }
+
+      .title {
+        @include generalSansFont(50, 500, 64);
+       
+        @media only screen and (max-width: $screen-lg) {
+          @include generalSansFont(40, 500, 56);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          @include generalSansFont(30, 500, 40);
+          margin-bottom: toRem(20);
+        }
+      }
+    }
+  }
+
+  .buttonsContainer {
+    display: flex;
+    align-items: center;
+    gap: toRem(10);
+    flex-wrap: wrap;
+    margin-bottom: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(30);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-bottom: toRem(20);
+    }
+
+    .departmentButton {
+      @include generalPlexMono(16, 500, 22);
+      border: toRem(2) solid var(--color-black);
+      padding: toRem(9) toRem(16);
+      border-radius: toRem(21);
+      cursor: pointer;
+      text-transform: uppercase;
+      background: var(--color-white);
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      transition: all ease 0.3s;
+
+      @media only screen and (max-width: $screen-lg) {
+        cursor: default;
+      }
+
+      &:hover {
+        background-color: var(--color-black);
+        color: #fff;
+      }
+
+      &.active {
+        background-color: var(--color-cruise);
+        border: toRem(2) solid var(--color-cruise);
+        color: var(--color-black);
+      }
+    }
+  }
+
+  .jobsContainer {
+    width: 100%;
+  }
+}
+

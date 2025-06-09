@@ -1,0 +1,172 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  font-family: var(--ibmPlexMono) !important;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 100%;
+
+  &.open {
+    .mobileMenuContainer {
+      display: block;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 101%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: -100%;
+    height: calc(100% + 15px);
+    z-index: 100;
+    top: toRem(-85);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      display: none;
+    }
+  }
+
+  .mobileMenuContainer {
+    height: 100vh;
+    background: var(--color-black);
+    display: none;
+
+    .mobileMenuList {
+      > li {
+        &:last-child {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      &.open {
+        display: block;
+      }
+
+      .openIcon {
+        transition: transform 0.3s ease-in-out;
+        transform: rotate(0deg);
+      }
+
+      padding: toRem(20) toRem(30);
+      display: none;
+      height: calc(var(--vh, 1vh) * 93);
+      overflow: auto;
+      background: var(--color-black);
+      color: var(--color-white);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(30) toRem(15);
+      }
+
+      li:last-child {
+        div {
+          justify-content: start !important;
+        }
+      }
+
+      .subMenuContainer {
+        display: none;
+
+        @media only screen and (max-width: $screen-lg) {
+          padding: toRem(0) toRem(0);
+        }
+
+        &.open {
+          display: block;
+          li {
+            opacity: 1 !important;
+          }
+        }
+
+        .subMenuLink {
+          border: none;
+          justify-content: start !important;
+          font-size: toRem(16);
+          font-family: var(--generalSans);
+          text-transform: none;
+          font-weight: 400;
+        }
+
+        .navLinkContainer {
+          display: flex;
+          align-items: baseline;
+          justify-content: space-between;
+
+          > div {
+            &:first-child {
+              display: flex;
+              justify-content: flex-start;
+              width: 30%;
+              min-width: toRem(100);
+            }
+
+            &:last-child {
+              width: 70%;
+              height: toRem(10);
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.iconChildrenMenu {
+  transform: rotate(180deg);
+  margin-left: toRem(8);
+  transition: 0.4s;
+  cursor: pointer;
+
+  @media only screen and (max-width: $screen-lg) {
+    cursor: default;
+  }
+}
+
+.activeChildrenMenu {
+  transform: rotate(0deg);
+  margin-left: toRem(8);
+  transition: 0.4s;
+  cursor: pointer;
+
+  @media only screen and (max-width: $screen-lg) {
+    cursor: default;
+  }
+}
+
+.childLink {
+  border: none;
+  padding: 0;
+  padding-bottom: toRem(15);
+  font-size: toRem(14);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #c4c4c4;
+}
+
+.childLinksContainer {
+  &:nth-child(16) {
+    > div {
+      &:last-child {
+        padding-bottom: toRem(20);
+      }
+    }
+  }
+
+  div {
+    text-transform: none;
+    font-family: var(--generalSans);
+
+    span {
+      margin-right: 2px;
+    }
+  }
+}

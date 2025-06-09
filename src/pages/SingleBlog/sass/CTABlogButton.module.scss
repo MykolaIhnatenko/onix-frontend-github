@@ -1,0 +1,245 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.btnContainer {
+  font-family: var(--ibmPlexMono);
+  font-weight: 500;
+  font-size: toRem(18);
+  line-height: getLineHeight(24, 18);
+  width: 100%;
+  padding: toRem(16) toRem(10);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background: var(--color-light-gray);
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    cursor: pointer;
+  }
+
+  .icon {
+    margin-left: toRem(12);
+  }
+
+  &.disabled {
+    pointer-events: none;
+    background: var(--color-disabled-gray) !important;
+
+    .content {
+      .textContainer, .icon {
+        color: var(--color-disabled-text);
+
+        span {
+          color: var(--color-disabled-text);
+        }
+      }
+    }
+
+    &:before {
+      background: var(--color-disabled-gray) !important;
+      position: relative;
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s linear;
+    transform-origin: 100% 50%;
+  }
+
+  .textContainer, .icon {
+    mix-blend-mode: lighten;
+  }
+
+  &:hover {
+    &:before {
+      transform: scale3d(0, 1, 1);
+      transform-origin: 0 50%;
+    }
+
+    .content {
+      z-index: 1;
+      animation: MoveUpInitial .2s forwards, MoveUpEnd .2s forwards .2s;
+    }
+  }
+
+  &.primaryType {
+    border: none;
+
+    .content {
+      mix-blend-mode: difference;
+    }
+
+    .textContainer, .icon {
+      color: var(--color-white);
+
+      span {
+        color: var(--color-white);
+      }
+    }
+
+    &:before {
+      background: var(--color-black);
+    }
+
+    &:hover {
+      .textContainer {
+        color: var(--color-black);
+      }
+    }
+  }
+
+  &.whiteType {
+    border: 2px solid var(--color-black);
+
+    .textContainer, .icon {
+      color: var(--color-black);
+      mix-blend-mode: darken;
+    }
+
+    &:before {
+      background: var(--color-white);
+    }
+
+    &:hover {
+      border: none;
+      padding: toRem(18) toRem(23);
+
+      .textContainer, .icon {
+        color: var(--color-black);
+      }
+    }
+  }
+
+  &.cookieType {
+    border: none;
+
+    .content {
+      mix-blend-mode: difference;
+    }
+    .textContainer, .icon {
+      color: var(--color-white);
+      mix-blend-mode: darken;
+      font-weight: 400;
+
+      span {
+        color: var(--color-white);
+      }
+    }
+
+    @-moz-document url-prefix() {
+      .textContainer,
+      .icon {
+        font-weight: 500;
+      }
+    }
+
+    @media not all and (min-resolution:.001dpcm) {
+      @supports (-webkit-appearance:none) {
+        font-weight: 500;
+      }
+    }
+
+    &:before {
+      background: var(--color-black);
+    }
+
+    &:hover {
+      .textContainer, .icon {
+        color: var(--color-black);
+      }
+    }
+  }
+
+  &.lightType {
+    .textContainer, .icon {
+      color: var(--color-blue);
+      mix-blend-mode: darken;
+    }
+
+    &:before {
+      background: var(--color-white);
+    }
+
+    &:hover {
+      .textContainer, .icon {
+        color: var(--color-black);
+      }
+    }
+  }
+
+  &.transparentType {
+    border: 2px solid var(--color-black);
+    background-color: transparent;
+
+    .textContainer, .icon {
+      color: var(--color-black);
+      mix-blend-mode: darken;
+    }
+
+    &:before {
+      background: transparent;
+    }
+
+    &:hover {
+      .textContainer, .icon {
+        color: var(--color-black);
+      }
+    }
+  }
+
+  &.calculator {
+    max-width: calc(50% - 7px);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      max-width: 100%;
+    }
+
+    &.disabled {
+      border: none;
+
+      .content {
+        mix-blend-mode: darken;
+      }
+    }
+  }
+}
+
+.smallText {
+  font-size: toRem(16);
+  line-height: getLineHeight(24, 16);
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(18);
+    line-height: getLineHeight(24, 18);
+  }
+}
+
+@keyframes MoveUpInitial {
+  to {
+    transform: translate3d(0, -150%, 0);
+  }
+}
+
+@keyframes MoveUpEnd {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

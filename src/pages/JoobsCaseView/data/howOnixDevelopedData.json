@@ -1,0 +1,25 @@
+{
+  "blockTitle": "Learn how Onix redesigned Joobs to create a seamless job search experience, boosting user engagement, recruiter insights, and platform\u00A0conversions.",
+  "data": [
+    {
+      "id": 1,
+      "title": "HR Tech & Recruitment",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "3 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "Belgium",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "1.5 years",
+      "text": "Project duration"
+    }
+  ]
+}

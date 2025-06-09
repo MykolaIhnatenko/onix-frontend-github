@@ -1,0 +1,86 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.list {
+  list-style: none;
+
+  li {
+    .itemContainer {
+      display: flex;
+      gap: toRem(16);
+
+      @media only screen and (min-width: $screen-md) {
+        gap: toRem(32);
+      }
+
+      .circle {
+        width: toRem(8);
+        height: toRem(8);
+        border-radius: 50%;
+        background-color: #9B8CD7;
+        flex-shrink: 0;
+        margin-top: toRem(8);
+      }
+    }
+
+    &:not(:first-of-type) {
+      padding-top: toRem(16);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: 0;
+      }
+    }
+
+    &:not(:last-of-type) {
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(24);
+      }
+    }
+  }
+}
+
+.requirements {
+  li {
+    .itemContainer {
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(505);
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(486);
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(552);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(548);
+    }
+  }
+
+  &:nth-of-type(4) {
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(480);
+    }
+  }
+}
+
+.ourSolutions {
+  padding-top: toRem(16);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(24);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: 0;
+    flex-basis: 53%;
+  }
+}

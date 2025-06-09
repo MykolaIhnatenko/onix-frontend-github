@@ -1,0 +1,134 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.blogInfoBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: toRem(20) 0;
+  border-top: 1px solid var(--color-light-gray);
+  border-bottom: 1px solid var(--color-light-gray);
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    border-bottom: unset;
+    gap: toRem(20);
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .dateBlock {
+    gap: toRem(10);
+    display: flex;
+    align-items: center;
+
+    .circle {
+      width: toRem(4);
+      height: toRem(4);
+      background-color: var(--color-black);
+      border-radius: 50%;
+    }
+
+    .blogInfo {
+      margin: 0;
+      font-size: toRem(16);
+      line-height: getLineHeight(22, 16);
+      font-weight: 500;
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(14);
+        line-height: getLineHeight(22, 14);
+      }
+    }
+  }
+
+  .shareBlock {
+    display: flex;
+    align-items: center;
+    gap: toRem(15);
+
+    .shareTitle {
+      margin: 0;
+      font-size: toRem(16);
+      line-height: getLineHeight(22, 16);
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .links {
+      display: flex;
+      gap: toRem(15);
+
+      .link {
+        width: toRem(30);
+        height: toRem(30);
+        border-radius: 10000px;
+        background-color: var(--color-black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          cursor: pointer;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: var(--color-white);
+          transform: scale(0);
+          border-radius: 10000px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          background-color: var(--color-white);
+
+          .icon {
+            transform: translateX(32px);
+          }
+
+          .iconHover {
+            left: 7.5px;
+          }
+
+          .facebookIcon {
+            left: 5px;
+          }
+
+          .twitterIcon {
+            top: 7px;
+            left: 7px;
+          }
+
+          &::before {
+            transform: scale(1);
+          }
+        }
+
+        .icon {
+          transition: all 0.3s ease-in-out;
+          color: var(--color-white);
+          width: toRem(18);
+          height: toRem(18);
+        }
+
+        .iconHover {
+          transition: all 0.3s ease-in-out;
+          color: var(--color-black);
+          position: absolute;
+          top: 6.5px;
+          left: -22px;
+          width: toRem(18);
+          height: toRem(18);
+        }
+      }
+    }
+  }
+}

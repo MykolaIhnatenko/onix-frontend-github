@@ -1,0 +1,50 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.list {
+  list-style: none;
+
+  li {
+    .itemContainer {
+      display: flex;
+      align-items: center;
+      gap: toRem(24);
+
+      .imgContainer {
+        width: toRem(44);
+        height: toRem(41);
+        flex-shrink: 0;
+
+        @media only screen and (min-width: $screen-md) {
+          width: toRem(100);
+          height: toRem(92);
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      p {
+        br {
+          display: none;
+
+          @media only screen and (min-width: $screen-md) {
+            display: block;
+          }
+        }
+      }
+
+    }
+
+    &:not(:last-of-type) {
+      padding-bottom: toRem(25);
+      border-bottom: 1px solid #36304F;
+    }
+
+    &:not(:first-of-type) {
+      padding-top: toRem(25);
+    }
+  }
+}

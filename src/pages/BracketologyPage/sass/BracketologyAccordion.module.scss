@@ -1,0 +1,531 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.accordion {
+  list-style: none;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    position: relative;
+  }
+
+  .item {
+    padding-top: 1px;
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: 60%;
+    }
+
+    &:nth-of-type(odd) {
+      background: linear-gradient(270deg, #DBDBDB 19.06%, #010101 57.28%, #8D8D8D 89.9%);
+    }
+
+    &:nth-of-type(even) {
+      background: linear-gradient(30deg, #DBDBDB 19.06%, #010101 57.28%, #8D8D8D 89.9%);
+    }
+
+    &:last-of-type {
+      padding-bottom: 1px;
+    }
+
+    .question {
+      width: 100%;
+      position: relative;
+      outline: none;
+      padding: toRem(17) 0;
+      background-color: var(--color-bracketology-background);
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        cursor: pointer;
+        padding: toRem(16) 0;
+      }
+
+      .plus {
+        display: inline-block;
+        width: toRem(16);
+        height: toRem(16);
+        position: absolute;
+        top: toRem(23);
+        right: 0;
+        padding-right: 0;
+
+        @media only screen and (min-width: $screen-md) {
+          top: toRem(30);
+          right: toRem(10);
+          width: toRem(24);
+          height: toRem(24);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          background-color: rgba(255, 255, 255, 0.9);
+          height: 2px;
+          top: 7px;
+          left: 0;
+          right: 0;
+          z-index: 9;
+
+          @media only screen and (min-width: $screen-md) {
+            top: toRem(11);
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          background-color: rgba(255, 255, 255, 0.9);
+          width: toRem(2);
+          left: toRem(7);
+          top: 0;
+          bottom: 0;
+          z-index: 9;
+
+          @media only screen and (min-width: $screen-md) {
+            left: toRem(11);
+          }
+        }
+
+        &.bachelorPlus {
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: none;
+          }
+        }
+      }
+
+      .arrow {
+        display: none;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          display: block;
+          width: toRem(48);
+          height: toRem(48);
+          position: absolute;
+          top: toRem(20);
+          right: 0;
+          padding: 0;
+          color: var(--color-white);
+          opacity: 0.8;
+        }
+
+        .whiteArrow {
+          display: none;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: block;
+            color: var(--color-white);
+          }
+        }
+
+        .activeArrow {
+          display: none;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: block;
+            color: var(--color-bracketology-red);
+          }
+        }
+      }
+
+      .titleGroup {
+        display: flex;
+
+        span {
+          padding-right: toRem(24);
+          opacity: 0.9;
+
+          @media only screen and (min-width: $screen-md) {
+            padding-right: toRem(40);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-right: toRem(72);
+          }
+        }
+
+        h3, span {
+          font-weight: 400;
+          font-size: toRem(24);
+          line-height: toRem(32);
+          letter-spacing: 0.1px;
+          color: rgba(255, 255, 255, 0.9);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(32);
+            line-height: toRem(48);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(36);
+            line-height: toRem(56);
+          }
+        }
+      }
+    }
+
+    .answer {
+      display: none;
+    }
+
+    &.active {
+      .question {
+        h3, span {
+          color: var(--color-bracketology-red);
+        }
+
+        .plus::after{
+          background-color: var(--color-bracketology-red);
+        }
+
+        .plus::before {
+          color: var(--color-bracketology-red);
+          transform: rotate(90deg);
+        }
+      }
+
+      .answer {
+        display: block;
+        margin-top: toRem(-12);
+        padding-left: toRem(50);
+        background-color: #010101;
+
+        @media only screen and (min-width: $screen-md) {
+          padding-left: toRem(73);
+          margin-top: toRem(-16);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          border-image-source: linear-gradient(#5C5C5C 100%, #100D0C 100%, #100D0C 100%, #606060 100%);
+        }
+
+        .answerInner {
+          @media only screen and (min-width: $screen-lg + 1) {
+            background: linear-gradient(128.98deg, #010101 90.36%, #1B1616 117.19%);
+            height: 100%;
+            padding: toRem(32);
+            opacity: 0.8;
+          }
+
+          h4 {
+            display: none;
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              display: block;
+              font-weight: 500;
+              font-size: toRem(32);
+              line-height: toRem(40);
+            }
+          }
+
+          p {
+            letter-spacing: -0.2px;
+            padding-bottom: toRem(17);
+
+            @media only screen and (min-width: $screen-md) {
+              font-size: toRem(20);
+              line-height: toRem(32);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-top: toRem(16);
+            }
+          }
+        }
+
+        &.bachelorAnswer {
+          @media only screen and (min-width: $screen-lg + 1) {
+            position: absolute;
+            top: toRem(15);
+            right: 0;
+            width: 35%;
+            padding: 1px;
+            background: linear-gradient(100deg, #5C5C5C 0%, #100D0C 37.7%, #100D0C 56.33%, #606060 100%);
+          }
+        }
+      }
+    }
+
+    &.functionalityItem {
+      @media only screen and (min-width: $screen-lg + 1) {
+        width: 100%;
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        margin-left: auto;
+        width: 60%;
+      }
+    }
+  }
+}
+
+.functionalityAccordion {
+  .item {
+    &.active {
+      .answer {
+        .answerInner {
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 0;
+          }
+
+          p {
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-top: toRem(8);
+            }
+          }
+
+          p:last-of-type {
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-top: 0;
+            }
+          }
+
+          h4 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    .item:first-child {
+      &.active {
+        .answer {
+          padding-left: toRem(77);
+        }
+      }
+    }
+
+    .item:nth-child(2), .item:nth-child(3) {
+      &.active {
+        .answer {
+          padding-left: toRem(80);
+        }
+      }
+    }
+
+    .item:nth-child(4) {
+      &.active {
+        .answer {
+          padding-left: toRem(84);
+        }
+      }
+    }
+
+    .item:nth-child(5) {
+      &.active {
+        .answer {
+          padding-left: toRem(82);
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    .item:nth-child(4) {
+      &.active {
+        .answer {
+          padding-left: toRem(78);
+        }
+      }
+    }
+  }
+}
+
+.developmentAccordion {
+  @media only screen and (min-width: $screen-xl) {
+    position: relative;
+  }
+
+  .item {
+    h3, span {
+      opacity: 1;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      position: absolute;
+
+      &:nth-of-type(odd) {
+        background: unset;
+        border: 1px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(270deg, #503929 0%, #22100C 56.33%, #52251F 100%);
+      }
+
+      &:nth-of-type(even) {
+        background: unset;
+        border: 1px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(30deg, #503929 0%, #22100C 56.33%, #52251F 100%);
+      }
+
+      &:nth-of-type(1){
+        width: toRem(232);
+        top: 0;
+        left: 0;
+        margin-right: toRem(14);
+        margin-bottom: toRem(14);
+      }
+
+      &:nth-of-type(2){
+        width: toRem(356);
+        top: toRem(94);
+        right: toRem(740);
+        margin-right: toRem(14);
+      }
+
+      &:nth-of-type(3){
+        width: toRem(388);
+        left: toRem(246);
+        top: 0;
+        margin-right: toRem(14);
+        margin-bottom: toRem(14);
+      }
+
+      &:nth-of-type(4){
+        width: toRem(741);
+        top: toRem(94);
+        right: 0;
+      }
+
+      &:nth-of-type(5){
+        width: toRem(244);
+        top: 0;
+        left: toRem(649);
+        margin-right: toRem(14);
+        margin-bottom: toRem(14);
+      }
+
+      &:nth-of-type(6){
+        width: toRem(288);
+        top: 0;
+        right: 0;
+        margin-bottom: toRem(14);
+      }
+    }
+
+    .question {
+      @media only screen and (min-width: $screen-xl) {
+        background-color: rgba(255, 255, 255, 0.04);
+        padding: toRem(24) toRem(32) toRem(24) toRem(24);
+      }
+
+      .plus {
+        @media only screen and (min-width: $screen-xl) {
+          width: toRem(16);
+          height: toRem(16);
+          right: toRem(24);
+        }
+
+        &::after {
+          @media only screen and (min-width: $screen-xl) {
+            top: toRem(7);
+          }
+        }
+
+        &::before {
+          @media only screen and (min-width: $screen-xl) {
+            left: toRem(7);
+          }
+        }
+      }
+
+      .titleGroup {
+        span {
+          @media only screen and (min-width: $screen-xl) {
+            padding-right: toRem(8);
+            color: var(--color-bracketology-brown);
+          }
+        }
+
+        h3, span {
+
+          @media only screen and (min-width: $screen-xl) {
+            font-size: toRem(28);
+            line-height: toRem(32);
+          }
+        }
+      }
+    }
+
+    &.active {
+
+      @media only screen and (min-width: $screen-xl) {
+        backdrop-filter: blur(7px);
+
+        &:nth-of-type(odd) {
+          border-image-source: linear-gradient(270deg, #E35F00 0%, #391B11 56.33%, #E31B00 100%);
+          z-index: 11;
+        }
+
+        &:nth-of-type(even) {
+          border-image-source: linear-gradient(30deg, #E35F00 0%, #391B11 56.33%, #E31B00 100%);
+          z-index: 11;
+        }
+
+        &:nth-of-type(4){
+          .answer {
+            .answerInner {
+              width: toRem(739);
+            }
+          }
+        }
+      }
+
+      .question {
+        @media only screen and (min-width: $screen-xl) {
+          background-color: unset;
+        }
+
+        span {
+          @media only screen and (min-width: $screen-xl) {
+            color: var(--color-bracketology-red);
+          }
+        }
+      }
+
+      .answer {
+        @media only screen and (min-width: $screen-xl) {
+          z-index: 10;
+          padding-left: 0;
+          position: relative;
+          background-color: unset;
+        }
+
+        .answerInner {
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+
+          @media only screen and (min-width: $screen-xl) {
+            background-color: unset;
+            padding: 0;
+            overflow: hidden;
+            z-index: 9;
+            position: relative;
+
+            p {
+              z-index: 11;
+              position: relative;
+              padding: 0 toRem(24) toRem(24);
+            }
+
+          }
+
+          h4 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

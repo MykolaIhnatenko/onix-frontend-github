@@ -1,0 +1,39 @@
+@import "../../App/sass/breakpointsVariables.scss";
+@import "../../App/sass/mixinsFonts.scss";
+@import "../../App/sass/functions.scss";
+
+.mainTitle {
+  max-width: toRem(440);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    max-width: toRem(550);
+  }
+
+  .title {
+    color: var(--color-white);
+    padding-bottom: toRem(40);
+    
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: toRem(30);
+    }
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-bottom: toRem(15);
+    }
+  }
+
+  .text {
+    color: var(--color-white);
+    margin: 0;
+    @include generalSansFont(30, 500, 40);
+
+    @media only screen and (max-width: $screen-lg) {
+      @include generalSansFont(24, 500, 34);
+    }
+  
+    @media only screen and (max-width: ($screen-md - 1)) {
+      @include generalSansFont(20, 500, 28);
+    }
+  }
+}
+

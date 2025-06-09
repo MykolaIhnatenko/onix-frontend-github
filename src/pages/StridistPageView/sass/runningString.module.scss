@@ -1,0 +1,66 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+@keyframes leftAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  
+  100% {
+    transform: translateX(-98%);
+  }
+}
+
+@keyframes rightAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.wrapper {
+  white-space: nowrap;
+  display: flex;
+
+  h2 {
+    font-family: var(--satoshiFont), sans-serif;
+    color: #20222C;
+    font-weight: 400;
+    font-size: toRem(28);
+    line-height: getLineHeight(34, 28);
+    padding-right: toRem(24);
+    
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(40);
+      line-height: getLineHeight(48, 40);
+      padding-right: toRem(40);
+    }
+    
+    @media only screen and (min-width: $screen-lg + 1) {
+      font-size: toRem(56);
+      line-height: getLineHeight(49, 56);
+      padding-right: toRem(80);
+    }
+  }
+}
+
+.leftAnimation {
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-name: leftAnimation;
+  animation-duration: 40s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.rightAnimation {
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-name: rightAnimation;
+  animation-duration: 40s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}

@@ -1,0 +1,56 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+@import "../../../../pages/App/sass/mixinsFonts.scss";
+
+.title {
+  @include generalMuktaVaaniFont(30, 500, 40, var(--color-gentian-blue));
+
+  @media only screen and (max-width: $screen-lg) {
+    @include generalMuktaVaaniFont(28, 500, 40, var(--color-gentian-blue));
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    @include generalMuktaVaaniFont(20, 500, 28, var(--color-gentian-blue));
+  }
+}
+
+.text {
+  @include generalMuktaVaaniFont(18, 400, 26, var(--color-gentian-blue));
+  max-width: toRem(600);
+  margin-top: 0;
+  margin-bottom: toRem(30);
+
+  @media only screen and (max-width: $screen-md - 1) {
+    @include generalMuktaVaaniFont(16, 400, 24, var(--color-gentian-blue));
+  }
+}
+
+.paddingText {
+  padding-left: 0;
+}
+
+.imageWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-height: toRem(110);
+  margin: toRem(37) 0;
+  padding-left: toRem(30);
+
+  .imgBlock {
+    width: toRem(95);
+    height: toRem(100);
+    position: relative;
+    margin-right: toRem(25);
+  }
+}
+
+.styleHeaderOpen {
+  padding-bottom: toRem(30) !important;
+  transition: padding-bottom .5s ease-in-out;
+  padding-right: toRem(30);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-right: 0;
+  }
+}

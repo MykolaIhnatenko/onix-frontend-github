@@ -1,0 +1,20 @@
+@import '../../../pages/App/sass/functions';
+@import '../../../pages/App/sass/breakpointsVariables';
+
+.subHeader {
+  font-family: var(--jetBrains);
+  font-weight: 500;
+  font-size: toRem(16);
+  line-height: 1.375;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: default;
+
+  @media only screen and (min-width: $screen-md) {
+    margin-bottom: toRem(15);
+  }
+}
+
+.mb-15 {
+  margin-bottom: toRem(15);
+}

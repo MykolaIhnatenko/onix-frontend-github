@@ -1,0 +1,95 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$whitePhotowhy: #FBFDFF;
+$redPhotowhy: #CE4B46;
+$coralPhotowhy: #EEC8C7;
+
+.redSection {
+  overflow: hidden;
+  background-position: 1%;
+  background-size: toRem(90) toRem(90);
+  background-color: $redPhotowhy;
+  background-image:
+          linear-gradient(to right, rgba(255, 255, 255, 0.2) 0.5px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0.5px, transparent 1px);
+
+  @media only screen and (min-width: $screen-md) {
+    background-size: toRem(110) toRem(110);
+    background-position: 7%;
+    background-image:
+            linear-gradient(to right, $coralPhotowhy 0.64px, transparent 1px),
+            linear-gradient(to bottom,$coralPhotowhy 0.64px, transparent 1px);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    background-size: toRem(180) toRem(190);
+    background-position: 0 13%;
+  }
+
+  p {
+    color: $coralPhotowhy;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .firstParagraph {
+    max-width: toRem(280);
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(576);
+    }
+  }
+
+  .text {
+    text-transform: uppercase;
+    color: $coralPhotowhy;
+    max-width: toRem(280);
+    margin: 0 auto;
+    text-align: center;
+    padding: toRem(16) 0;
+
+    .secondSeparator {
+      display: none;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(600);
+      padding: toRem(16) 0;
+
+      .firsSeparator {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: 100%;
+      padding: toRem(50) 0;
+
+      .secondSeparator {
+        display: block;
+      }
+    }
+
+    span {
+      font-weight: 600;
+      color: $whitePhotowhy;
+    }
+  }
+
+  .secondParagraph {
+    max-width: toRem(343);
+
+    br {
+      display: none;
+
+      @media only screen and (min-width: $screen-md) {
+        display: block;
+      }
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(576);
+    }
+  }
+}

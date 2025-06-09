@@ -1,0 +1,110 @@
+@use '../../../../pages/App/sass/container';
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.provideSection {
+  background-color: var(--color-white);
+
+  .container {
+    @extend .container;
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(24);
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      padding-top: toRem(120);
+      padding-bottom: toRem(120);
+    }
+
+    .upTitle {
+      margin: 0;
+      padding-bottom: toRem(16);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-bottom: toRem(20);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(14);
+        line-height: getLineHeight(20, 14);
+      }
+    }
+
+    .contentContainer { 
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        max-width: toRem(1300);
+      }
+      
+      @media screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1480);
+      }
+
+      .linksBlock {
+        padding-bottom: toRem(20);
+  
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(32);
+        }
+  
+        @media only screen and (min-width: $screen-lg) {
+          padding-bottom: toRem(40);
+        }
+  
+        @media only screen and (min-width: $screen-xl) {
+          padding-bottom: 0;
+        }
+  
+        .link {
+          &:first-of-type {
+            padding-right: toRem(12);
+          }
+        }
+      }
+  
+      .textBlock {
+        .text {
+          color: var(--color-black);
+  
+          @media only screen and (min-width: ($screen-lg + 1)) {
+            max-width: toRem(630);
+          }
+  
+          @media only screen and (min-width: $screen-xxxl) {
+            max-width: toRem(710);
+          }
+        }
+        .textFirst{
+          margin-top: 0;
+          margin-bottom: toRem(26);
+          padding-top: toRem(20);
+    
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(32);
+          }
+    
+          @media only screen and (min-width: $screen-lg) {
+            padding-top: toRem(40);
+          }
+        }
+        .textSecond{
+          margin: 0;
+          @media only screen and (min-width: $screen-xl) {
+            margin-top: toRem(-28);
+            margin-left: auto;
+            margin-bottom: 0;
+          }
+        }
+  
+        .saleTextSecond {
+          @media only screen and (min-width: $screen-xl) {
+            margin-top: toRem(0);
+            padding-top: toRem(14);
+          }
+        }
+      }
+    }
+  }
+}

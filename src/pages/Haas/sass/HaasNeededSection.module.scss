@@ -1,0 +1,146 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  padding-top: toRem(80);
+  padding-bottom: toRem(80);
+  min-height: toRem(1500);
+  
+  @media screen and (min-width: $screen-md) {
+    min-height: toRem(2200);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(120);
+    padding-bottom: toRem(33);
+    min-height: toRem(2800);
+  }
+  
+  .stickyWrapper {
+    overflow: hidden;
+    position: sticky;
+    top: 70px;
+
+    .container {
+      h2 {
+        max-width: toRem(209);
+        padding-bottom: toRem(40);
+    
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(358);
+          padding-bottom: toRem(60);
+        }
+    
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(477);
+          padding-bottom: toRem(80);
+        }
+      }
+    
+      .carouselContainer {
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: toRem(67);
+        }
+    
+        .carousel {
+          width: toRem(1614);
+          display: flex;
+    
+          @media only screen and (min-width: $screen-md) {
+            width: toRem(2480);
+          }
+    
+          @media only screen and (min-width: $screen-lg + 1) {
+            width: toRem(3430);
+          }
+    
+          .slide {
+            width: toRem(310);
+            height: toRem(400);
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-haas-border);
+            opacity: 0.4;
+            margin-right: toRem(16);
+            padding: 0 toRem(30);
+            display: flex;
+            align-items: center;
+    
+            &:last-of-type {
+              margin-right: 0;
+            }
+    
+            @media only screen and (min-width: $screen-md) {
+              margin-right: toRem(30);
+              width: toRem(472);
+              height: toRem(600);
+            }
+    
+            @media only screen and (min-width: $screen-lg + 1) {
+              width: toRem(662);
+              height: toRem(374);
+              align-items: flex-start;
+            }
+    
+            .content {
+              height: toRem(338);
+    
+              @media only screen and (min-width: $screen-md) {
+                height: toRem(266);
+              }
+              @media only screen and (min-width: $screen-lg + 1) {
+                height: auto;
+              }
+    
+              .icon {
+                width: toRem(120);
+                height: toRem(120);
+    
+                @media only screen and (min-width: $screen-lg + 1) {
+                  width: toRem(160);
+                  height: toRem(160);
+                }
+              }
+    
+              p {
+                @media only screen and (min-width: $screen-lg + 1) {
+                  max-width: toRem(600);
+                }
+              }
+            }
+          }
+    
+          .active {
+            opacity: 1;
+          }
+        }
+      }
+    
+      .progressContainer {
+        display: none;
+    
+        @media only screen and (min-width: $screen-xl) {
+          display: block;
+        }
+    
+        .progress {
+          @media only screen and (min-width: $screen-xl) {
+            width: 100%;
+            height: toRem(4);
+            background-color: var(--color-gray-haas);
+            border: unset;
+          }
+        }
+    
+        .progress::-webkit-progress-value {
+          background: var(--color-black);
+        }
+    
+        .progress::-moz-progress-bar {
+          background: var(--color-black);
+        }
+      }
+    }
+  
+  }
+}

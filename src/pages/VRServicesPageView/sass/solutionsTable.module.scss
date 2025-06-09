@@ -1,0 +1,74 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.solutionsTable {
+  background: var(--color-black);
+  color: var(--color-white);
+
+  .container {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+    
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(80);
+      padding-right: toRem(80);
+    }
+
+    .text {
+      max-width: toRem(1047);
+      font-size: toRem(20);
+      margin-bottom: toRem(30);
+      line-height: getLineHeight(28, 20);
+    }
+
+    .tableBlock {
+      display: flex;
+      flex-direction: column;
+
+      .itemRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: toRem(30) 0;
+        border-bottom: 2px solid #fff;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    .container {
+      .text {
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+      }
+    }
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    .container {
+      padding-top: toRem(40);
+      padding-bottom: toRem(40);
+
+      .title {
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+      }
+
+      .text {
+        font-size: toRem(16);
+        line-height: getLineHeight(24, 16);
+        margin: toRem(20) 0 toRem(30) 0;
+      }
+
+      .tableBlock {
+        .itemRow {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

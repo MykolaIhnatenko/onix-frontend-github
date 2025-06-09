@@ -1,0 +1,48 @@
+@import "../../App/sass/mixinsFonts.scss";
+@import "../../App/sass/functions.scss";
+@import '../../App/sass/breakpointsVariables.scss';
+
+.titleContainer {
+  width: 100%;
+
+  .title {
+    @include generalSansFont(50,500,64);
+    color: var(--color-white);
+
+    @media only screen and (max-width: $screen-lg) {
+      @include generalSansFont(40, 500, 56);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      @include generalSansFont(25, 500, 35);
+    }
+  }
+
+  .description {
+    @include generalSansFont(30,500,40);
+    color: var(--color-white);
+    padding-top: toRem(40);
+    margin: 0;
+    max-width: toRem(567);
+
+    @media only screen and (max-width: $screen-lg) {
+      @include generalSansFont(24, 500, 34);
+      padding-top: toRem(30);
+      max-width: toRem(708);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      @include generalSansFont(20, 500, 28);
+      padding-top: toRem(15);
+    }
+  }
+}
+
+.hideItem {
+  display: none;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    display: inline-block;
+  }
+}
+

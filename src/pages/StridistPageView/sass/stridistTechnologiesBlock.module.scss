@@ -1,0 +1,147 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.wrapper {
+  .buttons {
+    background-color: #F3F5F8;
+    border-radius: toRem(16);
+    width: 100%;
+    height: toRem(64);
+    display: flex;
+    margin-bottom: toRem(56);
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(440);
+      height: toRem(65);
+      margin: 0 auto toRem(32);
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      height: toRem(89);
+      margin: 0 auto toRem(56);
+    }
+
+    .button {
+      width: 50%;
+      height: 100%;
+      border-radius: toRem(16);
+      background-color: #F3F5F8;
+      color: #20222C;
+      font-weight: 400;
+      font-size: toRem(18);
+      line-height: getLineHeight(24, 18);
+      padding: toRem(20) 0;
+      text-align: center;
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(20);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        cursor: pointer;
+        padding: toRem(32) 0;
+        line-height: getLineHeight(25, 32);
+      }
+    }
+
+    .active {
+      background-color: #20222C;
+      color: #F3F5F8;
+    }
+  }
+
+  .technologies {
+    border-radius: toRem(16);
+    background-color: #F3F5F8;
+    padding: toRem(24) toRem(39) toRem(24) toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(60) toRem(32);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(60) toRem(120);
+      max-width: toRem(880);
+      margin: 0 auto;
+    }
+
+    .stackItem {
+      &:nth-of-type(2) {
+        h2 {
+          padding: toRem(40) 0 toRem(12);
+
+          @media only screen and (min-width: $screen-md) {
+            padding: 0  0 toRem(32) 0;
+          }
+        }
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          padding: toRem(12) 0;
+          border-bottom: 1px solid #E0E4E9;
+          font-weight: 400;
+          font-size: toRem(18);
+          line-height: getLineHeight(24, 18);
+          color: #494B53;
+
+          @media only screen and (min-width: $screen-md) {
+            padding: toRem(16) 0;
+            font-size: toRem(20);
+            line-height: getLineHeight(25, 20);
+          }
+        }
+      }
+    }
+  }
+
+  .backend {
+    .stackItem {
+      @media only screen and (min-width: $screen-md) {
+        max-height: toRem(704);
+      }
+
+      h6 {
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(22);
+        }
+      }
+
+      ul {
+        @media only screen and (min-width: $screen-md) {
+          display: flex;
+          flex-flow: column wrap;
+          max-height: toRem(470);
+          gap: 0 toRem(80);
+        }
+
+        li {
+          @media only screen and (min-width: $screen-md) {
+            min-width: toRem(280);
+          }
+
+          &:first-of-type {
+            @media only screen and (min-width: $screen-md) {
+              padding-top: toRem(75);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .frontend {
+    @media only screen and (min-width: $screen-md) {
+      display: flex;
+      gap: toRem(80);
+    }
+
+    .stackItem {
+      @media only screen and (min-width: $screen-md) {
+        flex-basis: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.typographySection {
+  background-color: var(--color-black);
+
+  .container {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(80);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(120);
+      padding-bottom: toRem(120);
+    }
+
+    .titlesBlock {
+      .title, .subtitle {
+        color: var(--color-white);
+      }
+
+      .title {
+        font-size: toRem(24);
+        line-height: getLineHeight(34, 24);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(36);
+          line-height: getLineHeight(46, 36);
+        }
+      }
+
+      .subtitle {
+        font-family: var(--hobeauxFont);
+        font-size: toRem(36);
+        line-height: getLineHeight(40, 36);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: toRem(40) 0 toRem(40);
+        max-width: toRem(326);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(60);
+          max-width: toRem(659);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding: toRem(60) 0 toRem(80);
+          font-size: toRem(88);
+          max-width: toRem(1091);
+        }
+
+        .purple {
+          color: var(--color-purple);
+        }
+
+        .green {
+          color: var(--color-green);
+        }
+
+        .orange {
+          color: var(--color-orange);
+        }
+
+        .pink {
+          color: var(--color-pink);
+        }
+      }
+    }
+
+    .logoBlock {
+      .logoText {
+        color: var(--color-white);
+        margin: 0;
+        padding-bottom: toRem(10);
+        font-size: toRem(16);
+        line-height: getLineHeight(40, 16);
+        font-weight: 500;
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(24);
+          line-height: getLineHeight(40, 24);
+          padding-bottom: toRem(20);
+        }
+      }
+
+      .logo {
+        @media only screen and (min-width: $screen-md) {
+          display: flex;
+          align-items: center;
+          gap: toRem(29);
+          max-width: toRem(708);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(910);
+          gap: toRem(40);
+        }
+
+        .img {
+          max-width: toRem(100);
+          max-height: toRem(100);
+
+          @media only screen and (min-width: $screen-md) {
+            max-width: toRem(150);
+            max-height: toRem(150);
+            flex-basis: toRem(150);
+            flex-shrink: 0;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            max-width: toRem(180);
+            max-height: toRem(180);
+            flex-basis: toRem(180);
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .text {
+          color: var(--color-white);
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+          padding-top: toRem(30);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: 0;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+          }
+        }
+      }
+    }
+  }
+}

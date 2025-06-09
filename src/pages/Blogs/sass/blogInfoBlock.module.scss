@@ -1,0 +1,134 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.blogInfoBlock {
+  gap: toRem(10);
+
+  @media only screen and (min-width: $screen-md) {
+    margin-top: toRem(20);
+  }
+
+  .circle {
+    width: toRem(4);
+    height: toRem(4);
+    background-color: var(--color-black);
+    border-radius: 50%;
+
+    &:last-of-type {
+      display: none;
+
+      @media only screen and (min-width: $screen-sm) {
+        display: block;
+      }
+    }
+  }
+
+  .bigPreviewCircle {
+    &:last-of-type {
+      display: block;
+    }
+  }
+
+  .blogInfo {
+    margin: 0;
+    font-size: toRem(13);
+    line-height: getLineHeight(22, 13);
+    font-weight: 500;
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(14);
+      line-height: getLineHeight(22, 14);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      font-size: toRem(16);
+      line-height: getLineHeight(22, 16);
+    }
+
+    &:last-of-type {
+      display: none;
+
+      @media only screen and (min-width: $screen-sm) {
+        display: block;
+      }
+    }
+  }
+
+  .bigPreviewBlogInfo {
+    &:last-of-type {
+      display: block;
+    }
+  }
+}
+
+.newestArticle {
+  padding: toRem(15) 0;
+
+  @media only screen and (min-width: $screen-md) {
+    margin-top: 0;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    font-size: toRem(16);
+    line-height: getLineHeight(22, 16);
+    letter-spacing: 0.32px;
+    padding-top: toRem(30);
+    padding-bottom: toRem(20);
+  }
+
+  .circle {
+    &:last-of-type {
+      display: block;
+    }
+  }
+
+  .blogInfo {
+    &:last-of-type {
+      display: block;
+    }
+  }
+}
+
+.singleBlog {
+  padding-top: toRem(10);
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    margin-top: 0;
+    padding-top: toRem(30);
+  }
+
+  .circle {
+    background-color: var(--color-white);
+  }
+
+  .blogInfo {
+    color: var(--color-white);
+    font-size: toRem(14);
+    line-height: getLineHeight(22, 14);
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(16);
+      line-height: getLineHeight(22, 16);
+    }
+  }
+}
+
+.whitepappers {
+  .circle {
+    &:last-of-type {
+      display: block;
+    }
+  }
+
+  .blogInfo {
+    &:last-of-type {
+      display: block;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(16);
+      line-height: getLineHeight(22, 16);
+      letter-spacing: 0.32px;
+    }
+  }
+}

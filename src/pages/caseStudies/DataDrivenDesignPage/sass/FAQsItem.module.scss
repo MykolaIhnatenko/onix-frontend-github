@@ -1,0 +1,86 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$border: 1px solid #828282;
+
+@mixin icon($url) {
+  background: url($url) center center no-repeat;
+  background-size: contain;
+  height: 33px;
+  width: 33px;
+  margin-left: 21px;
+
+  @media only screen and (max-width: 968px) {
+    min-width: 21px;
+    height: 21px;
+    width: 21px;
+  }
+}
+
+.itemContainer {
+  border-bottom: $border;
+
+  &:first-child {
+    border-top: $border;
+  }
+}
+
+.headerContainer {
+  margin: 32px 0 29px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+  @media only screen and (max-width: $screen-lg) {
+    cursor: default;
+  }
+
+  @media only screen and (max-width: 968px) {
+    margin: 18px 0 16px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+
+    @media only screen and (max-width: 968px) {
+      font-size: 22px;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 18px;
+    }
+  }
+
+  .openIcon {
+    @include icon('../../../../../public/static/images/Pages/DataDrivenDesignPage/img_minusIcon.webp');
+
+    @media only screen and (max-width: 968px) {
+      @include icon('../../../../../public/static/images/Pages/DataDrivenDesignPage/img_smallMinusIcon.webp');
+    }
+  }
+
+  .closeIcon {
+    @include icon('../../../../../public/static/images/Pages/DataDrivenDesignPage/img_plusIcon.webp');
+
+    @media only screen and (max-width: 968px) {
+      @include icon('../../../../../public/static/images/Pages/DataDrivenDesignPage/img_smallPlusIcon.webp');
+    }
+  }
+}
+
+.contentContainer {
+  margin-bottom: 32px;
+  max-width: 918px;
+  font-size: 18px;
+  line-height: 150%;
+  white-space: pre-line;
+
+  @media only screen and (max-width: 968px) {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    font-size: 16px;
+  }
+}

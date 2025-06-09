@@ -1,0 +1,36 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.carousel {
+  .item {
+    width: toRem(208);
+    min-height: toRem(156);
+    margin-right: toRem(16);
+    cursor: grab;
+
+    .iconBlock {
+      display: flex;
+      align-items: flex-end;
+
+      span {
+        color: var(--color-bracketology-brown);
+        font-weight: 400;
+        font-size: toRem(30);
+        line-height: toRem(32);
+        padding-right: toRem(16);
+      }
+
+      .processIconBlockIcon{
+        color: var(--color-bracketology-brown);
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: toRem(18);
+      line-height: toRem(20);
+      letter-spacing: -0.7px;
+      padding-top: toRem(12);
+    }
+  }
+}

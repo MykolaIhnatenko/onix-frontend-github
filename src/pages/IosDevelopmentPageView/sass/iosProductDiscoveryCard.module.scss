@@ -1,0 +1,45 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.card {
+  flex: 0 1 calc((100% - 6%) / 2);
+  margin-top: toRem(20);
+  margin-bottom: toRem(20);
+
+  @media only screen and (min-width: $screen-md) {
+    flex: 0 1 calc((100% - 10%) / 2);
+    margin-top: toRem(50);
+    margin-bottom: toRem(50);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    flex: 0 1 calc((100% - 8% * (3 - 1)) / 3);
+  }
+
+  .icon, .cardText {
+    color: var(--color-white);
+  }
+
+  .icon {
+    width: toRem(40);
+    height: toRem(40);
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(60);
+      height: toRem(60);
+    }
+  }
+
+  .cardText {
+    margin: 0;
+    padding-top: toRem(20);
+    font-size: toRem(14);
+    line-height: getLineHeight(20, 14);
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+      padding-top: toRem(30);
+    }
+  }
+}

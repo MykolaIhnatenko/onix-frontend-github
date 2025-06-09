@@ -1,0 +1,48 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+$blueSalesforceSupportAutomationApp: #3296ED;
+$blueSalesforceTrackingApp: #0270D2;
+
+.challengesSection {
+  margin-top: toRem(100);
+
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-top: toRem(80);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      color: $blueSalesforceTrackingApp;
+    }
+
+    .chalengesParagraph {
+      padding-top: toRem(30);
+      margin-bottom: toRem(100);
+      max-width: toRem(700);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-top: toRem(20);
+        margin-bottom: toRem(52);
+      }
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+}
+
+.processAutomation {
+  .container {
+    h2 {
+      color: $blueSalesforceSupportAutomationApp;
+    }
+  }
+}
+

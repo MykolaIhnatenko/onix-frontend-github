@@ -1,0 +1,205 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.whatSection {
+  width: 100%;
+  position: relative;
+
+  @media only screen and (min-width: $screen-md) {
+    min-height: toRem(3000);
+  }
+
+  .imgContainer {
+    position: sticky;
+    top: 60%;
+    margin-top: -40vh;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    z-index: 1;
+
+    img {
+      object-fit: cover;
+      object-position: 10% 50%;
+
+      @media only screen and (min-width: $screen-md) {
+        object-position: 0 50%;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        object-position: 50%;
+      }
+    }
+  }
+
+  .what {
+    position: sticky;
+    top: toRem(-10);
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+    z-index: 2;
+
+    @media only screen and (min-width: $screen-md) {
+      height: 100vh;
+    }
+    
+    @media only screen and (min-width: $screen-lg + 1) {
+      top: toRem(-30);
+      padding-top: toRem(120);
+      padding-bottom: toRem(120);
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      max-width: toRem(1440);
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      max-width: toRem(1460);
+    }
+
+    h2 {
+      color: var(--color-black);
+      padding-bottom: toRem(30);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(60);
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        padding-bottom: toRem(80);
+      }
+    }
+
+    .animatedDot {
+      display: none;
+
+      @media only screen and (min-width: $screen-md) {
+        display: block;
+        top: toRem(245);
+        left: toRem(30);
+        background-color: var(--color-red-haas);
+        border-radius: toRem(10000);
+        width: toRem(8);
+        height: toRem(8);
+        position: absolute;
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        top: toRem(320);
+        left: toRem(70);
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        top: toRem(340);
+        left: toRem(170);
+      }
+    }
+
+    .list {
+      @media only screen and (min-width: $screen-md) {
+        position: relative;
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        margin-left: toRem(100);
+      }
+
+      .item {
+        &:not(:last-of-type) {
+          padding-bottom: toRem(24);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          opacity: 0;
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          &:nth-of-type(1) {
+            opacity: 1;
+          }
+
+          &:nth-of-type(2) {
+            top: 30vh;
+          }
+        }
+
+        @media only screen and (min-width: $screen-xxl) {
+          &:nth-of-type(2) {
+            top: 0;
+            right: 0;
+            left: unset;
+          }
+        }
+
+        .titleBlock {
+          position: relative;
+
+          @media only screen and (min-width: $screen-md) {
+            display: flex;
+            flex-direction: column;
+          }
+
+          @media only screen and (min-width: $screen-xxl) {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .dot {
+            background-color: var(--color-red-haas);
+            border-radius: toRem(10000);
+            width: toRem(8);
+            height: toRem(8);
+            position: absolute;
+            top: toRem(9);
+            left: 0;
+
+            @media only screen and (min-width: $screen-md) {
+              display: none;
+            }
+          }
+
+          .content {
+            h3 {
+              font-weight: 400;
+              font-size: toRem(18);
+              line-height: toRem(27);
+              color: var(--color-black);
+              padding-left: toRem(24);
+
+              @media only screen and (min-width: $screen-md) {
+                font-size: toRem(24);
+                line-height: toRem(36);
+                padding-left: toRem(40);
+              }
+
+              @media only screen and (min-width: $screen-lg + 1) {
+                font-size: toRem(32);
+                line-height: toRem(48);
+              }
+
+              br {
+                display: none;
+
+                @media only screen and (min-width: $screen-md) {
+                  display: block;
+                }
+              }
+            }
+
+            p {
+              color: var(--color-gray-haas2);
+              padding-top: toRem(20);
+
+              @media only screen and (min-width: $screen-md) {
+                max-width: toRem(550);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

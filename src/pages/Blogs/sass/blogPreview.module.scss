@@ -1,0 +1,190 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding-top: toRem(30);
+  display: flex;
+  gap: toRem(15);
+
+  @media only screen and (min-width: $screen-md) {
+    display: block;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(40);
+
+    &:hover{
+      .imgContainer{
+        .img{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    position: relative;
+    height: toRem(110);
+    width: toRem(110);
+    flex-basis: toRem(110);
+    flex-shrink: 0;
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(344);
+      width: 100%;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(407);
+      overflow: hidden;
+    }
+
+    img {
+      object-fit: cover;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        transition: scale .8s cubic-bezier(.215,.61,.355,1);
+      }
+    }
+  }
+
+  .contentContainer {
+    flex-grow: 2;
+    
+    .linkWrapper {
+      margin: 0 0 toRem(15) 0;
+      display: block;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        cursor: pointer;
+        margin: 0 0 toRem(20) 0;
+      }
+
+      .title {
+        margin: toRem(10) 0 toRem(15);
+        font-weight: 600;
+        font-size: toRem(16);
+        line-height: getLineHeight(20, 16);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+
+        @media only screen and (min-width: $screen-md) {
+          margin: toRem(15) 0 toRem(15);
+          font-size: toRem(22);
+          line-height: getLineHeight(30, 22);
+          text-overflow: unset;
+          overflow: unset;
+          -webkit-line-clamp: unset;
+          display: block;
+          word-wrap: unset;
+          -webkit-box-orient: unset;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          margin: toRem(20) 0 toRem(15);
+          font-size: toRem(24);
+          line-height: getLineHeight(30, 24);
+        }
+      }
+
+      .bigTitle {
+        margin: toRem(15) 0;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          margin: toRem(20) 0 toRem(10) !important;
+        }
+      }
+
+      .description {
+        display: none;
+
+        @media only screen and (min-width: $screen-md) {
+          display: block;
+          font-size: toRem(16);
+          line-height: getLineHeight(22, 16);
+          margin: 0;
+        }
+      }
+
+      .bigDescription {
+        margin: 0;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(18);
+          line-height: getLineHeight(26, 18);
+        }
+      }
+    }
+
+    .author {
+      width: fit-content;
+    }
+  }
+}
+
+.bigPreviews, .topBlogsPreview {
+  display: block;
+  gap: unset;
+  padding-top: 0;
+
+  .imgContainer {
+    height: toRem(195);
+    width: 100%;
+    flex-basis: toRem(310);
+    flex-shrink: 0;
+    margin-bottom: toRem(15);
+
+    @media only screen and (min-width: $screen-sm) {
+      height: toRem(330);
+      width: 100%;
+      margin-bottom: toRem(20);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(400);
+    }
+  }
+
+  .contentContainer {
+    .title {
+      @media only screen and (min-width: $screen-md) {
+        margin: toRem(15) 0 toRem(15);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        margin: toRem(20) 0 toRem(15);
+        font-size: toRem(24);
+        line-height: getLineHeight(30, 24);
+      }
+    }
+  }
+}
+
+.singleBlog {
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(40);
+  }
+}
+
+.singleBlogBottom {
+  .imgContainer {
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(550);
+      overflow: hidden;
+    }
+
+    @media only screen and (min-width: 1281px) {
+      height: toRem(407);
+    }
+  }
+}
+
+.bigPreviewsTablet {
+  .imgContainer {
+    height: toRem(450);
+  }
+}

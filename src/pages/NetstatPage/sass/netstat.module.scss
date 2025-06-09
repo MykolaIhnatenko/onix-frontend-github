@@ -1,0 +1,1032 @@
+@import "../../App/sass/breakpointsVariables";
+@import "../../App/sass/mixinsAnimation";
+
+$screens: #EBECF0;
+$intro: #FCFCFE;
+$main-text-color: #6C6F75;
+$titles-color: #2D3339;
+$white: #fff;
+
+.netstat {
+  :global {
+    .minMarginBottom {
+      margin-bottom: toRem(15) !important;
+    }
+    
+    .minMarginTop {
+      margin-top: toRem(15) !important;
+    }
+  }
+  
+  p {
+    color: $main-text-color;
+    font-size: toRem(18);
+    line-height: toRem(30);
+    font-family: var(--muktaVaani);
+    margin-bottom: toRem(30);
+    
+    @media screen and (width < $screen-md) {
+      font-size: toRem(16);
+      line-height: toRem(27);
+    }
+  }
+  
+  &_list {
+    margin-left: toRem(30);
+    color: $main-text-color;
+    margin-bottom: toRem(30);
+    font-size: toRem(18);
+    line-height: toRem(30);
+    font-family: var(--muktaVaani);
+    list-style-type: disc;
+    ::marker {
+      font-size: toRem(15);
+
+      @media screen and (width < $screen-md) {
+        font-size: toRem(14);
+      }
+    }
+    &.first {
+     list-style: none;
+    }
+    p {
+      margin: 0;
+    }
+
+    @media screen and (width < $screen-md) {
+      margin-bottom: 0;
+    }
+
+    &.withoutMargin {
+      margin-left: 0;
+
+
+      @media screen and (width < $screen-md) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+}
+
+.netstat_container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 toRem(68);
+  
+  @media screen and (width <= $screen-lg) {
+    padding: 0 toRem(50);
+  }
+  
+  @media screen and (width < $screen-md) {
+    padding: 0 toRem(15);
+  }
+}
+
+.netstat_subheader {
+  font-weight: 700;
+  font-size: toRem(42);
+  line-height: getLineHeight(50, 42);
+  font-family: var(--muktaVaani);
+  color: $titles-color;
+  margin-bottom: toRem(65);
+  
+  @media screen and (width < $screen-xl) {
+    margin-bottom: toRem(35);
+  }
+  
+  @media screen and (width <= $screen-lg) {
+    font-size: toRem(36);
+  }
+  
+  @media screen and (width < $screen-md) {
+    font-weight: 700;
+    font-size: toRem(20);
+    line-height: toRem(30);
+    margin-bottom: toRem(20);
+  }
+}
+
+.screens {
+  background: $screens;
+  @include radius(12px);
+  
+  img {
+    height: auto;
+  }
+}
+
+.shadowed_background {
+  background: $white;
+  z-index: 2;
+  @include shadow(0 2px toRem(15) 0 rgba(0, 0, 0, 0.13));
+  @include radius(8px);
+  position: relative;
+}
+
+.netstat_mainscreen {
+  margin-bottom: toRem(100);
+  position: relative;
+  
+  @media screen and (width <= $screen-lg) {
+    margin-bottom: toRem(50);
+  }
+  
+  @media screen and (width < $screen-md) {
+    margin-bottom: toRem(30);
+  }
+  
+  .mainImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: toRem(685);
+    height: toRem(660);
+    
+    @media screen and (width >= $screen-xxl) {
+      width: toRem(815);
+      height: toRem(826);
+    }
+    
+    @media screen and (width < $screen-xl) {
+      width: 55%;
+      height: calc(100% - 70px);
+      margin-bottom: toRem(70);
+    }
+    
+    @media screen and (width < $screen-md) {
+      width: 88%;
+      height: 46%;
+    }
+    
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  
+  &_content {
+    padding: toRem(150) toRem(68);
+    
+    @media screen and (width <= $screen-lg) {
+      padding: toRem(204) toRem(50) 0;
+    }
+    
+    @media screen and (width < $screen-md) {
+      padding: 95% toRem(25) 0;
+    }
+  }
+  
+  h1 {
+    font-weight: 800;
+    font-size: toRem(42);
+    line-height: toRem(50);
+    font-family: var(--muktaVaani);
+    color: $titles-color;
+    margin: toRem(45) 0 toRem(10);
+    max-width: toRem(500);
+    
+    @media screen and (width <= $screen-lg) {
+      font-weight: 800;
+      font-size: toRem(34);
+      line-height: toRem(40);
+      margin: toRem(22) 0 toRem(10);
+      max-width: toRem(350) !important;
+    }
+    
+    @media screen and (width < $screen-md) {
+      font-weight: 800;
+      font-size: toRem(26);
+      line-height: toRem(31);
+      margin: toRem(25) 0 5px;
+      max-width: 100% !important;
+    }
+  }
+  
+  .netstat_logo {
+    display: inline-block;
+    
+    @media screen and (width < $screen-md) {
+      display: flex;
+      justify-content: center;
+    }
+    
+    img {
+      height: auto;
+      
+      @media screen and (width <= $screen-lg) {
+        width: toRem(89);
+        height: toRem(89);
+      }
+      
+      @media screen and (width < $screen-md) {
+        width: toRem(108);
+        height: toRem(108);
+      }
+    }
+  }
+  
+  .netstat_logo_subtext {
+    padding-left: toRem(5);
+    
+    @media screen and (width < $screen-md) {
+      padding-left: 0;
+    }
+    
+    p {
+      &:first-child {
+        font-weight: 500;
+        font-size: toRem(25);
+        font-family: var(--muktaVaani);
+        max-width: toRem(370);
+        width: 100%;
+        margin-bottom: 0;
+        
+        @media screen and (width <= $screen-lg) {
+          font-weight: 500;
+          font-size: toRem(18);
+          line-height: toRem(26);
+          max-width: toRem(320);
+          width: 100%;
+        }
+        
+        @media screen and (width < $screen-md) {
+          font-weight: 500;
+          font-size: toRem(16);
+          line-height: toRem(24);
+        }
+      }
+      
+      &:last-child {
+        max-width: toRem(470);
+        width: 100%;
+        font-size: toRem(18);
+        margin: toRem(15) 0 toRem(30);
+        
+        @media screen and (width <= $screen-lg) {
+          font-size: toRem(18);
+          line-height: toRem(22);
+          font-family: var(--muktaVaani);
+          max-width: toRem(410);
+          width: 100%;
+          margin: toRem(10) 0 toRem(20);
+        }
+        
+        @media screen and (width < $screen-md) {
+          letter-spacing: 0.7px;
+          font-weight: 300;
+          font-size: toRem(14);
+          line-height: toRem(21);
+          margin-bottom: toRem(20);
+        }
+      }
+    }
+  }
+}
+
+.netstat_downloadBtn {
+  display: inline-block;
+  margin-left: toRem(5);
+  
+  @media screen and (width < $screen-md) {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  a {
+    opacity: 1;
+    @include transition(all .2s linear);
+    
+    &:hover {
+      opacity: 0.8;
+    }
+    @media screen and (max-width: $screen-lg) {
+      img {
+        height: toRem(36);
+        max-width: toRem(110);
+      }
+    }
+    
+    @media screen and (width < $screen-md) {
+      img {
+        max-width: toRem(145);
+        height: toRem(46);
+      }
+    }
+  }
+}
+
+.netstat_intro {
+  margin-bottom: toRem(100);
+  
+  @media screen and (width <= $screen-lg) {
+    margin-bottom: toRem(70);
+  }
+  
+  @media screen and (width < $screen-md) {
+    margin-bottom: toRem(55);
+  }
+  
+  &_bg {
+    background-color: $intro;
+    @include radius(12px);
+    padding: toRem(90) toRem(70) toRem(185);
+    
+    @media screen and (width < $screen-xl) {
+      padding: toRem(40) toRem(60) toRem(185);
+    }
+    
+    @media screen and (width <= $screen-lg) {
+      padding-bottom: toRem(10);
+    }
+
+    
+    @media screen and (width < $screen-md) {
+      padding: toRem(25) toRem(20) toRem(25);
+    }
+  }
+  
+  &_text_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  &_text_left {
+    flex-basis: 43%;
+    
+    @media screen and (width <= $screen-lg) {
+      flex-basis: 100%;
+    }
+  }
+  
+  &_text_right {
+    flex-basis: 50%;
+    
+    @media screen and (width <= $screen-lg) {
+      flex-basis: 100%;
+    }
+  }
+  
+  .netstat_intro_screens {
+    margin: toRem(-165) auto 0;
+    padding: 0 toRem(145);
+    width: 100%;
+    text-align: center;
+    
+    @media screen and (width <= $screen-lg) {
+      margin-top: 0;
+      padding: 0 toRem(135);
+      
+      .screens {
+        background: none;
+      }
+    }
+    
+    @media only screen and (max-width: $screen-md){
+      margin-top: 0;
+    }
+    
+    @media screen and (width < $screen-md) {
+      margin-top: 0;
+      padding: 0;
+    }
+    
+    img {
+      max-width: toRem(662);
+      width: 100%;
+      
+      @media screen and (width <= $screen-lg) {
+        @include radius(12px);
+      }
+      
+      @media screen and (width < $screen-md) {
+        max-width: toRem(500);
+        @include radius(0);
+      }
+    }
+  }
+}
+
+.netstat_product {
+  padding: 0 toRem(235);
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  
+  @media screen and (width < $screen-xl) {
+    padding: 0 toRem(68);
+  }
+  
+  @media screen and (width <= $screen-lg) {
+    padding: 0 toRem(50);
+  }
+  
+  @media screen and (width < $screen-md) {
+    padding: 0 toRem(15);
+  }
+  
+  .productIcons {
+    margin: toRem(65) auto toRem(105);
+    max-width: toRem(529);
+    width: 100%;
+    height: toRem(82);
+    display: flex;
+    justify-content: center;
+    
+    @media screen and (width <= $screen-lg) {
+      margin: toRem(40) auto toRem(70);
+      max-width: toRem(390);
+      max-height: toRem(60);
+    }
+    
+    @media screen and (width < $screen-md) {
+      margin-bottom: toRem(55);
+      max-width: toRem(212);
+      height: toRem(33);
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  p:first-child {
+    margin-bottom: toRem(20);
+  }
+}
+
+.netstat_designed {
+  &_img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  
+  .netstat_designed_text {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 toRem(145);
+    
+    @media screen and (width < $screen-xl) {
+      padding: 0 toRem(68);
+    }
+    
+    @media screen and (width <= $screen-lg) {
+      padding: 0 toRem(50);
+    }
+    
+    @media screen and (width < $screen-md) {
+      padding: 0 toRem(15);
+    }
+  }
+  
+  .shadowed_background {
+    margin: toRem(-210) auto 0;
+    padding: toRem(90) toRem(151);
+    width: 100%;
+    
+    @media screen and (width < $screen-xl) {
+      padding: toRem(40) toRem(60) toRem(90);
+    }
+    
+    @media screen and (width <= $screen-lg) {
+      margin-top: toRem(-110);
+    }
+    
+    @media screen and (width < $screen-md) {
+      padding: toRem(25) toRem(20);
+      margin-top: toRem(-60);
+      h3 {
+        text-align: center;
+      }
+      p {
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  .netstat_designed_screens {
+    padding: 0 toRem(68);
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    @media screen and (width < $screen-xl) {
+      padding: 0;
+    }
+    
+    .screens {
+      position: relative;
+      z-index: 2;
+      margin: toRem(-90) auto toRem(100);
+      text-align: center;
+      padding: toRem(70) 0 toRem(88);
+      
+      @media screen and (width < $screen-xl) {
+        @include radius(0);
+      }
+      
+      @media screen and (width <= $screen-lg) {
+        width: 100%;
+        margin: toRem(-70) auto toRem(70);
+        padding: 0;
+      }
+      
+      @media screen and (width < $screen-md) {
+        padding: 0;
+        margin: toRem(25) auto toRem(55);
+      }
+      
+      img {
+        max-width: toRem(730);
+        width: 100%;
+      }
+    }
+  }
+}
+
+.netstat_helps {
+  position: relative;
+  background: linear-gradient(82.03deg, $white 0%,
+          rgba(255, 255, 255, 1) 8.03%,
+          rgba(255, 255, 255, 0.95) 49.25%,
+          rgba(255, 255, 255, 0.65) 75%,
+          rgba(255, 255, 255, 0) 100%);
+  margin-bottom: toRem(100);
+
+  @media screen and (width <= $screen-lg) {
+    margin-bottom: toRem(50);
+  }
+  
+  @media screen and (width < $screen-md) {
+    margin-bottom: toRem(55);
+    background: unset;
+  }
+  
+  .helpsImage {
+    z-index: -1;
+  }
+  
+  img {
+    object-fit: cover;
+    
+    @media screen and (width < $screen-md) {
+      object-fit: contain;
+      object-position: center top;
+    }
+  }
+  
+  .netstat_container {
+    padding-left: toRem(145);
+    
+    @media screen and (width < $screen-xl) {
+      padding-left: toRem(68);
+    }
+    
+    @media screen and (width <= $screen-lg) {
+      padding-left: toRem(50);
+    }
+    
+    @media screen and (width < $screen-md) {
+      padding-left: toRem(15);
+      padding-top: 49%;
+    }
+  }
+  
+  .netstat_helps_content {
+    padding: toRem(115) 0 toRem(85);
+    max-width: toRem(560);
+    width: 100%;
+    
+    @media screen and (width < $screen-xl) {
+      padding: toRem(60) 0 toRem(30);
+    }
+    
+    @media screen and (width <= $screen-lg) {
+      max-width: toRem(504);
+    }
+    
+    @media screen and (width < $screen-md) {
+      background: $white;
+      z-index: 2;
+      @include shadow(0 2px toRem(15) 0 rgba(0, 0, 0, 0.13));
+      @include radius(8px);
+      position: relative;
+      padding: toRem(25) toRem(20);
+    }
+    
+    h2 {
+      @media screen and (width > $screen-lg) {
+        margin-bottom: toRem(45);
+      }
+
+      @media screen and (width <= $screen-lg) {
+        margin-bottom: toRem(20);
+      }
+    }
+  }
+}
+
+.netstat_works {
+  padding: 0 toRem(145);
+  
+  @media screen and (width < $screen-xl) {
+    padding: 0 toRem(68);
+  }
+  
+  @media screen and (width <= $screen-lg) {
+    padding: 0 toRem(50);
+  }
+  
+  @media screen and (width < $screen-md) {
+    padding: 0;
+  }
+  
+  .netstat_works_wrapper {
+    flex-basis: 51%;
+    
+    @media screen and (width < $screen-xl) {
+      flex-basis: 100%;
+    }
+    
+    @media screen and (width < $screen-md) {
+      padding: 0 toRem(15);
+    }
+  }
+}
+
+.netstat_works_content {
+  margin: 0 auto toRem(110);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  @media screen and (width < $screen-xl) {
+    justify-content: flex-end;
+    
+  }
+
+  .netstat_subheader {
+    @media screen and (width > $screen-lg) {
+      margin-bottom: toRem(30);
+    }
+  }
+
+  @media screen and (width <= $screen-lg) {
+    margin-bottom: toRem(70);
+  }
+  
+  @media screen and (width < $screen-md) {
+    margin-bottom: toRem(55);
+  }
+  
+  img {
+    width: 100%;
+    max-width: toRem(502);
+    height: 100%;
+    max-height: toRem(502);
+    
+    @include radius(12px);
+    
+    @media screen and (width < $screen-xl) {
+      order: 1;
+      max-width: toRem(400);
+      max-height: toRem(400);
+      margin-top: toRem(-115);
+      margin-right: 0;
+      z-index: 2;
+    }
+    
+    @media only screen and (max-width: 968px){
+      margin-top: toRem(-40);
+      max-width: toRem(310);
+      max-height: toRem(310);
+    }
+    
+    @media screen and (width < $screen-md) {
+      margin-top: 0;
+      max-width: toRem(400);
+      max-height: toRem(400);
+      @include radius(2px);
+    }
+  }
+  
+  &_textblock {
+    padding-top: toRem(32);
+    
+    @media screen and (width < $screen-xl) {
+      order: 0;
+      background: $white;
+      
+      @include shadow(0 2px toRem(15) 0 rgba(0, 0, 0, 0.13));
+      @include radius(8px);
+      position: relative;
+      padding: toRem(40) toRem(90) toRem(72) toRem(58);
+    }
+    
+    @media screen and (width <= $screen-lg) {
+      padding: toRem(40) toRem(60);
+    }
+    
+    @media screen and (width < $screen-md) {
+      padding: toRem(25) toRem(20) toRem(25);
+    }
+  }
+}
+
+.netstat_works_wrapper {
+  @media screen and (width < $screen-md) {
+    padding: 0;
+  }
+}
+
+.netstat_works_screens {
+  margin-bottom: toRem(100);
+  
+  @media screen and (width <= $screen-lg) {
+    margin-bottom: toRem(70);
+  }
+  
+  @media screen and (width < $screen-md) {
+    margin-bottom: toRem(55);
+    @include radius(0);
+  }
+  
+  &_container {
+    width: 100%;
+    margin: 0 auto;
+    padding: toRem(130) toRem(78) toRem(66);
+    text-align: center;
+    
+    @media screen and (width < $screen-xl) {
+      padding: toRem(50) toRem(30) toRem(36);
+    }
+    
+    @media screen and (width < $screen-md) {
+      padding: toRem(37) toRem(15) toRem(28);
+    }
+  }
+  
+  img {
+    width: 100%;
+    margin-bottom: toRem(115);
+    
+    @media screen and (width < $screen-xl) {
+      margin-bottom: toRem(40);
+    }
+    
+    @media screen and (width < $screen-md) {
+      margin-bottom: toRem(15);
+    }
+  }
+  
+  p {
+    margin-bottom: 0;
+    
+    @media screen and (width < $screen-md) {
+      font-weight: 400;
+      font-size: toRem(17);
+      line-height: toRem(24);
+      font-family: var(--muktaVaani);
+    }
+    
+    @media screen and (width < $screen-md) {
+      font-size: toRem(14);
+      line-height: toRem(21);
+    }
+  }
+}
+
+.netstat_price {
+  @media screen and (width < $screen-md) {
+    .netstat_container {
+      padding: 0;
+    }
+  }
+  
+  &_img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .netstat_price_content {
+    margin: toRem(-195) auto toRem(115);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: toRem(74) toRem(35) toRem(60) toRem(75);
+    max-width: toRem(988);
+    width: 100%;
+    
+    @media screen and (width <= $screen-lg) {
+      margin: toRem(-92) auto toRem(70);
+      max-width: toRem(624);
+      padding: 0;
+      justify-content: center;
+      text-align: center;
+      background: transparent;
+      @include shadow(none);
+      @include radius(0);
+    }
+    
+    @media screen and (width < $screen-md) {
+      margin-bottom: toRem(55);
+    }
+    
+    .netstat_price_wrapper {
+      flex-basis: 50%;
+      align-self: center;
+      
+      @media screen and (width <= $screen-lg) {
+        flex-basis: 100%;
+      }
+      
+      @media screen and (width < $screen-md) {
+        padding: 0 toRem(15);
+      }
+    }
+    
+    .netstat_price_text {
+      @media screen and (width <= $screen-lg) {
+        padding: toRem(40) toRem(65) toRem(69);
+        background: $white;
+        z-index: 2;
+        @include shadow(0 2px toRem(15) 0 rgba(0, 0, 0, 0.13));
+        @include radius(8px);
+        position: relative;
+      }
+      
+      @media screen and (width < $screen-md) {
+        padding: toRem(25);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .netstat_subheader {
+        @media screen and (width <= $screen-lg) {
+          margin-bottom: toRem(20);
+        }
+      }
+
+      p {
+        @media screen and (width < $screen-md) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+    .netstat_price_frame {
+      padding: toRem(28) toRem(74);
+      height: 100%;
+      max-height: toRem(278);
+      
+      @media screen and (width <= $screen-lg) {
+        padding: toRem(25) toRem(65);
+        margin-top: toRem(-60);
+      }
+      
+      @media screen and (width < $screen-md) {
+        padding: toRem(30) toRem(65);
+        margin-top: 0;
+        width: 100%;
+        @include radius(0);
+        max-height: unset;
+      }
+      
+      img {
+        height: auto;
+        
+        @media screen and (width <= $screen-lg) {
+          max-width: toRem(170);
+        }
+        
+        @media screen and (width < $screen-md) {
+          max-width: toRem(212);
+          width: toRem(212);
+          height: toRem(241);
+        }
+      }
+    }
+  }
+}
+
+.netstat_prospects {
+  margin-bottom: toRem(142);
+  
+  @media screen and (width <= $screen-lg) {
+    margin-bottom: toRem(70);
+  }
+  
+  .netstat_prospects_content {
+    padding: 0 toRem(245);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @media screen and (width < $screen-xl) {
+      padding: 0 toRem(100);
+    }
+    
+    @media screen and (width <= $screen-lg) {
+      padding: 0;
+    }
+    
+    @media screen and (width < $screen-md) {
+      align-items: center;
+      justify-content: center;
+    }
+    
+    img {
+      width: 100%;
+      max-width: toRem(262);
+      height: 100%;
+      max-height: toRem(491);
+      
+      @media screen and (width <= $screen-lg) {
+        max-width: toRem(183);
+        max-height: toRem(342);
+        margin-right: toRem(45);
+      }
+      
+      @media screen and (width < $screen-md) {
+        max-width: toRem(155);
+        max-height: toRem(300);
+        margin-right: 0;
+      }
+    }
+  }
+  
+  .netstat_prospects_textblock {
+    padding-top: toRem(66);
+    flex-basis: 56%;
+    
+    @media screen and (width <= $screen-lg) {
+      padding-top: toRem(33);
+      flex-basis: 65%;
+    }
+    
+    @media screen and (width < $screen-md) {
+      flex-basis: 100%;
+      padding: toRem(30) toRem(5) 0;
+    }
+    
+    .netstat_downloadBtn {
+      margin: 0;
+      
+      @media screen and (width <= $screen-lg) {
+        margin-top: toRem(6);
+      }
+
+      @media screen and (width < $screen-md) {
+        width: auto;
+        display: block;
+        display: flex;
+        justify-content: center;
+      }
+      
+      img {
+        width: toRem(145);
+        height: auto;
+      }
+    }
+  }
+}
+
+.boxList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  .dot {
+    display: inline-block;
+    width: toRem(4);
+    height: toRem(4);
+    background-color: #6C6F75;
+    border-radius: 50%;
+    margin-right: toRem(10);
+    margin-bottom: toRem(2);
+  }
+}
+
+.titleBox {
+  @media screen and (width < $screen-xxl) {
+    max-width: toRem(500) !important;
+  }
+  
+  @media screen and (width < $screen-xl) {
+    font-weight: 800;
+    font-size: toRem(34);
+    line-height: toRem(40);
+    font-family: var(--muktaVaani);
+    margin: toRem(22) 0 toRem(10);
+    max-width: toRem(350) !important;
+  }
+}
+
+

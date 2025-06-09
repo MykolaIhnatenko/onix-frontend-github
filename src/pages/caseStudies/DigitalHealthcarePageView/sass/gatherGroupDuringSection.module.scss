@@ -1,0 +1,28 @@
+@use '../../../../pages/App/sass/container';
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.duringSection {
+  background-color: var(--color-black);
+  position: relative;
+  padding-bottom: toRem(80);
+
+  @media only screen and (min-width: $screen-lg) {
+    padding-bottom: toRem(120);
+  }
+
+  .sectionContainer {
+    .container {
+      @extend .container;
+
+      .subtitle {
+        color: var(--color-white);
+        padding-bottom: toRem(40);
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(542);
+        }
+      }
+    }
+  }
+}

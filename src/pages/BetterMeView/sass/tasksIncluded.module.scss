@@ -1,0 +1,135 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.tasksIncluded {
+  padding-top: toRem(180);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(120);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-top: toRem(72);
+  }
+
+  .background {
+    background: #CE4F4A;
+    border-radius: 4px;
+    padding: toRem(120) toRem(110) toRem(70) toRem(110);
+    display: flex;
+    gap: toRem(20);
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+      padding: toRem(70);
+      gap: toRem(10);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(48) toRem(24);
+    }
+
+    .sticky {
+      position: sticky;
+      top: toRem(64);
+      z-index: 1;
+      width: 40%;
+      height: fit-content;
+
+      @media only screen and (max-width: $screen-lg) {
+        position: relative;
+        top: 0;
+        width: 60%;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: 100%;
+        max-width: toRem(280);
+      }
+
+      h2 {
+        max-width: toRem(440);
+        color: white;
+      }
+    }
+
+    .taskIncludedItems {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: toRem(134);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: 0;
+        align-items: center;
+      }
+
+      .taskIncludedItem {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        padding: toRem(50) 0;
+        color: white;
+        font-size: toRem(24);
+        line-height: 150%;
+
+        @media only screen and (max-width: $screen-lg) {
+          width: 100%;
+          padding: toRem(40) 0 toRem(30) 0;
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          display: block;
+          padding: toRem(24) 0;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+  
+        .number {
+          font-weight: 300;
+          opacity: 0.3;
+          margin-right: toRem(36);
+          transition: opacity 0.3s ease-in-out;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            display: none;
+          }
+        }
+  
+        .numberActive {
+          opacity: 1;
+        }
+
+        svg {
+          min-width: toRem(40);
+          min-height: toRem(40);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            min-width: toRem(32);
+            min-height: toRem(32);
+          }
+        }
+  
+        p {
+          max-width: toRem(416);
+          font-weight: 400;
+          margin-left: toRem(32);
+          line-height: 150%;
+
+          @media only screen and (max-width: $screen-lg) {
+            max-width: unset;
+            font-size: toRem(20);
+          }
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            font-size: toRem(16);
+            margin-left: unset;
+            margin-top: toRem(17);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.wrapper {
+  max-width: toRem(590);
+  display: flex;
+  flex-direction: column;
+  gap: toRem(30);
+  
+  @media only screen and (max-width: $screen-sm) {
+    padding: 0 toRem(15);
+  }
+  
+  .text {
+    font-size: toRem(18);
+    line-height: getLineHeight(26, 18);
+    font-weight: 400;
+    
+    @media only screen and (max-width: $screen-sm) {
+      font-size: toRem(16);
+      line-height: getLineHeight(24, 16);
+    }
+  }
+  
+  .title {
+    font-size: toRem(24);
+    line-height: getLineHeight(30, 24);
+    font-weight: 500;
+    
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+    }
+  }
+}

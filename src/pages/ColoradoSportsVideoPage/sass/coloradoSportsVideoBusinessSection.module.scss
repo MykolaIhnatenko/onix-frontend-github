@@ -1,0 +1,75 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.businessSection {
+  @media only screen and (min-width: $screen-lg + 1) {
+    flex: 0 1 calc((100% - 30px) / 2);
+  }
+
+  .container {
+    padding-bottom: toRem(20);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: 0;
+      height: 100%;
+    }
+
+    .businessCard {
+      @media only screen and (min-width: $screen-lg + 1) {
+        height: 100%;
+      }
+
+      p {
+        padding-bottom: toRem(16);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(24);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: toRem(32);
+        }
+      }
+
+      h2 {
+        br {
+          display: none;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: block;
+          }
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(559);
+        }
+      }
+
+      .imgWrapper {
+        margin: toRem(16) 0;
+        max-width: 100%;
+        height: toRem(180);
+        clip-path: inset(0 round 12px);
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(314);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          margin: toRem(24) 0;
+          max-width: toRem(555);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

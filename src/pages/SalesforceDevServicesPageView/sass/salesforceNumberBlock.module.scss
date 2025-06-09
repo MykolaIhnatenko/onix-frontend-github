@@ -1,0 +1,114 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: toRem(80) toRem(70) toRem(40);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(80) toRem(80) toRem(40);
+  }
+
+  .awards {
+    padding-top: toRem(60);
+    display: flex;
+
+    .awardsItem {
+      width: 50%;
+      display: flex;
+
+      &:last-child {
+        @media only screen and (min-width: $screen-xxl) {
+          margin-right: toRem(110);
+        }
+      }
+
+      .awardsIcon {
+        margin-right: toRem(10);
+      }
+
+      .awardsTitle {
+        font-size: toRem(24);
+        line-height: getLineHeight(34, 24);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .container {
+    padding: toRem(40) toRem(30) 0;
+
+    .title {
+      font-size: toRem(40);
+      line-height: getLineHeight(56, 40);
+    }
+  
+    .awards {
+      padding-top: toRem(40);
+  
+      .awardsItem {  
+        .awardsTitle {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md - 1) {
+  .container {
+    padding: 0 toRem(15);
+
+    .title {
+      font-size: toRem(25);
+      line-height: getLineHeight(35, 25);
+      br {
+        display: none;
+      }
+    }
+
+    .awards {
+      padding-top: 0;
+      flex-direction: column;
+
+      .awardsItem {
+        width: 100%;
+        padding-top: toRem(30);
+
+        .awardsTitle {
+          font-size: toRem(18);
+          line-height: getLineHeight(20, 18);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width: $screen-md) {
+  .container {
+    padding: toRem(40) toRem(30) 0;
+
+    .title {
+      font-size: toRem(40);
+      line-height: getLineHeight(56, 40);
+    }
+
+    .awards {
+      padding-top: toRem(40);
+      flex-direction: row;
+
+      .awardsItem {
+        width: 50%;
+        padding-top: 0;
+
+        .awardsTitle {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding: toRem(80) toRem(70) toRem(120);
+  display: flex;
+  justify-content: space-between;
+  .containerItem {
+    min-width: toRem(158);
+    max-width: toRem(158);
+    .icon {
+      text-align: center;
+    }
+    .title {
+      margin: toRem(20) 0 0 0;
+      text-align: center;
+      font-family: var(--generalSans);
+      font-size: toRem(20);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; 
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xl) {
+  .container {
+    padding: toRem(40) toRem(15) toRem(80);
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .container {
+    padding: toRem(40) toRem(0) toRem(80);
+    flex-wrap: wrap;
+    gap: 40px 110px;
+    .containerItem {
+      .icon {
+        text-align: center;
+      }
+      .title {
+        margin: toRem(20) 0 0 0;
+        text-align: center;
+        font-family: var(--generalSans);
+        font-size: toRem(20);
+        font-style: normal;
+        font-weight: 500;
+        line-height: toRem(28); 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md - 1) {
+  .container {
+    padding: toRem(40) toRem(0) toRem(60);
+    flex-wrap: wrap;
+    gap: 40px 36px;
+    .containerItem {
+      .icon {
+        text-align: center;
+      }
+      .title {
+        margin: toRem(20) 0 0 0;
+        text-align: center;
+        font-family: var(--generalSans);
+        font-size: toRem(20);
+        font-style: normal;
+        font-weight: 500;
+        line-height: toRem(28); 
+      }
+    }
+  }
+}
+
+@media only screen and (width: $screen-md) {
+  .container {
+    padding: toRem(40) toRem(0) toRem(80);
+    flex-wrap: wrap;
+    gap: 40px 70px;
+    .containerItem {
+      .icon {
+        text-align: center;
+      }
+      .title {
+        margin: toRem(20) 0 0 0;
+        text-align: center;
+        font-family: var(--generalSans);
+        font-size: toRem(20);
+        font-style: normal;
+        font-weight: 500;
+        line-height: toRem(28); 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-sm) {
+  .container {
+    padding: toRem(40) toRem(0) toRem(80);
+    flex-wrap: wrap;
+    gap: 40px 0;
+    .containerItem {
+      max-width: 50%;
+      min-width: 50%;
+      .icon {
+        text-align: center;
+      }
+      .title {
+        margin: toRem(20) 0 0 0;
+        text-align: center;
+        font-family: var(--generalSans);
+        font-size: toRem(20);
+        font-style: normal;
+        font-weight: 500;
+        line-height: toRem(28); 
+      }
+    }
+  }
+}

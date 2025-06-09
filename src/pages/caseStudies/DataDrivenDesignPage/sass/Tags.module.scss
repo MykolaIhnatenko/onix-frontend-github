@@ -1,0 +1,46 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.mainContainer {
+  margin: 160px auto 100px;
+
+  @media only screen and (max-width: 968px) {
+    margin: 82px auto 50px;
+  }
+}
+
+.title {
+  font-size: 44px;
+
+  @media only screen and (max-width: 968px) {
+    font-size: 28px;
+  }
+}
+
+.textContainer {
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 660px;
+  margin: 32px auto 0;
+
+  @media only screen and (max-width: 450px) {
+    font-size: 16px;
+  }
+}
+
+.tagsContainer {
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+
+  @media only screen and (max-width: 968px) {
+    margin: 32px auto 0;
+  }
+}
+
+.tagContainer {
+  @media only screen and (max-width: 968px) {
+    min-width: 60%;
+  }
+}

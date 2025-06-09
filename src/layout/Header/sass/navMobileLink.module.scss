@@ -1,0 +1,31 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container{
+  font-size: toRem(16);
+  font-weight: 500;
+  text-transform: uppercase;
+  padding:toRem(20) 0;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  border-top: 1px solid rgba(217,217,217,.3);
+
+  @media only screen and (max-width: $screen-lg) {
+    cursor: default;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding:toRem(20) 0;
+  }
+
+  .iconContainer{
+    margin-left: toRem(11);
+    display: flex;
+    transform: rotate(180deg);
+  }
+}
+
+.link {
+  padding: 0 0 toRem(20);
+}

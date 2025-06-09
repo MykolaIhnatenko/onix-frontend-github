@@ -1,0 +1,103 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$blue: #0055B4;
+$heading-color: #333;
+
+.main {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-top: 132px;
+
+  .contentWrapper {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    @media only screen and (min-width: 576px) {
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    @media only screen and (min-width: 768px) {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    @media only screen and (min-width: 1400px) {
+      max-width: 1340px;
+      margin: 0 auto;
+    }
+
+    .heading {
+      width: 231px;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 40px;
+      color: $heading-color;
+      white-space: normal;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 30px;
+      font-family: var(--muktaVaani);
+
+      .headingBlue {
+        color: $blue;
+      }
+      @media only screen and (min-width: 576px) {
+        text-align: start;
+        margin: 0;
+        padding-top: 0;
+      }
+      @media only screen and (min-width: 768px) {
+        width: 384px;
+        font-size: 50px;
+        line-height: 65px;
+        text-align: start;
+      }
+      @media only screen and (min-width: 1400px) {
+        width: 537px;
+        font-size: 70px;
+        line-height: 90px;
+        text-align: start;
+      }
+    }
+
+    .imageWrapper {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px;
+
+      .logo {
+        width: 276px;
+        height: auto;
+      }
+      @media only screen and (min-width: 576px) {
+        text-align: end;
+      }
+      @media only screen and (min-width: 1400px) {
+        width: auto;
+        margin: 0;
+        .logo {
+          width: 680px;
+        }
+      }
+    }
+
+    .brand {
+      display: none;
+      position: absolute;
+      left: 0;
+      @media only screen and (min-width: 576px) {
+        display: inline;
+        bottom: 0;
+      }
+      @media only screen and (min-width: 1400px) {
+        display: inline;
+        bottom: 25px;
+      }
+    }
+    @media only screen and (min-width: 576px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: start;
+    }
+  }
+}

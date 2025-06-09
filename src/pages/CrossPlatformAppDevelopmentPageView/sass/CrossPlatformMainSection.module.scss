@@ -1,0 +1,182 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainSection {
+  position: relative;
+  overflow: hidden;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    min-height: 100vh;
+  }
+
+  .bgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(80);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: 100%;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .container {
+    z-index: 1;
+    position: relative;
+    padding-left: toRem(70);
+    padding-right: toRem(70);
+    display: flex;
+    gap: toRem(40);
+    min-height: 100vh;
+    overflow-x: clip;
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-left: toRem(80);
+      padding-right: toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-left: toRem(30);
+      padding-right: toRem(30);
+      min-height: auto;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-left: toRem(15);
+      padding-right: toRem(15);
+    }
+
+    .contentBlock {
+      display: flex;
+      flex-direction: column;
+      padding: toRem(154) 0 toRem(70);
+      width: 50%;
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(154) 0 toRem(80);
+        width: 100%;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        max-width: none;
+        padding: toRem(139) 0 toRem(30);
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        padding: toRem(154) 0 toRem(80);
+      }
+
+      .title {
+        font-size: toRem(40);
+        line-height: getLineHeight(50, 40);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(50);
+          line-height: getLineHeight(64, 50);
+          margin-bottom: toRem(30);
+          max-width: toRem(708);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          margin-bottom: toRem(40);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-bottom: toRem(15);
+        }
+      }
+
+      .text {
+        margin-top: 0;
+        max-width: toRem(460);
+        
+        @media only screen and (max-width: ($screen-md - 1)) {
+          max-width: none;
+        }
+        &:first-of-type {
+          margin-bottom: auto;
+          margin-left: auto;
+          @media only screen and (max-width: $screen-lg) {
+            max-width: toRem(460);
+            margin-bottom: toRem(120);
+          }
+          @media only screen and (max-width: ($screen-md - 1)) {
+            margin-left: 0;
+            max-width: none;
+            margin-bottom: toRem(30);
+          }
+        }
+        &:nth-of-type(2) {
+          margin: 0;
+        }
+      }
+
+      .contactBtn {
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(400);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .animationBlock {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-height: calc(100vh + 1px);
+      margin-right: toRem(-40);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48%;
+      padding-top: 60px;
+      
+      img {
+        object-fit: cover;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        display: none;
+      }
+
+      .samsungContainer {
+        position: relative;
+        transition: all .1s linear;
+        .samsung {
+          max-width: 25vw;
+        }
+      }
+
+      .iphoneContainer {
+        position: relative;
+        transition: all .1s linear;
+        .iphone {
+          max-width: 25vw;
+          margin-bottom: toRem(96);
+          margin-left: toRem(-63);
+        }
+      }
+    }
+  }
+}

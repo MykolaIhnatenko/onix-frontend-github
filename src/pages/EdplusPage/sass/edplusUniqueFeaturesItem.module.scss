@@ -1,0 +1,40 @@
+@import "../../App/sass/mixinsAnimation";
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+
+.item {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: toRem(-17);
+    top: toRem(11);
+    display: block;
+    width: toRem(7);
+    height: toRem(7);
+    background-color: transparent;
+    border: 2px solid var(--color-edplus-blue);
+    @include radius(50%);
+    box-sizing: border-box;
+  }
+
+  .edplusTextStyle {
+    color: var(--color-mister-bnb-dark-gray);
+    font-weight: 400;
+    font-size: toRem(18);
+    line-height: getLineHeight(29, 18);
+    font-family: var(--muktaVaani);
+    letter-spacing: toRem(0.3);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(18);
+      line-height: getLineHeight(32, 18);
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+      letter-spacing: 0;
+    }
+  }
+}

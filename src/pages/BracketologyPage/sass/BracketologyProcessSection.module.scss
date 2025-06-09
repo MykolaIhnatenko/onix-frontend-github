@@ -1,0 +1,206 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.processSection {
+  background-color: var(--color-bracketology-background);
+  position: relative;
+
+  .processBg {
+    position: absolute;
+    top: toRem(56);
+    left: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(906);
+      top: toRem(80);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(1104);
+      top: 0;
+    }
+  }
+
+  .container {
+    z-index: 2;
+    position: relative;
+    padding-top: toRem(72);
+    padding-bottom: toRem(16);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(120);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(120);
+      padding-bottom: toRem(32);
+    }
+
+    h2 {
+      padding-bottom: toRem(24);
+      font-weight: 700;
+
+      @media only screen and (min-width: $screen-md) {
+        text-align: center;
+        font-weight: 800;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(32);
+        max-width: toRem(720);
+        margin: 0 auto;
+      }
+    }
+
+    .text {
+      @media only screen and (min-width: $screen-md) {
+        text-align: center;
+        font-size: toRem(20);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(840);
+        margin: 0 auto;
+        font-size: toRem(24);
+        line-height: toRem(32);
+      }
+    }
+
+    &:last-of-type {
+      padding-bottom: toRem(72);
+      padding-top: toRem(24);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(80);
+        padding-top: toRem(24);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(120);
+        padding-top: toRem(32);
+      }
+    }
+  }
+
+  .processCarouselContainer {
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  .processCardsContainer {
+    display: none;
+
+    @media only screen and (min-width: $screen-sm) {
+      display: block;
+      padding-top: 0;
+      padding-left: toRem(36);
+      padding-right: toRem(36);
+    }
+
+    @media only screen and (min-width: 650px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-left: toRem(20);
+      padding-right: toRem(20);
+      padding-bottom: toRem(32);
+    }
+
+    .processCardWrapper {
+      @media only screen and (min-width: $screen-sm) {
+        padding-left: toRem(12);
+        padding-right: toRem(12);
+        padding-top: toRem(24);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        flex-basis: 33.3%;
+        min-height: toRem(180);
+        align-self: stretch;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        flex-basis: 25%;
+      }
+
+      .processCard {
+        z-index: 3;
+        position: relative;
+        padding: toRem(24);
+        min-height: toRem(156);
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(93deg, #503929 0%, #22100C 56.33%, #52251F 100%);
+        transition: all 1s ease-out;
+
+        @media only screen and (min-width: $screen-sm) {
+          height: 100%;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          &:hover {
+            border-image-source: linear-gradient(93deg, #E35F00 0%, #100D0C 37.7%, #100D0C 56.33%, #E31B00 100%);
+
+            .processIconBlock {
+              span {
+                color: var(--color-bracketology-red);
+              }
+
+              .processIconBlockIcon {
+                color: var(--color-bracketology-red);
+              }
+            }
+          }
+        }
+
+        .processIconBlock {
+          display: flex;
+          align-items: flex-end;
+
+          span {
+            color: var(--color-bracketology-brown);
+            font-weight: 400;
+            font-size: toRem(30);
+            line-height: toRem(32);
+            padding-right: toRem(16);
+            transition: all 1s ease-out;
+          }
+
+          .processIconBlockIcon {
+            color: var(--color-bracketology-brown);
+            transition: all 1s ease-out;
+          }
+        }
+      }
+
+      p {
+        font-weight: 500;
+        font-size: toRem(18);
+        line-height: toRem(24);
+        letter-spacing: -0.3px;
+        padding-top: toRem(12);
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(20);
+          line-height: toRem(32);
+          letter-spacing: -0.4px;
+        }
+      }
+    }
+  }
+}

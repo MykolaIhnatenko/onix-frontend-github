@@ -1,0 +1,100 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  @include column;
+  width: 100%;
+  padding: toRem(80) 0;
+  background-color: var(--color-white);
+
+  .contentBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  .contentBoxMob {
+    width: 100%;
+    display: none;
+
+    @media only screen and (max-width: $screen-lg) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-family: var(--generalSans);
+  font-size: toRem(50);
+  line-height: toRem(64);
+  width: 50%;
+  padding: 0 toRem(70);
+  margin-bottom: toRem(40);
+  display: inline-block;
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: 0 toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    width: 85%;
+    font-size: toRem(40);
+    line-height: toRem(56);
+    padding: 0 toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(25);
+    line-height: toRem(35);
+    padding: 0 toRem(15);
+  }
+}
+
+
+.item {
+  width: 100%;
+  padding: toRem(30) toRem(30);
+  border-bottom: 2px solid var(--color-black);
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(21) toRem(15);
+  }
+
+  .contentContainer {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.textItem {
+  width: 85%;
+  font-weight: 500;
+  font-family: var(--generalSans);
+  font-size: toRem(30);
+  line-height: 40px;
+  display: inline-block;
+  white-space: normal;
+  
+  &:first-child {
+    display: inline-block;
+    width: 10%;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(20);
+    line-height: toRem(28);
+  }
+}

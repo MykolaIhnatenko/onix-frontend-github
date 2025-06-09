@@ -1,0 +1,169 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.locationSection {
+  position: relative;
+
+  .container {
+    padding-bottom: toRem(80);
+    z-index: 2;
+    position: relative;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(51);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(40);
+    }
+
+    .title {
+      color: var(--color-white);
+      padding-bottom: toRem(38);
+      font-size: toRem(20);
+      line-height: getLineHeight(30, 20);
+      max-width: toRem(146);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(30);
+        line-height: getLineHeight(40, 30);
+        padding-bottom: toRem(60);
+        max-width: 100%;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        font-size: toRem(36);
+        line-height: getLineHeight(46, 36);
+        padding-bottom: toRem(30);
+      }
+    }
+  }
+
+  .bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(910);
+
+    @media only screen and (min-width: $screen-sm) {
+      height: toRem(900);
+    }
+
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(840);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(770);
+    }
+
+    @media only screen and (width: $screen-lg) {
+      height: toRem(706);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      height: toRem(840);
+      bottom: toRem(60);
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      height: toRem(840);
+      bottom: toRem(100);
+    }
+
+    @media only screen and (min-width: $screen-xxl + 200) {
+      bottom: toRem(150);
+    }
+
+    @media only screen and (min-width: $screen-xxxl - 100) {
+      bottom: toRem(200);
+    }
+
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: toRem(450);
+      top: toRem(0);
+      left: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgb(2, 2, 2) 60.96%, rgba(0, 0, 0, 0) 100%);
+
+      @media only screen and (min-width: $screen-sm) {
+        height: toRem(505);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        height: toRem(340);
+        background: linear-gradient(180deg, rgb(2 2 2) 33.96%, rgba(0, 0, 0, 0) 100%);
+      }
+
+      @media only screen and (width: $screen-lg) {
+        background: linear-gradient(180deg, rgb(2 2 2) 23.96%, rgba(0, 0, 0, 0) 100%);
+        bottom: 60%;
+        height: toRem(285);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: none;
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        display: block;
+        height: toRem(300);
+      }
+
+      @media only screen and (min-width: $screen-xxxl - 100) {
+        display: block;
+        height: toRem(435);
+      }
+    }
+
+    &::after {
+      display: none;
+
+      @media only screen and (min-width: $screen-xxl) {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: toRem(120);
+        bottom: toRem(-10);
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(0deg, rgb(2, 2, 2) -3.96%, rgba(0, 0, 0, 0) 100%);
+      }
+    }
+
+    img {
+      object-fit: cover;
+      object-position: right -150px;
+
+
+      @media only screen and (min-width: $screen-sm - 170 ) {
+        object-position: right -350px;
+      }
+      @media only screen and (min-width: $screen-sm - 60 ) {
+        object-position: right -450px;
+      }
+
+      @media only screen and (min-width: $screen-sm) {
+        object-position: 0 calc(-100vw - 30px);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        object-position: right ;
+      }
+
+
+
+      @media only screen and (min-width: $screen-xl) {
+        object-position: top;
+      }
+    }
+  }
+}

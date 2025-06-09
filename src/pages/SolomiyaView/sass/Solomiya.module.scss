@@ -1,0 +1,45 @@
+@import "../../App/sass/mixinsFonts.scss";
+@import "../../App/sass/functions.scss";
+@import '../../App/sass/breakpointsVariables.scss';
+
+.bigBackgroundBlock {
+  background-image: url('../../../assets/images/AdoricCase/img_BackgroundTopMobile.webp');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+
+  @media only screen and (min-width: $screen-md) {
+    background-image: url('../../../assets/images/AdoricCase/img_BackgroundTopTablet.webp');
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    background-image: url('../../../assets/images/AdoricCase/img_BackgroundTop.webp');
+  }
+}
+
+.titleContainer {
+  width: 100%;
+
+  .title {
+    @include generalSansFont(50,500,64);
+    color: var(--color-white);
+
+    @media only screen and (max-width: $screen-md - 1) {
+      @include generalSansFont(25, 500, 35);
+    }
+  }
+}
+
+.hideItem {
+  display: none;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    display: inline-block;
+  }
+}
+
+.withoutTopPadding {
+  padding-top: 0 !important;
+}
+

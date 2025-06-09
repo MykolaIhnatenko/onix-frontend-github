@@ -1,0 +1,35 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+$colorLine: #C9C9D1;
+$colorIndicator: #9067C6;
+
+.progress {
+  height: inherit;
+  flex-basis: toRem(5);
+  display: block;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+
+  .progressLine {
+    width: toRem(1);
+    background-color: $colorLine;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: toRem(2);
+    z-index: 1;
+  }
+
+  .indicator {
+    width: toRem(5);
+    border-radius: toRem(10);
+    background: $colorIndicator;
+    display: block;
+    z-index: 2;
+    position: relative;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.list {
+  margin-top: toRem(20);
+
+  .itemList {
+    display: flex;
+    margin-bottom: toRem(5);
+  }
+}
+
+.symbolMargin {
+  margin-right: toRem(10) !important;
+  padding-top: toRem(5);
+}

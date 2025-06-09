@@ -1,0 +1,96 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.cardContainer {
+  max-width: 100%;
+  display: flex;
+  padding: toRem(30) toRem(30) toRem(40);
+  background-color: var(--color-white);
+
+  @media only screen and (max-width: $screen-md - 1) {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: toRem(20) toRem(15);
+  }
+
+  @media only screen and (width: $screen-md) {
+    flex-wrap: nowrap;
+    padding: toRem(30) toRem(30) toRem(40);
+  }
+
+  .cardItem {
+    &.cardNumber {
+      min-width: toRem(76);
+      font-family: var(--generalSans);
+      font-size: toRem(30);
+      font-style: normal;
+      font-weight: 500;
+      line-height: toRem(40);
+      padding-right: toRem(40);
+
+      @media only screen and (max-width: $screen-xl) {
+        min-width: toRem(56);
+        padding-right: toRem(20);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        min-width: toRem(76);
+        padding-right: toRem(40);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        min-width: toRem(84);
+        font-size: toRem(20);
+        line-height: toRem(28);
+        padding-right: 0;
+        padding-bottom: toRem(10);
+      }
+    }
+
+    .cardTitle {
+      margin-bottom: toRem(30);
+      font-family: var(--generalSans);
+      font-size: toRem(30);
+      font-style: normal;
+      font-weight: 500;
+      line-height: toRem(40);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(15);
+        font-size: toRem(20);
+        line-height: toRem(28);
+      }
+
+      @media only screen and (width: $screen-md) {
+        margin-bottom: toRem(30);
+        font-size: toRem(30);
+        line-height: toRem(40);
+      }
+    }
+    .cardText {
+      margin: 0;
+      font-size: toRem(18);
+      font-style: normal;
+      font-weight: 400;
+      line-height: toRem(26);
+
+      &.first {
+        padding-bottom: toRem(30);
+
+        @media only screen and (max-width: $screen-md - 1) {
+          padding-bottom: toRem(20);
+        }
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(14);
+        line-height: toRem(20);
+      }
+
+      .inlineBlock {
+        display: inline-block;
+      }
+    }
+  }
+}

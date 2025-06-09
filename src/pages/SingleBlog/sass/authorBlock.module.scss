@@ -1,0 +1,133 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.authorBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .blockTitle {
+    align-self: flex-start;
+  }
+
+  .authorContainer {
+    padding-bottom: toRem(30);
+    width: 100%;
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding-bottom: toRem(20);
+    }
+  }
+
+  .author {
+    padding-bottom: toRem(20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: toRem(15);
+
+    .authorContent {
+      display: flex;
+      align-items: center;
+      gap: toRem(15);
+
+      .contentBlock {
+        .name,
+        .position,
+        .writerName {
+          margin: 0;
+          text-align: left;
+        }
+
+        .name,
+        .writerName {
+          font-weight: 600;
+          padding: 0 0 toRem(10);
+        }
+
+        .name {
+          font-size: toRem(18);
+          line-height: getLineHeight(28, 18);
+          padding-bottom: toRem(5);
+
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(16);
+            line-height: getLineHeight(28, 16);
+            padding-bottom: 0;
+          }
+        }
+
+        .writerName {
+          font-size: toRem(18);
+          line-height: getLineHeight(28, 18);
+          letter-spacing: 0.28px;
+
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(16);
+            line-height: getLineHeight(28, 16);
+            letter-spacing: 0.32px;
+          }
+        }
+
+        .position {
+          font-size: toRem(16);
+          line-height: getLineHeight(24, 16);
+          letter-spacing: 0.28px;
+
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(14);
+            line-height: getLineHeight(22, 14);
+            letter-spacing: 0.32px;
+          }
+        }
+
+        .writerName {
+          font-size: toRem(18);
+          line-height: getLineHeight(28, 18);
+          padding-bottom: toRem(5);
+
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(16);
+            line-height: getLineHeight(28, 16);
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &.writer {
+      width: 100%;
+      padding-top: toRem(30);
+      padding-bottom: toRem(30);
+      border-top: 1px solid var(--color-light-gray);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-top: toRem(20);
+        padding-bottom: toRem(20);
+      }
+    }
+  }
+}
+
+.photo {
+  width: toRem(60);
+  height: toRem(60);
+  clip-path: inset(0 round 50%);
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    width: toRem(80);
+    height: toRem(80);
+  }
+}
+
+.shortBio {
+  margin: 0;
+  font-size: toRem(14);
+  line-height: getLineHeight(22, 14);
+  font-weight: 400;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(16);
+    line-height: getLineHeight(24, 16);
+  }
+}

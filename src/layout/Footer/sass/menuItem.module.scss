@@ -1,0 +1,56 @@
+@import '../../../pages/App/sass/functions';
+@import '../../../pages/App/sass/breakpointsVariables';
+
+.menuItem {
+  position: relative;
+  padding: toRem(30) 0;
+  background-color: var(--color-black);
+
+  @media only screen and (min-width: $screen-md) {
+    margin-bottom: toRem(30);
+    padding: 0;
+  }
+
+  .arrow {
+    display: inline-block;
+    width: toRem(20);
+    height: toRem(20);
+    position: absolute;
+    top: toRem(30);
+    right: 0;
+    transition: transform .3s ease-in-out;
+
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+    ul {
+      padding-top: toRem(40);
+      pointer-events: none;
+
+      @media only screen and (min-width: $screen-md) {
+        max-height: 100%;
+        transition: unset;
+        transform: unset;
+        padding-top: 0;
+    }
+  }
+}
+
+.active {
+  ul {
+    pointer-events: all;
+    position: relative;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 0;
+      z-index: unset;
+    }
+  }
+
+  .arrow {
+    transition: transform .3s ease-in-out;
+    transform: rotate(180deg);
+  }
+}

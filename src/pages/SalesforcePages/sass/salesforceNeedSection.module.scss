@@ -1,0 +1,75 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.needSection {
+  margin-top: toRem(100);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(50);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-top: toRem(40);
+  }
+
+  .container {
+    padding-bottom: toRem(40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (min-width: $screen-sm) {
+      padding-bottom: toRem(50);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(100);
+    }
+
+    h2 {
+      padding-bottom: toRem(10);
+      max-width: toRem(280);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(5);
+        padding-bottom: 0;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(533);
+        padding-top: toRem(8);
+        padding-bottom: toRem(20);
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      align-self: center;
+
+      @media only screen and (min-width: $screen-md) {
+        align-self: auto;
+      }
+
+      .item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: toRem(20);
+        max-width: toRem(280);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-top: toRem(30);
+          max-width: toRem(425);
+        }
+
+        .responsibilityIcon {
+          padding-right: toRem(10);
+          height: toRem(28);
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,228 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.edplusStudySmarter {
+  padding-top: toRem(132);
+  height: toRem(1020);
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    height: toRem(840);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    height: toRem(740);
+    padding-top: toRem(80);
+  }
+
+  .arrowImage {
+    width: toRem(123);
+    height: toRem(153);
+    position: absolute;
+    bottom: toRem(130);
+    left: 12%;
+
+    @media only screen and (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+}
+
+.edplusWrap {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 toRem(10);
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    width: 100%;
+    padding: 0;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: toRem(71);
+  
+    @media only screen and (max-width: $screen-lg) {
+      display: block;
+      margin-top: toRem(45);
+    }
+  
+    .leftCol {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+  
+      @media only screen and (max-width: $screen-xl) {
+        flex: 1;
+      }
+  
+      @media only screen and (max-width: $screen-lg) {
+        align-items: center;
+      }
+  
+      .logo {
+        width: toRem(138);
+        height: toRem(139);
+  
+        @media only screen and (max-width: ($screen-md - 1)) {
+          width: toRem(101);
+          height: toRem(102);
+        }
+      }
+    }
+  
+    .rightCol {
+      flex: 1;
+  
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(30);
+        height: toRem(538);
+      }
+  
+      @media only screen and (max-width: ($screen-md - 1)) {
+        height: toRem(450);
+      }
+    }
+  
+    .title {
+      padding-top: toRem(80);
+      letter-spacing: toRem(0.5);
+      color: var(--color-mister-bnb-dark-gray);
+      font-weight: 800;
+      font-size: toRem(64);
+      line-height: getLineHeight(54, 64);
+      font-family: var(--muktaVaani);
+      width: 98%;
+      white-space: nowrap;
+  
+      @media only screen and (max-width: $screen-xl) {
+        white-space: normal;
+        font-size: toRem(60);
+      }
+  
+      @media only screen and (max-width: $screen-lg) {
+        text-align: center;
+        font-size: toRem(34);
+        line-height: getLineHeight(36, 34);
+        padding-top: toRem(22);
+        width: 100%;
+      }
+  
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(36);
+        line-height: getLineHeight(44, 36);
+        letter-spacing: toRem(-0.3);
+      }
+    }
+  
+    .subtitle {
+      padding-top: toRem(50);
+      color: var(--color-edplus-gray2);
+      font-weight: 600;
+      font-size: toRem(33);
+      line-height: getLineHeight(55, 33);
+      font-family: var(--muktaVaani);
+      letter-spacing: 0;
+      width: 72%;
+      white-space: nowrap;
+  
+      @media only screen and (max-width: $screen-xl) {
+        white-space: normal;
+      }
+  
+      @media only screen and (max-width: $screen-lg) {
+        width: 100%;
+        text-align: center;
+        font-size: toRem(20);
+        line-height: getLineHeight(34, 20);
+        padding-top: toRem(8);
+        color: var(--color-mister-bnb-dark-gray);
+      }
+    }
+  }
+  
+  .backgroundPhoneLogo {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    width: toRem(761.63);
+    height: toRem(780);
+    background-color: var(--color-edplus-yellow);
+    border: 0;
+    border-bottom-left-radius: 50%;
+  
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: 97%;
+    }
+  
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: 102%;
+      height: toRem(703);
+    }
+  }
+  
+  .headPhone {
+    position: absolute;
+    z-index: -1;
+    top: toRem(218);
+    right: 0;
+    width: toRem(640);
+    height: toRem(768);
+  
+    @media only screen and (max-width: $screen-xl) {
+      max-width: toRem(700);
+    }
+  
+    @media only screen and (max-width: $screen-lg) {
+      position: relative;
+      top: toRem(10);
+      right: 0;
+      max-width: toRem(576);
+      max-height: toRem(538);
+      height: unset;
+      width: unset;
+      margin: 0 auto;
+    }
+  
+    @media only screen and (max-width: ($screen-md - 1)) {
+      max-width: toRem(450);
+    }
+  
+    @media only screen and (max-width: $screen-sm) {
+      max-height: toRem(450);
+    }
+  
+    &::after {
+      content: '';
+      width: 20%;
+      height: 70%;
+      position: absolute;
+      top: 0;
+      left: toRem(395);
+      background-color: #FBCB74;
+      filter: blur(toRem(10));
+      z-index: 1;
+  
+      @media only screen and (min-width: $screen-md) {
+        width: 10%;
+        height: 59%;
+        top: 0;
+        right: toRem(-20);
+        left: unset;
+      }
+  
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: none;
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+

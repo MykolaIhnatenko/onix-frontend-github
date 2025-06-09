@@ -1,0 +1,112 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$innerVRWhite: #C8C7D2;
+$innerVRYellow: #FFDA90;
+
+.accordion {
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    position: relative;
+    list-style: none;
+    min-height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .item {
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: 50%;
+    }
+
+    &:not(:last-of-type) {
+      .question {
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: 24px;
+        }
+      }
+    }
+
+    .question {
+      @media only screen and (min-width: $screen-lg + 1) {
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+      }
+
+      .titleGroup {
+        @media only screen and (min-width: $screen-lg + 1) {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .title {
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-family: var(--orbitronFont), sans-serif;
+            color: $innerVRWhite;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.1;
+          }
+        }
+
+        .arrow {
+          display: block;
+          width: 12px;
+          height: 20px;
+          opacity: 0;
+        }
+
+        .activeArrow {
+          opacity: 1;
+          position: relative;
+          top: 4px;
+          margin-right: 185px;
+          color: $innerVRYellow;
+        }
+      }
+    }
+
+    .answer {
+      display: none;
+    }
+
+    .answerActive {
+      @media only screen and (min-width: $screen-lg + 1) {
+        width: 49.3%;
+        top: -45px;
+        right: 0;
+        display: block;
+        position: absolute;
+      }
+    }
+
+    &.hoverItem {
+      .question {
+        .titleGroup {
+          .title {
+            color: $innerVRYellow;
+          }
+        }
+      }
+    }
+
+      &.active {
+      .question {
+        .titleGroup {
+          .title {
+            color: $innerVRYellow;
+          }
+        }
+      }
+
+      .text {
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: 474px;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+}

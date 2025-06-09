@@ -1,0 +1,66 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.resultSection {
+  .container {
+    padding-top: toRem(56);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(87);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(164);
+    }
+
+    .resultContent {
+      border-bottom: 1px solid #E0E4E9;
+      
+      .subTitle {
+        padding: toRem(16) 0 toRem(32);
+
+        @media only screen and (min-width: $screen-md) {
+          padding: toRem(16) 0 toRem(40);
+          max-width: toRem(659);
+        }
+
+        @media only screen and (min-width: $screen-lg  + 1) {
+          padding: toRem(8) 0 toRem(40);
+          max-width: unset;
+          letter-spacing: 0.2px;
+        }
+
+        br {
+          display: none;
+
+          @media only screen and (min-width: $screen-md) {
+            display: block;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: none;
+          }
+        }
+      }
+      
+      .text {
+        padding-bottom: toRem(32);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(56);
+          font-size: toRem(18);
+          line-height: getLineHeight(22, 18);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: toRem(104);
+          max-width: toRem(1100);
+          margin-left: auto;
+          font-size: toRem(20);
+          line-height: getLineHeight(25, 20);
+          letter-spacing: -0.8px;
+        }
+      }
+    }
+  }
+}

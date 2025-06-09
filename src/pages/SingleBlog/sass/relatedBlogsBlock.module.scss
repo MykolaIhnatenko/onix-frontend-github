@@ -1,0 +1,61 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.relatedBlogs {
+  @media only screen and (min-width: $screen-xxxl) {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding-top: toRem(80);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(1440);
+      padding-top: toRem(120);
+    }
+
+    .title {
+      font-size: toRem(25);
+      line-height: getLineHeight(35, 25);
+      font-weight: 500;
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(40);
+        line-height: getLineHeight(56, 40);
+        padding-bottom: toRem(10);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+        padding-bottom: 0;
+      }
+    }
+
+    hr {
+      border-top: 1px solid var(--color-black);
+      border-bottom: 1px solid var(--color-black);
+      border-left: 1px solid var(--color-black);
+      border-right: 1px solid var(--color-black);
+      margin-top: toRem(30);
+
+      @media only screen and (min-width: $screen-sm) {
+        display: none;
+      }
+    }
+  }
+
+  .blogsWrapper {
+    padding-bottom: toRem(40);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(1440);
+      margin: 0 auto;
+    }
+  }
+}
+

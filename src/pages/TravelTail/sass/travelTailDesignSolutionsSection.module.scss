@@ -1,0 +1,71 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.designSolutionsSection {
+  .container {
+    padding: toRem(80) 0 0;
+
+    @media only screen and (min-width: $screen-xl) {
+      padding: toRem(120) 0 0;
+    }
+
+    .title {
+      padding: 0 toRem(15) toRem(40);
+      font-size: toRem(50);
+
+      @media only screen and (min-width: $screen-md) {
+        line-height: getLineHeight(64, 50);
+        padding: 0 toRem(30) toRem(40);
+        max-width: toRem(600);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: 0 0 toRem(40) toRem(70);
+      }
+
+      @media only screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+        max-width: toRem(708);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+       padding-bottom: toRem(60);
+       font-size: toRem(40);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        padding: 0 toRem(70) toRem(10);
+        max-width: toRem(1083);
+      }
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-bottom: toRem(40);
+        font-size: toRem(25);
+      }
+    }
+  }
+}
+
+.list {
+  list-style: none;
+
+  .item {
+    font-family: var(--ibmPlexMono);
+    font-weight: 400;
+    font-size: toRem(18);
+    line-height: getLineHeight(24, 16);
+    padding-left: toRem(30);
+    position: relative;
+
+    &:not(:last-of-type) {
+      padding-bottom: toRem(20);
+    }
+
+    .preSign {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: toRem(13);
+      font-weight: 700;
+      overflow: hidden;
+    }
+  }
+}

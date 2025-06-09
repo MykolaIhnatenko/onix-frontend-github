@@ -1,0 +1,151 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.caseStudy {
+  padding-top: toRem(150);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(90);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-top: toRem(66);
+  }
+
+  h2 {
+    max-width: toRem(330);
+    margin-bottom: toRem(48);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(40);
+      max-width: toRem(212);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-bottom: toRem(24);
+    }
+  }
+
+  .text {
+    margin-bottom: toRem(72);
+    display: flex;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(48);
+      justify-content: unset;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-bottom: toRem(32);
+    }
+
+    p {
+      max-width: toRem(660);
+    }
+  }
+
+  .caseStudyItems {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: toRem(20);
+    margin-bottom: toRem(72);
+
+    @media only screen and (max-width: $screen-lg) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: toRem(48);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: toRem(16);
+    }
+
+    .caseStudyItem {
+      display: flex;
+      flex-direction: column;
+      height: toRem(244);
+      padding-left: 13%;
+      padding-top: 16%;
+      background: #F9F9F9;
+      border-radius: toRem(4);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-left: 12%;
+        padding-top: 22%;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-top: 15%;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-top: unset;
+        justify-content: center;
+        padding-left: 11.8%;
+
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+
+      &:first-child {
+        @media only screen and (max-width: ($screen-md - 1)) {
+          p {
+            max-width: toRem(255);
+          }
+        }
+      }
+
+      img {
+        margin-bottom: toRem(10);
+      }
+
+      .caseStudyItemTitle {
+        margin-bottom: toRem(6);
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: 150%;
+        opacity: 0.5;
+      }
+
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .girlWrapper {
+    position: relative;
+    height: toRem(623);
+    display: flex;
+    align-items: center;
+    padding-left: toRem(110);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-left: toRem(70);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-left: toRem(24);
+      height: toRem(469);
+    }
+
+    img {
+      border-radius: toRem(4);
+      object-fit: cover;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        max-width: toRem(183);
+        color: white;
+      }
+    }
+  }
+}

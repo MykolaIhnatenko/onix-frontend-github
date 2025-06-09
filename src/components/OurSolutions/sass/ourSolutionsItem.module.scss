@@ -1,0 +1,14 @@
+@import '../../../pages/App/sass/breakpointsVariables';
+@import '../../../pages/App/sass/functions';
+
+.containerAnimationImage {
+  > div {
+    height: inherit !important;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

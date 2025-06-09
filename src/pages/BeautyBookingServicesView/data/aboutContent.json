@@ -1,0 +1,25 @@
+{
+  "title": "How the Onix team designed a comprehensive platform aimed at helping people book beauty services provided by real professionals.",
+  "content": [
+    {
+      "id": 1,
+      "title": "Beauty",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "3 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "USA",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "3 months",
+      "text": "Project duration"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.contactUs {
+  padding-top: toRem(52);
+  padding-bottom: toRem(52);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(36) toRem(24);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: toRem(20) toRem(16) toRem(24);
+  }
+  
+  .contactWrapper {
+    background: var(--color-jsa-main-background-color);
+    backdrop-filter: blur(50px);
+    border-radius: toRem(32);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: toRem(60);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(60) toRem(51);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(24) toRem(16);
+    }
+
+    h2 {
+      margin-bottom: toRem(56);
+      text-align: center;
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(40);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(24);
+      }
+    }
+
+    div {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      background: var(--color-jsa-blue-color);
+      border-radius: 100px;
+      height: toRem(61);
+      width: 33.6vw;
+      font-size: toRem(20);
+      line-height: toRem(29);
+
+      @media only screen and (max-width: $screen-lg) {
+        width: 63.1vw;
+        cursor: default;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        width: 82.9vw;
+        height: toRem(45);
+      }
+    }
+  }
+}

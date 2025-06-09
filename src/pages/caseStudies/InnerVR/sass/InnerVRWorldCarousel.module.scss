@@ -1,0 +1,104 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$innerVRYellow: #FFDA90;
+
+.carousel {
+  width: 100%;
+  height: 520px;
+
+  @media only screen and (min-width: 374px) {
+    height: 485px;
+  }
+
+  @media only screen and (min-width: 450px) {
+    min-height: 620px;
+    height: 620px;
+  }
+
+  :global(.slider) {
+    outline: none;
+    border: none;
+
+    :global(.slider-frame) {
+      outline: none;
+      border: none;
+
+      :global(.slider-list) {
+        top: 40px !important;
+      }
+    }
+
+    :global(.slider-control-topright) {
+      outline: none;
+      border: none;
+    }
+  }
+
+  .carouselItemWrapper {
+    width: 100%;
+
+    .carouselItem {
+      height: calc(100% - 40px);
+
+      .title {
+        font-family: var(--orbitronFont), sans-serif;
+        color: $innerVRYellow;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.35;
+        padding-bottom: 16px;
+        padding-top: 27px;
+
+        @media only screen and (min-width: 450px) {
+          padding-bottom: 30px;
+        }
+      }
+
+      .image {
+        clip-path: inset(0 round 8px);
+        max-width: 100%;
+        height: 214px;
+        margin-bottom: 24px;
+
+        @media only screen and (min-width: 450px) {
+          margin-bottom: 30px;
+          height: 400px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .arrowContainer {
+    display: inline-block;
+    cursor: pointer;
+
+    @media only screen and (max-width: $screen-lg) {
+      cursor: default;
+    }
+  }
+
+  .leftArrow, .rightArrow{
+    width: 12px;
+    height: 20px;
+
+    .arrow {
+      color: $innerVRYellow;
+    }
+  }
+
+  .leftArrow {
+    margin-right: 40px;
+    transform: rotate(180deg);
+  }
+
+  .opacity {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

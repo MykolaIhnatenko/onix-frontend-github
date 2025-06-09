@@ -1,0 +1,252 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$whitePhotowhy: #FBFDFF;
+$saphirePhotowhy: #3B456F;
+$cobaltPhotowhy: #0F1C53;
+$blackPhotowhy: #010101;
+$redPhotowhy: #CE4B46;
+$coralPhotowhy: #EEC8C7;
+$orangeBlurPhotowhy: #FF844F;
+$redBlurPhotowhy: #FF0900;
+
+.interfacesSection {
+  background-position: 1%;
+  background-size: toRem(178) toRem(103);
+  background-color: $whitePhotowhy;
+  background-image:
+          linear-gradient(to right, rgba(48, 56, 63, 0.1) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(48, 56, 63, 0.1) 1px, transparent 1px);
+
+  .container {
+    padding-top: toRem(40);
+    padding-bottom: toRem(40);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(100);
+      padding-bottom: toRem(100);
+    }
+
+    h2 {
+      padding-bottom: toRem(10);
+      color: $cobaltPhotowhy;
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(550);
+        margin: 0 auto;
+        padding-bottom: toRem(8);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1191);
+        padding-bottom: toRem(40);
+      }
+    }
+
+    .cardsContainer {
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1198);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card {
+        max-width: toRem(343);
+        border-radius: toRem(28);
+        padding: toRem(24) toRem(32);
+        margin: toRem(6) auto 0;
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (min-width: $screen-md) {
+          margin-top: toRem(24);
+          max-width: toRem(539);
+          padding: toRem(32) toRem(40);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          margin-top: 0;
+          max-width: toRem(576);
+          padding: toRem(40) toRem(40);
+          flex-basis: 50%;
+        }
+
+        h3 {
+          font-weight: 400;
+          font-size: toRem(18);
+          line-height: toRem(30);
+          text-transform: uppercase;
+          max-width: toRem(144);
+          position: absolute;
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(20);
+            line-height: toRem(34);
+            max-width: toRem(160);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(32);
+            line-height: toRem(48);
+            max-width: toRem(255);
+          }
+        }
+
+        .firstCardColorTitle {
+          color: $cobaltPhotowhy;
+        }
+
+        .secondCardColorTitle {
+          color: $whitePhotowhy;
+        }
+
+        ul {
+          padding-top: toRem(76);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(76);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-top: toRem(137);
+          }
+
+          li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .bg {
+              position: relative;
+              width: toRem(11);
+              height: toRem(11);
+              margin-right: toRem(12);
+              margin-top: 2px;
+              flex-shrink: 0;
+
+              @media only screen and (min-width: $screen-md) {
+                width: toRem(20);
+                height: toRem(20);
+              }
+
+              @media only screen and (min-width: $screen-lg + 1) {
+                width: toRem(24);
+                height: toRem(24);
+                flex: 0 0 toRem(24);
+                margin-top: 0;
+              }
+            }
+
+            .text {
+              font-weight: 400;
+              font-size: toRem(16);
+              line-height: toRem(27);
+              text-align: left;
+
+              @media only screen and (min-width: $screen-md) {
+                font-size: toRem(18);
+                line-height: toRem(30);
+              }
+
+              @media only screen and (min-width: $screen-lg + 1) {
+                font-size: toRem(24);
+                line-height: toRem(40);
+              }
+            }
+
+            .firstCardColorText {
+              color: $saphirePhotowhy;
+              max-width: toRem(222);
+              z-index: 1;
+
+              @media only screen and (min-width: $screen-md) {
+                max-width: toRem(263);
+              }
+
+              @media only screen and (min-width: $screen-lg + 1) {
+                max-width: toRem(356);
+              }
+            }
+
+            .secondCardColorText {
+              color: $whitePhotowhy;
+              max-width: toRem(222);
+
+              @media only screen and (min-width: $screen-md) {
+                max-width: toRem(330);
+              }
+
+              @media only screen and (min-width: $screen-lg + 1) {
+                max-width: toRem(376);
+              }
+            }
+          }
+          li:not(:first-child) {
+            padding-top: toRem(16);
+
+            @media only screen and (min-width: $screen-md) {
+              padding-top: toRem(24);
+            }
+          }
+        }
+
+        .bgImage {
+          border-radius: toRem(28);
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: auto;
+
+          @media only screen and (min-width: $screen-md) {
+            width: 100%;
+            height: 100%;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            height: 100%;
+            width: auto;
+          }
+        }
+      }
+
+      .secondCard {
+        background-color: #E8534D;
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          margin-left: toRem(46);
+        }
+
+        .cardBlur {
+          position: absolute;
+          width: toRem(160);
+          height: toRem(259);
+          background-color: $orangeBlurPhotowhy;
+          filter: blur(182px);
+          top: toRem(23);
+          left: toRem(175);
+
+          @media only screen and (min-width: $screen-md) {
+            width: toRem(252);
+            height: toRem(292);
+            top: toRem(-42);
+            left: toRem(360);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            width: toRem(269);
+            height: toRem(362);
+            top: toRem(-53);
+            left: toRem(384);
+          }
+        }
+      }
+    }
+  }
+}

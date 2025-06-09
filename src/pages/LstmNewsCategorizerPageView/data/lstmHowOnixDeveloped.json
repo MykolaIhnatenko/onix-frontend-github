@@ -1,0 +1,25 @@
+{
+  "blockTitle": "Learn how the Onix team built the LSTM News Categorizer and language detection model, allowing users to seamlessly access categorized news, boosting engagement within the client's app.",
+  "data": [
+    {
+      "id": 1,
+      "title": "Mobile Communications",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "14 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "Kazakhstan",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "1 year",
+      "text": "Project duration"
+    }
+  ]
+}

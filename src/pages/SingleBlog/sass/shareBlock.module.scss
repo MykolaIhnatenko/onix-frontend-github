@@ -1,0 +1,122 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.shareBlock {
+  padding-top: toRem(60);
+  padding-bottom: toRem(30);
+  order: 2;
+
+  @media only screen and (min-width: 1280px) {
+    order: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: sticky;
+    margin-left: toRem(-100);
+    top: calc(-180px + 50vh);
+    flex: 0 0 50px;
+    width: 50px;
+    max-height: toRem(257);
+  }
+
+  .innerBlock {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (min-width: 1280px) {
+      flex-direction: column;
+      gap: toRem(15);
+    }
+
+    .links {
+      display: flex;
+
+      @media only screen and (min-width: 1280px) {
+        flex-direction: column;
+        gap: toRem(20);
+      }
+
+      .link {
+        width: toRem(38);
+        height: toRem(38);
+        border-radius: 10000px;
+        background-color: var(--color-black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+        margin: 0 toRem(10);
+
+        @media only screen and (min-width: $screen-md) {
+          width: 40px;
+          height: 40px;
+        }
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          cursor: pointer;
+        }
+
+        @media only screen and (min-width: $screen-xxl) {
+          margin: 0;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: var(--color-white);
+          transform:scale(0);
+          border-radius: 10000px;
+          transition: all .3s ease-in-out;
+        }
+
+        &:hover {
+          background-color: var(--color-white);
+
+          .icon {
+            transform: translateX(32px);
+          }
+
+          .iconHover {
+            left: 7.5px;
+          }
+
+          .instagramIcon {
+            top: 8px;
+            left: 8px;
+          }
+
+          .twitterIcon {
+            top: 10px;
+            left: 11px
+          }
+
+          &::before {
+            transform:scale(1);
+          }
+        }
+
+        .icon {
+          transition: all .3s ease-in-out;
+          color: var(--color-white);
+        }
+
+        .iconHover {
+          transition: all .3s ease-in-out;
+          color: var(--color-black);
+          position: absolute;
+          top: 6.5px;
+          left: -22px;
+        }
+
+        .twitterIcon {
+          top: 9px;
+        }
+      }
+    }
+  }
+}

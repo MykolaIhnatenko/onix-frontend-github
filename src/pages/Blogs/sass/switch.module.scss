@@ -1,0 +1,126 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  .switchButtons, .textBlock {
+    @media only screen and (min-width: $screen-md) {
+      padding-left: toRem(210);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      padding-left: toRem(478);
+    }
+  }
+
+  .switchButtons {
+    display: flex;
+
+    .switchButton {
+      border: 2px solid var(--color-black);
+      background-color: var(--color-white);
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: toRem(15);
+      line-height: getLineHeight(22, 15);
+      letter-spacing: 0.2px;
+      padding: toRem(9) 0;
+      min-width: toRem(166);
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.5s ease, color 0.5s ease;
+
+      @media only screen and (min-width: $screen-md) {
+        min-width: toRem(209);
+      }
+
+      &:first-of-type {
+        border-radius: toRem(21) 0 0 toRem(21);
+        border-right: 1px solid var(--color-black);
+      }
+
+      &:last-of-type {
+        border-radius: 0 toRem(21) toRem(21) 0;
+        border-left: 1px solid var(--color-black);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--color-black);
+          color: #fff;
+        }
+      }
+    }
+
+    .active {
+      background-color: #B6EDEE;
+    }
+  }
+
+  .textBlock {
+    padding-top: toRem(30);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(26);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      padding-top: toRem(40);
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: toRem(30);
+      line-height: getLineHeight(40, 30);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+      }
+    }
+
+    .text {
+      margin: 0;
+      padding: toRem(30) 0;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(40) 0;
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        max-width: toRem(760);
+      }
+    }
+
+    .button {
+      max-width: toRem(330);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(478);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        max-width: toRem(420);
+      }
+    }
+  }
+
+  .cases {
+    padding-bottom: toRem(64);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(28);
+    }
+  }
+
+  .portfolio {
+    padding-bottom: toRem(40);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "text": "the proper work with external hardware"
+  },
+  {
+    "id": 2,
+    "text": "development of an asynchronous data update model"
+  },
+  {
+    "id": 3,
+    "text": "bitwise encryption of binary data"
+  }
+]

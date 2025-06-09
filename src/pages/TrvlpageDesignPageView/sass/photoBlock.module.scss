@@ -1,0 +1,80 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding: toRem(10) 0;
+  display: flex;
+  gap: toRem(10);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(5) 0;
+    gap: toRem(5);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    flex-direction: column;
+  }
+
+  .firstImg {
+    width: 50%;
+    height: 50vw;
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: 100%;
+      height: 100vw;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .secondItemContainer {
+    width: 50%;
+    height: 50vw;
+    display: flex;
+    gap: toRem(10);
+
+    @media only screen and (max-width: $screen-lg) {
+      gap: toRem(5);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: 100%;
+      height: 100vw;
+    }
+
+    .secondItemList {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: toRem(10);
+
+      @media only screen and (max-width: $screen-lg) {
+        gap: toRem(5);
+      }
+
+      .imageItem {
+        flex: 1;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .thirtItem {
+      width: 70%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,919 @@
+@layer utilities {
+  // button animations
+
+  @keyframes MoveUpInitial {
+    to {
+      transform: translate3d(0, -150%, 0);
+    }
+  }
+
+  @keyframes MoveUpEnd {
+    from {
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .button-animation {
+    animation: MoveUpInitial .2s forwards, MoveUpEnd .2s forwards .2s;
+  }
+
+
+  // carousel animations
+
+  @keyframes achievements-ticker {
+    0% {
+      transform: translate3d(-3360px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes achievements-ticker-revert {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-6848px, 0, 0);
+    }
+  }
+
+  @keyframes achievements-ticker-mobile {
+    0% {
+      transform: translate3d(-1540px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes achievements-ticker-revert-mobile {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-3520px, 0, 0);
+    }
+  }
+
+  @keyframes projects-ticker {
+    0% {
+      transform: translate3d(-3128px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes projects-ticker-revert {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-3128px, 0, 0);
+    }
+  }
+
+  @keyframes projects-ticker-tablet {
+    0% {
+      transform: translate3d(-1600px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes projects-ticker-revert-tablet {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-1600px, 0, 0);
+    }
+  }
+
+  @keyframes projects-ticker-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(-1020px, 0, 0);
+      -webkit-transform: translate3d(-1020px, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes projects-ticker-revert-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(-1020px, 0, 0);
+      -webkit-transform: translate3d(-1020px, 0, 0);
+    }
+  }
+
+  @keyframes dedicated-team-projects-ticker {
+    0% {
+      transform: translate3d(-3975px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes dedicated-team-projects-ticker-tablet {
+    0% {
+      transform: translate3d(-2000px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes dedicated-team-projects-ticker-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(-1300px, 0, 0);
+      -webkit-transform: translate3d(-1300px, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes machine-projects-ticker {
+    0% {
+      transform: translate3d(-2346px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes machine-projects-ticker-revert {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-2381px, 0, 0);
+    }
+  }
+
+  @keyframes machine-projects-ticker-tablet {
+    0% {
+      transform: translate3d(-1200px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes machine-projects-ticker-revert-tablet {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-1200px, 0, 0);
+    }
+  }
+
+  @keyframes machine-projects-ticker-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(-765px, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes machine-projects-ticker-revert-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(-765px, 0, 0);
+      -webkit-transform: translate3d(-765px, 0, 0);
+    }
+  }
+
+  @keyframes salesforce-projects-ticker {
+    0% {
+      transform: translate3d(-3128px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes salesforce-projects-ticker-revert {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-2376px, 0, 0);
+    }
+  }
+
+  @keyframes salesforce-projects-ticker-tablet {
+    0% {
+      transform: translate3d(-1600px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes salesforce-projects-ticker-revert-tablet {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-1200px, 0, 0);
+    }
+  }
+
+  @keyframes salesforce-projects-ticker-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(-1020px, 0, 0);
+      -webkit-transform: translate3d(-1020px, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes salesforce-projects-ticker-revert-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(-765px, 0, 0);
+      -webkit-transform: translate3d(-765px, 0, 0);
+    }
+  }
+
+  @keyframes vr-projects-ticker {
+    0% {
+      transform: translate3d(-3910px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes vr-projects-ticker-revert {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-4692px, 0, 0);
+    }
+  }
+
+  @keyframes vr-projects-ticker-tablet {
+    0% {
+      transform: translate3d(-2000px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes vr-projects-ticker-revert-tablet {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-2400px, 0, 0);
+    }
+  }
+
+  @keyframes vr-projects-ticker-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(-1275px, 0, 0);
+      -webkit-transform: translate3d(-1275px, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes vr-projects-ticker-revert-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(-1530px, 0, 0);
+      -webkit-transform: translate3d(-1530px, 0, 0);
+    }
+  }
+
+  @keyframes android-projects-ticker {
+    0% {
+      transform: translate3d(-3128px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes android-projects-ticker-revert {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-3910px, 0, 0);
+    }
+  }
+
+  @keyframes android-projects-ticker-tablet {
+    0% {
+      transform: translate3d(-1600px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes android-projects-ticker-revert-tablet {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-2000px, 0, 0);
+    }
+  }
+
+  @keyframes android-projects-ticker-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(-1020px, 0, 0);
+      -webkit-transform: translate3d(-1020px, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes android-projects-ticker-revert-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(-1275px, 0, 0);
+      -webkit-transform: translate3d(-1275px, 0, 0);
+    }
+  }
+
+  @keyframes booking-ticker {
+    0% {
+      transform: translate3d(-3640px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes booking-ticker-revert {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-3640px, 0, 0);
+    }
+  }
+
+  @keyframes booking-ticker-tablet {
+    0% {
+      transform: translate3d(-1600px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes booking-ticker-revert-tablet {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-1600px, 0, 0);
+    }
+  }
+
+  @keyframes booking-ticker-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(-1020px, 0, 0);
+      -webkit-transform: translate3d(-1020px, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes booking-ticker-revert-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(-1020px, 0, 0);
+      -webkit-transform: translate3d(-1020px, 0, 0);
+    }
+  }
+
+  @keyframes web-design-projects-ticker {
+    0% {
+      transform: translate3d(-3128px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes web-design-projects-ticker-revert {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-3910px, 0, 0);
+    }
+  }
+
+  @keyframes web-design-projects-ticker-tablet {
+    0% {
+      transform: translate3d(-1600px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes web-design-projects-ticker-revert-tablet {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-2000px, 0, 0);
+    }
+  }
+
+  @keyframes web-design-projects-ticker-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(-1020px, 0, 0);
+      -webkit-transform: translate3d(-1020px, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes web-design-projects-ticker-revert-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(-1275px, 0, 0);
+      -webkit-transform: translate3d(-1275px, 0, 0);
+    }
+  }
+
+  @keyframes achievements-ticker-devops {
+    0% {
+      transform: translate3d(-7276px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes achievements-ticker-tablet-devops {
+    0% {
+      transform: translate3d(-2800px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes achievements-ticker-mobile-devops {
+    0% {
+      transform: translate3d(-3740px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes cross-platform-projects-ticker {
+    0% {
+      transform: translate3d(-3910px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes cross-platform-projects-ticker-revert {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-3128px, 0, 0);
+    }
+  }
+
+  @keyframes cross-platform-projects-ticker-tablet {
+    0% {
+      transform: translate3d(-2000px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes cross-platform-projects-ticker-revert-tablet {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-1600px, 0, 0);
+    }
+  }
+
+  @keyframes cross-platform-projects-ticker-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(-1275px, 0, 0);
+      -webkit-transform: translate3d(-1275px, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes cross-platform-projects-ticker-revert-mobile {
+    0% {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      will-change: transform;
+      transform: translate3d(-1020px, 0, 0);
+      -webkit-transform: translate3d(-1020px, 0, 0);
+    }
+  }
+
+  @keyframes skeleton-loading {
+    to {
+      background-position-x: -20%;
+    }
+  }
+
+  @keyframes shrink-expand {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.85);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animate-skeleton-loading {
+    animation: skeleton-loading 1s ease-in-out infinite;
+  }
+
+  .animate-achievements-projects {
+    animation: cross-platform-projects-ticker 68s linear infinite;
+  }
+
+  .animate-achievements-projects-revert {
+    animation: cross-platform-projects-ticker-revert 55s linear infinite;
+  }
+
+  .animate-achievements-projects-tablet {
+    animation: cross-platform-projects-ticker-tablet 55s linear infinite;
+  }
+
+  .animate-achievements-projects-tablet-revert {
+    animation: cross-platform-projects-ticker-revert-tablet 68s linear infinite;
+  }
+
+  .animate-achievements-projects-mobile {
+    animation: cross-platform-projects-ticker-mobile 50s linear infinite;
+  }
+
+  .animate-achievements-projects-mobile-revert {
+    animation: cross-platform-projects-ticker-revert-mobile 40s linear infinite;
+  }
+
+  .animate-crossPlatform-projects {
+    animation: cross-platform-projects-ticker 68s linear infinite;
+  }
+
+  .animate-crossPlatform-projects-revert {
+    animation: cross-platform-projects-ticker-revert 55s linear infinite;
+  }
+
+  .animate-crossPlatform-projects-tablet {
+    animation: cross-platform-projects-ticker-tablet 55s linear infinite;
+  }
+
+  .animate-crossPlatform-projects-tablet-revert {
+    animation: cross-platform-projects-ticker-revert-tablet 68s linear infinite;
+  }
+
+  .animate-crossPlatform-projects-mobile {
+    animation: cross-platform-projects-ticker-mobile 50s linear infinite;
+  }
+
+  .animate-crossPlatform-projects-mobile-revert {
+    animation: cross-platform-projects-ticker-revert-mobile 40s linear infinite;
+  }
+
+  .animate-webDesign-projects {
+    animation: web-design-projects-ticker 50s linear infinite;
+  }
+
+  .animate-webDesign-projects-revert {
+    animation: web-design-projects-ticker-revert 62s linear infinite;
+  }
+
+  .animate-webDesign-projects-tablet {
+    animation: web-design-projects-ticker-tablet 45s linear infinite;
+  }
+
+  .animate-webDesign-projects-tablet-revert {
+    animation: web-design-projects-ticker-revert-tablet 56s linear infinite;
+  }
+
+  .animate-webDesign-projects-mobile {
+    animation: web-design-projects-ticker-mobile 40s linear infinite;
+  }
+
+  .animate-webDesign-projects-mobile-revert {
+    animation: web-design-projects-ticker-revert-mobile 50s linear infinite;
+  }
+
+  .animate-main-projects {
+    animation: projects-ticker 50s linear infinite;
+  }
+
+  .animate-main-projects-revert {
+    animation: projects-ticker-revert 50s linear infinite;
+  }
+
+  .animate-main-projects-tablet {
+    animation: projects-ticker-tablet 40s linear infinite;
+  }
+
+  .animate-main-projects-tablet-revert {
+    animation: projects-ticker-revert-tablet 40s linear infinite;
+  }
+
+  .animate-main-projects-mobile {
+    animation: projects-ticker-mobile 40s linear infinite;
+  }
+
+  .animate-main-projects-mobile-revert {
+    animation: projects-ticker-revert-mobile 40s linear infinite;
+  }
+
+
+  .animate-salesforce-projects {
+    animation: salesforce-projects-ticker 45s linear infinite;
+  }
+
+  .animate-salesforce-projects-revert {
+    animation: salesforce-projects-ticker-revert 45s linear infinite;
+  }
+
+  .animate-salesforce-projects-tablet {
+    animation: salesforce-projects-ticker-tablet 45s linear infinite;
+  }
+
+  .animate-salesforce-projects-tablet-revert {
+    animation: salesforce-projects-ticker-revert-tablet 45s linear infinite;
+  }
+
+  .animate-salesforce-projects-mobile {
+    animation: salesforce-projects-ticker-mobile 40s linear infinite;
+  }
+
+  .animate-salesforce-projects-mobile-revert {
+    animation: salesforce-projects-ticker-revert-mobile 40s linear infinite;
+  }
+
+  .animate-android-projects {
+    animation: android-projects-ticker 60s linear infinite;
+  }
+
+  .animate-android-projects-revert {
+    animation: android-projects-ticker-revert 60s linear infinite;
+  }
+
+  .animate-android-projects-tablet {
+    animation: android-projects-ticker-tablet 50s linear infinite;
+  }
+
+  .animate-android-projects-tablet-revert {
+    animation: android-projects-ticker-revert-tablet 50s linear infinite;
+  }
+
+  .animate-android-projects-mobile {
+    animation: android-projects-ticker-mobile 50s linear infinite;
+  }
+
+  .animate-android-projects-mobile-revert {
+    animation: android-projects-ticker-revert-mobile 50s linear infinite;
+  }
+
+  .animate-machine-projects {
+    animation: machine-projects-ticker 45s linear infinite;
+  }
+
+  .animate-machine-projects-revert {
+    animation: machine-projects-ticker-revert 45s linear infinite;
+  }
+
+  .animate-machine-projects-tablet {
+    animation: machine-projects-ticker-tablet 37s linear infinite;
+  }
+
+  .animate-machine-projects-tablet-revert {
+    animation: machine-projects-ticker-revert-tablet 37s linear infinite;
+  }
+
+  .animate-machine-projects-mobile {
+    animation: machine-projects-ticker-mobile 37s linear infinite;
+  }
+
+  .animate-machine-projects-mobile-revert {
+    animation: machine-projects-ticker-revert-mobile 37s linear infinite;
+  }
+
+  .animate-vr-projects {
+    animation: vr-projects-ticker 65s linear infinite;
+  }
+
+  .animate-vr-projects-revert {
+    animation: vr-projects-ticker-revert 65s linear infinite;
+  }
+
+  .animate-vr-projects-tablet {
+    animation: vr-projects-ticker-tablet 60s linear infinite;
+  }
+
+  .animate-vr-projects-tablet-revert {
+    animation: vr-projects-ticker-revert-tablet 60s linear infinite;
+  }
+
+  .animate-vr-projects-mobile {
+    animation: vr-projects-ticker-mobile 50s linear infinite;
+  }
+
+  .animate-vr-projects-mobile-revert {
+    animation: vr-projects-ticker-revert-mobile 50s linear infinite;
+  }
+
+  .animate-achievements-devops {
+    animation: achievements-ticker-devops 95s linear infinite;
+  }
+
+  .animate-achievements-devops-revert {
+    animation: achievements-ticker-revert 95s linear infinite;
+  }
+
+  .animate-achievements-devops-mobile {
+    animation: achievements-ticker-mobile-devops 74s linear infinite;
+  }
+
+  .animate-achievements-devops-revert-mobile {
+    animation: achievements-ticker-revert-mobile 74s linear infinite;
+  }
+
+  .animate-dedicated-team-projects-ticker {
+    animation: dedicated-team-projects-ticker 47s linear infinite;
+  }
+
+  .animate-dedicated-team-projects-ticker-tablet {
+    animation: dedicated-team-projects-ticker-tablet 47s linear infinite;
+  }
+
+  .animate-dedicated-team-projects-ticker-mobile {
+    animation: dedicated-team-projects-ticker-mobile 45s linear infinite;
+  }
+
+  .animate-shrink-expand {
+    animation: shrink-expand 1.5s ease infinite;
+  }
+}

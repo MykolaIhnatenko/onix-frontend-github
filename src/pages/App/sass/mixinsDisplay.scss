@@ -1,0 +1,46 @@
+@mixin flex-basis($gap, $cols) {
+  flex: 0 1 calc((100% - $gap) * ($cols - 1) / $cols);
+}
+
+@mixin displayStart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin displayEnd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin displaySpaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin displayCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin displayColumnCenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin displayColumnStart {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@mixin displayColumnCenterBetween {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}

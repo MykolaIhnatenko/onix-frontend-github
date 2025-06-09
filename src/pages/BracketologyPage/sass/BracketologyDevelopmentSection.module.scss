@@ -1,0 +1,105 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.developmentSection {
+  background-color: var(--color-bracketology-background);
+
+  .container {
+    padding-top: toRem(56);
+    padding-bottom: toRem(56);
+
+    @media only screen and (min-width: $screen-sm) {
+      padding-top: toRem(80);
+      padding-bottom: toRem(124);
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(1260);
+      padding: toRem(120) toRem(30) toRem(160);
+    }
+
+    h2 {
+      padding-bottom: toRem(24);
+      font-weight: 700;
+
+      @media only screen and (min-width: $screen-sm) {
+        padding-bottom: toRem(40);
+        text-align: center;
+        font-weight: 800;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(998);
+        padding-bottom: toRem(96);
+        margin: 0 auto;
+      }
+    }
+
+    .titleTablet {
+      display: none;
+
+      @media only screen and (min-width: $screen-sm) {
+        display: block;
+        font-weight: 600;
+        font-size: toRem(22);
+        line-height: toRem(32);
+        color: var(--color-white);
+        text-transform: uppercase;
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        display: none;
+      }
+    }
+
+    .developmentContent {
+      @media only screen and (min-width: $screen-sm) {
+        display: flex;
+        padding: toRem(16) 0;
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        display: block;
+        padding: 0
+      }
+
+      .progressContainer {
+        display: none;
+
+        @media only screen and (min-width: $screen-sm) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          max-width: toRem(96);
+          flex-basis: toRem(96);
+        }
+
+        @media only screen and (min-width: $screen-xl) {
+          max-width: toRem(1196);
+          flex-basis: toRem(1196);
+        }
+      }
+
+      .accordionContainer {
+        @media only screen and (min-width: $screen-sm) {
+          padding-left: toRem(40);
+          max-width: toRem(576);
+          flex-basis: toRem(576);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          flex-basis: toRem(1100);
+          max-width: toRem(1100);
+        }
+
+        @media only screen and (min-width: $screen-xl) {
+          padding-top: toRem(32);
+          padding-left: 0;
+          max-width: toRem(1196);
+          flex-basis: unset;
+          height: toRem(206);
+        }
+      }
+    }
+  }
+}

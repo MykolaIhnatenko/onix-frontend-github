@@ -1,0 +1,20 @@
+<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50.667 23H64.0003V31H50.667V27V23Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M70.6667 27H64" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M50.667 27H26.667" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M23.9997 27H21.333" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M46.667 49.6667H60.0003V57.6667H46.667V53.6667V49.6667Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M70.6667 53.6667H60" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M46.667 53.6667H26.667" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M23.9997 53.6667H21.333" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M45.3333 36.3333H32V44.3333H45.3333V40.3333V36.3333Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M21.333 40.3333H31.9997" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M45.333 40.3333H65.333" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M68 40.3333H70.6667" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M4 23H13.3333" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M21.333 9.66675H71.9997C74.209 9.66675 75.9997 11.4574 75.9997 13.6667V59.0001C75.9997 61.2094 74.209 63.0001 71.9997 63.0001H21.333C19.1237 63.0001 17.333 61.2094 17.333 59.0001V13.6667C17.333 11.4574 19.1237 9.66675 21.333 9.66675Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M64 67C64 69.2093 62.2093 71 60 71H8C5.79067 71 4 69.2093 4 67V19C4 16.7907 5.79067 15 8 15H13.3333" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M71.9997 13.6667H69.333V16.3334H71.9997V13.6667Z" fill="black"/>
+    <path d="M66.6667 13.6667H64V16.3334H66.6667V13.6667Z" fill="black"/>
+    <path d="M61.3337 13.6667H58.667V16.3334H61.3337V13.6667Z" fill="black"/>
+</svg>

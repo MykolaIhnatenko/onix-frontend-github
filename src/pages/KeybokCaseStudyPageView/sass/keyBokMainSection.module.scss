@@ -1,0 +1,144 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  height: 100vh;
+  min-height: toRem(900);
+  max-height: toRem(1080);
+  
+  @media only screen and (max-width: $screen-xl) {
+    min-height: toRem(1200);
+  }
+  
+  @media only screen and (max-width: $screen-lg) {
+    min-height: unset;
+    height: toRem(1024);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    height: toRem(800);
+  }
+
+  @media only screen and (max-width: ($screen-sm - 1)) {
+    height: toRem(640);
+  }
+
+  .bgImage {
+    object-fit: cover;
+    object-position: 70% 90%;
+
+    @media only screen and (min-width: $screen-xxl) {
+      object-position: 90% 10%;
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      object-position: 37% 65%;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      object-position: 37% 80%;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      object-position: 50% 55%;
+    }
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      object-position: 50% 72%;
+    }
+
+    @media only screen and (max-width: ($screen-sm - 1)) {
+      object-position: 50% 60%;
+    }
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    
+    @media only screen and (min-width: ($screen-xl + 1)) {
+      height: 100%;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      padding: 0 toRem(30);
+    }
+
+    @media screen and (max-width: ($screen-md - 1)) {
+      padding: 0 toRem(15);
+    }
+
+    .textContent {
+      margin-top: toRem(0);
+
+      @media only screen and (max-width: $screen-xl) {
+        margin-top: toRem(154);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-top: toRem(139);
+      }
+
+      .iconBlock {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          width: toRem(80);
+          height: toRem(80);
+          margin-right: toRem(30);
+
+          @media only screen and (max-width: $screen-xl) {
+            width: toRem(70);
+            height: toRem(70);
+            margin-right: toRem(20);
+          }
+  
+          @media only screen and (max-width: ($screen-md - 1)) {
+            width: toRem(60);
+            height: toRem(60);
+            margin-right: toRem(15);
+          }
+        }
+
+        .iconBlockText {
+          @media only screen and (max-width: $screen-xl) {
+            font-size: toRem(40);
+            line-height: getLineHeight(56, 40);
+          }
+  
+          @media only screen and (max-width: ($screen-md - 1)) {
+            font-size: toRem(25);
+            line-height: getLineHeight(35, 25);
+          }
+        }
+      }
+
+      .text {
+        margin: toRem(40) 0 0;
+        max-width: toRem(450);
+        font-size: toRem(30);
+        line-height: getLineHeight(40, 30);
+
+        @media only screen and (min-width: $screen-xxxl) {
+          max-width: toRem(650);
+        }
+
+        @media only screen and (max-width: $screen-xl) {
+          margin: toRem(30) 0 0;
+          max-width: 100%;
+          font-size: toRem(24);
+          line-height: getLineHeight(34, 24);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin: toRem(15) 0 0;
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+        }
+      }
+    }
+  }
+}

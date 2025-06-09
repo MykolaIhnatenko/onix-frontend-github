@@ -1,0 +1,70 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  min-height: calc(100vh - toRem(189));
+
+  @media only screen and (max-width: $screen-lg) {
+    min-height: calc(100vh - toRem(153));
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    min-height: calc(100vh - toRem(163));
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(500);
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(400);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      height: toRem(328);
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(180);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #ffffff 100%);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        height: toRem(70);
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+  .content {
+    position: relative;
+    padding-bottom: toRem(120);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding-bottom: toRem(60);
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      max-width: toRem(1440);
+      padding-left: toRem(70);
+      padding-right: toRem(70);
+    }
+  }
+}

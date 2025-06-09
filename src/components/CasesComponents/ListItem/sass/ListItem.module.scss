@@ -1,0 +1,35 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.listItem {
+  display: flex;
+  color: var(--color-black);
+  margin: 0;
+
+  .circle {
+    display: block;
+    background-color: var(--color-black);
+    width: toRem(4);
+    height: toRem(4);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: toRem(10);
+    margin-right: toRem(10);
+
+    @media only screen and (min-width: $screen-md) {
+      margin-top: toRem(12);
+    }
+  }
+
+  .text {
+    margin: 0;
+  }
+}
+
+.gray {
+  color: var(--color-black);
+
+  .circle {
+    background-color: #666666;
+  }
+}

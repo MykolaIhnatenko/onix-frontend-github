@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M47.698 22.326L54.295 33.047C54.647 33.619 55.279 34 56 34C57.104 34 58 33.104 58 32C58 31.616 57.892 31.258 57.705 30.953L49.996 18.428C49.451 17.541 48.483 17 47.441 17H41.47C40.849 17 40.237 17.145 39.681 17.422L35.108 19.709L28.058 15.303C27.751 15.111 27.389 15 27 15C25.896 15 25 15.896 25 17C25 17.716 25.376 18.344 25.941 18.697L33.941 23.697C34.248 23.889 34.611 24 35 24C35.319 24 35.621 23.925 35.889 23.792L39 22.236V53L37.897 53.367C36.764 53.745 36 54.806 36 56C36 56.553 36.447 57 37 57H42C43.104 57 44 56.104 44 55V35" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M44 3C41.791 3 40 4.865 40 7.166V8.833C40 11.135 41.791 13 44 13C46.209 13 48 11.135 48 8.833V7.166C48 4.865 46.209 3 44 3Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M49 31V34.188L53.75 53.188L55.06 53.515C56.2 53.8 57 54.824 57 56C57 56.553 56.553 57 56 57H51.109C50.191 57 49.39 56.375 49.168 55.485L46.858 46.244" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M27 33H33C33.553 33 34 33.447 34 34V36C34 36.553 33.553 37 33 37H3C2.447 37 2 36.553 2 36V34C2 33.447 2.447 33 3 33H27Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32 22.4829V32.9999" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M27 5H30C31.104 5 32 5.896 32 7V17.767" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M4 33V7C4 5.896 4.896 5 6 5H28" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M11 10V13" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M8 19C8 20.104 8.896 21 10 21H12C13.104 21 14 20.104 14 19C14 17.896 13.104 17 12 17H10C8.896 17 8 16.104 8 15C8 13.896 8.896 13 10 13H12C13.104 13 14 13.896 14 15" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M11 24V21" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M29 10H18" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M18 14H24" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

@@ -1,0 +1,56 @@
+@import "../../App/sass/breakpointsVariables.scss";
+@import "../../App/sass/functions.scss";
+
+.mainTitle {
+  max-width: toRem(650);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    max-width: toRem(720);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: 100%;
+  }
+
+  .logoContainer {
+    position: relative;
+    width: toRem(385);
+    height: toRem(56);
+
+    @media only screen and (max-width: $screen-lg) {
+      width: toRem(302);
+      height: toRem(44);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: toRem(220);
+      height: toRem(32);
+    }
+  }
+
+  .title {
+    color: var(--color-white);
+    padding-top: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(30);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-top: toRem(15);
+    }
+
+    br {
+      display: none;
+
+      @media only screen and (max-width: $screen-lg) {
+        display: block;
+      }
+  
+      @media only screen and (max-width: ($screen-md - 1)) {
+        display: none;
+      }
+    }
+  }
+}
+

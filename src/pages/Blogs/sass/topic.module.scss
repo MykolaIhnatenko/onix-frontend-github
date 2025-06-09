@@ -1,0 +1,52 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.topic {
+  font-family: var(--ibmPlexMono);
+  font-size: toRem(18);
+  line-height: getLineHeight(26, 18);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @media only screen and (max-width: $screen-lg) {
+    cursor: default;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: toRem(20);
+  }
+
+  .box {
+    width: toRem(18);
+    height: toRem(18);
+    border: 1px solid var(--color-black);
+    margin-right: toRem(15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .innerBox {
+      display: inline-block;
+      width: toRem(12);
+      height: toRem(12);
+      background-color: transparent;
+    }
+  }
+
+  &.checked {
+    .box {
+      border: 1px solid var(--color-blue);
+
+      .innerBox {
+        background-color: var(--color-blue);
+      }
+    }
+  }
+
+  input {
+    display: none;
+  }
+}

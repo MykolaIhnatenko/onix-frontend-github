@@ -1,0 +1,146 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.businessContext {
+  padding-top: toRem(180);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(120);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-top: toRem(72);
+  }
+
+  h2 {
+    max-width: toRem(330);
+    margin-bottom: toRem(54);
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(212);
+      margin-bottom: toRem(32);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-bottom: toRem(46);
+    }
+  }
+
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media only screen and (max-width: $screen-lg) {
+      align-items: unset;
+    }
+
+    .maxWidth {
+      max-width: toRem(660);
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: unset;
+      }
+    }
+
+    .biggerText {
+      font-weight: 400;
+      font-size: toRem(24);
+      line-height: 150%;
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(20);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(18);
+      }
+    }
+
+    .smallerText {
+      margin-bottom: toRem(40);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(24);
+      }
+
+      &:nth-of-type(4) {
+        @media only screen and (max-width: $screen-lg) {
+          margin-bottom: toRem(40);
+        }
+        
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-bottom: toRem(32);
+        }
+      }
+    }
+
+    .buisnessContextItems {
+      margin-top: toRem(44);
+      margin-bottom: toRem(65);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(32);
+        margin-bottom: toRem(40);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-top: toRem(16);
+        margin-bottom: toRem(32);
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .buisnessContextItem {
+        min-height: toRem(127);
+
+        &:not(:last-child) {
+          border-right: 1px solid #DEDEDE;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            border-right: none;
+          }
+        }
+
+        &:not(:first-child) {
+          padding-left: 29.4%;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            padding-left: 0;
+          }
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          border-bottom: 1px solid #DEDEDE;
+          padding: toRem(16) 0 toRem(20) 0;
+        }
+
+        .buisnessContextItemTitle {
+          font-weight: 500;
+          font-size: toRem(64);
+          line-height: 150%;
+
+          @media only screen and (max-width: $screen-lg) {
+            font-size: toRem(48);
+          }
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            font-size: toRem(36);
+          }
+        }
+
+        .buisnessContextItemDescription {
+          font-weight: 500;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

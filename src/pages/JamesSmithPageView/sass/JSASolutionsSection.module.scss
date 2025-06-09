@@ -1,0 +1,89 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.solutionsSection {
+  position: relative;
+  padding-top: toRem(52);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(36);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-top: toRem(24);
+  }
+
+  .solutionsDescription {
+    display: flex;
+    gap: toRem(16);
+    justify-content: space-between;
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-bottom: toRem(24);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(16);
+      }
+    }
+
+    .title {
+      max-width: toRem(550);
+      text-align: left;
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: unset;
+      }
+    }
+
+    
+  }
+
+  .subTitle {
+    text-align: center;
+    margin-bottom: toRem(32);
+
+    br:nth-child(2) {
+      display: none;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(40);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-bottom: toRem(24);
+
+      br:first-child {
+        display: none;
+      }
+
+      br:nth-child(2) {
+        display: block;
+      }
+    }
+  }
+}
+
+.content {
+  max-width: toRem(715);
+  margin-bottom: toRem(104);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-bottom: toRem(72);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-bottom: toRem(40);
+  }
+
+  a {
+    color: var(--color-jsa-main-text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--color-jsa-blue-color);
+    text-underline-offset: toRem(5);
+  }
+}

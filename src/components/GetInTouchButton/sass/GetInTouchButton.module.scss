@@ -1,0 +1,72 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.roundButton {
+  width: toRem(225);
+  height: toRem(225);
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    width: toRem(140);
+    height:toRem(140);
+    cursor: default;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    width: toRem(90);
+    height:toRem(90);
+  }
+}
+
+.arrow {
+  height: toRem(60);
+  width: toRem(60);
+  transform: rotate(45deg);
+  margin: 0 auto;
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    height: toRem(37);
+    width: toRem(37);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    height: toRem(24);
+    width: toRem(24);
+  }
+}
+
+.circleText {
+  position: absolute;
+  width: toRem(225);
+  height: toRem(225);
+  animation: rotate 10s linear infinite;
+  border-radius: 50%;
+
+  @media only screen and (max-width: $screen-lg) {
+    width: toRem(140);
+    height: toRem(140);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    width: toRem(90);
+    height: toRem(90);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,105 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.leftBlock {
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  gap: toRem(30);
+  flex: 0 1 toRem(670);
+  
+  .title {
+    font-family: var(--generalSans);
+    font-weight: 500;
+    font-size: toRem(36);
+    line-height: toRem(46);
+    margin: 0;
+    max-width: toRem(470);
+    
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(30);
+      line-height: getLineHeight(40, 30);
+      max-width: toRem(500);
+    }
+    
+    @media only screen and (max-width: $screen-sm) {
+      max-width: toRem(300);
+      padding-left: toRem(15);
+    }
+    
+    &.pageMode {
+      font-family: var(--ibmPlexMono);
+    }
+  }
+  
+  .titleReferral {
+    font-size: toRem(36);
+    line-height: getLineHeight(46, 36);
+    max-width: toRem(580);
+    
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(30);
+      line-height: getLineHeight(40, 30);
+      max-width: toRem(480);
+    }
+  }
+}
+
+.rightBlock {
+  width: toRem(350);
+  gap: toRem(40);
+  
+  .rightBlockTitle {
+    margin: 0 0 0;
+    font-family: var(--generalSans);
+    font-size: toRem(30);
+    line-height: toRem(40);
+    font-weight: 500;
+  }
+  
+  .rightBlockReferralTitle {
+    margin-top: toRem(20);
+    font-size: toRem(30);
+    line-height: toRem(40);
+    font-weight: 500;
+  }
+  
+  @media only screen and (max-width: $screen-lg) {
+    display: none;
+  }
+  
+  .list {
+    gap: toRem(20);
+    padding-bottom: toRem(64);
+    
+    .item {
+      gap: toRem(10);
+      
+      &:not(:last-of-type) {
+        border-bottom: toRem(2) solid var(--color-black);
+      }
+      
+      span {
+        font-family: var(--generalSans);
+        font-size: toRem(30);
+        line-height: toRem(40);
+        font-weight: 500;
+      }
+      
+      h3, .rightBlockText {
+        font-family: var(--ibmPlexMono);
+        font-size: toRem(18);
+        line-height: toRem(26);
+        font-weight: 400;
+        padding-bottom: toRem(20);
+      }
+      
+      .referralID {
+        font-family: var(--generalSans);
+        font-size: toRem(24);
+        line-height: getLineHeight(34, 24);
+        font-weight: 500;
+      }
+    }
+  }
+}

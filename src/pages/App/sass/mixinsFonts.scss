@@ -1,0 +1,34 @@
+@import "./functions.scss";
+
+@mixin generalSansFont($fontSize, $fontWeight, $lineHeight) {
+  font-weight: $fontWeight;
+  font-family: var(--generalSans);
+  font-size: toRem($fontSize);
+  line-height: getLineHeight($lineHeight, $fontSize);
+}
+
+@mixin generalPlexMono($fontSize, $fontWeight, $lineHeight) {
+  font-weight: $fontWeight;
+  font-family: var(--ibmPlexMono);
+  font-size: toRem($fontSize);
+  line-height: toRem($lineHeight);
+}
+
+@mixin generalMuktaVaaniFont($fontSize, $fontWeight, $lineHeight, $color) {
+  font-weight: $fontWeight;
+  font-family: var(--muktaVaani), sans-serif;
+  font-size: toRem($fontSize);
+  line-height: toRem($lineHeight);
+  color: $color;
+}
+
+@mixin fontMain {
+  font-family: var(--generalSans);
+  font-weight: 500;
+}
+
+@mixin font-style($color, $fontWeight, $fontSize) {
+  color: $color;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+}

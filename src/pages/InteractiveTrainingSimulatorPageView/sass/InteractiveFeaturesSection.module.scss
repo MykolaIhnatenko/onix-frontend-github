@@ -1,0 +1,56 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.featuresSection {
+  z-index: 7;
+
+  .container {
+    padding: toRem(48) 0 toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(64) 0 toRem(40);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(104) 0 toRem(64);
+    }
+
+    .content {
+      position: relative;
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: flex;
+        gap: toRem(60);
+      }
+      
+      .title {
+        height: 100%;
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          flex-basis: 50%;
+          position: sticky;
+          top: 0;
+        }
+      }
+
+      h2 {
+        padding: toRem(32) 0 toRem(8);
+        color: #FBFDFF;
+
+        @media only screen and (min-width: $screen-md) {
+          padding: toRem(40) 0 toRem(16);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding: toRem(64) 0 0;
+        }
+      }
+
+      .cards {
+        @media only screen and (min-width: $screen-lg + 1) {
+          flex-basis: 50%;
+          padding-top: toRem(24);
+        }
+      }
+    }
+  }
+}

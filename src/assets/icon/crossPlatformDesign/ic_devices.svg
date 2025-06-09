@@ -1,0 +1,19 @@
+<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.5 48.5H29.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M17.5 51.5H15.5V53.5H17.5V51.5Z" fill="black"/>
+<path d="M16.5 40.5C21.4706 40.5 25.5 36.4706 25.5 31.5C25.5 26.5294 21.4706 22.5 16.5 22.5C11.5294 22.5 7.5 26.5294 7.5 31.5C7.5 36.4706 11.5294 40.5 16.5 40.5Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M7.5 44.5H25.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M32.5 46.5H55.5C56.052 46.5 56.5 46.052 56.5 45.5V4.5C56.5 3.948 56.052 3.5 55.5 3.5H16.5C15.948 3.5 15.5 3.948 15.5 4.5V15.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M28.5 6.5H26.5V8.5H28.5V6.5Z" fill="black"/>
+<path d="M24.5 6.5H22.5V8.5H24.5V6.5Z" fill="black"/>
+<path d="M20.5 6.5H18.5V8.5H20.5V6.5Z" fill="black"/>
+<path d="M35.5 16.5H51.5V34.5H35.5V16.5Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M52.5 38.5H32.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M52.5 42.5H32.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M56.5 11.5H15.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M16.5 32.5C18.1569 32.5 19.5 31.1569 19.5 29.5C19.5 27.8431 18.1569 26.5 16.5 26.5C14.8431 26.5 13.5 27.8431 13.5 29.5C13.5 31.1569 14.8431 32.5 16.5 32.5Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M43.5 26.5C45.1569 26.5 46.5 25.1569 46.5 23.5C46.5 21.8431 45.1569 20.5 43.5 20.5C41.8431 20.5 40.5 21.8431 40.5 23.5C40.5 25.1569 41.8431 26.5 43.5 26.5Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M27.5 18.5H5.5C4.396 18.5 3.5 19.395 3.5 20.5V54.5C3.5 55.604 4.396 56.5 5.5 56.5H27.5C28.604 56.5 29.5 55.604 29.5 54.5V20.5C29.5 19.395 28.604 18.5 27.5 18.5Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M39.5 34.5V33.5C39.5 31.843 40.843 30.5 42.5 30.5H44.5C46.157 30.5 47.5 31.843 47.5 33.5V34.5" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M12.5 39.564V38.5C12.5 36.843 13.843 35.5 15.5 35.5H17.5C19.157 35.5 20.5 36.843 20.5 38.5V39.564" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

@@ -1,0 +1,280 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.listWhiteSection {
+  position: relative;
+  background-color: var(--color-white);
+  z-index: 4;
+
+  .container {
+    padding: toRem(80) 0 toRem(45);
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(80) toRem(30) toRem(40);
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      padding: toRem(122) toRem(70) toRem(37);
+      max-width: toRem(1920);
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      padding: toRem(122) toRem(80) toRem(37);
+    }
+
+    .sectionTitle {
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(14);
+        line-height: getLineHeight(20, 14);
+      }
+    }
+
+    .sectionTitle, .subtitle, .text {
+      color: var(--color-black);
+      margin: 0;
+    }
+
+    .sectionText {
+      margin: 0;
+      color: var(--color-grey-title);
+    }
+
+    .sectionTitle, .sectionText {
+      padding: 0 toRem(15);
+
+      @media only screen and (min-width: $screen-md) {
+        padding: 0;
+      }
+    }
+
+    .subtitle {
+      padding: 0 toRem(15) toRem(5);
+      max-width: toRem(360);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(542);
+        padding: 0;
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1480);
+      }
+    }
+
+    .content {
+      .item {
+        padding: toRem(35) toRem(15);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: toRem(40);
+        }
+
+        @media only screen and (min-width: $screen-lg) {
+          display: flex;
+          padding-top: toRem(60);
+          padding-bottom: toRem(83);
+        }
+
+        .titleBlock {
+          display: flex;
+          padding-bottom: toRem(15);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-bottom: toRem(30);
+            align-items: center;
+          }
+
+          @media only screen and (min-width: $screen-lg) {
+            flex: 0 1 47.2%;
+            padding-bottom: 0;
+            align-items: flex-start;
+          }
+
+          .number {
+            margin-right: toRem(15);
+            font-family: var(--generalSans), sans-serif;
+            font-weight: 500;
+            font-size: toRem(20);
+            line-height: 1.4;
+
+            @media only screen and (min-width: $screen-md) {
+              margin-right: toRem(30);
+              font-size: toRem(30);
+              line-height: 1.33;
+            }
+
+            @media only screen and (min-width: $screen-lg) {
+              margin-right: toRem(45);
+              position: relative;
+              top: toRem(-6);
+            }
+          }
+
+          .title {
+            font-family: var(--generalSans), sans-serif;
+            font-weight: 500;
+            font-size: toRem(20);
+            line-height: 1.4;
+          }
+        }
+
+        .title {
+          @media only screen and (min-width: $screen-lg) {
+            max-width: toRem(215);
+          }
+
+          @media only screen and (min-width: $screen-xl) {
+            max-width: 100%;
+          }
+        }
+
+        .textBlock {
+          @media only screen and (min-width: $screen-lg) {
+            flex: 0 1 52.8%;
+            max-width: toRem(850);
+            margin-left: auto;
+          }
+
+          .list {
+            list-style: none;
+            padding-top: toRem(20);
+            padding-left: toRem(5);
+
+            @media only screen and (min-width: $screen-md) {
+              padding-left: toRem(8);
+            }
+
+            @media only screen and (min-width: $screen-lg) {
+              padding-top: toRem(8);
+              padding-left: 0;
+            }
+          }
+        }
+
+        &:first-of-type {
+          border-bottom: toRem(1) solid var(--color-black);
+
+          @media only screen and (min-width: $screen-md) {
+            border-bottom: toRem(2) solid var(--color-black);
+          }
+        }
+
+        &:last-of-type {
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(40);
+          }
+
+          @media only screen and (min-width: $screen-lg) {
+            padding-top: toRem(83);
+          }
+        }
+      }
+    }
+  }
+}
+
+.second {
+  .container {
+    .subtitle {
+      max-width: toRem(380);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(12);
+        max-width: toRem(600);
+      }
+
+      @media only screen and (min-width: $screen-lg) {
+        padding-bottom: toRem(5);
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1480);
+      }
+    }
+    .content {
+      .item {
+        @media only screen and (min-width: $screen-lg) {
+          padding-top: toRem(25);
+        }
+
+        .textBlock {
+          .list {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.third {
+  .container {
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(80);
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      padding-top: toRem(120);
+    }
+
+    .subtitle {
+      padding-top: toRem(20);
+      padding-bottom: toRem(20);
+      
+      @media only screen and (max-width: ($screen-xxxl - 1)) {
+        max-width: toRem(1080);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(16);
+        padding-bottom: toRem(16);
+      }
+
+      @media only screen and (min-width: $screen-lg) {
+        padding-top: toRem(18);
+        padding-bottom: toRem(35);
+      }
+    }
+
+    .sectionText {
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(550);
+      }
+
+      @media only screen and (min-width: $screen-lg) {
+        padding-bottom: toRem(23);
+      }
+    }
+
+    .content {
+      .item {
+        @media only screen and (min-width: $screen-md) {
+          padding-top: toRem(26);
+        }
+
+        @media only screen and (min-width: $screen-lg) {
+          padding-top: toRem(17);
+        }
+
+        .title {
+          @media only screen and (min-width: $screen-lg) {
+            max-width: toRem(281);
+          }
+
+          @media only screen and (min-width: $screen-xxl) {
+            max-width: 100%;
+          }
+        }
+
+        .textBlock {
+          .list {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.container {
+  position: relative;
+  max-width: toRem(530);
+  width: 100%;
+  background: var(--color-black);
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: initial;
+  }
+
+  .infoBlock {
+    padding: toRem(30);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(30);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(30) 0;
+    }
+
+    .phoneNumbers {
+      margin-bottom: toRem(30);
+
+      p {
+        @include generalSansFont(18, 400, 24);
+        color: var(--color-white);
+      }
+    }
+
+    .email {
+      @include generalSansFont(14, 400, 20);
+      color: var(--color-white);
+      text-decoration-line: underline;
+    }
+
+    .mediaContainer {
+      display: flex;
+      gap: toRem(10);
+      margin-top: toRem(30);
+      margin-bottom: toRem(30);
+    }
+
+    .addressText {
+      @include generalSansFont(14, 400, 18);
+      color: var(--color-white);
+      max-width: toRem(330);
+      margin-bottom: toRem(10);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .mapImage {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    max-height: toRem(610);
+  }
+}

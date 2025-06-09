@@ -1,0 +1,79 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.colorCodingSection {
+  background-color: var(--color-white);
+
+  .container {
+    padding-top: toRem(40);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(80);
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(120);
+    }
+
+    .textBlock {
+      max-width: 100%;
+      
+      @media only screen and (min-width: 1200px) {
+        max-width: 46%;
+      }
+
+      .title {
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+         padding-bottom: 0;
+        }
+      }
+
+      .text {
+        margin: 0;
+        padding-top: toRem(20);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-top: toRem(30);
+        }
+      }
+
+      div:nth-child(2) {
+        .text {
+          padding-top: toRem(20);
+  
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(40);
+          }
+        }
+      }
+    }
+
+    .imagesBlock {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px 20px;
+      padding: toRem(20) toRem(15) 0;
+
+      @media only screen and (min-width: $screen-md) {
+        flex-wrap: nowrap;
+        gap: 26px;
+        padding: toRem(40) 0 0;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        gap: 40px;
+        max-width: toRem(1200);
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  padding: 0 0 toRem(120);
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: 0 0 toRem(80);
+  }
+
+  .background {
+    position: absolute;
+    width: 100%;
+    max-height: toRem(1440);
+    height: toRem(1440);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: toRem(90);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #ffffff 100%);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: toRem(140);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #ffffff 100%);
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    background-color: var(--color-black);
+    padding-top: toRem(120);
+    padding-bottom: toRem(120);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(80);
+      padding-bottom: toRem(80);
+    }
+
+    .nameBlock {
+      margin: 0;
+      color: var(--color-white);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(14);
+      }
+    }
+
+    .title {
+      margin: toRem(20) 0 toRem(80);
+      max-width: toRem(1080);
+      color: var(--color-white);
+      
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1480);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin: toRem(20) 0 toRem(60);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin: toRem(15) 0 toRem(40);
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .accordionWrapper {
+    margin-top: toRem(120);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: toRem(80);
+    }
+  }
+
+  .table {
+    background: var(--color-pale-gray);
+    margin: toRem(120) toRem(70) toRem(80);
+    border-left: 2px solid var(--color-cruise);
+    padding: toRem(40);
+
+    @media only screen and (min-width: $screen-xxxl) {
+      margin: toRem(120) toRem(80) toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      margin: toRem(80) toRem(30) toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin: toRem(80) toRem(15) toRem(60);
+      padding: toRem(30);
+    }
+
+    .tableTitle {
+      font-size: toRem(24);
+      line-height: getLineHeight(34, 24);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+      }
+    }
+
+    .tableContent {
+      padding-top: toRem(30);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-top: toRem(20);
+      }
+
+      .tableList {
+        margin-left: toRem(17);
+        .tableListItem {
+          list-style: '﹂';
+          padding-left: toRem(10);
+          padding-bottom: toRem(5);
+
+          &:last-of-type {
+            padding-bottom: 0;
+          }
+
+          .tableText {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .subHeader {
+    display: block;
+    text-align: center;
+    max-width: toRem(820);
+    margin: 0 auto;
+    padding: 0 toRem(70);
+    font-size: toRem(24);
+    line-height: getLineHeight(34, 24);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: 0 toRem(30);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: 0 toRem(15);
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+    }
+  }
+}

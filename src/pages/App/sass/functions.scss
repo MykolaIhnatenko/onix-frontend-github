@@ -1,0 +1,11 @@
+//convert px to rem
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+//convert line-height in px to number
+@function getLineHeight($lineHeight, $fontSize) {
+  $numberValue: $lineHeight / $fontSize;
+  @return $numberValue;
+}

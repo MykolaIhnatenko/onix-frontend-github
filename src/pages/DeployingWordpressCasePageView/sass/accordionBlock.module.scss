@@ -1,0 +1,80 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  padding: 0 0 toRem(120);
+  position: relative;
+  background-color: transparent;
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: 0 0 toRem(80);
+  }
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: 0 0 toRem(40);
+  }
+  
+  .background {
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+    }
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: 0;
+    }
+    
+    .mainTitle {
+      padding-right: toRem(60);
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin: 0 0 toRem(60);
+        font-size: toRem(40);
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(25);
+        margin: 0 toRem(15) toRem(40);
+      }
+    }
+    
+    .number {
+      font-size: toRem(20);
+      font-weight: 500;
+      width: toRem(34);
+      min-width: toRem(34);
+      display: flex;
+      align-items: center;
+      
+      @media only screen and (min-width: $screen-md) {
+        display: none;
+      }
+    }
+    
+    .title {
+      font-size: toRem(30);
+      line-height: getLineHeight(40, 30);
+      font-weight: 500;
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+      }
+    }
+    
+    .text {
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(16);
+        line-height: getLineHeight(24, 16);
+      }
+    }
+  }
+}

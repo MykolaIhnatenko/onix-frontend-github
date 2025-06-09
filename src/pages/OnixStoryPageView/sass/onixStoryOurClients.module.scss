@@ -1,0 +1,328 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  padding: toRem(120) toRem(70) 0;
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(120) toRem(80) 0;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30) 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(60) toRem(15) 0;
+  }
+
+  .background {
+    object-fit: cover;
+    object-position: bottom;
+    @media only screen and (max-width: $screen-lg) {
+      height: 779px !important;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: 562px !important;
+    }
+  }
+
+  .content {
+    position: relative;
+
+    .text {
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+      max-width: toRem(945);
+      margin-bottom: toRem(80);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(50);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(18);
+        margin-top: toRem(30);
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+
+  .mapContainer {
+    position: relative;
+    .mapImage {
+      position: relative;
+      height: calc(100vw - 826px);
+      min-height: 430px;
+      max-height: 750px;
+      width: 100%;
+  
+      @media only screen and (max-width: $screen-lg) {
+        height: calc(100vw - 438px);
+        min-height: 333px;
+        max-height: 390px;
+      }
+  
+      @media only screen and (max-width: ($screen-md - 1)) {
+        height: calc(100vw - 205px);
+        min-height: 100px;
+        max-height: 290px
+      }
+  
+      .mapImage {
+        object-fit: fill;
+      }
+    }
+
+    .animationContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      .claster {
+        position: absolute;
+        z-index: 2;
+        cursor: default;
+        width: toRem(96);
+        height: toRem(96);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+
+        .clasterTitle {
+          font-size: toRem(14);
+          line-height: getLineHeight(18, 14);
+          width: toRem(38);
+          height: toRem(38);
+          background: var(--color-black);
+          color: var(--color-white);
+          border-radius: 1000px;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--color-black);
+            border-radius: 1000px;
+          }
+
+          &:before {
+            animation: pulseBefore 3s linear infinite;
+            opacity: 0.13;
+          }
+
+          &:after {
+            animation: pulseAfter 3s linear infinite;
+            opacity: 0.05;
+          }
+
+        }
+
+        &.revers {
+          .clasterTitle {
+            &:before {
+              animation: pulseBeforeRevers 3s linear infinite;
+            }
+  
+            &:after {
+              animation: pulseAfterRevers 3s linear infinite;
+            }
+          }
+        }
+      }
+
+      .clasterItem {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: toRem(7);
+        background: var(--color-white);
+        padding: toRem(4) toRem(8);
+        border: 2px solid var(--color-black);
+        border-radius: 100px;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 4px 9.899999618530273px 0px #00000080;
+
+        @media only screen and (max-width: $screen-xl) {
+          padding: toRem(3) toRem(6);
+          gap: toRem(5);
+        }
+        
+        .flag {
+          width: toRem(21);
+          height: toRem(14);
+        }
+        
+        .clasterItemText {
+          margin: 0;
+        }
+
+        &.small {
+          .clasterItemText {
+            font-weight: 700;
+            font-size: toRem(12);
+            line-height: getLineHeight(15.6, 12);
+            position: relative;
+            top: 1px;
+          }
+
+          @media only screen and (max-width: $screen-xl) {
+            .clasterItemText {
+              font-size: toRem(8.78);
+              line-height: getLineHeight(11.41, 8.78);
+            }
+
+            .flag {
+              width: toRem(18);
+              height: toRem(10);
+            }
+          }
+        }
+
+        &.medium {
+          .clasterItemText {
+            font-weight: 700;
+            font-size: toRem(14);
+            line-height: getLineHeight(18.2, 14);
+          }
+          
+          @media only screen and (max-width: $screen-xl) {
+            .clasterItemText {
+              font-size: toRem(10.24);
+              line-height: getLineHeight(13.31, 10.24);
+              position: relative;
+              top: 1px;
+            }
+
+            .flag {
+              width: toRem(20);
+              height: toRem(11);
+            }
+          }
+        }
+        
+        &.middle {
+          .clasterItemText {
+            font-weight: 700;
+            font-size: toRem(18);
+            line-height: getLineHeight(23, 18);
+          }
+
+          @media only screen and (max-width: $screen-xl) {
+            padding: toRem(3) toRem(6);
+            
+            .clasterItemText {
+              font-size: toRem(12.5);
+              line-height: getLineHeight(16.5, 12.5);
+              position: relative;
+              top: 1px;
+            }
+
+            .flag {
+              width: toRem(21);
+              height: toRem(12);
+            }
+          }
+        }
+
+        &.big {
+          padding: toRem(3.5) toRem(8);
+          
+          .flag {
+            width: toRem(31.5);
+            height: toRem(21);
+          }
+  
+          .clasterItemText {
+            font-weight: 700;
+            font-size: toRem(27.43);
+            line-height: getLineHeight(35.66, 27.43);
+            position: relative;
+            top: 1px;
+          }
+
+          @media only screen and (max-width: $screen-xl) {
+            padding: toRem(2.5) toRem(7);
+
+            .clasterItemText {
+              font-size: toRem(23.38);
+              line-height: getLineHeight(30.39, 23.38);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulseBefore {
+  0%{
+    width: toRem(38);
+    height: toRem(38);
+  }
+  50% {
+    width: toRem(68);
+    height: toRem(68);
+  }
+  100% {
+    width: toRem(38);
+    height: toRem(38);
+  }
+}
+
+@keyframes pulseAfter {
+  0%{
+    width: toRem(38);
+    height: toRem(38);
+  }
+  50% {
+    width: toRem(96);
+    height: toRem(96);
+  }
+  100% {
+    width: toRem(38);
+    height: toRem(38);
+  }
+}
+
+@keyframes pulseBeforeRevers {
+  0%{
+    width: toRem(68);
+    height: toRem(68);
+  }
+  50% {
+    width: toRem(38);
+    height: toRem(38);
+  }
+  100% {
+    width: toRem(68);
+    height: toRem(68);
+  }
+}
+
+@keyframes pulseAfterRevers {
+  0%{
+    width: toRem(96);
+    height: toRem(96);
+  }
+  50% {
+    width: toRem(38);
+    height: toRem(38);
+  }
+  100% {
+    width: toRem(96);
+    height: toRem(96);
+  }
+}

@@ -1,0 +1,290 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  background: var(--color-black);
+  color: var(--color-white);
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(520);
+
+    @media only screen and (max-width: $screen-md - 1) {
+      height: toRem(280);
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: toRem(70);
+      background: linear-gradient(180deg, rgba(253, 253, 253, 0) 5%, #000000 100%);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        height: toRem(110);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    position: relative;
+    padding-top: toRem(160);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(80);
+    }
+
+    .blockTitle {
+      max-width: toRem(1024);
+      padding-bottom: toRem(80);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-bottom: toRem(60);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-bottom: toRem(40);
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: toRem(12);
+
+      @media only screen and (max-width: $screen-xxl - 1) {
+        flex-wrap: wrap;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        gap: toRem(15);
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        background: var(--color-dark-gray4);
+        border: 1px solid var(--color-gray-border);
+        padding: 0 toRem(20) toRem(30);
+
+        @media only screen and (max-width: $screen-xxl - 1) {
+          flex: 0 0 calc(50% - 6px);
+          height: max-content;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          flex: calc(100%);
+        }
+
+        &.popular {
+          position: relative;
+          border: none;
+          background: var(--color-blue);
+
+          .itemHeader {
+            background: var(--color-blue);
+          }
+        }
+
+        .itemHeader {
+          border-bottom: 1px solid var(--color-gray-border);
+          background: var(--color-dark-gray4);
+          padding-top: toRem(30);
+          position: relative;
+          z-index: 1;
+          
+          @media only screen and (min-width: $screen-xxl) {
+            position: sticky;
+            top: toRem(70);
+          }
+
+          &.active {
+            position: sticky;
+            top: toRem(70);
+          }
+
+          .popularTab {
+            background: var(--color-cruise);
+            padding: toRem(4) toRem(10);
+            border-radius: toRem(21);
+            position: absolute;
+            top: toRem(30);
+            right: 0;
+            display: flex;
+            align-items: center;
+  
+            .fire {
+              margin-right: 5px;
+              position: relative;
+            }
+  
+            .popularTirle {
+              font-size: toRem(14);
+              line-height: getLineHeight(20, 14);
+              color: var(--color-black);
+            }
+          }
+  
+          .title {
+            font-size: toRem(20);
+            line-height: getLineHeight(28, 20);
+            padding-bottom: toRem(5);
+          }
+  
+          .subTitle {
+            font-size: toRem(14);
+            line-height: getLineHeight(20, 14);
+            font-weight: 400;
+            padding-bottom: toRem(20);
+          }
+  
+          .price {
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+            padding-bottom: toRem(20);
+  
+            &.noLineHeight {
+              line-height: 0;
+            }
+  
+            .fwNormal {
+              font-size: toRem(14);
+              line-height: getLineHeight(20, 14);
+              font-weight: 400;
+            }
+  
+            .fzNormal {
+              font-size: toRem(16);
+              line-height: getLineHeight(20, 16);
+            }
+          }
+  
+          .btn {
+            margin-bottom: toRem(25);
+            font-size: toRem(16);
+            line-height: getLineHeight(22, 16);
+            padding: toRem(9) toRem(10);
+          }
+        }
+
+        .listContainer {
+          @media only screen and (max-width: $screen-xxl - 1) {
+            padding-bottom: toRem(20);
+            overflow: hidden;
+            transition: all 0.5s linear;
+          }
+
+          .firstListContent,
+          .secondListContent {
+            padding-top: toRem(20);
+
+            .listTitle {
+              font-size: toRem(16);
+              line-height: getLineHeight(24, 16);
+              padding-bottom: toRem(15);
+            }
+
+            .list {
+              .listItem {
+                font-family: var(--generalSans);
+                padding-bottom: toRem(15);
+                font-size: toRem(14);
+                line-height: getLineHeight(20, 14);
+                display: flex;
+
+                &:last-of-type {
+                  padding-bottom: 0;
+                }
+
+                .icon {
+                  min-width: toRem(16);
+                  position: relative;
+                  top: toRem(-1);
+                  margin-right: toRem(12);
+                }
+
+                .listItemText {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          .firstListContent {
+            .list {
+              @media only screen and (max-width: $screen-xxl - 1) {
+                :nth-child(n + 4) {
+                  transition: opacity .3s linear;
+                  opacity: 0;
+                }
+              }
+            }
+          }
+
+          .secondListContent {
+            margin-top: toRem(20);
+            border-top: 1px solid var(--color-gray-border);
+
+            @media only screen and (max-width: $screen-xxl - 1) {
+              transition: opacity .3s linear;
+              opacity: 0;
+            }
+          }
+
+          &.active {
+            @media only screen and (max-width: $screen-xxl - 1) {
+              .firstListContent {
+                .list {
+                  :nth-child(n + 4) {
+                    opacity: 1;
+                  }
+                }
+              }
+
+              .secondListContent {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        .allBtn {
+          display: flex;
+          gap: toRem(10);
+          margin: auto auto 0;
+
+          @media only screen and (min-width: $screen-xxl) {
+            display: none;
+          }
+
+          .allBtnText {
+            font-size: toRem(16);
+            line-height: getLineHeight(22, 16);
+            text-transform: uppercase;
+          }
+
+          .allBtnIcon {
+            transition: all 0.3s linear;
+
+            &.active {
+              transform: rotateX(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

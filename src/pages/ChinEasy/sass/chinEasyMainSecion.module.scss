@@ -1,0 +1,260 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainSection {
+  overflow: hidden;
+  min-height: toRem(640);
+
+  @media only screen and (min-width: $screen-md) {
+    min-height: toRem(1024);
+    max-height: toRem(1024);
+  }
+  
+  @media only screen and (min-width: $screen-lg + 1) {
+    height: 100vh;
+    min-height: toRem(850);
+    max-height: toRem(1100);
+  }
+
+  @media only screen and (min-width: $screen-xl) {
+    overflow-x: clip;
+    min-height: toRem(850);
+    max-height: toRem(1000);
+  }
+
+  .container {
+    padding-top: toRem(139);
+    height: toRem(640);
+
+    @media only screen and (max-width: $screen-md - 1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      height: auto;
+      padding-top: toRem(154);
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      height: 100vh;
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      display: flex;
+      padding-top: toRem(80);
+      padding-right: 0;
+      min-height: toRem(850);
+      max-height: toRem(1050);
+    }
+
+    .contentBlock {
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 toRem(-40) 0;
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        padding-bottom: toRem(80);
+        margin: 0;
+      }
+
+      .title {
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(40);
+          line-height: getLineHeight(56, 40);
+        }
+
+        @media only screen and (min-width: $screen-xl + 1) {
+          font-size: toRem(50);
+          line-height: getLineHeight(64, 50);
+        }
+      }
+
+      .subtitle {
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+        padding-top: toRem(15);
+        padding-bottom: toRem(70);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(24);
+          line-height: getLineHeight(34, 24);
+          padding-top: toRem(30);
+          padding-bottom: toRem(136);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: 0;
+        }
+
+        @media only screen and (min-width: $screen-xl + 1) {
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+          padding-top: toRem(40);
+        }
+      }
+    }
+
+    .imagesBlock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0;
+      width: 100%;
+      min-height: toRem(320);
+      max-width: toRem(296);
+      
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(708);
+        min-height: toRem(560);
+        margin: toRem(80) auto 0;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        min-height: toRem(790);
+        max-height: toRem(790);
+      }
+
+      @media only screen and (min-width: $screen-xl) {
+        margin: toRem(130) auto 0;
+        min-height: toRem(690);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin: 0 auto 0;
+      }
+
+      .phone {
+        position: relative;
+        width: toRem(296);
+        height: toRem(320);
+
+        @media only screen and (min-width: $screen-md) {
+          position: absolute;
+          bottom: 0;
+          width: toRem(542);
+          height: toRem(596);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          width: toRem(666);
+          height: toRem(729);
+        }
+      }
+
+      .orange, .green, .pink, .purple {
+        transition: transform .7s cubic-bezier(.25, .46, .45, .94);
+      }
+
+      .orange {
+        position: absolute;
+        top: -60px;
+        left: -35px;
+        width: toRem(205);
+        height: toRem(236);
+        z-index: -1;
+
+        @media only screen and (min-width: $screen-md) {
+          width: toRem(425);
+          height: toRem(490);
+          top: -160px;
+          left: -25px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          width: toRem(615);
+          height: toRem(614);
+          top: -140px;
+          left: -210px;
+        }
+
+        @media only screen and (min-width: $screen-xl) {
+          top: -200px;
+          left: -190px;
+        }
+      }
+
+      .green {
+        position: absolute;
+        top: -35px;
+        right: -20px;
+        width: toRem(130);
+        height: toRem(125);
+        z-index: 1;
+
+        @media only screen and (min-width: $screen-md) {
+          top: -120px;
+          right: 15px;
+          width: toRem(271);
+          height: toRem(256);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          top: -70px;
+          right: -52px;
+          width: toRem(332);
+          height: toRem(314);
+        }
+
+        @media only screen and (min-width: $screen-xl) {
+          top: -130px;
+          right: -52px;
+        }
+      }
+
+      .pink {
+        position: absolute;
+        left: -105px;
+        bottom: -5px;
+        z-index: -1;
+        width: toRem(165);
+        height: toRem(160);
+
+        @media only screen and (min-width: $screen-md) {
+          left: -120px;
+          bottom: -10px;
+          width: toRem(300);
+          height: toRem(286);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          left: -295px;
+          width: toRem(420);
+          height: toRem(367);
+        }
+      }
+
+      .purple {
+        position: absolute;
+        bottom: -71px;
+        right: -130px;
+        width: toRem(290);
+        height: toRem(275);
+        z-index: 1;
+
+        @media only screen and (min-width: $screen-md) {
+          width: toRem(591);
+          height: toRem(544);
+          bottom: -151px;
+          right: -192px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          width: toRem(726);
+          height: toRem(668);
+          bottom: -187px;
+          right: -321px;
+        }
+
+        @media only screen and (min-width: $screen-xl) {
+          right: -344px;
+        }
+      }
+    }
+  }
+}

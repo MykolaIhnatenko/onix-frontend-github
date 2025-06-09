@@ -1,0 +1,91 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.blockContainer {
+  position: relative;
+  padding-top: toRem(120);
+  padding-bottom: toRem(120);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-top: toRem(40);
+    padding-bottom: toRem(40);
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contentContainer {
+    position: relative;
+
+    .mainTitle {
+      padding-bottom: toRem(40);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(20);
+      }
+    }
+
+    .content {
+      padding: toRem(55);
+      border: 2px solid var(--color-black);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(33);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(25);
+      }
+
+      .title {
+        font-size: toRem(30);
+        line-height: getLineHeight(40, 30);
+        padding-bottom: toRem(32);
+
+        @media only screen and (max-width: $screen-lg) {
+          padding-bottom: toRem(24);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(18);
+          line-height: normal;
+          padding-bottom: toRem(18);
+        }
+      }
+
+      .list {
+        list-style: disc;
+        padding-left: toRem(19);
+
+        .listItem {
+          margin: 0;
+          padding-bottom: toRem(20);
+        }
+
+        li {
+          &:last-of-type {
+            .listItem {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

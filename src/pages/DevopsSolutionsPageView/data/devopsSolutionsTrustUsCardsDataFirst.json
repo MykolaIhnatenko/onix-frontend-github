@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01",
+    "title": "Infrastructure Implementation & Management",
+    "content": "Our seasoned DevOps experts assist you in developing on-premise and cloud-based infrastructures, ensuring extreme load graceful degradation and disaster recovery/rollback mechanisms."
+  },
+  {
+    "id": "02",
+    "title": "Continuous Integration and Delivery",
+    "content": "We provide CI/CD pipelines to automate code builds, testing, and deployment, allowing developers to identify and fix issues in the code quickly."
+  },
+  {
+    "id": "03",
+    "title": "Infrastructure Migration",
+    "content": "We have the deep knowledge to guarantee a smooth infrastructure migration from one Cloud provider to another (AWS, Azure, GCloud, DigitalOcean, AliCloud, Dedicated server, VPS)."
+  },
+  {
+    "id": "04",
+    "title": "Containerization",
+    "content": "Our containerization services can help optimize software delivery and deployment by enabling developers to create lightweight, portable applications."
+  },
+  {
+    "id": "05",
+    "title": "DevOps Automation",
+    "content": "We help you automate your infrastructure to reduce the risk of errors and ensure consistency across the entire infrastructure. We improve your software development processes to deliver high-quality products and services more quickly and efficiently."
+  },
+  {
+    "id": "06",
+    "title": "Security Integration",
+    "content": "Our DevOps security experts integrate security into the software development and delivery process, identify security vulnerabilities in your existing systems, and develop strategies for integrating security into your DevOps workflows."
+  },
+  {
+    "id": "07",
+    "title": "DevOps Consulting",
+    "content": "Our team of experienced DevOps professionals can help organizations of all sizes to identify areas for improvement and implement solutions that meet their unique needs. We provide guidance and support to improve your software development and delivery processes."
+  },
+  {
+    "id": "08",
+    "title": "Monitoring & Maintenance",
+    "content": "We ensure your software and infrastructure operate smoothly and efficiently after deployment. Our experienced DevOps professionals monitor, optimize and maintain your systems so that you can focus on your core business objectives."
+  }
+]

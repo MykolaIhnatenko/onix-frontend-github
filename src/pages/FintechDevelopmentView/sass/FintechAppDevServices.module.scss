@@ -1,0 +1,56 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.titleContainer {
+  display: flex;
+  max-width: toRem(393);
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: 100%;
+  }
+
+  .number {
+    margin-right: toRem(45);
+    min-width: toRem(29); 
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-right: toRem(30);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-right: toRem(15);
+    }
+  }
+
+  .number, .title {
+    @include generalSansFont(24, 500, 34);
+    color: var(--color-white);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      @include generalSansFont(20, 500, 28);
+    }
+  }
+}
+
+.contentContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+
+  .text {
+    @include generalPlexMono(18, 400, 26);
+    margin-bottom: toRem(20);
+    margin-top: 0;
+    color: var(--color-white);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      @include generalPlexMono(16, 400, 24);
+    }
+  }
+}

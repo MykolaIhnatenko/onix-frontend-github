@@ -1,0 +1,1260 @@
+@import "../../App/sass/mixinsAnimation";
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+$shipvr-blue: #314758;
+$shipvr-blue2: #007bff;
+$shipvr-grey: #6C6C6C;
+$shipvr-shadow: 0 2px toRem(49) 0 rgba(23, 128, 224, 0.27);
+$lightBlue: #4a90e2;
+
+.shipvrsimulator__content {
+  font-family: var(--muktaVaani);
+  overflow: hidden;
+  
+  .row {
+    display: flex;
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: 0;
+    }
+    
+    &.logos {
+      padding-bottom: toRem(40);
+      
+      @media only screen and (max-width: $screen-lg) {
+        padding-bottom: 0;
+      }
+    }
+    
+    .logoItem {
+      max-width: toRem(131);
+      max-height: toRem(34);
+      margin: 0 toRem(10);
+      
+      img {
+        @media only screen and (max-width: $screen-md - 1) {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    
+    &.introduction {
+      @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+      }
+    }
+    
+    &.approach {
+      min-height: toRem(143);
+      max-width: toRem(724);
+      margin: auto;
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin: 0;
+        max-width: 100%;
+      }
+      
+      .itemText {
+        flex: 1;
+        padding-bottom: toRem(20);
+        
+        @media only screen and (max-width: $screen-lg) {
+          padding: 0 toRem(15);
+        }
+      }
+    }
+    
+    .challengesList {
+      padding: 0 toRem(15);
+      
+      &.paddingBottom {
+        padding-bottom: toRem(20);
+      }
+    }
+    
+    &.approachImgBlock {
+      max-width: toRem(1050);
+      margin: 0 auto;
+      padding: 0 toRem(15);
+      
+      @media only screen and (max-width: $screen-xl) {
+        max-width: toRem(1000);
+      }
+      
+      @media only screen and (max-width: $screen-lg) {
+        display: block;
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: 0;
+      }
+      
+      .approachImage {
+        flex-basis: toRem(564);
+        
+        @media only screen and (max-width: $screen-lg) {
+          max-width: toRem(620);
+          max-height: toRem(487);
+          margin: 0 auto;
+        }
+        
+        @media only screen and (max-width: $screen-lg) {
+          display: none;
+        }
+        
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    
+    .notPadding {
+      @media only screen and (max-width: $screen-lg) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-left: toRem(15) !important;
+        padding-right: toRem(15) !important;
+      }
+    }
+    
+    &.visualAppHeroes,
+    &.controls,
+    &.displaysAndScreens,
+    &.menuAll {
+      h3 {
+        text-align: left;
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          text-align: center;
+        }
+      }
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      &.visualAppHeroes,
+      &.controls,
+      &.displaysAndScreens {
+        flex-direction: column;
+      }
+    }
+    
+    &.openingSequence,
+    &.sMission,
+    &.gameBeginning {
+      align-items: center;
+      
+      h3 {
+        text-align: left;
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          text-align: center;
+        }
+      }
+    }
+    
+    &.bottomContent {
+      overflow: hidden;
+      
+      &::after {
+        background: $lightBlue;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: toRem(420) 500vw 0 0;
+        border-color: var(--color-white) transparent transparent transparent;
+        line-height: 0;
+        z-index: -1;
+        position: relative;
+        top: 100%;
+        
+        @media only screen and (max-width: $screen-lg) {
+          border-width: toRem(380) 500vw 0 0;
+        }
+        
+        @media only screen and (max-width: ($screen-md - 1)) {
+          border-width: toRem(360) 500vw 0 0;
+        }
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          border-width: toRem(190) 500vw 0 0;
+        }
+      }
+    }
+    
+    &.visualAppHeroesContent,
+    &.majorChallenges {
+      margin-bottom: toRem(40);
+    }
+    
+    &.techStack,
+    &.sMissionContent,
+    &.displaysAndScreensContent {
+      margin-bottom: toRem(60);
+      
+      @media only screen and (max-width: $screen-lg) {
+        padding: 0 toRem(15);
+        margin-bottom: toRem(20);
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-bottom: toRem(20);
+        padding: 0 0 toRem(15);
+      }
+    }
+    
+    &.displaysAndScreens {
+      margin-bottom: toRem(30);
+      
+      @media only screen and (max-width: $screen-lg) {
+        padding: 0 toRem(15);
+        margin-bottom: toRem(20);
+      }
+    }
+    
+    &.displaysAndScreensContent {
+      p {
+        &:first-child {
+          margin-bottom: toRem(10);
+        }
+      }
+      
+      ul {
+        padding: 0 toRem(15);
+      }
+    }
+    
+    &.sMission {
+      
+      .content {
+        padding: 0 toRem(70);
+        max-width: toRem(600);
+        
+        @media only screen and (max-width: $screen-xxl) {
+          max-width: 100%;
+        }
+        
+        @media only screen and (max-width: $screen-lg) {
+          padding: 0 toRem(15);
+        }
+      }
+    }
+    
+    &.gameBeginning {
+      margin-bottom: toRem(60);
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(40);
+      }
+      
+      .content {
+        flex: 2;
+        padding: 0 toRem(50) 0 toRem(10);
+        max-width: toRem(500);
+        
+        @media only screen and (max-width: $screen-xl) {
+          max-width: 100%;
+          padding: 0 toRem(50);
+        }
+        
+        @media only screen and (max-width: $screen-xl) {
+          padding: 0 toRem(15);
+        }
+      }
+    }
+    
+    &.majorChallenges,
+    &.userFlowOfTheAppContent,
+    &.sMissionContent {
+      p {
+        margin-bottom: toRem(15);
+      }
+    }
+    
+    &.userFlowOfTheAppContent {
+      
+      @media only screen and (max-width: $screen-lg) {
+        
+        padding: 0 toRem(15);
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: 0;
+      }
+    }
+    
+    &.menuAll {
+      margin-bottom: toRem(20);
+      
+      .content {
+        padding: 0 toRem(10) 0 toRem(50);
+        max-width: toRem(600);
+        
+        @media only screen and (max-width: $screen-xxl) {
+          max-width: 100%;
+        }
+        
+        @media only screen and (max-width: $screen-lg) {
+          
+          padding: 0 toRem(15);
+        }
+      }
+    }
+    
+    &.majorChallenges {
+      h2 {
+        margin-bottom: toRem(15);
+      }
+      
+      .itemText {
+        flex: 1;
+        
+        @media only screen and (max-width: $screen-lg) {
+          padding: 0 toRem(15);
+        }
+      }
+    }
+    
+    &.controls,
+    &.displaysAndScreens,
+    &.visualAppHeroes {
+      
+      .itemText {
+        display: flex;
+        padding: 0 toRem(20);
+        align-items: center;
+        
+        @media only screen and (max-width: $screen-lg) {
+          padding: 0 toRem(15);
+        }
+      }
+    }
+    
+    &.visualAppHeroesContent {
+      padding-top: toRem(20);
+      
+      p {
+        margin-bottom: toRem(20);
+        
+        &.padding {
+          padding: 0 toRem(20);
+        }
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(20) toRem(15) 0;
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: toRem(15) 0;
+      }
+    }
+    
+    &.controls {
+      margin-bottom: toRem(20);
+      
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(20) toRem(15) 0;
+      }
+    }
+    
+    &.techStack {
+      h2 {
+        margin-bottom: toRem(20);
+        @media only screen and (max-width: $screen-md - 1) {
+          margin-bottom: toRem(10);
+        }
+      }
+      
+      p {
+        padding: 0 toRem(20);
+        text-align: center;
+        
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding: 0;
+        }
+      }
+    }
+    
+    &.techStackSoft {
+      margin-bottom: toRem(40);
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: 0;
+      }
+      
+      .itemImage {
+        padding: 0 toRem(15);
+      }
+    }
+    
+    &.intTitle {
+      height: toRem(100);
+      flex: 5;
+      padding-top: toRem(170);
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        padding-top: toRem(152);
+      }
+      
+      .itemText {
+        text-align: center;
+      }
+    }
+    
+    &.forWhomThisProduct {
+      margin-top: toRem(100);
+      margin-bottom: toRem(100);
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(30);
+        padding: 0 toRem(15);
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: 0;
+      }
+    }
+    
+    &.openingSequence {
+      margin-bottom: toRem(80);
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: 0;
+      }
+      
+      .content {
+        flex: 2;
+        padding: 0 toRem(70);
+        max-width: toRem(580);
+        
+        @media only screen and (max-width: $screen-xxl) {
+          padding: 0;
+          max-width: toRem(470);
+          margin-top: toRem(40);
+        }
+        
+        @media only screen and (max-width: $screen-xl) {
+          padding: 0 toRem(15);
+        }
+        
+        @media only screen and (max-width: $screen-lg) {
+          max-width: 100%;
+          margin-bottom: toRem(20);
+        }
+      }
+    }
+    
+    &.result {
+      background: $lightBlue;
+      
+      .itemText {
+        margin: toRem(50) 0 toRem(100);
+        text-align: center;
+        
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-bottom: toRem(40);
+        }
+        
+        h2 {
+          margin-bottom: toRem(20);
+        }
+      }
+    }
+    
+    &.flex {
+      justify-content: flex-end;
+    }
+    
+    &.forWhomThisProductImg,
+    &.approachContent {
+      position: relative;
+      
+      &::before {
+        content: "";
+        height: toRem(6000);
+        width: toRem(4000);
+        @include rotate(79);
+        @include radius(0);
+        border: none;
+        @include shadow(15px 0 toRem(45) 0 rgba(23, 127, 224, 0.21));
+        position: absolute;
+        top: toRem(-4684);
+        z-index: -1;
+        -webkit-backface-visibility: hidden;
+        
+        @media only screen and (max-width: $screen-xxl) {
+          top: toRem(-4717)
+        }
+        
+        @media only screen and (max-width: $screen-xl) {
+          top: toRem(-4866)
+        }
+        
+        @media only screen and (max-width: $screen-lg) {
+          top: toRem(-4851);
+        }
+        
+        @media only screen and (max-width: ($screen-md - 1)) {
+          display: none;
+        }
+      }
+      
+      .content {
+        padding: 0 toRem(15);
+        
+        .p15 {
+          padding: toRem(15) toRem(15) 0 toRem(15);
+          
+          @media only screen and (max-width: $screen-lg) {
+            padding: toRem(15) 0;
+          }
+        }
+      }
+    }
+    
+    &.forWhomThisProductImg {
+      
+      &::before {
+        @include rotate(85);
+        -webkit-backface-visibility: hidden;
+        @include shadow(-3px 0px 4px 0px rgba(23, 127, 224, 0.21));
+        top: toRem(-722);
+        
+        @media only screen and (max-width: $screen-xxl) {
+          top: toRem(-734);
+        }
+        
+        @media only screen and (max-width: $screen-lg) {
+          top: toRem(-736)
+        }
+        
+        @media only screen and (max-width: ($screen-md - 1)) {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    
+    &.column-reverse {
+      flex-direction: column-reverse;
+    }
+    
+    &.content {
+      justify-content: center;
+    }
+    
+    &.headerBanner {
+      min-height: calc(100vw * 0.87);
+      margin-bottom: toRem(500);
+      position: relative;
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(600);
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: auto;
+        height: toRem(1000);
+        margin: 0 auto toRem(440) auto;
+        padding-bottom: toRem(40);
+      }
+      
+      .headerBannerImg {
+        object-fit: cover;
+        z-index: -1;
+        
+        @media only screen and (max-width: ($screen-md - 1)) {
+          object-position: left;
+        }
+      }
+    }
+    
+    &.intWrapper {
+      display: flex;
+      align-self: flex-end;
+      justify-content: center;
+      width: toRem(1004);
+      height: toRem(600);
+      padding-top: toRem(40);
+      margin: 0 auto toRem(-271) auto;
+      @include radius(45px);
+      background-color: $lightBlue;
+      box-shadow: 0 toRem(15) toRem(45) 0 rgba(23, 128, 224, 0.21);
+      
+      @media only screen and (max-width: $screen-xxl) {
+        margin: 0 auto toRem(-354) auto;
+      }
+      
+      @media only screen and (max-width: $screen-xl) {
+        width: auto;
+        margin: 0 auto toRem(-402) auto;
+        height: auto;
+        padding-bottom: toRem(40);
+      }
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin: 0 auto toRem(-580) auto;
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: auto;
+        height: auto;
+        margin: 0 auto toRem(-456) auto;
+        z-index: auto;
+      }
+      
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+  
+  h1 {
+    color: $shipvr-blue;
+    font-weight: 700;
+    font-size: toRem(64);
+    line-height: toRem(89);
+    font-family: var(--muktaVaani);
+    text-align: center;
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(32);
+      line-height: toRem(44);
+    }
+  }
+  
+  h2 {
+    color: $shipvr-blue;
+    font-weight: 700;
+    font-size: toRem(46);
+    line-height: toRem(40);
+    font-family: var(--muktaVaani);
+    width: 100%;
+    text-align: center;
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(32);
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(26);
+    }
+  }
+  
+  h3 {
+    color: $shipvr-blue;
+    font-weight: 700;
+    font-size: toRem(32);
+    line-height: toRem(34);
+    font-family: var(--muktaVaani);
+    width: 100%;
+    text-align: center;
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(32);
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(26);
+    }
+  }
+  
+  .subhending {
+    color: $shipvr-blue;
+    font-weight: 400;
+    font-size: toRem(28);
+    line-height: toRem(36);
+    font-family: var(--muktaVaani);
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(14);
+      line-height: toRem(18);
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li:before {
+    content: '-';
+    position: absolute;
+    margin-left: toRem(-10);
+  }
+  
+  .itemText {
+    flex: 6;
+    padding: 0;
+    color: $shipvr-grey;
+    font-weight: 400;
+    font-size: toRem(18);
+    line-height: toRem(27);
+    font-family: var(--muktaVaani);
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: 0 toRem(15);
+    }
+    
+    p {
+      &.padding15 {
+        @media only screen and (max-width: $screen-lg) {
+          padding: 0 toRem(15);
+        }
+      }
+    }
+    
+    &.content {
+      @media only screen and (max-width: $screen-lg) {
+        max-width: 100%;
+      }
+      
+      &.padding {
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding: 0;
+        }
+      }
+    }
+    
+    &.intContent {
+      max-width: toRem(360);
+      padding: 0 0 0 toRem(15);
+      
+      @media only screen and (max-width: $screen-xl) {
+        padding: 0 toRem(15);
+      }
+      
+      @media only screen and (max-width: $screen-lg) {
+        max-width: 100%;
+        padding: 0 toRem(15) toRem(15);
+      }
+    }
+    
+    &.intBotContent {
+      padding-left: toRem(15);
+      
+      @media only screen and (max-width: $screen-xl) {
+        max-width: toRem(320);
+      }
+      
+      @media only screen and (max-width: $screen-lg) {
+        max-width: 100%;
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        padding: 0 toRem(15);
+      }
+    }
+    
+    @media only screen and (max-width: $screen-lg) {
+      br {
+        display: none;
+      }
+    }
+  }
+  
+  .right-block {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: toRem(50) toRem(200) toRem(50) 0;
+    border-color: transparent $shipvr-blue2 transparent transparent;
+  }
+  
+  .triangle {
+    position: absolute;
+    right: 0;
+    
+    @media only screen and (max-width: $screen-lg) {
+      z-index: -1;
+    }
+    
+    &::after {
+      content: "";
+      position: absolute;
+      width: toRem(2774);
+      height: toRem(1914);
+      @include rotate(45);
+      left: 0;
+      top: toRem(-545);
+      background: var(--color-white);
+      @include radius(100px);
+      box-shadow: $shipvr-shadow;
+      
+      @media only screen and (max-width: $screen-lg) {
+        z-index: -1;
+        left: toRem(-111);
+      }
+    }
+  }
+  
+  .itemImage {
+    flex: 6;
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      min-height: toRem(320);
+    }
+    
+    &.approachContent {
+      max-width: toRem(632);
+      max-height: toRem(481);
+      
+      @media only screen and (max-width: $screen-lg) {
+        align-self: center;
+        flex-basis: toRem(487);
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        display: none;
+      }
+      
+      img {
+        width: 100%;
+        height: auto;
+        
+        @media only screen and (max-width: $screen-lg) {
+          height: 100%;
+        }
+      }
+    }
+    
+    &.visualAppHeroes {
+      max-width: toRem(90);
+      max-height: toRem(90);
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        min-height: unset;
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        align-self: center;
+        margin-bottom: toRem(5);
+      }
+    }
+    
+    &.controls {
+      max-width: toRem(73);
+      max-height: toRem(83);
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        min-height: unset;
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        align-self: center;
+        margin-bottom: toRem(5);
+      }
+    }
+    
+    &.displaysAndScreens {
+      max-width: toRem(86);
+      max-height: toRem(65);
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        min-height: unset;
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        align-self: center;
+        margin-bottom: toRem(10);
+      }
+    }
+    
+    &.forWhomThisProductImg {
+      max-height: toRem(600);
+      max-width: toRem(1200);
+      position: relative;
+      
+      @media only screen and (max-width: $screen-lg) {
+        max-height: toRem(550);
+        max-width: toRem(900);
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        min-height: toRem(250);
+        max-height: toRem(250);
+        max-width: toRem(500);
+      }
+      
+      img {
+        @media only screen and (max-width: $screen-lg) {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    
+    &.flowItem {
+      max-height: toRem(353);
+      max-width: toRem(500);
+      
+      @media only screen and (max-width: $screen-lg) {
+        width: 100%;
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        min-height: toRem(250);
+      }
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+    &.menuAll {
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(40);
+        align-self: center;
+      }
+    }
+    
+    &.sMission {
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(50);
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(15);
+      }
+    }
+    
+    &.introductionVideo {
+      width: toRem(586);
+      position: relative;
+      left: toRem(70);
+      outline: none;
+      flex: inherit;
+      z-index: 1;
+      max-height: toRem(409);
+      cursor: pointer;
+      
+      @media only screen and (max-width: $screen-xl) {
+        left: 0;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        cursor: default;
+      }
+      
+      @media screen and (max-width: 590px) {
+        width: 100%;
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        max-height: inherit;
+        min-height: inherit;
+        max-width: 100%;
+        margin-top: toRem(20);
+      }
+      
+      .videowrapper {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
+        &.clicked {
+          background: var(--color-black);
+          @include radius(45px);
+          
+          @media only screen and (max-width: $screen-md - 1) {
+            @include radius(35px);
+          }
+        }
+        
+        .topVideoBg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          
+          @media only screen and (max-width: $screen-md - 1) {
+            height: 96.5%;
+          }
+        }
+        
+        .topVideoBgClicked {
+          z-index: -1;
+        }
+        
+        iframe {
+          @include radius(45px);
+          
+          @media only screen and (max-width: $screen-md - 1) {
+            @include radius(35px);
+          }
+        }
+      }
+    }
+    
+    &.bottomVideo {
+      position: absolute;
+      outline: none;
+      perspective: toRem(500);
+      -webkit-perspective: toRem(500);
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        width: 100%;
+        max-width: toRem(450);
+      }
+      
+      .bottomVideoWr {
+        overflow: hidden;
+        transform: rotateY(-12deg) scale(1);
+        position: absolute;
+        top: 0;
+        width: 86.5%;
+        @include radius(55px);
+        @include shadow(0 0 1px 1px var(--color-black));
+        display: flex;
+        justify-content: center;
+        perspective: toRem(100);
+        -webkit-perspective: toRem(100);
+        cursor: pointer;
+        height: 100%;
+
+        @media only screen and (max-width: $screen-lg) {
+          transform: rotateY(-12deg) scale(0.7);
+          cursor: default;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+        
+        .bottomVideoBgClicked {
+          z-index: -1;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+        }
+        
+        iframe {
+          @include radius(20px);
+          border: 0;
+          height: 100%;
+        }
+      }
+    }
+  }
+  
+  .videoCover {
+    visibility: hidden;
+    height: toRem(420);
+    
+    
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(420);
+    }
+    
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: 100%;
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      height: auto;
+    }
+  }
+  
+  .mb15 {
+    margin-bottom: toRem(15);
+  }
+  
+  .textInfo {
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(15);
+    }
+  }
+  
+  .mb15Center {
+    margin-bottom: toRem(15);
+    
+    @media only screen and (max-width: $screen-lg) {
+      text-align: center;
+      align-items: center;
+    }
+  }
+  
+  .mb50 {
+    margin-bottom: toRem(50);
+  }
+  
+  .tdcolumn {
+    
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+    }
+  }
+  
+  .ma {
+    max-width: toRem(740);
+    margin: auto;
+    
+    @media only screen and (max-width: $screen-lg) {
+      
+      max-width: 100%;
+    }
+  }
+  
+  .f05 {
+    flex: 1;
+  }
+  
+  .white {
+    color: var(--color-white);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .resultTitle {
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-top: toRem(50);
+    }
+  }
+  
+  .justify {
+    justify-content: center;
+  }
+  
+  .no-break-out {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  
+  .userFlowRowContent {
+    max-width: toRem(1200);
+    margin: toRem(80) auto 0;
+    padding: 0 toRem(15);
+    
+    .userFlowItem {
+      display: flex;
+      margin-bottom: toRem(80);
+      
+      @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+      
+      h3 {
+        text-align: left;
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          text-align: center;
+        }
+      }
+      
+      .itemImage {
+        @media only screen and (max-width: $screen-lg) {
+          align-self: center;
+        }
+      }
+      
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        
+        @media only screen and (max-width: $screen-lg) {
+          flex-direction: column-reverse;
+        }
+        
+        .content {
+          padding-left: toRem(50);
+          
+          @media only screen and (max-width: $screen-lg) {
+            padding-left: 0;
+          }
+        }
+      }
+      
+      &:nth-child(odd) {
+        justify-content: flex-end;
+        
+        .content {
+          max-width: toRem(500);
+          padding-right: toRem(20);
+          
+          @media only screen and (max-width: $screen-lg) {
+            max-width: 100%;
+            padding-bottom: toRem(20);
+            padding-right: 0;
+            padding-left: 0;
+          }
+        }
+      }
+      
+      &:nth-child(3) {
+        @media only screen and (max-width: $screen-lg) {
+          margin-top: toRem(20);
+        }
+      }
+    }
+  }
+  
+  .approachContainer {
+    max-width: toRem(1350);
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: toRem(-50);
+    
+    @media only screen and (max-width: $screen-lg) {
+      top: 0;
+      justify-content: center;
+    }
+    
+    .approachContentShip {
+      max-width: toRem(582);
+      max-height: toRem(405);
+      
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(640);
+        max-height: toRem(425);
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        max-width: toRem(440);
+        max-height: toRem(360);
+      }
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        max-width: calc(100% - 40px);
+        min-height: toRem(240);
+      }
+      
+      img {
+        @media only screen and (max-width: $screen-lg) {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

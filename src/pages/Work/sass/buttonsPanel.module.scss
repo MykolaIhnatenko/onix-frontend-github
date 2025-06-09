@@ -1,0 +1,102 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  width: 100%;
+  gap: toRem(10);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 toRem(70);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-left: toRem(30);
+    padding-right: toRem(30);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 6px;
+      position: absolute;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background: transparent;
+      position: absolute;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 5px;
+      position: absolute;
+    }
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-left: toRem(15);
+    padding-right: toRem(15);
+  }
+}
+
+.button {
+  width: fit-content;
+  padding: toRem(7) toRem(16);
+  background: linear-gradient(to right, var(--color-black) 50%, var(--color-white) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.2s ease;
+  border: 2px solid var(--color-black);
+  border-radius: toRem(21);
+  height: toRem(40);
+  cursor: pointer;
+
+  @media only screen and (max-width: $screen-lg) {
+    background: transparent;
+    cursor: default;
+  }
+
+  &:hover {
+    background-position: left bottom;
+
+    @media only screen and (max-width: $screen-lg) {
+      background: transparent;
+
+    }
+
+    .textButton {
+      color: var(--color-white);
+      @media only screen and (max-width: $screen-lg) {
+        color: var(--color-black);
+      }
+    }
+  }
+}
+
+.textButton {
+  @include generalPlexMono(16, 500, 22);
+  line-height: toRem(22);
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  white-space: nowrap;
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    cursor: pointer;
+  }
+}
+
+.activeButton {
+  @extend .button;
+  background: var(--color-cruise) !important;
+  border: 2px solid var(--color-cruise);
+
+  &:hover {
+    .textButton {
+      color: var(--color-black);
+    }
+  }
+}

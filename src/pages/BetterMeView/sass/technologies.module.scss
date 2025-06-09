@@ -1,0 +1,87 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.technologies {
+  padding-top: toRem(180);
+  overflow: hidden;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(120);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-top: toRem(72);
+  }
+
+  h2 {
+    margin-bottom: toRem(48);
+    max-width: toRem(440);
+
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: toRem(40);
+      max-width: toRem(321);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-bottom: toRem(24);
+      max-width: toRem(245);
+    }
+  }
+
+  .desktopList {
+    display: grid;
+    gap: toRem(20);
+    grid-template-columns: repeat(5, auto);
+  }
+
+  .item {
+    position: relative;
+    background: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: toRem(220);
+    transition: all 0.3s ease-in-out;
+
+    @media only screen and (min-width: $screen-md) {
+      &:hover {
+        svg {
+          transform: scale(1.1);
+        }
+  
+        .color {
+          opacity: 1;
+        }
+  
+        .gray {
+          opacity: 0;
+        }
+      }
+    }
+
+    .gray, .color {
+      transition: all 0.3s ease-in-out;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .color {
+      opacity: 0;
+
+      @media only screen and (max-width: $screen-xl) {
+        opacity: 1;
+      }
+    }
+
+    .gray {
+      @media only screen and (max-width: $screen-xl) {
+        display: none;
+      }
+    }
+  }
+}

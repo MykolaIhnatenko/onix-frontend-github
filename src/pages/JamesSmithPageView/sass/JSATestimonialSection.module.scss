@@ -1,0 +1,272 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.testimonialSection {
+  .testimonial {
+    position: relative;
+    background: var(--color-jsa-main-background-color);
+    backdrop-filter: blur(50px);
+    border-radius: toRem(20);
+    display: flex;
+    gap: toRem(15);
+    justify-content: space-between;
+    padding-right: toRem(52);
+    margin-bottom: toRem(32);
+
+    @media only screen and (max-width: $screen-xl) {
+      flex-direction: column;
+      gap: toRem(24);
+      padding: toRem(54) toRem(32) toRem(24) toRem(32);
+      margin-bottom: toRem(39);
+      align-items: center;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(54) toRem(16) toRem(24) toRem(16);
+      margin-bottom: toRem(24);
+    }
+
+    .pictureWrapper {
+      flex-basis: 57.59%;
+      margin-top: toRem(-35);
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media only screen and (max-width: $screen-xl) {
+        width: 100%;
+        margin-top: 0;
+        max-width: toRem(355);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        img {
+          width: 114%;
+          height: 100%;
+          left: toRem(-30);
+          position: relative;
+        }
+      }
+    }
+
+    .descriptionWrapper {
+      flex-basis: 45.4%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media only screen and (max-width: $screen-xl) {
+        align-items: center;
+        width: 100%;
+      }
+
+      .upTitle {
+        margin-bottom: toRem(24);
+
+        @media only screen and (max-width: $screen-xl) {
+          margin-bottom: toRem(19);
+          text-align: center;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          margin-bottom: toRem(16);
+        }
+      }
+
+      h2 {
+        text-align: left;
+        margin-bottom: toRem(48);
+
+        @media only screen and (max-width: $screen-xl) {
+          max-width: toRem(446);
+          font-size: toRem(32);
+          line-height: 130.87%;
+          text-align: center;
+          margin-bottom: toRem(64);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(20);
+          line-height: 130.87%;
+          margin-bottom: toRem(40);
+        }
+      }
+
+      .links {
+        display: flex;
+        gap: toRem(10);
+        justify-content: space-between;
+
+        @media only screen and (max-width: $screen-xl) {
+          width: 100%;
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          flex-direction: column;
+          gap: toRem(16);
+        }
+
+        .link {
+          display: flex;
+          gap: toRem(16);
+          justify-content: center;
+          align-items: center;
+          background: var(--color-jsa-secondary-background-color);
+          border-radius: toRem(16);
+          width: 47.1%;
+          padding: toRem(10);
+          min-height: toRem(88);
+
+          .linkTitle {
+            font-size: toRem(16);
+            line-height: toRem(24);
+            color: var(--color-white);
+
+            @media only screen and (max-width: $screen-lg) {
+              font-size: toRem(14);
+              line-height: toRem(21);
+            }
+          }
+
+          .storeName {
+            font-weight: 700;
+            font-size: toRem(20);
+            line-height: toRem(29);
+            color: var(--color-white);
+
+            @media only screen and (max-width: $screen-lg) {
+              font-size: toRem(18);
+              line-height: toRem(26);
+            }
+          }
+
+          @media only screen and (max-width: $screen-lg) {
+            min-height: toRem(71);
+          }
+
+          @media only screen and (max-width: $screen-md - 1) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .statistics {
+    display: flex;
+    gap: toRem(32);
+
+    @media only screen and (max-width: $screen-xl) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      gap: toRem(24);
+    }
+
+    .statisticsItem {
+      display: flex;
+      gap: toRem(24);
+      align-items: center;
+      justify-content: center;
+      width: 32%;
+      height: toRem(200);
+      background: var(--color-jsa-main-background-color);
+      border-radius: toRem(32);
+      padding: toRem(15);
+
+      @media only screen and (max-width: $screen-xl) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        height: toRem(160);
+        gap: toRem(12);
+      }
+
+      .statisticsIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-white);
+        border-radius: toRem(16);
+        padding: toRem(20);
+        max-width: toRem(120);
+
+        &:first-child {
+          padding: toRem(16);
+          max-width: toRem(120);
+
+          @media only screen and (max-width: $screen-md - 1) {
+            padding: toRem(8);
+          }
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          padding: toRem(8);
+        }
+      }
+
+      .statisticsTitle {
+        font-weight: 500;
+        font-size: toRem(18);
+        line-height: toRem(26);
+
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(14);
+          line-height: toRem(21);
+        }
+      }
+
+      .statisticsValue {
+        font-weight: 900;
+        font-size: calc(5px + 4vw);
+        line-height: toRem(94);
+        color: var(--color-jsa-main-heading-color);
+        white-space: nowrap;
+
+        @media only screen and (min-width: $screen-xxl) {
+          font-size: toRem(64);
+        }
+
+        @media only screen and (max-width: $screen-xl) {
+          font-size: toRem(64);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(40);
+          line-height: toRem(40);
+        }
+      }
+
+      &:nth-child(1) {
+        @media only screen and (max-width: $screen-md - 1) {
+          padding-left: toRem(25);
+        }
+      }
+
+      &:nth-child(2) {
+        @media only screen and (max-width: $screen-xl) {
+          padding-right: toRem(60);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          padding-right: toRem(30);
+        }
+      }
+
+      &:nth-child(3) {
+        @media only screen and (max-width: $screen-xl) {
+          padding-right: toRem(133);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          padding-right: toRem(75);
+        }
+      }
+    }
+  }
+}

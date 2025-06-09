@@ -1,0 +1,155 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainSection {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    height: 100vh;
+    min-height: toRem(750);
+    max-height: toRem(1400);
+  }
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &:after{
+      content: none;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        content: '';
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        bottom: toRem(-1);
+        background: linear-gradient(180deg,rgba(255, 255, 255, 0)  0%, #ffffff 100%);
+      }
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: 100%;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .container {
+    z-index: 1;
+    position: relative;
+
+    .content {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: toRem(30);
+      padding-top: toRem(139);
+      min-height: toRem(535);
+      color: var(--color-white);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(154);
+        padding-bottom: toRem(80);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        min-height: toRem(745);
+        max-width: toRem(500);
+        padding-top: toRem(170);
+        justify-content: center;
+        height: 100vh;
+        color: var(--color-black);
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        max-width: none;
+      }
+
+      .contentTitle {
+        font-family: var(--generalSans);
+        font-weight: 500;
+        padding-bottom: toRem(15);
+        font-size: toRem(25);
+        line-height: getLineHeight(35, 25);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(30);
+          max-width: toRem(708);
+          font-size: toRem(40);
+          line-height: getLineHeight(56, 40);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(630);
+          padding-bottom: toRem(40);
+          font-size: toRem(50);
+          line-height: getLineHeight(64, 50);
+        }
+
+        @media only screen and (min-width: $screen-xxl) {
+          max-width: toRem(580);
+          font-size: toRem(40);
+          line-height: getLineHeight(50, 40);
+        }
+
+        @media only screen and (min-width: $screen-xxl) {
+          max-width: toRem(630);
+          font-size: toRem(50);
+          line-height: getLineHeight(64, 50);
+        }
+
+        @media only screen and (min-width: $screen-xxxl) {
+          max-width: toRem(720);
+        }
+      }
+
+      .contentText {
+        margin: 0;
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+        font-family: var(--generalSans);
+        font-weight: 500;
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(24);
+          line-height: getLineHeight(34, 24);
+          max-width: toRem(540);
+
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+          max-width: toRem(590);
+        }
+      }
+    }
+  }
+
+  .imageBlock {
+    display: none;
+    max-height: toRem(1400);
+
+    @media only screen and (min-width: $screen-xl) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 47.9%;
+      height: 100%;
+    }
+    
+    img {
+      object-fit: cover;
+    }
+  }
+}

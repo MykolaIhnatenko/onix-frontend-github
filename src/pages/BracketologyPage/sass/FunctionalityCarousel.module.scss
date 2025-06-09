@@ -1,0 +1,63 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.functionalityCarousel {
+  display: none;
+
+  @media only screen and (min-width: $screen-xl) {
+    display: flex;
+    position: absolute;
+    top: toRem(170);
+    left: toRem(390);
+  }
+
+  .mockups {
+    display: none;
+
+    @media only screen and (min-width: $screen-xl) {
+      display: flex;
+      flex-direction: row-reverse;
+      position: absolute;
+      height: toRem(695);
+      width: toRem(1905);
+      top: toRem(125);
+      right: toRem(-40);
+      z-index: 1;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: toRem(440);
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .mockup {
+      display: none;
+
+      @media only screen and (min-width: $screen-xl) {
+        display: block;
+        width: toRem(361);
+        height: toRem(695);
+        margin-right: toRem(60);
+      }
+    }
+  }
+
+  .frame {
+    display: none;
+
+    @media only screen and (min-width: $screen-xl) {
+      display: block;
+      z-index: 2;
+      position: absolute;
+      top: toRem(115);
+      right: 0;
+      width: toRem(360);
+      height: toRem(732);
+    }
+  }
+}

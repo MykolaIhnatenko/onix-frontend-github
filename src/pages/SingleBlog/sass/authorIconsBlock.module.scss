@@ -1,0 +1,21 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.iconGroup {
+  display: flex;
+  gap: toRem(15);
+
+  @media only screen and (min-width: $screen-md) {
+    justify-content: flex-start;
+  }
+
+  .icon {
+    width: toRem(28);
+    height: toRem(28);
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(32);
+      height: toRem(32);
+    }
+  }
+}

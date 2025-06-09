@@ -1,0 +1,26 @@
+{
+  "title": "How Onix developed a concept project to showcase our Webflow design and development expertise.",
+  "subtitle": "Our skill in Webflow goes beyond technical expertise; it's an art we've perfected over years of creating stunning websites. In this case study, you'll see our expertise firsthand. We've crafted a beautiful e-commerce website centered around the Shell Chair concept, showcasing our talent and setting new Webflow landing page design and development standards.",
+  "content": [
+    {
+      "id": 1,
+      "title": "E-commerce",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "3 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "Ukraine",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "2 weeks",
+      "text": "Project duration"
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$whitePhotowhy: #FBFDFF;
+$blackPhotowhy: #010101;
+$redPhotowhy: #CE4B46;
+$coralPhotowhy: #EEC8C7;
+$orangeBlurPhotowhy: #FF844F;
+$redBlurPhotowhy: #FF0900;
+
+.futuresSection {
+  overflow: hidden;
+  background-color: $blackPhotowhy;
+
+  .container {
+    padding-top: toRem(40);
+    padding-bottom: toRem(60);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(48);
+      padding-bottom: toRem(107);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(88);
+      padding-bottom: toRem(88);
+      max-width: toRem(1480);
+    }
+
+    h2 {
+      color: $whitePhotowhy;
+      position: relative;
+    }
+
+    .futuresContentContainer {
+      background-position: 1%;
+      background-size: toRem(94) toRem(94);
+      background-image:
+              linear-gradient(to right, rgba(251, 253, 255, 0.2) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(251, 253, 255, 0.2) 1px, transparent 1px);
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: radial-gradient(rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0) 40.39%, #000000 76.63%);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: toRem(56);
+        width: 100%;
+        background-size: toRem(170) toRem(130);
+        background-image:
+                linear-gradient(to right, $coralPhotowhy 2px, transparent 1px),
+                linear-gradient(to bottom, $coralPhotowhy 2px, transparent 1px);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: block;
+        margin: 0 auto;
+        background-image:
+                linear-gradient(to right, $coralPhotowhy 1.5px, transparent 1px),
+                linear-gradient(to bottom, $coralPhotowhy 1.5px, transparent 1px);
+      }
+
+      .futuresImg {
+        display: none;
+
+        @media only screen and (min-width: $screen-md) {
+          display: block;
+          max-width: toRem(250);
+          max-height: toRem(509);
+          flex-basis: 40%;
+          position: relative;
+          margin-left: toRem(50);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(1200);
+          max-height: 100%;
+          margin: 0 auto;
+          position: relative;
+          z-index: 1;
+        }
+
+        img {
+          display: none;
+
+          @media only screen and (min-width: $screen-md) {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+          }
+        }
+
+        .futuresFirstBlur {
+          display: none;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: block;
+            position: absolute;
+            background-color: $orangeBlurPhotowhy;
+            z-index: 0;
+            height: toRem(397);
+            top: toRem(118);
+            left: toRem(480);
+            opacity: 0.4;
+          }
+        }
+
+        .futuresFifthBlur {
+          display: none;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: block;
+            position: absolute;
+            background-color: $redBlurPhotowhy;
+            width: toRem(436);
+            height: toRem(470);
+            filter: blur(115px);
+            top: toRem(380);
+            left: toRem(470);
+            opacity: 0.49;
+            z-index: 0;
+          }
+        }
+      }
+
+      .futuresContent {
+        padding-top: toRem(11);
+
+        @media only screen and (min-width: $screen-md) {
+          flex-basis: 60%;
+          padding-top: 0;
+          padding-left: toRem(54);
+        }
+
+        .futuresContentItem {
+          z-index: 1;
+          padding-top: toRem(32);
+          position: relative;
+          &:nth-child(2) {
+            br {
+              display: none;
+            }
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: 0;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            position: absolute;
+
+            &:nth-child(1) {
+              position: absolute;
+              top: 6.5%;
+              left: 10%;
+              max-width: toRem(300);
+            }
+
+            &:nth-child(2) {
+              position: absolute;
+              top: 15.5%;
+              left: 80%;
+              max-width: toRem(240);
+
+              br {
+                display: block;
+              }
+            }
+
+            &:nth-child(3) {
+              position: absolute;
+              top: 46%;
+              right: 70%;
+              max-width: toRem(360);
+            }
+
+            &:nth-child(4) {
+              position: absolute;
+              top: 65%;
+              left: 68%;
+              max-width: toRem(240);
+              margin-left: toRem(20);
+            }
+          }
+
+          p {
+            color: $whitePhotowhy;
+            text-align: center;
+
+            @media only screen and (min-width: $screen-md) {
+              text-align: left;
+              padding-top: toRem(10);
+              font-size: toRem(18);
+              line-height: toRem(29);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              font-weight: 400;
+              font-size: toRem(24);
+              line-height: toRem(40);
+              padding-top: 0;
+              z-index: 5;
+              position: relative;
+            }
+          }
+
+          p:not(:last-child) {
+            @media only screen and (min-width: $screen-md) {
+              padding-bottom: toRem(40);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-bottom: 0;
+            }
+          }
+
+          .line {
+            width: toRem(240);
+            padding-top: toRem(32);
+            margin: 0 auto;
+            border-bottom: 1px solid $whitePhotowhy;
+
+            @media only screen and (min-width: $screen-md) {
+              margin: unset;
+              width: toRem(270);
+              position: absolute;
+              top: 0;
+              left: 0;
+              padding-top: 0;
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .futuresFirstBlur {
+    position: absolute;
+    width: toRem(253);
+    height: toRem(232);
+    background-color: $orangeBlurPhotowhy;
+    filter: blur(70px);
+    top: toRem(-97);
+    left: toRem(223);
+    opacity: 0.4;
+    z-index: 0;
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(386);
+      height: toRem(337);
+      filter: blur(115px);
+      top: toRem(276);
+      left: toRem(191);
+      opacity: 0.2;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      display: none;
+    }
+  }
+
+  .futuresSecondBlur {
+    position: absolute;
+    width: toRem(154);
+    height: toRem(141);
+    background-color: #FBFDFF;
+    filter: blur(85px);
+    top: toRem(-58);
+    left: toRem(143);
+    opacity: 0.5;
+    z-index: 0;
+
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      display: block;
+      background-color: $coralPhotowhy;
+      width: toRem(234);
+      height: toRem(387);
+      filter: blur(141px);
+      top: toRem(650);
+      left: toRem(1204);
+    }
+  }
+
+  .futuresThirdBlur {
+    position: absolute;
+    width: toRem(285);
+    height: toRem(275);
+    background-color: $redBlurPhotowhy;
+    filter: blur(70px);
+    top: toRem(37);
+    left: toRem(216);
+    opacity: 0.3;
+    z-index: 0;
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(436);
+      height: toRem(400);
+      filter: blur(115px);
+      top: toRem(163);
+      left: toRem(-82);
+      opacity: 0.2;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: toRem(536);
+      height: toRem(978);
+      filter: blur(141px);
+      top: toRem(-200);
+      left: toRem(-160);
+      opacity: 0.2;
+    }
+  }
+
+  .futuresFourthBlur {
+    position: absolute;
+    width: toRem(154);
+    height: toRem(141);
+    background-color: #FBFDFF;
+    filter: blur(85px);
+    top: toRem(218);
+    left: toRem(-101);
+    opacity: 0.5;
+    z-index: 0;
+
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  .futuresFifthBlur {
+    position: absolute;
+    width: toRem(285);
+    height: toRem(275);
+    background-color: $redBlurPhotowhy;
+    filter: blur(70px);
+    top: toRem(291);
+    left: toRem(-148);
+    opacity: 0.35;
+    z-index: 0;
+
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  .futuresSixthBlur {
+    position: absolute;
+    width: toRem(253);
+    height: toRem(232);
+    background-color: $orangeBlurPhotowhy;
+    filter: blur(70px);
+    top: toRem(416);
+    left: toRem(-150);
+    opacity: 0.35;
+    z-index: 0;
+
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  .futuresSeventhBlur {
+    position: absolute;
+    width: toRem(154);
+    height: toRem(166);
+    background-color: #FBFDFF;
+    filter: blur(85px);
+    top: toRem(532);
+    left: toRem(363);
+    opacity: 0.7;
+    z-index: 0;
+
+    @media only screen and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+}

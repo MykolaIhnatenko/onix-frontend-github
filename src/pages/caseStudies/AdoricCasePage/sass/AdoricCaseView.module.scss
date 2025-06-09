@@ -1,0 +1,908 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+@import "../../../App/sass/mixinsAnimation";
+
+$adoric-blue: #084feb;
+$adoric-blue2: #006aef;
+$adoric-light: #f6f6f7;
+$adoric-grey: #666;
+$adoric-grey2: #4e4e4e;
+$adoric-shadow: rgba(58, 78, 95, 0.23) 0 6px 21px;
+$adoric-shadow2: 0 13px 25px rgba(0, 106, 239, 0.56);
+$adoric-border: 2px solid $adoric-blue2;
+$colorTextMedium: #898f9a;
+$titles-color: #2D3339;
+$white: #fff;
+$blue2: #2464df;
+
+.articleContainer {
+  overflow-x: hidden;
+  font-family: var(--muktaVaani);
+
+  article.project {
+    color: $colorTextMedium;
+
+    .projectContext {
+      p {
+        font-family: var(--muktaVaani);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+
+
+        @media only screen and (max-width: $screen-md){
+          font-size: 16px;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    P {
+      color: $colorTextMedium;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+      line-height: normal;
+    }
+
+    p:not(:last-child) {
+      padding: 0 0 60px;
+
+      @media only screen and (max-width: $screen-md) {
+        padding: 0 0 30px;
+      }
+    }
+  }
+
+  .articleContent {
+    .colorBlue {
+      color: $adoric-blue;
+    }
+
+    .pm0 {
+      @media only screen and (max-width: $screen-md) {
+        padding: 0;
+      }
+    }
+
+    .hiddenXs {
+      @media only screen and (max-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    .hiddenMd {
+      @media only screen and (max-width: $screen-xl) {
+        display: none;
+      }
+    }
+  }
+}
+
+.projectAdoricCase {
+  padding-top: 145px;
+  position: relative;
+
+  .projectImg {
+    object-fit: contain;
+    object-position: right top;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+    @media only screen and (max-width: 968px) {
+      display: none;
+    }
+  }
+
+  .workInsideBanner {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 90px;
+
+    &.adoricCase {
+      position: relative;
+      padding: 30px 0 250px;
+      margin-bottom: 0;
+
+      &:after {
+        display: none;
+      }
+
+      @media only screen and (max-width: 968px) {
+        padding: 0 0 30px;
+        background: none;
+      }
+
+      .blueBg {
+        object-fit: contain;
+        object-position: left;
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+
+        @media only screen and (max-width: 968px) {
+          display: none;
+        }
+      }
+
+      h1 {
+        color: $titles-color;
+        font-family: var(--muktaVaani);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 110px;
+        position: relative;
+        z-index: 1;
+
+        @media only screen and (max-width: 968px) {
+          font-family: var(--muktaVaani);
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 44px;
+          margin-top: 30px;
+        }
+      }
+
+      .logo {
+        position: relative;
+        margin: 0 auto;
+        width: 228px;
+        height: 50px;
+
+        img {
+          object-fit: contain;
+        }
+
+        @media only screen and (max-width: 968px) {
+          width: 175px;
+        }
+      }
+
+      .banners {
+        .blueBgTablet {
+          display: none;
+        }
+        @media only screen and (max-width: 968px) {
+          padding-bottom: 120px;
+
+          .blueBgTablet {
+            display: block;
+            position: absolute;
+            object-fit: contain;
+            object-position: bottom left;
+          }
+        }
+
+        .inner {
+          max-width: 1030px;
+          margin: 0 auto;
+          padding-top: 60px;
+          display: table;
+          width: 100%;
+        }
+
+        .bg {
+          @include radius(3px);
+          @include box-sizing(border-box);
+          position: relative;
+          box-shadow: $adoric-shadow;
+
+          img {
+            max-width: 100%;
+            display: block;
+            @include radius(3px);
+          }
+        }
+
+        .mainImg {
+          max-width: 867px;
+          max-height: 516px;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      position: relative;
+    }
+
+    h2 {
+      font-family: var(--muktaVaani);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: 0.36px;
+      padding: 0 20px;
+    }
+  }
+
+  .articleContent {
+    width: 100%;
+    padding-bottom: 60px;
+    color: $titles-color;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    h2.contentHeaderPrimary {
+      font-family: var(--muktaVaani);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: 0.36px;
+      padding-bottom: 20px;
+
+      @media only screen and (max-width: $screen-md) {
+        font-family: var(--muktaVaani);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+      }
+    }
+
+    &.decor {
+      padding-bottom: 0 !important;
+      position: relative;
+
+      @media only screen and (max-width: 968px) {
+        background: none;
+      }
+
+      .grayTriangulats, .blueTriangulate {
+        position: absolute;
+        object-fit: contain;
+
+        @media only screen and (max-width: 968px) {
+          display: none;
+        }
+      }
+
+      .grayTriangulats {
+        position: absolute;
+        left: 8.2%;
+        top: 7.4%;
+      }
+
+      .blueTriangulate {
+        position: absolute;
+        right: 0;
+        top: 10.5%;
+      }
+    }
+
+    .artItem {
+      position: relative;
+      z-index: 1;
+      padding-bottom: 145px;
+
+      @media only screen and (max-width: 968px) {
+        padding-bottom: 65px;
+      }
+
+      .lightbox img,
+      .analyticsImage,
+      .integration img,
+      .analyticsSys img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .projectReview {
+      background-color: $adoric-light;
+      padding: 40px 0;
+      max-width: 883px;
+      margin: 30px auto;
+
+      .inner {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 30px;
+        @include box-sizing(border-box);
+
+        @media only screen and (max-width: $screen-md) {
+          padding: 0 20px;
+        }
+
+        & > .postText {
+          margin-top: 15px;
+
+          @media screen and (min-width: 450px) {
+            display: none;
+          }
+        }
+
+        p, .postText {
+          color: $titles-color;
+          padding-bottom: 0;
+          font-family: var(--muktaVaani);
+          font-size: 21px;
+          font-weight: 300;
+          line-height: 30px;
+          letter-spacing: 0.35px;
+
+          @media only screen and (max-width: 968px) {
+            font-size: 18px;
+          }
+
+          @media only screen and (max-width: 450px) {
+            font-size: 15px;
+            line-height: 18px;
+          }
+        }
+
+        p + p {
+          margin-top: 10px;
+        }
+
+        strong, b {
+          color: $titles-color;
+          font-family: var(--muktaVaani);
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 36px;
+          letter-spacing: 0.4px;
+
+          @media only screen and (max-width: 968px) {
+            font-size: 22px;
+            line-height: 30px;
+            letter-spacing: 0.3px;
+          }
+
+          @media only screen and (max-width: $screen-md) {
+            font-size: 20px;
+            line-height: 28px;
+          }
+
+          @media only screen and (max-width: 450px) {
+            font-size: 18px;
+            line-height: 24px;
+          }
+
+          @media only screen and (max-width: $screen-md) {
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+
+        .imageWrapper {
+          width: 145px;
+          display: inline-block;
+          vertical-align: middle;
+
+          @media only screen and (max-width: $screen-md) {
+            width: 110px;
+          }
+        }
+
+        .reviewText {
+          width: calc(100% - 145px);
+          display: inline-block;
+          vertical-align: middle;
+          padding-right: 20px;
+          line-height: 26px;
+          @include box-sizing(border-box);
+
+          @media only screen and (max-width: $screen-md) {
+            width: calc(100% - 110px);
+            padding-right: 15px;
+          }
+
+          @media only screen and (max-width: 450px) {
+            .post_text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .projectRow {
+      display: table;
+      width: 100%;
+      margin-top: 150px;
+
+      @media only screen and (max-width: 968px) {
+        margin-top: 80px;
+      }
+
+      @media only screen and (max-width: $screen-md) {
+        margin-top: 0;
+
+        &.mobileReverse {
+          display: flex;
+          flex-direction: column-reverse;
+
+          .rightCell {
+            margin: 50px 0;
+          }
+        }
+      }
+
+      &.reverse {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        @media only screen and (max-width: $screen-md) {
+         flex-direction: column-reverse;
+        }
+      }
+
+      &.analyticsBlock {
+        margin-top: -50px;
+        position: relative;
+        padding-bottom: 150px;
+
+        @media only screen and (max-width: 968px) {
+          margin-top: 0;
+        }
+
+        @media only screen and (max-width: $screen-md) {
+          padding-bottom: 0;
+        }
+
+        .rowCell {
+          vertical-align: top;
+          position: relative;
+          z-index: 4;
+
+          .textCellInner {
+            margin-top: 50px;
+
+            @media only screen and (max-width: $screen-md) {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+
+      .rowCell {
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
+
+        @media only screen and (max-width: $screen-md) {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+        }
+
+        &.analyticsBlockContainer {
+          vertical-align: bottom;
+          @media only screen and (max-width: $screen-md) {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .shadowImg {
+          box-shadow: $adoric-shadow;
+        }
+
+        h2 {
+          font-family: var(--muktaVaani);
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 48px;
+          letter-spacing: 0.36px;
+          margin-bottom: 30px;
+
+          @media only screen and (max-width: $screen-md) {
+            text-align: center;
+            font-size: 24px;
+            line-height: 34px;
+            letter-spacing: 0.25px;
+          }
+        }
+
+        .textCellInner {
+          max-width: 516px;
+          padding: 0 20px;
+          @include box-sizing(border-box);
+
+          @media only screen and (max-width: 968px) {
+            p {
+              font-size: 16px;
+            }
+          }
+
+          @media only screen and (max-width: $screen-md) {
+            max-width: 100%;
+          }
+        }
+
+        &.leftCell {
+          padding-right: 32px;
+
+          @media only screen and (max-width: 968px) {
+            padding-right: 20px;
+          }
+
+          @media only screen and (max-width: $screen-md) {
+            padding-right: 0;
+          }
+
+          &.displayBlock {
+            @media only screen and (max-width: $screen-md) {
+              display: block;
+              width: 100%;
+            }
+          }
+
+          .lightboxImgWrapper {
+            @include radius(0 5px 5px 0);
+
+            @media only screen and (max-width: $screen-md) {
+              max-width: calc(100% - 75px);
+              margin: 10px 0 45px;
+            }
+
+            @media only screen and (max-width: $screen-md) {
+              max-width: calc(100% - 25px);
+            }
+          }
+
+          .screenImg {
+            @include radius(0 5px 5px 0);
+
+            @media only screen and (max-width: $screen-md) {
+              max-width: calc(100% - 75px);
+              margin: 10px auto 45px;
+            }
+
+            @media only screen and (max-width: $screen-md) {
+              max-width: calc(100% - 25px);
+            }
+          }
+
+          .textCellInner {
+            margin-left: auto;
+          }
+        }
+
+        &.rightCell {
+          padding-left: 32px;
+
+          @media only screen and (max-width: 968px) {
+            padding-left: 20px;
+          }
+
+          @media only screen and (max-width: $screen-md) {
+            padding-left: 0;
+          }
+
+          .screenImg {
+            @include radius(0 5px 5px 0);
+
+            @media only screen and (max-width: $screen-md) {
+              max-width: calc(100% - 75px);
+              margin-left: auto;
+            }
+
+            @media only screen and (max-width: $screen-md) {
+              max-width: calc(100% - 25px);
+            }
+          }
+        }
+
+        .groupImage {
+          position: relative;
+          padding-left: 4%;
+
+          @media only screen and (max-width: $screen-md) {
+            padding-left: 0;
+          }
+
+          .analyticsImgWrapper {
+            max-width: 767px;
+            max-height: 595px;
+            @media only screen and (max-width: $screen-md){
+              max-width: calc(100% - 75px);
+              margin: 0 auto;
+            }
+
+            @media only screen and (max-width: $screen-md) {
+              max-width: calc(100% - 25px);
+            }
+          }
+        }
+      }
+
+      &.aloneRow {
+        @media only screen and (max-width: $screen-md) {
+          margin-top: 60px;
+        }
+
+        .techStackWrap {
+          @media only screen and (max-width: $screen-md) {
+            flex-direction: column;
+            margin-top: 20px;
+          }
+        }
+
+        .rowCell {
+          vertical-align: top;
+
+          @media only screen and (max-width: 450px) {
+            .screenImg + .thumbImages {
+              margin-top: -20px;
+            }
+          }
+
+          .thumbImages {
+            margin-top: 50px;
+            text-align: center;
+
+            img {
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 40px;
+
+              @media only screen and (max-width: $screen-xl) {
+                margin-right: 20px;
+              }
+            }
+
+            @media only screen and (max-width: $screen-xl) {
+              margin-top: 30px;
+            }
+          }
+        }
+
+        h2 {
+          font-family: var(--muktaVaani);
+          font-size: 42px;
+          font-weight: 700;
+          line-height: 54px;
+
+          @media only screen and (max-width: $screen-md) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .techStackRow {
+      @media only screen and (max-width: $screen-md) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    .colorScreen {
+      background-color: $adoric-blue2;
+      padding: 110px 0 155px;
+
+      @media only screen and (max-width: $screen-md){
+        padding: 40px 0 20px;
+      }
+
+      .contentHeaderPrimary, p {
+        color: $white;
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        @media only screen and (max-width: $screen-md){
+          font-size: 18px;
+
+          &:not(:last-child) {
+            padding-bottom: 30px;
+          }
+        }
+
+        &.center {
+          font-size: 21px;
+
+          @media only screen and (max-width: $screen-md){
+            font-size: 18px;
+            letter-spacing: 0.2px
+          }
+        }
+      }
+
+      .featuresBlock {
+        margin-top: 32px;
+
+        .fCell {
+          text-align: center;
+          display: inline-block;
+          vertical-align: top;
+          width: 25%;
+          padding: 0 15px;
+          @include box-sizing(border-box);
+          margin-bottom: 30px;
+
+          @media only screen and (max-width: 968px) {
+            width: 50%;
+
+            &:nth-child(odd) {
+              .inner {
+                margin-left: auto;
+              }
+            }
+          }
+          @media only screen and (max-width: $screen-md) {
+            &:nth-child(odd) {
+              padding: 0 0 7px;
+            }
+            &:nth-child(even) {
+              padding: 0 0 0 7px;
+            }
+            margin-bottom: 20px;
+          }
+
+          .inner {
+            background: $white;
+            padding: 50px 15px 15px;
+            @include box-sizing(border-box);
+            min-height: 230px;
+            box-shadow: $adoric-shadow;
+
+            @media only screen and (max-width: 968px) {
+              max-width: 220px;
+            }
+
+            @media only screen and (max-width: $screen-md){
+              padding: 30px 5px 10px;
+              min-height: 165px;
+              max-width: 160px;
+            }
+          }
+
+          .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+
+            @media only screen and (max-width: $screen-md){
+              width: 60px;
+              height: 60px;
+            }
+          }
+
+          h3 {
+            font-family: var(--muktaVaani);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-top: 30px;
+
+            @media only screen and (max-width: $screen-md){
+              font-family: var(--muktaVaani);
+              font-size: 15px;
+              font-weight: 600;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .resultScreen {
+      margin-top: 145px;
+      padding-bottom: 0;
+
+      @media only screen and (max-width: $screen-xl){
+        margin-top: 75px;
+      }
+
+      @media only screen and (max-width: $screen-md){
+        margin-top: 0;
+        p {
+          text-align: left;
+        }
+      }
+
+      .projectRow {
+        position: relative;
+        margin-top: 0;
+        padding-top: 460px;
+        overflow: hidden;
+
+        .resultsBlueBg {
+          object-fit: cover;
+          z-index: 0;
+          object-position: right top;
+        }
+
+        .innerBg {
+          position: relative;
+          z-index: 1;
+          background-color: $blue2;
+          padding-bottom: 75px;
+
+          @media only screen and (max-width: $screen-md){
+            display: inherit;
+          }
+        }
+
+        @media screen and (min-width: 1440px) {
+          background-size: 100%;
+        }
+        @media only screen and (max-width: $screen-xl){
+          background-size: cover;
+          padding-top: 375px;
+        }
+        @media only screen and (max-width: $screen-md){
+          margin-top: 0;
+          padding-top: 60px;
+        }
+
+        .rowCell {
+          vertical-align: top;
+
+          &.rightCell {
+
+            .screenImg {
+              margin-top: -345px;
+            }
+
+            @media only screen and (max-width: $screen-md){
+              .screenImg {
+                margin-top: 0;
+              }
+            }
+          }
+
+          &.leftCell {
+            .screenImg {
+              margin-top: -245px;
+            }
+
+            @media only screen and (max-width: $screen-md){
+              .screenImg {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .btnWhite {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      margin: 65px auto 0;
+      width: 220px;
+      height: 55px;
+      box-shadow: $adoric-shadow2;
+      border: $adoric-border;
+      background-color: $white;
+      color: $adoric-blue2;
+      font-family: var(--muktaVaani);
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 55px;
+      letter-spacing: 0.35px;
+
+      @media only screen and (max-width: $screen-md){
+        width: 176px;
+        height: 44px;
+        font-size: 17px;
+        line-height: 44px;
+        margin: 50px auto 0;
+      }
+    }
+  }
+}

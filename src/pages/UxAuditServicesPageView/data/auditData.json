@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "Usability testing",
+    "text": "This service involves testing the site with real users to determine how easy it is to use and identify any issues they experience while navigating the site."
+  },
+  {
+    "id": 2,
+    "title": "Accessibility evaluation",
+    "text": "This service identifies accessibility barriers that may prevent some users from accessing the site. We provide recommendations to ensure the area is usable by all visitors."
+  },
+  {
+    "id": 3,
+    "title": "Interaction design assessment",
+    "text": "This service evaluates the site's interaction design, including buttons, links, and other interactive elements. Our team provides recommendations for improving the site's interactivity."
+  },
+  {
+    "id": 4,
+    "title": "Information architecture review",
+    "text": "This service evaluates the organization and structure of the site's content. Recommendations are provided for improving the site's navigation and overall user flow."
+  },
+  {
+    "id": 5,
+    "title": "User research",
+    "text": "This service involves researching the site's target audience and needs. Based on user insights, we give recommendations for improving the site's user experience."
+  }
+]

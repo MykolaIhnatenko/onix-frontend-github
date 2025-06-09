@@ -1,0 +1,17 @@
+[
+  {
+    "id": "01",
+    "text": "Work during wartime",
+    "style": "mainTitle"
+  },
+  {
+    "id": "02",
+    "text": " During the full-scale Russian invasion, Ukraine’s tech sector remains its major driving force and the primary source of the state budget while creating value internationally. Moreover, it is growing! The export revenue of IT services in 2022 grew by $406M compared to the pre-war 2021 year. The taxes and fees paid by IT businesses to the consolidated budget of Ukraine increased by 16%.",
+    "style": "subtitle"
+  },
+  {
+    "id": "03",
+    "text": "“The figure of more than $7B from the export of computer services is [...] the largest indicator in the entire history of the Ukrainian IT industry existence. And it was achieved precisely during the War.”",
+    "style": "quote"
+  }
+]

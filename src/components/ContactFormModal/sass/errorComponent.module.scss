@@ -1,0 +1,65 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.error {
+  color: var(--color-red);
+  font-family: var(--ibmPlexMono);
+  font-size: toRem(14);
+  padding-left: toRem(15);
+  max-width: 250px;
+
+  @media only screen and (max-width: $screen-sm) {
+    font-size: toRem(12);
+    max-width: 100%;
+  }
+}
+
+.attachError {
+  padding-top: toRem(5);
+  padding-right: toRem(15);
+  max-width: 100%;
+}
+
+.descriptionError {
+  max-width: 100%;
+  position: absolute;
+  top: toRem(66);
+  left: 0;
+
+  @media only screen and (max-width: $screen-sm) {
+    top: toRem(64);
+  }
+}
+
+.blogs {
+  max-width: 100%;
+}
+
+.dtcFormError {
+  max-width: 100%;
+  margin-top: toRem(-5);
+  z-index: 1;
+}
+
+.dtcDescriptionError {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: toRem(60);
+}
+
+.leavingForm {
+  position: absolute;
+  top: toRem(60);
+}
+
+.contactForm {
+  @media only screen and (max-width: ($screen-md - 1)) {
+    max-width: 100%;
+    margin-top: -7px;
+  }
+
+  @media only screen and (max-width: ($screen-sm - 1)) {
+    margin-top: -3px;
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "content": "Allow the admin to quickly sort through all game recording orders and have a clear picture of their place and time, so it’s easy for the admin to assign orders between different videographers."
+  },
+  {
+    "id": "2",
+    "content": "Add email notices to the videogamers that will include all of the active tasks that are currently assigned to them."
+  },
+  {
+    "id": "3",
+    "content": "Allow the admin to easily manage each videographer’s workload, track their availability, and ensure no assignments overlaying."
+  },
+  {
+    "id": "4",
+    "content": "Create automated email notices to the customers before the scheduled games to confirm plans."
+  },
+  {
+    "id": "5",
+    "content": "Manage corporate accounts to allow selected clients to place orders on the website without upfront payments."
+  },
+  {
+    "id": "6",
+    "content": "Manage admin panel users to delegate some tasks to them"
+  }
+]
+
+

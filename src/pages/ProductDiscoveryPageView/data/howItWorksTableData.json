@@ -1,0 +1,39 @@
+[{
+  "stages": [
+    {
+      "number": "01",
+      "text": "Planning"
+    },
+    {
+      "number": "02",
+      "text": "Product design"
+    }
+  ],
+  "advantages": {
+    "title": "Discovery",
+    "list": [
+      "Product ideation and analysis",
+      "Architecture design"
+    ]
+  },
+  "conclusion": "PoC / Clickable prototype"
+}, {
+  "stages": [
+    {
+      "number": "03",
+      "text": "Implementation"
+    },
+    {
+      "number": "04",
+      "text": "Maintenance"
+    }
+  ],
+  "advantages": {
+    "title": "Software development",
+    "list": [
+      "Project start",
+      "Support"
+    ]
+  },
+  "conclusion": "Dedicated development team"
+}]

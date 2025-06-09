@@ -1,0 +1,26 @@
+#
+# MAINTAINER: devops@onix-systems.com
+#
+
+version: '3'
+services:
+
+    frontend:
+        hostname: frontend
+        image: registry.gitlab.onix.team/onix-systems/onix-frontend:release
+        extra_hosts:
+            - "onix-systems.com:198.199.103.193"
+        ports:
+            - "127.0.0.1:3002:3000"
+        restart: unless-stopped
+        networks:
+            - onix_systems_net
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "100M"
+                max-file: "5"
+
+networks:
+    onix_systems_net:
+        driver: bridge

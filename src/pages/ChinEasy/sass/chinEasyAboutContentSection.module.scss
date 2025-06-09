@@ -1,0 +1,20 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.text {
+  @include generalSansFont(20, 500, 28);
+  font-size: toRem(25) !important;
+  padding-top: 0;
+
+  @media only screen and (min-width: $screen-md) {
+    @include generalSansFont(40, 500, 64);
+    font-size: toRem(40) !important;
+  }
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    @include generalSansFont(50, 500, 64);
+    font-size: toRem(50) !important;
+    max-width: toRem(1150);
+  }
+}

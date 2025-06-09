@@ -1,0 +1,25 @@
+{
+  "blockTitle": "This case study on customer relationship management for healthcare businesses shows how Onix’s developers created a tailored solution that allowed to digitize insurance agents’ work process at minimum cost for the company.",
+  "data": [
+    {
+      "id": 1,
+      "title": "Healthcare",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "5 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "USA",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "6 months",
+      "text": "Project duration"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.title, .subtitle {
+  padding: 0 toRem(15);
+
+  @media only screen and (min-width: $screen-md) {
+    padding: 0;
+  }
+}
+
+.title {
+  margin-top: 0;
+}
+
+.subtitle {
+  margin: 0 0 toRem(40);
+  text-transform: none;
+
+  @media only screen and (min-width: $screen-md) {
+    margin-bottom: toRem(60);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(1033);
+    margin-bottom: toRem(40);
+  }
+}
+
+
+.firstNoteText{
+  margin-bottom: 0;
+  max-width: toRem(670);
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(551);
+    br {
+      content: '';
+      &:after {
+        content: ' ';
+      }
+    }
+  }
+}
+
+.secondNoteTextContainer {
+  display: flex;
+  justify-content: flex-end;
+  .secondNoteText{
+    margin-top: 0;
+    margin-bottom: toRem(40);
+    
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: toRem(40);
+      margin-bottom: toRem(60);
+      max-width: toRem(540);
+      br {
+        content: '';
+        &:after {
+          content: ' ';
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-top: toRem(30);
+      margin-bottom: toRem(40);
+    }
+
+    @media only screen and (width: $screen-md) {
+      margin-top: toRem(40);
+      margin-bottom: toRem(60);
+    }
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    justify-content: flex-start;
+  }
+
+  @media only screen and (width: $screen-md) {
+    justify-content: flex-end;
+  }
+}
+
+.number {
+  min-width: toRem(35);
+
+  @media only screen and (max-width: $screen-lg) {
+    min-width: toRem(30);
+  }
+}

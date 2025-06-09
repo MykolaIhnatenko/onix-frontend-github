@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "title": "Scalability",
+    "content": "AWS offers better scalability options and can handle more traffic without sacrificing performance. This is especially important for applications with rapidly growing user bases."
+  },
+  {
+    "id": "02",
+    "title": "Convenience",
+    "content": "Switching to AWS may be more convenient if you host other cloud services on AWS and want to keep everything in one place."
+  },
+  {
+    "id": "03",
+    "title": "Reliability",
+    "content": "AWS has a proven track record of uptime and reliability, which can help ensure that services are available when customers need them. This can help improve customer satisfaction and reduce lost revenue due to downtime"
+  },
+  {
+    "id": "04",
+    "title": "Cost",
+    "content": "AWS offers competitive pricing and a pay-per-use pricing model, which can help save money by eliminating the need for expensive hardware investments and reducing IT costs. While on Heroku, apps run in containers called “dynos.” Only one service can run on a dyno. Additional dynos cost $25-50, meaning your bills will increase if your workload grows to the point where you need multiple dynos."
+  },
+  {
+    "id": "05",
+    "title": "Flexibility",
+    "content": "AWS offers a wide range of services, tools, and integrations allowing customizing an infrastructure to meet unique business needs. This can help you achieve greater operational efficiency and improve customer experience."
+  },
+  {
+    "id": "06",
+    "title": "Location",
+    "content": "Heroku caters to four or five regions, whereas the AWS cloud covers 81 access zones in 25 geographical regions around the world, with announced plans to create another 21 access zones and seven more AWS regions in Australia, India, Indonesia, Israel, Spain, Switzerland, and the United Arab Emirates (UAE)."
+  }
+]

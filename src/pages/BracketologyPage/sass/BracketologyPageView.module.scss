@@ -1,0 +1,92 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.bracketology {
+  font-family: var(--muktaVaani);
+
+  .sectionsWrapper {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: toRem(550);
+      left: toRem(-200);
+      width: toRem(700);
+      height: toRem(1400);
+      filter: blur(61px);
+      background-color: rgba(199, 189, 175, 0.1);
+      transform: rotate(-7deg);
+      pointer-events: none;
+      z-index: 2;
+      border-radius: 50%;
+    }
+
+    @media screen and (max-width: $screen-xl) {
+      &::after {
+        top: toRem(850);
+      }
+    }
+
+    @media only screen and (max-width: $screen-lg) {  
+      &::before {
+        content: '';
+        position: absolute;
+        top: toRem(350);
+        right: toRem(-370);
+        width: toRem(570);
+        height: toRem(870);
+        filter: blur(61px);
+        background-color: rgba(199, 189, 175, 0.1);
+        z-index: 2;
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      &::after {
+        top: toRem(1050);
+        left: toRem(-430);
+        width: toRem(1200);
+        height: toRem(700);
+        transform: rotate(72deg);
+        
+      }
+    }
+
+    @media screen and (max-width: ($screen-md - 1)) {
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+      
+    }
+  }
+}
+
+.ctaThird {
+  padding-bottom: toRem(56);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-bottom: toRem(40);
+  }
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    padding-bottom: toRem(120);
+  }
+}
+
+.ctaFourth {
+  padding-bottom: toRem(24);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-bottom: toRem(40);
+  }
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    padding: toRem(80) 0 toRem(120);
+  }
+}

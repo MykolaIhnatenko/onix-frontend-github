@@ -1,0 +1,158 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.wrapper {
+  padding-bottom: toRem(56);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-bottom: toRem(72);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-bottom: toRem(72);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &:nth-child(1) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(200);
+    }
+
+    .image {
+      max-height: toRem(345);
+
+      @media only screen and (min-width: $screen-md) {
+        max-height: toRem(695);
+      }
+    }
+
+    .content {
+      h3 {
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(415);
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(195);
+    }
+
+    .image {
+      max-height: toRem(354);
+
+      @media only screen and (min-width: $screen-md) {
+        max-height: toRem(714);
+      }
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(148);
+    }
+
+    .image {
+      max-height: toRem(283);
+
+      @media only screen and (min-width: $screen-md) {
+        max-height: toRem(570);
+      }
+    }
+  }
+
+  &:nth-of-type(4) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(224);
+    }
+
+    .image {
+      max-height: toRem(403);
+
+      @media only screen and (min-width: $screen-md) {
+        max-height: toRem(810);
+      }
+    }
+
+    .content {
+      h3 {
+        br {
+          display: none;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(5) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: 0;
+    }
+
+    .image {
+      max-height: toRem(360);
+
+      @media only screen and (min-width: $screen-md) {
+        max-height: toRem(735);
+      }
+    }
+  }
+
+  &:nth-child(odd) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      flex-direction: row-reverse;
+
+      .content {
+        padding-left: toRem(30);
+        padding-right: toRem(20);
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      .content {
+        padding-right: toRem(30);
+        padding-left: toRem(20);
+      }
+    }
+  }
+
+  .image {
+    max-width: toRem(344);
+    margin-bottom: toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(690);
+      margin: 0 auto toRem(32);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      flex-basis: 57%;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    h3 {
+      padding-bottom: toRem(24);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      flex-basis: 43%;
+    }
+  }
+ }

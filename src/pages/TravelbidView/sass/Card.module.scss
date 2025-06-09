@@ -1,0 +1,24 @@
+@import "../../../pages/App/sass/functions";
+
+.cardWrapper {
+  span {
+    font-weight: 400;
+    font-size: toRem(32);
+    line-height: toRem(48);
+    color: #717172;
+  }
+
+  .border {
+    height: 1px;
+    background: linear-gradient(90deg, #FF0289, #FF6E04);
+    margin-top: toRem(16);
+    margin-bottom: toRem(24);
+  }
+
+  p {
+    font-weight: 400;
+    font-size: toRem(18);
+    line-height: toRem(27);
+    color: #FFFFFF !important;
+  }
+}

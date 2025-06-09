@@ -1,0 +1,81 @@
+@import "../../App/sass/breakpointsVariables.scss";
+@import "../../App/sass/functions.scss";
+
+.sliderContainer {
+  width: 100%;
+  position: relative;
+
+  .container {
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: 2;
+    padding-bottom: toRem(32);
+    
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: 0;
+    }
+  
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: toRem(462);
+      
+      @media only screen and (max-width: $screen-lg) {
+        height: toRem(482);
+      }
+  
+      @media only screen and (max-width: $screen-md - 1) {
+        height: toRem(250);
+      }
+  
+      &:after {
+        content: '';
+        width: 100%;
+        height: toRem(70);
+        background: linear-gradient(180deg, rgba(253, 253, 253, 0) 5%, #000000 100%);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+  
+        @media only screen and (min-width: $screen-lg + 1) {
+          height: toRem(110);
+        }
+      }
+  
+      img {
+        object-fit: cover;
+        object-position: top left;
+      }
+    }
+  
+    .sliderContainer {
+      padding: toRem(120) 0 0 0;
+  
+      @media only screen and (max-width: $screen-lg) {
+        padding: toRem(80) 0 0 0;
+      }
+  
+      .title {
+        position: relative;
+        z-index: 1;
+        color: white;
+        margin-left: toRem(70);
+  
+        @media only screen and (min-width: $screen-xxxl) {
+          margin-left: toRem(80);
+        }
+  
+        @media only screen and (max-width: $screen-lg) {
+          margin-left: toRem(30);
+        }
+  
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-left: toRem(15);
+        }
+      }
+    }
+  }
+}

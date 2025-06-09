@@ -1,0 +1,122 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  padding: toRem(150) 0 toRem(40);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(136) 0 toRem(40);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: toRem(116) 0 toRem(30);
+  }
+
+  .title {
+    font-size: toRem(72);
+    line-height: getLineHeight(80, 72);
+    padding-bottom: toRem(60);
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(50);
+      line-height: getLineHeight(64, 50);
+      padding-bottom: toRem(40);
+    }
+  
+    @media only screen and (max-width: $screen-md - 1) {
+      font-size: toRem(36);
+      line-height: getLineHeight(46, 36);
+    }
+  }
+
+  .switchButtons {
+    display: flex;
+
+    .switchButton {
+      border: 2px solid var(--color-black);
+      background-color: var(--color-white);
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: var(--ibmPlexMono);
+      font-size: toRem(16);
+      line-height: getLineHeight(22, 16);
+      letter-spacing: 0.2px;
+      padding: toRem(9) 0;
+      min-width: toRem(166);
+      display: flex;
+      justify-content: center;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      position: relative;
+      overflow: hidden;
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(15);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        min-width: toRem(209);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        cursor: pointer;
+
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+
+          .btnText {
+            background-position: -100% 0;
+          }
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #000;
+        transition: width 0.4s ease;
+      }
+
+      &:first-of-type {
+        border-radius: toRem(21) 0 0 toRem(21);
+        border-right: 1px solid var(--color-black);
+      }
+
+      &:last-of-type {
+        border-radius: 0 toRem(21) toRem(21) 0;
+        border-left: 1px solid var(--color-black);
+      }
+
+      
+
+      .btnText {
+        background: linear-gradient(90deg, black 50%, white 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-position 0.36s ease;
+        background-size: 200% 100%;
+        background-position: 0 0;
+        position: relative;
+        display: inline-block;
+      }
+    }
+
+    .active {
+      background-color: var(--color-cruise);
+
+      &::before {
+        display: none;
+      }
+
+      .btnText {
+        background: linear-gradient(90deg, black 50%, black 50%);
+        -webkit-background-clip: text;
+      }
+    }
+  }
+}

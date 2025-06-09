@@ -1,0 +1,178 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+$wine-light: #f6f6f6;
+$wine-grey: #7b818d;
+$wine-grey2: #a19d98;
+$wine-dark: #22262b;
+/* triangle banner */
+.workInsideBanner {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 90px;
+  &__bg {
+    box-sizing: border-box;
+    padding-top: 145px;
+    display: block;
+    height: auto;
+  }
+  &:after {
+    display: block;
+    content: "";
+    position: relative;
+  }
+  .title{
+    font-size: 22px;
+    line-height: 48px;
+    font-weight: 300;
+    letter-spacing: 0.78px;
+    margin: 0;
+    padding: 0 20px;
+  }
+  h2,h1 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+    padding: 0 20px;
+  }
+  &__logo {
+    display: block;
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+}
+.article_container {
+  font-family: var(--muktaVaani);
+  article.project {
+    color: #898f9a;
+    .project_context {
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+      }
+    }
+    .center {
+      text-align: center;
+    }
+    .article__content:first-child {
+      padding: 0 0 80px;
+    }
+    @media only screen and (max-width: ($screen-md - 1)) {
+      .article__content:first-child {
+        padding: 0 0 50px;
+      }
+    }
+    P {
+      color: #898f9a;
+      font-size: 18px;
+      letter-spacing: 0.3px;
+      line-height: 1.7;
+    }
+  }
+  .project__sequenceGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    & > * {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      & > * {
+        flex-basis: 50%;
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  .article__content {
+    &__bottomPadding {
+      padding-bottom: 30px;
+    }
+    & + .article__content__grey:not(:first-child) {
+      padding-top: 80px;
+    }
+    &__grey {
+      background-color: $wine-light;
+      P {
+        color: $wine-grey;
+      }
+      & + .article__content:not(:first-child) {
+        padding-top: 80px;
+      }
+    }
+  }
+  @media only screen and (max-width: ($screen-md - 1)) {
+    .article__content {
+      & + .article__content__grey:not(:first-child) {
+        padding-top: 50px;
+      }
+    }
+  }
+  .project__features {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1110px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    & > * {
+      box-sizing: border-box;
+      margin-bottom: 40px;
+      flex-basis: calc(50% - 60px);
+    }
+    h4, .featuresTitle {
+      display: block;
+      color: $wine-dark;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .project__features_text {
+      color: $wine-grey2;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 0.15px;
+    }
+  }
+}
+@media only screen and (max-width: ($screen-md - 1)){
+  .article_container {
+    ARTICLE.project {
+      .project_context {
+        p {
+          font-size: 16px;
+          letter-spacing: 0.2px;
+        }
+      }
+      .project__sequenceGrid > *:nth-child(even),
+      .project__sequenceGrid > * {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $screen-sm) {
+  .article_container {
+    ARTICLE.project {
+      .project__features {
+        &__wineCase LI {
+          flex-basis: initial;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

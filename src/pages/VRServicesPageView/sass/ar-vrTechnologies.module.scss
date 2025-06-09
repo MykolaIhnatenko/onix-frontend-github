@@ -1,0 +1,130 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding: toRem(80) toRem(70);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding-left: toRem(80);
+    padding-right: toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30) 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(80) toRem(15) 0;
+  }
+
+  .title {
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(510);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-right: toRem(30);
+    }
+  }
+
+  .text {
+    margin-top: toRem(16);
+    margin-bottom: toRem(50);
+    max-width: toRem(745);
+    font-size: toRem(20);
+    line-height: getLineHeight(28, 20);
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(16);
+      line-height: getLineHeight(24, 16);
+      margin-bottom: toRem(40);
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+
+    .category {
+      display: flex;
+      padding: toRem(32) 0;
+      margin-top: toRem(10);
+      border-top: 2px solid #000;
+
+      @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+        margin-top: 0;
+      }
+
+      >p {
+        padding-right: toRem(210);
+        font-size: toRem(40);
+        line-height: getLineHeight(56, 40);
+
+        @media only screen and (max-width: $screen-xl) {
+          padding-right: toRem(100);
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          padding: 0;
+          margin-bottom: toRem(20);
+          font-size: toRem(36);
+          line-height: getLineHeight(46, 36);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(25);
+          line-height: getLineHeight(35, 25);
+        }
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(toRem(200), toRem(325)));
+        gap: toRem(30);
+
+        @media only screen and (max-width: $screen-lg) {
+          grid-template-columns: repeat(2, minmax(toRem(200), toRem(450)));
+          column-gap: toRem(30);
+          row-gap: toRem(10);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          display: flex;
+          flex-wrap: wrap;
+          column-gap: 15px;
+          row-gap: 10px;
+        }
+
+        .item {
+          padding: toRem(14) 0;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            position: relative;
+            padding: 0;
+
+            &::after {
+              content: ',';
+              position: absolute;
+              bottom: 5px;
+              right: -5px;
+            }
+
+            &:last-child::after {
+              content: '';
+            }
+          }
+
+          >div {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

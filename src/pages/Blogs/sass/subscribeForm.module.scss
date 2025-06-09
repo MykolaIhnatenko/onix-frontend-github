@@ -1,0 +1,81 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsDisplay";
+
+.subscribeForm {
+  @media only screen and (min-width: $screen-xl) {
+    display: flex;
+    gap: toRem(20);
+  }
+
+  .formFields {
+    @media only screen and (min-width: $screen-md) {
+      display: flex;
+      gap: toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      gap: toRem(20);
+      flex-basis: 50.8%;
+    }
+
+    .name, .email, .company {
+      margin-bottom: toRem(30);
+
+      @media only screen and (min-width: $screen-md) {
+        margin-bottom: toRem(40);
+        flex-basis: 50%;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+
+  .btnWrapper {
+    @media only screen and (min-width: $screen-xl) {
+      flex-basis: 21.5%;
+    }
+  }
+}
+
+.singleBlog {
+  padding-top: toRem(60);
+
+  @media only screen and (min-width: $screen-xl) {
+    display: block;
+  }
+
+  .formFields {
+    @media only screen and (min-width: $screen-md) {
+      flex-wrap: wrap;
+      gap: 0 30px;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      display: block;
+    }
+
+    .name, .email {
+      @media only screen and (min-width: $screen-md) {
+        @include flex-basis(30px, 2);
+        margin-bottom: toRem(30);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        margin-bottom: toRem(40);
+      }
+    }
+
+    .company {
+      @media only screen and (min-width: $screen-md) {
+        flex-basis: 100%;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        margin-bottom: toRem(40);
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.technologySection {
+  h2 {
+    padding-bottom: toRem(32);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: 0;
+    }
+  }
+
+  .technologiesContainer {
+    display: none;
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: toRem(30);
+      list-style: none;
+      padding-top: toRem(50);
+    }
+  }
+}

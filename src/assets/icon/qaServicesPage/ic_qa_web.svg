@@ -1,0 +1,5 @@
+<svg viewBox="0 0 161 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M52.5 87V98.6667C52.5 99.9558 53.395 101 54.5 101H106.5C107.605 101 108.5 99.9558 108.5 98.6667V61.3333C108.5 60.0442 107.605 59 106.5 59H54.5C53.395 59 52.5 60.0442 52.5 61.3333V87Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<rect width="2" height="56" transform="matrix(0 -1 -1 0 108.5 67)" fill="white"/>
+<rect x="1" y="0.5" width="159" height="159" rx="79.5" stroke="white"/>
+</svg>

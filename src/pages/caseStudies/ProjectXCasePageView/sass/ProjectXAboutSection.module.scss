@@ -1,0 +1,148 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.aboutSection {
+  padding: 24px 0;
+
+  @media only screen and (min-width: 450px) {
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .aboutContent {
+    @media only screen and (min-width: 450px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .aboutTextBlock {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media only screen and (min-width: 450px) {
+        padding-left: 24px;
+        padding-right: 10px;
+        flex-basis: 50%;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      p {
+        padding: 8px 0 37px;
+
+        @media only screen and (min-width: 450px) {
+          padding: 16px 0 0;
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          padding: 32px 40px 0 0;
+        }
+      }
+    }
+
+    .aboutImageBlock {
+      margin: 0 auto;
+
+      @media only screen and (min-width: 450px) {
+        flex-basis: 50%;
+      }
+
+      .coachContainer {
+        max-width: 376px;
+        max-height: 377px;
+        margin: 0 auto;
+        position: relative;
+
+        @media only screen and (min-width: 450px) {
+          max-width: 387px;
+          max-height: 387px;
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: 542px;
+          max-height: 543px;
+        }
+
+        .img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .aboutCoachBlock {
+    padding: 25px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media only screen and (min-width: 450px) {
+      max-width: 526px;
+      padding-right: 0;
+      padding-top: 8px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 22px;
+      max-width: 800px;
+    }
+
+    .portrait {
+      max-width: 32px;
+      max-height: 32px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-basis: 10%;
+
+      @media only screen and (min-width: 450px) {
+        max-width: 88px;
+        max-height: 88px;
+        flex-basis: 88px;
+        flex-shrink: 0;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: 95px;
+        max-height: 95px;
+        flex-basis: 15%;
+      }
+
+      video, img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .aboutCoachCard {
+      max-width: 300px;
+      padding: 24px;
+      border-bottom-right-radius: 13px;
+      border-top-right-radius: 13px;
+      border-bottom-left-radius: 13px;
+      box-shadow: 0 2.67px 21.39px rgba(200, 44, 10, 0.16);
+      background-color: white;
+      flex-basis: 90%;
+      margin-left: 9px;
+
+      @media only screen and (min-width: 450px) {
+        margin-left: 16px;
+        max-width: 442px;
+        padding: 14px 28px 14px 22px;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        margin-left: 50px;
+        max-width: 652px;
+        padding: 24px;
+      }
+    }
+  }
+}

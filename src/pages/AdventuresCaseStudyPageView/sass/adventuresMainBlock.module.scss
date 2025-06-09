@@ -1,0 +1,121 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  height: 100vh;
+  min-height: toRem(860);
+  background-color: var(--color-white-adventures);
+
+  @media only screen and (max-width: $screen-lg) {
+    min-height: toRem(1126);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    min-height: toRem(800);
+  }
+  
+  @media only screen and (max-width: ($screen-sm)) {
+    min-height: toRem(640);
+  }
+
+
+  .bgImage {
+    object-fit: cover;
+
+    @media only screen and (max-width: $screen-xxl) {
+      object-fit: contain;
+      object-position: bottom right;
+    }
+    
+    @media only screen and (max-width: $screen-xl + 90) {
+      object-fit: cover;
+      object-position: bottom left;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      object-fit: cover;
+      object-position: center;
+      inset: unset !important;
+      bottom: 0 !important;
+      height: toRem(651) !important;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: calc(100vw - 145px) !important;
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+      height: calc(100vw - 70px) !important;
+    }
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+
+    .textContent {
+      position: relative;
+      margin-top: toRem(245);
+      max-width: toRem(504);
+      width: 39%;
+      
+      @media only screen and (max-width: $screen-xl + 90) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(194);
+        width: 100%;
+        max-width: toRem(708);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-top: toRem(140);
+      }
+
+      .logo {
+        width: toRem(384);
+        height: toRem(56);
+
+        @media only screen and (max-width: $screen-lg) {
+          width: toRem(335);
+          height: toRem(49);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          width: toRem(235);
+          height: toRem(36);
+        }
+      }
+
+      .title {
+        margin: toRem(40) 0;
+
+        @media only screen and (max-width: $screen-lg) {
+          margin: toRem(30) 0;
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin: toRem(15) 0;
+        }
+      }
+
+      .text {
+        margin: 0;
+        max-width: toRem(420);
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: toRem(543);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(16);
+          line-height: getLineHeight(24, 16);
+        }
+      }
+    }
+  }
+}

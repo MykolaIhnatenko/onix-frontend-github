@@ -1,0 +1,127 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+@import "../../../App/sass/mixinsAnimation";
+
+$blueColor: #2F80ED;
+$darkBlueColor: #246FD3;
+$whiteColor:#FFFFFF;
+
+.mainContainer {
+  text-align: center;
+  padding: 0 16px;
+  margin: 100px auto 0;
+
+  @media only screen and (max-width: 968px) {
+    margin: 50px auto 0;
+  }
+}
+
+.cardTitle{
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 130%;
+
+  @media only screen and (max-width: 968px) {
+    max-width: 450px;
+    font-size: 24px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    max-width: 300px;
+  }
+}
+
+.cardContainer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+  &.sale {
+    margin-bottom: 80px;
+  }
+
+  @media only screen and (max-width: 968px) {
+    flex-wrap: wrap;
+  }
+}
+
+.contactUsContainer {
+  margin-top: 140px;
+
+  @media only screen and (max-width: 968px) {
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 44px;
+    line-height: 130%;
+
+    @media only screen and (max-width: 968px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+
+  .textContainer {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 592px;
+    margin: 24px auto 0;
+
+    @media only screen and (max-width: 968px) {
+      font-size: 16px;
+    }
+  }
+
+  .redirectButton {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    color: $whiteColor;
+    background: $blueColor;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    border-radius: 100px;
+    padding: 14px 0;
+    max-width: 330px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    @media only screen and (max-width: $screen-lg) {
+      cursor: default;
+    }
+
+     &:hover {
+      background: $darkBlueColor;
+    }
+
+    @media only screen and (max-width: 968px) {
+      font-size: 18px;
+    }
+  }
+
+  .contactUsImage {
+    margin: 50px 0 auto;
+    height: 220px;
+    width: 102px;
+    transition: 0.3s;
+
+    @media only screen and (max-width: 968px) {
+      margin-top: 32px;
+      height: 108px;
+      width: 50px;
+    }
+  }
+
+  .redirectButton:hover + .contactUsImage {
+    transition: 0.3s;
+    transform: translateY(-70px);
+
+    @media only screen and (max-width: 968px) {
+      transform: translateY(-52px);
+    }
+  }
+}

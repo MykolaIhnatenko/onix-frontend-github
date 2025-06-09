@@ -1,0 +1,170 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.storyWrapper {
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(1082);
+    margin: 0 auto;
+  }
+}
+
+.servicesWrapper {
+  @media only screen and (min-width: $screen-md) {
+    height: 100%;
+  }
+}
+
+.challengeWrapper {
+
+  @media only screen and (min-width: $screen-md) {
+    height: 100%;
+  }
+}
+
+.resultWrapper {
+  z-index: 3;
+}
+
+.resultAposWrapper {
+  margin-top: toRem(24);
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(401);
+    margin-top: toRem(48);
+    margin-bottom: toRem(88);
+    z-index: 2;
+    position: relative;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(514);
+    margin-top: toRem(370);
+    margin-bottom: toRem(96);
+  }
+}
+
+.storyCard {
+  padding: toRem(24) toRem(16);
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(93deg, rgba(200, 200, 200, 1), rgba(16, 13, 12, 1), rgba(16, 13, 12, 1), rgba(224, 224, 224, 1));
+  background-color: rgba(24, 24, 24, 0.85);
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(32);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: toRem(64) toRem(20);
+  }
+}
+
+.chapterCard {
+  padding: toRem(35) toRem(16) toRem(16);
+  background-color: rgba(16, 13, 12, 0.7);
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(93deg, rgba(200, 200, 200, 1), rgba(16, 13, 12, 1), rgba(16, 13, 12, 1), rgba(224, 224, 224, 1));
+
+  @media only screen and (min-width: $screen-md) {
+    display: flex;
+    padding: toRem(24) toRem(24) toRem(24) toRem(38);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: toRem(64) toRem(60) toRem(64) toRem(81);
+  }
+}
+
+.processCard {
+  z-index: 3;
+  position: relative;
+  padding: toRem(24);
+  min-height: toRem(156);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(93deg, #503929 0%, #22100C 56.33%, #52251F 100%);
+  transition: all 1s ease-out;
+
+  @media only screen and (min-width: $screen-md) {
+    height: 100%;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    &:hover {
+      background: var(--color-bracketology-gray);
+      border-image-source: linear-gradient(93deg, #E35F00 0%, #100D0C 37.7%, #100D0C 56.33%, #E31B00 100%);
+
+      .processIconBlock {
+
+        span {
+          color: var(--color-bracketology-red)
+        }
+
+        .processIconBlockIcon {
+          color: var(--color-bracketology-red)
+        }
+      }
+    }
+  }
+}
+
+.technologyCard {
+  padding: toRem(16);
+  background-color: rgba(31, 31, 31, 0.6);
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(93deg, rgba(200, 200, 200, 1), rgba(16, 13, 12, 1), rgba(16, 13, 12, 1), rgba(224, 224, 224, 1));
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(48);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: toRem(62) 0 toRem(64);
+  }
+}
+
+.challengeCard {
+  padding: toRem(24);
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(93deg, #503929 0%, #22100C 56.33%, #52251F 100%);
+
+
+  @media only screen and (min-width: $screen-md) {
+    height: 100%;
+  }
+}
+
+.resultCard {
+  padding: toRem(16);
+  background-color: rgba(16, 13, 12, 0.6);
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(93deg, rgba(200, 200, 200, 1), rgba(16, 13, 12, 1), rgba(16, 13, 12, 1), rgba(224, 224, 224, 1));
+  z-index: 2;
+  position: relative;
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(32);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: toRem(64) toRem(120);
+  }
+}
+
+.resultAposCard {
+  padding: toRem(16);
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(24);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: toRem(32);
+  }
+}

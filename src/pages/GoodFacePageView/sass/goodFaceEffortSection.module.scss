@@ -1,0 +1,15 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.effortSection {
+  ul {
+    list-style: none;
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(80);
+      display: flex;
+      flex-wrap: wrap;
+      gap: toRem(56) 0;
+    }
+  }
+}

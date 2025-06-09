@@ -1,0 +1,30 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.wrapper {
+  overflow: hidden;
+
+  @media only screen and (max-width: $screen-sm) {
+    padding-left: toRem(15);
+  }
+
+  .badgesContainer {
+    max-width: toRem(600);
+
+    @media only screen and (max-width: $screen-sm) {
+      max-width: unset;
+      padding-right: toRem(15);
+    }
+
+    .badges {
+      display: flex;
+      justify-items: flex-start;
+      gap: toRem(10);
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+
+    }
+  }
+}

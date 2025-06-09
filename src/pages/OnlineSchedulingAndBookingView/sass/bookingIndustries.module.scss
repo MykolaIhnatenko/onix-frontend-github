@@ -1,0 +1,27 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.bannerBlock {
+  .emptyBlock {
+    @apply pt-[614px];
+
+    @media (max-width: 1032px) {
+      @apply pt-[728px];
+    }
+    
+    @media (max-width: 992px) {
+      @apply pt-[416px];
+    }
+  
+    @media (max-width: 767px) {
+      @apply pt-[310px];
+    }
+  }
+}
+
+.cardsBox {
+  @media screen and (max-width: $screen-lg) {
+    padding-bottom: toRem(20);
+  }
+}

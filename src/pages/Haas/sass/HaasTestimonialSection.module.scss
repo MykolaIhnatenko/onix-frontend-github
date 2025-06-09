@@ -1,0 +1,120 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.testimonialSection {
+  position: relative;
+  background-color: var(--color-white);
+  padding-top: toRem(90);
+  padding-bottom: toRem(120);
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(80) toRem(15);
+  }
+
+  .imgContainer {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      top: 0;
+      height: 100%;
+    }
+
+    img {
+      object-position: 70%;
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        object-position: 100%;
+      }
+    }
+  }
+
+  .testimonial {
+    position: relative;
+
+    h2 {
+      color: var(--color-black);
+      padding-bottom: toRem(80);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-bottom: toRem(60);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(40);
+      }
+    }
+
+    .card {
+      width: 100%;
+      border: 1px solid var(--color-gray-haas-border);
+      background: var(--color-white);
+      padding: toRem(20) toRem(20) toRem(30);
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(40);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: toRem(70);
+      }
+
+      .photoBlock {
+        display: flex;
+        gap: toRem(24);
+        margin-bottom: toRem(20);
+
+        @media only screen and (min-width: $screen-md) {
+          margin-bottom: toRem(30);
+        }
+
+        .photo {
+          min-width: toRem(73);
+          min-height: toRem(72);
+          max-width: toRem(73);
+          max-height: toRem(72);
+
+          @media only screen and (min-width: $screen-md) {
+            min-width: toRem(96);
+            min-height: toRem(96);
+            max-width: toRem(96);
+            max-height: toRem(96);
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .position {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          p {
+            font-weight: 400;
+            font-size: toRem(18);
+            line-height: toRem(27);
+          }
+
+          .name {
+            color: var(--color-black);
+            padding-bottom: toRem(4);
+          }
+
+          .positionName {
+            color: var(--color-gray-haas2);
+          }
+        }
+      }
+    }
+  }
+}

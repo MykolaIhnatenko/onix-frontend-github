@@ -1,0 +1,36 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.about {
+  max-width: 100%;
+  margin: 80px 0 0;
+  padding: 0 30px;
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: var(--muktaVaani);
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding: 0;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+
+    p {
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 29px;
+      font-family: var(--muktaVaani);
+      max-width: 668px;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    max-width: 1100px;
+
+    p {
+      max-width: 1100px;
+    }
+  }
+}

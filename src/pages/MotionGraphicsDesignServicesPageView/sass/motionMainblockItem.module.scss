@@ -1,0 +1,74 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+@mixin imageSmall {
+  position: absolute;
+  max-width: toRem(320);
+  height: auto;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(200);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    display: none;
+  }
+}
+
+.test {
+  .container {
+    display: flex;
+    padding-top: toRem(380);
+    width: 100%;
+    justify-content: space-around;
+    .imagePairContainer {
+      transition: all 0s ease-in-out;
+      position: relative;
+      cursor: pointer;
+      height: fit-content;
+      width: 30%;
+      min-width: toRem(400);
+      margin: 0 toRem(80);
+  
+      @media only screen and (max-width: $screen-lg) {
+        min-width: 40%;
+        cursor: default;
+      }
+  
+      @media only screen and (max-width: $screen-md - 1) {
+        min-width: toRem(240);
+      }
+  
+        .imageBig {
+        height: 100%;
+        width: 101%;
+        object-fit: cover;
+        object-position: top;
+      }
+  
+      .imageSmall {
+        display: none;
+      }
+  
+      .imageSmall1 {
+        @include imageSmall;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%);
+      }
+  
+      .imageSmall2 {
+        @include imageSmall;
+        bottom: -10%;
+        right: -10%;
+      }
+  
+      .imageSmall3 {
+        @include imageSmall;
+        bottom: -30%;
+        right: -5%;
+      }
+    }
+  }
+}
+

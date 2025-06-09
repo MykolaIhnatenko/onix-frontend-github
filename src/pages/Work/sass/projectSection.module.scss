@@ -1,0 +1,126 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+@import "../../../pages/App/sass/mixinsDisplay.scss";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 toRem(70) toRem(100);
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: 0 toRem(30) toRem(40);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: 0 toRem(15) toRem(40);
+  }
+}
+
+.filterBar {
+  width: 30%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-black) transparent;
+  padding: 0 0 toRem(40);
+  display: flex;
+  flex-direction: column;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    position: absolute;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--color-scrollbar-track);
+    position: absolute;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-black);
+    position: absolute;
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    display: none;
+  }
+}
+
+.filterItem {
+  @include generalSansFont(24, 500, 34);
+  @include displayStart;
+  width: 100%;
+  margin-bottom: toRem(30);
+  color: var(--color-gray-text2);
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: var(--color-dark-gray);
+
+    @media only screen and (max-width: $screen-lg) {
+      color: var(--color-black);
+    }
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    @include generalSansFont(18, 500, 34);
+    cursor: default;
+
+    &:hover {
+      color: var(--color-gray-text2);
+    }
+  }
+}
+
+.activeFilterItem {
+  @include generalSansFont(24, 600, 34);
+  color: var(--color-black);
+
+  @media only screen and (max-width: $screen-lg) {
+    @include generalSansFont(18, 600, 34);
+    color: var(--color-black);
+
+    &:hover {
+      color: var(--color-black);
+    }
+  }
+}
+
+.contentContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: toRem(30);
+
+  @media only screen and (max-width: $screen-md - 1) {
+    gap: toRem(20);
+  }
+
+  @media only screen and (max-width: $screen-sm) {
+    gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.activeFilter {
+  width: 70%;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: toRem(40);
+
+  @media only screen and (max-width: $screen-sm) {
+    padding-left: 0;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

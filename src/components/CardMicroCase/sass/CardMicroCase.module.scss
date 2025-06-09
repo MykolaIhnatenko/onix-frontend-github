@@ -1,0 +1,99 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsAnimation.scss";
+
+.offerCard {
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  border-radius: toRem(20);
+  padding: toRem(10);
+  margin-top: toRem(20);
+
+  .img {
+    border-radius: toRem(10);
+    object-fit: cover;
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: toRem(21) toRem(25) toRem(36) toRem(10);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: toRem(60) toRem(75) toRem(75) toRem(60);
+    margin-top: toRem(30);
+    height: toRem(429);
+  }
+
+  .cardContent {
+    @media only screen and (min-width: $screen-md) {
+      flex-basis: 50%;
+      max-width: toRem(334);
+      margin-right: toRem(20);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: 420px;
+      margin-right: 90px;
+    }
+    .cardCircle {
+      width: toRem(40);
+      height: toRem(40);
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      img {
+        object-fit: contain;
+      }
+
+      .cardIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .circleColorBanskaStavnica {
+      background-color: var(--color-blue-banska-stiavnica);
+    }
+    .circleColorVR {
+      background-color: var(--color-blue-vr-microcase);
+    }
+    .circleColorCinematicVR {
+      background-color: var(--color-blue-cinematic-vr);
+    }
+    .circleColorTimescope {
+      background-color: var(--color-blue-timescope);
+    }
+    .circleColorUnrealSpace {
+      background-color: var(--color-blue-unreal-space);
+    }
+    .circleColorHolokit {
+      background-color: var(--color-blue-holokit);
+    }
+    .circleColorUnityDSM {
+      background-color: var(--color-blue-unity-dsm);
+    }
+    .circleColorOnixAR {
+      background-color: var(--color-blue-onix-ar);
+    }
+    p {
+      padding: 20px 0;
+    }
+  }
+  .circleColorSalesforce {
+    background-color: var(--color-blue-salesforce-tracking);
+  }
+  .circleColorSalesforceSupportAutomationApp {
+    background-color: var(--color-blue-salesforce-support);
+  }
+}

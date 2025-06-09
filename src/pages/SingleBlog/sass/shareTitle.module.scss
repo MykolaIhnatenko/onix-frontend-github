@@ -1,0 +1,31 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.title {
+  text-transform: uppercase;
+  font-size: toRem(14);
+  font-weight: 500;
+  line-height: getLineHeight(22, 14);
+  letter-spacing: 0.28px;
+  margin: 0;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(16);
+    line-height: getLineHeight(22, 16);
+    letter-spacing: 0.32px;
+  }
+}
+
+.share {
+  padding-right: toRem(5);
+
+  @media only screen and (min-width: $screen-xl) {
+    padding-right: 0;
+  }
+}
+
+.writtenBy {
+  @media only screen and (min-width: 1280px) {
+    padding-bottom: toRem(10);
+  }
+}

@@ -1,0 +1,140 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  width: 100%;
+  background-color: black;
+  position: relative;
+  z-index: 2;
+
+  .content {
+    position: relative;
+    padding: 0 toRem(70) toRem(80);
+    color: var(--color-white);
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: 0 toRem(80) toRem(80);
+    }
+
+    .bgBot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .contentContainer {
+      position: relative;
+      .contentTitle {
+        padding-bottom: toRem(40);
+        font-size: toRem(30);
+        line-height: getLineHeight(40, 30);
+        font-weight: 500;
+      }
+      .contentFlex {
+        display: flex;
+        gap: 180px;
+        .contentItem {
+          display: flex;
+          gap: 30px;
+          .icon {
+            width: 60px;
+            height: 60px;
+          }
+          .contentItemTitle {
+            position: relative;
+            font-size: toRem(40);
+            line-height: getLineHeight(56, 40);
+            font-weight: 500;
+            font-family: var(--generalSans);
+            cursor: default;
+            &:after{
+              margin-top: toRem(3);
+              content: '';
+              width: 0;
+              height: 2px;
+              position: absolute;
+              bottom: -3px;
+              left: 0;
+              background: var(--color-white);
+              transition: 0.3s ease-in-out;
+            }
+            &:hover {
+              cursor: pointer;
+              &:after{
+                width: 100%;
+              }
+            }            
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      
+      padding: 0 toRem(30) toRem(80);
+
+      .contentContainer {
+        .contentFlex {
+          gap: 160px;
+          .contentItem {
+            display: flex;
+            gap: 30px;
+            .icon {
+              width: 50px;
+              height: 50px;
+            }
+            .contentItemTitle {
+              font-size: toRem(36);
+              line-height: getLineHeight(46, 36);
+              font-weight: 500;
+              &:after{
+                display: none;
+              }
+              &:hover {
+                cursor: default;
+
+                &:after{
+                  width: 0;
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+            
+      padding: 0 toRem(15) toRem(60);
+
+      .contentContainer {
+        .contentTitle {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+        }
+        .contentFlex {
+          flex-direction: column;
+          gap: 30px;
+          .contentItem {
+            gap: 20px;
+            .icon {
+              width: 40px;
+              height: 40px;
+            }
+            .contentItemTitle {
+              font-size: toRem(24);
+              line-height: getLineHeight(34, 24);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

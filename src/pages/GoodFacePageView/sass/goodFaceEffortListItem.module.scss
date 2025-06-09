@@ -1,0 +1,42 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.itemContainer {
+  padding-top: toRem(24);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(32);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: 0;
+    flex: 0 1 50%;
+  }
+
+  .item {
+    .imageContainer {
+      max-width: toRem(40);
+      max-height: toRem(40);
+
+      svg{
+        width: toRem(40);
+        height: toRem(40);
+
+        @media only screen and (min-width: $screen-md) {
+          width: toRem(68);
+          height: toRem(68);
+        }
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(68);
+        max-height: toRem(68);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

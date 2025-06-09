@@ -1,0 +1,53 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.trendingArticles {
+
+  @media only screen and (min-width: $screen-xxl) {
+    max-width: toRem(1440);
+    margin: 0 auto;
+  }
+
+  .container {
+    padding-top: toRem(30);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(60);
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      padding-left: toRem(70);
+      padding-right: toRem(70);
+    }
+
+    .textWrapper {
+      padding: toRem(30) 0;
+      margin-bottom: toRem(10);
+      border-bottom: 2px solid var(--color-black);
+
+      @media only screen and (min-width: $screen-md) {
+        margin-bottom: toRem(0);
+      }
+
+      .text {
+        margin: 0;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(1060);
+        }
+      }
+    }
+  }
+
+  .blogsWrapper {
+    padding-bottom: toRem(60);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-bottom: toRem(120);
+    }
+  }
+}

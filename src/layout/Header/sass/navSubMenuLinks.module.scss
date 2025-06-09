@@ -1,0 +1,156 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  position: fixed;
+  width: 100%;
+  font-family: var(--ibmPlexMono);
+  color: var(--color-white);
+  z-index: 9;
+
+  .subMenuContainer {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: var(--color-black);
+
+    ul {
+      padding-left: toRem(40);
+      padding-bottom: toRem(50);
+      padding-top: toRem(120);
+      background: var(--color-white);
+      flex-wrap: wrap;
+      display: flex;
+
+      li {
+        width: 33.33%;
+
+        > div {
+          > div {
+            &:hover {
+              color: var(--color-dark-blue);
+
+              path {
+                color: var(--color-dark-blue);
+              }
+            }
+
+            > div {
+              margin-left: 0;
+
+              &:last-child {
+                transform: rotate(0deg);
+              }
+            }
+          }
+
+          svg {
+            width: 15px;
+            height: 15px;
+            display: inline;
+
+            > path {
+              color: var(--color-medium-gray);
+              transition: .4s;
+            }
+          }
+        }
+      }
+    }
+
+    .subMenuLink {
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+      font-family: var(--ibmPlexMono);
+      font-weight: 400;
+      margin: toRem(10) 0;
+      padding-right: toRem(30);
+      text-align: left;
+      justify-content: flex-start;
+      display: inline-flex;
+      flex-direction: row-reverse;
+      align-items: baseline;
+    }
+
+    .childLink {
+      font-size: toRem(16);
+      line-height: getLineHeight(26, 16);
+      font-family: var(--ibmPlexMono);
+      font-weight: 400;
+      color: #4B4B4B;
+      margin-bottom: toRem(15);
+
+      &:hover {
+        color: var(--color-black);
+      }
+    }
+  }
+
+  &.fixHeader {
+    .subMenuContainer {
+      top: toRem(-70);
+    }
+  }
+}
+
+.overlay {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .3);
+  z-index: 3;
+}
+
+.childLinksContainer {
+  padding-left: toRem(26);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  span {
+    margin-right: 2px;
+  }
+
+  > div {
+    &:first-child {
+      margin-top: toRem(5);
+    }
+
+    &:last-child {
+      margin-bottom: toRem(15);
+    }
+  }
+}
+
+.iconChildrenMenu {
+  transform: rotate(180deg);
+  margin-left: toRem(8);
+  transition: .4s;
+  cursor: pointer;
+
+  @media only screen and (max-width: $screen-lg) {
+    cursor: default;
+  }
+
+  path {
+    color: var(--color-black) !important;
+  }
+}
+
+.activeChildrenMenu {
+  transform: rotate(0deg);
+  margin-left: toRem(8);
+  transition: .4s;
+  cursor: pointer;
+
+  @media only screen and (max-width: $screen-lg) {
+    cursor: default;
+  }
+
+  path {
+    color: var(--color-black) !important;
+  }
+}

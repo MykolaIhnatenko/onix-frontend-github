@@ -1,0 +1,78 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.responsibilitiesSection {
+  .container {
+    padding-top: toRem(44);
+    padding-bottom: toRem(27);
+    
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(40);
+      padding-bottom: toRem(40);
+    }
+    
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(82);
+      padding-bottom: toRem(82);
+      display: flex;
+    }
+    
+    .responsibilitiesTitles {
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-right: toRem(140);
+      }
+      
+      h3 {
+        padding-top: toRem(16);
+        padding-bottom: toRem(32);
+        
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(48);
+          max-width: toRem(615);
+        }
+        
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-bottom: toRem(60);
+          max-width: toRem(520);
+        }
+      }
+    }
+    
+    .image {
+      display: none;
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: block;
+        clip-path: inset(0 round 20px);
+        max-width: toRem(410);
+        max-height: toRem(397);
+      }
+      
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    
+    .responsibilitiesList {
+      list-style: none;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 92%;
+        background-color: #E0E4E9;
+        top: 0;
+        left: toRem(20);
+        z-index: 1;
+        
+        @media only screen and (min-width: $screen-md) {
+          left: toRem(31);
+        }
+      }
+    }
+  }
+}

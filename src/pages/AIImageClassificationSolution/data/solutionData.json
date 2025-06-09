@@ -1,0 +1,27 @@
+[
+  {
+    "id": "01",
+    "title": "Manufacturers",
+    "text": "For those in manufacturing, quality control is paramount. The software can help identify product defects or anomalies on the assembly line in real time. This reduces wastage and ensures product quality."
+  },
+  {
+    "id": "02",
+    "title": "Healthcare professionals",
+    "text": "Doctors or radiologists can use the tool to quickly analyze medical images, assisting in early diagnosis or anomaly detection."
+  },
+  {
+    "id": "03",
+    "title": "Wildlife researchers and conservationists",
+    "text": "Researchers can track animal movements, numbers, and behaviors more efficiently by classifying species from trap camera images."
+  },
+  {
+    "id": "04",
+    "title": "General public",
+    "text": "For individuals keen on comprehending and organizing images for educational, research, or recreational endeavors."
+  },
+  {
+    "id": "05",
+    "title": "Retail",
+    "text": "Retailers can classify products, track inventory visually, or even help customers find products with similar attributes."
+  }
+]

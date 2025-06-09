@@ -1,0 +1,51 @@
+@import "../../../../../pages/App/sass/breakpointsVariables.scss";
+
+$white: #fff;
+$darkBlue3: #1f2532;
+$accentBlue: #2066EA;
+$purple: #8052FF;
+
+.spinnerContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  align-items: center;
+
+  .tiny {
+    width: 15px;
+    height: 15px;
+    border: 3px solid;
+  }
+
+  .normal {
+    width: 40px;
+    height: 40px;
+    border: 6px solid;
+  }
+
+  .darkBlue {
+    border-color: $darkBlue3;
+    border-top-color: $white;
+  }
+
+  .whiteBlue {
+    border-color: $white;
+    border-top-color: $accentBlue;
+  }
+
+  .whitePurple {
+    border-color: $white;
+    border-top-color: $purple;
+  }
+
+  .spinner {
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}

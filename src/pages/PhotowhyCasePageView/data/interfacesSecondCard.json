@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "paragraph": "User Profile"
+  },
+  {
+    "id": 2,
+    "paragraph": "Upload Photos"
+  },
+  {
+    "id": 3,
+    "paragraph": "Photo Feed"
+  },
+  {
+    "id": 4,
+    "paragraph": "Live Streaming"
+  },
+  {
+    "id": 5,
+    "paragraph": "Chat"
+  },
+  {
+    "id": 6,
+    "paragraph": "Push notifications of requests for a review or one-on-one session"
+  },
+  {
+    "id": 7,
+    "paragraph": "Evaluate a Photo/Portfolio using a variety of teamplates, rate it and write a comment"
+  },
+  {
+    "id": 8,
+    "paragraph": "Schedule a masterclass"
+  },
+  {
+    "id": 9,
+    "paragraph": "Withdraw the earings"
+  }
+]

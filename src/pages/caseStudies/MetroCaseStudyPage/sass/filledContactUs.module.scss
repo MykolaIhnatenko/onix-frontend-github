@@ -1,0 +1,67 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  height: toRem(480);
+  padding: toRem(30) toRem(20);
+  background-color: #53299C;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media only screen and (min-width: $screen-md) {
+    height: toRem(294);
+    padding: toRem(30) 0 toRem(30) toRem(30);
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.imageWrapper {
+  width: toRem(180);
+
+  @media only screen and (min-width: $screen-md) {
+    width: toRem(264);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.textWrapper {
+  max-width: toRem(377);
+
+  .buttonContainer {
+    margin-top: toRem(36);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    @media only screen and (min-width: $screen-md) {
+      justify-content: flex-start;
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: toRem(14);
+      line-height: toRem(32);
+      text-transform: uppercase;
+      color: #333333;
+      background: #F7FAFD;
+      border-radius: toRem(3);
+      padding: toRem(9) 0;
+      width: toRem(155);
+      transition: 0.3s;
+
+      &:hover {
+        background: #D0E3F5;
+      }
+    }
+  }
+}

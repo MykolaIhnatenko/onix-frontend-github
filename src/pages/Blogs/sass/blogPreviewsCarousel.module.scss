@@ -1,0 +1,112 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.blogPreviews {
+
+
+  @media only screen and (min-width: $screen-xxl) {
+    padding-left: toRem(70);
+    padding-right: toRem(70);
+  }
+  .carousel {
+    .innerCarousel {
+      padding-left: toRem(15);
+      padding-right: toRem(15);
+      width: 100%;
+      overflow: hidden;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-left: toRem(30);
+        padding-right: toRem(30);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-left: toRem(70);
+        padding-right: toRem(70);
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .slideContainer {
+        @media only screen and (min-width: $screen-sm) {
+          width: toRem(330);
+          margin-right: toRem(20);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          width: toRem(407);
+          margin-right: toRem(43);
+        }
+      }
+    }
+  }
+}
+
+.bigPreviews {
+  padding-top: toRem(40);
+  padding-bottom: toRem(30);
+
+  @media only screen and (min-width: $screen-sm) {
+    padding-bottom: toRem(10);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(60);
+  }
+
+  .slideContainer {
+    padding-top: 0;
+  }
+}
+
+.topBlogsPreview {
+  padding-top: toRem(30);
+
+  @media only screen and (min-width: $screen-sm) {
+    padding-top: toRem(40);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(60);
+  }
+
+  .slideContainer {
+    padding-top: 0;
+  }
+}
+
+.bigPreviews, .topBlogsPreview {
+  .carousel {
+    .innerCarousel {
+      width: 100%;
+      overflow: hidden;
+
+      @media only screen and (min-width: $screen-xxxl) {
+        padding-left: 0;
+      }
+
+      .slideContainer {
+        width: toRem(310);
+        margin-right: toRem(15);
+
+        @media only screen and (min-width: $screen-sm) {
+          width: toRem(523);
+          margin-right: toRem(20);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          width: toRem(560);
+          margin-right: toRem(43);
+        }
+      }
+    }
+  }
+}

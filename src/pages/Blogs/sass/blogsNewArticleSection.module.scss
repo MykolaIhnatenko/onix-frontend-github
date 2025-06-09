@@ -1,0 +1,122 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.newArticle {
+  position: relative;
+  margin-top: toRem(60);
+
+  @media only screen and (min-width: $screen-md) {
+    margin-top: toRem(80);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    margin-top: toRem(120);
+  }
+
+  .bg {
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .container {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(30);
+      padding-bottom: toRem(30);
+      display: flex;
+      gap: 4.2%;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(70);
+      padding-bottom: toRem(70);
+      gap: 3.38%;
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      padding-left: toRem(70);
+      padding-right: toRem(70);
+      max-width: toRem(1440);
+      margin: 0 auto;
+    }
+
+    .imgContainer {
+      position: relative;
+      width: 100%;
+      height: toRem(330);
+
+      @media only screen and (min-width: $screen-md) {
+        flex-basis: 41%;
+        height: toRem(290);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        flex-basis: 31.3%;
+        height: toRem(407);
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .contentBlock {
+      padding-top: toRem(30);
+      display: block;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: 0;
+        flex-basis: 54.8%;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        cursor: pointer;
+        flex-basis: 63.3%;
+      }
+
+      .title {
+        font-size: toRem(20);
+        line-height: getLineHeight(28, 20);
+        margin: 0;
+        font-weight: 500;
+        font-family: var(--generalSans);
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(24);
+          line-height: getLineHeight(34, 24);
+        }
+      }
+
+      .blogTitle {
+        font-size: toRem(22);
+        line-height: getLineHeight(30, 22);
+        font-weight: 600;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(36);
+          line-height: getLineHeight(46, 36);
+        }
+      }
+
+      .blogDescription {
+        margin: 0;
+        padding: toRem(15) 0;
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(16);
+          line-height: getLineHeight(22, 16);
+          letter-spacing: 0.32px;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(18);
+          line-height: getLineHeight(26, 18);
+          letter-spacing: 0;
+          padding: toRem(40) 0 toRem(30);
+        }
+      }
+    }
+  }
+}

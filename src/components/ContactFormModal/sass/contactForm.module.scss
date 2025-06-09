@@ -1,0 +1,106 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.form {
+  flex-direction: column;
+  gap: toRem(30);
+  padding-bottom: toRem(64);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-bottom: 0;
+  }
+  
+  .formFields {
+    @media only screen and (max-width: $screen-sm) {
+      padding: 0 toRem(15);
+    }
+
+    .inputFlex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: toRem(30);
+      padding-bottom: toRem(30);
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        gap: toRem(20);
+        padding-bottom: toRem(20);
+      }
+
+      .name {
+        flex: 1 47%;
+
+        @media only screen and (max-width: $screen-md - 1) {
+          flex: 1 100%;
+        }
+      }
+  
+      .email {
+        flex: 1 47%;
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          flex: 1 100%;
+        }
+      }
+  
+      .company {
+        flex: 1 47%;
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          flex: 1 100%;
+        }
+      }
+  
+      .country {
+        flex: 1 47%;
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          flex: 1 100%;
+        }
+      }
+    }
+
+    .details {
+      textarea {
+        padding: toRem(7) 0 toRem(7) toRem(15);
+        min-height: unset;
+        max-height: toRem(56);
+
+        &:focus ~ span,
+        &:valid ~ span {
+          top: toRem(-15);
+
+          @media only screen and (max-width: $screen-sm) {
+            top: toRem(-18);
+          }
+        }
+      }
+
+      span {
+        top: -4px;
+      }
+    }
+  }
+
+  .btnWrapper {
+    @media only screen and (max-width: ($screen-md - 1)) {
+      > div {
+        font-size: toRem(16);
+        line-height: getLineHeight(24, 16);
+      }
+    }
+    @media only screen and (max-width: $screen-sm) {
+      padding-left: toRem(15);
+      padding-right: toRem(15);
+    }
+  }
+  
+  .captcha {
+    @media only screen and (max-width: $screen-sm) {
+      padding-left: toRem(15);
+    }
+  }
+  
+  &.referralForm {
+    gap: toRem(30);
+  }
+}

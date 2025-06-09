@@ -1,0 +1,43 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.imagesBlockItem {
+  @media only screen and (min-width: $screen-xxl) {
+    display: flex;
+    justify-content: center;
+    gap: toRem(30);
+  }
+
+  &:last-of-type {
+    @media only screen and (min-width: $screen-xxl) {
+      flex-direction: row-reverse;
+    }
+
+    .texts {
+      @media only screen and (min-width: $screen-xxl) {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .texts {
+    @media only screen and (min-width: $screen-xxl) {
+      max-width: toRem(620);
+    }
+
+    .text {
+      margin: 0;
+      padding-top: toRem(30);
+
+      @media only screen and (min-width: $screen-xxl) {
+        padding-top: 0;
+      }
+
+      &:last-of-type {
+        @media only screen and (min-width: $screen-xxl) {
+          padding-top: toRem(60);
+        }
+      }
+    }
+  }
+}

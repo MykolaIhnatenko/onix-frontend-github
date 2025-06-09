@@ -1,0 +1,83 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.button {
+  width: fit-content;
+  padding: toRem(7) toRem(16);
+  background: var(--color-white);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.2s ease;
+  border: 2px solid var(--color-black);
+  border-radius: toRem(21);
+  height: toRem(40);
+  
+  position: relative;
+  overflow: hidden;
+
+  @media only screen and (max-width: $screen-lg) {
+    overflow: unset;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #000;
+    transition: width 0.4s ease;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    cursor: pointer;
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+
+      .textButton {
+        background-position: -100% 0;
+      }
+    }
+  }
+}
+
+.textButton {
+  @include generalPlexMono(16, 500, 22);
+  line-height: toRem(22);
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, black 50%, white 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.36s ease;
+  background-size: 200% 100%;
+  background-position: 0 0;
+  display: inline-block;
+
+  @media only screen and (min-width: ($screen-lg + 1)) {
+    cursor: pointer;
+  }
+}
+
+.activeButton {
+  @extend .button;
+  background: var(--color-cruise) !important;
+  border: 2px solid var(--color-cruise);
+
+  .textButton {
+    background: linear-gradient(90deg, black 50%, black 50%);
+    -webkit-background-clip: text;
+  }
+
+  &::before {
+    display: none;
+  }
+}

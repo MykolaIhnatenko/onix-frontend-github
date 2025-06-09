@@ -1,0 +1,223 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.interactiveTrainingSimulator {
+  width: 100%;
+  font-weight: 400;
+  font-family: var(--satoshiFont), sans-serif;
+  background-color: #171820;
+
+  :global {
+    .fixed {
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      overflow: hidden;
+    }
+  }
+
+  .fixedBlock {
+    .main {
+      min-height: 100vh;
+    }
+
+    .company {
+      z-index: 2;
+      position: relative;
+      background-color: #171820;
+    }
+
+    .app {
+      z-index: 4;
+      position: relative;
+      background-color: #171820;
+    }
+
+    .flow {
+      z-index: 5;
+      position: relative;
+    }
+
+    .features {
+      z-index: 6;
+      position: relative;
+    }
+
+    .process {
+      z-index: 7;
+      position: relative;
+    }
+
+    .results {
+      z-index: 8;
+      position: relative;
+      background-color: #171820;
+    }
+
+    .content {
+      :global {
+        .container4D {
+          padding-left: toRem(16);
+          padding-right: toRem(16);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-left: toRem(48);
+            padding-right: toRem(48);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            max-width: toRem(1360);
+            margin: 0 auto;
+            padding-left: toRem(20);
+            padding-right: toRem(20);
+          }
+        }
+
+        h2 {
+          font-weight: 500;
+          font-size: toRem(32);
+          line-height: toRem(40);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(56);
+            line-height: toRem(66);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(80);
+            line-height: toRem(108);
+          }
+        }
+
+        h3 {
+          font-weight: 500;
+          font-size: toRem(24);
+          line-height: toRem(32);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(32);
+            line-height: toRem(43);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(40);
+            line-height: toRem(54);
+          }
+        }
+
+        h5 {
+          font-weight: 500;
+          font-size: toRem(32);
+          line-height: toRem(40);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(48);
+            line-height: toRem(65);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(64);
+            line-height: toRem(86);
+          }
+        }
+
+
+        .fs16 {
+          font-size: toRem(16);
+          line-height: toRem(21);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(18);
+            line-height: toRem(24);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(20);
+            line-height: toRem(27);
+          }
+        }
+
+        .fs24 {
+          font-weight: 500;
+          font-size: toRem(24);
+          line-height: toRem(32);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(32);
+            line-height: toRem(43);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(40);
+            line-height: toRem(54);
+          }
+        }
+
+        .fs32 {
+          font-weight: 500;
+          font-size: toRem(32);
+          line-height: toRem(40);
+
+          @media only screen and (min-width: $screen-md) {
+            line-height: toRem(43);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(40);
+            line-height: toRem(54);
+          }
+        }
+
+        .white {
+          background-color: #FBFDFF;
+        }
+
+        .black {
+          background-color: #050407;
+        }
+
+        .purple {
+          background-color: #9067C6;
+        }
+
+        .grayText {
+          color: #D0D0D0;
+        }
+
+        .darkGrayText {
+          color: #6F7D8A;
+        }
+
+        .purpleText {
+          color: #9067C6;
+        }
+
+        .fw500 {
+          font-weight: 500;
+        }
+
+        .link {
+          @media only screen and (min-width: ($screen-lg + 1)) {
+            cursor: pointer;
+          }
+        }
+
+        .display {
+          display: none;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            display: block;
+          }
+        }
+
+        .featureTitle {
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(64);
+            line-height: toRem(86);
+          }
+        }
+      }
+    }
+  }
+}

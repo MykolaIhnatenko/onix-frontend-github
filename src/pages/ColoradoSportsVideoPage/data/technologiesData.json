@@ -1,0 +1,19 @@
+{
+  "Frontend": [
+    "Vue.js v3",
+    "Stripe",
+    "Google Maps API",
+    "Typescript",
+    "Pug",
+    "SAASS",
+    "Pinia",
+    "V-calendar"
+  ],
+  "Backend": [
+    "PHP v8.1",
+    "MySql v8.0",
+    "Laravel v9.21.6",
+    "Stripe",
+    "SendGrid"
+  ]
+}

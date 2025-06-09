@@ -1,0 +1,138 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  height: toRem(900);
+  display: flex;
+  background-color: var(--color-black);
+
+  @media only screen and (max-width: $screen-lg) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .background {
+    position: absolute;
+    height: toRem(720) !important;
+    width: 100%;
+    object-fit: cover;
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: toRem(375) !important;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: toRem(70);
+      background: linear-gradient(180deg, rgba(145, 32, 32, 0) 15%, #000000 100%);
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .leftColum {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    color: var(--color-white);
+
+    @media only screen and (max-width: $screen-lg) {
+      width: 100%;
+      height: auto;
+      align-items: center;
+    }
+
+    .content {
+      max-width: toRem(435);
+      margin-left: toRem(70);
+      margin-right: toRem(70);
+
+      @media only screen and (min-width: $screen-xxxl) {
+        margin-left: toRem(80);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(708);
+        margin: toRem(120) toRem(30) toRem(60);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin: toRem(80) toRem(15) toRem(40);
+        max-width: unset;
+      }
+
+      .title {
+        @media only screen and (max-width: $screen-lg) {
+          font-size: toRem(36);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          font-size: toRem(25);
+          text-align: center;
+          padding: 0 toRem(30);
+        }
+      }
+
+      .text {
+        @media only screen and (max-width: $screen-lg) {
+          text-align: center;
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin: toRem(30) 0;
+          font-size: toRem(16);
+          max-width: unset;
+        }
+      }
+
+      .button {
+        max-width: toRem(420);
+        width: toRem(420);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .rightColum {
+    width: 50%;
+    position: relative;
+
+    @media only screen and (max-width: $screen-lg) {
+      width: 100%;
+      height: toRem(1005);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      min-height: toRem(330);
+      height: calc(100vw + 132px);
+    }
+
+    .bgRight {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      right: 0;
+      object-fit: cover;
+
+      @media only screen and (max-width: $screen-lg) {
+        padding: 0 toRem(30) toRem(120);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: 0 toRem(15) toRem(80);
+      }
+    }
+  }
+}

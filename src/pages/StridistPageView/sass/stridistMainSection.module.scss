@@ -1,0 +1,147 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.mainSection {
+  background-color: var(--color-white);
+  padding-top: toRem(136);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(146);
+  }
+
+  .mainContent {
+    position: relative;
+    overflow: hidden;
+    clip-path: inset(0 round 20px);
+
+    .contentBlock {
+      position: absolute;
+      top: 0;
+      padding: toRem(24) toRem(22) toRem(24) toRem(24);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(46) toRem(40) toRem(40);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding: toRem(124) toRem(90) toRem(45) toRem(30);
+      }
+
+      .logoBlock {
+        display: flex;
+        align-items: center;
+
+        .logo {
+          width: toRem(40);
+          height: toRem(45);
+          margin-right: toRem(12);
+          flex-grow: 0;
+          flex-shrink: 0;
+          margin-left: toRem(5);
+
+          @media only screen and (min-width: $screen-md) {
+            width: toRem(64);
+            height: toRem(72);
+            margin-left: toRem(8);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            width: toRem(134);
+            height: toRem(134);
+            margin-left: toRem(75);
+            margin-right: toRem(8);
+          }
+        }
+      }
+
+      .content {
+        @media only screen and (min-width: $screen-lg + 1) {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        p {
+          letter-spacing: 0.4px;
+          line-height: getLineHeight(22, 16);
+          color: var(--color-white);
+
+          @media only screen and (min-width: $screen-md) {
+            line-height: getLineHeight(26, 18);
+            max-width: toRem(479);
+            letter-spacing: 0;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(24);
+            line-height: getLineHeight(30, 24);
+            max-width: toRem(597);
+          }
+
+          &:first-child {
+            padding-bottom: toRem(16);
+
+            @media only screen and (min-width: $screen-md) {
+              max-width: toRem(375);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-bottom: 0;
+              max-width: toRem(470);
+              padding-right: toRem(20);
+            }
+          }
+        }
+      }
+    }
+
+    .mainContentWrapper {
+      position: relative;
+      min-height: toRem(700);
+
+      @media only screen and (min-width: $screen-md) {
+        min-height: toRem(1113);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        min-height: toRem(1286);
+      }
+
+      .mainImg {
+        position: absolute;
+        width: 100%;
+        height: 120%;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        top: 0;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          height: 115%;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          background: linear-gradient(180deg, rgba(1, 1, 1, 0.6) 0%, rgba(1, 1, 1, 0) 25.03%, rgba(1, 1, 1, 0.6) 67.81%);
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

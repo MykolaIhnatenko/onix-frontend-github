@@ -1,0 +1,80 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.container{
+  min-width: 420px;
+
+  .linkBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: toRem(20);
+
+    .title{
+      font-size: toRem(24);
+      line-height: getLineHeight(56,40);
+      color: var(--color-black);
+      font-weight: 500;
+      max-width: 420px;
+    }
+  }
+}
+@media only screen and (max-width: $screen-lg ) {
+  .container{
+    min-width: toRem(300);
+    flex-direction: column;
+
+    .linkBlock {
+      margin: toRem(20) 0 0;
+      display: block;
+
+      .title{
+        font-size: toRem(36);
+        line-height: getLineHeight(46,36);
+        br{
+          content: '';
+          &:after {
+            content: ' ';
+          }
+        }
+      }
+    }
+    img{
+      width: toRem(300);
+      height: toRem(190);
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md - 1) {
+  .container{
+    min-width: toRem(240);
+
+    .linkBlock {
+      margin: toRem(10) 0 0;
+
+      .title {
+        font-size: toRem(20);
+        line-height: getLineHeight(30, 20);
+      }
+    }
+
+    img{
+      width: toRem(240);
+      height: toRem(150);
+    }
+  }
+}
+
+.fitness {
+  .linkBlock {
+    .title{
+      @include generalSansFont(24, 500, 34);
+     
+      @media only screen and (max-width: $screen-lg){
+        @include generalSansFont(20, 500, 28);
+      }
+    }
+  }
+}

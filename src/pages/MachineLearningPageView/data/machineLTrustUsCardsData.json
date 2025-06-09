@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01",
+    "title": "Custom Llama AI solutions",
+    "content": "Using Llama, we offer cost-effective solutions for enhancing customer interactions, automating processes, and extracting insights from text data. Our custom ML solutions include chatbots, language translation tools, and text generation systems, ensuring versatility, customization, and data privacy."
+  },
+  {
+    "id": "02",
+    "title": "BERT",
+    "content": "Leveraging BERT's capabilities, we develop custom applications such as sentiment analysis tools, question-answering systems, and language translation services. These solutions provide accurate and efficient text data processing, enabling businesses to gain valuable insights, improve customer interactions, and streamline operations."
+  },
+  {
+    "id": "03",
+    "title": "Natural language processing",
+    "content": "Onix is an ML development company specializing in creating custom models to solve text-based challenges such as speech recognition, sentiment analysis, keyword extraction, topic detection, automatic text classification, and more. Our ML experts create robust and reliable solutions while providing the best possible user experience."
+  },
+  {
+    "id": "04",
+    "title": "Computer vision",
+    "content": "We develop systems for visual sensing, object detection and recognition, image segmentation, smart video analysis, optical character recognition, and more using state-of-the-art computer vision technologies."
+  },
+  {
+    "id": "05",
+    "title": "Intelligent process automation",
+    "content": "Our experts automate and streamline operations, saving time and money. AI-driven robots handle tasks like data extraction, calculations, and customer service. We offer advanced analytics for tracking progress and improvements."
+  },
+  {
+    "id": "06",
+    "title": "Smart AI assistants & chatbots",
+    "content": "Onix offers smart AI assistants and chatbots for automated customer interactions. Our AI-driven technology utilizes natural language processing for seamless conversational interactions. These bots understand context, provide accurate answers, and analyze customer sentiment for real-time insights. Enhance customer service and reduce costs with our AI assistant and chatbot solution."
+  },
+  {
+    "id": "07",
+    "title": "Predictive algorithms",
+    "content": "Onix provides predictive algorithm solutions for data analysis and informed decision-making. Our AI-driven technology detects patterns and trends in large data sets, enabling you to anticipate future events and understand customer behavior with predictive scoring capabilities. Unlock new opportunities, reduce risk, and optimize operations with our predictive algorithms."
+  },
+  {
+    "id": "08",
+    "title": "GPT",
+    "content": "Our GPT development services enable organizations to improve customer interactions, automate content creation, and enhance language processing capabilities. We build tailored AI models with specific parameters and algorithms, offering support for deployment, hyperparameter tuning, data preparation, performance evaluation, and scalability optimization."
+  }
+]

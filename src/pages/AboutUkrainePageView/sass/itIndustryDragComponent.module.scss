@@ -1,0 +1,134 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  padding: toRem(140) 0 toRem(100);
+  height: toRem(757);
+  overflow: hidden;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(100) 0 toRem(100);
+    height: toRem(717);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    height: toRem(400);
+    padding: toRem(10) 0 toRem(45);
+  }
+
+  .wrapper {
+    display: flex;
+    column-gap: toRem(112);
+    padding: 0 toRem(70);
+    position: absolute;
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: 0 toRem(30);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: 0 toRem(15);
+      column-gap: toRem(18);
+    }
+
+    .item {
+      position: relative;
+
+      &:before {
+        content: '';
+        width: toRem(22);
+        height: toRem(379);
+        opacity: 0.25;
+        background: linear-gradient(90deg, #93CCFF 19.66%, #98D4FF 20.16%);
+        position: absolute;
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          width: toRem(12);
+          height: toRem(205);
+        }
+      }
+
+      &:nth-child(even) {
+        margin-top: toRem(190);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-top: toRem(100);
+        }
+
+        &:before {
+          transform: rotate(60deg);
+          right: toRem(-71);
+          top: toRem(-202);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            transform: rotate(62deg);
+            right: 0;
+            top: toRem(-110);
+          }
+        }
+      }
+
+      &:nth-child(odd) {
+        &:before {
+          transform: rotate(-61deg);
+          right: toRem(-67);
+          top: toRem(-7);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            transform: rotate(-62deg);
+            right: toRem(10);
+            top: toRem(-7);
+          }
+        }
+      }
+
+      &:last-child {
+        &:before {
+          opacity: 0;
+          right: toRem(20);
+        }
+      }
+
+      .image {
+        min-width: toRem(217);
+        min-height: toRem(153);
+        width: toRem(217);
+        height: toRem(153);
+        position: relative;
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          min-width: toRem(117);
+          min-height: toRem(83);
+          width: toRem(117);
+          height: toRem(83);
+        }
+      }
+
+      .title {
+        margin-top: toRem(48);
+        font-size: toRem(42);
+        line-height: getLineHeight(56, 42);
+        font-weight: 400;
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-top: toRem(24);
+          font-size: toRem(32);
+        }
+      }
+
+      .text {
+        font-size: toRem(14);
+        margin-top: toRem(5);
+        margin-bottom: 0;
+        line-height: getLineHeight(20, 14);
+        width: 100%;
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin: 0;
+          width: toRem(159);
+        }
+      }
+    }
+  }
+}

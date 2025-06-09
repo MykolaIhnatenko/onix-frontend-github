@@ -1,0 +1,63 @@
+@import "../../App/sass/breakpointsVariables.scss";
+@import "../../App/sass/mixinsFonts.scss";
+@import "../../App/sass/functions.scss";
+
+.mainTitle {
+  max-width: toRem(580);
+
+  @media only screen and (max-width: $screen-xl) {
+    max-width: toRem(708);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    max-width:  toRem(330);
+  }
+
+  .imgWrapper {
+    position: relative;
+    width: 100%;
+    height: toRem(32);
+
+    @media only screen and (max-width: $screen-md - 1) {
+      width: 100%;
+      height: toRem(20);
+    }
+
+    .imageContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  
+      img {
+        object-fit: contain;
+        object-position: left;
+      }
+    }
+  }
+}
+
+.title {
+  color: var(--color-white);
+  @include generalSansFont(50,500,64);
+
+  @media only screen and (max-width: $screen-xl) {
+    @include generalSansFont(40, 500, 56);
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    @include generalSansFont(25, 500, 35);
+  }
+}
+
+.mainMarginBlock {
+  padding-top: toRem(40);
+
+  @media only screen and (max-width: $screen-xl) {
+    padding-top: toRem(30);
+  }
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-top: toRem(15);
+  }
+}

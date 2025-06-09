@@ -1,0 +1,468 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$orangeProjectX: #FF6644;
+$textColor: #68686D;
+
+.testimonialSection {
+  position: relative;
+  background-color: white;
+
+  .testimonialCirclesBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media only screen and (min-width: $screen-md) {
+      top: 274px;
+    }
+
+    .testimonialCirclesBgContainer {
+      position: relative;
+      width: 375px;
+      height: 842px;
+    }
+  }
+
+  .container {
+    padding-top: 194px;
+    position: relative;
+
+    @media only screen and (min-width: 450px) {
+      padding-top: 109px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 260px;
+    }
+
+    .technologyBlock {
+      background-color: white;
+      border-radius: 24px;
+      box-shadow: 0 5px 50px rgba(38, 38, 46, 0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      z-index: 5;
+      padding: 20px;
+      position: absolute;
+      height: 328px;
+      width: calc(100% - 40px);
+      top: -150px;
+      left: 20px;
+
+      @media only screen and (min-width: 450px) {
+        padding: 24px 21px;
+        max-width: 715px;
+        margin: 0 auto;
+        width: calc(100% - 48px);
+        top: -250px;
+        left: 24px;
+        height: 302px;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: 1110px;
+        height: 373px;
+        padding: 32px 0;
+        width: calc(100% - 40px);
+        top: -190px;
+        left: 20px;
+      }
+
+      .technologyItem {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100px;
+        height: 96px;
+
+        @media only screen and (min-width: 450px) {
+          flex-basis: 33.3%;
+          flex-direction: column;
+          height: 127px;
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          height: 154px;
+        }
+
+        &:nth-child(1) {
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+          @media only screen and (min-width: 450px) {
+            order: 1;
+          }
+        }
+
+        &:nth-child(2) {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+          @media only screen and (min-width: 450px) {
+            order: 4;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: unset;
+          }
+        }
+
+        &:nth-child(3) {
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+          @media only screen and (min-width: 450px) {
+            order: 3;
+            border-right: unset;
+          }
+        }
+
+        &:nth-child(4) {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+          @media only screen and (min-width: 450px) {
+            order: 5;
+            border-bottom: unset;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        &:nth-child(5) {
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+          @media only screen and (min-width: 450px) {
+            order: 2;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        &:nth-child(6) {
+          @media only screen and (min-width: 450px) {
+            order: 6;
+          }
+        }
+
+        .nodeJsLogo {
+          width: 65px;
+          height: 40px;
+
+          @media only screen and (min-width: 450px) {
+            width: 83px;
+            height: 51px;
+            margin-bottom: 10px;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            width: 100px;
+            height: 61px;
+            margin-bottom: 7px;
+          }
+        }
+
+        .aWeberLogo {
+          width: 99px;
+          height: 24px;
+
+          @media only screen and (min-width: 450px) {
+            width: 117px;
+            height: 30px;
+            margin-bottom: 21px;
+            margin-top: 15px;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            width: 135px;
+            height: 34px;
+            margin-bottom: 25px;
+          }
+        }
+
+        .sendbirdLogo {
+          width: 89px;
+          height: 14px;
+
+          @media only screen and (min-width: 450px) {
+            width: 106px;
+            height: 18px;
+            margin-bottom: 26px;
+            margin-top: 13px;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            width: 175px;
+            height: 30px;
+            margin-bottom: 22px;
+          }
+        }
+
+        .stripeLogo {
+          width: 77px;
+          height: 37px;
+
+          @media only screen and (min-width: 450px) {
+            width: 119px;
+            height: 57px;
+            margin-bottom: 8px;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            width: 115px;
+            height: 55px;
+            margin-bottom: 15px;
+          }
+        }
+
+        .vueLogo {
+          width: 40px;
+          height: 34px;
+
+          @media only screen and (min-width: 450px) {
+            width: 50px;
+            height: 44px;
+            margin-bottom: 13px;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            margin-bottom: 15px;
+            margin-top: 5px;
+          }
+        }
+
+        .figmaLogo {
+          width: 40px;
+          height: 40px;
+
+          @media only screen and (min-width: 450px) {
+            width: 51px;
+            height: 51px;
+            margin-bottom: 11px;
+            margin-top: 5px;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            width: 44px;
+            height: 44px;
+            margin-bottom: 19px;
+          }
+        }
+
+        .nodeJsLogo,
+        .aWeberLogo,
+        .sendbirdLogo,
+        .stripeLogo,
+        .vueLogo,
+        .figmaLogo {
+          .img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        p {
+          display: none;
+
+          @media only screen and (min-width: 450px) {
+            display: block;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: $textColor;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+    .resultBlock {
+      background-color: white;
+      box-shadow: 0 5px 50px rgba(38, 38, 46, 0.15);
+      border-radius: 24px;
+      position: relative;
+      z-index: 5;
+      margin-top: 28px;
+
+      @media only screen and (min-width: 450px) {
+        overflow: hidden;
+        margin-top: 0;
+      }
+
+      @media only screen and (min-width: $screen-lg) {
+        margin-top: 33px;
+      }
+
+      .resultBlockContent {
+        padding: 32px;
+        position: relative;
+
+        @media only screen and (min-width: 450px) {
+          padding: 40px 16px;
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 75%;
+            height: 100%;
+            background-color: white;
+            clip-path: polygon(0 0, 81% 0, 57% 100%, 0% 100%);
+            z-index: 4;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            padding: 54px 65px 73px;
+
+            &::before {
+              clip-path: polygon(0 0, 81% 0, 50% 100%, 0% 100%);
+            }
+          }
+        }
+
+        h3 {
+          position: relative;
+          z-index: 5;
+        }
+
+        p {
+          padding-top: 16px;
+
+          @media only screen and (min-width: 450px) {
+            max-width: 310px;
+            position: relative;
+            z-index: 5;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            max-width: 350px;
+          }
+        }
+      }
+
+      .resultBlockImg {
+        display: none;
+
+        @media only screen and (min-width: 450px) {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        .resultImg {
+          position: relative;
+          width: 440px;
+          height: 540px;
+
+          @media only screen and (min-width: $screen-md) {
+            width: 710px;
+            height: 693px;
+          }
+
+          .img {
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .resultSecondTitle {
+      padding-top: 24px;
+
+      @media only screen and (min-width: 450px) {
+        padding-top: 86px;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: 72px;
+      }
+    }
+
+    .resultCardsContainer {
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (min-width: 450px) {
+        padding-top: 8px;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        margin: 0 -12px
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: 2px;
+        margin: 0 -15px
+      }
+
+      .resultCardWrapper {
+        @media only screen and (min-width: 450px) {
+          flex-basis: 50%;
+          max-width: 371px;
+          margin-top: 8px;
+          padding: 0 12px;
+
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          flex-basis: 33.3%;
+          max-width: 380px;
+          margin-top: 14px;
+          padding: 0 15px;
+        }
+
+        .resultCard {
+          background-color: $orangeProjectX;
+          border-radius: 16px;
+          margin-top: 16px;
+          padding: 17px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          @media only screen and (min-width: 450px) {
+            padding: 29px 33px;
+            max-width: 347px;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            padding: 29px 31px 28px 35px;
+            max-width: 350px;
+          }
+
+          .resultCardIcon {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+
+            @media only screen and (min-width: 450px) {
+              width: 32px;
+              height: 32px;
+            }
+          }
+
+          p {
+            color: white;
+            padding-left: 16px;
+
+            @media only screen and (min-width: 450px) {
+              max-width: 240px;
+              font-size: 20px;
+              line-height: 30px;
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              padding-left: 30px;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

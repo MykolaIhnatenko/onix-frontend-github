@@ -1,0 +1,94 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding-top: toRem(120);
+  padding-bottom: toRem(120);
+  background-image: url('../../../assets/images/crossplatformDesign/img_bg_industries.webp');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+  }
+
+  .sectionTitle {
+    font-size: toRem(50);
+    line-height: toRem(64);
+    font-weight: 500;
+    margin-bottom: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(40);
+      line-height: toRem(56);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(25);
+      line-height: toRem(35);
+    }
+  }
+
+  .sectionDescription {
+    max-width: toRem(980);
+    margin-bottom: toRem(80);
+    font-size: toRem(18);
+    line-height: toRem(26);
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(16);
+      line-height: toRem(24);
+    }
+  }
+
+  .ideas {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+    }
+
+    &_item {
+      max-width: toRem(380);
+      font-size: toRem(18);
+      line-height: toRem(26);
+
+      .content {
+        margin-bottom: 0;
+        margin-top: toRem(30);
+      }
+
+      .iconWrapper {
+        svg {
+          width: toRem(40);
+          height: toRem(40);
+
+          @media only screen and (min-width: $screen-md) {
+            width: toRem(60);
+            height: toRem(60);
+          }
+        }
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: none;
+        &:not(:last-child) {
+          margin-bottom: toRem(40);
+        }
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(14);
+        line-height: toRem(20);
+      }
+    }
+  }
+}

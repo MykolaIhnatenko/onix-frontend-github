@@ -1,0 +1,71 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.contentItem {
+  color: #6F7D8A;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    flex: 0 1 calc((100% - 60px) / 2);
+  }
+
+  &:not(:first-of-type) {
+    padding-top: toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(32);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: 0;
+    }
+  }
+
+  &:nth-of-type(1) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      order: 1;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      order: 3;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      order: 2;
+    }
+  }
+
+  &:nth-of-type(4) {
+    @media only screen and (min-width: $screen-lg + 1) {
+      order: 4;
+    }
+  }
+}
+
+.result {
+  color: #D0D0D0;
+  padding-top: toRem(20);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(32);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(24);
+  }
+
+  &:last-of-type {
+    padding-top: toRem(40);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(64);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(48);
+    }
+  }
+}

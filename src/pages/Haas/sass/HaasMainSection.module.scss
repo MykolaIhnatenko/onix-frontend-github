@@ -1,0 +1,175 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainSection {
+  z-index: 20;
+  position: relative;
+  min-height: toRem(752);
+  
+  @media screen and (min-width: $screen-md) {
+    height: 100vh;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @media screen and (min-width: $screen-lg + 1) {
+    min-height: toRem(850);
+    max-height: toRem(1200);
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    position: relative;
+    min-height: toRem(752);
+
+    @media screen and (min-width: $screen-md) {
+      height: 100vh; 
+    }
+
+    @media screen and (min-width: $screen-lg + 1) {
+      min-height: toRem(850);
+      max-height: toRem(1200);
+    }
+
+    .videoContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .container {
+      z-index: 21;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      padding-top: toRem(139);
+      padding-bottom: toRem(60);
+      
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(153);
+        padding-bottom: toRem(80);
+      }
+      
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(258);
+        padding-bottom: toRem(80);
+        width: 100%;
+        max-width: toRem(1440);
+        margin: 0 auto;
+      }
+
+      @media screen and (min-width: $screen-xxxl) {
+        max-width: toRem(1460);
+      }
+
+      .headerLogoWrapper {
+        margin-bottom: toRem(60);
+
+        .logoWrapper {
+          max-width: toRem(122);
+          max-height: toRem(40);
+          margin-bottom: toRem(15);
+
+          @media only screen and (min-width: $screen-md) {
+            margin-bottom: toRem(30);
+            max-width: toRem(146);
+            max-height: toRem(48);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            margin-bottom: toRem(40);
+            max-width: toRem(183);
+            max-height: toRem(60);
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+
+        h1 {
+          font-weight: 400;
+          font-size: toRem(32);
+          line-height: toRem(48);
+          color: var(--color-white);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(48);
+            line-height: toRem(72);
+            max-width: toRem(708);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            font-size: toRem(64);
+            line-height: toRem(87);
+            max-width: toRem(762);
+          }
+        }
+      }
+
+      .text {
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(1190);
+        }
+
+        p {
+          color: var(--color-white);
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            flex: 0 1 calc((100% - 130px) / 2);
+          }
+        }
+
+        p:last-of-type {
+          padding-top: toRem(30);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(40);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-top: 0;
+          }
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          display: flex;
+          gap: toRem(130);
+        }
+      }
+    }
+  }
+}

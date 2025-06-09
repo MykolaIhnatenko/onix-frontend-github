@@ -1,0 +1,13 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding-top: toRem(24);
+
+  @media only screen and (min-width: $screen-md) {
+    flex-basis: 50%;
+    padding-left: toRem(12);
+    padding-right: toRem(12);
+    align-self: stretch;
+  }
+}

@@ -1,0 +1,500 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  @media only screen and (max-width: $screen-md - 1) {
+    overflow: hidden;
+  }
+}
+.panel {
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    padding: toRem(20) 0;
+    background: var(--color-white);
+    border-top: 1px solid var(--color-light-gray);
+    border-bottom: 1px solid var(--color-light-gray);
+  
+    @media only screen and (max-width: $screen-md - 1) {
+      justify-content: space-between;
+    }
+
+    .filters {
+      display: flex;
+      gap: toRem(10);
+      align-items: center;
+      padding: toRem(8) 0;
+      margin-right: toRem(30);
+      color: var(--color-black);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        border: none;
+        background: var(--color-white);
+        margin-right: 0;
+      }
+  
+      .filtersTitle {
+        font-size: toRem(16);
+        line-height: getLineHeight(24, 16);
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 100%;
+          display: block;
+          width: toRem(5);
+          height: toRem(5);
+          background: transparent;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+        }
+
+        &.active {
+          &:after {
+            background: var(--color-black);
+          }
+        }
+      }
+    }
+
+    .seeAllbtn {
+      padding: toRem(8) toRem(20);
+      border-radius: toRem(100);
+      transition: background-color .3s ease;
+      border: 1px solid var(--color-light-gray);
+      background-color: var(--color-white);
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #000;
+        transition: width 0.4s ease;
+      }
+
+      .seeAllbtnTitle {
+        font-size: toRem(18);
+        line-height: getLineHeight(24, 18);
+        background: linear-gradient(90deg, black 50%, white 50%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-position 0.36s ease;
+        background-size: 200% 100%;
+        background-position: 0 0;
+        position: relative;
+        display: inline-block;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        cursor: pointer;
+
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+
+          .seeAllbtnTitle {
+            background-position: -100% 0;
+          }
+        }
+      }
+
+      &.active {
+        .seeAllbtnTitle {
+          background: linear-gradient(90deg, black 50%, black 50%);
+          -webkit-background-clip: text;
+        }
+        &::before {
+          display: none;
+        }
+        background: var(--color-cruise);
+      }
+    }
+
+    .clearAllBtn {
+      background: transparent;
+      border: none;
+      padding: 0;
+
+      .clearAllBtnTitle {
+        font-size: toRem(16);
+        line-height: getLineHeight(24, 16);
+        color: var(--color-grey-title);
+      }
+    }
+  
+    .technologies {
+      margin-left: toRem(10);
+      display: flex;
+      gap: toRem(10);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        display: none;
+      }
+  
+      .technologiesItem {
+        color: var(--color-black);
+        display: flex;
+        gap: toRem(5);
+        padding: toRem(8) toRem(10) toRem(8) toRem(20);
+        border-radius: toRem(100);
+        cursor: pointer;
+        transition: background-color .3s ease;
+        border: none;
+        background-color: var(--color-white);
+        position: relative;
+        overflow: hidden;
+  
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background-color: #000;
+          transition: width 0.4s ease;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          &:hover {
+            .technologiesItemTitle {
+              background-position: -100% 0;
+            }
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+  
+        &.active {
+          background: var(--color-cruise);
+
+          &::before {
+            display: none;
+          }
+
+
+          .technologiesItemTitle {
+            background: linear-gradient(90deg, black 50%, black 50%);
+            -webkit-background-clip: text;
+          }
+
+          .technologiesItemIconContainer {
+            transform: rotateX(0deg);
+            color: var(--color-black);
+            mix-blend-mode: normal;
+          }  
+        }
+
+        &.activeClose {
+          background: var(--color-cruise);
+
+          &::before {
+            display: none;
+          }
+
+          .technologiesItemTitle {
+            background: linear-gradient(90deg, black 50%, black 50%);
+            -webkit-background-clip: text;
+
+            &:after {
+              background: var(--color-black);
+            }
+          }
+
+          .technologiesItemIconContainer {
+            color: var(--color-black);
+            mix-blend-mode: normal;
+          }
+        }
+  
+        .technologiesItemTitle {
+          font-size: toRem(18);
+          line-height: getLineHeight(24, 18);
+          background: linear-gradient(90deg, black 50%, white 50%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: background-position 0.36s ease;
+          background-size: 200% 100%;
+          background-position: 0 0;
+          position: relative;
+          display: inline-block;
+          
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: block;
+            width: toRem(5);
+            height: toRem(5);
+            background: transparent;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+          }
+        }
+
+        .technologiesItemIconContainer {
+          width: toRem(24);
+          height: toRem(24);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: rotateX(180deg);
+          transition: transform 0.3s ease;
+          background-color: transparent;
+          mix-blend-mode: difference;
+          color: var(--color-white);
+
+          .technologiesItemIcon {
+            width: toRem(14);
+            height: toRem(14);
+          }
+        }
+      }
+    }
+  }
+
+  .tagFilters {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 3;
+    background: var(--color-white);
+
+    .tagFilterBar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: toRem(15);
+      padding: toRem(30) 0 toRem(40);
+
+      @media only screen and (max-width: $screen-lg) {
+        padding-top: toRem(20) 0 toRem(30);
+      }
+
+      .tagFilterItem {
+        font-family: var(--ibmPlexMono);
+        padding: toRem(7) toRem(15);
+        border-radius: toRem(100);
+        border: 1px solid var(--color-light-gray);
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+        background-color: var(--color-white);
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background-color: #000;
+          transition: width 0.4s ease;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          cursor: pointer;
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+
+            .btnText {
+              background-position: -100% 0;
+            }
+          }
+        }
+  
+        &.active {
+          background: var(--color-cruise);
+          gap: toRem(10);
+
+          &::before {
+            display: none;
+          }
+
+          .btnText {
+            background: linear-gradient(90deg, black 50%, black 50%);
+            -webkit-background-clip: text;
+          }
+
+          .tagFilterItemIcon {
+            width: toRem(20);
+            height: toRem(20);
+          }
+        }
+
+        .btnText {
+          background: linear-gradient(90deg, black 50%, white 50%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: background-position 0.36s ease;
+          background-size: 200% 100%;
+          background-position: 0 0;
+          position: relative;
+          display: inline-block;
+        }
+
+        .tagFilterItemIcon {
+          width: toRem(0);
+          height: toRem(0);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: var(--color-white);
+  z-index: 1000;
+
+  .modalContent {
+    padding: toRem(10) toRem(15) toRem(30);
+    .close {
+      border: none;
+      background: transparent;
+      position: absolute;
+      top: toRem(15);
+      right: toRem(15);
+      width: toRem(24);
+      height: toRem(24);
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .modalTitle {
+      font-size: toRem(25);
+      line-height: getLineHeight(35, 25);
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .technologiesList {
+      padding-top: toRem(20);
+      display: flex;
+      flex-direction: column;
+  
+      .technologiesListContiner {
+        border-bottom: 1px solid var(--color-light-gray);
+  
+        .technologiesItem {
+          padding: toRem(15) 0;
+          color: var(--color-black);
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          background: transparent;
+          border: none;
+  
+          &.activeClose {
+            .technologiesItemTitle {
+              &:after {
+                background: var(--color-black);
+              }
+            }
+          }
+    
+          .technologiesItemTitle {
+            font-size: toRem(18);
+            line-height: getLineHeight(24, 18);
+            text-align: center;
+            position: relative;
+  
+            &:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 100%;
+              display: block;
+              width: toRem(5);
+              height: toRem(5);
+              background: transparent;
+              border-radius: 50%;
+              transition: all 0.3s ease;
+            }
+          }
+    
+          .technologiesItemIconContainer {
+            width: toRem(24);
+            height: toRem(24);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotateX(180deg);
+            transition: transform 0.3s ease;
+    
+            .technologiesItemIcon {
+              width: toRem(14);
+              height: toRem(14);
+            }
+          }
+        }
+  
+        .tagFilters {
+          overflow: hidden;
+          width: 100%;
+          z-index: 3;
+          background: var(--color-white);
+      
+          .tagFilterBar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: toRem(15);
+            padding-bottom: toRem(20);
+      
+            .tagFilterItem {
+              padding: toRem(7) toRem(15);
+              color: var(--color-black);
+              border-radius: toRem(100);
+              border: 1px solid var(--color-light-gray);
+              font-size: toRem(16);
+              line-height: getLineHeight(24, 18);
+              background-color: var(--color-white);
+              display: flex;
+              align-items: center;
+              
+              &.active {
+                background: var(--color-cruise);
+                gap: toRem(10);
+      
+                .tagFilterItemIcon {
+                  width: toRem(20);
+                  height: toRem(20);
+                }
+              }
+      
+              .tagFilterItemIcon {
+                width: toRem(0);
+                height: toRem(0);
+                transition: all 0.3s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

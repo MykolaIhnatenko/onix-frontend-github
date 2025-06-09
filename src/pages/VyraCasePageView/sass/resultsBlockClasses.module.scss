@@ -1,0 +1,102 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+
+.resultBlock {
+  background-color: var(--color-black);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: toRem(80);
+    }
+
+    .background {
+      top: 0;
+      height: 100%;
+      
+      @media only screen and (max-width: $screen-lg) {
+        height: 67%;
+      }
+      
+      @media only screen and (max-width: $screen-sm) {
+        height: 35%;
+      }
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: toRem(90);
+        background: linear-gradient(180deg, rgba(253, 253, 253, 0) 0%, #000000 120%);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+      }
+    }
+
+    .container {
+      .name {
+        color: var(--color-white);
+        margin: 0 0 toRem(20);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin: 0 0 toRem(15);
+          font-size: toRem(14);
+          line-height: getLineHeight(20, 14);
+        }
+      }
+
+      .title {
+        color: var(--color-white);
+        max-width: toRem(1300);
+        padding-bottom: toRem(80);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding-bottom: toRem(60);
+        }
+      }
+
+      .contentContainer {
+        @media only screen and (min-width: $screen-xxxl) {
+          max-width: toRem(850);
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          max-width: toRem(708);
+        }
+
+
+        .line {
+          background-color: var(--color-track-gray);
+          
+          .lineActive{
+            background-color: var(--color-white);
+          }
+        }
+
+        .content {
+          > div {
+            &:last-of-type {
+              .contentText {
+                margin: 0 ;
+              }
+            }
+          }
+
+          .contentText {
+            color: var(--color-white);
+            margin: 0 0 toRem(30) 0;
+
+            @media only screen and (max-width: $screen-lg) {
+              font-size: toRem(18);
+              line-height: getLineHeight(26, 18);
+            }
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              font-size: toRem(16);
+              line-height: toRem(24);
+              margin-bottom: toRem(20);
+            }
+          }
+        }
+      }
+    }
+}

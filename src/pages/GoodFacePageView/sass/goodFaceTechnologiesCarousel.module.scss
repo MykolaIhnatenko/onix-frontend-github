@@ -1,0 +1,41 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.carousel {
+  height: toRem(424);
+  margin: 0 toRem(-10);
+
+  @media only screen and (min-width: $screen-sm) {
+    height: toRem(440);
+  }
+  
+  :global {
+    .swiper-pagination{
+      bottom: 0;
+    }
+    .swiper-pagination-bullet {
+      width: toRem(8);
+      height: toRem(8);
+      background-color: #303539;
+      border-radius: 50%;
+      margin: 0 toRem(5);
+    }
+    
+    .swiper-pagination-bullet-active {
+      background-color: var(--color-pink2);
+    }
+  }
+
+  .item {
+    cursor: grab;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: toRem(16);
+    padding: 0 toRem(10);
+
+    @media only screen and (min-width: $screen-sm) {
+      gap: toRem(24);
+    }
+  }
+}

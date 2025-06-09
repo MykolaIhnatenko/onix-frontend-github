@@ -1,0 +1,118 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+$colorBlack: #0B041A;
+$colorPurple: #9067C6;
+$colorGray: #6F7D8A;
+$colorDarkGray: #3A3C3E;
+
+.companySection {
+  z-index: 4;
+  position: relative;
+
+  .container {
+    padding: toRem(48) 0;
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(64) 0;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding: toRem(104) 0;
+    }
+
+    h2 {
+      color: $colorBlack;
+      padding-top: toRem(32);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(40);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(64);
+      }
+    }
+
+    .contentBlock {
+      padding-top: toRem(24);
+      padding-bottom: toRem(24);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(40);
+        padding-bottom: toRem(56);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(48);
+        padding-bottom: toRem(104);
+        display: flex;
+        gap: toRem(60);
+      }
+
+      .contentBlockItem {
+        @media only screen and (min-width: $screen-lg + 1) {
+          flex-basis: 50%;
+        }
+      }
+    }
+
+    p {
+      span {
+        color: $colorPurple;
+        font-weight: 500;
+      }
+    }
+
+    .lightGray {
+      color: $colorGray;
+    }
+
+    .gray {
+      color: $colorDarkGray;
+    }
+
+    .progressBlock {
+      display: flex;
+      gap: toRem(16);
+      margin-bottom: toRem(40);
+
+      @media only screen and (min-width: $screen-md) {
+        gap: toRem(24);
+        margin-bottom: toRem(56);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        gap: toRem(64);
+        max-width: toRem(1156);
+        margin: 0 auto;
+        margin-bottom: toRem(104);
+      }
+
+      .progressBlockContent {
+        p {
+          color: $colorBlack;
+          font-weight: 500;
+          font-size: toRem(24);
+          line-height: toRem(32);
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(32);
+            line-height: toRem(43);
+          }
+
+          @media only screen and (min-width: ($screen-lg + 1)) {
+            font-size: toRem(48);
+            line-height: toRem(65);
+          }
+        }
+      }
+    }
+
+    .lastParagraph {
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(630);
+      }
+    }
+  }
+}

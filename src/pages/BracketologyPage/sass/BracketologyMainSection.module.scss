@@ -1,0 +1,179 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.mainSection {
+  padding-top: toRem(153);
+  background-color: var(--color-bracketology-background);
+  position: relative;
+  overflow: hidden;
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(150);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: 0;
+    position: relative;
+  }
+
+  .mainContent {
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: 100%;
+      min-height: toRem(614);
+      z-index: 3;
+      position: relative;
+    }
+
+    .mainBackgroundImg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .container {
+      padding-bottom: toRem(56);
+      z-index: 2;
+      position: relative;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(120);
+        overflow: hidden;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(1240);
+        z-index: 2;
+        padding: toRem(154) toRem(20) toRem(160);
+      }
+
+      h2 {
+        @media only screen and (min-width: $screen-md) {
+          text-align: center;
+          padding-bottom: toRem(8);
+        }
+      }
+
+      p {
+        padding-top: toRem(16);
+        opacity: 0.9;
+        letter-spacing: -0.2px;
+
+        @media only screen and (min-width: $screen-md) {
+          z-index: 3;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-top: toRem(24);
+          max-width: toRem(860);
+        }
+      }
+
+      .contentBlock {
+        @media only screen and (min-width: $screen-lg + 1) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: toRem(77);
+        }
+
+        .logoBlock {
+          @media only screen and (min-width: $screen-md) {
+            position: relative;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            flex-basis: 50%;
+          }
+
+          .logo {
+            max-width: toRem(320);
+            max-height: toRem(76);
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              margin: 0 auto;
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              margin: 0;
+              max-width: toRem(453);
+              max-height: toRem(108);
+            }
+          }
+
+          .title {
+            font-weight: 700;
+            font-size: toRem(18);
+            line-height: toRem(28);
+            opacity: 0.9;
+            letter-spacing: -0.2px;
+            padding-top: toRem(16);
+
+            @media only screen and (min-width: $screen-md) {
+              max-width: toRem(413);
+              margin: 0 auto;
+              text-align: center;
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              max-width: toRem(540);
+              font-size: toRem(24);
+              line-height: toRem(32);
+              text-align: start;
+              margin: 0;
+              padding-top: toRem(32);
+            }
+          }
+
+          .subTitle {
+            @media only screen and (min-width: $screen-md) {
+              max-width: toRem(413);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              max-width: toRem(500);
+              margin: 0;
+              text-align: start;
+            }
+          }
+        }
+
+        .imageBlock {
+          max-width: toRem(343);
+          max-height: toRem(328);
+          margin-top: toRem(40);
+          margin-bottom: toRem(56);
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            max-width: toRem(520);
+            max-height: toRem(497);
+            margin: toRem(40) auto toRem(120);
+            z-index: 3;
+            position: relative;
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            max-width: toRem(685);
+            max-height: toRem(655);
+            flex-basis: 58%;
+            margin: 0;
+            transform: rotate(3deg);
+          }
+        }
+      }
+    }
+  }
+}

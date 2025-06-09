@@ -1,0 +1,196 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  padding: toRem(100) toRem(30);
+  background:  linear-gradient(2.21deg, #F7F8FC 1.08%, #F6F6FC 59.68%, #F0F3FF 115.89%);
+  font-family: var(--muktaVaani);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(50) toRem(30);
+  }
+}
+
+.contentContainer {
+  max-width: toRem(730);
+  margin: 0 auto;
+}
+
+.contentTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: toRem(46);
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #0B2F6E;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(38);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(24);
+  }
+}
+
+.contentListContainer {
+  margin-top: toRem(30);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(15);
+  }
+}
+
+.contentListTitle {
+  font-weight: 500;
+  font-size: toRem(22);
+  line-height: 150%;
+  color: #333333;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(17);
+  }
+}
+
+.contentList {
+  display: flex;
+
+  @media only screen and (max-width: $screen-lg) {
+    flex-direction: column;
+  }
+
+  .listColumn {
+    margin: toRem(40) toRem(90) 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      margin: toRem(20) 0 0 0;
+    }
+  }
+}
+
+.listItemWrapper {
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-top: toRem(20);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listItemImage {
+    margin: 0 toRem(20) 0 0;
+
+    @media only screen and (max-width: $screen-lg) {
+      margin: 0 0 toRem(15) 0;
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  .listItemText {
+    max-width: toRem(220);
+    font-weight: 600;
+    font-size: toRem(20);
+    line-height: 150%;
+    color: #333333;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(16);
+      max-width: toRem(330);
+    }
+
+    &.maxWidth {
+      max-width: toRem(100);
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(330);
+      }
+    }
+  }
+}
+
+.contentTextContainer {
+  margin-top: toRem(50);
+  font-weight: 400;
+  font-size: toRem(20);
+  line-height: 150%;
+  color: #333333;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(40);
+    font-size: toRem(16);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(30);
+  }
+
+  p {
+    &:not(:first-child) {
+      margin-top: toRem(17);
+    }
+  }
+
+  .strongText {
+    font-weight: 600;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-weight: 400;
+    }
+  }
+}
+
+.contentImagesContainer {
+  margin-top: toRem(50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(40);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    flex-direction: column;
+    margin-top: toRem(30);
+  }
+}
+
+.imageContainer {
+  width: toRem(100);
+  height: toRem(100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+  border-radius: toRem(10);
+
+  &:not(:last-child) {
+    margin: 0 toRem(40) 0 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    &:not(:last-child) {
+      margin: 0 0 toRem(15) 0;
+    }
+  }
+
+  .innerImageContainer {
+    height: toRem(65);
+
+    img {
+      display: block;
+      height: 100%;
+    }
+  }
+}

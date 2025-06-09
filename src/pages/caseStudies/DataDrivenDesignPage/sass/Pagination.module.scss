@@ -1,0 +1,19 @@
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.dotIcon {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  background: url('../../../../../public/static/images/Pages/DataDrivenDesignPage/img_dotIcon.webp') center center no-repeat;
+}
+
+.selectedDotIcon {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  background: url('../../../../../public/static/images/Pages/DataDrivenDesignPage/img_selectedDotIcon.webp') center center no-repeat;
+}

@@ -1,0 +1,46 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container{
+  font-size: toRem(16);
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  letter-spacing: 0.02em;
+
+  @media only screen and (max-width: $screen-lg) {
+    cursor: default;
+  }
+
+  &.active{
+    .link{
+      &:before{
+        width: calc(100% - 10px);
+      }
+    }
+  }
+
+  .iconContainer{
+    margin-right: toRem(11);
+    margin-left: toRem(11);
+    display: flex;
+    transform: rotate(180deg);
+  }
+
+  .link{
+    display: flex;
+    &:before{
+      margin-top: toRem(3);
+      content: '';
+      width: 0;
+      height: 2px;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      background: var(--color-white);
+      mix-blend-mode: difference;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

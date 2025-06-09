@@ -1,0 +1,52 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.lastSection {
+  position: relative;
+
+  @media only screen and (min-width: $screen-md) {
+    overflow: hidden;
+  }
+
+  .lastSectionBg {
+    display: none;
+
+    @media only screen and (min-width: $screen-md) {
+      display: block;
+      position: absolute;
+      top: 180px;
+      left: 0;
+      width: 479px;
+      height: 954px;
+    }
+  }
+
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media only screen and (min-width: 450px) {
+      padding-top: 64px;
+      padding-bottom: 56px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 242px;
+      padding-bottom: 205px;
+    }
+
+    h2 {
+      text-align: center;
+      padding-bottom: 16px;
+
+      @media only screen and (min-width: 450px) {
+        padding-bottom: 24px;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: 32px;
+        max-width: 770px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

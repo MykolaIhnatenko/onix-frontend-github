@@ -1,0 +1,233 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.solutionItem {
+  position: relative;
+  background: var(--color-jsa-main-background-color);
+  backdrop-filter: blur(50px);
+  border-radius: toRem(32);
+  display: flex;
+  gap: toRem(20);
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: toRem(32);
+
+  @media only screen and (max-width: $screen-lg) {
+    flex-direction: column;
+    margin-bottom: toRem(24);
+  }
+
+  .solutionItemDescription {
+    flex-shrink: 3;
+
+    .solutionItemTitle {
+      margin-bottom: toRem(24);
+      font-size: toRem(40);
+      font-weight: 900;
+      line-height: 59px;
+      color: #1d314f !important;
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(24);
+        line-height: 130.87%;
+        margin-bottom: toRem(16);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(20);
+        line-height: 130.87%;
+        margin-bottom: toRem(16);
+      }
+    }
+
+    p {
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(20);
+        line-height: toRem(29);
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 2;
+    align-self: flex-end;
+    z-index: 1;
+  }
+}
+
+.solutionItem0 {
+  padding: toRem(125) toRem(134) 0 toRem(99);
+
+  @media only screen and (max-width: $screen-xl) {
+    padding: toRem(99) toRem(99) 0 toRem(99);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(24) toRem(16);
+  }
+
+  .ellipseTopInFirstBlock {
+    position: absolute;
+    left: toRem(-72);
+    top: toRem(-518);
+    width: toRem(848);
+    height: toRem(889);
+  }
+
+  .ellipseBottomInFirstBlock {
+    position: absolute;
+    right: toRem(-288);
+    bottom: toRem(-425);
+    width: toRem(812);
+    height: toRem(851);
+  }
+
+  img {
+    flex-basis: 122%;
+    max-width: toRem(471);
+    order: 1;
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(297);
+      align-self: center;
+      margin-bottom: toRem(4);
+    }
+  }
+
+  .solutionItemDescription {
+    order: 2;
+    max-width: toRem(520);
+    padding-top: toRem(145);
+
+    @media only screen and (max-width: $screen-xl) {
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      br {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: unset;
+    }
+  }
+}
+
+.solutionItem1 {
+  padding: toRem(60) toRem(225) toRem(64) toRem(90);
+
+  @media only screen and (max-width: $screen-xl) {
+    padding: toRem(99);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(35) toRem(16) toRem(24) toRem(16);
+  }
+
+  .ellipseTopInSecondBlock {
+    position: absolute;
+    right: toRem(-157);
+    top: toRem(-234);
+    width: toRem(674);
+    height: toRem(707);
+  }
+
+  .ellipseBottomInSecondBlock {
+    position: absolute;
+    left: toRem(-166);
+    bottom: toRem(-348);
+    width: toRem(556);
+    height: toRem(583);
+  }
+
+  img {
+    max-width: toRem(337);
+    order: 2;
+
+    @media only screen and (max-width: $screen-lg) {
+      order: 1;
+      align-self: center;
+      max-width: toRem(200);
+      margin-bottom: toRem(17);
+    }
+  }
+
+  .solutionItemDescription {
+    order: 1;
+    max-width: toRem(545);
+    padding-top: toRem(199);
+
+    @media only screen and (max-width: $screen-xl) {
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      order: 2;
+      max-width: unset;
+    }
+
+    p {
+      max-width: toRem(520);
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: unset;
+      }
+    }
+  }
+}
+
+.solutionItem2 {
+  padding: toRem(41) toRem(90) toRem(41) toRem(60);
+
+  @media only screen and (max-width: $screen-xl) {
+    padding: toRem(41);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(24) toRem(16);
+  }
+
+  .ellipseTopInThirdBlock {
+    position: absolute;
+    left: toRem(-229);
+    top: toRem(-206);
+    width: toRem(660);
+    height: toRem(691);
+  }
+
+  img {
+    max-width: toRem(502);
+    order: 1;
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(297);
+      align-self: center;
+      margin-bottom: toRem(3);
+    }
+  }
+
+  .solutionItemDescription {
+    order: 2;
+    max-width: toRem(570);
+    padding-top: toRem(179);
+
+    @media only screen and (max-width: $screen-xl) {
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: unset;
+    }
+  }
+}

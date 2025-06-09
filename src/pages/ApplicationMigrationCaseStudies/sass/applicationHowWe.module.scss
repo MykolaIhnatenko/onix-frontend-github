@@ -1,0 +1,92 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding: toRem(120) 0 0;
+  background-color: var(--color-black);
+  position: relative;
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) 0 0;
+  }
+
+  .topBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(620);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .contentContainer {
+    position: relative;
+
+    .content {
+      color: var(--color-white);
+      .title {
+        padding-bottom: toRem(40);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding-bottom: toRem(30);
+        }
+      }
+
+      .cardContainer {
+        position: relative;
+        padding: toRem(55);
+        border: 2px solid #FFF;
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding: toRem(33);
+        }
+
+        .cardBg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .cardContent {
+          position: relative;
+
+          .cardTitle {
+            padding-bottom: toRem(32);
+            font-weight: 500;
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30); 
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              padding-bottom: toRem(20);
+              font-size: toRem(20);
+              line-height: getLineHeight(40, 20); 
+            }
+          }
+
+          .cardText {
+            margin: 0;
+
+            .cardTextIndentation {
+              display: block;
+              padding-top: toRem(20);
+            }
+          }
+        }
+      }
+    }
+  }
+}

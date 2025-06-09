@@ -1,0 +1,20 @@
+<svg viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Clock">
+<g id="Group 1000002060">
+<path id="Vector" d="M52.034 52H5.5C3.843 52 2.5 50.5227 2.5 48.7L2.5 11.3C2.5 9.4773 3.843 8 5.5 8L55.5 8C57.157 8 58.5 9.4773 58.5 11.3V48.7C58.5 50.5227 57.157 52 55.5 52H49.099" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<g id="Group 1000002067">
+<path id="path1059" d="M18.2116 12.3258C18.2116 13.058 17.6181 13.6517 16.8859 13.6517C16.1536 13.6517 15.5601 13.058 15.5601 12.3258C15.5601 11.5936 16.1536 11 16.8859 11C17.6181 11 18.2116 11.5936 18.2116 12.3258Z" fill="black"/>
+<path id="path1063" d="M13.682 12.3258C13.682 13.058 13.0883 13.6517 12.3561 13.6517C11.6239 13.6517 11.0303 13.058 11.0303 12.3258C11.0303 11.5936 11.6239 11 12.3561 11C13.0883 11 13.682 11.5936 13.682 12.3258Z" fill="black"/>
+<path id="path1067" d="M9.15169 12.3258C9.15169 13.058 8.55811 13.6517 7.82584 13.6517C7.09369 13.6517 6.5 13.058 6.5 12.3258C6.5 11.5936 7.09369 11 7.82584 11C8.55811 11 9.15169 11.5936 9.15169 12.3258Z" fill="black"/>
+</g>
+<rect id="Rectangle 1549" x="3.5" y="15" width="55" height="2" fill="black"/>
+<path id="path1121" d="M53.5 38V21H7.5V38H53.5Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path id="Vector 953" d="M34 29.2667L28.5 26V33L34 29.2667Z" stroke="black" stroke-width="2" stroke-linecap="square"/>
+<g id="Group 1000002061">
+<path id="Rectangle 1556" d="M54.5 44H17.5V46H54.5V44Z" fill="black"/>
+<path id="Rectangle 1557" d="M13.5 44H6.5V46H13.5V44Z" fill="black"/>
+<path id="path2022" d="M15.2526 42.0048C14.3753 42.0048 13.659 42.783 13.659 43.7363V46.2731C13.659 47.2264 14.3753 48.0048 15.2526 48.0048C16.1271 48.0048 16.8433 47.2264 16.8433 46.2731V43.7363C16.8433 42.783 16.1271 42.0048 15.2526 42.0048Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</svg>

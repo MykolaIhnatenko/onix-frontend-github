@@ -1,0 +1,92 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.block {
+  @media only screen and (min-width: $screen-md) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    justify-content: center;
+  }
+
+  .content {
+    @media only screen and (min-width: $screen-md) {
+      flex-basis: 63%;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      flex-basis: 44%;
+    }
+
+    h2 {
+      padding-bottom: toRem(24);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(32);
+      }
+    }
+
+    p {
+      @media only screen and (min-width: $screen-md) {
+        letter-spacing: -0.2px;
+      }
+    }
+
+    p:last-of-type {
+      padding-top: toRem(16);
+      padding-bottom: toRem(32);
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(24);
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .phone {
+    max-width: toRem(240);
+    max-height: toRem(489);
+    margin: 0 auto;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      flex-basis: 37%;
+      margin: 0 toRem(24) 0 0;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(360);
+      max-height: toRem(732);
+      flex-basis: 55%;
+      margin: 0 toRem(60) 0 0;
+    }
+  }
+}
+
+.secondPhoneItem {
+  @media only screen and (min-width: $screen-md) {
+    flex-direction: row;
+  }
+
+  .phone {
+    @media only screen and (min-width: $screen-md) {
+      margin: 0 0 0 toRem(24);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(360);
+      max-height: toRem(732);
+      flex-basis: 55%;
+      margin: 0 0 0 toRem(60);
+    }
+  }
+}

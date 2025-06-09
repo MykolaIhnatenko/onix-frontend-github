@@ -1,0 +1,40 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.imageSection {
+  position: relative;
+  height: toRem(312);
+  overflow: hidden;
+  background-color: var(--color-black);
+
+  @media only screen and (min-width: $screen-md) {
+    height: toRem(533);
+  }
+
+  @media only screen and (min-width: $screen-lg) {
+    height: 100vh;
+  }
+
+  .imageBlockWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(312);
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(533);
+    }
+
+    @media only screen and (min-width: $screen-lg) {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}

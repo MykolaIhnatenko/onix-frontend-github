@@ -1,0 +1,21 @@
+<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="qase-logo-white 1" clip-path="url(#clip0_4730_34142)">
+<g id="Clip path group">
+<mask id="mask0_4730_34142" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="152" height="46">
+<g id="clip0_3679_688">
+<path id="Vector" d="M151.143 0H0V46H151.143V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_4730_34142)">
+<g id="Group">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M31.0806 42.8045C28.7288 44.0368 26.2262 45.3479 22.8216 45.3479C10.2176 45.3479 0 35.1966 0 22.6741C0 10.1515 10.2176 0 22.8216 0C35.4256 0 45.6432 10.1515 45.6432 22.6741V44.1789C38.7054 38.8097 35.1149 40.6908 31.0806 42.8045ZM32.7696 22.6741C32.7696 28.1325 28.3156 32.5575 22.8216 32.5575C17.3275 32.5575 12.8737 28.1325 12.8737 22.6741C12.8737 17.2155 17.3275 12.7905 22.8216 12.7905C28.3156 12.7905 32.7696 17.2155 32.7696 22.6741Z" fill="black"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_4730_34142">
+<rect width="46" height="46" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,80 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.approachImgBlock {
+  max-width: toRem(330);
+  max-height: toRem(405);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: toRem(33) toRem(23) toRem(20) toRem(17);
+  margin: toRem(30) auto 0;
+
+  @media only screen and (min-width: $screen-md) {
+    max-width: toRem(708);
+    max-height: toRem(450);
+    padding: toRem(20) toRem(30);
+    margin: toRem(60) auto toRem(30);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(650);
+    max-height: toRem(798);
+    margin: toRem(40) auto 0;
+    padding: toRem(60) toRem(30) toRem(30);
+  }
+
+  @media only screen and (min-width: $screen-xxl) {
+    margin: 0;
+    flex-basis: toRem(650);
+  }
+
+  &.first {
+    background: linear-gradient(158deg, #F3F3FC 3.83%, #D2EDF3 96.74%);
+  }
+
+  &.last {
+    background: linear-gradient(158deg, #D2EDF3 3.83%, #F3F3FC 96.74%);
+  }
+
+  .imgContainer {
+    width: toRem(264);
+    height: toRem(304);
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(304);
+      height: toRem(351);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: toRem(520);
+      height: toRem(600);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .borderText {
+    border-top: 2px solid var(--color-black);
+    width: 100%;
+    margin-top: toRem(10);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      margin-top: toRem(60);
+    }
+
+    .text {
+      font-size: toRem(18);
+      line-height: getLineHeight(24, 18);
+      margin: toRem(10) 0 0;
+
+      @media only screen and (min-width: $screen-md) {
+        margin: toRem(20) 0 0;
+      }
+    }
+  }
+}

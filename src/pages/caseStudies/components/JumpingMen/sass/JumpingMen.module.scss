@@ -1,0 +1,16 @@
+@import '../../../../../pages/App/sass/breakpointsVariables.scss';
+
+.jumpingMenAnimation {
+  width: auto;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 6%;
+  @media only screen and (max-width: 968px) {
+    top: 0;
+    right: 0;
+  }
+  @media only screen and (max-width: $screen-md) {
+    display: none;
+  }
+}

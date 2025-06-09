@@ -1,0 +1,19 @@
+@import '../../App/sass/functions';
+@import '../../App/sass/breakpointsVariables';
+
+.solutionSection {
+  background-color: var(--color-white);
+  
+  .underlineCards {
+    display: flex;
+    gap: toRem(70);
+    padding: toRem(80) 0 toRem(120);
+    
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+      gap: toRem(60);
+      padding: toRem(60) 0 toRem(80);
+      
+    }
+  }
+}

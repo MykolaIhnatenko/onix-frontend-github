@@ -1,0 +1,594 @@
+.miPaddleWr {
+  font-family: var(--poppinsFont), sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  :global {
+    .MiPaddleContainer {
+      max-width: 1440px;
+      padding: 0 110px 0 100px;
+      margin: 0 auto;
+      position: relative;
+      height: 100%;
+
+      @media (max-width: 768px) {
+        padding: 0 40px;
+      }
+
+      @media (max-width: 575px) {
+        padding: 0 16px;
+      }
+    }
+
+  }
+
+  .miPaddleHeader {
+    height: 726px;
+    position: relative;
+
+    video {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 726px;
+      object-fit: cover;
+      filter: brightness(0.5);
+      z-index: -5;
+    }
+
+    .headerMobileBg {
+      filter: brightness(0.4);
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    .headContainer {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      p {
+        a {
+          color: white;
+          text-decoration: underline;
+          text-decoration-color: #97a0b0;
+          text-underline-offset: 4px;
+          font-family: var(--poppinsFont), sans-serif;
+        }
+      }
+    }
+
+    .miPaddleHeaderText {
+      color: white;
+      max-width: 604px;
+      width: 95%;
+
+      @media (max-width: 575px) {
+        left: 16px;
+      }
+
+      h1 {
+        font-size: 50px;
+        font-family: var(--ceraGRFont);
+        letter-spacing: -0.03em;
+        font-weight: 400;
+        line-height: 62.5px;
+
+        @media (max-width: 850px) {
+          font-size: 40px;
+        }
+
+        @media (max-width: 575px) {
+          font-size: 36px;
+        }
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 16px;
+        width: 514px;
+        line-height: 1.8em;
+        font-family: var(--poppinsFont), sans-serif;
+
+        @media (max-width: 850px) {
+          margin-top: 30px;
+        }
+
+        @media (max-width: 575px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .challengesWr {
+    padding-top: 110px;
+    position: relative;
+    overflow-x: hidden;
+
+    @media (max-width: 1200px) {
+      padding-top: 168px;
+    }
+
+    @media (max-width: 700px) {
+      padding: 80px 0 0;
+    }
+
+    @media (max-width: 575px) {
+      padding: 80px 0 0;
+    }
+
+    p {
+      width: 88%;
+      max-width: 665px;
+      font-size: 26px;
+      line-height: 32px;
+      font-family: var(--ceraGRFont);
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+        letter-spacing: -0.03em;
+      }
+
+      @media (max-width: 575px) {
+        width: 100%;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 22px;
+      }
+    }
+
+    .challengesDescr {
+      display: flex;
+      margin-top: 120px;
+
+
+      @media (max-width: 768px) {
+        margin-top: 56px;
+      }
+
+      @media (max-width: 575px) {
+        margin-top: 150px;
+      }
+
+      h2 {
+        font-size: 50px;
+        display: inline-block;
+        margin: 40px 0 32px;
+        font-family: var(--ceraGRFont);
+        font-weight: 400;
+        letter-spacing: -0.03em;
+
+        @media (max-width: 768px) {
+          font-size: 40px;
+          margin-bottom: 25px;
+        }
+
+        @media (max-width: 375px) {
+          font-size: 36px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-family: var(--poppinsFont), sans-serif;
+        width: 41.7vw;
+
+        @media (max-width: 768px) {
+          letter-spacing: 0;
+        }
+      }
+
+      .challengesDescrText {
+        p {
+          max-width: 600px;
+          margin-right: 110px;
+          line-height: 28px;
+        }
+
+        h2 {
+          line-height: 64px;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        span {
+          margin: 96px 0 24px;
+        }
+
+        p {
+          width: 49.3vw;
+        }
+
+        .challengesDescrText {
+          p {
+            margin-right: 40px;
+          }
+        }
+      }
+
+      @media (max-width: 575px) {
+        display: block;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+
+    .onixNeededWr {
+      width: 600px;
+      padding: 60px 80px;
+      color: white;
+      margin-top: 80px;
+      z-index: 1;
+      position: relative;
+      overflow: hidden;
+
+      .dim {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+
+        @media (max-width: 850px) {
+          width: auto;
+          height: 100%;
+        }
+
+        @media (max-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
+
+        @media (max-width: 650px) {
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      h3 {
+        font-size: 30px;
+        font-family: var(--ceraGRFont);
+        letter-spacing: -0.03em;
+        display: inline-block;
+        margin-bottom: 24px;
+        font-weight: 400;
+        z-index: 1;
+        position: relative;
+        line-height: 38px;
+      }
+
+      ul {
+        list-style: none;
+        font-size: 16px;
+
+        li {
+          position: relative;
+          padding-left: 23px;
+          line-height: 28px;
+
+          .arrowIcon {
+            position: absolute;
+            left: 0;
+            top: 9px;
+          }
+
+          .neededListItem {
+            font-size: 16px;
+            line-height: 28px;
+            font-family: var(--poppinsFont), sans-serif;
+            width: 100%;
+          }
+        }
+
+        li:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
+
+      @media (max-width: 1300px) {
+        width: 95%;
+        margin: 56px auto 0;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        h3 {
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 575px) {
+        padding: 40px 16px;
+        width: 100vw;
+        margin: 40px -16px 0;
+      }
+    }
+
+    .challengesBg {
+      width: 100%;
+
+      .tenisPlayer {
+        height: 754px;
+        margin-top: 5px;
+        position: absolute;
+        width: 520px;
+
+        .tenisPlayerImg {
+          position: relative;
+          height: 100%;
+
+          img {
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+
+        @media (max-width: 1300px) {
+          height: 400px;
+          width: 270px;
+          margin-top: 100px;
+        }
+
+        @media (max-width: 1000px) {
+          height: 400px;
+          width: 270px;
+          margin-top: 120px;
+        }
+
+        @media (max-width: 575px) {
+          position: relative;
+          width: 100%;
+          height: 500px;
+          margin-top: 20px;
+        }
+      }
+
+      .arrowBg {
+        position: absolute;
+        right: 20px;
+        top: 1%;
+        width: 820px;
+        height: 1260px;
+
+        .arrowBgImg {
+          position: relative;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+
+        @media (max-width: 1300px) {
+          height: 797px;
+          width: 520px;
+          right: 0;
+          top: 15%;
+        }
+
+        @media (max-width: 1200px) {
+          top: 21%;
+        }
+
+        @media (max-width: 700px) {
+          top: 30%;
+        }
+
+        @media (max-width: 575px) {
+          inset: 0;
+          width: 100%;
+          height: 630px;
+        }
+      }
+
+      @media (max-width: 575px) {
+        display: block;
+        position: relative;
+      }
+    }
+  }
+
+  .solutionsWr {
+    padding: 160px 0 0;
+    position: relative;
+    overflow-x: hidden;
+
+    @media (max-width: 800px) {
+      padding: 94px 0 0;
+    }
+
+    @media (max-width: 575px) {
+      padding: 80px 0 0;
+    }
+
+    h2 {
+      font-size: 50px;
+      margin-bottom: 36px;
+      display: inline-block;
+      font-family: var(--ceraGRFont);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+        margin-bottom: 27px;
+      }
+
+      @media (max-width: 575px) {
+        font-size: 36px;
+        margin-bottom: 23px;
+      }
+    }
+
+    .solutionList {
+      width: 82.5%;
+      position: relative;
+      z-index: 1;
+      max-width: 1110px;
+
+      @media (max-width: 1280px) {
+        box-shadow: none;
+      }
+
+      @media (max-width: 768px) {
+        padding-bottom: 55px;
+      }
+
+      ul {
+        list-style: none;
+        padding-bottom: 80px;
+        box-shadow: 542px 0 0 #F1FCFF;
+
+        @media (max-width: 768px) {
+          padding-bottom: 25px;
+        }
+
+        li {
+          position: relative;
+          padding-left: 112px;
+          line-height: 28px;
+          margin-bottom: 32px;
+          width: 640px;
+
+          @media (max-width: 700px) {
+            width: 100%;
+            padding-left: 54px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1280px) {
+      margin: 0 auto;
+
+      .solutionList {
+        width: 100%;
+        max-width: unset;
+        margin: 0 auto;
+        padding: 40px;
+
+        ul {
+          box-shadow: none;
+        }
+
+        @media (max-width: 768px) {
+          padding: 0;
+        }
+      }
+    }
+
+
+    @media (max-width: 575px) {
+      margin: 0 auto;
+
+      .solutionList {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .resultsWr {
+    overflow-x: hidden;
+    min-height: 949px;
+    
+    @media (max-width: 960px) {
+      min-height: 820px;
+    }
+    
+    .resultsHeader {
+      position: relative;
+      height: 726px;
+
+      video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+      }
+
+      img {
+        object-fit: cover;
+      }
+
+      .results {
+        background: white;
+        position: absolute;
+        padding: 60px 80px 0;
+        bottom: -9%;
+        width: 89.3%;
+        max-width: 760px;
+
+        h2 {
+          letter-spacing: -0.03em;
+          font-family: var(--ceraGRFont);
+          font-size: 50px;
+          margin-bottom: 32px;
+          display: inline-block;
+          font-weight: 400;
+
+          @media (max-width: 768px) {
+            font-size: 40px;
+          }
+
+          @media (max-width: 575px) {
+            font-size: 36px;
+            margin-bottom: 25px;
+          }
+        }
+
+        p {
+          line-height: 28px;
+        }
+
+        @media (max-width: 960px) {
+          left: 40px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        height: 433px;
+
+        video {
+          height: auto;
+        }
+
+        .results {
+          padding: 40px;
+          left: 0;
+          width: auto;
+          margin: 0 40px;
+          bottom: -73%;
+        }
+      }
+
+      @media (max-width: 500px) {
+        height: 300px;
+
+        video {
+          height: 300px;
+        }
+
+        .results {
+          padding: 40px 16px;
+          margin: 0 16px;
+          top: 86%;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+

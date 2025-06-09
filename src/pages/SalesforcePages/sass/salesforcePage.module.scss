@@ -1,0 +1,210 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../App/sass/mixinsFonts";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+$blueSalesforceTrackingApp: #0270D2;
+
+.salesforce {
+  position: relative;
+  
+  *{
+    font-family: var(--muktaVaani);
+  }
+
+  :global {
+    .salesforceContainer {
+      max-width: none;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: toRem(20);
+      padding-right: toRem(20);
+      box-sizing: border-box;
+
+      @media only screen and (min-width: $screen-sm) {
+        padding-left: toRem(30);
+        padding-right: toRem(30);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: 1150px;
+        padding-left: toRem(20);
+        padding-right: toRem(20);
+      }
+
+      h2 {
+        font-weight: 700;
+        line-height: getLineHeight(36, 24);
+        font-size: toRem(24);
+        text-align: center;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(44);
+          line-height: getLineHeight(66, 44);
+        }
+      }
+
+      h3, .title {
+        text-align: left;
+        font-size: toRem(20);
+        font-weight: 500;
+        line-height: getLineHeight(26, 20);
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(24);
+          line-height: getLineHeight(32, 24);
+        }
+      }
+
+      h4, .fs_22 {
+        font-size: toRem(22);
+        font-weight: 500;
+        line-height: getLineHeight(28, 22);
+        text-align: center;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(36);
+          line-height: getLineHeight(46, 36);
+        }
+      }
+
+      p {
+        font-size: toRem(16);
+        font-weight: 400;
+        line-height: getLineHeight(24, 16);
+        color: #2D3339;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          font-size: toRem(18);
+          line-height: getLineHeight(27, 18);
+        }
+      }
+
+      .result {
+        color: white
+      }
+    }
+
+    .btn {
+      width: toRem(155);
+      height: toRem(50);
+      border-radius: 3px;
+      @include font-style(#FAFAFA, 700, 14px);
+      text-transform: uppercase;
+      text-align: center;
+      line-height: getLineHeight(32, 14);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1E5AC6;
+
+      @media only screen and (min-width: $screen-sm) {
+        margin-bottom: toRem(55);
+        width: toRem(148);
+        height: toRem(45);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        cursor: pointer;
+        margin-bottom: toRem(131);
+      }
+
+      &.colorBtn {
+        background-color: $blueSalesforceTrackingApp;
+        margin: 0;
+      }
+
+      &.colorBtnAutomation {
+        background-color: #1A59B4;
+        margin: 0;
+      }
+
+      &:hover {
+        background-color: #0B44AA;
+      }
+    }
+
+    .imageBig {
+      height: toRem(640);
+      max-width: toRem(1110);
+      width: 100%;
+      border-radius: toRem(10);
+      -webkit-box-shadow: toRem(15) toRem(15) 0 0 rgba(2, 112, 210, 1);
+      -moz-box-shadow: toRem(15) toRem(15) 0 0 rgba(2, 112, 210, 1);
+      box-shadow: toRem(15) toRem(15) 0 0 rgba(2, 112, 210, 1);
+
+      @media only screen and (max-width: $screen-lg) {
+        height: toRem(380);
+      }
+
+      @media only screen and (max-width: $screen-sm) {
+        height: toRem(163);
+        border-radius: 5px;
+        -webkit-box-shadow: 5px 5px 0 0 rgba(2, 112, 210, 1);
+        -moz-box-shadow: 5px 5px 0 0 rgba(2, 112, 210, 1);
+        box-shadow: 5px 5px 0 0 rgba(2, 112, 210, 1);
+      }
+    }
+
+    .processAutomationImageBig {
+      height: toRem(640);
+      max-width: 1110px;
+      width: 100%;
+      position: relative;
+      border-radius: toRem(10);
+      -webkit-box-shadow: toRem(15) toRem(15) 0 0 rgba(50, 150, 237, 1);
+      -moz-box-shadow: toRem(15) toRem(15) 0 0 rgba(50, 150, 237, 1);
+      box-shadow: toRem(15) toRem(15) 0 0 rgba(50, 150, 237, 1);
+
+      @media only screen and (max-width: $screen-lg) {
+        height: toRem(380);
+      }
+
+      @media only screen and (max-width: $screen-sm) {
+        height: toRem(163);
+        border-radius: 5px;
+        -webkit-box-shadow: 5px 5px 0 0 rgba(50, 150, 237, 1);
+        -moz-box-shadow: 5px 5px 0 0 rgba(50, 150, 237, 1);
+        box-shadow: 5px 5px 0 0 rgba(50, 150, 237, 1);
+      }
+    }
+
+    .imageMedium {
+      height: toRem(145);
+      max-width: toRem(280);
+
+      @media only screen and (min-width: $screen-sm) {
+        width: 100%;
+        height: toRem(361);
+        max-width: unset;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        height: toRem(501);
+        max-width: toRem(960);
+      }
+    }
+
+    .image {
+      margin: 0 auto;
+      position: relative;
+
+      .borderRadius {
+        border-radius: toRem(10);
+
+        @media only screen and (max-width: $screen-lg) {
+          border-radius: 5px;
+        }
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        align-self: center;
+      }
+
+      .secondSectionImg {
+        object-fit: cover;
+      }
+    }
+  }
+}

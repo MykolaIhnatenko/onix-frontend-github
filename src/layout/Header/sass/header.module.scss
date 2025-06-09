@@ -1,0 +1,58 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  position: fixed;
+  width: 100%;
+  font-family: var(--ibmPlexMono);
+  mix-blend-mode: difference;
+  color: var(--color-white);
+  z-index: 10;
+  transition: mix-blend-mode .3s;
+  
+  .headerContainer {
+    padding: toRem(16) toRem(40) toRem(19);
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+  }
+
+  .navigationBrand {
+    cursor: pointer;
+
+    @media only screen and (max-width: $screen-lg) {
+      cursor: default;
+    }
+  }
+
+  .navContainer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+
+    .navItem {
+      margin: 0 toRem(15);
+
+      &:last-child {
+        margin-right: 0;
+
+        > div {
+          > div {
+            &:last-child {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+
+      &:first-child {
+        margin-left: toRem(21);
+      }
+
+      .openIcon {
+        transition: transform .3s ease-in-out;
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

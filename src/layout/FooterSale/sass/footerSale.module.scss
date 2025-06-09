@@ -1,0 +1,37 @@
+@import '../../../pages/App/sass/functions';
+@import '../../../pages/App/sass/breakpointsVariables';
+
+.footer {
+  font-family: var(--generalSans);
+  font-weight: 400;
+  font-size: toRem(14);
+  line-height: getLineHeight(20, 14);
+  color: var(--color-white);
+
+  @media only screen and (min-width: $screen-md) {
+    line-height: getLineHeight(20, 14);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    line-height: 1.25;
+  }
+
+  .container {
+    padding: toRem(30) toRem(15);
+    background-color:  var(--color-black);
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(40) toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: var(--max-container-width);
+      padding: toRem(60) toRem(70);
+      margin: 0 auto;
+    }
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding: toRem(60) toRem(80);
+    }
+  }
+}

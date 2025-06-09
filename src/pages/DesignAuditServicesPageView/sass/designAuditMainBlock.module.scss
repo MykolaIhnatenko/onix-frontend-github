@@ -1,0 +1,167 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+
+  .topBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(540);
+
+    @media only screen and (max-width: $screen-xxl) {
+      height: toRem(632);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(400);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      height: toRem(325);
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: toRem(520);
+    }
+  }
+
+  .titleContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: toRem(146) 0 toRem(100);
+
+    .titleContainerAbsol {
+      display: grid;
+
+      .leftTitle, .rightTitle {
+        font-size: toRem(96);
+        line-height: getLineHeight(132, 96);
+        font-weight: 400;
+        color: var(--color-white);
+      }
+
+      .leftTitle {
+        padding-left: toRem(226);
+      }
+
+      .rightTitle {
+        text-align: end;
+        padding-right: toRem(226);
+      }
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(386) 0 0;
+      height: 230px;
+      .titleContainerAbsol {
+        width: 708px;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        .leftTitle, .rightTitle {
+          font-size: toRem(56);
+          line-height: getLineHeight(72, 56);
+        }
+
+        .leftTitle {
+          padding-left: 0;
+        }
+
+        .rightTitle {
+          text-align: end;
+          padding-right: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(146) toRem(15) toRem(70);
+      height: auto;
+      .titleContainerAbsol {
+        width: auto;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: translate(0, 0);
+
+        .leftTitle, .rightTitle {
+          font-size: toRem(40);
+          line-height: getLineHeight(50, 40);
+        }
+
+        .leftTitle {
+          padding-left: 0;
+        }
+
+        .rightTitle {
+          text-align: start;
+          padding-right: 0;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      padding: 0;
+      height: 511px;
+      .titleContainerAbsol {
+        width: 988px;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        .leftTitle {
+          padding-left: 0;
+        }
+
+        .rightTitle {
+          text-align: end;
+          padding-right: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .ctaContent {
+    position: relative;
+    background: var(--color-black);
+    .botBg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: toRem(760);
+      &:before{
+        content: '';
+        width: 100%;
+        height: toRem(70);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 10%, #000 100%);
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: toRem(760);
+      }
+    }
+
+    .ctaContentContainer {
+      position: relative;
+    }
+  }
+}

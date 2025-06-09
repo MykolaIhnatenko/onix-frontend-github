@@ -1,0 +1,160 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.industrySection {
+
+  .container {
+    position: relative;
+    padding-top: toRem(80);
+
+    .text {
+      max-width: toRem(710);
+      margin-bottom: toRem(40);
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(40);
+        margin-top: toRem(30);
+      }
+    }
+
+    .items {
+      list-style: none;
+
+      .item {
+        gap: 5%;
+        padding: toRem(30) 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          flex: 0 1 33%;
+          flex-direction: row;
+          padding: toRem(33) toRem(30) toRem(85) 0;
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding: toRem(20) toRem(40) toRem(20) 0;
+
+          .itemText {
+            max-height: 0;
+            overflow: hidden;
+          }
+
+          &::after {
+            content: '';
+            width: toRem(20);
+            height: 2px;
+            background-color: var(--color-black);
+            position: absolute;
+            right: toRem(15);
+            top: toRem(35);
+          }
+
+          &::before {
+            content: '';
+            width: toRem(20);
+            height: 2px;
+            background-color: var(--color-black);
+            position: absolute;
+            right: toRem(15);
+            top: toRem(35);
+            transform: rotate(90deg);
+            transition: transform 0.3s ease;
+          }
+
+          &.active {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            margin-left: toRem(-15);
+            margin-right: toRem(-15);
+            padding-left: toRem(15);
+            padding-right: toRem(15);
+            margin-bottom: -2px;
+
+
+            .itemTitle {
+              margin-bottom: toRem(20);
+            }
+
+            &::after {
+              background-color: var(--color-white);
+              right: toRem(30);
+            }
+
+            &::before {
+              background-color: var(--color-white);
+              transform: rotate(0);
+              right: toRem(30);
+            }
+
+            .itemText {
+              transition: all 0.3s ease;
+              max-height: toRem(500);
+              overflow: hidden;
+            }
+          }
+        }
+
+        &:not(:first-child) {
+          border-top: 2px solid var(--color-black);
+        }
+
+        &:last-child {
+          @media only screen and (max-width: $screen-md - 1) {
+            border-bottom: 2px solid var(--color-black);
+          }
+        }
+
+        .itemTitle {
+          display: flex;
+          font-family: var(--generalSans);
+          font-weight: 500;
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+          flex: 0 1 46%;
+          position: relative;
+
+          .titleText {
+            @media only screen and (min-width: ($screen-lg + 1)) {
+              max-width: toRem(320);
+            }
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            font-size: toRem(24);
+            line-height: getLineHeight(34, 24);
+            flex: 0 1 35%;
+          }
+
+          @media only screen and (min-width: ($screen-lg + 1)) {
+            flex: 0 1 33%;
+          }
+
+          span:first-child {
+            display: inline-block;
+            margin-right: toRem(52);
+            @media only screen and (max-width: $screen-md - 1) {
+              margin-right: toRem(10);
+            }
+          }
+        }
+
+        .itemText {
+          margin: 0;
+          flex: 0 1 44%;
+
+          @media only screen and (min-width: $screen-md) {
+            flex: 0 1 44%;
+          }
+
+          @media only screen and (min-width: ($screen-lg + 1)) {
+            flex: 0 1 50.3%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.bannerBlock {
+  .emptyBlock {
+    @media (max-width: 1449px) {
+      @apply pt-[614px];
+    }
+
+    @media (max-width: 1054px) {
+      @apply pt-[728px];
+    }
+
+    @media (max-width: 992px) {
+      @apply pt-[355px];
+    }
+
+    @media (max-width: 767px) {
+      @apply pt-[270px];
+    }
+
+    @media (max-width: 491px) {
+      @apply pt-[310px];
+    }
+  }
+}
+
+.cardsBox {
+  padding-bottom: toRem(80);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-bottom: toRem(60);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-bottom: 0;
+  }
+}

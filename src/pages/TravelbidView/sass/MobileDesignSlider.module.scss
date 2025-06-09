@@ -1,0 +1,178 @@
+@import "../../App/sass/mixinsAnimation";
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.mobileDesignSlider {
+  position: relative;
+  display: flex;
+  gap: toRem(48);
+  overflow: hidden;
+  width: 100%;
+  max-width: toRem(831);
+  justify-content: space-between;
+
+  @media only screen and (max-width: $screen-lg) {
+    gap: toRem(42);
+    width: unset;
+    margin-bottom: -17%;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    gap: toRem(16);
+  }
+
+  .shadowBgTop {
+    display: none;
+
+    @media only screen and (max-width: $screen-xl) {
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: toRem(-60);
+      right: toRem(-60);
+      height: toRem(92);
+      background: linear-gradient(180deg, #19191B 0%, rgba(25, 25, 27, 0) 100%);
+      z-index: 1;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      height: toRem(20);
+    }
+  }
+
+  .firstColumn, .secondColumn, .thirdColumn {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(48);
+    width: toRem(245);
+    
+    @media only screen and (max-width: $screen-lg) {
+      width: toRem(208);
+      gap: toRem(40);
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      width: toRem(101);
+      gap: toRem(16);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .firstColumn {
+    @include translateY(-180px);
+
+    @media only screen and (max-width: $screen-lg) {
+      @include translateY(-145px);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      @include translateY(-85px);
+    }
+  }
+
+  .secondColumn {
+    @include translateY(150px);
+
+    @media only screen and (max-width: $screen-lg) {
+      @include translateY(0);
+      margin-top: 48.6%;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      margin-top: 20.6%;
+    }
+  }
+
+  .thirdColumn {
+    @include translateY(-115px);
+
+    @media only screen and (max-width: $screen-lg) {
+      @include translateY(-145px);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      @include translateY(-85px);
+    }
+  }
+
+  .firstColumnMobileAnime, .secondColumnMobileAnime, .thirdColumnMobileAnime {
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+  }
+
+  .firstColumnMobileAnime {
+    animation-name: firstAndThirdColumnMobileAnimation768px;
+
+    @media only screen and (max-width: $screen-md - 1) {
+      animation-name: firstAndThirdColumnMobileAnimation449px;
+    }
+  }
+
+  .secondColumnMobileAnime {
+    animation-name: secondColumnMobileAnimation768px;
+
+    @media only screen and (max-width: $screen-md - 1) {
+      animation-name: secondColumnMobileAnimation449px;
+    }
+  }
+
+  .thirdColumnMobileAnime {
+    animation-name: firstAndThirdColumnMobileAnimation768px;
+
+    @media only screen and (max-width: $screen-md - 1) {
+      animation-name: firstAndThirdColumnMobileAnimation449px;
+    }
+  }
+
+  @keyframes firstAndThirdColumnMobileAnimation768px {
+    0% {
+      @include translateY(-145px);
+    }
+    50% {
+      @include translateY(20%);
+    }
+    100% {
+      @include translateY(-145px);
+    }
+  }
+
+  @keyframes secondColumnMobileAnimation768px {
+    0% {
+      @include translateY(0);
+    }
+    50% {
+      @include translateY(-62%);
+    }
+    100% {
+      @include translateY(0);
+    }
+  }
+
+  @keyframes firstAndThirdColumnMobileAnimation449px {
+    0% {
+      @include translateY(-85px);
+    }
+    50% {
+      @include translateY(19.3%);
+    }
+    100% {
+      @include translateY(-85px);
+    }
+  }
+
+  @keyframes secondColumnMobileAnimation449px {
+    0% {
+      @include translateY(0);
+    }
+    50% {
+      @include translateY(-62%);
+    }
+    100% {
+      @include translateY(0);
+    }
+  }
+}

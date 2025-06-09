@@ -1,0 +1,25 @@
+{
+  "title": "This case study showcases our contribution to creating a solution that replaces a character's face with the user's face in a short, comical video.",
+  "content": [
+    {
+      "id": 1,
+      "title": "Entertainment",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "25 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "Australia",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "2 years",
+      "text": "Project duration"
+    }
+  ]
+}

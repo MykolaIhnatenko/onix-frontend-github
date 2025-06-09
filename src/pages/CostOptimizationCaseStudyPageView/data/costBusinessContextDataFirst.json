@@ -1,0 +1,7 @@
+{
+  "upTitle": "[ Solutions we provided ]",
+  "title": "Firstly, Onix’s experts investigated the causes for these high expenses. AWS offers great internal tools to this end: AWS Cost Explorer, AWS Budget, and AWS Cost Anomaly Detection. We used all of them.",
+  "subTitle": "Our team came to the conclusion that the main reasons for this high cost were a flawed architecture and the misallocation of resources.",
+  "firstText": "We then prepared a detailed document explaining the issue and suggesting ways to improve the situation. After the client agreed to the plan, we started to work on updates to the infrastructure while avoiding significant downtime. The client specifically requested that users should not be affected by any tampering with the environment.",
+  "secondText": "A team of highly-skilled Onix specialists followed a\u00A0sophisticated process to build new project infrastructure and reduce AWS costs. We use the Agile methodology emphasizing flexibility, speed, and quality during the development process, which facilitates ongoing improvements while minimizing issues and delays."
+}

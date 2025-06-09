@@ -1,0 +1,213 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding-top: toRem(80);
+  padding-bottom: toRem(80);
+  background: var(--color-black);
+  color: var(--color-white);
+
+  .blockTitle {
+    max-width: toRem(796);
+    padding-bottom: toRem(40);
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(708);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-bottom: toRem(30);
+    }
+
+    @media only screen and (width: $screen-md) {
+      padding-bottom: toRem(40);
+    }
+  }
+
+  .firstText {
+    margin: 0;
+    max-width: toRem(673);
+    padding-bottom: toRem(30);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: toRem(40);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-bottom: toRem(30);
+    }
+
+    @media only screen and (width: $screen-md) {
+      padding-bottom: toRem(40);
+    }
+  }
+
+  .secondText {
+    margin: 0 0 0 auto;
+    max-width: toRem(627);
+    padding-bottom: toRem(60);
+
+    @media only screen and (min-width: $screen-xxl) {
+      margin: 0 0 0 toRem(673);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-bottom: toRem(40);
+      margin: 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-bottom: toRem(30);
+    }
+
+    @media only screen and (width: $screen-md) {
+      padding-bottom: toRem(40);
+    }
+  }
+
+  .contentContainer {
+    .title, .secondTitle {
+      padding-bottom: toRem(40);
+      font-size: toRem(40);
+      line-height: getLineHeight(56, 40);
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(36);
+        line-height: getLineHeight(46, 36);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(20);
+        font-size: toRem(25);
+        line-height: getLineHeight(35, 25);
+      }
+
+      @media only screen and (width: $screen-md) {
+        padding-bottom: toRem(40);
+        font-size: toRem(36);
+        line-height: getLineHeight(46, 36);
+      }
+    }
+
+    .title {
+      @media only screen and (max-width: $screen-lg) {
+        display: none;
+      }
+    }
+
+    .secondTitle {
+      display: none;
+      @media only screen and (max-width: $screen-lg) {
+        display: block;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media only screen and (max-width: $screen-lg) {
+        flex-direction: column;
+      }
+      .image {
+        width: 30%;
+        height: toRem(472);
+
+        @media only screen and (max-width: $screen-lg) {
+          padding-bottom: toRem(40);
+          width: auto;
+          max-width: toRem(318);
+          margin: 0 auto;
+        }
+
+        @media only screen and (max-width: (($screen-md - 1))) {
+          padding-bottom: toRem(30);
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        &.second {
+          width: 32%;
+          position: relative;
+          left: -13px;
+
+          @media only screen and (max-width: $screen-lg) {
+            left: 0;
+            width: auto;
+            max-width: toRem(318);
+          }
+        }
+      }
+
+      .item {
+        width: 60%;
+
+        @media only screen and (max-width: $screen-lg) {
+          width: 100%;
+        }
+
+        .accordion {
+          .accordionItem {
+            .accordionItemTitle {
+              @media only screen and (max-width: $screen-lg) {
+                padding-left: 0;
+                padding-right: 0;
+                gap: toRem(10);
+              }
+
+              .accordionNumber, .accordionTitle {
+                @media only screen and (max-width: ($screen-md - 1)) {
+                  font-size: toRem(16) !important;
+                  line-height: getLineHeight(24, 16) !important;
+                }
+              }
+
+              .accordionNumber {
+                margin-right: 0;
+                width: toRem(80);
+
+                @media only screen and (max-width: ($screen-md - 1)) {
+                  margin-right: toRem(15);
+                  min-width: toRem(29);
+                  width: toRem(29);
+                }
+              }
+            }
+
+            .accordionItemContent {
+              padding: 0 toRem(30) 0 toRem(80);
+
+              @media only screen and (max-width: ($screen-md - 1)) {
+                padding: 0 0 0 toRem(45);
+              }
+
+              .ItemText {
+                @media only screen and (max-width: ($screen-md - 1)) {
+                  font-size: toRem(14) !important;
+                  line-height: getLineHeight(24, 14) !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.first {
+      padding-bottom: toRem(80);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding-bottom: toRem(60);
+      }
+
+      @media only screen and (width: $screen-md) {
+        padding-bottom: toRem(80);
+      }
+    }
+  }
+}

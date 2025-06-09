@@ -1,0 +1,112 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.articleContainerHeaderInside {
+  padding-top: 0;
+
+  article {
+    padding-top: 0;
+
+    :global {
+      .smallerText {
+        max-width: 650px;
+      }
+
+      .alignCenter {
+        margin: 0 auto;
+        display: block;
+      }
+
+      .articleContent {
+        width: 100%;
+        position: relative;
+
+        h1 {
+          font-size: 48px;
+          line-height: 72px;
+          font-weight: 700;
+          margin-bottom: 30px;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            letter-spacing: 0.5px;
+            font-size: 36px;
+            line-height: 42px;
+            font-weight: 700;
+          }
+        }
+
+        h2 {
+          font-size: 32px;
+          line-height: 48px;
+          font-weight: 700;
+          letter-spacing: 0.36px;
+          padding-bottom: 20px;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            padding: 20px 0;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 700;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          display: block;
+          letter-spacing: 0.3px;
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            font-size: 16px;
+          }
+
+          &:not(:last-child) {
+            padding-bottom: 60px;
+          }
+
+          b {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.02px;
+          }
+        }
+
+        &:not(:first-child) {
+          padding-top: 80px;
+        }
+
+        &:nth-of-type(3) {
+          @media only screen and (max-width: ($screen-md - 1)) {
+            padding-top: 60px;
+          }
+        }
+      }
+
+      .image {
+        max-width: 600px;
+        max-height: 462px;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  img {
+    display: block;
+    & + span.imgDescription {
+      text-transform: uppercase;
+      display: block;
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      margin-top: 25px;
+    }
+  }
+}
+

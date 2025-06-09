@@ -1,0 +1,156 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$blackProjectX: #191A1F;
+$orangeProjectX: #FF6644;
+$blueProjectX: #C1DCE3;
+$textColor: #68686D;
+
+.designSection {
+  background-color: $blueProjectX;
+  position: relative;
+  height: 808px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFFFFF  100%);
+
+    @media only screen and (min-width: 450px) {
+      height: 40%;
+    }
+  }
+
+  @media only screen and (min-width: 450px) {
+    height: 608px;
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    height: 884px;
+  }
+
+  .container {
+    padding-top: 24px;
+    z-index: 5;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 72px;
+    }
+
+    .designContent {
+      z-index: 5;
+      position: relative;
+
+      @media only screen and (min-width: 450px) {
+        max-width: 340px;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: 540px;
+      }
+
+      .designTitle {
+        color: $orangeProjectX;
+      }
+
+      h3 {
+        color: $textColor;
+        padding-top: 8px;
+        padding-bottom: 24px;
+        max-width: 250px;
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: 500px;
+          padding-top: 24px;
+          padding-bottom: 100px;
+        }
+      }
+
+      .title {
+        color: $blackProjectX;
+        padding-bottom: 8px;
+
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: 16px;
+        }
+      }
+    }
+
+    .designImgBlock {
+
+      .designCard {
+        max-width: 335px;
+        background-color: $blackProjectX;
+        border-radius: 16px;
+        padding: 16px;
+        position: relative;
+        top: 345px;
+        z-index: 5;
+        overflow: hidden;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background-color: $orangeProjectX;
+          filter: blur(60px);
+          width: 70px;
+          height: 70px;
+          z-index: 1;
+
+          @media only screen and (min-width: $screen-md) {
+            filter: blur(80px);
+            width: 160px;
+            height: 60px;
+          }
+        }
+
+        @media only screen and (min-width: 450px) {
+          top: 24px;
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: 540px;
+          top: 48px;
+          padding: 24px;
+          -webkit-box-shadow: 10px 10px 0 0 rgba(25, 26, 31, 0.1);
+          -moz-box-shadow: 10px 10px 0 0 rgba(25, 26, 31, 0.1);
+          box-shadow: 10px 10px 0 0 rgba(25, 26, 31, 0.1);
+        }
+
+        ul {
+          padding-left: 20px;
+          position: relative;
+          z-index: 5;
+
+          li {
+            color: #C8C8CE;
+          }
+        }
+      }
+    }
+  }
+
+  .designImg {
+    width: 375px;
+    height: 542px;
+    position: absolute;
+    top: 266px;
+    right: 0;
+    z-index: 1;
+
+    @media only screen and (min-width: 450px) {
+      top: 24px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      width: 1098px;
+      height: 781px;
+      top: 103px;
+    }
+  }
+}

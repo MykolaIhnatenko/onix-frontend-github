@@ -1,0 +1,17 @@
+{
+  "Backend development": [
+    "Cake PHP"
+  ],
+  "Frontend development": [
+    "Angular"
+  ],
+  "Database": [
+    "PostgreSQL"
+  ],
+  "Hosting": [
+    "AWS"
+  ],
+  "Other": [
+    "Integration with the client’s Salesforce organization"
+  ]
+}

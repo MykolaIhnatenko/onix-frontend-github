@@ -1,0 +1,188 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables.scss";
+
+.desktopSlider {
+  display: grid;
+  grid-template-areas: "postTrip carouselWrapper"
+                        "inquiries  carouselWrapper"
+                        "offerDetails  carouselWrapper";
+  grid-template-columns: 33.34% 1fr;
+  column-gap: toRem(86);
+
+  .postTrip, .inquiries, .offerDetails {
+    h3 {
+      color: #19191B;
+      margin: toRem(24) 0 toRem(16) 0;
+
+      @media only screen and (max-width: $screen-xl) {
+        margin: toRem(15) 0 toRem(10) 0;
+      }
+    }
+
+    p {
+      margin-bottom: toRem(76);
+
+      @media only screen and (max-width: $screen-xl) {
+        margin-bottom: toRem(45);
+        font-size: toRem(18);
+        line-height: toRem(27);
+      }
+    }
+  }
+
+  .postTrip {
+    grid-area: postTrip;
+  }
+
+  .inquiries {
+    grid-area: inquiries;
+  }
+
+  .offerDetails {
+    grid-area: offerDetails;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .carouselWrapper {
+    position: relative;
+    z-index: 1;
+    grid-area: carouselWrapper;
+    background: #19191B;
+    border-radius: toRem(12);
+    overflow: hidden;
+    max-height: toRem(719);
+
+    @media only screen and (max-width: $screen-xl) {
+      max-height: toRem(600);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      max-height: toRem(450);
+    }
+
+    .nukaContainer {
+      height: 100% !important;
+      pointer-events: none;
+    }
+  }
+}
+
+.separator {
+  height:toRem( 2);
+  border-radius:toRem( 2);
+  position: relative;
+  overflow: hidden;
+
+  @media only screen and (max-width: $screen-md - 1) {
+    margin: 0 toRem(16);
+  }
+
+  .grayBar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #D3D3D4;
+  }
+
+  .coloredBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(89.04deg, #FF0289 1%, #FF6E04 99.38%);
+  }
+
+  @keyframes coloredBarIncrease {
+    0% { width: 0; }
+    40% { width: 50%; }
+    50% { width: 50%; }
+    60% { width: 50%; }
+    100% { width: 100%; }
+  }
+
+  @keyframes coloredBarDecrease {
+    0% {
+      left: 0;
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    100% {
+      left: 100%;
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+  .animateColored {
+    animation-duration: 4000ms, 2000ms;
+    animation-delay: 1000ms, 5000ms;
+    animation-timing-function: ease-in-out, ease-out;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-name: coloredBarIncrease, coloredBarDecrease;
+  }
+}
+
+.mobileSlider {
+  z-index: 1;
+  position: relative;
+  background: #19191B;
+  padding-top: toRem(56);
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-top: toRem(32);
+  }
+
+  .postTrip, .inquiries, .offerDetails {
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      cursor: pointer;
+    }
+
+    h3 {
+      color: #FFFFFF;
+      padding: 0 toRem(30);
+      margin: toRem(22) 0 toRem(16) 0;
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(32) !important;
+        line-height: toRem(48);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        font-size: toRem(20) !important;
+        line-height: toRem(30);
+        padding: 0 toRem(16);
+      }
+    }
+
+    p {
+      margin-bottom: toRem(56);
+      color: #FFFFFF;
+      padding: 0 toRem(30);
+
+      @media only screen and (max-width: $screen-lg) {
+        font-size: toRem(18);
+        line-height: toRem(27);
+      }
+
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-bottom: toRem(32);
+        font-size: toRem(16);
+        line-height: toRem(24);
+        padding: 0 toRem(16);
+      }
+    }
+  }
+
+  .offerDetails {
+    @media only screen and (max-width: $screen-lg) {
+      max-width: 100vw;
+    }
+  }
+}

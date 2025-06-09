@@ -1,0 +1,133 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.functionalityMainContainer {
+  width: 100%;
+  min-height: toRem(345);
+  height: 100%;
+  background: linear-gradient(270deg, #A4CDF3 0%, #D5EFFD 100%);
+  border-radius: toRem(30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+
+  @media only screen and (max-width: $screen-lg) {
+    min-height: toRem(360);
+    border-radius: toRem(10);
+    padding: toRem(30) toRem(54) toRem(15);
+    align-items: initial;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    min-height: 0;
+    padding: toRem(15) toRem(10);
+  }
+
+  .imageContainer {
+    max-width: toRem(200);
+    width: toRem(200);
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: toRem(110);
+      margin: toRem(20) 0 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      max-width: toRem(70);
+      margin: toRem(10) 0 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .rightPosition {
+    margin-left: toRem(20);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-left: 0;
+    }
+  }
+
+  .leftPosition {
+    margin-right: toRem(20);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-right: 0;
+    }
+  }
+
+  .textContainer {
+    width: toRem(600);
+
+    @media only screen and (max-width: $screen-lg) {
+      width: 100%;
+    }
+  }
+}
+
+.featureMainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $screen-lg) {
+    flex-wrap: wrap-reverse;
+  }
+
+  .imageContainer {
+    width: toRem(540);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: toRem(50);
+      max-width: toRem(424);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .rightPosition {
+    margin: 0 0 0 toRem(30);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin: toRem(50) 0 0 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: toRem(30) 0 0 0;
+    }
+  }
+
+  .leftPosition {
+    margin: 0 toRem(30) 0 0;
+
+    @media only screen and (max-width: $screen-lg) {
+      margin: toRem(50) 0 0 0;
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: toRem(30) 0 0 0;
+    }
+  }
+
+  .textContainer {
+    max-width: toRem(540);
+
+    @media only screen and (max-width: $screen-lg) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.rightDirection {
+  flex-direction: row-reverse;
+}

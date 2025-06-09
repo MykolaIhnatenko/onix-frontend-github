@@ -1,0 +1,30 @@
+$screen-xs: 0;
+$screen-sm: 576px;   // mobile
+$screen-md: 768px;   // 768 > tablet
+$screen-lg: 992px;   // tablet
+$screen-xl: 1200px;  // desktop
+$screen-xxl: 1440px; // desktop
+$screen-xxxl: 1920px;// desktop
+$screen-large: 2400px;// desktop
+$screen-xl-large: 3840px;// desktop
+
+//fonts
+$main-font-family: var(--muktaVaani), sans-serif;
+$font-arial: 'Arial', 'Helvetica', sans-serif;
+$montserrat-font-family: var(--montserratFont), sans-serif;
+$open-sans-font-family: var(--openSansFont), sans-serif;
+$roboto-font-family: 'Roboto', 'Arial', 'sans-serif';
+$K2D-font-family: 'K2D', sans-serif;
+$OpenSans-font-family: 'Open Sans', sans-serif;
+
+//borders, shadows
+$shadow: 0 10px 20px rgba(0, 0, 0, .1);
+$shadow2: 0 0 13px rgba(0, 0, 0, 0.1);
+$borderGrey: 1px solid #f4f4f4;
+$borderLight: 2px solid #effaff;
+$borderBgBlue: 1px solid #eff7fe;
+$borderWhite: 1px solid #fff;
+$borderBlack: 1px solid #000;
+$borderOrange: 1px solid #F47360;
+$borderYellow: 1px solid #fee00c;
+$gradient: linear-gradient(to bottom, #050E49, #25246e);

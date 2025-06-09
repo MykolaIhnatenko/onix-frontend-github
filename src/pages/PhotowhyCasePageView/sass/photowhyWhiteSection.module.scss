@@ -1,0 +1,266 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$whitePhotowhy: #FBFDFF;
+$blackPhotowhy: #010101;
+$saphirePhotowhy: #3B456F;
+$cobaltPhotowhy: #0F1C53;
+$grayPhotowhy: #BFC7E5;
+
+.whiteSection {
+  background-color: $whitePhotowhy;
+
+  .container {
+    padding-top: toRem(20);
+    padding-bottom: toRem(36);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(40);
+      padding-bottom: toRem(10);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(86);
+    }
+
+    p {
+      text-align: left;
+      color: $saphirePhotowhy;
+
+      span {
+        color: $cobaltPhotowhy;
+      }
+
+      .devTitle {
+        font-weight: 500;
+      }
+    }
+
+    p:not(:last-child){
+      padding-top: toRem(12);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: 0;
+      }
+    }
+
+    p:not(:first-child){
+      padding-top: toRem(10);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(24);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(39);
+      }
+    }
+
+    .leftBlockParagraph {
+      @media only screen and (min-width: $screen-md) {
+        padding-top: 0!important;
+        max-width: toRem(315);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(554);
+      }
+    }
+
+    .title {
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $cobaltPhotowhy;
+    }
+
+    .block {
+      border-bottom: 1px solid $grayPhotowhy;
+      margin-bottom: toRem(12);
+      padding-bottom: toRem(20);
+
+      @media only screen and (min-width: $screen-md) {
+        display: flex;
+        margin-bottom: toRem(30);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        display: flex;
+        margin-bottom: toRem(64);
+      }
+
+      .leftBlock {
+        @media only screen and (min-width: $screen-md) {
+          padding-right: toRem(22);
+          flex-basis: 49%;
+        }
+
+        h2 {
+          text-align: left;
+          padding-bottom: toRem(6);
+          color: $cobaltPhotowhy;
+
+          br {
+            display: none;
+
+            @media only screen and (min-width: $screen-md) {
+              display: block;
+            }
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            max-width: toRem(176);
+            padding-bottom: toRem(8);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            max-width: toRem(400);
+            padding-bottom: toRem(16);
+          }
+        }
+
+        .techSolutionParagraph {
+          padding-top: 0;
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-right: toRem(70);
+          }
+
+          a {
+            color: #3B456F;
+            text-decoration: underline;
+            text-decoration-color: rgb(59, 69, 111, 0.7);
+            text-underline-offset: toRem(6);
+          }
+        }
+
+        .leftBlockText {
+          padding-top: toRem(12);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: 0;
+          }
+        }
+      }
+
+      .rightBlock {
+        @media only screen and (min-width: $screen-md) {
+          padding-left: toRem(22);
+          flex-basis: 51%;
+        }
+
+        p {
+          a {
+            color: #3B456F;
+            text-decoration: underline;
+            text-underline-offset: toRem(6);
+            text-decoration-color: rgb(59, 69, 111, 0.7);
+          }
+        }
+
+        ul {
+          list-style: none;
+          color: $saphirePhotowhy;
+          padding-top: toRem(5);
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-top: toRem(16);
+          }
+
+          li {
+            padding-top: toRem(14);
+            text-align: left;
+
+            span {
+              text-transform: uppercase;
+              font-weight: 500;
+              color: $cobaltPhotowhy;
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              padding-top: toRem(34);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-top: toRem(16);
+            }
+          }
+
+          .firstBlockListItem {
+            @media only screen and (min-width: $screen-md) {
+              padding-top: toRem(11);
+            }
+
+            @media only screen and (min-width: $screen-lg + 1) {
+              padding-top: 0;
+            }
+
+          }
+
+          .techSolutionItem {
+            padding-top: toRem(16);
+
+            a {
+              color: #0F1C53;
+              text-decoration: underline;
+              text-underline-offset: toRem(6);
+              text-decoration-color: rgb(59, 69, 111, 0.7);
+            }
+          }
+        }
+
+        .firstBlockList {
+          @media only screen and (min-width: $screen-md) {
+            padding-bottom: toRem(10);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            max-width: toRem(480);
+            padding-bottom: toRem(68);
+          }
+        }
+
+        .techSolutionList {
+          padding-top: toRem(47);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-top: toRem(8);
+          }
+
+          @media only screen and (min-width: $screen-lg + 1) {
+            padding-top: toRem(16);
+          }
+        }
+      }
+    }
+
+    .blockWithoutLine {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(30);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        margin-bottom: toRem(10);
+      }
+
+    }
+
+    .techBlock {
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(30);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(40);
+        margin-bottom: 0;
+      }
+    }
+  }
+  .techSolutionContainer {
+    padding-bottom: 0;
+    padding-top: toRem(40);
+  }
+}

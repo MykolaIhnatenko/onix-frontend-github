@@ -1,0 +1,225 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-height: toRem(1500);
+
+  @media only screen and (max-width: $screen-lg) {
+    max-height: unset;
+  }
+  
+  .leftCol,.rightCol{
+    padding-top: toRem(110);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center ;
+  }
+  .leftCol{
+    padding-right : toRem(70);
+    padding-left: toRem(70);
+    padding-bottom: toRem(70);
+    width: 52.111%;
+    background: var(--color-white);
+
+    @media only screen and (min-width: $screen-xxxl) {
+      padding-right : toRem(80);
+      padding-left: toRem(80);
+      padding-bottom: toRem(80);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      justify-content: space-between;
+    }
+
+    .alignEndText {
+      width: 100%;
+      max-width: toRem(460);
+    }
+
+    .leftColBg{
+      z-index: -1;
+      object-fit: cover;
+    }
+    .bottomBlock{
+      margin-top: max(-50px, calc(100vh - 715px));
+      max-width: none;
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin: 0;
+      }
+
+      @media only screen and (min-width: $screen-xxxl) {
+        margin-top: auto;
+      }
+      
+      @media only screen and (max-width: $screen-sm) {
+        max-width: 100%;
+      }
+
+      .bottomText {
+        max-width: toRem(400);
+      }
+    }
+  }
+  .rightCol{
+    position: relative;
+    padding-top: toRem(108);
+    width: 47.999%;
+    min-height: toRem(860);
+
+    @media only screen and (max-width: $screen-xl) {
+      min-height: toRem(1000);
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      min-height: toRem(896);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      min-height: auto;
+      height: auto;
+    }
+
+    .rightColColBg{
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .focusText{
+      margin-top: toRem(20);
+      margin-bottom: toRem(20);
+    }
+    .content{
+      z-index: 1;
+      color: var(--color-white);
+      padding-left: toRem(70);
+      padding-right: toRem(70);
+    }
+  }
+}
+
+@media only screen and (min-width: ($screen-lg + 1)) {
+  .container{
+    .mainTitle{
+      font-size: toRem(50);
+      line-height: getLineHeight(64, 50);
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-xxxl) {
+  .container {
+    .leftCol {
+      width: 51.5%;
+      padding-left: toRem(80);
+      padding-right: toRem(80);
+    }
+    .rightCol{
+      width: 48.5%;
+      padding-top: toRem(128);
+      .content{
+        padding-left: toRem(80);
+        padding-right: toRem(80);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .container{
+    flex-direction: column;
+    .mainTitle{
+      font-size: toRem(50);
+      line-height: getLineHeight(64, 50);
+    }
+    .leftCol{
+      position: relative;
+      padding: toRem(110) toRem(30) toRem(80);
+      height: auto;
+      width: 100%;
+      max-width: 100%;
+      
+      .alignEndText {
+        margin-top: toRem(30);
+        margin-bottom: 0;
+      }
+
+      .bottomText {
+        margin-top: toRem(120);
+        margin-bottom: toRem(30);
+      }
+
+      .contactBtn{
+        width: toRem(460);
+      }
+    }
+    .rightCol{
+      width: 100%;
+      max-width: 100%;
+      padding-top: toRem(80);
+      padding-bottom: toRem(50);
+      .focusText{
+        margin-top: 0;
+        margin-bottom: toRem(20);
+      }
+      .content{
+        padding-left: toRem(30);
+        padding-right: toRem(30);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: ($screen-md - 1)) {
+  .container{
+    .mainTitle{
+      font-size: toRem(40);
+      line-height: getLineHeight(50, 40);
+    }
+    .leftCol{
+      padding: toRem(100) toRem(15) toRem(30);
+      
+      .contactBtn{
+        width: 100%;
+      }
+      .alignEndText {
+        margin-top: toRem(15);
+        margin-bottom: 0;
+        max-width: unset;
+      }
+      .bottomBlock{
+        .bottomText {
+          margin-top: toRem(30);
+          margin-bottom: toRem(30);
+          max-width: unset;
+        }
+      }
+    }
+    .rightCol{
+      padding-top: toRem(80);
+      padding-bottom: toRem(60);
+
+      .focusText{
+        margin-bottom: toRem(30);
+        font-size: toRem(14);
+        line-height: getLineHeight(20, 14);
+      }
+      .content{
+        padding-left: toRem(15);
+        padding-right: toRem(15);
+      }
+    }
+  }
+}
+
+
+.hideSpace {
+  display: block;
+  @media only screen and (max-width: ($screen-md - 1)) {
+    display: none;
+  }
+}

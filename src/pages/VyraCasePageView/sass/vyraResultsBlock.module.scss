@@ -1,0 +1,19 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container{
+  position: relative;
+  padding-bottom: toRem(120);
+  
+  @media only screen and (max-width: $screen-lg) {
+    padding-bottom: toRem(80);
+  }
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    padding-bottom: toRem(80);
+  }
+  
+  .bg{
+    object-fit: cover;
+  }
+}

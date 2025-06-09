@@ -1,0 +1,34 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  width: 100%;
+}
+
+.item {
+  width: 100%;
+  padding: toRem(30) toRem(30);
+  border-bottom: 2px solid var(--color-black);
+  display: flex;
+  flex-wrap: nowrap;
+
+  .contentContainer {
+    width: 50%;
+    display: flex;
+  }
+}
+
+.textItem {
+  width: 85%;
+  font-weight: 500;
+  font-family: var(--generalSans);
+  font-size: toRem(30);
+  line-height: 40px;
+  display: inline-block;
+  white-space: normal;
+  
+  &:first-child {
+    display: inline-block;
+    width: 10%;
+  }
+}

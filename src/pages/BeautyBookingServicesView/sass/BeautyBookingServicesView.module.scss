@@ -1,0 +1,18 @@
+@import "../../App/sass/breakpointsVariables.scss";
+@import "../../App/sass/functions.scss";
+
+.bigBackgroundBlock {
+  background-image: url('../../../assets/images/BeautyBookingServices/img_BackgroundBigMobile.webp');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+
+  @media only screen and (min-width: $screen-md) {
+    background-image: url('../../../assets/images/BeautyBookingServices/img_BackgroundBigTablet.webp');
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    background-image: url('../../../assets/images/BeautyBookingServices/img_BackgroundBig.webp');
+  }
+}

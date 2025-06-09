@@ -1,0 +1,74 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .content {
+    width: toRem(400);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @media only screen and (max-width: $screen-md - 1) {
+      width: toRem(274);
+    }
+    
+    .title {
+      font-size: toRem(36);
+      line-height: getLineHeight(46, 36);
+      padding-bottom: toRem(16);
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        font-size: toRem(24);
+        line-height: getLineHeight(34, 24);
+        padding-bottom: toRem(15);
+      }
+    }
+
+    .text {
+      margin: 0;
+      padding-bottom: toRem(40);
+    }
+
+    .link {
+      position: relative;
+      display: inline-block;
+      color: #0085FF;
+      width: fit-content;
+      font-family: var(--ibmPlexMono);
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        cursor: pointer;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        bottom: 2px;
+        left: 0;
+        background: #0085FF;
+      }
+    }
+  }
+}

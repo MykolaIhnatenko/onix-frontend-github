@@ -1,0 +1,118 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding: toRem(120) toRem(70);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(120) toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(60) toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(60) toRem(15);
+  }
+
+  .title {
+    max-width: toRem(1078);
+  }
+
+  .subtitle {
+    margin: toRem(40) 0 toRem(70);
+    max-width: toRem(960);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin: toRem(40) 0 toRem(60);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin: toRem(30) 0;
+      font-size: toRem(18);
+    }
+  }
+
+  .wrapper {
+    @media only screen and (max-width: ($screen-md - 1)) {
+      overflow: scroll;
+    }
+
+    .itemsInfo {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      row-gap: 40px;
+      justify-content: center;
+      
+      @media only screen and (min-width: ($screen-xxl - 1)) {
+        justify-content: space-between;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        flex-wrap: nowrap;
+        justify-content: unset;
+      }
+
+      .containerItem {
+        display: flex;
+        flex-direction: column;
+        width: 23.5%;
+        
+        @media only screen and (max-width: $screen-xxl - 1) {
+          width: calc(33% - 11px);
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          width: calc(50% - 10px);
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          min-width: toRem(300);
+        }
+
+        .name {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+          margin-top: toRem(15);
+          margin-bottom: toRem(10);
+        }
+
+        .position {
+          margin: 0;
+          font-size: toRem(18);
+          line-height: getLineHeight(26, 18);
+
+          h4 {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .bottomText {
+    margin: toRem(70) 0 0;
+    max-width: toRem(960);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: toRem(40);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-top: toRem(30);
+      font-size: toRem(18);
+    }
+  }
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    width: toRem(300);
+    height: toRem(300);
+  }
+}

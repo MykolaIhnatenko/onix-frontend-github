@@ -1,0 +1,291 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.mainContainer {
+  margin: toRem(92) auto toRem(106);
+  font-family: var(--muktaVaani);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin: toRem(72) auto toRem(54);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: toRem(50) auto;
+  }
+
+  .linkWrapper {
+    max-width: toRem(320);
+    margin: 0 auto;
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: toRem(690);
+    }
+  }
+
+}
+
+.contactUsText {
+  font-weight: bold;
+  font-size: toRem(20);
+  line-height: 130%;
+  color: #F8F8F8;
+
+  @media only screen and (min-width: $screen-md) {
+    font-size: toRem(23);
+  }
+}
+
+.mainContentContainer {
+  max-width: toRem(790);
+  margin: toRem(92) auto 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(768);
+    margin: toRem(72) auto 0;
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin: toRem(50) auto 0;
+  }
+}
+
+.innerContainer {
+  margin: 0 toRem(30);
+}
+
+.contentTitle {
+  font-size: toRem(46);
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0B2F6E;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(38);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(24);
+  }
+}
+
+.contentTextWrapper {
+  margin-top: toRem(30);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(15);
+  }
+}
+
+.contentText {
+  font-size: toRem(20);
+  color: #333333;
+  line-height: 150%;
+  font-weight: 400;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(16);
+  }
+
+  &:not(:first-child) {
+    margin-top: toRem(17);
+  }
+}
+
+.metroMapWrapper {
+  margin-top: toRem(50);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(40);
+  }
+
+  img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+  }
+}
+
+.metroListContainer {
+  margin-top: toRem(50);
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(40);
+  }
+
+  .metroListTitle {
+    font-size: toRem(22);
+    color: #333333;
+    line-height: 150%;
+    font-weight: 500;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(17);
+    }
+  }
+
+  .metroListItem {
+    display: flex;
+    align-items: center;
+    margin-top: toRem(30);
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: toRem(20);
+    }
+
+    .metroListItemIcon {
+      img {
+        display: block;
+      }
+    }
+
+    .metroListItemText {
+      max-width: toRem(370);
+      margin: 0 0 0 toRem(20);
+      font-size: toRem(20);
+      color: #333333;
+      line-height: 150%;
+      font-weight: 600;
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: toRem(295);
+        margin: toRem(15) 0 0 0;
+        font-size: toRem(16);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        max-width: toRem(260);
+      }
+    }
+  }
+}
+
+.subContentContainer {
+  max-width: toRem(1170);
+  margin: toRem(106) auto 0;
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(790);
+    margin: toRem(50) auto 0;
+  }
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $screen-lg) {
+    flex-wrap: wrap;
+  }
+}
+
+.subContentImageWrapper {
+  width: 50%;
+  margin-right: toRem(30);
+
+  @media only screen and (max-width: $screen-lg) {
+    width: toRem(444);
+    margin-right: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.subContentTextWrapper {
+  width: 50%;
+
+  @media only screen and (max-width: $screen-lg) {
+    width: 100%;
+    margin-top: toRem(50);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(40);
+  }
+
+  .subContentText {
+    font-size: toRem(20);
+    color: #333333;
+    line-height: 150%;
+    font-weight: 400;
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(16);
+    }
+
+    &:not(:first-child) {
+      margin-top: toRem(30);
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      &:not(:first-child) {
+        margin-top: toRem(20);
+      }
+    }
+  }
+}
+
+.subContentList {
+  font-size: toRem(20);
+  color: #333333;
+  line-height: 150%;
+  font-weight: 400;
+  max-width: toRem(360);
+  margin: toRem(30) 0 0 0;
+
+  @media only screen and (max-width: $screen-xl) {
+    margin-top: toRem(20);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: toRem(268);
+    font-size: toRem(16);
+  }
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    max-width: toRem(260);
+  }
+
+  li {
+    display: flex;
+    &:not(:first-child) {
+      margin-top: toRem(20);
+    }
+
+    .icon {
+      min-width: fit-content;
+      margin: toRem(6) toRem(6) 0 0;
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(3);
+      }
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      &:not(:first-child) {
+        margin-top: toRem(15);
+      }
+    }
+  }
+}
+
+.subContentTextResult {
+  margin-top: toRem(30);
+  font-size: toRem(22);
+  color: #333333;
+  line-height: 150%;
+  font-weight: 500;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(17);
+  }
+}

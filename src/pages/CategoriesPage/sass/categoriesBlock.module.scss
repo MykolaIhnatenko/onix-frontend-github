@@ -1,0 +1,21 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.categoriesBlock {
+  padding-top: toRem(20);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(80);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-top: toRem(40);
+  }
+
+  .categories {
+    @media only screen and (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.industriesCaseStudiesBlock {
+  position: relative;
+  background-color: black;
+
+  .bgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: toRem(520);
+
+    @media only screen and (max-width: $screen-sm) {
+      height: toRem(270);
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: toRem(70);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+      bottom: 50px;
+      left: 0;
+      position: absolute;
+
+      @media screen and (max-width: $screen-sm) {
+        bottom: 0;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    position: relative;
+    padding: toRem(80) 0 toRem(88);
+
+    @media only screen and (max-width: $screen-lg) {
+      padding: toRem(80) 0;
+    }
+  }
+}

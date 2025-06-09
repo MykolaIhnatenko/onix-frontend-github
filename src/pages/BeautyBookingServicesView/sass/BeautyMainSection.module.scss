@@ -1,0 +1,147 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+
+.container {
+  height: 100vh;
+  min-height: toRem(900);
+  position: relative;
+  padding: toRem(24) toRem(70) toRem(24);
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $screen-large) {
+    padding: toRem(138) toRem(80) toRem(40);
+  }
+
+  @media only screen and (max-width: $screen-xxxl - 1) {
+    padding: toRem(138) toRem(70) toRem(24);
+  }
+  
+  @media only screen and (width <= 1150px) {
+    padding: toRem(154) toRem(70) toRem(24);
+    flex-direction: column;
+    align-items:flex-start;
+    min-height: toRem(1085);
+    justify-content: flex-start;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(154) toRem(30) toRem(62);
+    min-height: 100%;
+    height: fit-content;
+  }
+
+  @media only screen and (max-width: $screen-md - 1) {
+    padding: toRem(139) toRem(15) toRem(30);
+    min-height: 100vh;
+  }
+
+  .titleBox {
+    width: 100%;
+    max-width: toRem(650);
+    display: flex;
+    flex-direction: column;
+    margin-top: toRem(207);
+    z-index: 1;
+
+    @media only screen and (min-width: $screen-xxxl) {
+      max-width: toRem(720);
+    }
+
+    @media only screen and (max-width: 1299px) {
+      max-width: toRem(459);
+    }
+
+    @media only screen and (max-width: 1150px) {
+      margin-top: 0;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .title {
+      @include generalSansFont(50, 500, 64);
+      color: var(--color-black);
+    
+      @media only screen and (max-width: 1369px) {
+        @include generalSansFont(40, 500, 56);
+        letter-spacing: -0.5px;
+      }
+    
+      @media only screen and (max-width: ($screen-md - 1)) {
+        @include generalSansFont(25, 500, 35);
+      }
+    }
+    
+    .desc {
+      width: 100%;
+      max-width: toRem(440);
+      margin-top: toRem(40);
+
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(550);
+      }
+      
+      @media only screen and (max-width: 1280px) {
+        max-width: toRem(356);
+      }
+      
+      @media only screen and (max-width: 1199px) {
+        max-width: toRem(293);
+      }
+      
+      @media only screen and (max-width: 1150px) {
+        max-width: 100%;
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(30);
+        margin-bottom: toRem(40);
+      }
+    
+      @media only screen and (max-width: $screen-md - 1) {
+        margin-top: toRem(15);
+        margin-bottom: toRem(30);
+      }
+    }
+  }
+
+  .imgWrapper {
+    width: 100%;
+    max-width: toRem(772);
+    height: fit-content;
+    position: absolute;
+    right: toRem(70);
+    
+    @media only screen and (min-width: $screen-xxxl) {
+      max-width: toRem(988);
+      max-height: 100%;
+      height: auto;
+      position: static;
+    }
+    
+    @media only screen and (max-width: 1369px) {
+      max-width: toRem(700);
+    }
+
+    @media only screen and (max-width: 1299px) {
+      margin-top: toRem(65);
+    }
+    
+    @media only screen and (max-width: 1150px) {
+      position: static;
+      margin: toRem(80) auto 0;
+      max-width: toRem(708);
+    }
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: 0;
+    }
+  }
+
+  img {
+    @media only screen and (min-width: $screen-xxxl) {
+      object-fit: contain;
+      object-position: top right;
+    }
+  }
+}

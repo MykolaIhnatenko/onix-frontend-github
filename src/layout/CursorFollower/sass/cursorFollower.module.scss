@@ -1,0 +1,105 @@
+@import "../../../pages/App/sass/functions";
+
+.cursorFollower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: 10000;
+  width: toRem(24);
+  height: toRem(24);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-cruise);
+  border: none;
+  color: #fff;
+  opacity: .6;
+  font-size: toRem(18);
+  font-style: normal;
+  font-weight: 500;
+  line-height: getLineHeight(34, 18);
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, opacity 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+
+  &.pointer {
+    width: toRem(60);
+    height: toRem(60);
+  }
+
+  &.pointerCaseStudy {
+    background: var(--color-blue);
+    width: toRem(240);
+    height: toRem(240);
+    opacity: 1;
+    .cursorFollowerText {
+      opacity: 1;
+      font-size: toRem(20);
+    }
+
+    .cursorFollowerIcon {
+      opacity: 1;
+    }
+  }
+  
+  &.videoPlayer {
+    opacity: 0;
+  }
+
+  &.pointerDrag {
+    background: var(--color-blue);
+    width: toRem(120);
+    height: toRem(120);
+    mix-blend-mode: difference;
+    opacity: 1;
+    background-color: var(--color-white);
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+    text-transform: unset;
+    font-family: var(--generalSans), sans-serif;
+
+    &:after {
+      content: 'Drag me';
+      font-weight: 600;
+      font-size: toRem(20);
+      line-height: 2;
+    }
+  }
+
+  &.pointerUiUx {
+    padding: toRem(10) toRem(17);
+    background: #85C4FF;
+    mix-blend-mode: difference;
+    flex-direction: row;
+    align-items: stretch;
+    width: toRem(174);
+    height: toRem(54);
+    border-radius: 60px;
+    opacity: 1;
+
+    .icon {
+      width: toRem(32);
+      height: toRem(32);
+      margin-right: toRem(5);
+    }
+  }
+
+  .cursorFollowerIcon {
+    opacity: 0;
+    transition: opacity .2s linear;
+  }
+
+  .cursorFollowerText {
+    margin: 0;
+    padding-top: toRem(6);
+    opacity: 0;
+    transition: opacity .2s linear;
+    text-align: center;
+  }
+}

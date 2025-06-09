@@ -1,0 +1,106 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/mixinsFonts.scss";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.container {
+  max-width: toRem(1440);
+  width: 100%;
+  margin: 0 auto;
+  padding: toRem(164) 0 toRem(40);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(194) 0 toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(144) 0 toRem(30);
+  }
+}
+
+.wrapperText {
+  width: 100%;
+  padding: 0 toRem(70) toRem(60);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: 0 toRem(30) toRem(60);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: 0 toRem(15);
+  }
+}
+
+.title {
+  width: 80%;
+  color: var(--color-black);
+  text-align: start;
+  margin: 0 0 toRem(30);
+
+  br{
+    display: none;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    width: 70%;
+    margin: 0;
+    @include generalSansFont(56, 500, 72);
+
+    br {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    width: 100%;
+    @include generalSansFont(40, 500, 50);
+  }
+}
+
+.text {
+  @include generalPlexMono(18, 400, 26);
+  display: block;
+  max-width: toRem(487);
+  text-align: start;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: toRem(164);
+
+  @media only screen and (max-width: $screen-xl) {
+    margin-right: toRem(60);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: toRem(40);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    width: 100%;
+    margin-bottom: toRem(47);
+  }
+}
+
+.wrapperLine {
+  width: 100%;
+  padding: 0 toRem(70);
+  margin-top: toRem(40);
+  
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(30);
+    padding: 0 toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: 0 toRem(15);
+    display: none;
+
+  }
+}
+
+.line {
+  width: 100%;
+  height: toRem(2);
+  background: var(--color-black);
+}

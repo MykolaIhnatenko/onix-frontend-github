@@ -1,0 +1,61 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+.item {
+  @media only screen and (min-width: $screen-lg + 1) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &:last-of-type {
+    padding-top: 24px;
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 30px;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: 48px;
+      flex-direction: row-reverse;
+    }
+
+    .textWrapper {
+      .itemText {
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: 533px;
+        }
+      }
+    }
+  }
+
+  .textWrapper {
+    @media only screen and (min-width: $screen-lg + 1) {
+      flex: 0 1 calc((100% - 20px) /2);
+    }
+
+    .itemText {
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: 507px;
+      }
+    }
+  }
+
+  .image {
+    margin-top: 16px;
+    display: block;
+
+    @media only screen and (min-width: $screen-md) {
+      margin-top: 24px;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      margin-top: 0;
+      flex: 0 1 calc((100% - 20px) /2);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.item {
+  padding-bottom: toRem(32);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-bottom: toRem(24);
+  }
+
+  p {
+    letter-spacing: -0.2px;
+  }
+}

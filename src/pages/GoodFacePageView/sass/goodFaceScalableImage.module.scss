@@ -1,0 +1,72 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  max-width: toRem(343);
+  max-height: toRem(210);
+  margin: 0 auto;
+  z-index: 1;
+  
+  @media only screen and (min-width: $screen-sm) {
+    max-width: toRem(708);
+    max-height: toRem(430);
+  }
+  
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(1320);
+    max-height: toRem(800);
+  }
+
+  .spot {
+    position: absolute;
+    width: toRem(106);
+    height: toRem(106);
+    top: toRem(-30);
+    left: toRem(-20);
+    z-index: 2;
+
+    @media only screen and (min-width: $screen-md) {
+      width: toRem(146);
+      height: toRem(146);
+      top: toRem(-40);
+      left: toRem(-30);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      width: toRem(225);
+      height: toRem(225);
+      left: toRem(-60);
+    }
+  }
+
+  .imageContainer {
+    .image {
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        clip-path: inset(0 round 8px)
+      }
+    }
+  }
+
+  .solutions {
+    overflow: hidden;
+    border-radius: toRem(8);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      &:hover {
+        .image {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .image {
+      @media only screen and (min-width: $screen-lg + 1) {
+        transition: all .8s ease .2s;
+      }
+    }
+  }
+}

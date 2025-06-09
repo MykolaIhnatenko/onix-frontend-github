@@ -1,0 +1,14 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.cardsBox {
+  padding-bottom: toRem(80);
+
+  @media only screen and (max-width: $screen-lg) {
+    padding-bottom: toRem(50);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding-bottom: 0;
+  }
+}

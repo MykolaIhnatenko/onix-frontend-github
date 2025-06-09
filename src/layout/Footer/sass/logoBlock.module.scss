@@ -1,0 +1,120 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.logoBlock {
+  gap: toRem(30);
+  flex-direction: column;
+
+  @media only screen and (min-width: $screen-md) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  @media only screen and (min-width: $screen-xl) {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .iconBlock {
+    @media only screen and (min-width: $screen-md) {
+      flex: 0 1 calc((100% - 30px) / 2);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      flex: 0 1 auto;
+    }
+
+    &.iconBlockSale {
+      flex: unset;
+    }
+
+    svg {
+      path {
+        fill: var(--color-white);
+      }
+    }
+
+    .copyrights {
+      margin-top: toRem(16);
+      margin-bottom: toRem(30);
+
+      @media only screen and (min-width: $screen-md) {
+        margin-top: toRem(30);
+        margin-bottom: 0;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        margin-top: toRem(15);
+      }
+
+      &.copyrightsSale {
+        margin-bottom: 0;
+        margin-top: toRem(15);
+      }
+
+      .copyrightLink {
+        text-decoration: underline;
+      }
+
+      .sale {
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $screen-md - 1) {
+          flex-direction: column;
+          gap: toRem(10);
+        }
+
+        .saleLinks {
+          display: flex;
+          gap: toRem(30);
+        }
+      }
+    }
+  }
+
+  .clutchWrapper {
+    @media only screen and (min-width: $screen-md) {
+      flex: 0 1 calc((100% - 30px) / 2);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      flex: 0 1 auto;
+    }
+
+    iframe {
+      background-color: var(--color-white);
+      padding: toRem(15) toRem(30) toRem(15) toRem(20);
+      width: toRem(194);
+      height: toRem(72);
+    }
+  }
+
+  &.logoBlockSale {
+    display: block;
+
+    .iconBlock {
+      flex: unset;
+
+      .copyrights {
+        margin-bottom: 0;
+        margin-top: toRem(15);
+
+        .copyrightsContainerSale {
+          display: flex;
+          justify-content: space-between;
+
+          @media only screen and (max-width: $screen-md - 1) {
+            flex-direction: column;
+            gap: toRem(10);
+          }
+
+          .saleLinks {
+            display: flex;
+            gap: toRem(30);
+          }
+        }
+      }
+    }
+  }
+}

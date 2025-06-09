@@ -1,0 +1,559 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  padding: toRem(80) toRem(70);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding-left: toRem(80);
+    padding-right: toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(40) toRem(15);
+  }
+
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: toRem(520);
+
+    img {
+      width: 100%;
+      height: toRem(520);
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    position: relative;
+    .bodyText {
+      margin: toRem(20) 0 toRem(58) 0;
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: toRem(36);
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin: toRem(20) 0;
+        font-size: toRem(16);
+        line-height: getLineHeight(24, 16);
+      }
+    }
+
+    .groupContainer {
+      display: flex;
+      width: 100%;
+      padding-top: toRem(20);
+      border-top: 2px solid #000;
+
+      @media only screen and (max-width: $screen-xl) {
+        flex-direction: column;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        padding: 0;
+      }
+
+      .groupTitle {
+        max-width: toRem(450);
+        width: toRem(450);
+        min-width: toRem(300);
+        padding: toRem(24) 0;
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          max-width: toRem(330);
+          width: auto;
+          min-width: toRem(200);
+        }
+
+        .titleBlock {
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+
+          @media only screen and (max-width: $screen-lg) {
+            font-size: toRem(24);
+            line-height: getLineHeight(34, 24);
+          }
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            max-width: toRem(330);
+            width: auto;
+            min-width: toRem(200);
+            font-size: toRem(20);
+            line-height: getLineHeight(28, 20);
+          }
+        }
+      }
+
+      .iconsGroup {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(toRem(238), toRem(400)));
+        justify-items: center;
+        row-gap: toRem(22);
+
+        @media only screen and (max-width: $screen-md - 1) {
+          grid-template-columns: repeat(3, minmax(toRem(175), toRem(300)));
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          display: flex;
+          flex-direction: column;
+          gap: toRem(10);
+        }
+
+        .iconBlock {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          max-width: toRem(252);
+          min-width: toRem(230);
+          height: toRem(156);
+          padding: toRem(20) 0;
+          text-align: center;
+
+          @media only screen and (max-width: $screen-md - 1) {
+            min-width: toRem(175);
+          }
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            min-width: toRem(270);
+            height: toRem(50);
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            padding: 0;
+
+            &:nth-child(1) { order: 1; }
+            &:nth-child(2) { order: 2; }
+            &:nth-child(3) { order: 3; }
+            &:nth-child(4) { order: 4; }
+            &:nth-child(5) { order: 5; }
+            &:nth-child(6) { order: 6; }
+          }
+
+          .titleIcon {
+            margin: 0;
+            font-size: toRem(20);
+            line-height: getLineHeight(28, 20);
+
+            @media only screen and (max-width: $screen-lg) {
+              font-size: toRem(18);
+              line-height: getLineHeight(26, 18);
+            }
+
+            @media only screen and (max-width: ($screen-md - 1)) {
+              font-size: toRem(16);
+              line-height: getLineHeight(24, 16);
+              padding-left: toRem(8);
+            }
+          }
+
+          .iconContainer {
+            @media only screen and (max-width: ($screen-md - 1)) {
+              width: toRem(50);
+              height: toRem(50);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.designAudit {
+    background: var(--color-black);
+    color: var(--color-white);
+
+    .background {
+
+      img{
+        object-position: top;
+      }
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: toRem(70);
+        background: linear-gradient(180deg, rgba(253, 253, 253, 0) 15%, #000000 100%);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          height: toRem(110);
+        }
+      }
+    }
+
+    .bodyText {
+      margin: 0;
+      padding: toRem(40) 0 toRem(36);
+      font-size: toRem(18);
+      line-height: getLineHeight(26, 18);
+    }
+
+    .groupContainer {
+      padding: 0 0 toRem(36);
+      border-top: none;
+      border-bottom: 1px solid var(--color-white);
+      justify-content: space-between;
+
+      .groupTitle {
+        min-width: toRem(470);
+        .titleBlock {
+          width: toRem(470);
+          font-size: toRem(30);
+          line-height: getLineHeight(40, 30);
+        }
+      }
+
+      .iconsGroup {
+        width: toRem(679);
+        display: flex;
+        justify-content: space-between;
+        .iconBlock {
+          min-width: auto;
+          max-width: none;
+          width: auto;
+          .icon {
+            width: toRem(60);
+            height: toRem(60);
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      .groupContainer {
+        .iconsGroup {
+          width: auto;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+
+      .bodyText {
+        max-width: toRem(740);
+        margin: 0;
+        padding: toRem(20) 0 toRem(16);
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+        br{
+          display: none;
+        }
+      }
+
+      .groupContainer {
+        border-top: none;
+
+        .groupTitle {
+          padding: toRem(20) 0;
+        }
+
+        .iconsGroup {
+          .iconBlock {
+            justify-content: center;
+            height: auto;
+            .titleIcon {
+              padding-bottom: toRem(20);
+            }
+            .icon {
+              width: toRem(50);
+              height: toRem(50);
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(80) toRem(15) toRem(40);
+      .bodyText {
+        padding: toRem(20) 0 0;
+        font-size: toRem(16);
+        line-height: getLineHeight(24, 16);
+      }
+
+      .groupContainer {
+        border-top: none;
+        .groupTitle {
+          min-width: auto;
+          padding: toRem(40) 0;
+          .titleBlock {
+            width: auto;
+            font-size: toRem(22);
+            line-height: getLineHeight(28, 22);
+          }
+        }
+        .iconsGroup {
+          .iconBlock {
+            .titleIcon {
+              padding-bottom: toRem(12);
+              font-size: toRem(14);
+              line-height: getLineHeight(21, 14);
+            }
+            .icon {
+              width: toRem(33);
+              height: toRem(33);
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      .groupContainer {
+        .iconsGroup {
+          flex-direction: row-reverse;
+          .iconBlock {
+            flex-direction: column;
+            .titleIcon {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (width: $screen-md) {
+      padding: toRem(80) toRem(30) toRem(40);
+
+      .bodyText {
+        margin: 0;
+        padding: toRem(20) 0 toRem(16);
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+      }
+
+      .groupContainer {
+        border-top: none;
+
+        .groupTitle {
+          min-width: toRem(470);
+          padding: toRem(20) 0;
+          .titleBlock {
+            width: auto;
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+          }
+        }
+
+        .iconsGroup {
+          .iconBlock {
+            justify-content: center;
+            height: auto;
+            .titleIcon {
+              padding-bottom: toRem(20);
+              font-size: toRem(20);
+              line-height: getLineHeight(28, 20);
+            }
+            .icon {
+              width: toRem(50);
+              height: toRem(50);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.uiUx {
+    background: var(--color-black);
+    color: var(--color-white);
+    .content {
+
+      .mainTitle {
+        max-width: toRem(743);
+      }
+
+      .bodyText {
+        max-width: toRem(777);
+        margin: 0;
+        padding: toRem(40) 0 toRem(36);
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+      }
+
+      .groupContainer {
+        padding: 0 0 toRem(36);
+        border-top: none;
+        border-bottom: 2px solid var(--color-white);
+        justify-content: space-between;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+
+        .groupTitle {
+          min-width: auto;
+          max-width: toRem(270);
+          .titleBlock {
+            width: toRem(270);
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+          }
+        }
+
+        .iconsGroup {
+          width: 68%;
+          display: flex;
+          justify-content: space-between;
+          .iconBlock {
+            width: 25%;
+            min-width: fit-content;
+            max-width: none;
+            .icon {
+              width: toRem(60);
+              height: toRem(60);
+
+              &.hydra {
+                width: toRem(140);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      .groupContainer {
+        flex-direction: row;
+      }
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      .content {
+        .bodyText {
+          max-width: toRem(740);
+          margin: 0;
+          padding: toRem(40) 0 toRem(40);
+          font-size: toRem(18);
+          line-height: getLineHeight(26, 18);
+          br{
+            display: none;
+          }
+        }
+
+        .groupContainer {
+          padding-bottom: toRem(30);
+          border-top: none;
+
+          &:last-child {
+            padding-bottom: 0;
+            padding-top: toRem(30);
+          }
+          .groupTitle {
+            padding: toRem(20) 0;
+          }
+
+          .iconsGroup {
+            width: 59%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap:toRem( 0);
+            grid-row-gap: toRem(60);
+            .iconBlock {
+              padding: toRem(20) 0;
+              justify-content: center;
+              height: auto;
+              .titleIcon {
+                padding-bottom: toRem(20);
+                font-size: toRem(20);
+                line-height: getLineHeight(28, 20);
+              }
+              .icon {
+                width: toRem(50);
+                height: toRem(50);
+              }
+            }
+
+            .div1 { grid-area: 1 / 1 / 2 / 2; }
+            .div2 { grid-area: 1 / 2 / 2 / 3; }
+            .div3 { grid-area: 2 / 1 / 3 / 2; }
+            .div4 { grid-area: 2 / 2 / 3 / 3; }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding: toRem(80) toRem(15) toRem(40);
+
+      .content {
+        .bodyText {
+          padding: toRem(20) 0 toRem(30);
+          font-size: toRem(16);
+          line-height: getLineHeight(24, 16);
+        }
+
+        .groupContainer {
+          border-top: none;
+          flex-direction: column;
+          padding-bottom: toRem(20);
+
+          &:last-child {
+            padding-bottom: 0;
+            padding-top: 0;
+          }
+
+          .groupTitle {
+            min-width: auto;
+            padding: toRem(40) 0;
+
+            .titleBlock {
+              width: auto;
+              font-size: toRem(22);
+              line-height: getLineHeight(28, 22);
+            }
+          }
+
+          .iconsGroup {
+            width: 100%;
+            grid-row-gap: toRem(50);
+            padding: toRem(20) 0;
+            
+            .iconBlock {
+              padding: 0;
+              flex-direction: column;
+              
+              .titleIcon {
+                padding-bottom: toRem(12);
+                font-size: toRem(16);
+                line-height: getLineHeight(26, 16);
+                padding-left: 0;
+              }
+
+              .icon {
+                width: toRem(40);
+                height: toRem(40);
+
+                &.hydra {
+                  width: toRem(110);
+                }
+              }
+
+              &:nth-child(1) { order: 1; }
+              &:nth-child(2) { order: 2; }
+              &:nth-child(3) { order: 3; }
+              &:nth-child(4) { order: 4; }
+            }
+          }
+        }
+      }
+    }
+  }
+}

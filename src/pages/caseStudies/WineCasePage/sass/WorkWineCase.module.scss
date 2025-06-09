@@ -1,0 +1,421 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+$wine-baner: #D29A69;
+$color_text: #830621;
+$wine-light: #e7e7e7;
+.workInsideBanner__wineCase {
+  color: #fff;
+  background-color: #fff;
+
+  .bgWrapper {
+    @media only screen and (max-width: ($screen-md - 1)) {
+      overflow: hidden;
+    }
+
+    .bg {
+      position: relative;
+      height: calc(100vw / 2.9836829836);
+      width: 100%;
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        height: calc(180vw / 2.9836829836);
+      }
+
+      img {
+        object-position: center top;
+        height: auto;
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .workInsideBanner__bg {
+    background: $wine-baner;
+  }
+  i {
+    height: 120px;
+    background-image: url("../../../../assets/images/caseStudiesPage/WineCasePage/img_wine_logo.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 280px 120px;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url("../../../../assets/images/caseStudiesPage/WineCasePage/img_wine_logo@2x.webp");
+    }
+  }
+  h1{
+    color: #fff;
+    margin: 0;
+  }
+}
+.article_container {
+  ARTICLE.project__wineCase {
+    .color_text {
+      color: $color_text;
+    }
+  }
+  .project__challenges {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1110px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: 50px;
+    }
+    LI {
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: 50px;
+      }
+      .challenges__img {
+        flex-basis: 460px;
+        position: relative;
+        @media only screen and (max-width: $screen-lg) {
+          flex-basis: 40%;
+        }
+        @media only screen and (max-width: ($screen-md - 1)) {
+          flex-basis: initial;
+        }
+        IMG {
+          position: relative;
+          z-index: 2;
+          @media only screen and (max-width: $screen-lg) {
+            width: auto;
+            height: 355px;
+          }
+        }
+        &:before,
+        &::before {
+          content: "";
+          position: absolute;
+          width: 460px;
+          height: 460px;
+          border-radius: 50%;
+          background-color: $wine-light;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @media only screen and (max-width: $screen-lg) {
+            width: 280px;
+            height: 280px;
+          }
+          @media only screen and (max-width: ($screen-md - 1)) {
+            width: 280px;
+            height: 280px;
+          }
+        }
+      }
+      .challenges__text {
+        flex-basis: 44%;
+        h2, h3 {
+          font-size: 32px;
+          line-height: 48px;
+          font-weight: 700;
+          letter-spacing: 0.36px;
+          margin-bottom: 30px;
+        }
+        @media only screen and (max-width: $screen-lg) {
+          flex-basis: 50%;
+        }
+        @media only screen and (max-width: ($screen-md - 1)) {
+          flex-basis: initial;
+          h2, h3 {
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 700;
+            letter-spacing: 0.15px;
+            margin: 20px 0 15px;
+          }
+        }
+      }
+    }
+  }
+  .project__goal {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1110px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: ($screen-md - 1)) {
+      flex-direction: column;
+    }
+    .goalItem {
+      width: 50%;
+      flex-basis: 50%;
+      box-sizing: border-box;
+      vertical-align: top;
+      display: inline-flex;
+      flex-direction: column;
+      &:first-child {
+        padding-right: 60px;
+      }
+      &:last-child {
+        padding-left: 60px;
+      }
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: 50px;
+        width: 100%;
+      }
+      @media only screen and (max-width: ($screen-md - 1)) {
+        flex-basis: initial;
+        &:first-child,
+        &:last-child {
+          padding: 0;
+        }
+      }
+      &__text {
+        flex-basis: 310px;
+        align-self: auto;
+        margin-top: auto;
+        padding-top: 30px;
+        @media only screen and (max-width: $screen-lg) {
+          flex-basis: auto;
+          margin-top: 0;
+        }
+        @media only screen and (max-width: ($screen-md - 1)) {
+          flex-basis: initial;
+        }
+      }
+      img {
+        display: block;
+        @media only screen and (max-width: $screen-lg) {
+          margin-bottom: 20px;
+        }
+      }
+      h2, h3 {
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 700;
+        letter-spacing: 0.36px;
+        margin-bottom: 30px;
+        @media only screen and (max-width: $screen-lg) {
+          font-size: 20px;
+          line-height: 36px;
+          font-weight: 700;
+          letter-spacing: 0.15px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .project__result {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px 0;
+    max-width: 1110px;
+    box-sizing: border-box;
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: 0 !important;
+    }
+    &__item {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 160px;
+      @media only screen and (max-width: $screen-lg) {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 50px;
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      &:last-child {
+        margin-bottom: 140px;
+      }
+    }
+    &__img {
+      flex-basis: auto !important;
+      @media only screen and (max-width: $screen-lg) {
+        flex-basis: initial;
+        margin-bottom: 30px;
+      }
+    }
+    &__text {
+      max-width: 475px;
+      flex-basis: 43%;
+      @media only screen and (max-width: $screen-lg) {
+        margin-bottom: 50px;
+        flex-basis: initial;
+      }
+    }
+  }
+  .project__features__wineCase {
+    li {
+      position: relative;
+      padding-left: 50px;
+      line-height: 1.6;
+      &:before,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 33px;
+        height: 33px;
+        background-image: url("../../../../assets/images/caseStudiesPage/WineCasePage/img_wine-case-info-sprite.webp");
+        background-repeat: no-repeat;
+        background-size: 510px 43px;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          background-size: 447px 37.5px;
+          background-image: url("../../../../assets/images/caseStudiesPage/WineCasePage/img_wine-case-info-sprite@2x.webp");
+        }
+      }
+      &:nth-child(1) {
+        &:before,
+        &::before {
+          background-position: -5px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -2px -3px;
+          }
+        }
+      }
+      &:nth-child(2) {
+        &:before,
+        &::before {
+          background-position: -389px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -338px -3px;
+          }
+        }
+      }
+      &:nth-child(3) {
+        &:before,
+        &::before {
+          background-position: -175px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -151px -3px;
+          }
+        }
+      }
+      &:nth-child(4) {
+        &:before,
+        &::before {
+          background-position: -431px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -375px -3px;
+          }
+        }
+      }
+      &:nth-child(5) {
+        &:before,
+        &::before {
+          background-position: -218px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -189px -3px;
+          }
+        }
+      }
+      &:nth-child(6) {
+        &:before,
+        &::before {
+          background-position: -476px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -413px -3px;
+          }
+        }
+      }
+      &:nth-child(7) {
+        &:before,
+        &::before {
+          background-position: -260px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -226px -3px;
+          }
+        }
+      }
+      &:nth-child(8) {
+        &:before,
+        &::before {
+          background-position: -47px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -2px -3px;
+          }
+        }
+      }
+      &:nth-child(9) {
+        &:before,
+        &::before {
+          background-position: -304px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -264px -3px;
+          }
+        }
+      }
+      &:nth-child(10) {
+        &:before,
+        &::before {
+          background-position: -91px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -41px -3px;
+          }
+        }
+      }
+      &:nth-child(11) {
+        &:before,
+        &::before {
+          background-position: -347px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -301px -3px;
+          }
+        }
+      }
+      &:nth-child(12) {
+        &:before,
+        &::before {
+          background-position: -132px -5px;
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-position: -77px -3px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: ($screen-md - 1)) {
+  .workInsideBanner__wineCase {
+    overflow: hidden;
+  }
+  .article_container {
+    article.project__wineCase {
+      .article__content {
+        padding-bottom: 50px;
+        & + .article__content--grey:not(:first-child) {
+          padding-top: 50px;
+        }
+        &:first-child {
+          padding-bottom: 50px;
+        }
+      }
+      h2.content__header__primary,
+      .article__content:first-child h2.content__header__primary:first-child {
+        font-size: 24px !important;
+        line-height: 34px !important;
+        letter-spacing: 0.25px !important;
+      }
+      p {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        letter-spacing: 0.2px !important;
+      }
+    }
+    .project__features__wineCase {
+      margin-top: 30px !important;
+      flex-direction: column !important;
+    }
+    .project__result__text {
+      align-self: center;
+    }
+  }
+}
+

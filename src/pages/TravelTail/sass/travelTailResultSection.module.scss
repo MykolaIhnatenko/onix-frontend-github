@@ -1,0 +1,128 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/mixinsDisplay";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.resultSection {
+  position: relative;
+
+  .container {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(120);
+      padding-bottom: toRem(120);
+    }
+
+    .results {
+      margin: 0;
+
+      @media only screen and (max-width: $screen-md) {
+        font-size: toRem(14);
+      }
+    }
+
+    .title {
+      padding-top: toRem(20);
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+      }
+    }
+
+    .texts {
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(40);
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+      }
+
+      .text {
+        margin: 0;
+        padding-top: toRem(20);
+
+        @media only screen and (min-width: $screen-md) {
+          padding-top: toRem(40);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          padding-top: 0;
+          @include flex-basis(40px, 2);
+        }
+      }
+    }
+
+    .borderedCards {
+      padding-top: toRem(80);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(60);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-top: toRem(80);
+        display: flex;
+      }
+    }
+  }
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: toRem(230);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(298);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(442);
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.list {
+  list-style: none;
+
+  .item {
+    position: relative;
+    padding-left: toRem(22);
+    display: flex;
+    padding-bottom: toRem(10);
+
+    .preSign {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: toRem(13);
+      font-weight: 700;
+      overflow: hidden;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      gap: 5px;
+    }
+
+    @media only screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+      padding-bottom: toRem(20);
+    }
+
+    .itemText {
+      margin: 0;
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(18);
+        line-height: 142%;
+        max-width: toRem(590);
+      }
+    }
+  }
+}

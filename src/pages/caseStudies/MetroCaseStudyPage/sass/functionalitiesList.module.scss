@@ -1,0 +1,46 @@
+@import "../../../../pages/App/sass/functions";
+@import "../../../../pages/App/sass/breakpointsVariables";
+
+.functionalityItemContainer {
+  margin-top: toRem(50);
+
+  &:first-child {
+    margin-top: toRem(30);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(40);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    margin-top: toRem(30);
+
+    &:first-child {
+      margin-top: toRem(22);
+    }
+  }
+}
+
+.functionalityItemTitle {
+  margin-bottom: toRem(10);
+  font-size: toRem(30);
+  color: #333333;
+  line-height: 150%;
+  font-weight: 600;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(18);
+    text-align: center;
+  }
+}
+
+.functionalityItemText {
+  font-size: toRem(20);
+  color: #333333;
+  line-height: 150%;
+  font-weight: 400;
+
+  @media only screen and (max-width: $screen-lg) {
+    font-size: toRem(16);
+  }
+}

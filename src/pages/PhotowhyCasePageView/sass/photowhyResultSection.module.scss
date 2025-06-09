@@ -1,0 +1,112 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$whitePhotowhy: #FBFDFF;
+$blackPhotowhy: #010101;
+$saphirePhotowhy: #3B456F;
+$cobaltPhotowhy: #0F1C53;
+$grayPhotowhy: #BFC7E5;
+
+.resultSection {
+  background-color: $whitePhotowhy;
+
+  @media only screen and (min-width: $screen-xl) {
+    position: relative;
+  }
+
+  .firstBlock {
+    @media only screen and (min-width: $screen-md) {
+      flex-basis: 50%;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(562);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      padding-bottom: toRem(500);
+    }
+
+    h2 {
+      text-align: left;
+      padding-bottom: toRem(16);
+      color: $cobaltPhotowhy;
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(200);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: unset;
+      }
+    }
+
+    p {
+      text-align: left;
+      color: $saphirePhotowhy;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(10);
+      }
+      @media only screen and (min-width: $screen-lg + 1) {
+        padding-bottom: toRem(39);
+      }
+    }
+  }
+
+  .imgBlock {
+    position: relative;
+    height: toRem(397);
+    width: 100%;
+    max-width: toRem(343);
+    margin: toRem(6) auto toRem(24);
+
+    @media only screen and (min-width: $screen-md) {
+      height: toRem(545);
+      max-width: toRem(385);
+      max-height: toRem(545);
+      flex-basis: 50%;
+      margin: 0;
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      height: toRem(1098);
+      max-width: toRem(720);
+      max-height: toRem(900);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      position: absolute;
+      top: toRem(40);
+      right: 0;
+      max-height: toRem(1000);
+    }
+
+    img {
+      object-fit: contain;
+      object-position: top right;
+    }
+  }
+
+  .iconsBlock {
+    max-width: toRem(180);
+    margin: 0 auto;
+
+    @media only screen and (min-width: $screen-md) {
+      margin: 0;
+      flex-basis: 50%;
+    }
+
+    .iconWrapper {
+      max-width: toRem(180);
+      max-height: toRem(53);
+      margin-top: toRem(24);
+      margin-bottom: toRem(24);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

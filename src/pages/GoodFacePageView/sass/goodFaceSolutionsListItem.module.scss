@@ -1,0 +1,64 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$goodFacePeach: #EC6770;
+
+.item {
+  border-left: 1px solid #DAD9D5;
+  padding-left: toRem(16);
+  margin-bottom: toRem(42);
+  height: max-content;
+  
+  &:nth-of-type(2) {
+    @media only screen and (min-width: $screen-md) {
+      left: 100%;
+    }
+    
+    @media only screen and (min-width: $screen-lg + 1) {
+      left: 0;
+      top: toRem(116);
+    }
+  }
+  
+  &:last-of-type {
+    margin-bottom: 0;
+    
+    @media only screen and (min-width: $screen-md) {
+      left: 34%;
+    }
+    
+    @media only screen and (min-width: $screen-lg + 1) {
+      left: 35%;
+    }
+    
+    .number {
+      padding-bottom: toRem(21);
+      transform: translate(0, -15px);
+      
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(130);
+        transform: none;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: $screen-md) {
+    margin-bottom: toRem(120);
+    position: relative;
+  }
+  
+  @media only screen and (min-width: $screen-lg + 1) {
+    flex: 0 1 calc((100% - 200px) / 2);
+  }
+  
+  .number {
+    padding-bottom: toRem(21);
+    transform: translate(0, -15px);
+    
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(130);
+      margin-top: toRem(-30);
+      transform: none;
+    }
+  }
+}

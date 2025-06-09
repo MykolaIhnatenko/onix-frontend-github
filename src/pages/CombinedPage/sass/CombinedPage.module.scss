@@ -1,0 +1,1834 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.combinePage {
+  font-family: var(--muktaVaani);
+
+  .container {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: toRem(15);
+    padding-right: toRem(15);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-left: toRem(30);
+      padding-right: toRem(30);
+
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 auto;
+      max-width: toRem(920);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      max-width: toRem(1110);
+    }
+
+    .boldH2 {
+      font-weight: 700;
+      text-align: center;
+      font-size: toRem(24);
+      line-height: getLineHeight(36, 24);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(44);
+        line-height: getLineHeight(66, 44);
+      }
+    }
+    .regularH2 {
+      font-weight: 500;
+      text-align: center;
+      font-size: toRem(22);
+      line-height: getLineHeight(29, 22);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(36);
+        line-height: getLineHeight(47, 36);
+      }
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: toRem(20);
+      line-height: getLineHeight(26, 20);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(24);
+        line-height: getLineHeight(31, 24);
+      }
+    }
+    p {
+      font-weight: 400;
+      color: var(--color-dark-gray3);
+      font-size: toRem(16);
+      line-height: getLineHeight(24, 16);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(18);
+        line-height: getLineHeight(27, 18);
+      }
+    }
+  }
+
+  .challengesImg {
+    width: 100% !important;
+    border-radius: toRem(10);
+
+    @media only screen and (max-width: $screen-xl) {
+      height: auto !important;
+    }
+
+    &.banskaStiavnica {
+      -webkit-box-shadow: 5px 5px 0 0 rgba(77, 86, 246, 1);
+      -moz-box-shadow: 5px 5px 0 0 rgba(77, 86, 246, 1);
+      box-shadow: 5px 5px 0 0 rgba(77, 86, 246, 1);
+      @media only screen and (min-width: $screen-sm) {
+        -webkit-box-shadow: 15px 15px 0 0 rgba(77, 86, 246, 1);
+        -moz-box-shadow: 15px 15px 0 0 rgba(77, 86, 246, 1);
+        box-shadow: 15px 15px 0 0 rgba(77, 86, 246, 1);
+      }
+    }
+
+    &.constructionVr {
+      -webkit-box-shadow: 5px 5px 0 0 rgba(23, 47, 133, 1);
+      -moz-box-shadow: 5px 5px 0 0 rgba(23, 47, 133, 1);
+      box-shadow: 5px 5px 0 0 rgba(23, 47, 133, 1);
+      @media only screen and (min-width: $screen-sm) {
+        -webkit-box-shadow: 15px 15px 0 0 rgba(23, 47, 133, 1);
+        -moz-box-shadow: 15px 15px 0 0 rgba(23, 47, 133, 1);
+        box-shadow: 15px 15px 0 0 rgba(23, 47, 133, 1);
+      }
+      @media only screen and (min-width: $screen-md) {
+        height: 617px;
+      }
+    }
+
+    &.onixArApp {
+      -webkit-box-shadow: 5px 5px 0 0 rgba(55, 54, 208, 1);
+      -moz-box-shadow: 5px 5px 0 0 rgba(55, 54, 208, 1);
+      box-shadow: 5px 5px 0 0 rgba(55, 54, 208, 1);
+      @media only screen and (min-width: $screen-sm) {
+        -webkit-box-shadow: 15px 15px 0 0 rgba(55, 54, 208, 1);
+        -moz-box-shadow: 15px 15px 0 0 rgba(55, 54, 208, 1);
+        box-shadow: 15px 15px 0 0 rgba(55, 54, 208, 1);
+      }
+    }
+
+    &.oneTouchVr {
+      -webkit-box-shadow: 5px 5px 0 0 rgba(30, 60, 114, 1);
+      -moz-box-shadow: 5px 5px 0 0 rgba(30, 60, 114, 1);
+      box-shadow: 5px 5px 0 0 rgba(30, 60, 114, 1);
+      @media only screen and (min-width: $screen-sm) {
+        -webkit-box-shadow: 15px 15px 0 0 rgba(30, 60, 114, 1);
+        -moz-box-shadow: 15px 15px 0 0 rgba(30, 60, 114, 1);
+        box-shadow: 15px 15px 0 0 rgba(30, 60, 114, 1);
+      }
+    }
+
+    &.timescope {
+      -webkit-box-shadow: 5px 5px 0 0 rgba(85, 110, 167, 1);
+      -moz-box-shadow: 5px 5px 0 0 rgba(85, 110, 167, 1);
+      box-shadow: 5px 5px 0 0 rgba(85, 110, 167, 1);
+      @media only screen and (min-width: $screen-sm) {
+        -webkit-box-shadow: 15px 15px 0 0 rgba(85, 110, 167, 1);
+        -moz-box-shadow: 15px 15px 0 0 rgba(85, 110, 167, 1);
+        box-shadow: 15px 15px 0 0 rgba(85, 110, 167, 1);
+      }
+    }
+
+    &.unrealSpace {
+      -webkit-box-shadow: 5px 5px 0 0 rgba(53, 143, 236, 1);
+      -moz-box-shadow: 5px 5px 0 0 rgba(53, 143, 236, 1);
+      box-shadow: 5px 5px 0 0 rgba(53, 143, 236, 1);
+      @media only screen and (min-width: $screen-sm) {
+        -webkit-box-shadow: 15px 15px 0 0 rgba(53, 143, 236, 1);
+        -moz-box-shadow: 15px 15px 0 0 rgba(53, 143, 236, 1);
+        box-shadow: 15px 15px 0 0 rgba(53, 143, 236, 1);
+      }
+    }
+
+    &.holokit {
+      -webkit-box-shadow: 5px 5px 0 0 rgba(26, 89, 180, 1);
+      -moz-box-shadow: 5px 5px 0 0 rgba(26, 89, 180, 1);
+      box-shadow: 5px 5px 0 0 rgba(26, 89, 180, 1);
+      @media only screen and (min-width: $screen-sm) {
+        -webkit-box-shadow: 15px 15px 0 0 rgba(26, 89, 180, 1);
+        -moz-box-shadow: 15px 15px 0 0 rgba(26, 89, 180, 1);
+        box-shadow: 15px 15px 0 0 rgba(26, 89, 180, 1);
+      }
+    }
+
+    &.unityDSM {
+      -webkit-box-shadow: 5px 5px 0 0 rgba(46, 126, 245, 1);
+      -moz-box-shadow: 5px 5px 0 0 rgba(46, 126, 245, 1);
+      box-shadow: 5px 5px 0 0 rgba(46, 126, 245, 1);
+      @media only screen and (min-width: $screen-sm) {
+        -webkit-box-shadow: 15px 15px 0 0 rgba(46, 126, 245, 1);
+        -moz-box-shadow: 15px 15px 0 0 rgba(46, 126, 245, 1);
+        box-shadow: 15px 15px 0 0 rgba(46, 126, 245, 1);
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: toRem(155);
+    height: toRem(50);
+    border-radius: 3px;
+    color: var(--color-white2);
+    font-weight: 700;
+    font-size: toRem(14);
+    line-height: getLineHeight(32, 14);
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+
+    @media only screen and (min-width: $screen-sm) {
+      margin-bottom: toRem(55);
+      width: toRem(148);
+      height: toRem(45);
+    }
+    @media only screen and (min-width: $screen-md) {
+      margin-bottom: toRem(131);
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      cursor: pointer;
+    }
+
+    &.banskaStiavnica {
+      background-color: var(--color-blue-banska-stiavnica);
+
+      &:hover {
+        background-color: var(--color-blue-banska-stiavnica-hover);
+      }
+    }
+
+    &.oneTouchVr {
+      background-color: var(--color-blue-one-thouch-vr);
+
+      &:hover {
+        background-color: var(--color-blue-one-thouch-vr-hover);
+      }
+    }
+
+    &.constructionVr {
+      background-color: var(--color-blue-vr-microcase);
+
+      &:hover {
+        background-color: var(--color-blue-vr-microcase-hover);
+      }
+    }
+
+    &.onixArApp {
+      background-color: var(--color-blue-onix-ar);
+
+      &:hover {
+        background-color: var(--color-blue-onix-ar-hover);
+      }
+    }
+
+    &.timescope {
+      background-color: var(--color-blue-timescope2);
+
+      &:hover {
+        background-color: var(--color-blue-timescope2-hover);
+      }
+    }
+
+    &.unrealSpace {
+      background-color: var(--color-blue-unreal-space2);
+
+      &:hover {
+        background-color: var(--color-blue-unreal-space2-hover);
+      }
+    }
+
+    &.holokit {
+      background-color: var(--color-blue-holokit);
+
+      &:hover {
+        background-color: var(--color-blue-holokit-hover);
+      }
+    }
+
+    &.unityDSM {
+      background-color: var(--color-blue-unity-dsm);
+
+      &:hover {
+        background-color: var(--color-blue-unity-dsm-hover);
+      }
+    }
+  }
+
+  .mainSection {
+    &.banskaStiavnica {
+      background-color: var(--color-black-banska-stiavnica);
+      padding-top: toRem(76);
+
+      .imgContainer {
+        position: relative;
+        width: 100%;
+        background: var(--color-black-banska-stiavnica);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(370);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(700);
+        }
+
+        img {
+          object-fit: contain;
+          object-position: right bottom;
+        }
+
+        .container {
+          @media only screen and (min-width: $screen-md) {
+            margin: 0 auto;
+          }
+
+          .mainTitle {
+            font-weight: 700;
+            font-size: toRem(30);
+            line-height: getLineHeight(39, 30);
+            color: var(--color-white);
+            text-align: start;
+            max-width: toRem(280);
+            padding-top: toRem(125);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-weight: 700;
+              font-size: toRem(40);
+              line-height: getLineHeight(52, 40);
+              max-width: toRem(344);
+              padding-top: toRem(105);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              font-size: toRem(72);
+              line-height: getLineHeight(93, 72);
+              max-width: toRem(580);
+              padding-top: toRem(201);
+            }
+          }
+
+          .mainDescription {
+            font-weight: 500;
+            color: var(--color-white3);
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            max-width: toRem(270);
+            padding-top: toRem(10);
+            padding-bottom: toRem(60);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-size: toRem(18);
+              line-height: getLineHeight(27, 18);
+              max-width: toRem(344);
+              padding-top: toRem(15);
+            }
+            @media only screen and (min-width: $screen-md) {
+              font-weight: 500;
+              font-size: toRem(20);
+              line-height: getLineHeight(30, 20);
+              max-width: toRem(514);
+              padding-top: toRem(10);
+            }
+          }
+        }
+      }
+    }
+
+    &.constructionVr {
+      position: relative;
+
+      .overlay {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--color-black-shadow);
+        z-index: 1;
+      }
+
+      .imgContainer {
+        width: 100%;
+        position: relative;
+        height: toRem(454);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(470);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(1100);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          height: toRem(800);
+        }
+
+        img {
+          object-fit: cover;
+        }
+
+        .container {
+          z-index: 2;
+          max-width: none;
+          position: relative;
+
+          @media only screen and (min-width: $screen-md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          div {
+            @media only screen and (min-width: $screen-md) {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .mainTitle {
+            font-weight: 700;
+            letter-spacing: 0.06px;
+            color: var(--color-white2);
+            text-align: start;
+            font-size: toRem(30);
+            line-height: getLineHeight(39, 30);
+            max-width: toRem(280);
+            padding-top: toRem(160);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-weight: 700;
+              font-size: toRem(40);
+              line-height: getLineHeight(52, 40);
+              max-width: toRem(666);
+              padding-top: toRem(140);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              text-align: center;
+              font-size: toRem(72);
+              line-height: getLineHeight(94, 72);
+              max-width: toRem(1110);
+              padding-top: toRem(270);
+            }
+          }
+
+          .mainDescription {
+            font-weight: 500;
+            color: var(--color-white3);
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            max-width: toRem(270);
+            padding-top: toRem(12);
+
+            @media only screen and (min-width: $screen-sm) {
+              max-width: 503px;
+              font-size: toRem(18);
+              line-height: getLineHeight(27, 18);
+              padding-top: toRem(15);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              font-weight: 500;
+              text-align: center;
+              font-size: toRem(20);
+              line-height: getLineHeight(30, 20);
+              max-width: toRem(644);
+              padding-top: toRem(10);
+            }
+          }
+        }
+      }
+    }
+
+    &.onixArApp {
+      .imgContainer {
+        width: 100%;
+        position: relative;
+        height: toRem(398);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(428);
+        }
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(800);
+        }
+
+        img {
+          object-fit: cover;
+        }
+
+        & .container {
+          @media only screen and (min-width: $screen-md) {
+            margin: 0 auto;
+          }
+          .mainTitle {
+            font-weight: 700;
+            letter-spacing: 0.06px;
+            color: var(--color-white2);
+            text-align: start;
+            font-size: toRem(30);
+            line-height: getLineHeight(39, 30);
+            max-width: toRem(280);
+            padding-top: toRem(112);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-weight: 700;
+              letter-spacing: 0.06px;
+              font-size: toRem(40);
+              line-height: toRem(52);
+              max-width: toRem(478);
+              padding-top: toRem(100);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              text-align: left;
+              font-size: toRem(72);
+              line-height: getLineHeight(94, 72);
+              max-width: toRem(877);
+              padding-top: toRem(240);
+            }
+          }
+
+          .mainDescription {
+            font-weight: 500;
+            color: var(--color-white3);
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            max-width: toRem(270);
+            padding-top: toRem(10);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-size: toRem(18);
+              line-height: getLineHeight(27, 18);
+              max-width: toRem(344);
+              padding-top: toRem(15);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              font-weight: 500;
+              text-align: left;
+              font-size: toRem(20);
+              line-height: toRem(30);
+              max-width: toRem(532);
+              padding-top: toRem(10);
+            }
+          }
+        }
+      }
+    }
+
+    &.oneTouchVr {
+      .imgContainer {
+        position: relative;
+        width: 100%;
+        height: toRem(421);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(428);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(800);
+        }
+
+        img {
+          object-fit: cover;
+        }
+
+        .container {
+          @media only screen and (min-width: $screen-md) {
+            margin: 0 auto;
+          }
+
+          .mainTitle {
+            font-weight: 700;
+            letter-spacing: 0.06px;
+            color: var(--color-white2);
+            text-align: start;
+            font-size: toRem(30);
+            line-height: getLineHeight(39, 30);
+            max-width: toRem(280);
+            padding-top: toRem(201);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-weight: 700;
+              letter-spacing: 0.06px;
+              font-size: toRem(40);
+              line-height: getLineHeight(52, 40);
+              max-width: toRem(362);
+              padding-top: toRem(161);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              text-align: left;
+              font-size: toRem(72);
+              line-height: getLineHeight(94, 72);
+              max-width: toRem(669);
+              padding-top: toRem(301);
+            }
+          }
+          .mainDescription {
+            font-weight: 500;
+            color: var(--color-white3);
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            max-width: toRem(270);
+            padding-top: toRem(10);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-size: toRem(18);
+              line-height: getLineHeight(27, 18);
+              max-width: toRem(344);
+              padding-top: toRem(15);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              font-weight: 500;
+              text-align: left;
+              font-size: toRem(20);
+              line-height: getLineHeight(30, 20);
+              max-width: toRem(644);
+              padding-top: toRem(10);
+            }
+          }
+        }
+      }
+    }
+
+    &.timescope {
+      .imgContainer {
+        position: relative;
+        width: 100%;
+        height: toRem(420);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(426);
+        }
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(800);
+        }
+
+        img {
+          object-fit: cover;
+        }
+
+        .container {
+          @media only screen and (min-width: $screen-md) {
+            margin: 0 auto;
+          }
+          .mainTitle {
+            font-weight: 700;
+            color: var(--color-white);
+            text-align: start;
+            font-size: toRem(30);
+            line-height: getLineHeight(39, 30);
+            max-width: toRem(280);
+            padding-top: toRem(200);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-weight: 700;
+              font-size: toRem(40);
+              line-height: getLineHeight(52, 40);
+              max-width: toRem(478);
+              padding-top: toRem(165);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              font-size: toRem(72);
+              line-height: getLineHeight(93, 72);
+              max-width: toRem(892);
+              padding-top: toRem(300);
+            }
+          }
+
+          .mainDescription {
+            font-weight: 500;
+            color: var(--color-white3);
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            max-width: toRem(270);
+            padding-top: toRem(11);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-size: toRem(18);
+              line-height: getLineHeight(27, 18);
+              max-width: toRem(344);
+              padding-top: toRem(15);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              font-weight: 500;
+              font-size: toRem(20);
+              line-height: getLineHeight(30, 20);
+              max-width: toRem(514);
+              padding-top: toRem(10);
+            }
+          }
+        }
+      }
+    }
+
+    &.unrealSpace {
+      position: relative;
+
+      .overlay {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(3, 2, 21, 0.5);
+        z-index: 1;
+      }
+
+      .imgContainer {
+        position: relative;
+        width: 100%;
+        height: toRem(454);
+
+        img {
+          object-fit: cover;
+        }
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(465);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(832);
+        }
+
+        .container {
+          z-index: 2;
+          max-width: none;
+          position: relative;
+
+          @media only screen and (min-width: $screen-md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          div {
+            @media only screen and (min-width: $screen-md) {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .mainTitle {
+            font-weight: 700;
+            letter-spacing: 0.06px;
+            color: var(--color-white2);
+            text-align: start;
+            font-size: toRem(30);
+            line-height: getLineHeight(39, 30);
+            max-width: toRem(200);
+            padding-top: toRem(160);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-weight: 700;
+              font-size: toRem(40);
+              line-height: getLineHeight(52, 40);
+              max-width: toRem(666);
+              padding-top: toRem(165);
+            }
+            @media only screen and (min-width: $screen-md) {
+              text-align: center;
+              font-size: toRem(72);
+              line-height: getLineHeight(94, 72);
+              max-width: toRem(1000);
+              padding-top: toRem(307);
+            }
+          }
+
+          .mainDescription {
+            font-weight: 500;
+            color: var(--color-white3);
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            max-width: toRem(280);
+            padding-top: toRem(51);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-size: toRem(18);
+              line-height: getLineHeight(27, 18);
+              max-width: toRem(503);
+              padding-top: toRem(15);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              font-weight: 500;
+              text-align: center;
+              font-size: toRem(20);
+              line-height: getLineHeight(30, 20);
+              max-width: toRem(644);
+              padding-top: toRem(10);
+            }
+          }
+        }
+      }
+    }
+
+    &.holokit {
+      position: relative;
+
+      .overlay {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(3, 2, 21, 0.3);
+        z-index: 1;
+      }
+
+      .imgContainer {
+        width: 100%;
+        position: relative;
+        height: toRem(421);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(428);
+        }
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(800);
+        }
+
+        img {
+          object-fit: cover;
+        }
+
+        & .container {
+          position: relative;
+          z-index: 2;
+
+          @media only screen and (min-width: $screen-md) {
+            margin: 0 auto;
+          }
+          .mainTitle {
+            font-weight: 700;
+            letter-spacing: 0.06px;
+            color: var(--color-white2);
+            text-align: start;
+            font-size: toRem(30);
+            line-height: getLineHeight(39, 30);
+            max-width: toRem(280);
+            padding-top: toRem(201);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-weight: 700;
+              letter-spacing: 0.06px;
+              font-size: toRem(40);
+              line-height: getLineHeight(52, 40);
+              max-width: toRem(478);
+              padding-top: toRem(161);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              text-align: left;
+              font-size: toRem(72);
+              line-height: getLineHeight(94, 72);
+              max-width: toRem(877);
+              padding-top: toRem(301);
+            }
+          }
+
+          .mainDescription {
+            font-weight: 500;
+            color: var(--color-white3);
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            max-width: toRem(270);
+            padding-top: toRem(10);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-size: toRem(18);
+              line-height: getLineHeight(27, 18);
+              max-width: toRem(344);
+              padding-top: toRem(15);
+            }
+            @media only screen and (min-width: $screen-md) {
+              font-weight: 500;
+              text-align: left;
+              font-size: toRem(20);
+              line-height: getLineHeight(30, 20);
+              max-width: toRem(514);
+              padding-top: toRem(10);
+            }
+          }
+        }
+      }
+    }
+
+    &.unityDSM {
+      position: relative;
+
+      .overlay {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(3, 2, 21, .3);
+        z-index: 1;
+      }
+
+      .imgContainer {
+        width: 100%;
+        position: relative;
+        height: toRem(410);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(450);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(800);
+        }
+
+        img {
+          object-fit: cover;
+        }
+
+        .container {
+          position: relative;
+          z-index: 2;
+
+          @media only screen and (min-width: $screen-md) {
+            margin: 0 auto;
+          }
+
+          .mainTitle {
+            font-weight: 700;
+            letter-spacing: 0.06px;
+            color: var(--color-white2);
+            text-align: start;
+            font-size: toRem(30);
+            line-height: getLineHeight(39, 30);
+            max-width: toRem(280);
+            padding-top: toRem(160);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-weight: 700;
+              letter-spacing: 0.06px;
+              font-size: toRem(40);
+              line-height: getLineHeight(52, 40);
+              max-width: toRem(500);
+              padding-top: toRem(160);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              text-align: left;
+              font-size: toRem(72);
+              line-height: getLineHeight(94, 72);
+              max-width: toRem(900);
+              padding-top: toRem(270);
+            }
+          }
+
+          .mainDescription {
+            font-weight: 500;
+            color: var(--color-white3);
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            max-width: toRem(270);
+            padding-top: toRem(10);
+
+            @media only screen and (min-width: $screen-sm) {
+              font-size: toRem(18);
+              line-height: getLineHeight(27, 18);
+              max-width: toRem(500);
+              padding-top: toRem(15);
+            }
+
+            @media only screen and (min-width: $screen-md) {
+              font-weight: 500;
+              text-align: left;
+              font-size: toRem(20);
+              line-height: getLineHeight(30, 20);
+              max-width: toRem(600);
+              padding-top: toRem(10);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .videoSection {
+    margin: 0 auto;
+    padding-top: toRem(50);
+    padding-bottom: toRem(40);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(100);
+      padding-bottom: toRem(75);
+      max-width: none;
+    }
+    .container {
+      @media only screen and (min-width: $screen-md) {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+      }
+      .contentContainer {
+        @media only screen and (min-width: $screen-md) {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+
+        & p {
+          @media only screen and (min-width: $screen-md) {
+            flex-basis: 50%;
+            max-width: toRem(540);
+          }
+          & span {
+            color: var(--color-blue-banska-stiavnica);
+            font-weight: 600;
+          }
+        }
+
+        .items {
+          display: flex;
+          flex-direction: column;
+          padding: toRem(7) 0 toRem(40) 0;
+
+          @media only screen and (min-width: $screen-sm) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            max-width: toRem(355);
+            padding: toRem(30) 0 toRem(51) 0;
+          }
+          @media only screen and (min-width: $screen-md) {
+            justify-content: space-between;
+            max-width: 560px;
+            padding: 0 0 0 111px;
+          }
+        }
+      }
+      .video {
+        margin: 0 auto;
+        height: toRem(145);
+        max-width: toRem(290);
+
+        @media only screen and (min-width: $screen-sm) {
+          width: 100%;
+          max-width: unset;
+          height: toRem(371);
+          padding-top: toRem(10);
+        }
+        @media only screen and (min-width: $screen-md) {
+          align-self: center;
+          height: toRem(421);
+          max-width: toRem(960);
+          padding-top: toRem(60);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          height: toRem(557);
+        }
+
+        iframe {
+          border: none;
+        }
+      }
+    }
+
+    &.banskaStiavnica {
+      .container {
+        @media only screen and (min-width: $screen-md) {
+          padding-right: toRem(30);
+        }
+      }
+    }
+  }
+
+  .chalengesSection {
+    @media only screen and (min-width: $screen-sm) {
+      padding-top: toRem(70);
+    }
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(30);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .banskaStiavnica {
+        color: var(--color-blue-banska-stiavnica);
+      }
+
+      .oneTouchVr {
+        color: var(--color-blue-cinematic-vr);
+      }
+
+      .constructionVr {
+        color: var(--color-blue-vr-microcase);
+      }
+
+      .onixArApp {
+        color: var(--color-blue-onix-ar);
+      }
+
+      .timescope {
+        color: var(--color-blue-timescope);
+      }
+
+      .unrealSpace {
+        color: var(--color-blue-unreal-space);
+      }
+
+      .holokit {
+        color: var(--color-blue-holokit);
+      }
+
+      .unityDSM {
+        color: var(--color-blue-unity-dsm);
+      }
+
+      .chalengesParagraph {
+        padding: toRem(20) 0 toRem(40) 0;
+
+        @media only screen and (min-width: $screen-sm) {
+          padding: toRem(20) 0 toRem(50) 0;
+        }
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(700);
+          padding: toRem(30) 0 toRem(60) 0;
+        }
+
+        .link {
+          color: var(--color-blue-onix-ar);
+          text-decoration: underline;
+          text-decoration-color: var(--color-blue-onix-ar);
+          text-underline-offset: 5px;
+        }
+      }
+
+      .animationBlock {
+        width: 100%;
+      }
+    }
+  }
+
+  .responsibilitySection {
+    &.saleUrl {
+      .container {
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(50);
+        }
+      }
+    }
+
+    .container {
+      padding-bottom: toRem(40);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (min-width: $screen-md) {
+        padding-bottom: toRem(101);
+      }
+
+      & h2 {
+        padding-bottom: toRem(10);
+        max-width: toRem(280);
+        @media only screen and (min-width: $screen-sm) {
+          padding-bottom: 0;
+        }
+        @media only screen and (min-width: $screen-md) {
+          padding-bottom: toRem(20);
+          max-width: toRem(550);
+        }
+      }
+      .responsibilityList {
+        list-style-type: none;
+        align-self: flex-start;
+        @media only screen and (min-width: $screen-sm) {
+          align-self: auto;
+        }
+        .item {
+          position: relative;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding-top: toRem(20);
+          max-width: toRem(280);
+
+          @media only screen and (min-width: $screen-sm) {
+            padding-top: toRem(30);
+            max-width: toRem(425);
+          }
+
+          div {
+            position: relative;
+            height: 100%;
+            margin-right: toRem(10);
+            min-height: toRem(28);
+            min-width: toRem(38);
+          }
+        }
+      }
+    }
+  }
+
+  .solutionSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black-banska-stiavnica2);
+    position: relative;
+    z-index: 0;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & h2 {
+        color: var(--color-white4);
+        padding: toRem(40) 0 toRem(20) 0;
+
+        @media only screen and (min-width: $screen-sm) {
+          max-width: toRem(451);
+          padding: toRem(60) 0 toRem(20) 0;
+        }
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(710);
+          padding: toRem(132) 0 toRem(30) 0;
+        }
+      }
+
+      .btn {
+        @media only screen and (max-width: $screen-sm) {
+          margin-bottom: toRem(55);
+        }
+      }
+
+    }
+    .solutionsImg {
+      position: relative;
+      width: toRem(264);
+      height: toRem(289);
+      margin-top: toRem(-40);
+
+      @media only screen and (min-width: $screen-sm) {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        margin-top: 0;
+        width: toRem(174);
+        height: toRem(219);
+      }
+      @media only screen and (min-width: $screen-md) {
+        width: toRem(432);
+        height: toRem(470);
+      }
+
+      img {
+        object-fit: cover;
+        object-position: bottom;
+
+        @media only screen and (min-width: $screen-sm) {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .ourSolutionsSection {
+    background-color: var(--color-white5);
+    &.saleUrl {
+      .container {
+        @media only screen and (min-width: $screen-md) {
+          padding-top: toRem(50);
+        }
+      }
+    }
+    .container {
+      padding-top: toRem(40);
+      padding-bottom: toRem(40);
+
+      .banskaStiavnica {
+        color: var(--color-blue-banska-stiavnica);
+      }
+
+      .oneTouchVr {
+        color: var(--color-blue-cinematic-vr);
+      }
+
+      .constructionVr {
+        color: var(--color-blue-vr-microcase);
+      }
+
+      .onixArApp {
+        color: var(--color-blue-onix-ar);
+      }
+
+      .timescope {
+        color: var(--color-blue-timescope);
+      }
+
+      .unrealSpace {
+        color: var(--color-blue-unreal-space);
+      }
+
+      .holokit {
+        color: var(--color-blue-holokit);
+      }
+
+      .unityDSM {
+        color: var(--color-blue-unity-dsm);
+      }
+
+      @media only screen and (min-width: $screen-sm) {
+        padding-top: toRem(50);
+        padding-bottom: toRem(50);
+      }
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(96);
+        padding-bottom: toRem(101);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & h2 {
+        padding-bottom: toRem(30);
+      }
+      & p {
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(700);
+        }
+        & span {
+          color: var(--color-blue-banska-stiavnica);
+          font-weight: 600;
+        }
+      }
+    }
+    .ourSolutionsImg {
+      position: relative;
+
+      &.oneTouchVr {
+        height: toRem(351);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(363);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(680);
+        }
+      }
+
+      &.banskaStiavnica {
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          object-fit: unset;
+        }
+      }
+
+      &.onixArApp, &.timescope, &.holokit, &.unityDSM {
+        height: toRem(225);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(362);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(432);
+        }
+      }
+
+      &.constructionVr, &.unrealSpace {
+        height: toRem(151);
+
+        @media only screen and (min-width: $screen-sm) {
+          height: toRem(363);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          height: toRem(680);
+        }
+      }
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  .offerSection {
+    padding: toRem(45) 0 toRem(50) 0;
+    background-color: var(--color-white5);
+
+    @media only screen and (min-width: $screen-md) {
+      padding: toRem(100) 0 toRem(109) 0;
+    }
+    .container {
+      & h2 {
+        margin: 0 auto;
+        max-width: toRem(280);
+        padding-bottom: toRem(10);
+
+        @media only screen and (min-width: $screen-md) {
+          text-align: start;
+          margin: unset;
+          max-width: toRem(394);
+        }
+      }
+      .cardsWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (min-width: $screen-sm) {
+          max-width: toRem(708);
+        }
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(1100);
+        }
+        .animationBlock {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .technologySection {
+    &.banskaStiavnica, &.oneTouchVr {
+      padding: toRem(50) 0;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(93) 0 toRem(100) 0;
+      }
+
+      & .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 toRem(25);
+        max-width: toRem(1250);
+
+        .banskaStiavnica {
+          color: var(--color-blue-banska-stiavnica);
+        }
+
+        .oneTouchVr {
+          color: var(--color-blue-cinematic-vr);
+        }
+
+        .technologiesContainer {
+          @media only screen and (min-width: $screen-sm) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+          @media only screen and (min-width: $screen-md) {
+            max-width: toRem(1200);
+          }
+
+          .technology {
+            width: 100%;
+            background-color: rgba(235, 234, 237, 0.4);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: toRem(160);
+            margin-top: toRem(15);
+            border-radius: toRem(10);
+
+            @media only screen and (min-width: $screen-sm) {
+              flex-basis: 50%;
+              max-width: toRem(270);
+              margin-left: toRem(15);
+            }
+            @media only screen and (min-width: $screen-md) {
+              flex-basis: 25%;
+              margin-left: toRem(30);
+              margin-top: toRem(30);
+            }
+          }
+        }
+      }
+    }
+
+    &.constructionVr, &.onixArApp, &.timescope, &.unrealSpace, &.holokit, &.unityDSM {
+      padding: toRem(40) 0;
+      @media only screen and (min-width: $screen-sm) {
+        padding: toRem(50) 0;
+      }
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(100) 0;
+      }
+      .container {
+        width: 100%;
+
+        h2 {
+          padding-bottom: toRem(5);
+          @media only screen and (min-width: $screen-md) {
+            padding-bottom: 0;
+          }
+        }
+
+        .constructionVr {
+          color: var(--color-blue-vr-microcase);
+        }
+
+        .onixArApp {
+          color: var(--color-blue-onix-ar);
+        }
+
+        .timescope {
+          color: var(--color-blue-timescope);
+        }
+
+        .unrealSpace {
+          color: var(--color-blue-unreal-space);
+        }
+
+        .holokit {
+          color: var(--color-blue-holokit);
+        }
+
+        .unityDSM {
+          color: var(--color-blue-unity-dsm);
+        }
+
+        .technologiesContainer {
+          margin: 0 toRem(5) 0 toRem(5);
+          @media only screen and (min-width: $screen-sm) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: toRem(600);
+          }
+          @media only screen and (min-width: 650px) {
+            justify-content: flex-start;
+            max-width: toRem(570);
+          }
+          @media only screen and (min-width: $screen-md) {
+            max-width: toRem(600);
+          }
+          @media only screen and (min-width: $screen-lg + 1) {
+            max-width: toRem(900);
+          }
+          .technology {
+            width: 100%;
+            background-color: rgba(235, 234, 237, 0.4);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: toRem(160);
+            margin-top: toRem(15);
+            border-radius: toRem(10);
+
+            @media only screen and (min-width: $screen-sm) {
+              max-width: toRem(270);
+              margin-left: toRem(15);
+            }
+            @media only screen and (min-width: $screen-md) {
+              flex-basis: 50%;
+              margin-top: toRem(30);
+              margin-left: toRem(30);
+            }
+            @media only screen and (min-width: $screen-lg + 1) {
+              flex-basis: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .testimonialSection {
+    background-color: var(--color-white5);
+
+    .container {
+      padding-top: toRem(40);
+      padding-bottom: toRem(40);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(50);
+        padding-bottom: toRem(50);
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(100);
+        padding-bottom: toRem(100);
+      }
+
+      h2 {
+        font-size: toRem(24);
+        line-height: getLineHeight(36, 24);
+        padding-bottom: toRem(20);
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          padding-bottom: toRem(30);
+          font-size: toRem(44);
+          line-height: getLineHeight(66, 44);
+        }
+      }
+
+      p {
+        margin: 0 auto;
+        max-width: toRem(280);
+
+        @media only screen and (min-width: $screen-sm) {
+          max-width: toRem(418);
+        }
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          max-width: toRem(735);
+        }
+
+      }
+
+      .content {
+        font-weight: 500;
+        text-align: center;
+        font-size: toRem(18);
+        line-height: getLineHeight(23, 18);
+        padding-bottom: toRem(15);
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          text-align: left;
+          font-size: toRem(24);
+          line-height: getLineHeight(31, 24);
+          padding-bottom: toRem(30);
+        }
+      }
+
+      .author {
+        font-weight: 400;
+        text-align: center;
+        font-size: toRem(16);
+        line-height: getLineHeight(21, 16);
+
+        @media only screen and (min-width: ($screen-lg + 1)) {
+          text-align: left;
+          font-size: toRem(20);
+          line-height: getLineHeight(26, 20);
+        }
+
+        span {
+          font-weight: 600;
+          font-size: toRem(16);
+          line-height: getLineHeight(21, 16);
+
+          @media only screen and (min-width: ($screen-lg + 1)) {
+            font-size: toRem(20);
+            line-height: getLineHeight(26, 20);
+          }
+        }
+
+        br {
+          @media only screen and (min-width: ($screen-lg + 1)) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .resultSection {
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      &.banskaStiavnica {
+        background: linear-gradient(to right, rgba(51, 15, 80, 0.8), rgba(59, 57, 221, 0.8));
+      }
+
+      &.constructionVr {
+        background-color: rgba(23, 47, 133, .8);
+      }
+
+      &.onixArApp, &.timescope {
+        background: var(--color-blue-microcase);
+        opacity: 0.8;
+      }
+
+      &.oneTouchVr {
+        background: linear-gradient(90deg,rgba(30,60,114,.8),rgba(20,79,183,.8));
+
+        @media only screen and (min-width: $screen-sm) {
+          background: none;
+        }
+      }
+
+      &.unrealSpace {
+        background-color: rgba(23,47,133,.8);
+      }
+
+      &.holokit {
+        background: var(--color-blue-microcase2);
+        opacity: .8;
+      }
+
+      &.unityDSM {
+        background: rgba(43, 99, 182, .8);
+      }
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    .container {
+      padding-top: toRem(40);
+      padding-bottom: toRem(40);
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: toRem(100);
+        padding-bottom: toRem(100);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & h2 {
+        color: var(--color-white);
+        padding-bottom: toRem(20);
+        @media only screen and (min-width: $screen-md) {
+          padding: toRem(30);
+        }
+      }
+
+      & p {
+        color: var(--color-white);
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(700);
+        }
+      }
+    }
+  }
+
+  .contactUs {
+    & .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media only screen and (min-width: $screen-xl) {
+        padding: 0;
+      }
+      & h2 {
+        padding: toRem(40) toRem(20) toRem(20) toRem(20);
+        @media only screen and (min-width: $screen-sm) {
+          max-width: toRem(436);
+          padding: toRem(50) 0 toRem(20) 0;
+        }
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(811);
+          padding: toRem(100) 0 toRem(30) 0;
+        }
+      }
+      .btn {
+        margin-bottom: toRem(75);
+        @media only screen and (min-width: $screen-sm) {
+          margin-bottom: toRem(91);
+        }
+        @media only screen and (min-width: $screen-md) {
+          margin-bottom: toRem(100);
+        }
+      }
+    }
+
+    &.timescope {
+      h2 {
+        @media only screen and (min-width: $screen-sm) {
+          max-width: toRem(400);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(700);
+        }
+      }
+      .btn {
+        background-color: var(--color-blue-timescope-btn);
+
+        &:hover {
+          background-color: var(--color-blue-timescope2-hover);
+        }
+      }
+    }
+
+    &.unrealSpace {
+      .btn {
+        background-color: var(--color-blue-timescope-btn);
+
+        &:hover {
+          background-color: var(--color-blue-unreal-space-btn-hover);
+        }
+      }
+    }
+
+    &.holokit {
+      h2 {
+        @media only screen and (min-width: $screen-sm) {
+          max-width: toRem(400);
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(700);
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,58 @@
+.haas {
+  width: 100%;
+  font-weight: 400;
+  font-family: var(--poppinsFont), sans-serif;
+
+  .fixedSection {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .businessPart {
+    background-color: var(--color-red-haas);
+    z-index: 19;
+    min-height: 100vh;
+  }
+
+  .neededPart {
+    background-color: var(--color-white);
+    z-index: 18;
+  }
+
+  .flowPart {
+    background-color: var(--color-black);
+    z-index: 17;
+  }
+
+  .whatPart {
+    background-color: var(--color-white);
+    z-index: 16;
+  }
+
+  .solutionPart {
+    background-color: var(--color-black);
+    z-index: 15;
+  }
+
+  .technologiesPart {
+    background-color: var(--color-white);
+    z-index: 14;
+  }
+
+  .testimonialPart {
+    background-color: var(--color-white);
+    z-index: 13;
+  }
+
+  .resultsPart {
+    background-color: var(--color-red-haas);
+    z-index: 12;
+  }
+
+  .contactUsPart {
+    background-color: var(--color-black);
+    z-index: 11;
+  }  
+}

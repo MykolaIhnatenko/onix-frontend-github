@@ -1,0 +1,70 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+@import "../../../pages/App/sass/breakpointsVariables.scss";
+
+.solutionSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E0E0E;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    h2 {
+      color: #F8F8F8;
+      padding: toRem(40) 0 toRem(20) 0;
+      max-width: toRem(270);
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(451);
+        padding: toRem(60) 0 toRem(20) 0;
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(759);
+        padding: toRem(132) 0 toRem(30) 0;
+      }
+    }
+  }
+
+  .solutionsImg {
+    height: toRem(254);
+    position: relative;
+    width: 100%;
+
+    @media only screen and (min-width: $screen-md) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      width: fit-content;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+
+      @media only screen and (min-width: $screen-md) {
+        width: toRem(220);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+

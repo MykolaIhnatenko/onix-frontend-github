@@ -1,0 +1,210 @@
+@import "../../App/sass/breakpointsVariables.scss";
+@import "../../App/sass/mixinsFonts.scss";
+@import "../../App/sass/functions.scss";
+
+.column {
+  .columnListItem {
+    display: flex;
+
+    .textMargin, .marginBottomMobile {
+      display: flex;
+      gap: toRem(4);
+
+      @media only screen and (max-width: $screen-lg) {
+        display: block;
+        gap: unset;
+      }
+    }
+    
+    .textItemNumber {
+      margin-right: 0;
+    }
+  }
+  
+  .columnListItemMobile {
+    @media only screen and (max-width: $screen-lg) {
+      margin-bottom: 0;
+      &:last-child {
+        margin-bottom: toRem(30);
+      }
+    }
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      &:last-child {
+        margin-bottom: toRem(20);
+      }
+    }
+  }
+  
+  span, p {
+    @include generalPlexMono(18, 400, 26);
+    color: var(--color-black);
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      @include generalPlexMono(16, 400, 24);
+    }
+  }
+}
+
+.marginBottomMobile {
+  margin-bottom: 0 !important;
+  @media only screen and (max-width: $screen-lg) {
+    margin-bottom: toRem(30) !important;
+  }
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-bottom: toRem(20) !important;
+  }
+}
+
+.contentBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--color-black);
+  z-index: 1;
+
+  .firstBlock {
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: toRem(40) ;
+    border-bottom: 2px solid var(--color-black);
+    
+    @media only screen and (max-width: $screen-md - 1) {
+      padding: toRem(20);
+    }
+  }
+
+  .blocksContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $screen-lg) {
+      flex-direction: column;
+    }
+
+    .block {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: toRem(40);
+      border-right: 2px solid var(--color-black);
+      
+      @media only screen and (max-width: $screen-md - 1) {
+        padding: toRem(20);
+      }
+
+      &:last-child {
+        border-right: none;
+
+        @media only screen and (max-width: $screen-lg) {
+          width: 100%;
+          border-top: 2px solid var(--color-black);
+          min-height: toRem(400);
+        }
+
+        @media only screen and (max-width: $screen-md - 1) {
+          min-height: toRem(286);
+        }
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        width: 100%;
+        border: none;
+      }
+
+      .listWrapper {
+        margin-bottom: toRem(20);
+        
+        .itemText {
+          max-width: toRem(590);
+          display: flex;
+          
+          @media only screen and (max-width: $screen-md - 1) {
+            margin-bottom: toRem(10);
+            max-width: 100%;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        
+        .itemTextSecond {
+          margin-bottom: toRem(10);
+        }
+
+        .wrapperItem {
+          margin-bottom: toRem(20);
+
+          @media only screen and (max-width: $screen-md - 1) {
+            max-width: toRem(264);
+          }
+        }
+        .itemTitle {
+          margin-bottom: toRem(30);
+          
+          @media only screen and (max-width: $screen-md - 1) {
+            margin-bottom: toRem(20);
+          }
+        }
+      }
+    }
+  }
+}
+
+.firstTitle {
+  margin-bottom: toRem(30);
+  max-width: toRem(890);
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-bottom: toRem(20);
+  }
+}
+
+.numberBlock {
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(70);
+  }
+}
+
+.firstNumberBlock {
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(10);
+  }
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-top: 0;
+  }
+}
+
+.secondNumberBlock {
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(20);
+  }
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-top: 0;
+  }
+}
+
+.thirdNumberBlock {
+  @media only screen and (max-width: $screen-lg) {
+    margin-top: toRem(40);
+  }
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-top: 0;
+  }
+}
+
+.textMargin {
+  margin-bottom: toRem(30);
+  
+  @media only screen and (max-width: $screen-md - 1) {
+    margin-bottom: toRem(20);
+  }
+}

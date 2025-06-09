@@ -1,0 +1,133 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  z-index: 2;
+  padding-top: toRem(194);
+
+  .bgContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    img {
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(70);
+      background: linear-gradient(180deg, rgba(253, 253, 253, 0) 5%, #ffffff 100%);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+    }
+  }
+
+  .contentBlock {
+    position: relative;
+    .textContainer {
+      .title {
+        margin-bottom: toRem(40);
+        text-align: center;
+        font-size: toRem(50);
+        line-height: getLineHeight(64, 50);
+        font-style: normal;
+        font-weight: 500;
+
+        @media only screen and (max-width: $screen-lg) {
+          text-align: start;
+        }
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          margin-bottom: toRem(15);
+        }
+      }
+      .subTitleContainer {
+        margin: 0 auto;
+        max-width: toRem(930);
+
+        .subTitle {
+          margin: 0;
+          text-align: center;
+          font-style: normal;
+          font-weight: 400;
+          line-height: getLineHeight(26, 18);
+
+          @media only screen and (max-width: $screen-lg) {
+            font-size: toRem(18);
+            line-height: getLineHeight(26, 18);
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.brDesc {
+  @media only screen and (max-width: ($screen-md - 1)) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $screen-lg) {
+  .container {
+    padding: toRem(154) toRem(30) 0;
+
+    .contentBlock {
+      .textContainer {
+        max-width: toRem(708);
+        .title {
+          text-align: start;
+          margin-bottom: toRem(30);
+        }
+        .subTitleContainer {
+          margin: 0;
+          .subTitle {
+            font-size: toRem(18);
+            line-height: getLineHeight(26, 18);
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: ($screen-md - 1)) {
+  .container {
+    padding: toRem(139) toRem(15) 0;
+
+    .contentBlock {
+      .textContainer {
+        max-width: unset;
+        .title {
+          font-size: toRem(40);
+          line-height: getLineHeight(50, 40);
+          text-align: start;
+          margin-bottom: toRem(15);
+        }
+        .subTitleContainer {
+          margin: 0;
+          .subTitle {
+            font-size: toRem(16);
+            line-height: getLineHeight(24, 16);
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}

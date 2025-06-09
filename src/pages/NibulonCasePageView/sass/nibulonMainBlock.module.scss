@@ -1,0 +1,110 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.section {
+  position: relative;
+  height: 100vh;
+  min-height: toRem(840);
+  max-height: toRem(1440);
+  
+  @media only screen and (max-width: $screen-lg) {
+    min-height: toRem(1200);
+  }
+  
+  @media only screen and (max-width: $screen-lg - 180) {
+    min-height: toRem(1024);
+  }
+  
+  @media only screen and (max-width: ($screen-md - 1)) {
+    min-height: toRem(690);
+    max-height: toRem(1024);
+  }
+  
+  @media only screen and (max-width: $screen-sm - 100) {
+    min-height: toRem(640);
+  }
+  
+  
+  .bgImage {
+    object-fit: cover;
+    object-position: center;
+    
+    @media only screen and (max-width: $screen-lg) {
+      object-position: bottom;
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      object-position: top;
+    }
+    
+    @media only screen and (max-width: $screen-sm) {
+        object-position: bottom;
+    }
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+    @media only screen and (max-width: $screen-lg) {
+      align-items: flex-start;
+    }
+    
+    .textContent {
+      position: relative;
+      color: var(--color-white);
+      max-width: toRem(650);
+      
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(720);
+      }
+      
+      @media only screen and (max-width: 1050px) {
+        max-width: toRem(600);
+      }
+      
+      @media only screen and (max-width: $screen-lg) {
+        margin-top: toRem(154);
+        max-width: toRem(708);
+      }
+      
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-top: toRem(139);
+        max-width: toRem(520);
+        padding-right: toRem(20);
+      }
+      
+      .titleBlock {
+        display: flex;
+        
+        .title {
+          margin-bottom: toRem(40);
+          
+          @media only screen and (max-width: $screen-lg) {
+            margin-bottom: toRem(30);
+            font-size: toRem(40);
+          }
+          
+          @media only screen and (max-width: ($screen-md - 1)) {
+            margin-bottom: toRem(15);
+            font-size: toRem(25);
+          }
+        }
+      }
+      
+      .text {
+        margin: 0;
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+        font-weight: 500;
+        
+        @media only screen and (max-width: $screen-md - 1) {
+          font-size: toRem(16);
+          line-height: getLineHeight(24, 16);
+        }
+      }
+    }
+  }
+}

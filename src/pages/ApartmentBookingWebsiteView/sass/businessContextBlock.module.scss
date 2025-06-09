@@ -1,0 +1,39 @@
+@import '../../../pages/App/sass/breakpointsVariables.scss';
+@import '../../../pages/App/sass/functions.scss';
+
+
+.link {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: toRem(6);
+    left: 0;
+    width: 100%;
+    height: toRem(3);
+    background-color: var(--color-black);
+    transform-origin: 0 0;
+
+    @media only screen and (max-width: $screen-lg) {
+      height: toRem(2);
+      bottom: toRem(7);
+    }
+
+
+    @media only screen and (max-width: $screen-md - 1 ) {
+      height: toRem(2);
+      bottom: toRem(4);
+    }
+  }
+}
+
+.spanWithMargin {
+  display: block;
+  margin-bottom: toRem(30);
+
+  @media only screen and (max-width: $screen-md - 1 ) {
+    margin-bottom: toRem(20);
+  }
+}

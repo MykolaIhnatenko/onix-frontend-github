@@ -1,0 +1,101 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: toRem(120) toRem(70) toRem(80);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(120) toRem(80) toRem(80);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: toRem(80) toRem(30) toRem(60);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: toRem(80) toRem(15) toRem(40);
+  }
+  
+  img{
+    object-fit: cover;
+  }
+
+  .titleBox {
+    width: 100%;
+    margin-bottom: toRem(40);
+    z-index: 1;
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      margin-bottom: toRem(30);
+    }
+  }
+
+  .tableWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: toRem(1300);
+      z-index: 1;
+      table-layout: fixed;
+  
+      th, td {
+        border: 2px solid var(--color-black);
+        padding: toRem(28) 0;
+        background-color: var(--color-white);
+        height: toRem(96);
+        text-align: center;
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding: toRem(16) toRem(11.5);
+          height: toRem(80);
+        }
+
+        .textTable {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items:center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .descBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: toRem(120);
+
+    @media only screen and (max-width: $screen-lg) {
+      margin-top: toRem(80);
+    }
+    
+    .contentBlockText {
+      z-index: 1;
+      max-width: toRem(630);
+      margin-top: toRem(40);
+  
+      @media only screen and (min-width: $screen-xxxl) {
+        max-width: toRem(710);
+      }
+
+      @media only screen and (max-width: $screen-lg) {
+        max-width: 100%;
+      }
+
+      @media only screen and (max-width: ($screen-md - 1)) {
+        margin-top: toRem(30);
+      }
+    }
+  }
+}

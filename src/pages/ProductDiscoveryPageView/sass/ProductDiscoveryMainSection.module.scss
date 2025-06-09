@@ -1,0 +1,237 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+@mixin textCard {
+  font-size: toRem(36);
+  font-weight: 500;
+  line-height: toRem(46);
+  color: var(--color-black);
+  padding: 0;
+  z-index: 5;
+  font-family: var(--generalSans);
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    font-size: toRem(16);
+    line-height: toRem(21);
+  }
+}
+
+.sectionWrapper {
+  position: relative;
+
+  .bgContainer {
+    &:after {
+      content: '';
+      width: 100%;
+      height: toRem(110);
+      background: linear-gradient(180deg, rgba(253, 253, 253, 0) 5%, #ffffff 100%);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+    }
+    
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: toRem(139) toRem(15) 0;
+
+  @media only screen and (min-width: $screen-md) {
+    padding: toRem(154) toRem(30) 0;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding: toRem(154) toRem(70) 0;
+  }
+
+  @media only screen and (min-width: $screen-xxxl) {
+    padding: toRem(154) toRem(80) 0;
+  }
+
+  position: relative;
+  z-index: 2;
+
+  .sectionTitle {
+    font-size: toRem(40);
+    line-height: getLineHeight(50, 40);
+    font-weight: 500;
+    margin-bottom: toRem(15);
+
+    @media only screen and (min-width: $screen-md) {
+      font-size: toRem(50);
+      line-height: getLineHeight(64, 50);
+      max-width: toRem(616);
+      margin-bottom: toRem(30);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      max-width: toRem(885);
+      margin-bottom: toRem(40);
+    }
+  }
+
+  .textBlock {
+    margin-bottom: toRem(30);
+
+    @media only screen and (min-width: $screen-md) {
+      margin-bottom: toRem(80);
+    }
+
+    .sectionDescription {
+      margin: 0;
+
+      @media only screen and (min-width: $screen-md) {
+        max-width: toRem(460);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        max-width: toRem(630);
+      }
+
+      &:first-of-type {
+        margin-bottom: toRem(30);
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: toRem(460);
+          margin-bottom: toRem(120);
+        }
+
+        @media only screen and (min-width: $screen-lg + 1) {
+          max-width: toRem(630);
+          margin-bottom: toRem(40);
+        }
+      }
+
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.contentContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  @media only screen and (min-width: $screen-md) {
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    padding: 0 toRem(30);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    padding: 0 toRem(15);
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.card {
+  width: 17.6%;
+  height: toRem(688);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: toRem(30);
+  transition: width 0.5s ease-in-out;
+  outline: solid 2px var(--color-black);
+  border-top: solid 2px var(--color-black);
+  border-bottom: solid 2px var(--color-black);
+  outline-offset: -1px;
+  z-index: 2;
+
+  @media only screen and (max-width: $screen-lg) {
+    min-width: toRem(600);
+    height: toRem(600);
+    outline: none;
+    margin-left: toRem(30);
+    border-top: none;
+    border-bottom: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    min-width: toRem(280);
+    height: toRem(280);
+    margin-left: toRem(15);
+  }
+
+  .numberBlock {
+    @include textCard;
+    height: fit-content;
+
+    @media only screen and (max-width: $screen-lg) {
+      color: var(--color-white);
+    }
+  }
+
+  .titleCard {
+    @include textCard;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    height: fit-content;
+
+    @media only screen and (max-width: $screen-lg) {
+      color: var(--color-white);
+    }
+  }
+}
+
+.activeCard {
+  flex: 1 1;
+  width: 47%;
+  outline: none;
+  border: none;
+
+  .numberBlock {
+    color: var(--color-white);
+  }
+
+  .titleCard {
+    color: var(--color-white);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    min-width: toRem(600);
+    height: toRem(600);
+  }
+
+  @media only screen and (max-width: ($screen-md - 1)) {
+    min-width: toRem(280);
+    height: toRem(280);
+  }
+}
+
+.cardImage {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: cover;
+
+  @media only screen and (max-width: $screen-lg) {
+    opacity: 1;
+  }
+}
+
+.activeCardImage {
+  opacity: 1;
+}

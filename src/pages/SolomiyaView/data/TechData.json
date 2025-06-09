@@ -1,0 +1,9 @@
+{
+  "techOne": {
+    "title": "Core technology stack we\u00A0used",
+    "techList": ["PHP", "Laravel", "Flutter"]
+  },"techSecond": {
+    "title": "Designers’ instruments",
+    "techList": ["Miro", "Figma", "Photoshop", "Illustrator"]
+  }
+}

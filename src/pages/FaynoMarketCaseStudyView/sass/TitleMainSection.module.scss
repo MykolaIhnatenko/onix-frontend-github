@@ -1,0 +1,77 @@
+@import "../../App/sass/breakpointsVariables.scss";
+@import "../../App/sass/functions.scss";
+
+.mainTitle {
+  max-width: toRem(580);
+
+  @media only screen and (min-width: $screen-xxxl) {
+    max-width: toRem(720);
+  }
+
+  @media only screen and (max-width: $screen-lg) {
+    max-width: 100%;
+  }
+
+  .iconContainer {
+    position: relative;
+    width: toRem(120);
+    height: toRem(120);
+    margin-bottom: toRem(40);
+
+    @media only screen and (max-width: $screen-xl) {
+      width: toRem(97);
+      height: toRem(97);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  .logoContainer {
+    position: relative;
+    width: toRem(500);
+    height: toRem(128);
+
+    @media only screen and (max-width: $screen-xl) {
+      width: toRem(410);
+      height: toRem(105);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      width: toRem(320);
+      height: toRem(82);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      width: toRem(187);
+      height: toRem(48);
+    }
+  }
+
+  .title {
+    color: #07906B;
+    padding-top: toRem(40);
+    font-size: toRem(36);
+    line-height: getLineHeight(46, 36);
+
+    @media only screen and (max-width: $screen-xl) {
+      padding-top: toRem(30);
+      font-size: toRem(30);
+      line-height: getLineHeight(40, 30);
+    }
+
+    @media only screen and (max-width: $screen-lg) {
+      padding-top: toRem(30);
+      font-size: toRem(24);
+      line-height: getLineHeight(34, 24);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      padding-top: toRem(15);
+      font-size: toRem(20);
+      line-height: getLineHeight(28, 20);
+    }
+  }
+}
+

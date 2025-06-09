@@ -1,0 +1,77 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.successfulContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: toRem(40);
+
+  .image {
+    width: toRem(160);
+    height: toRem(160);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .title {
+    font-size: toRem(36);
+    line-height: getLineHeight(46, 36);
+    padding: toRem(16) 0;
+    font-family: var(--generalSans);
+  }
+
+  .text {
+    font-family: var(--ibmPlexMono);
+    margin: 0;
+    text-align: center;
+  }
+
+  &.calculator{
+    max-width: toRem(216);
+    width: toRem(216);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: $screen-xl) {
+      width: toRem(500);
+      max-width: toRem(500);
+    }
+
+    @media only screen and (max-width: $screen-md - 1) {
+      width: toRem(200);
+      max-width: toRem(200);
+    }
+  }
+}
+
+.blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: toRem(660);
+  width: 100%;
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    max-width: toRem(900);
+  }
+
+  .blogsImage {
+    z-index: -1;
+  }
+
+  .text {
+    max-width: toRem(260);
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: unset;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "inputName": "name",
+    "label": "Your Name",
+    "isAsterisk": true
+  },
+  {
+    "inputName": "email",
+    "label": "Your Email",
+    "isAsterisk": true
+  },
+  {
+    "inputName": "company",
+    "label": "Company",
+    "isAsterisk": false
+  },
+  {
+    "inputName": "country",
+    "label": "Country",
+    "isAsterisk": false
+  }
+]

@@ -1,0 +1,29 @@
+@import "../../App/sass/functions";
+@import "../../App/sass/breakpointsVariables";
+
+$whitePhotowhy: #FBFDFF;
+$blackPhotowhy: #010101;
+$saphirePhotowhy: #3B456F;
+
+.lastSection {
+  background-color: $whitePhotowhy;
+
+  .container {
+    padding-bottom: toRem(31);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(8);
+      padding-bottom: toRem(45);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: 0;
+      padding-bottom: toRem(86);
+    }
+
+    p {
+      color: $saphirePhotowhy;
+      text-align: center;
+    }
+  }
+}

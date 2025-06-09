@@ -1,0 +1,283 @@
+@import "../../../App/sass/breakpointsVariables.scss";
+
+$orangeProjectX: #FF6644;
+$blackProjectX: #191A1F;
+
+.implementationBlackSection {
+  background-color: #030303;
+  overflow: hidden;
+  position: relative;
+
+  .circleBg {
+    position: absolute;
+    bottom: 444px;
+    left: 0;
+    z-index: 3;
+
+    @media only screen and (min-width: 450px) {
+      width: 94px;
+      height: 188px;
+      bottom: 325px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      width: 138px;
+      height: 276px;
+      bottom: 317px;
+    }
+
+    .circleBgContainer {
+      position: relative;
+      width: 114px;
+      height: 235px;
+
+      @media only screen and (min-width: 450px) {
+        width: 94px;
+        height: 188px;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        width: 138px;
+        height: 276px;
+      }
+    }
+  }
+
+  .container {
+    padding-top: 135px;
+
+    @media only screen and (min-width: 450px) {
+      padding-top: 300px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 324px;
+    }
+
+    .implementationCardsContainer {
+      padding-top: 15px;
+      padding-bottom: 40px;
+
+      @media only screen and (min-width: 450px) {
+        padding-top: 70px;
+        padding-bottom: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: 0 -2px;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        padding-top: 20px;
+        padding-bottom: 160px;
+        margin: 0 -15px;
+      }
+
+      .implementationCardWrapper {
+        align-self: stretch;
+        line-height: 27px;
+
+        @media only screen and (min-width: 450px) {
+          flex-basis: 50%;
+          max-width: 360px;
+          padding: 0 2px;
+          margin-bottom: 16px;
+
+          &:nth-child(2) {
+            .implementationCard{
+              padding-bottom: 105px;
+            }
+          }
+
+          &:nth-child(3) {
+            .implementationCard {
+              padding-bottom: 127px;
+            }
+          }
+        }
+
+        @media only screen and (min-width: $screen-md) {
+          max-width: 570px;
+          padding: 0 15px;
+          margin-bottom: 30px;
+
+          &:nth-child(1) {
+            .implementationCard {
+              padding-bottom: 69px;
+            }
+          }
+
+          &:nth-child(2) {
+            .implementationCard {
+              padding-bottom: 159px;
+            }
+          }
+
+          &:nth-child(3) {
+            .implementationCard {
+              padding-bottom: 159px;
+            }
+          }
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+
+          @media only screen and (min-width: $screen-md) {
+            margin-bottom: 30px;
+          }
+        }
+
+        .implementationCard {
+          background-color: $blackProjectX;
+          border-radius: 16px;
+          padding: 24px;
+          overflow: hidden;
+          position: relative;
+          height: 100%;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: $orangeProjectX;
+            filter: blur(60px);
+            width: 70px;
+            height: 35px;
+            z-index: 1;
+          }
+
+          @media only screen and (min-width: 450px) {
+            max-width: 356px;
+            padding: 32px 25px 32px 16px;
+          }
+
+          @media only screen and (min-width: $screen-md) {
+            max-width: 540px;
+            padding: 36px 58px 39px 37px;
+          }
+
+          h4 {
+            color: $orangeProjectX;
+            padding-top: 16px;
+            padding-bottom: 8px;
+
+            @media only screen and (min-width: $screen-md) {
+              line-height: 38px;
+            }
+          }
+
+          p {
+            color: #C8C8CE;
+          }
+        }
+      }
+    }
+  }
+
+  .phonesContainer {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    position: relative;
+    height: 415px;
+    overflow-x: hidden;
+
+    @media only screen and (min-width: 450px) {
+      height: 514px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      max-width: 1300px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0 auto;
+    }
+
+    .phonesImg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .phonesImgContainer {
+        position: relative;
+        width: 1016px;
+        height: 415px;
+
+        @media only screen and (min-width: 450px) {
+          width: 1260px;
+          height: 514px;
+        }
+      }
+    }
+  }
+
+  .technologyBgImgContainer {
+    position: absolute;
+    top: 90px;
+    left: -220px;
+
+    @media only screen and (min-width: 450px) {
+      top: 176px;
+      left: 40%;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      top: 90px;
+      left: 530px;
+    }
+
+    .technologyBgImg {
+      position: relative;
+      width: 693px;
+      height: 580px;
+
+      @media only screen and (min-width: 450px) {
+        width: 465px;
+        height: 389px;
+      }
+
+      @media only screen and (min-width: $screen-md) {
+        width: 693px;
+        height: 580px;
+      }
+    }
+  }
+
+  .technologyParagraph {
+    display: none;
+
+    @media only screen and (min-width: 550px) {
+      display: block;
+      z-index: 2;
+      position: relative;
+      max-width: 425px;
+      left: 94px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 80px;
+      max-width: 477px;
+      left: unset;
+    }
+  }
+
+  h2 {
+    padding-top: 435px;
+    padding-bottom: 166px;
+    z-index: 2;
+    position: relative;
+
+    @media only screen and (min-width: 450px) {
+      padding-top: 90px;
+      padding-bottom: 267px;
+    }
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: 143px;
+      padding-bottom: 219px;
+    }
+  }
+}

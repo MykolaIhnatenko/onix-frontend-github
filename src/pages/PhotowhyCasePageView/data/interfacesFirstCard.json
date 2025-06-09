@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "paragraph": "User Profile"
+  },
+  {
+    "id": 2,
+    "paragraph": "Upload Photos"
+  },
+  {
+    "id": 3,
+    "paragraph": "Photo Feed"
+  },
+  {
+    "id": 4,
+    "paragraph": "Watch Live Streams"
+  },
+  {
+    "id": 5,
+    "paragraph": "Chat"
+  },
+  {
+    "id": 6,
+    "paragraph": "Request a picture/portfolio review by a professional"
+  },
+  {
+    "id": 7,
+    "paragraph": "Book a masterclass"
+  },
+  {
+    "id": 8,
+    "paragraph": "Pay for a review or masterclass"
+  },
+  {
+    "id": 9,
+    "paragraph": "Rate a proffesional photographer after a masterclass"
+  }
+]

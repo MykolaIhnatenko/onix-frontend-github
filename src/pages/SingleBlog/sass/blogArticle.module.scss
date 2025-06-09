@@ -1,0 +1,355 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.blogArticle {
+  position: relative;
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: toRem(1282);
+    z-index: -1;
+
+    @media only screen and (min-width: $screen-md) {
+      max-height: toRem(1440);
+    }
+
+    @media only screen and (min-width: ($screen-lg + 1)) {
+      max-height: toRem(1682);
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .wrapper {
+    @media only screen and (min-width: 1130px) {
+      display: flex;
+      gap: toRem(40);
+      max-width: toRem(1160);
+      margin: 0 auto toRem(80);
+      justify-content: space-around;
+      padding: 0 toRem(40);
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      gap: toRem(70);
+      justify-content: unset;
+    }
+
+    .empty {
+      display: none;
+
+      @media only screen and (min-width: 1280px) {
+        display: block;
+        flex-basis: toRem(100);
+      }
+    }
+
+    .rightSticky {
+      position: sticky;
+      top: calc(-350px + 50vh);
+      
+      @media (height < 900px) {
+        top: 70px;
+        height: calc(100vh - 70px);
+      }
+      
+      .asideWrapper{
+        overflow-y: scroll;
+        height: calc(100% - 20px);
+        
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+      }
+      
+      .asideCta {
+        position: relative;
+
+        .background {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .content {
+          position: relative;
+          padding: toRem(20) 0;
+          text-align: center;
+
+          .icon {
+            margin: 0 auto;
+          }
+
+          .contentTitle {
+            color: var(--color-white);
+            text-align: center;
+            max-width: toRem(250);
+            margin: 0 auto;
+            padding: toRem(20) 0 toRem(30);
+            font-size: toRem(30);
+            line-height: getLineHeight(40, 30);
+          }
+
+          .btn {
+            max-width: toRem(300);
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .blogAuthorsAside {
+      display: none;
+
+      @media only screen and (min-width: 1130px) {
+        flex-basis: toRem(330);
+        min-width: toRem(330);
+        order: 3;
+        display: block;
+        padding-top: toRem(40);
+      }
+    }
+
+    .container {
+      padding: 0 0 toRem(60);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      @media only screen and (min-width: $screen-md) {
+        padding: toRem(40) toRem(30) toRem(80);
+      }
+
+      @media only screen and (min-width: ($screen-lg + 1)) {
+        padding: toRem(40) toRem(40) toRem(80);
+      }
+
+      @media only screen and (min-width: 1130px) {
+        padding: toRem(40) 0 0;
+        max-width: toRem(680);
+        margin: 0;
+      }
+
+      @media only screen and (min-width: $screen-xxl) {
+        flex-basis: toRem(830);
+        max-width: toRem(680);
+        margin: 0;
+      }
+
+      .background {
+        width: 100%;
+        height: toRem(430);
+        padding-bottom: toRem(40);
+
+        @media only screen and (max-width: ($screen-md - 1)) {
+          padding-bottom: toRem(30);
+        }
+
+        img {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .mobilePadding {
+        padding: 0 toRem(15);
+
+        @media only screen and (min-width: $screen-md) {
+          padding: 0;
+        }
+
+        .blogPostContent {
+          color: var(--color-black);
+          font-family: var(--generalSans);
+          order: 1;
+          padding-bottom: toRem(40);
+
+          @media only screen and (min-width: $screen-md) {
+            padding-bottom: toRem(60);
+          }
+
+          @media only screen and (min-width: 1130px) {
+            order: 2;
+          }
+
+          h2 {
+            font-size: toRem(25);
+            line-height: getLineHeight(35, 25);
+            font-weight: 600;
+
+            @media only screen and (min-width: $screen-md) {
+              font-size: toRem(30);
+              line-height: getLineHeight(40, 30);
+            }
+          }
+
+          h3,
+          h4 {
+            font-size: toRem(18);
+            line-height: getLineHeight(28, 18);
+            font-weight: 600;
+
+            @media only screen and (min-width: $screen-md) {
+              font-size: toRem(22);
+              line-height: getLineHeight(28, 22);
+            }
+          }
+
+          ul {
+            list-style: none;
+
+            li::before {
+              content: "﹂";
+              color: var(--color-black);
+              font-weight: bold;
+              display: inline-block;
+              width: 1em;
+              margin-right: 10px;
+            }
+
+            u {
+              text-decoration: none;
+              font-weight: 600;
+            }
+          }
+
+          ol {
+            list-style: none;
+            counter-reset: my-counter;
+
+            li {
+              counter-increment: my-counter;
+            }
+
+            li::before {
+              content: counter(my-counter) ".";
+              color: var(--color-black);
+              display: inline-block;
+              width: 1em;
+            }
+
+            u {
+              text-decoration: none;
+              font-weight: 600;
+            }
+          }
+
+          p,
+          li {
+            font-size: toRem(16);
+            line-height: getLineHeight(28, 16);
+            font-weight: 500;
+
+            @media only screen and (min-width: $screen-md) {
+              font-size: toRem(18);
+              line-height: getLineHeight(28, 18);
+            }
+          }
+
+          p {
+            display: block;
+          }
+
+          p strong {
+            font-weight: 600;
+          }
+
+          a {
+            color: var(--color-blue);
+            overflow-wrap: break-word;
+          }
+
+          blockquote {
+            line-height: getLineHeight(28, 16);
+          }
+
+          img {
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+          }
+
+          table ul,
+          table td p {
+            padding: 0;
+            margin: 0;
+          }
+
+          table ul li,
+          table ul li::before,
+          table td p {
+            font-weight: 400;
+          }
+
+          table ul li,
+          table strong,
+          table td,
+          table td p,
+          table td a {
+            font-size: toRem(16);
+            line-height: getLineHeight(28, 16);
+
+            @media only screen and (min-width: $screen-md) {
+              font-size: toRem(18);
+              line-height: getLineHeight(28, 18);
+            }
+          }
+          
+          iframe {
+            width: 1200px;
+            max-width: 100%;
+          }
+
+          :global(.tableWrapper) {
+            display: block;
+            overflow-x: auto;
+          }
+        }
+
+        table {
+          border-collapse: collapse;
+          height: 100% !important;
+        }
+
+        td,
+        th {
+          border: 1px solid var(--color-light-gray2);
+          padding: toRem(8);
+          vertical-align: middle;
+        }
+
+        .blogAuthors {
+          order: 3;
+          border-top: 2px solid var(--color-black);
+          padding-top: toRem(30);
+
+          @media only screen and (max-width: ($screen-md - 1)) {
+            padding-top: toRem(20);
+          }
+        }
+      }
+    }
+  }
+}
+
+.li_visited {
+  a {
+    text-decoration: underline;
+  }
+}

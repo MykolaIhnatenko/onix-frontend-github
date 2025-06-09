@@ -1,0 +1,22 @@
+@import 'breakpointsVariables.scss';
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media only screen and (min-width: $screen-md) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    padding-left: 70px;
+    padding-right: 70px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: $screen-xxxl) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

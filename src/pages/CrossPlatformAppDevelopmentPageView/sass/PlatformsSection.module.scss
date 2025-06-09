@@ -1,0 +1,137 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.container {
+  padding-top: toRem(80);
+  padding-bottom: toRem(80);
+
+  @media only screen and (min-width: $screen-md) {
+    padding-top: toRem(120);
+  }
+
+  .sectionTitle {
+    font-size: toRem(36);
+    line-height: getLineHeight(46, 36);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: toRem(60);
+
+    @media only screen and (max-width: $screen-lg) {
+      font-size: toRem(30);
+      line-height: getLineHeight(40, 30);
+    }
+
+    @media only screen and (max-width: ($screen-md - 1)) {
+      font-size: toRem(24);
+      line-height: getLineHeight(35, 24);
+    }
+  }
+
+  &.solutions {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-top: toRem(120);
+      padding-bottom: toRem(120);
+    }
+
+    @media only screen and (min-width: $screen-lg + 1) {
+      padding-top: toRem(160);
+      padding-bottom: toRem(145);
+    }
+    .sectionTitle {
+      font-size: toRem(25);
+      line-height: toRem(35);
+      margin-bottom: toRem(60);
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: toRem(40);
+        line-height: toRem(56);
+      }
+
+      @media only screen and (min-width: $screen-lg + 1) {
+        font-size: toRem(50);
+        line-height: toRem(64);
+        margin-bottom: toRem(80);
+      }
+    }
+  }
+
+  .platformsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: toRem(40);
+
+    &_item {
+      max-width: 250px;
+      flex-basis: 25%;
+
+      @media only screen and (max-width: $screen-xl) {
+        flex-basis: 50%;
+        max-width: 170px;
+      }
+
+      .iconWrapper {
+        width: toRem(160);
+        height: toRem(160);
+        border-radius: 50%;
+        border: 1px solid var(--color-black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto toRem(20);
+
+        @media only screen and (max-width: $screen-xl) {
+          width: toRem(132);
+          height: toRem(132);
+        }
+      }
+
+      p {
+        font-size: toRem(24);
+        line-height: toRem(34);
+        text-align: center;
+        font-weight: 500;
+
+        @media only screen and (max-width: $screen-xl) {
+          font-size: toRem(20);
+          line-height: toRem(34);
+
+          br {
+            display: none;
+          }
+        }
+
+        @media only screen and (max-width: $screen-lg) {
+          font-size: toRem(20);
+          line-height: toRem(28);
+        }
+      }
+
+      &.solutionsWeProvideItem {
+        max-width: 205px;
+  
+        .iconWrapper {
+          width: toRem(144);
+          height: toRem(144);
+
+          @media only screen and (max-width: $screen-lg) {
+            width: toRem(132);
+            height: toRem(132);
+          }
+        }
+  
+        p {
+          text-align: center;
+          font-size: toRem(20);
+        }
+  
+        @media only screen and (max-width: $screen-xl) {
+          max-width: 220px;
+        }
+      }
+    }
+  }
+}

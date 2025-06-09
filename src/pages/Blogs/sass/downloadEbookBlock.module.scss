@@ -1,0 +1,89 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.downloadEbookBlock {
+  position: relative;
+  margin-top: toRem(60);
+
+  @media only screen and (min-width: $screen-md) {
+    margin-top: toRem(80);
+  }
+
+  @media only screen and (min-width: $screen-lg + 1) {
+    margin-top: toRem(120);
+  }
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    img {
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .container {
+    padding-top: toRem(80);
+    padding-bottom: toRem(80);
+
+    @media only screen and (min-width: $screen-md) {
+      padding-bottom: toRem(152);
+    }
+
+    @media only screen and (min-width: $screen-xl) {
+      display: flex;
+      gap: 8%;
+      padding: toRem(120) toRem(100);
+    }
+
+    @media only screen and (min-width: $screen-xxl) {
+      padding-left: toRem(70);
+      padding-right: toRem(70);
+      max-width: toRem(1440);
+      margin: 0 auto;
+    }
+
+    .textBlock {
+      @media only screen and (min-width: $screen-xl) {
+        flex-basis: 54%;
+      }
+
+      .title {
+        color: var(--color-black);
+        font-size: toRem(30);
+        line-height: getLineHeight(40, 30);
+        font-weight: 500;
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(40);
+          line-height: getLineHeight(56, 40);
+        }
+      }
+
+      .subtitle {
+        color: var(--color-black);
+        font-size: toRem(18);
+        line-height: getLineHeight(26, 18);
+        font-weight: 500;
+        padding: toRem(40) 0 toRem(30);
+        margin: 0;
+        font-family: var(--generalSans);
+
+        @media only screen and (min-width: $screen-md) {
+          font-size: toRem(20);
+          line-height: getLineHeight(28, 20);
+          padding: toRem(60) 0 toRem(30);
+        }
+      }
+
+     .item {
+        margin: 0;
+     }
+    }
+  }
+}

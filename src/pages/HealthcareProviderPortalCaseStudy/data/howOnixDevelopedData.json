@@ -1,0 +1,25 @@
+{
+  "blockTitle": "This case study explores the development of a cutting-edge portal for a state-wide healthcare provider network that significantly enhanced the provider support team’s efficiency and provider satisfaction.",
+  "data": [
+    {
+      "id": 1,
+      "title": "Healthcare",
+      "text": "Industry"
+    },
+    {
+      "id": 2,
+      "title": "5 specialists",
+      "text": "Team size"
+    },
+    {
+      "id": 3,
+      "title": "USA",
+      "text": "Location"
+    },
+    {
+      "id": 4,
+      "title": "4 months",
+      "text": "Project duration"
+    }
+  ]
+}

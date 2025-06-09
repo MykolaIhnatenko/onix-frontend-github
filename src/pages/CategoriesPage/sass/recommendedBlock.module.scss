@@ -1,0 +1,25 @@
+@import "../../../pages/App/sass/functions";
+@import "../../../pages/App/sass/breakpointsVariables";
+
+.recommended {
+  display: flex;
+  gap: toRem(15);
+  padding-top: toRem(30);
+
+  @media only screen and (min-width: $screen-md) {
+    margin: 0 auto;
+    max-width: toRem(522);
+  }
+
+  .text, .link {
+    margin: 0;
+  }
+
+  .text {
+    color: var(--color-dark-gray);
+  }
+
+  .link {
+    white-space: nowrap;
+  }
+}

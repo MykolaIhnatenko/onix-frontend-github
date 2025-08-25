@@ -18,6 +18,12 @@ import solutionCardsData from './data/solutionsCardsData';
 import aboutBlockData from './data/aboutBlockData.json';
 import { ButtonType } from '../../constants/enums';
 import IPageStatus from 'interfaces/IPageStatus';
+import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
+import DevelopmentServicesBlack from '../../components/DevelopmentServicesBlack/DevelopmentServicesBlack';
+import developmentServicesData from './data/developmentServicesData';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import VRARCallToActionComponent from 'components/VRARCallToActionBlock/VRARCallToActionComponent';
+
 import HunterCallToActionBg from '@/images/hunter/callToAction/img_call_to_action1@2x.webp';
 import HunterCallToActionBgTablet from '@/images/hunter/callToAction/img_call_to_action_tablet1@2x.webp';
 import HunterCallToActionBgMobile from '@/images/hunter/callToAction/img_call_to_action_mobile1@2x.webp';
@@ -31,11 +37,6 @@ import RunningColsBgXXXL from '@/images/runningColsBlock/img_runningColsBgXXXL.w
 import RunningColsBg from '@/images/runningColsBlock/img_runningColsBg.webp';
 import RunningColsBgTablet from '@/images/runningColsBlock/img_runningColsBgTablet.webp';
 import RunningColsBgMobile from '@/images/runningColsBlock/img_runningColsBgMobile.webp';
-import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
-import DevelopmentServicesBlack from '../../components/DevelopmentServicesBlack/DevelopmentServicesBlack';
-import developmentServicesData from './data/developmentServicesData';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import VRARCallToActionComponent from 'components/VRARCallToActionBlock/VRARCallToActionComponent';
 
 function HunterPageView({ saleUrl }: IPageStatus) {
   const {
@@ -118,6 +119,10 @@ function HunterPageView({ saleUrl }: IPageStatus) {
         carouselData={carouselData}
         cardsData={solutionCardsData}
         carouselBlockBackground={getBackground().runRow}
+        classes={{
+          section: 'min-lg:!pb-[80px]',
+          cardsBlock: '!pb-[10px] min-md:!pb-0 min-lg:!pb-0',
+        }}
       />
       <RunningColsBlock
         bg={getBackground().runningCols}

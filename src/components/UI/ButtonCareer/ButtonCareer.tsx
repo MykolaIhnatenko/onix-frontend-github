@@ -4,7 +4,7 @@ import ButtonTemplate from '../ButtonTemplate/ButtonTemplate';
 function ButtonCareer({
   text, styleContainer, hasArrow, id,
   onClick, disabled, arrowVariant,
-  fontSizeSmallOnMobile, classes, typeButton,
+  fontSizeSmallOnMobile, classes, typeButton, isJakarta,
 }: IButton) {
   return (
     <ButtonTemplate
@@ -17,6 +17,7 @@ function ButtonCareer({
       arrowVariant={arrowVariant}
       fontSizeSmallOnMobile={fontSizeSmallOnMobile}
       typeButton={typeButton}
+      isJakarta={isJakarta}
       classes={{
         ...classes,
         customContainer: 'text-color-black bg-[#E7E7E7] before:bg-color-white',

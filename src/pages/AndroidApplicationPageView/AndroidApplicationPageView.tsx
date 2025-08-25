@@ -32,7 +32,12 @@ import { androidAppTechnologiesBlocksData, androidAppTechnologiesBlocksNames } f
 import androidAppApproachBlockData from './data/androidAppApproachData';
 import androidAppEngagementModelsData from './data/androidAppEngagementModelsData';
 import { carouselTop } from '../MainPage/data/industriesWeServeCarouselData';
-import { CardBlockVariant, ButtonType } from '../../constants/enums';
+import { ButtonType } from '../../constants/enums';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import approachBlockClasses from './tailwind/approachSection';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import IAchievements from '../../interfaces/IAchievements';
+
 import AndroidAppLetDevelopBg from '@/images/androidApplication/img_androidLetDevelopBg.webp';
 import AndroidAppLetDevelopTabletBg from '@/images/androidApplication/img_androidLetDevelopTabletBg@2x.webp';
 import AndroidAppLetDevelopMobileBg from '@/images/androidApplication/img_androidLetDevelopMobileBg.webp';
@@ -47,15 +52,12 @@ import AndroidAppStartBlockBg from '@/images/androidApplication/startBlock/img_a
 import AndroidAppStartBlockTabletBg from '@/images/androidApplication/startBlock/img_android_app_start_block_tablet_bg@2x.png';
 import AndroidAppStartBlockMobileBg from '@/images/androidApplication/startBlock/img_android_app_start_block_mobile_bg@2x.png';
 import AndroidPageImg from '@/images/androidApplication/startBlock/img_right_col_bg@2x.png';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import approachBlockClasses from './tailwind/approachSection';
 import IndustriesBgXXXL from '@/images/industriesWeServe/img_bgXXXL.webp';
 import IndustriesBg from '@/images/industriesWeServe/img_bg.webp';
 import IndustriesBgTablet from '@/images/industriesWeServe/img_bgTablet.webp';
 import IndustriesBgMobile from '@/images/industriesWeServe/img_bgMobile.webp';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
 
-function AndroidApplicationPageView() {
+function AndroidApplicationPageView({ achievements }:IAchievements) {
   const {
     screenSizes: {
       isMDDevice,
@@ -106,7 +108,7 @@ function AndroidApplicationPageView() {
         rightImg={AndroidPageImg}
       />
       <AndroidAppOffer />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <DevelopmentServicesWhite
         title={androidAppDevelopmentData.title}
         description={androidAppDevelopmentData.desc}
@@ -232,13 +234,15 @@ function AndroidApplicationPageView() {
         title={androidAppTrustUsBlockData.title}
         dropBlockTitle={androidAppTrustUsBlockData.lastCardTitle}
         dropBlockBtnTitle={androidAppTrustUsBlockData.btnTitle}
-        variant={CardBlockVariant.ANDROID}
         classes={{
-          dropBlock: `!bg-black !w-full !relative !z-[2] !p-[20px] !justify-between
-          screen-xl:!h-[320px] screen-xl:!justify-start screen-xl:!p-[84px_30px]
-          screen-md:!h-[320px] screen-md:!justify-between screen-md:!p-[20px]`,
-          dropBlockTitle: 'screen-xl:!pb-[40px]',
-          buttonWrapper: 'screen-xl:!w-[420px] screen-xl:!max-w-[420px] screen-md:!w-full',
+          sectionTitle: '!max-w-[1078px] screen-lg:!mb-[40px] screen-md:!mb-[30px]',
+          CardsBlockClasses: {
+            dropBlock: `!bg-black !w-full !relative !z-[2] !p-[20px] !justify-between
+            screen-xl:!h-[320px] screen-xl:!justify-start screen-xl:!p-[84px_30px]
+            screen-md:!h-[320px] screen-md:!justify-between screen-md:!p-[20px]`,
+            dropBlockTitle: 'screen-xl:!pb-[40px]',
+            buttonWrapper: 'screen-xl:!w-[420px] screen-xl:!max-w-[420px] screen-md:!w-full',
+          },
         }}
       />
       <TechnologiesBlock

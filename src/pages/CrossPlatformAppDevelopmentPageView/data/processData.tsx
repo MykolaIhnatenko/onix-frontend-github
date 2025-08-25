@@ -1,3 +1,7 @@
+import { IProcessImage, IProcessAccordionItem } from '../../MainPage/interfaces/IProcess';
+import MainTitle from '../../../components/MainTitle/MainTitle';
+import ContentText from '../../../components/ContentText/ContentText';
+
 import CrossPlatformSupportMobileImage from '@/images/crossplatformDesign/img_support_mobile.webp';
 import CrossPlatformSupportTabletImage from '@/images/crossplatformDesign/img_support_tablet.webp';
 import CrossPlatformSupportImage from '@/images/crossplatformDesign/img_support.webp';
@@ -16,9 +20,6 @@ import CrossPlatformDevelopmentMobileImage from '@/images/crossplatformDesign/im
 import CrossPlatformDeploymentImage from '@/images/crossplatformDesign/img_deployment.webp';
 import CrossPlatformDeploymentTabletImage from '@/images/crossplatformDesign/img_deployment_tablet.webp';
 import CrossPlatformDeploymentMobileImage from '@/images/crossplatformDesign/img_deployment_mobile.webp';
-import { IProcessImage, IProcessAccordionItem } from '../../MainPage/interfaces/IProcess';
-import MainTitle from '../../../components/MainTitle/MainTitle';
-import ContentText from '../../../components/ContentText/ContentText';
 
 export const processImages: IProcessImage[] = [
   {

@@ -1,8 +1,9 @@
+import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
+
 import MotionGraphicsCooperateBlockItem1 from '@/images/motionGraphics/cooperateBlock/img_1@2x.webp';
 import MotionGraphicsCooperateBlockItem2 from '@/images/motionGraphics/cooperateBlock/img_2@2x.webp';
 import MotionGraphicsCooperateBlockItem3 from '@/images/motionGraphics/cooperateBlock/img_3@2x.webp';
 import MotionGraphicsCooperateBlockItem4 from '@/images/motionGraphics/cooperateBlock/img_4@2x.webp';
-import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
 const motionGraphicsCooperateBlockData: IAccordionHorizontalData[] = [
   {

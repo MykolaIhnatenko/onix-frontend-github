@@ -15,7 +15,7 @@ import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 function CallToActionComponent({
   background, title, content,
   withButton, btnText, buttonType = ButtonTypes.LIGHT, buttonPathVariant, tag = 'h2',
-  classes, onClick, sizesBg = '100vw', id, btnFontSizeSmallOnMobile,
+  classes, onClick, sizesBg = '100vw', id, btnFontSizeSmallOnMobile, isJakarta,
 }: ICallToActionBlock) {
   const dispatch = useDispatch();
   const router = useRouter();
@@ -92,6 +92,7 @@ function CallToActionComponent({
             text={btnText}
             fontSizeSmallOnMobile={btnFontSizeSmallOnMobile}
             onClick={() => btnOnClick()}
+            isJakarta={isJakarta}
           />
         )}
         {withButton && btnText && buttonType !== ButtonTypes.LIGHT && (
@@ -104,6 +105,7 @@ function CallToActionComponent({
             fontSizeSmallOnMobile={btnFontSizeSmallOnMobile}
             text={btnText}
             onClick={() => btnOnClick()}
+            isJakarta={isJakarta}
           />
         )}
       </div>

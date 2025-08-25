@@ -2,7 +2,7 @@ import Layout from '../src/layout/Layout';
 import VyraCasePageView from '../src/pages/VyraCasePageView/VyraCasePageView';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import { TitlePages } from '../src/constants/enums';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';

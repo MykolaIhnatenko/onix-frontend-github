@@ -5,9 +5,6 @@ import Layout from '../../layout/Layout';
 import { ICategoryBlogsPageView } from '../../interfaces/ICategories';
 import CategoryDescriptionBlock from '../../components/CategoryDescriprionBlock/CategoryDescriptionBlock';
 import PageContainer from '../../components/PageContainer/PageContainer';
-import CategoryPageBg from '@/images/category/img_category_page@2x.webp';
-import CategoryPageBgTablet from '@/images/category/img_category_page_tablet@2x.webp';
-import CategoryPageBgMobile from '@/images/category/img_category_page_mobile@2x.webp';
 import useBackground from '../../hook/useBackground';
 import ImageComponent from '../../components/Image/Image';
 import Category from '../Blogs/components/Category';
@@ -18,6 +15,9 @@ import { IApp } from '../../store/app/interfaces/IApp';
 import BlogPreviewsSelector from '../Blogs/components/BlogPreviewsSelector';
 import BlogPreview from '../Blogs/components/BlogPreview';
 
+import CategoryPageBgMobile from '@/images/category/img_category_page_mobile@2x.webp';
+import CategoryPageBgTablet from '@/images/category/img_category_page_tablet@2x.webp';
+import CategoryPageBg from '@/images/category/img_category_page@2x.webp';
 import styles from './sass/categoryBlogsPage.module.scss';
 
 function CategoryBlogs({

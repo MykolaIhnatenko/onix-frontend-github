@@ -22,6 +22,11 @@ import IPageStatus from 'interfaces/IPageStatus';
 import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 import TestimonialVideoSection from 'components/TestimonialVideoSection/TestimonialVideoSection';
 import resultsBlockWhite from 'constants/tailwindStyle';
+import accordionData from './data/accordionData';
+import NowWhatAccordionBlock from './components/NowWhatAccordionBlock';
+import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -34,10 +39,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import accordionData from './data/accordionData';
-import NowWhatAccordionBlock from './components/NowWhatAccordionBlock';
-import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function NowWhatPageView({ saleUrl }: IPageStatus) {
   const {

@@ -5,7 +5,7 @@ import ButtonTemplate from '../ButtonTemplate/ButtonTemplate';
 function ButtonLight({
   text, styleContainer, hasArrow, id,
   onClick, disabled, arrowVariant,
-  fontSizeSmallOnMobile, classes, typeButton,
+  fontSizeSmallOnMobile, classes, typeButton, isJakarta,
 }: IButton) {
   return (
     <ButtonTemplate
@@ -18,6 +18,7 @@ function ButtonLight({
       arrowVariant={arrowVariant}
       fontSizeSmallOnMobile={fontSizeSmallOnMobile}
       typeButton={typeButton}
+      isJakarta={isJakarta}
       classes={{
         ...classes,
         customContainer: `

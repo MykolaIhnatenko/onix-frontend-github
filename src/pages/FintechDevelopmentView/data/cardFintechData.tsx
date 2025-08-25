@@ -1,12 +1,13 @@
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+import ItemList from 'components/ItemList/ItemList';
+
 import PaymentsAndWallets from '@/images/fintech/img_PaymentsAndWallets.webp';
 import InvestmentManagment from '@/images/fintech/img_InvestmentManagment.webp';
 import TraidingAndExchanges from '@/images/fintech/img_TraidingAndExchanges.webp';
 import LendingAndAlternative from '@/images/fintech/img_LendingAndAlternative.webp';
 import BankingAndFinance from '@/images/fintech/img_BankingAndFinance.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
-import ItemList from 'components/ItemList/ItemList';
 
 const cardFintechData: IAccordionData[] = [
   {

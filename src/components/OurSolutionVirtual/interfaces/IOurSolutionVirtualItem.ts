@@ -14,6 +14,7 @@ export interface IOurSolutionVirtualItem {
     textContainer?: string;
     cardItemTitle?: string;
     cardItemText?: string;
+    image?: string;
   };
 }
 

@@ -4,9 +4,9 @@ import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import ICareerInfoBlock from '../interfaces/ICareerInfoBlock';
-import CareerInfoBg from '@/images/singleCareer/careerInfo/img_CareerInfoBg2x.webp';
 import getImageCareer from '../../../utils/getImageCareer';
 
+import CareerInfoBg from '@/images/singleCareer/careerInfo/img_CareerInfoBg2x.webp';
 import styles from '../sass/CareerInfoBlock.module.scss';
 
 function CareerInfoBlock({

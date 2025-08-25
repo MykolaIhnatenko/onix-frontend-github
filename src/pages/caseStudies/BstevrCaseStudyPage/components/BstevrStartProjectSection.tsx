@@ -2,8 +2,8 @@ import BstevrContentBlock from './BstevrContentBlock';
 import VRARContent from '../../../../components/VRARContent/VRARContent';
 import ImageComponent from '../../../../components/Image/Image';
 import bstevrStartProjectData from '../data/bstevrStartProjectData';
-import StartProject from '@/images/BstevrCaseSudy/img_startOfTheProject.webp';
 
+import StartProject from '@/images/BstevrCaseSudy/img_startOfTheProject.webp';
 import styles from '../sass/bstevrContentBlock.module.scss';
 
 function BstevrStartProjectSection() {

@@ -5,11 +5,11 @@ import NetstatAnimationH2 from './NetstatAnimationH2';
 import NetstatAnimationText from './NetstatAnimationText';
 import NetstatAnimationBlock from './NetstatAnimationBlock';
 import ImageComponent from '../../../components/Image/Image';
+import { useAppSelector } from 'hook/reduxToolkit';
+
 import PriceImg2x from '@/images/NetstatPage/img_netstat-price-img2x.webp';
 import PriceImgMobile2x from '@/images/NetstatPage/img_netstat-price-img-mobile2x.webp';
 import PriceFrame2x from '@/images/NetstatPage/img_price-frame@2x.webp';
-import { useAppSelector } from 'hook/reduxToolkit';
-
 import netstatStyles from '../sass/netstat.module.scss';
 
 function NetstatPrice() {

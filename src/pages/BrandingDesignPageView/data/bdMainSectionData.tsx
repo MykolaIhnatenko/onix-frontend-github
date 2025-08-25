@@ -1,10 +1,11 @@
+import { IBDMainSectionData } from '../interfaces/IBDMainSection';
+
 import BDImgSlideMobileThird from '@/images/brandingDesign/img_bd_img_slide_mobile_third.webp';
 import BDImgSlideMobileSecond from '@/images/brandingDesign/img_bd_img_slide_mobile_second.webp';
 import BDImgSlideMobileFirst from '@/images/brandingDesign/img_bd_img_slide_mobile_first.webp';
 import BDImgSlideThird from '@/images/brandingDesign/img_bd_img_slide_third.webp';
 import BDImgSlideSecond from '@/images/brandingDesign/img_bd_img_slide_second.webp';
 import BDImgSlideFirst from '@/images/brandingDesign/img_bd_img_slide_first.webp';
-import { IBDMainSectionData } from '../interfaces/IBDMainSection';
 
 const bdMainSectionData: IBDMainSectionData[] = [
   {

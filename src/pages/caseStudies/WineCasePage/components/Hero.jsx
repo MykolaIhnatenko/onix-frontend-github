@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import ImageComponent from '../../../../components/Image/Image';
-import WineBanner from '@/images/caseStudiesPage/WineCasePage/img_wine_banner.webp';
+import WineBanner from '../../../../assets/images/caseStudiesPage/WineCasePage/img_wine_banner.webp';
 
 import workInsideStyles from '../sass/WorkInside.module.scss';
 import wineCaseStyles from '../sass/WorkWineCase.module.scss';

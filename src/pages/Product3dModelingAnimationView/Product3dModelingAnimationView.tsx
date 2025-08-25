@@ -16,6 +16,10 @@ import MainSectionBgTablet from '../../assets/images/product3d/img_productMainTa
 import MainSectionBgMobile from '../../assets/images/product3d/img_productMainMobile.webp';
 import ourSolutionsData from './data/ourSolutionsData';
 import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -24,9 +28,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function Product3dModelingAnimationView({ saleUrl }: IPageStatus) {
   const {
@@ -68,10 +69,13 @@ function Product3dModelingAnimationView({ saleUrl }: IPageStatus) {
         classes={{
           video: 'object-cover',
           videoPlayer: '!aspect-auto',
-          container: 'h-full',
+          videoContainer: 'h-full',
+          titleScreen: '!items-start p-[294px_70px_0] min-xxxl:p-[294px_80px_0] ',
+          container: 'after:content-[\'\'] after:absolute after:inset-0 after:bottom-0 after:left-0 '
+            + ' after:w-full after:h-full after:bg-gradient-to-l after:from-transparent after:to-black '
+            + 'screen-lg:after:bg-[linear-gradient(0deg,_rgba(255,255,255,0)_0%,_rgb(0,0,0)_100%)]',
         }}
         idVideoBlock="product3dModelingAnimation"
-        styleContainer="product3dModelingAnimation"
       />
       <AboutProjectSection
         content={aboutData.content}

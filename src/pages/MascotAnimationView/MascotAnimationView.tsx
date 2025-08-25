@@ -12,18 +12,19 @@ import VRARCallToActionComponent from 'components/VRARCallToActionBlock/VRARCall
 import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
 import coreTechnologyData from './data/coreTechnologyData.json';
 import MainBg from '../../assets/images/MascotAnimation/img_MainMascotAnimation.webp';
-import MainBgTablet from '@/images/MascotAnimation/img_MainMascotAnimationTablet.webp';
-import MainBgMobile from '@/images/MascotAnimation/img_MainMascotAnimationMobile.webp';
 import ourSolutionsContentData from './data/ourSolutionsContentData';
 import TextBlock from './components/TextBlock';
 import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
+import MainBgTablet from '@/images/MascotAnimation/img_MainMascotAnimationTablet.webp';
+import MainBgMobile from '@/images/MascotAnimation/img_MainMascotAnimationMobile.webp';
 import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function MascotAnimationView({ saleUrl }: IPageStatus) {
   const {

@@ -1,3 +1,5 @@
+import { ITabData } from 'components/TabsBlock/interfaces/ITab';
+
 import TravelTailFeaturesImage1 from '@/images/travelTail/featuresSection/img_features1@2x.webp';
 import TravelTailFeaturesImage2 from '@/images/travelTail/featuresSection/img_features2@2x.webp';
 import TravelTailFeaturesImage3 from '@/images/travelTail/featuresSection/img_features3@2x.webp';
@@ -7,7 +9,6 @@ import TravelTailFeaturesImageMobile3 from '@/images/travelTail/featuresSection/
 import TravelTailFeaturesImageTablet1 from '@/images/travelTail/featuresSection/img_features_tablet1@2x.webp';
 import TravelTailFeaturesImageTablet2 from '@/images/travelTail/featuresSection/img_features_tablet2@2x.webp';
 import TravelTailFeaturesImageTablet3 from '@/images/travelTail/featuresSection/img_features_tablet3@2x.webp';
-import { ITabData } from 'components/TabsBlock/interfaces/ITab';
 
 const solutionsContent: ITabData[] = [
   {

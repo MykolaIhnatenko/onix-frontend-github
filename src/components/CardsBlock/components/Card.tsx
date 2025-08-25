@@ -1,14 +1,16 @@
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
-import IconCircleWithEye from '../../../assets/icon/ic_circleWithEye.svg';
+import IconCircleWithEye from '../../../assets/icon/ic_eye_white.svg';
+import IconCircleBlackEye from '../../../assets/icon/ic_eye_black.svg';
 import VRARContent from '../../VRARContent/VRARContent';
 import { ICardProps } from '../interfaces/ICardsBlock';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
 
 function Card({
-  id, title, content, activeId, setActiveId, classes, list, withoutAnimate, cardIndex,
+  id, title, content, activeId, setActiveId, classes, list, withoutAnimate, cardIndex, isJakarta,
+  hiddenTitleInTablet = false,
 }: ICardProps) {
   const {
     screenSizes: { isMDDevice, isSMDevice, isXSDevice },
@@ -48,8 +50,10 @@ function Card({
             min-xl:text-[36px] min-xl:leading-[46px]
             min-xxxl:text-[40px] min-xxxl:leading-[56px]
             group-hover:min-lg:text-white
+            ${(activeId === id && hiddenTitleInTablet) ? 'hidden' : ''}
             ${activeId === id ? 'text-white' : ''}
             ${classes?.title || ''}
+            ${isJakarta ? '!font-jakartaSans normal-case !font-medium tracking-[-0.01em]' : ''}
           `}
         >
           {title}
@@ -62,20 +66,34 @@ function Card({
               font-generalSans font-medium text-[24px] leading-[32px]
               min-md:text-[24px] min-md:leading-[34px] min-xl:text-[36px] min-xl:leading-[46px]
               ${classes?.iconText || ''}
+              ${isJakarta ? '!font-jakartaSans normal-case !font-medium tracking-[-0.01em]' : ''}
             `}
           >
             {id}
           </span>
         </VRARContent>
-        <IconCircleWithEye
-          className={`
+        {activeId === id ? (
+          <IconCircleWithEye
+            className={`
             w-[54px] h-[54px] z-[4] relative mix-blend-difference select-none no-tap-highlight
             min-lg:hidden
             ${activeId === id ? 'text-white' : ''}
             ${classes?.icon || ''}
           `}
-          onClick={() => onClickHandler(id)}
-        />
+            onClick={() => onClickHandler(id)}
+          />
+        ) : (
+          <IconCircleBlackEye
+            className={`
+            w-[54px] h-[54px] z-[4] relative mix-blend-difference select-none no-tap-highlight
+            min-lg:hidden
+            ${activeId === id ? 'text-white' : ''}
+            ${classes?.icon || ''}
+          `}
+            onClick={() => onClickHandler(id)}
+          />
+        )}
+
       </div>
       <div
         className={`
@@ -85,6 +103,7 @@ function Card({
           min-lg:p-[30px]
           group-hover:min-lg:h-full group-hover:min-lg:z-[2] group-hover:min-lg:[transform:translate(0,0)]
           ${activeId === id ? 'h-full z-[2] [transform:translate(0,0)!important]' : ''}
+          ${isJakarta ? 'screen-lg:items-start' : ''}
           ${classes?.content || ''}
         `}
       >
@@ -97,6 +116,7 @@ function Card({
                   min-md:pr-[20px] min-lg:pr-0 min-xl:text-[18px] group-hover:min-lg:text-white
                   ${activeId === id ? 'text-white' : ''}
                   ${classes?.boxText || ''}
+                  ${isJakarta ? '!font-jakartaSans normal-case !font-medium tracking-[-0.01em]' : ''}
                 `}
                 style={{ flexBasis: 'calc(100% - 54px)' }}
               >

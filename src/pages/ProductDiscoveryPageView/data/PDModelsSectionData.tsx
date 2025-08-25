@@ -1,9 +1,9 @@
 import { IModelsSectionData } from 'components/ModelsSection/interfaces/IModelsSection';
+
 import PDModelsSectionBg from '@/images/productDiscovery/img_PDModelsSectionBg@2x.webp';
 import PDModelsSection2Bg from '@/images/productDiscovery/img_PDModelsSection2Bg.webp';
 import PDModelsSectionTabletBg from '@/images/productDiscovery/img_PDModelsSectionTabletBg@2x.webp';
 import PDModelsSectionMobileBg from '@/images/productDiscovery/img_PDModelsSectionMobileBg@2x.webp';
-
 import styles from '../sass/PDModelsSection.module.scss';
 
 const modelsData: IModelsSectionData[] = [

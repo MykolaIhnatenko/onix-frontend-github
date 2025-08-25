@@ -1,4 +1,5 @@
 import machineModelsData from './machineLModelsData';
+
 import MachineBgModels from '@/images/machineLearning/models/img_machine_bg_models.webp';
 
 const machineLModelsSectionData = {

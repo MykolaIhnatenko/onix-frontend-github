@@ -1,6 +1,7 @@
 import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import { IProcessAccordionItem, IProcessImage } from '../../MainPage/interfaces/IProcess';
+
 import ImgXXXLWebp1 from '@/images/mainPage/processBlock/img_xxxl_1@2x.webp';
 import ImgXXXLWebp2 from '@/images/mainPage/processBlock/img_xxxl_2@2x.webp';
 import ImgXXXLWebp3 from '@/images/mainPage/processBlock/img_xxxl_3@2x.webp';

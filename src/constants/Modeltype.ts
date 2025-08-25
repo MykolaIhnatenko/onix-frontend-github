@@ -1,5 +1,5 @@
 enum Modeltype {
-  LEAVE_SO_SOON = 'Leave So Soon',
+  MAIN_PAGE = 'Main Page',
   CONTACT_FORM_POP_UP = 'Contact Form Pop-Up',
   CONTACT_FORM_PAGE = 'Contact Form Page',
   CAREERS_FORM = 'Careers Form',

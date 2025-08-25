@@ -2,8 +2,8 @@ import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import { ITechStackProps } from '../interfaces/IShipVRSimulatorPage';
 import technologies from '../data/technologiesData';
-import BottomVideo from '@/images/shipVrSimulatorCasePage/img_introduction-video@2x.webp';
 
+import BottomVideo from '@/images/shipVrSimulatorCasePage/img_introduction-video@2x.webp';
 import styles from '../sass/shipVrSimulatorCasePage.module.scss';
 
 function TechStack({ bottomVideoClicked, handleVideoClick, isBigTablet }: ITechStackProps) {

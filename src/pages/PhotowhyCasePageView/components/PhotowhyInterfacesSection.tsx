@@ -2,8 +2,8 @@ import ImageComponent from '../../../components/Image/Image';
 import Icon from '../../../assets/icon';
 import interfacesFirstCard from '../data/interfacesFirstCard.json';
 import interfacesSecondCard from '../data/interfacesSecondCard.json';
-import FirstCardBg from '@/images/Photowhy/img_first_card_bg.webp';
 
+import FirstCardBg from '@/images/Photowhy/img_first_card_bg.webp';
 import styles from '../sass/photowhyInterfacesSection.module.scss';
 
 function PhotowhyInterfacesSection() {

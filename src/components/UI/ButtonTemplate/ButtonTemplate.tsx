@@ -8,7 +8,7 @@ function ButtonTemplate({
   text, styleContainer, hasArrow = true, id,
   onClick, disabled, arrowVariant,
   fontSizeSmallOnMobile, classes,
-  typeButton = 'button',
+  typeButton = 'button', isJakarta = false,
 }: IButtonTemplate) {
   return (
     <motion.button
@@ -35,6 +35,7 @@ function ButtonTemplate({
         <span className={`
             ${defaultStyles.text}
             ${fontSizeSmallOnMobile ? defaultStyles.fontSizeSmallOnMobile : ''}
+            ${isJakarta ? '!font-jakartaSans normal-case' : ''}
             ${classes?.textContainer || ''}
           `}
         >

@@ -1,0 +1,62 @@
+import { createAsyncThunk } from '@reduxjs/toolkit';
+
+import { clientIdGA, sourseBusterData } from '../../../utils/customerJourneyMap';
+import { ISubscribeFormSendValues, ISubscribeFormMainValues } from './interfaces/ISubscribeForm';
+import blogsFormThankHelper from '../../../utils/blogsFormThankHelper';
+import blacklistedEmails from 'constants/blacklistedEmails';
+
+interface ISendSubscribeFormMessage {
+  values: ISubscribeFormMainValues;
+}
+
+const onSendSubscribeFormMainMessage = createAsyncThunk(
+  'app/onSendSubscribeFormMainMessage',
+  async ({ values }: ISendSubscribeFormMessage, { rejectWithValue }) => {
+    try {
+      const formData = new FormData();
+      const sbData = sourseBusterData();
+      const formattedValues: ISubscribeFormSendValues = {
+        ...values,
+      };
+
+      const isBlacklisted = blacklistedEmails.includes(values.email.trim().toLowerCase());
+      if (isBlacklisted) {
+        return {
+          data: true,
+        };
+      }
+
+      Object.keys(formattedValues).forEach((key) => {
+        formData.set(key, formattedValues[key as keyof typeof values]);
+      });
+
+      Object.keys(sbData).forEach((key) => {
+        formData.append(key, sbData[key as keyof typeof sbData]);
+      });
+      formData.append('clientIdGA', clientIdGA());
+      const {
+        name, email, position,
+      } = values;
+
+      const subscriber = {
+        email,
+        fields: {
+          name,
+          position,
+        },
+        groups: ['73933072378103795'],
+      };
+
+      const { data, subscribeData } = await blogsFormThankHelper(formData, subscriber);
+
+      if (data.ok && subscribeData.ok) {
+        return true;
+      }
+      return rejectWithValue('Error');
+    } catch (error) {
+      return rejectWithValue(error);
+    }
+  },
+);
+
+export default onSendSubscribeFormMainMessage;

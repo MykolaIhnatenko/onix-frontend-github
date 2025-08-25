@@ -21,11 +21,16 @@ import faqData from './data/faqData';
 import trustUsCardsData, { trustUsCardsContent } from './data/trustUsCardsData';
 import {
   ButtonPathVariant,
-  ButtonType, CardBlockVariant,
+  ButtonType,
   DropBlockVariant, ScrollVariant,
 } from '../../constants/enums';
 import { processAccordionData, processImages } from '../MainPage/data/processData';
 import processBlockContent from './data/processData';
+import { trustUsBlockFor6Cards } from 'constants/tailwindStyle';
+import CooperateBlock from 'components/CooperateBlock/CooperateBlock';
+import cooperateList from './data/cooperateListData';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+
 import ServicesTurstUsBgMobile from '@/images/services/img_trust_us_bg_mobile@2x.webp';
 import ServicesCallToActionMobile4 from '@/images/img_lastCtaMobile@2x.webp';
 import ServicesCallToActionTablet4 from '@/images/img_lastCtaTablet@2x.webp';
@@ -39,14 +44,10 @@ import ServicesCallToAction2 from '@/images/services/img_call_to_action2@2x.webp
 import ServicesCallToActionMobile1 from '@/images/services/img_call_to_action1_mobile@2x.webp';
 import ServicesCallToActionTablet1 from '@/images/services/img_call_to_action1_tablet@2x.webp';
 import ServicesCallToAction1 from '@/images/services/img_call_to_action1@2x.webp';
-import { trustUsBlockFor6Cards } from 'constants/tailwindStyle';
-import CooperateBlock from 'components/CooperateBlock/CooperateBlock';
-import cooperateList from './data/cooperateListData';
 import IndustriesBgXXXL from '@/images/industriesWeServe/img_bgXXXL.webp';
 import IndustriesBg from '@/images/industriesWeServe/img_bg.webp';
 import IndustriesBgTablet from '@/images/industriesWeServe/img_bgTablet.webp';
 import IndustriesBgMobile from '@/images/industriesWeServe/img_bgMobile.webp';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
 import CaseStudiesBg from '@/images/caseStudiesBlock/img_bottomBg.webp';
 import CaseStudiesBgTablet from '@/images/caseStudiesBlock/img_bottomBgTablet.webp';
 
@@ -155,10 +156,14 @@ function ServicesPageView({ pageBlogs }: IPageBlogs) {
         title={trustUsCardsContent.title}
         subtitle={trustUsCardsContent.text}
         buttonText={isXSDevice ? 'Speak to our expert' : 'Tell us about your product idea'}
-        variant={CardBlockVariant.SERVICES}
         classes={{
-          cardClasses: {
-            card: trustUsBlockFor6Cards,
+          container: '!pt-0 min-md:!pt-[80px]',
+          sectionTitle: `!mb-[50px] !max-w-[368px] min-md:!max-w-[565px] min-md:!mb-[30px]
+          min-lg:!max-w-[800px] min-lg:!mb-[40px]`,
+          CardsBlockClasses: {
+            cardClasses: {
+              card: trustUsBlockFor6Cards,
+            },
           },
         }}
         mobileBg={ServicesTurstUsBgMobile}

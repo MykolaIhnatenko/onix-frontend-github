@@ -8,7 +8,7 @@ import IPages from '../src/interfaces/IPages';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
@@ -16,6 +16,7 @@ function QAServicesPage({
   seoData, footerContent, pageBlogs,
 }: IPages) {
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.QA, TitlePages.SERVICES);
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -27,7 +28,7 @@ function QAServicesPage({
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <QAServicesPageView pageBlogs={pageBlogs} />
+      <QAServicesPageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

@@ -6,8 +6,6 @@ import {
 } from './data/bookingPlatform';
 import VRARContent from 'components/VRARContent/VRARContent';
 import ITravelbidView from './interfaces/ITravelbidView';
-import ResultsBigPicture from '@/images/travelbid/img_results-big-picture.webp';
-import ResultsSmallPicture from '@/images/travelbid/img_results-small-picture.webp';
 import ImageComponent from '../../components/Image/Image';
 import MainSection from './components/MainSection';
 import DesignProcessSection from './components/DesignProcessSection';
@@ -18,6 +16,8 @@ import ProblemsSection from './components/ProblemsSection';
 import { ButtonType } from 'constants/enums';
 import { useAppSelector } from 'hook/reduxToolkit';
 
+import ResultsSmallPicture from '@/images/travelbid/img_results-small-picture.webp';
+import ResultsBigPicture from '@/images/travelbid/img_results-big-picture.webp';
 import styles from './sass/TravelbidView.module.scss';
 
 function TravelbidView({ saleUrl }: ITravelbidView) {
@@ -278,6 +278,7 @@ function TravelbidView({ saleUrl }: ITravelbidView) {
           <div className={styles.smallPhone}>
             <ImageComponent
               src={ResultsSmallPicture}
+              alt="Travelbid Results Small Picture"
               width={250}
               height={542}
             />
@@ -285,6 +286,7 @@ function TravelbidView({ saleUrl }: ITravelbidView) {
           <div className={styles.bigPhone}>
             <ImageComponent
               sizes="100vw"
+              alt="Travelbid Results Big Picture"
               src={ResultsBigPicture}
               width={880}
               height={480}

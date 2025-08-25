@@ -2,10 +2,10 @@ import useBackground from '../../../hook/useBackground';
 import ImageComponent from '../../../components/Image/Image';
 import NumbersBlock from '../../../components/NumbersBlock/NumbersBlock';
 import numbersData from '../../UxAuditServicesPageView/data/numbersBenefitsData';
+
 import HealthcareNumbersBlockTabletBg from '@/images/healthcare/numberBlock/img_number_block_tablet_bg@2x.webp';
 import HealthcareNumbersBlockMobileBg from '@/images/healthcare/numberBlock/img_number_block_mobile_bg@2x.webp';
 import HealthcareNumbersBlockBg from '@/images/healthcare/numberBlock/img_number_block_bg@2x.webp';
-
 import styles from '../sass/healthcareNumbersBlock.module.scss';
 
 function HealthcareNumbersBlock() {

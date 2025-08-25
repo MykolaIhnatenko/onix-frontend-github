@@ -11,6 +11,15 @@ import ourSolutionsData from './data/ourSolutionsData';
 import coreTechnologyData from './data/coreTechnologyData.json';
 import runningRowsBlockData from './data/runningRowsBlockData';
 import resultsBlockSecondData from './data/resultsBlockSecondData';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
+import ScrollTextAnimation from 'components/ScrollTextAnimation/ScrollTextAnimation';
+import ImageBlock from './components/ImageBlock';
+import MainBlock from './components/MainBlock';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -29,18 +38,10 @@ import ResultXXXLBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteXXXLBg@2x
 import ImageBlockBg from '@/images/joobs/imageBlock/img_imageBlock.webp';
 import ImageBlockBgTablet from '@/images/joobs/imageBlock/img_imageBlockTablet.webp';
 import ImageBlockBgMobile from '@/images/joobs/imageBlock/img_imageBlockMobile.webp';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
-import ScrollTextAnimation from 'components/ScrollTextAnimation/ScrollTextAnimation';
-import ImageBlock from './components/ImageBlock';
-import MainBlock from './components/MainBlock';
 import MacImg from '@/images/joobs/mainBlock/img_mac.webp';
 import MainBg from '@/images/joobs/mainBlock/img_mainBg.webp';
 import MainBgTablet from '@/images/joobs/mainBlock/img_mainBgTablet.webp';
 import MainBgMobile from '@/images/joobs/mainBlock/img_mainBgMobile.webp';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function JoobsCaseView({ saleUrl }: IPageStatus) {
   const {
@@ -111,8 +112,8 @@ function JoobsCaseView({ saleUrl }: IPageStatus) {
           background={getBackground().ctaFirst}
           classes={{
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_15px]',
-            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[70px]
-            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black`,
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[80px]`,
             image: '!object-bottom',
             title: '!pb-[40px] !max-w-[780px] screen-lg:!max-w-[620px] screen-md:!pb-[30px] screen-md:max-w-[380px]',
           }}

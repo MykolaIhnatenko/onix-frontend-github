@@ -2,7 +2,6 @@ import UserFlow1 from '@/images/shipVrSimulatorCasePage/img_opening-sequence@2x.
 import UserFlow2 from '@/images/shipVrSimulatorCasePage/img_menu-all@2x.webp';
 import UserFlow3 from '@/images/shipVrSimulatorCasePage/img_game-beginning@2x.webp';
 import UserFlow4 from '@/images/shipVrSimulatorCasePage/img_s-mission@2x.webp';
-
 import styles from '../sass/shipVrSimulatorCasePage.module.scss';
 
 const userFlowRowContent = [

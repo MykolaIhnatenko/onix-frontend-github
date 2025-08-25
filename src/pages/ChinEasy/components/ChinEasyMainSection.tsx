@@ -7,6 +7,7 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ImageComponent from '../../../components/Image/Image';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
+
 import ChinEasyGreenHero from '@/images/chinEasy/mainSection/img_green@2x.webp';
 import ChinEasyGreenHeroTablet from '@/images/chinEasy/mainSection/img_green_tablet@2x.webp';
 import ChinEasyGreenHeroMobile from '@/images/chinEasy/mainSection/img_green_mobile@2x.webp';
@@ -22,7 +23,6 @@ import ChinEasyPurpleHeroMobile from '@/images/chinEasy/mainSection/img_purple_m
 import ChinEasyMainPhone from '@/images/chinEasy/mainSection/img_iphone@2x.webp';
 import ChinEasyMainPhoneTablet from '@/images/chinEasy/mainSection/img_iphone_tablet@2x.webp';
 import ChinEasyMainPhoneMobile from '@/images/chinEasy/mainSection/img_iphone_mobile@2x.webp';
-
 import styles from '../sass/chinEasyMainSecion.module.scss';
 
 function ChinEasyMainSection() {

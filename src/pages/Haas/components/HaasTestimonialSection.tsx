@@ -2,10 +2,10 @@ import HaasReedMore from './HaasReedMore';
 import ImageComponent from '../../../components/Image/Image';
 import testimonialContent from '../data/testimonialContent';
 import HaasText from './HaasText';
-import background from '@/images/haas/testimonialSection/img_testimonial-bg@2x.webp';
-import photo from '@/images/haas/testimonialSection/img_photo@2x.webp';
 import PageContainer from 'components/PageContainer/PageContainer';
 
+import background from '@/images/haas/testimonialSection/img_testimonial-bg@2x.webp';
+import photo from '@/images/haas/testimonialSection/img_photo@2x.webp';
 import styles from '../sass/HaasTestimonialSection.module.scss';
 
 function HaasTestimonialSection() {

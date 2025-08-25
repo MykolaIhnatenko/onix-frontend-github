@@ -5,7 +5,7 @@ import CombinedPage from '../src/pages/CombinedPage/CombinedPage';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { BreadcrumbsVariant, TitlePages } from '../src/constants/enums';
 import IPages from '../src/interfaces/IPages';
 import { getGoogleReview, getLatestBlogs } from '../src/api/api';

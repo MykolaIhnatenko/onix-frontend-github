@@ -3,14 +3,14 @@ import VRARContent from '../../../../components/VRARContent/VRARContent';
 import ImageComponent from '../../../../components/Image/Image';
 import Icon from '../../../../assets/icon';
 import bstevrAccordionData from '../data/bstevrAccordionData';
+import AccordionWhite from 'components/AccordionWhite/AccordionWhite';
+import accordionClasses from '../tailwind/accordionClasses';
+
 import MainChallenges from '@/images/BstevrCaseSudy/img_theMainChallenges.webp';
 import RecapperSystem from '@/images/BstevrCaseSudy/img_recapperSystemForAutomated.webp';
 import AccumulatedDB from '@/images/BstevrCaseSudy/img_aDatabaseThatHasAccumulatedData.webp';
 import ReliableSimulator from '@/images/BstevrCaseSudy/img_fastAndReliableSimulator.webp';
 import PicBg from '@/images/BstevrCaseSudy/img_PicBg.webp';
-import AccordionWhite from 'components/AccordionWhite/AccordionWhite';
-import accordionClasses from '../tailwind/accordionClasses';
-
 import styles from '../sass/bstevrContentBlock.module.scss';
 
 function BstevrSolutionSection() {

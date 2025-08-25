@@ -1,8 +1,8 @@
-import todayRose from '@/images/bracketology/todaySection/img_rose@2x.webp';
 import ImageComponent from '../../../components/Image/Image';
 import BracketologyPageContainer from './BracketologyPageContainer';
 import BracketologyText from './BracketologyText';
 
+import todayRose from '@/images/bracketology/todaySection/img_rose@2x.webp';
 import styles from '../sass/BracketologyTodaySection.module.scss';
 
 function BracketologyTodaySection() {

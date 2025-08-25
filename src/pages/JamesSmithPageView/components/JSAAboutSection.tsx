@@ -5,9 +5,9 @@ import VRARContent from '../../../components/VRARContent/VRARContent';
 import ImageComponent from '../../../components/Image/Image';
 import JSAText from './JSAText';
 import BlueSpan from './BlueSpan';
+
 import screens from '@/images/JamesSmith/aboutSection/img_screens.webp';
 import screensTablet from '@/images/JamesSmith/aboutSection/img_screensTablet.webp';
-
 import styles from '../sass/JSAAboutSection.module.scss';
 
 function JSAAboutSection() {

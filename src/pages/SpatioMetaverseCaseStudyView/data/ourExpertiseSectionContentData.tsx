@@ -1,12 +1,18 @@
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+
 import OurExpertie1 from '@/images/spatio/ourExpertise/img_our_expertise1.webp';
 import OurExpertie2 from '@/images/spatio/ourExpertise/img_our_expertise2.webp';
 import OurExpertie3 from '@/images/spatio/ourExpertise/img_our_expertise3.webp';
 import OurExpertie4 from '@/images/spatio/ourExpertise/img_our_expertise4.webp';
 import OurExpertie5 from '@/images/spatio/ourExpertise/img_our_expertise5.webp';
 import OurExpertie6 from '@/images/spatio/ourExpertise/img_our_expertise6.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
+
+const classes = {
+  container: '!p-[0_0_30px_70px] screen-xl:!px-0',
+  content: '!max-w-[452px] min-xxxl:!max-w-[770px] screen-xl:!w-full',
+};
 
 const ourExpertiseSectionContentData: IAccordionData[] = [
   {
@@ -18,6 +24,7 @@ const ourExpertiseSectionContentData: IAccordionData[] = [
         image={OurExpertie1}
         imageAlt="expertise-image"
         contentReverse
+        classes={classes}
       >
         <ItemText
           content={[
@@ -38,6 +45,7 @@ const ourExpertiseSectionContentData: IAccordionData[] = [
         image={OurExpertie2}
         imageAlt="expertise-image"
         contentReverse
+        classes={classes}
       >
         <ItemText
           content={[
@@ -58,6 +66,7 @@ const ourExpertiseSectionContentData: IAccordionData[] = [
         image={OurExpertie3}
         imageAlt="expertise-image"
         contentReverse
+        classes={classes}
       >
         <ItemText
           content={[
@@ -78,6 +87,7 @@ const ourExpertiseSectionContentData: IAccordionData[] = [
         image={OurExpertie4}
         imageAlt="expertise-image"
         contentReverse
+        classes={classes}
       >
         <ItemText
           content={[
@@ -98,6 +108,7 @@ const ourExpertiseSectionContentData: IAccordionData[] = [
         image={OurExpertie5}
         imageAlt="expertise-image"
         contentReverse
+        classes={classes}
       >
         <ItemText
           content={[
@@ -118,6 +129,7 @@ const ourExpertiseSectionContentData: IAccordionData[] = [
         image={OurExpertie6}
         imageAlt="expertise-image"
         contentReverse
+        classes={classes}
       >
         <ItemText
           content={[

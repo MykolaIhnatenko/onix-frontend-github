@@ -4,10 +4,10 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import ProductDiscoveryImageBlock from './ProductDiscoveryImageBlock';
 import ImageComponent from '../../../components/Image/Image';
+
 import PDMainBgImage from '@/images/productDiscovery/img_main_bg.webp';
 import PDMainBgTabletImage from '@/images/productDiscovery/img_main_bg_tablet.webp';
 import PDMainBgMobileImage from '@/images/productDiscovery/img_main_bg_mobile.webp';
-
 import styles from '../sass/ProductDiscoveryMainSection.module.scss';
 
 export default function ProductDiscoveryMainSection() {

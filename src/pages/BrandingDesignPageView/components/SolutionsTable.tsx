@@ -5,10 +5,10 @@ import PageContainer from '../../../components/PageContainer/PageContainer';
 import { IISolutionTableProps } from '../interfaces/ISolutionTable';
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
+
 import OurDevelopmentServicesBg from '@/images/brandingDesign/solutionsTable/img_ourDevelopmentServicesBg@2x.webp';
 import OurDevelopmentServicesTabletBg from '@/images/brandingDesign/solutionsTable/img_ourDevelopmentServicesTabletBg@2x.webp';
 import OurDevelopmentServicesMobileBg from '@/images/brandingDesign/solutionsTable/img_ourDevelopmentServicesMobileBg@2x.webp';
-
 import styles from '../sass/solutionTable.module.scss';
 
 function SolutionsTable({ data }:IISolutionTableProps) {

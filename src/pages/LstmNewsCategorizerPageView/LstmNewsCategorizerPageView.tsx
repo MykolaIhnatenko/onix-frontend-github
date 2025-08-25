@@ -14,16 +14,18 @@ import lstmScrollTextData from './data/lstmScrollTextData';
 import lstmCoreTechnologyData from './data/lstmCoreTechnologyData.json';
 import lstmBusinessContextDataSecond from './data/lstmBusinessContextDataSecond';
 import lstmMainBlock from './data/lstmMainBlock.json';
-import {
-  ButtonType, UsabilityTestingMainBlockVariant,
-} from '../../constants/enums';
+import { ButtonType } from '../../constants/enums';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
+import IPageStatus from 'interfaces/IPageStatus';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import MainBg from '@/images/lstmNewsCategorizerPage/mainBlock/img_mainBlock@2x.webp';
 import MainBgTablet from '@/images/lstmNewsCategorizerPage/mainBlock/img_mainBlockTablet@2x.webp';
 import MainBgMobile from '@/images/lstmNewsCategorizerPage/mainBlock/img_mainBlockMobile@2x.webp';
-import IPageStatus from 'interfaces/IPageStatus';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -32,9 +34,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function LstmNewsCategorizerPageView({ saleUrl }: IPageStatus) {
   const {
@@ -73,7 +72,20 @@ function LstmNewsCategorizerPageView({ saleUrl }: IPageStatus) {
         title={lstmMainBlock.title}
         text={lstmMainBlock.text}
         background={getBackground().mainBg}
-        variant={UsabilityTestingMainBlockVariant.LSTM_NEWS}
+        classes={{
+          container: '!text-white max-1390:!h-screen screen-md:!min-h-[570px]',
+          background: '!absolute !bottom-0 !right-0 !h-full !w-full',
+          backgroundImage: `!w-full !h-full !object-cover ![object-position:_left] screen-lg:!object-center
+            screen-md:!object-center`,
+          contentContainer: 'max-1390:!flex max-1390:!pt-0 screen-lg:!block screen-lg:!pt-[146px]',
+          content: 'max-1390:!pl-[70px] screen-lg:!pl-[30px] screen-md:!pl-[15px]',
+          title: `max-1390:!pb-[40px] max-1390:!text-[40px] max-1390:!leading-[56px] screen-lg:!pb-[30px]
+            screen-lg:!text-[40px] screen-lg:!leading-[56px] screen-md:!text-[25px]
+            screen-md:!leading-[35px] screen-md:!pb-[15px]`,
+          text: `!max-w-[610px] !text-[30px] !leading-[40px] max-1390:!max-w-[540px] screen-lg:!max-w-[533px]
+            max-1390:!text-[24px] max-1390:!leading-[34px] screen-md:!max-w-[420px] screen-md:!text-[20px]
+            screen-md:!leading-[28px]`,
+        }}
       />
       <AboutProjectSection
         title={lstmHowOnixDeveloped.blockTitle}

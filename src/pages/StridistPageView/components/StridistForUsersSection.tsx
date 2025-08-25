@@ -1,8 +1,8 @@
 import StridistForUsersBlock from './StridistForUsersBlock';
 import { forUsersListContent1, forUsersListContent2 } from '../data/forUsersListContent';
+
 import ForUsers1 from '@/images/StridistPage/img_for-users1@2x.webp';
 import ForUsers2 from '@/images/StridistPage/img_for-users2@2x.webp';
-
 import styles from '../sass/stridistForUsersSection.module.scss';
 
 function StridistForUsersSection() {

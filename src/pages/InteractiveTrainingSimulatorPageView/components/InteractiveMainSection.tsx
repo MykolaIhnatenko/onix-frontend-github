@@ -3,12 +3,12 @@ import { useMemo } from 'react';
 
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
-import MainDesk from '@/images/caseStudiesPage/InteractiveTrainingSimulator/main-bg-desk.webp';
-import MainMobile from '@/images/caseStudiesPage/InteractiveTrainingSimulator/main-bg-mobile.webp';
-import MainTablet from '@/images/caseStudiesPage/InteractiveTrainingSimulator/main-bg-tablet.webp';
 import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 
+import MainDesk from '@/images/caseStudiesPage/InteractiveTrainingSimulator/main-bg-desk.webp';
+import MainMobile from '@/images/caseStudiesPage/InteractiveTrainingSimulator/main-bg-mobile.webp';
+import MainTablet from '@/images/caseStudiesPage/InteractiveTrainingSimulator/main-bg-tablet.webp';
 import styles from '../sass/InteractiveMainSection.module.scss';
 
 function InteractiveMainSection() {

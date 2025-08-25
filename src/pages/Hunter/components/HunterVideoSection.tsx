@@ -1,6 +1,6 @@
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
-import Poster from '@/images/hunter/videoBlock/img_poster_HUNTER.webp';
 
+import Poster from '@/images/hunter/videoBlock/img_poster_HUNTER.webp';
 import styles from '../sass/hunterVideoSection.module.scss';
 
 function HunterVideoSection() {

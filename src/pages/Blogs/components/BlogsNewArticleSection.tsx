@@ -1,8 +1,5 @@
 import ImageComponent from '../../../components/Image/Image';
 import useBackground from '../../../hook/useBackground';
-import BlogsNewArticle from '@/images/blogsPage/img_new_article_blog@2x.webp';
-import BlogsNewArticleTablet from '@/images/blogsPage/img_new_article_blog_tablet@2x.webp';
-import BlogsNewArticleMobile from '@/images/blogsPage/img_new_article_blog_mobile@2x.webp';
 import { MD_DEVICE } from '../../../constants/constants';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import IBlogsNewArticleSection from '../interfaces/IBlogsNewArticleSection';
@@ -14,6 +11,9 @@ import BlogInfoBlock from './BlogInfoBlock';
 import ContentText from '../../../components/ContentText/ContentText';
 import BlogAuthorCard from '../../../components/BlogAuthorCard/BlogAuthorCard';
 
+import BlogsNewArticleMobile from '@/images/blogsPage/img_new_article_blog_mobile@2x.webp';
+import BlogsNewArticleTablet from '@/images/blogsPage/img_new_article_blog_tablet@2x.webp';
+import BlogsNewArticle from '@/images/blogsPage/img_new_article_blog@2x.webp';
 import styles from '../sass/blogsNewArticleSection.module.scss';
 
 function BlogsNewArticleSection({ newestBlog }: IBlogsNewArticleSection) {
@@ -71,7 +71,10 @@ function BlogsNewArticleSection({ newestBlog }: IBlogsNewArticleSection) {
       <PageContainer className={styles.container}>
         <BlogSubcategoryTagList
           data={relatedSubcategoryTyped.data || blogSubcategories?.data}
-          variant={BlogSubcategoryVariant.NEWEST_ARTICLE}
+          classes={{
+            container: `!flex !p-[15px] !flex-wrap !absolute !max-w-[330px]
+            min-md:!max-w-[290px] min-lg:!max-w-[407px]`,
+          }}
         />
         <div className={styles.imgContainer}>
           <ImageComponent

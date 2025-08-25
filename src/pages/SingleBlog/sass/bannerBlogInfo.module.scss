@@ -8,7 +8,9 @@
   padding: toRem(20) 0;
   border-top: 1px solid var(--color-light-gray);
   border-bottom: 1px solid var(--color-light-gray);
-  
+  flex-wrap: wrap;
+  gap: toRem(20);
+
   @media only screen and (max-width: $screen-md - 1) {
     border-bottom: unset;
     gap: toRem(20);
@@ -16,28 +18,36 @@
     align-items: start;
   }
 
-  .dateBlock {
-    gap: toRem(10);
-    display: flex;
-    align-items: center;
+  .aiBtns {
+    overflow-x: scroll;
+    max-width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    padding: 0 !important;
 
-    .circle {
-      width: toRem(4);
-      height: toRem(4);
-      background-color: var(--color-black);
-      border-radius: 50%;
+    &::-webkit-scrollbar {
+      display: none;
+      width: 6px;
+      position: absolute;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background: transparent;
+      position: absolute;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 5px;
+      position: absolute;
     }
 
-    .blogInfo {
-      margin: 0;
-      font-size: toRem(16);
-      line-height: getLineHeight(22, 16);
-      font-weight: 500;
-
-      @media only screen and (max-width: $screen-md - 1) {
-        font-size: toRem(14);
-        line-height: getLineHeight(22, 14);
-      }
+    .aiBtnsContent {
+      display: flex;
+      flex-direction: row;
+      gap: toRem(10);
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      min-width: fit-content;
     }
   }
 

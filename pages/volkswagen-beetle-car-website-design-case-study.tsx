@@ -6,7 +6,7 @@ import IPages from '../src/interfaces/IPages';
 import Layout from '../src/layout/Layout';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
 import VolkswagenBeetleCarView from '../src/pages/VolkswagenBeetleCarView/VolkswagenBeetleCarView';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { checkSaleUrl } from '../src/utils/helpers';
 import ErrorPageView from 'pages/ErrorPageView/ErrorPageView';
 

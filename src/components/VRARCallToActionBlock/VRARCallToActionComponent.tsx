@@ -16,6 +16,7 @@ import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 function VRARCallToActionComponent({
   background, title, content, id, btnFontSizeSmallOnMobile,
   withButton, btnText, buttonType = ButtonTypes.LIGHT, buttonPathVariant, tag, classes,
+  isJakarta,
 }: IVRARCallToActionBlock) {
   const dispatch = useDispatch();
   const router = useRouter();
@@ -67,6 +68,7 @@ function VRARCallToActionComponent({
                   screen-md:text-[18px] ${classes?.btn || ''}`}
                 text={btnText}
                 fontSizeSmallOnMobile={btnFontSizeSmallOnMobile}
+                isJakarta={isJakarta}
                 onClick={buttonPathVariant === ButtonPathVariant.CALCULATE
                   ? () => router.push(PageLinks.DEDICATED_TEAM_CALCULATOR)
                   : () => dispatch(setShowContactForm({ showContactForm: true }))}
@@ -78,6 +80,7 @@ function VRARCallToActionComponent({
                   screen-md:text-[18px] ${classes?.btn || ''}`}
                 text={btnText}
                 fontSizeSmallOnMobile={btnFontSizeSmallOnMobile}
+                isJakarta={isJakarta}
                 onClick={buttonPathVariant === ButtonPathVariant.CALCULATE
                   ? () => router.push(PageLinks.DEDICATED_TEAM_CALCULATOR)
                   : () => dispatch(setShowContactForm({ showContactForm: true }))}

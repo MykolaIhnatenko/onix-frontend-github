@@ -8,7 +8,7 @@ import DesignAuditServicesPageView from '../src/pages/DesignAuditServicesPageVie
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
@@ -18,6 +18,7 @@ function DigitalProductDesignServices({ seoData, footerContent, pageBlogs }:IPag
     TitlePages.SERVICES,
     TitlePages.PRODUCT_DESIGN,
   );
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -29,7 +30,7 @@ function DigitalProductDesignServices({ seoData, footerContent, pageBlogs }:IPag
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <DesignAuditServicesPageView pageBlogs={pageBlogs} />
+      <DesignAuditServicesPageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

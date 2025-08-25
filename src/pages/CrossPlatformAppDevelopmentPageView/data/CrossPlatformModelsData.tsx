@@ -1,11 +1,12 @@
 import Icon from '../../../assets/icon';
+import { IModelsSectionData } from '../../../components/ModelsSection/interfaces/IModelsSection';
+
 import IosModelBgMobile1 from '@/images/iosPage/img_model_bg_mobile1.webp';
 import IosModelBgMobile2 from '@/images/iosPage/img_model_bg_mobile2.webp';
 import IosModelBgTablet1 from '@/images/iosPage/img_model_bg_tablet1.webp';
 import IosModelBgTablet2 from '@/images/iosPage/img_model_bg_tablet2.webp';
 import IosModelBg1 from '@/images/iosPage/img_model_bg1.webp';
 import IosModelBg2 from '@/images/iosPage/img_model_bg2.webp';
-import { IModelsSectionData } from '../../../components/ModelsSection/interfaces/IModelsSection';
 
 const modelsData: IModelsSectionData[] = [
   {

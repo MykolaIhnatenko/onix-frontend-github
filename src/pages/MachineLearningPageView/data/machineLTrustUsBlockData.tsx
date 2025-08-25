@@ -1,12 +1,11 @@
 import { ITrustUsDataBlock } from '../interfaces/ITrustUsBlock';
 import ContentText from '../../../components/ContentText/ContentText';
-
-import styles from '../../MainPage/sass/trustUsBlock.module.scss';
+import { trustUsBlockSubtitle } from 'constants/tailwindStyle';
 
 const machineLTrustUsBlockData: ITrustUsDataBlock = {
   title: 'Our Machine Learning expertise ',
   subtitle: (
-    <ContentText tag="p" className={styles.sectionSubTitle}>
+    <ContentText tag="p" className={`${trustUsBlockSubtitle} !mt-0 !max-w-[none] min-lg:!max-w-[735px]`}>
       Onix is a machine learning development company committed to providing tailored solutions for your business.
       Our services help put your company in the driver&apos;s seat, allowing you to achieve maximum success.
     </ContentText>
@@ -15,16 +14,16 @@ const machineLTrustUsBlockData: ITrustUsDataBlock = {
     <>
       Curious about how machine learning can transform your business? Book your
       {' '}
-      <span className={styles.bold}>
+      <span className="font-bold">
         free
-        <span className={styles.inlineBlock}>one-hour</span>
+        <span className="inline-block">one-hour</span>
         {' '}
         consultation
       </span>
       {' '}
       or request an ML solution
       {' '}
-      <span className={styles.bold}>demo!</span>
+      <span className="font-bold">demo!</span>
     </>
   ),
   btnTitle: 'Let’s talk',

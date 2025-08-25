@@ -29,6 +29,7 @@ function ImageSection({ data, classes = {} }: IImageSection) {
       {bg && (
         <ImageComponent
           src={bg}
+          alt="Image Section Background"
           width={imgWidth}
           height={imgHeight}
           sizes="100vw"

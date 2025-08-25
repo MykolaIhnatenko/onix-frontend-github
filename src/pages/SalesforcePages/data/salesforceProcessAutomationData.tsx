@@ -10,7 +10,6 @@ import CardImg2 from '@/images/salesforceSupportAutomationApp/offerSection/img_c
 import Apex from '@/images/salesforceSupportAutomationApp/technologySection/img_apex.webp';
 import Road from '@/images/salesforceSupportAutomationApp//technologySection/img_road.webp';
 import Wave from '@/images/salesforceSupportAutomationApp/technologySection/img_wave.webp';
-
 import mainStyles from '../sass/salesforceMainSection.module.scss';
 import challengesStyles from '../sass/salesforceChallengesSection.module.scss';
 

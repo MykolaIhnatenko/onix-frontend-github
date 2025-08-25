@@ -9,7 +9,7 @@ import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import getBlogsByIds from '../src/api/getBlogsByIds';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
@@ -20,6 +20,7 @@ function IndustriesPage({
     '',
     TitlePages.INDUSTRIES,
   );
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -31,7 +32,7 @@ function IndustriesPage({
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <IndustriesPageView pageBlogs={pageBlogs} />
+      <IndustriesPageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

@@ -2,14 +2,14 @@ import { useAppSelector } from 'hook/reduxToolkit';
 import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
-import PDHowItWorksBG from '@/images/productDiscovery/img_how_the_product_work.webp';
-import PDHowItWorksTabletBG from '@/images/productDiscovery/img_how_the_product_work_tablet.webp';
-import PDHowItWorksMobileBG from '@/images/productDiscovery/img_how_the_product_work_mobile.webp';
 import ImageComponent from '../../../components/Image/Image';
 import tableData from '../data/howItWorksTableData.json';
 import StagesItem from './StagesItem';
 import ProcessDiscoveryHowItWorksStage from './ProcessDiscoveryHowItWorksStage';
 
+import PDHowItWorksMobileBG from '@/images/productDiscovery/img_how_the_product_work_mobile.webp';
+import PDHowItWorksTabletBG from '@/images/productDiscovery/img_how_the_product_work_tablet.webp';
+import PDHowItWorksBG from '@/images/productDiscovery/img_how_the_product_work.webp';
 import styles from '../sass/ProcessDiscoveryHowItWorks.module.scss';
 
 export default function ProcessDiscoveryHowItWorks() {

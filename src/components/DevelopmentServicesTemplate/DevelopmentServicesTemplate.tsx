@@ -32,6 +32,7 @@ function DevelopmentServicesTemplate({
           screen-md:h-[280px]
           ${classes?.bgImg || ''}`}
         src={customBackground || background}
+        alt="Development Services Background"
         sizes="100vw"
         quality={91}
       />

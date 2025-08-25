@@ -6,9 +6,9 @@ import JSAPageContainer from './JSAPageContainer';
 import JSAText from './JSAText';
 import BlueSpan from './BlueSpan';
 import Icon from '../../../assets/icon';
-import trainer from '@/images/JamesSmith/testimonialSection/img_trainer.webp';
 import IJSATestimonial from '../interfaces/IJSATestimonial';
 
+import trainer from '@/images/JamesSmith/testimonialSection/img_trainer.webp';
 import styles from '../sass/JSATestimonialSection.module.scss';
 
 function JSATestimonialSection({ saleUrl }: IJSATestimonial) {

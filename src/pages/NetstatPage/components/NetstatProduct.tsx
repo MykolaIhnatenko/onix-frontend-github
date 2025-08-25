@@ -4,8 +4,8 @@ import NetstatAnimationH2 from './NetstatAnimationH2';
 import NetstatAnimationText from './NetstatAnimationText';
 import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
-import ProductIcons from '@/images//NetstatPage/img_product-working-icon.webp';
 
+import ProductIcons from '@/images//NetstatPage/img_product-working-icon.webp';
 import netstatStyles from '../sass/netstat.module.scss';
 
 function NetstatProduct() {

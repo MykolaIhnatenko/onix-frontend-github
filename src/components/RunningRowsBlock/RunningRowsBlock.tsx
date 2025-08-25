@@ -79,7 +79,7 @@ function RunningRowsBlock({
                   src={item}
                   alt="screen"
                   sizes="100vw"
-                  quality={97}
+                  quality={98}
                   fill
                 />
               </motion.div>

@@ -1,5 +1,6 @@
 import Icon from '../../../assets/icon';
 import { IModelsSectionData } from '../../../components/ModelsSection/interfaces/IModelsSection';
+
 import Consultation from '@/images/scheduleDoctor/img_Consultation.webp';
 import ConsultationTablet from '@/images/scheduleDoctor/img_ConsultationTablet.webp';
 import ConsultationMobile from '@/images/scheduleDoctor/img_ConsultationMobile.webp';

@@ -4,15 +4,15 @@ import { useMemo } from 'react';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
-import FlowMobile from '@/images/caseStudiesPage/InteractiveTrainingSimulator/flow-img-mobile.webp';
-import FlowTablet from '@/images/caseStudiesPage/InteractiveTrainingSimulator/flow-img-tablet.webp';
-import Flow from '@/images/caseStudiesPage/InteractiveTrainingSimulator/flow-img.webp';
 import { flowCards, flowContent, flowLastContent } from '../data/data';
 import ImageComponent from '../../../components/Image/Image';
 import InteractiveContent from './InteractiveContent';
 import InteractiveFlowCard from './InteractiveFlowCard';
 import InteractiveTitleBlock from './InteractiveTitleBlock';
 
+import Flow from '@/images/caseStudiesPage/InteractiveTrainingSimulator/flow-img.webp';
+import FlowTablet from '@/images/caseStudiesPage/InteractiveTrainingSimulator/flow-img-tablet.webp';
+import FlowMobile from '@/images/caseStudiesPage/InteractiveTrainingSimulator/flow-img-mobile.webp';
 import styles from '../sass/InteractiveFlowSection.module.scss';
 
 function InteractiveFlowSection() {

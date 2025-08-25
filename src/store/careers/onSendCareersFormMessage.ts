@@ -2,6 +2,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 import { ICareersContactForm } from './interfaces/ICareersContactForm';
 import Modeltype from '../../constants/Modeltype';
+import blacklistedEmails from 'constants/blacklistedEmails';
 
 const onSendCareersFormMessage = createAsyncThunk(
   'careers/onSendCareersFormMessage',
@@ -11,6 +12,12 @@ const onSendCareersFormMessage = createAsyncThunk(
         name, message, email, howFoundOutAboutUs, jobVacancy, country, phone, client,
       } = values;
       const formData = new FormData();
+      const isBlacklisted = blacklistedEmails.includes(email.trim().toLowerCase());
+      if (isBlacklisted) {
+        return {
+          data: true,
+        };
+      }
       formData.append('salesChannel', 'careers');
       formData.append('name', name);
       formData.append('email', email);

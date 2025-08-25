@@ -1,5 +1,6 @@
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import { IProcessAccordionItem, IProcessImage } from '../../MainPage/interfaces/IProcess';
+
 import MotionGraphicsProcessBlockItemXl1 from '@/images/motionGraphics/processBlock/img_xl_1@2x.webp';
 import MotionGraphicsProcessBlockItemXl2 from '@/images/motionGraphics/processBlock/img_xl_2@2x.webp';
 import MotionGraphicsProcessBlockItemXl3 from '@/images/motionGraphics/processBlock/img_xl_3@2x.webp';

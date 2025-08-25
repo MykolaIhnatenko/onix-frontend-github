@@ -9,7 +9,7 @@ import getBlogsByIds from '../src/api/getBlogsByIds';
 import { sortArrById } from '../src/utils/blogsHelpers';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 

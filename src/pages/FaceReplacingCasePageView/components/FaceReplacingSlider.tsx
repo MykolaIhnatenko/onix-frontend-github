@@ -9,10 +9,10 @@ import IStore from '../../../store/interfaces/IStore';
 import { IScreenSizes } from '../../../store/app/interfaces/IApp';
 import projectPhasesData from '../data/projectPhases';
 import ImageComponent from '../../../components/Image/Image';
+
 import Bg from '@/images/caseStudiesBlock/img_bottomBg.webp';
 import BgTablet from '@/images/faceReplacingCasePage/sliderBlock/img_tablet_bg.webp';
 import BgMobile from '@/images/faceReplacingCasePage/sliderBlock/img_mobile_bg.webp';
-
 import styles from '../sass/faceReplacingSlider.module.scss';
 
 function FaceReplacingSlider() {

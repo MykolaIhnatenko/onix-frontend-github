@@ -29,6 +29,12 @@ import {
 } from '../../constants/enums';
 import { IPageBlogs } from '../../interfaces/IPages';
 import ButtonTypes from '../../constants/ButtonTypes';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import { XXXL_DEVICE } from 'constants/constants';
+import CrossPlatformModelsSectionData from './data/CrossPlatformModelsData';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import IAchievements from '../../interfaces/IAchievements';
+
 import CrossPlatformFirstImage from '@/images/crossplatformDesign/img_CrossPlatformCTAFirst@2x.webp';
 import CrossPlatformFirstImageTablet from '@/images/crossplatformDesign/img_CrossPlatformCTAFirstTablet@2x.webp';
 import CrossPlatformFirstImageMobile from '@/images/crossplatformDesign/img_CrossPlatformCTAFirstMobile@2x.webp';
@@ -42,17 +48,13 @@ import ModelsBgXXXL from '@/images/modelsSection/img_backgroundXXXL.webp';
 import ModelsBg from '@/images/modelsSection/img_background.webp';
 import ModelsBgTablet from '@/images/modelsSection/img_backgroundTablet.webp';
 import ModelsBgMobile from '@/images/modelsSection/img_backgroundMobile.webp';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import { XXXL_DEVICE } from 'constants/constants';
-import CrossPlatformModelsSectionData from './data/CrossPlatformModelsData';
 import IndustriesBgXXXL from '@/images/industriesWeServe/img_bgXXXL.webp';
 import IndustriesBg from '@/images/industriesWeServe/img_bg.webp';
 import IndustriesBgTablet from '@/images/industriesWeServe/img_bgTablet.webp';
 import IndustriesBgMobile from '@/images/industriesWeServe/img_bgMobile.webp';
 import CaseStudiesBg from '@/images/crossplatformDesign/img_bg_case_studies.webp';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
 
-function CrossPlatformAppDevelopmentPageView({ pageBlogs }: IPageBlogs) {
+function CrossPlatformAppDevelopmentPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isSMDevice,
@@ -118,7 +120,7 @@ function CrossPlatformAppDevelopmentPageView({ pageBlogs }: IPageBlogs) {
         }}
       />
       <CrossPlatformNumbersSection />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <ReviewBlock
         quotesList={quotesList}
       />

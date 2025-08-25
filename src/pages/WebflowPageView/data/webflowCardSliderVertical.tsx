@@ -1,3 +1,6 @@
+import { ICardSliderVerticalBlockData } from '../../../components/CardSliderVerticalBlock/interfaces/ICardSliderVerticalBlock';
+import Icon from '../../../assets/icon';
+
 import WebflowCardSliderItemMobileBg1 from '@/images/webflowPage/cardSliderVertical/img_card_slider_Item_mobile_bg_1.webp';
 import WebflowCardSliderItemMobileBg2 from '@/images/webflowPage/cardSliderVertical/img_card_slider_Item_mobile_bg_2.webp';
 import WebflowCardSliderItemMobileBg3 from '@/images/webflowPage/cardSliderVertical/img_card_slider_Item_mobile_bg_3.webp';
@@ -10,8 +13,6 @@ import WebflowCardSliderItemBg1 from '@/images/webflowPage/cardSliderVertical/im
 import WebflowCardSliderItemBg2 from '@/images/webflowPage/cardSliderVertical/img_card_slider_Item_bg_2.webp';
 import WebflowCardSliderItemBg3 from '@/images/webflowPage/cardSliderVertical/img_card_slider_Item_bg_3.webp';
 import WebflowCardSliderItemBg4 from '@/images/webflowPage/cardSliderVertical/img_card_slider_Item_bg_4.webp';
-import { ICardSliderVerticalBlockData } from '../../../components/CardSliderVerticalBlock/interfaces/ICardSliderVerticalBlock';
-import Icon from '../../../assets/icon';
 
 const stylesIcon = 'w-[80px] h-[80px] screen-lg:w-[60px] screen-lg:h-[60px]';
 const webflowCardSliderVertical: ICardSliderVerticalBlockData = {

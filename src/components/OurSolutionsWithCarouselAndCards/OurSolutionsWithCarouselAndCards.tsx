@@ -12,9 +12,10 @@ function OurSolutionsWithCarouselAndCards({
   carouselData,
   cardsData,
   carouselBlockBackground,
+  classes,
 }: IOurSolutionsWithCarouselAndCards) {
   return (
-    <section className="bg-white min-lg:pb-[120px]">
+    <section className={`bg-white min-lg:pb-[120px] ${classes?.section || ''}`}>
       <PageContainer
         className={`
           pt-[80px] pb-[40px] min-md:pb-[60px]
@@ -58,7 +59,7 @@ function OurSolutionsWithCarouselAndCards({
         background={carouselBlockBackground}
         runningRows={carouselData}
       />
-      <SolutionCardsBlock cards={cardsData} />
+      <SolutionCardsBlock cards={cardsData} classes={classes?.cardsBlock} />
     </section>
   );
 }

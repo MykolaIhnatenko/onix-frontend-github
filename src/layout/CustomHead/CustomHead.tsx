@@ -113,6 +113,7 @@ function CustomHead({ seoData }: ICustomHead) {
       <link rel="apple-touch-icon" sizes="120x120" href="/static/icons/onix_120.png" />
       <link rel="apple-touch-icon" sizes="144x144" href="/static/icons/onix_144.png" />
       <link rel="apple-touch-icon" sizes="152x152" href="/static/icons/onix_152.png" />
+      <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
       {OrgJsonLd()}
       {ProductJsonLd()}
       {faq && faq?.length && FaqJsonLd(faq)}

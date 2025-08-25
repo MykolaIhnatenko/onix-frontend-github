@@ -1,5 +1,8 @@
 import { IPartnerSliderData } from '../../../components/PartnerSection/interfaces/IPartnerSection';
 import Icons from '../../../assets/icon';
+import TransparentCard from '../../../components/TransparentCard/TransparentCard';
+import { TransparentCardVariant } from 'constants/enums';
+
 import HealthcarePartnerSectionItemBg1 from '@/images/healthcare/partnerSection/img_partnerSectionItemBg1.webp';
 import HealthcarePartnerSectionItemBg2 from '@/images/healthcare/partnerSection/img_partnerSectionItemBg2.webp';
 import HealthcarePartnerSectionItemBg3 from '@/images/healthcare/partnerSection/img_partnerSectionItemBg3.webp';
@@ -14,9 +17,6 @@ import HealthcarePartnerSectionItemMobileBg4 from '@/images/healthcare/partnerSe
 import HealthcarePartnerSectionItemMobileBg5 from '@/images/healthcare/partnerSection/img_partnerSectionItemMobileBg5.webp';
 import HealthcarePartnerSectionItemMobileBg6 from '@/images/healthcare/partnerSection/img_partnerSectionItemMobileBg6.webp';
 import HealthcarePartnerSectionItemMobileBg7 from '@/images/healthcare/partnerSection/img_partnerSectionItemMobileBg7.webp';
-import TransparentCard from '../../../components/TransparentCard/TransparentCard';
-import { TransparentCardVariant } from 'constants/enums';
-
 import styles from '../../../components/TransparentCard/sass/transparentCard.module.scss';
 
 const healthcarePartnerSliderData: IPartnerSliderData[] = [

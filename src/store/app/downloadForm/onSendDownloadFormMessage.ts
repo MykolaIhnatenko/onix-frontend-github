@@ -3,6 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { clientIdGA, sourseBusterData } from '../../../utils/customerJourneyMap';
 import { IDownloadFormValues } from './interfaces/IDownloadForm';
 import blogsFormThankHelper from '../../../utils/blogsFormThankHelper';
+import blacklistedEmails from 'constants/blacklistedEmails';
 
 const onSendDownloadFormMessage = createAsyncThunk(
   'app/onSendDownloadFormMessage',
@@ -10,6 +11,12 @@ const onSendDownloadFormMessage = createAsyncThunk(
     try {
       const formData = new FormData();
       const sbData = sourseBusterData();
+      const isBlacklisted = blacklistedEmails.includes(values.email.trim().toLowerCase());
+      if (isBlacklisted) {
+        return {
+          data: true,
+        };
+      }
 
       Object.keys(values).forEach((key) => {
         formData.set(key, values[key as keyof typeof values]);

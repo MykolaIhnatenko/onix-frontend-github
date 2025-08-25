@@ -13,4 +13,5 @@ export interface ISolutionsCard {
 
 export interface ISolutionsCardBlock {
   cards: ISolutionsCard[];
+  classes?: string;
 }

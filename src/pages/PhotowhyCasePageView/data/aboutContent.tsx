@@ -1,7 +1,6 @@
 import Phone1 from '@/images/Photowhy/img_phone1.webp';
 import Phone2 from '@/images/Photowhy/img_phone2.webp';
 import Phone3 from '@/images/Photowhy/img_phone3.webp';
-
 import styles from '../sass/photowhyAboutSection.module.scss';
 
 const aboutContent = [

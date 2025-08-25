@@ -4,10 +4,10 @@ import NumbersBlock from '../../../components/NumbersBlock/NumbersBlock';
 import ImageComponent from '../../../components/Image/Image';
 import numbersData from '../data/numbersData';
 import useBackground from '../../../hook/useBackground';
+
 import DedicatedTeamNumbersBgTablet from '@/images/dedicatedTeamPage/img_numbers_bg_tablet@2x.webp';
 import DedicatedTeamNumbersBgMobile from '@/images/dedicatedTeamPage/img_numbers_bg_mobile@2x.webp';
 import DedicatedTeamNumbersBg from '@/images/dedicatedTeamPage/img_numbers_bg@2x.webp';
-
 import styles from '../sass/dedicatedTeamNumbersSecion.module.scss';
 
 function DedicatedTeamNumbersSection() {

@@ -12,6 +12,18 @@ import TableData from './data/TableData.json';
 import TechData from './data/TechData.json';
 import resultsData from './data/ResultsData';
 import { ButtonType } from '../../constants/enums';
+import IPageStatus from 'interfaces/IPageStatus';
+import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import resultsBlockWhite from 'constants/tailwindStyle';
+import businessContextData from './data/businessContextData';
+import aboutContent from './data/aboutContent.json';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import VRARCallToActionComponent from 'components/VRARCallToActionBlock/VRARCallToActionComponent';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import Screen from '@/images/Solomiya/img_Screen.webp';
 import ScreenMobile from '@/images/Solomiya/img_ScreenMobile.webp';
 import ScreenTablet from '@/images/Solomiya/img_ScreenTablet.webp';
@@ -30,21 +42,10 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import IPageStatus from 'interfaces/IPageStatus';
-import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import resultsBlockWhite from 'constants/tailwindStyle';
-import businessContextData from './data/businessContextData';
-import aboutContent from './data/aboutContent.json';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 import ModelsBgXXXL from '@/images/modelsSection/img_backgroundXXXL.webp';
 import ModelsBg from '@/images/modelsSection/img_background.webp';
 import ModelsBgTablet from '@/images/Solomiya/img_bg_models_tablet@2x.webp';
 import ModelsBgMobile from '@/images/modelsSection/img_backgroundMobile.webp';
-import VRARCallToActionComponent from 'components/VRARCallToActionBlock/VRARCallToActionComponent';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function SolomiyaView({ saleUrl }: IPageStatus) {
   const {
@@ -90,13 +91,13 @@ function SolomiyaView({ saleUrl }: IPageStatus) {
   const isMobile = isSMDevice || isXSDevice;
 
   return (
-    <div>
+    <>
       <MentalVideoBlock
         image={getBackground().Main}
         title={titleMainBlock}
         video="/static/video/solomiya.mp4"
         classes={{
-          container: 'h-full',
+          videoContainer: 'h-full',
           video: 'object-cover',
           videoPlayer: '!aspect-auto',
         }}
@@ -229,7 +230,7 @@ function SolomiyaView({ saleUrl }: IPageStatus) {
           }}
         />
       )}
-    </div>
+    </>
   );
 }
 

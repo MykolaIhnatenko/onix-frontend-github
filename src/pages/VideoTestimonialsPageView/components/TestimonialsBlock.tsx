@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
 import { useAppSelector } from '../../../hook/reduxToolkit';
 import ImageComponent from '../../../components/Image/Image';
@@ -8,10 +8,10 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import FeedbackCard from './FeedbackCard';
 import data from '../data/testimonialsVideoData';
 import testimonialsClientsSayData from '../data/testimonialsClientsSayData';
+
 import Bg from '@/images/videoTestimonials/testimonials/img_testimonials_bg.webp';
 import BgTablet from '@/images/videoTestimonials/testimonials/img_testimonials_bg_tablet.webp';
 import BgMobile from '@/images/videoTestimonials/testimonials/img_testimonials_bg_mobile.webp';
-
 import styles from '../sass/testimonials.module.scss';
 
 function TestimonialsBlock() {
@@ -35,7 +35,6 @@ function TestimonialsBlock() {
     }
     return bg;
   };
-  const [activeVideo, setActiveVideo] = useState<number | null>(null);
 
   return (
     <>
@@ -68,8 +67,6 @@ function TestimonialsBlock() {
               description={description}
               country={country}
               specification={specification}
-              activeVideo={activeVideo}
-              setActiveVideo={setActiveVideo}
             />
           ))}
         </div>

@@ -21,10 +21,18 @@ import runningRowsBlockData from './data/runningRowsBlockData';
 import developmentServicesData from './data/developmentServicesData';
 import developmentServicesContentData from './data/developmentServicesContentData';
 import IPageStatus from 'interfaces/IPageStatus';
-import { UsabilityTestingMainBlockVariant } from 'constants/enums';
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
 import ButtonTypes from 'constants/ButtonTypes';
+import { getTechnologiesBooking } from 'utils/getTechnologies';
+import TechnologiesBlock from 'components/TechnologiesBlock/TechnologiesBlock';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import resultsBlockWhite from 'constants/tailwindStyle';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import ResultsBlockSecondBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockSecondTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockSecondMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -49,16 +57,6 @@ import RunningRowsMobileBg from '@/images/apartmentBookingWebsiteView/runningRow
 import MainBg from '@/images/apartmentBookingWebsiteView/img_mainBg.webp';
 import MainTabletBg from '@/images/apartmentBookingWebsiteView/img_mainBgTablet.webp';
 import MainMobileBg from '@/images/apartmentBookingWebsiteView/img_mainBgMobile.webp';
-import { getTechnologiesBooking } from 'utils/getTechnologies';
-import TechnologiesBlock from 'components/TechnologiesBlock/TechnologiesBlock';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import resultsBlockWhite from 'constants/tailwindStyle';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-
-import styles from './sass/apartmentBookingWebsiteView.module.scss';
 
 function ApartmentBookingWebsiteView({ saleUrl }: IPageStatus) {
   const {
@@ -108,9 +106,29 @@ function ApartmentBookingWebsiteView({ saleUrl }: IPageStatus) {
     <div>
       <UsabilityTestingMainBlock
         title="Apartment booking website case study"
-        icon={<Icon.IconApartmentLogo className={styles.icon} />}
+        icon={(
+          <Icon.IconApartmentLogo
+            className={`!w-[257px] !h-[96px] screen-lg:!w-[139px] screen-lg:!h-[52px]
+              screen-md:!w-[107px] screen-md:!h-[40px]`}
+          />
+        )}
         background={getBackground().mainBg}
-        variant={UsabilityTestingMainBlockVariant.APARTMENT_BOOKING}
+        classes={{
+          container: '!h-screen !relative !min-h-[1070px] screen-md:!min-h-[640px]',
+          background: '!absolute !bottom-0 !right-0 !h-full !w-full',
+          backgroundImage: `!w-full !h-full !object-cover !object-left screen-xl:![object-position:_-150px]
+          screen-lg:!object-top screen-md:!object-center screen-sm:!object-bottom`,
+          contentContainer: `!relative !h-full !flex !flex-col !justify-center
+          max-1390:!flex max-1390:!pt-0 screen-lg:!block screen-lg:!pt-[146px]
+          screen-md:!pt-[136px]`,
+          logo: '!pb-[40px] screen-lg:!pb-[30px] screen-md:!pb-[15px]',
+          content: `!pl-[70px] min-xxxl:!pl-[80px] screen-lg:!pl-[30px]
+          screen-lg:!pr-[30px] screen-md:!pl-[15px] screen-md:!pr-[15px]`,
+          title: `!text-[var(--color-black)] !max-w-[630px] !pb-0 screen-xxxl:!max-w-[630px]
+          max-1390:!text-[50px] max-1390:!leading-[64px]
+          screen-lg:!max-w-none screen-lg:!text-[40px] screen-lg:!leading-[56px]
+          screen-md:!text-[25px] screen-md:!leading-[35px] screen-sm:!max-w-[320px]`,
+        }}
       />
       <AboutProjectSection
         title={howOnixDevelopedData.blockTitle}
@@ -201,9 +219,10 @@ function ApartmentBookingWebsiteView({ saleUrl }: IPageStatus) {
         }}
       />
       <ApartmentBookingAccordionBlock />
-      <div className={styles.image}>
+      <div className="w-full h-auto">
         <ImageComponent
           src={getBackground().imageBlock}
+          className="block w-full h-full"
           alt="imageBlock"
           sizes="100vw"
           width={1920}

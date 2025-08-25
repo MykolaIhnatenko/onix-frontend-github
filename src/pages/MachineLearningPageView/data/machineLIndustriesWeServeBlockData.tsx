@@ -1,12 +1,13 @@
 import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
+import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
+import PageLinks from 'constants/PageLinks';
+
 import healthcareCarousel from '@/images/machineLearning/carousel/img_healthcareCarousel.webp';
 import financialCarousel from '@/images/machineLearning/carousel/img_financialCarousel.webp';
 import construction from '@/images/machineLearning/carousel/img_Construction.webp';
 import manufacturing from '@/images/machineLearning/carousel/img_Manufacturing.webp';
 import marketing from '@/images/machineLearning/carousel/img_Marketing.webp';
 import realEstate from '@/images/machineLearning/carousel/img_RealEstate.webp';
-import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
-import PageLinks from 'constants/PageLinks';
 
 export const machineLIndustriesWeServeBlockData = {
   pageTitle: 'Our other areas of expertise',

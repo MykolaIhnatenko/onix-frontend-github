@@ -3,13 +3,13 @@ import { useSelector } from 'react-redux';
 
 import { IApp } from 'store/app/interfaces/IApp';
 import IStore from 'store/interfaces/IStore';
-import backgroundImage from '@/images/machineLearning/consultingServices/img_ConsultingServicesbg@2x.webp';
-import backgroundImageTablet from '@/images/machineLearning/consultingServices/img_ConsultingServicesbgTablet@2x.webp';
-import backgroundImageMobile from '@/images/machineLearning/consultingServices/img_ConsultingServicesbgMobile@2x.webp';
 import ImageComponent from 'components/Image/Image';
 import MainTitle from 'components/MainTitle/MainTitle';
 import PageContainer from 'components/PageContainer/PageContainer';
 
+import backgroundImage from '@/images/machineLearning/consultingServices/img_ConsultingServicesbg@2x.webp';
+import backgroundImageTablet from '@/images/machineLearning/consultingServices/img_ConsultingServicesbgTablet@2x.webp';
+import backgroundImageMobile from '@/images/machineLearning/consultingServices/img_ConsultingServicesbgMobile@2x.webp';
 import styles from '../sass/consultingServices.module.scss';
 
 function ConsultingServices() {

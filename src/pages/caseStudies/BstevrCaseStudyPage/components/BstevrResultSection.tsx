@@ -1,8 +1,8 @@
 import BstevrContentBlock from './BstevrContentBlock';
 import VRARContent from '../../../../components/VRARContent/VRARContent';
 import ImageComponent from '../../../../components/Image/Image';
-import QuoteBg from '@/images/BstevrCaseSudy/img_Frame.webp';
 
+import QuoteBg from '@/images/BstevrCaseSudy/img_Frame.webp';
 import styles from '../sass/bstevrContentBlock.module.scss';
 
 function BstevrResultSection() {

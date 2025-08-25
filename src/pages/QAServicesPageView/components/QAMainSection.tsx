@@ -4,8 +4,8 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import ClickSlider from '../../../components/ClickSlider/ClickSlider';
 import qaClickSliderData from '../data/qaClickSliderData';
-import QAMainBg from '@/images/qaServicesPage/img_qa_main_bg.webp';
 
+import QAMainBg from '@/images/qaServicesPage/img_qa_main_bg.webp';
 import styles from '../sass/qaMainSection.module.scss';
 
 function BrandingDesignMainSection() {

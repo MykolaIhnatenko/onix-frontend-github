@@ -7,14 +7,14 @@ import ImageComponent from '../../../components/Image/Image';
 import Icon from '../../../assets/icon';
 import IStore from '../../../store/interfaces/IStore';
 import { IScreenSizes } from '../../../store/app/interfaces/IApp';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+
 import DesignAuditCaseStudiesBotMobileBg from '@/images/designAuditServicesPage/caseStudi/img_designAuditCaseStudiesBotMobileBg.webp';
 import DesignAuditCaseStudiesBotTabletBg from '@/images/designAuditServicesPage/caseStudi/img_designAuditCaseStudiesBotTabletBg.webp';
 import DesignAuditCaseStudiesBotBg from '@/images/designAuditServicesPage/caseStudi/img_designAuditCaseStudiesBotBg.webp';
 import DesignAuditCaseStudiesMobileBg from '@/images/designAuditServicesPage/caseStudi/img_designAuditCaseStudiesMobileBg.webp';
 import DesignAuditCaseStudiesTabletBg from '@/images/designAuditServicesPage/caseStudi/img_designAuditCaseStudiesTabletBg.webp';
 import DesignAuditCaseStudiesBg from '@/images/designAuditServicesPage/caseStudi/img_designAuditCaseStudiesBg.webp';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
-
 import styles from '../sass/designAuditCaseStudiesBlock.module.scss';
 
 interface IDesignAuditCaseStudiesBlock {

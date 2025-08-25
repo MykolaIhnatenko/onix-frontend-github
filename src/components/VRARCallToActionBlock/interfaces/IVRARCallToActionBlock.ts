@@ -14,6 +14,7 @@ export default interface IVRARCallToActionBlock {
   btnFontSizeSmallOnMobile?: boolean;
   tag?: ElementType;
   id?: string;
+  isJakarta?: boolean;
   classes?: {
     cta?: string;
     background?: string;

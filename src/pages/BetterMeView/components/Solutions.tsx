@@ -1,9 +1,9 @@
 import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import solutionsItems from '../data/solutionsItemsData';
+
 import BetterMeRightImg from '@/images/BetterMe/img_rightImg.webp';
 import BetterMeLeftImg from '@/images/BetterMe/img_leftImg.webp';
-
 import styles from '../sass/solutions.module.scss';
 
 function Solutions() {

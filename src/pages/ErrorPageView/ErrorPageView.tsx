@@ -1,6 +1,3 @@
-import ErrorPageBg from '@/images/ErrorPage/img_errorPageBg@2x.webp';
-import ErrorPageBgMobile from '@/images/ErrorPage/img_errorPageBgMobile@2x.webp';
-import ErrorPageBgTablet from '@/images/ErrorPage/img_errorPageBgTablet@2x.webp';
 import ContentText from '../../components/ContentText/ContentText';
 import ImageComponent from '../../components/Image/Image';
 import LinkComponent from '../../components/Link/Link';
@@ -8,6 +5,9 @@ import MainTitle from '../../components/MainTitle/MainTitle';
 import useBackground from '../../hook/useBackground';
 import IErrorPageView from './interfaces/IErrorPageView';
 
+import ErrorPageBgTablet from '@/images/ErrorPage/img_errorPageBgTablet@2x.webp';
+import ErrorPageBgMobile from '@/images/ErrorPage/img_errorPageBgMobile@2x.webp';
+import ErrorPageBg from '@/images/ErrorPage/img_errorPageBg@2x.webp';
 import styles from './sass/errorPageView.module.scss';
 
 function ErrorPageView({ is403Page }: IErrorPageView) {

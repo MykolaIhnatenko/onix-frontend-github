@@ -81,6 +81,7 @@ function CaseStudyCarouselItem({
         >
           <div className="pointer-events-none relative h-full overflow-hidden">
             <ImageComponent
+              alt="case study background"
               className="transition-all duration-[400ms] min-lg:group-hover:scale-[1.1]
               ease-linear pointer-events-none h-full w-full object-cover"
               src={getBackground()}
@@ -94,6 +95,7 @@ function CaseStudyCarouselItem({
               <div className="pointer-events-none pb-[15px] flex items-center">
                 <ImageComponent
                   src={icon}
+                  alt="icon"
                   width={getLogoSize().logoWidth}
                   height={getLogoSize().logoHeight}
                 />

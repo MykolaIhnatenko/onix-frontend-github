@@ -13,12 +13,13 @@ import spaceNewsMainBlokData from './data/spaceNewsMainBlokData';
 import challengesProcess from './data/challengesProcess';
 import IPageStatus from 'interfaces/IPageStatus';
 import { ButtonType } from '../../constants/enums';
-import CallToActionBgFirst from '@/images/spaceNewsPage/img_SpaceContactUs.webp';
-import CallToActionBgTabletFirst from '@/images/spaceNewsPage/img_SpaceContactUsTablet.webp';
-import CallToActionBgMobileFirst from '@/images/spaceNewsPage/img_SpaceContactUsMobile.webp';
 import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
 import AboutProjectSection from 'components/AboutProject/AboutProject';
 import BusinessContext from 'components/BusinessContext/BusinessContext';
+
+import CallToActionBgFirst from '@/images/spaceNewsPage/img_SpaceContactUs.webp';
+import CallToActionBgTabletFirst from '@/images/spaceNewsPage/img_SpaceContactUsTablet.webp';
+import CallToActionBgMobileFirst from '@/images/spaceNewsPage/img_SpaceContactUsMobile.webp';
 
 function SpaceNewsPortalDesignCaseStudyView({ saleUrl }: IPageStatus) {
   const {

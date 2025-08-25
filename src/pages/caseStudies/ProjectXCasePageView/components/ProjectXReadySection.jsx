@@ -61,7 +61,6 @@ function ProjectXReadySection({ isTablet }) {
             that would guarantee high-quality product operation. Moreover, our
             {' '}
             <Link
-              prefetch={false}
               href={{
                 pathname: '/sports-and-fitness-development-services',
                 query: { salesChannel: 'Project X Case' },

@@ -8,9 +8,9 @@ import { ColorFileAttachment, FileAttachmentVariant } from '../../../constants/e
 export default interface IFileAttachment {
   name: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => Promise<void> | Promise<FormikErrors<IContactFormValues>>;
-  value: Blob[];
+  value: File[];
   formik: FormikProps<IContactFormValues> | FormikProps<ICareersContactForm>;
-  setUploadedFiles: (files: Blob[]) => void;
+  setUploadedFiles: (files: File[]) => void;
   error?: string | string[] | FormikErrors<Blob>[];
   colorType?: ColorFileAttachment;
   variant?: FileAttachmentVariant;

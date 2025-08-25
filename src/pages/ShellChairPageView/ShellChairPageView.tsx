@@ -51,6 +51,8 @@ function ShellChairPageView({ saleUrl }: IPageStatus) {
           title="Ready to transform your user engagement by leveraging best-in-class design&nbsp;solutions?"
           btnText="Contact us"
           classes={{
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[80px]`,
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_30px] screen-sm:!p-[80px_15px]',
             title: '!max-w-[1078px] screen-lg:!max-w-[708px] screen-lg:!pb-[40px] screen-md:!pb-[30px]',
             btn: 'screen-md:!max-w-[330px]',

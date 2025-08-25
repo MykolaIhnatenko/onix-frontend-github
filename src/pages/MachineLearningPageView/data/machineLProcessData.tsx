@@ -1,6 +1,7 @@
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import { IProcessAccordionItem, IProcessImage } from '../../MainPage/interfaces/IProcess';
 import ContentText from '../../../components/ContentText/ContentText';
+
 import ProcessMachineImgMobileWebp1 from '@/images/machineLearning/processBlock/img_mobile_1@2x.webp';
 import ProcessMachineImgMobileWebp2 from '@/images/machineLearning/processBlock/img_mobile_2@2x.webp';
 import ProcessMachineImgMobileWebp3 from '@/images/machineLearning/processBlock/img_mobile_3@2x.webp';

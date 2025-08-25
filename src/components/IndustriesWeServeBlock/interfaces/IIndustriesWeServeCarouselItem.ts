@@ -11,5 +11,7 @@ export default interface IIndustriesWeServeCarouselItem {
   classes?: {
     container?: string;
     title?: string;
+    img?: string;
   };
+  isJakarta?: boolean;
 }

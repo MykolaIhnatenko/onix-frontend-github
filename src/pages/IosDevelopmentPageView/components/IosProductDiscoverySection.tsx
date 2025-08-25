@@ -7,15 +7,15 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import IosProductDiscoveryCard from './IosProductDiscoveryCard';
-import IosDiscoveryBg from '@/images/iosPage/img_discovery_bg@2x.webp';
-import IosDiscoveryBgTablet from '@/images/iosPage/img_discovery_bg_tablet@2x.webp';
-import IosDiscoveryBgMobile from '@/images/iosPage/img_discovery_bg_mobile@2x.webp';
 import productDiscoveryData from '../data/productsDiscoveryData';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
 import PageLinks from '../../../constants/PageLinks';
 import ButtonLight from 'components/UI/ButtonLight/ButtonLight';
 
+import IosDiscoveryBgMobile from '@/images/iosPage/img_discovery_bg_mobile@2x.webp';
+import IosDiscoveryBgTablet from '@/images/iosPage/img_discovery_bg_tablet@2x.webp';
+import IosDiscoveryBg from '@/images/iosPage/img_discovery_bg@2x.webp';
 import styles from '../sass/iosProductDiscoverySecion.module.scss';
 
 function IosProductDiscoverySection() {

@@ -4,9 +4,9 @@ import ContentText from '../../../components/ContentText/ContentText';
 import CardsBlock from '../../../components/CardsBlock/CardsBlock';
 import ImageComponent from '../../../components/Image/Image';
 import servicesData from '../data/servicesData.json';
-import TrustUsBackgroundMobileWebp from '@/images/img_trust_us_mobile_bg@2x.webp';
 import { ButtonType } from '../../../constants/enums';
 
+import TrustUsBackgroundMobileWebp from '@/images/img_trust_us_mobile_bg@2x.webp';
 import styles from '../sass/UXServicesSecion.module.scss';
 
 function UXServiceSection() {

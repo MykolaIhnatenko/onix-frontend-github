@@ -1,11 +1,5 @@
 import { useSelector } from 'react-redux';
 
-import ElerningsBg from '@/images/elernings/img_ElearningDev@2x.webp';
-import FitnessContactUsBg from '@/images/fitness/img_fitnessContactUsBg.webp';
-import bgOffer from '@/images/booking/img_bg_Weoffer.webp';
-import IosContactUsBgMobile3 from '@/images/iosPage/img_contact_us_bg3_mobile@2x.webp';
-import IosContactUsBgTablet3 from '@/images/iosPage/img_contact_us_bg3_tablet@2x.webp';
-import IosContactUsBg3 from '@/images/iosPage/img_contact_us_bg3@2x.webp';
 import IElearningDevelopmentServicesView from './interfaces/IElearningDevelopmentServicesView';
 import IndustryBanner from '../../components/IndustryBanner/IndustryBanner';
 import AboutColorTextBlock from '../../components/AboutColorTextBlock/AboutColorTextBlock';
@@ -18,7 +12,6 @@ import OurCaseStudies from '../../components/OurCaseStudies/OurCaseStudies';
 import cardOurElernings from './data/cardOurElernings';
 import CallToActionComponent from '../../components/CallToActionBlock/CallToActionComponent';
 import {
-  AboutColorTextBlockVariant,
   ButtonPathVariant,
   ButtonType,
 } from '../../constants/enums';
@@ -46,6 +39,13 @@ import AdvantagesBlock from '../../components/AdvantagesBlock/AdvantagesBlock';
 import OurInsights from '../../components/OurInsightsSection/OurInsights';
 import { containerActiveBlocksBooking, technologiesBlockBlack } from 'constants/tailwindStyle';
 import elearningAdvantagesData from './data/elearningAdvantagesData';
+
+import IosContactUsBg3 from '@/images/iosPage/img_contact_us_bg3@2x.webp';
+import IosContactUsBgTablet3 from '@/images/iosPage/img_contact_us_bg3_tablet@2x.webp';
+import IosContactUsBgMobile3 from '@/images/iosPage/img_contact_us_bg3_mobile@2x.webp';
+import bgOffer from '@/images/booking/img_bg_Weoffer.webp';
+import FitnessContactUsBg from '@/images/fitness/img_fitnessContactUsBg.webp';
+import ElerningsBg from '@/images/elernings/img_ElearningDev@2x.webp';
 
 function ElearningDevelopmentServicesView({ isBannerHidden, pageBlogs }: IElearningDevelopmentServicesView) {
   const {
@@ -164,7 +164,10 @@ function ElearningDevelopmentServicesView({ isBannerHidden, pageBlogs }: IElearn
         textGray="the latest technologies."
         textSecondBlock="Our mission is to redefine learning experiences, making them "
         textGraySecondBlock="engaging, interactive, and highly effective."
-        variant={AboutColorTextBlockVariant.E_LEARNING}
+        classes={{
+          containerColorBlock: `!p-[80px_70px_0] min-xxxl:!p-[80px_80px_0] screen-lg:!p-[80px_30px_0]
+          screen-md:!p-[40px_15px_0]`,
+        }}
       />
       <AdvantagesBlock
         data={elearningAdvantagesData}
@@ -181,7 +184,10 @@ function ElearningDevelopmentServicesView({ isBannerHidden, pageBlogs }: IElearn
         afterTextGray="Our software development model "
         text="is fully transparent and efficient since we use the agile
          approach to manage the development process."
-        variant={AboutColorTextBlockVariant.FITNESS}
+        classes={{
+          containerColorBlock: '!pt-[60px] screen-md:!p-[60px_15px_0]',
+          titleColorBox: 'screen-lg:!text-[20px] screen-md:!text-[14px]',
+        }}
       />
       <ContainerActiveBlocks
         idBtn={ButtonType.LAND2}

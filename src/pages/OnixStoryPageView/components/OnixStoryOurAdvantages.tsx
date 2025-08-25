@@ -3,8 +3,8 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import onixStoryOurAdvantagesData from '../data/onixStoryOurAdvantagesData';
-import OnixStoryMobileBgImage from '@/images/onixStory/img_onix_story_mobileBg.webp';
 
+import OnixStoryMobileBgImage from '@/images/onixStory/img_onix_story_mobileBg.webp';
 import styles from '../sass/onixStoryOurAdvantages.module.scss';
 
 function OnixStoryOurAdvantages() {

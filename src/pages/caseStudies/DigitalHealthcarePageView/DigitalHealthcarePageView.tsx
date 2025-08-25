@@ -35,6 +35,13 @@ import buildingMVP from './data/buildingMVP';
 import digitalHealthcareHowOnix from './data/digitalHealthcareHowOnix';
 import digitalHealthcareBusinessData from './data/digitalHealthcareBusinessData';
 import digitalHealthcareScrollTextData from './data/digitalHealthcareScrollTextData';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
+import testimonialData from './data/testimonialData';
+import resultsBlockWhite from 'constants/tailwindStyle';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import CTABgSecond from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/contactUsSection/img_bg2@2x.webp';
 import CTABgTabletSecond
   from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/contactUsSection/img_bg-tablet2@2x.webp';
@@ -51,10 +58,6 @@ import StickySetCardsSecondBgTablet
   from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/userRolesSection/img_bg-tablet@2x.webp';
 import StickySetCardsSecondBgMobile
   from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/userRolesSection/img_bg-mobile@2x.webp';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
-import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
-import testimonialData from './data/testimonialData';
-import resultsBlockWhite from 'constants/tailwindStyle';
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -63,9 +66,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-
 import styles from './sass/gatherGropPageView.module.scss';
 
 function DigitalHealthcarePageView({ saleUrl }: IPageStatus) {

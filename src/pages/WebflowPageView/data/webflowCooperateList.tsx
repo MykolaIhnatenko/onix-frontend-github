@@ -1,8 +1,9 @@
+import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
+
 import WebflowCooperateImg1 from '@/images/webflowPage/cooperateBlock/img_cooperate_img_1.webp';
 import WebflowCooperateImg2 from '@/images/webflowPage/cooperateBlock/img_cooperate_img_2.webp';
 import WebflowCooperateImg3 from '@/images/webflowPage/cooperateBlock/img_cooperate_img_3.webp';
 import WebflowCooperateImg4 from '@/images/webflowPage/cooperateBlock/img_cooperate_img_4.webp';
-import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
 const webflowCooperateList: IAccordionHorizontalData[] = [
   {

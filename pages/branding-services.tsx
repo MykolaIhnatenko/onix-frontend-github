@@ -8,7 +8,7 @@ import IPages from '../src/interfaces/IPages';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
@@ -20,6 +20,7 @@ function BrandingServicesPage({
     TitlePages.SERVICES,
     TitlePages.BRANDING,
   );
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -31,7 +32,7 @@ function BrandingServicesPage({
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <BrandingDesignPageView pageBlogs={pageBlogs} />
+      <BrandingDesignPageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

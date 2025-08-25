@@ -3,11 +3,12 @@ import { StaticImageData } from 'next/image';
 interface ICaseStudiesBlock {
   sliderIds: number[];
   upTitle?: string;
-  title?: string;
+  title?: string | React.ReactNode;
   desc?: string;
   desc2?: string;
   background?: StaticImageData;
   saleUrl?: boolean;
+  withoutDots?: boolean;
   classes?: {
     section?: string;
     bgContainer?: string;

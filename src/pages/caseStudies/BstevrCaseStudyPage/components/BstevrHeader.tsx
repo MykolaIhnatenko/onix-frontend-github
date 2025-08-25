@@ -4,9 +4,9 @@ import ImageComponent from '../../../../components/Image/Image';
 import Icon from '../../../../assets/icon';
 import IStore from '../../../../store/interfaces/IStore';
 import { IApp } from '../../../../store/app/interfaces/IApp';
+
 import HeaderBg from '@/images/BstevrCaseSudy/img_header.webp';
 import HeaderBgTablet from '@/images/BstevrCaseSudy/img_headerTablet.webp';
-
 import styles from '../sass/bstevrHeader.module.scss';
 
 function BstevrHeader() {

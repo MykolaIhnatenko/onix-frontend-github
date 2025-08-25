@@ -25,6 +25,8 @@ import { IPageBlogs } from '../../interfaces/IPages';
 import {
   ButtonPathVariant, ButtonType,
 } from '../../constants/enums';
+import IAchievements from '../../interfaces/IAchievements';
+
 import VRTellUsBg from '@/images/vrServicesPage/img_vr_bg_call_third_desktop.webp';
 import VRTellUsBgTable from '@/images/img_lastCtaTablet@2x.webp';
 import VRTellUsBgMobile from '@/images/img_lastCtaMobile@2x.webp';
@@ -42,7 +44,7 @@ import IndustriesBgMobile from '@/images/industriesWeServe/img_bgMobile.webp';
 import CaseStudiesBg from '@/images/caseStudiesBlock/img_bottomBg.webp';
 import CaseStudiesBgTablet from '@/images/caseStudiesBlock/img_bottomBgTablet.webp';
 
-function VRServicesPage({ pageBlogs }: IPageBlogs) {
+function VRServicesPage({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isMDDevice,
@@ -209,7 +211,7 @@ function VRServicesPage({ pageBlogs }: IPageBlogs) {
       />
       <ArVrTechnologies />
       <WhyChooseUsSection />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <ReviewBlock quotesList={quotesList} />
       {!!pageBlogs?.length && <OurInsights pageBlogs={pageBlogs} />}
       <CallToActionComponent

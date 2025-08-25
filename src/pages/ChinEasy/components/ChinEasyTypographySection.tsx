@@ -3,8 +3,8 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import VRARPageAppearAnimation from '../../../components/VRARPageAppearAnimation/VRARPageAppearAnimation';
 import HobeauxFont from '../../../fonts/HobeauxFont';
 import ImageComponent from '../../../components/Image/Image';
-import ChinEasyLogo from '@/images/chinEasy/typographySection/img_chin_easy_logo@2x.webp';
 
+import ChinEasyLogo from '@/images/chinEasy/typographySection/img_chin_easy_logo@2x.webp';
 import styles from '../sass/chinEasyTypographySecion.module.scss';
 
 function ChinEasyTypographySection() {

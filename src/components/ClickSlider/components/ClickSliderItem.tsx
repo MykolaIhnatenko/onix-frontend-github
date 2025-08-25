@@ -36,6 +36,7 @@ function ClickSliderItem({
         {activeShadow
           && <div className="absolute w-full h-full bg-gradient-to-b from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0)]" />}
         <ImageComponent
+          alt="Image"
           src={isMobile ? imgTablet : img}
           sizes="100vw"
           className="w-full h-full object-cover"

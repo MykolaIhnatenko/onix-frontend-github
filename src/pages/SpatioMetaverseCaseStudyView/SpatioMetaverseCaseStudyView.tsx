@@ -21,6 +21,15 @@ import servicesData from './data/servicesData';
 import technologyData from './data/technologyData.json';
 import { SpaceNewsMainBlokVariant } from '../../constants/enums';
 import ButtonTypes from '../../constants/ButtonTypes';
+import OurExpertiseSection from '../../components/OurExpertiseSection/OurExpertiseSection';
+import ourExpertiseSectionData from './data/ourExpertiseSectionData';
+import IPageStatus from '../../interfaces/IPageStatus';
+import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
+import testimonialData from './data/testimonialData';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -34,14 +43,6 @@ import RunningRowsBgMobile from '@/images/spatio/runningRowsBlock/img_bg_mobile.
 import MainBg from '@/images/spatio/main/img_main_bg.webp';
 import MainBgTablet from '@/images/spatio/main/img_main_bg_tablet.webp';
 import MainBgMobile from '@/images/spatio/main/img_main_bg_mobile.webp';
-import OurExpertiseSection from '../../components/OurExpertiseSection/OurExpertiseSection';
-import ourExpertiseSectionData from './data/ourExpertiseSectionData';
-import IPageStatus from '../../interfaces/IPageStatus';
-import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
-import testimonialData from './data/testimonialData';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function SpatioMetaverseCaseStudyView({ saleUrl }: IPageStatus) {
   const {
@@ -104,7 +105,7 @@ function SpatioMetaverseCaseStudyView({ saleUrl }: IPageStatus) {
         data={servicesData.data}
         classes={{
           titleBlock: {
-            desc: '!max-w-[1480px] screen-xxxl:!max-w-[1080px]',
+            desc: '!max-w-[1480px] screen-xxxl:!max-w-[1080px] screen-md:!mb-[40px]',
           },
           item: {
             containerItemRight: '!flex !flex-col !justify-end',
@@ -142,7 +143,7 @@ function SpatioMetaverseCaseStudyView({ saleUrl }: IPageStatus) {
           title: 'pb-[80px] max-w-[1080px] min-lg:text-[40px]/[56px] screen-lg:!text-[36px]/[38px] '
             + 'screen-lg:pb-[20px] screen-md:!text-[20px]/[28px] screen-md:pb-[0px]',
           textContainer: 'pb-[80px] screen-lg:pb-0',
-          accordionContainer: '!pb-0 screen-lg:!pb-[20px] screen-md:!p-0',
+          accordionContainer: '!pb-0 screen-lg:!pb-0',
         }}
       />
       <SpatioRunningRowsBlock background={getBackground().runningRows} />

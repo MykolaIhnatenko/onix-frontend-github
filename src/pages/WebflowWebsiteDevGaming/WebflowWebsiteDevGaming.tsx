@@ -7,8 +7,6 @@ import {
 } from 'constants/enums';
 import runningRowsBlockData from './data/runningRowsBlockData';
 import KillerFeaturesData from './data/KillerFeaturesData';
-import HeroScreen from '@/images/WebflowWebsiteDev/img_HeroScreen.webp';
-import HeroScreenTablet from '@/images/WebflowWebsiteDev/img_HeroScreenTablet.webp';
 import CTABg from '../../assets/images/WebflowWebsiteDev/cta/img_CTA_bg.webp';
 import CTABgTablet from '../../assets/images/WebflowWebsiteDev/cta/img_CTA_bg_tablet.webp';
 import CTABgMobile from '../../assets/images/WebflowWebsiteDev/cta/img_CTA_bg_mobile.webp';
@@ -28,6 +26,9 @@ import { businessContextData, businessContextDataSecond, businessContextDataThir
 import OurSolutions from 'components/OurSolutions/OurSolutions';
 import BusinessContext from 'components/BusinessContext/BusinessContext';
 import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
+import HeroScreenTablet from '@/images/WebflowWebsiteDev/img_HeroScreenTablet.webp';
+import HeroScreen from '@/images/WebflowWebsiteDev/img_HeroScreen.webp';
 
 function WebflowWebsiteDevGaming({ saleUrl }: IPageStatus) {
   const {

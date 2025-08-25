@@ -1,8 +1,4 @@
 import { useAppSelector } from 'hook/reduxToolkit';
-import FitnessContactUsBg from '@/images/fitness/img_fitnessContactUsBg.webp';
-import bgOffer from '@/images/booking/img_bg_Weoffer.webp';
-import sportAndFitness from '@/images/fitness/img_sportAndFitness.webp';
-import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import AboutColorTextBlock from '../../components/AboutColorTextBlock/AboutColorTextBlock';
 import BlackTextBlock from '../../components/BlackTextBlock/BlackTextBlock';
 import IndustryBanner from '../../components/IndustryBanner/IndustryBanner';
@@ -14,7 +10,6 @@ import OurCaseStudies from '../../components/OurCaseStudies/OurCaseStudies';
 import cardOurFitness from './data/cardOurFitness';
 import CallToActionComponent from '../../components/CallToActionBlock/CallToActionComponent';
 import {
-  AboutColorTextBlockVariant,
   ButtonPathVariant,
   ButtonType,
 } from '../../constants/enums';
@@ -37,6 +32,10 @@ import ChooseOnixBlock from '../../components/ChooseOnixBlock/ChooseOnixBlock';
 import OurInsights from '../../components/OurInsightsSection/OurInsights';
 import { containerActiveBlocksBooking, technologiesBlockBlack } from 'constants/tailwindStyle';
 
+import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
+import sportAndFitness from '@/images/fitness/img_sportAndFitness.webp';
+import bgOffer from '@/images/booking/img_bg_Weoffer.webp';
+import FitnessContactUsBg from '@/images/fitness/img_fitnessContactUsBg.webp';
 import styles from './sass/SportsAndFitness.module.scss';
 
 function SportsAndFitnessServicesView({
@@ -135,7 +134,10 @@ function SportsAndFitnessServicesView({
         choose the most suitable technology strategy, be flexible enough "
         textGraySecondBlock="to change something if the project requires it, and mitigate the risks
         initially. This is how our wellness and fitness app development processes look in detail:"
-        variant={AboutColorTextBlockVariant.FITNESS}
+        classes={{
+          containerColorBlock: '!pt-[60px] screen-md:!p-[60px_15px_0]',
+          titleColorBox: 'screen-lg:!text-[20px] screen-md:!text-[14px]',
+        }}
       />
       <ContainerActiveBlocks
         idBtn={ButtonType.LAND2}

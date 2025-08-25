@@ -4,9 +4,9 @@ import ImageComponent from '../../../components/Image/Image';
 import solutionContent from '../data/solutionContent';
 import solutionAccordionContent from '../data/solutionAccordionContent';
 import HaasText from './HaasText';
-import phoneFrame from '@/images/haas/solutionSection/img_phone.webp';
 import PageContainer from 'components/PageContainer/PageContainer';
 
+import phoneFrame from '@/images/haas/solutionSection/img_phone.webp';
 import styles from '../sass/HaasSolutionSection.module.scss';
 
 function HaasSolutionSection() {

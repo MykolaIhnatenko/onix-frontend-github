@@ -4,10 +4,10 @@ import VRARPageAppearAnimation from '../../caseStudies/components/VRARPageAppear
 import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import userFlowContent from '../data/userFlowContentData';
-import ForWhomImg from '@/images/shipVrSimulatorCasePage/img_for-whom-this-product-img@2x.webp';
 import userFlowRowContent from '../data/userFlowRowContentData';
 import sMissionContent from '../data/sMissionContentData';
 
+import ForWhomImg from '@/images/shipVrSimulatorCasePage/img_for-whom-this-product-img@2x.webp';
 import styles from '../sass/shipVrSimulatorCasePage.module.scss';
 
 function UserFlow() {

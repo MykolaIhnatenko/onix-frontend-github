@@ -8,13 +8,13 @@ import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
 import ScrollSliderDefault from '../../../components/ScrollSliderDefault/ScrollSliderDefault';
 import DragSlider from '../../../components/DragSlider/DragSlider';
+import PageContainer from 'components/PageContainer/PageContainer';
+import ContentTextNew from 'components/ContentTextNew/ContentTextNew';
+
 import GameArtOutsourcingBg from '@/images/gameArt/artOutsourcing/img_bg_game_art_outsourcing@2x.webp';
 import GameArtOutsourcingBigBg from '@/images/gameArt/artOutsourcing/img_bg_game_art_outsourcing_big@2x.webp';
 import GameArtOutsourcingTabletBg from '@/images/gameArt/artOutsourcing/img_bg_game_art_outsourcing_tablet@2x.webp';
 import GameArtOutsourcingMobileBg from '@/images/gameArt/artOutsourcing/img_bg_game_art_outsourcing_mobile@2x.webp';
-import PageContainer from 'components/PageContainer/PageContainer';
-import ContentTextNew from 'components/ContentTextNew/ContentTextNew';
-
 import styles from '../sass/gameArtOutsourcing.module.scss';
 
 function GameArtOutsourcing() {

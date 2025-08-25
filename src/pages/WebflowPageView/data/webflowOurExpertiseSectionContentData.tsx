@@ -1,3 +1,7 @@
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+
 import WebflowExpertise1 from '@/images/webflowPage/expertise/img_expertise_1@2x.webp';
 import WebflowExpertise2 from '@/images/webflowPage/expertise/img_expertise_2@2x.webp';
 import WebflowExpertise3 from '@/images/webflowPage/expertise/img_expertise_3@2x.webp';
@@ -6,9 +10,6 @@ import WebflowExpertise5 from '@/images/webflowPage/expertise/img_expertise_5@2x
 import WebflowExpertise6 from '@/images/webflowPage/expertise/img_expertise_6@2x.webp';
 import WebflowExpertise7 from '@/images/webflowPage/expertise/img_expertise_7@2x.webp';
 import WebflowExpertise8 from '@/images/webflowPage/expertise/img_expertise_8@2x.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
 
 const webflowOurExpertiseSectionContentData = (isMobile: boolean): IAccordionData[] => ([
   {

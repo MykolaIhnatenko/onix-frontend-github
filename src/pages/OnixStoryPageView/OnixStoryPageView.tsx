@@ -1,6 +1,5 @@
 import { StaticImageData } from 'next/image';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
 
 import { useAppSelector } from '../../hook/reduxToolkit';
 import CallToActionComponent from '../../components/CallToActionBlock/CallToActionComponent';
@@ -16,15 +15,16 @@ import OnixStoryVideo from './components/OnixStoryVideo';
 import ButtonTypes from '../../constants/ButtonTypes';
 import PageLinks from '../../constants/PageLinks';
 import { ButtonType } from 'constants/enums';
+import AchievementsBlock from '../../components/AchievementBlock/AchievementsBlock';
+import IAchievements from '../../interfaces/IAchievements';
+
 import OnixStoryCallBg from '@/images/onixStory/callToAction/img _onix_call_bg.webp';
 import OnixStoryCallMobile from '@/images/onixStory/callToAction/img _onix_call_mobile.webp';
 import OnixStoryCallTablet from '@/images/onixStory/callToAction/img _onix_call_tablet.webp';
-import AchievementsBlock from '../../components/AchievementBlock/AchievementsBlock';
 
-function OnixStoryPageView() {
+function OnixStoryPageView({ achievements }: IAchievements) {
   const { screenSizes: { isMDDevice, isSMDevice, isXSDevice } } = useAppSelector((state) => state?.app);
   const router = useRouter();
-  const [activeVideo, setActiveVideo] = useState<number | null>(null);
 
   const getBackground = () => {
     const bg:{ [propName:string]: StaticImageData } = { callToAction: OnixStoryCallBg };
@@ -42,11 +42,12 @@ function OnixStoryPageView() {
       <OnixStoryOurWay />
       <OnixStoryCEO />
       <OnixStoryOurAdvantages />
-      <OnixStoryClientsSay setActiveVideo={setActiveVideo} activeVideo={activeVideo} />
+      <OnixStoryClientsSay />
       <OnixStoryOurValues />
-      <OnixStoryVideo setActiveVideo={setActiveVideo} activeVideo={activeVideo} />
+      <OnixStoryVideo />
       <OnixStoryOurExecutiveTeam />
       <AchievementsBlock
+        achievements={achievements}
         title="Our awards and recognition"
       />
       <OnixStoryOurClients />
@@ -60,8 +61,8 @@ function OnixStoryPageView() {
           cta: `!bg-white !p-[120px_70px] screen-lg:!p-[30px_30px_80px] 
             screen-md:!p-[60px_30px_60px] screen-sm:!p-[60px_15px_60px]`,
           background: 'after:!hidden',
-          title: `!text-black !max-w-full !text-center !pb-[56px] 
-            screen-md:!max-w-full`,
+          title: `!text-black !max-w-full !text-center !pb-[40px] 
+            screen-md:!max-w-full screen-md:!pb-[30px]`,
           btn: 'screen-lg:!max-w-[330px]',
         }}
       />

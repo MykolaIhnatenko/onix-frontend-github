@@ -1,11 +1,9 @@
 import IAnimImage from './interfaces/IAnimImage';
 import ImageComponent from '../Image/Image';
 
-import styles from './sass/AnimImage.module.scss';
-
 function AnimImage({ image }: IAnimImage) {
   return (
-    <div className={styles.titleContainer}>
+    <div className="relative w-full">
       <ImageComponent
         src={image}
         alt="MainBackground"

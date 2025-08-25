@@ -4,11 +4,11 @@ import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
 import ContentText from '../../../components/ContentText/ContentText';
+
 import Poster from '@/images/vyraCasePage/videoBlock/img_poster.webp';
 import VideoBg from '@/images/vyraCasePage/videoBlock/img_video_bg.webp';
 import VideoBgTablet from '@/images/vyraCasePage/videoBlock/img_video_bg_tablet.webp';
 import VideoBgMobile from '@/images/vyraCasePage/videoBlock/img_video_bg_mobile.webp';
-
 import styles from '../sass/vyraVideoBlock.module.scss';
 
 function VyraVideoBlock() {

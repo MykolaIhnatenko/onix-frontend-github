@@ -4,11 +4,11 @@ import ContentText from '../../../components/ContentText/ContentText';
 import useBackground from '../../../hook/useBackground';
 import ImageComponent from '../../../components/Image/Image';
 import resultData from '../data/resultData';
+import BorderedNumberCard from '../../../components/CasesComponents/BorderedNumberCard/BorderedNumberCard';
+
 import TravelTailResultBg from '@/images/travelTail/resultSection/img_bg@2x.webp';
 import TravelTailResultBgMobile from '@/images/travelTail/resultSection/img_bg_mobile@2x.webp';
 import TravelTailResultBgTablet from '@/images/travelTail/resultSection/img_bg_tablet@2x.webp';
-import BorderedNumberCard from '../../../components/CasesComponents/BorderedNumberCard/BorderedNumberCard';
-
 import styles from '../sass/travelTailResultSection.module.scss';
 
 function TravelTailResultSection() {

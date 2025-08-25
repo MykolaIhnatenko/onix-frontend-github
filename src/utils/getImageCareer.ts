@@ -24,7 +24,7 @@ import img_DevOps from '../assets/images/singleCareer/careerInfo/img_DevOps.webp
 import img_Android from '../assets/images/singleCareer/careerInfo/img_Android.webp';
 import img_3D from '../assets/images/singleCareer/careerInfo/img_3D.webp';
 import img_PeopleOps from '../assets/images/singleCareer/careerInfo/img_PeopleOps.webp';
-import img_Lawer from '../assets/images/singleCareer/careerInfo/img_Lawer.webp';
+import img_Lower from '../assets/images/singleCareer/careerInfo/img_Lower.webp';
 import img_TeachDepart from '../assets/images/singleCareer/careerInfo/img_TeachDepart.webp';
 
 const getImageCareer = (department: DepartmentsCareer) => {
@@ -100,7 +100,7 @@ const getImageCareer = (department: DepartmentsCareer) => {
       image = img_PeopleOps;
       break;
     case DepartmentsCareer.LOWER:
-      image = img_Lawer;
+      image = img_Lower;
       break;
     case DepartmentsCareer.TECH_DEPART:
       image = img_TeachDepart;

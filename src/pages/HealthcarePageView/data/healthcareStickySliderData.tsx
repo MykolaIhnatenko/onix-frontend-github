@@ -1,10 +1,11 @@
+import { IStickySliderData } from 'components/StickySlider/interfaces/IStickySliderItem';
+
 import HealthcareExpertise1 from '@/images/healthcare/expertise/img_expertise_1@2x.webp';
 import HealthcareExpertise2 from '@/images/healthcare/expertise/img_expertise_2@2x.webp';
 import HealthcareExpertise3 from '@/images/healthcare/expertise/img_expertise_3@2x.webp';
 import HealthcareExpertise4 from '@/images/healthcare/expertise/img_expertise_4@2x.webp';
 import HealthcareExpertise5 from '@/images/healthcare/expertise/img_expertise_5@2x.webp';
 import HealthcareExpertise6 from '@/images/healthcare/expertise/img_expertise_6@2x.webp';
-import { IStickySliderData } from 'components/StickySlider/interfaces/IStickySliderItem';
 
 const StickySliderData: IStickySliderData[] = [
   {

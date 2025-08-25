@@ -19,6 +19,10 @@ import phonesImageSectionData from './data/childrenImageSection';
 import technologyData from './data/technologyData.json';
 import { ButtonType } from '../../constants/enums';
 import IPageStatus from 'interfaces/IPageStatus';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import RunningBg from '@/images/noisyNeighborCasePage/runningRowsBlock/img_runningRowsBlock_bg.webp';
 import RunningBgTablet from '@/images/noisyNeighborCasePage/runningRowsBlock/img_runningRowsBlock_bg_tablet.webp';
 import RunningBgMobile from '@/images/noisyNeighborCasePage/runningRowsBlock/img_runningRowsBlock_bg_mobile.webp';
@@ -30,9 +34,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function NoisyNeighborCasePageView({ saleUrl }: IPageStatus) {
   const {
@@ -96,8 +97,8 @@ function NoisyNeighborCasePageView({ saleUrl }: IPageStatus) {
           withButton
           classes={{
             cta: '!p-[120px_0_120px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_15px]',
-            background: `after:content-[""] after:absolute after:top-[-20px] after:left-0 after:w-full
-            after:h-[80px] after:bg-gradient-to-b from-[rgba(0,0,0,0)_10%] to-black`,
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full
+            after:h-[120px] after:bg-gradient-to-t from-[rgba(0,0,0,0)_5%] to-black screen-lg:after:h-[80px]`,
             image: '!object-center screen-lg:!object-top',
             title: `!max-w-[600px] screen-lg:!max-w-[515px] screen-lg:!pb-[40px]
             screen-md:!max-w-[320px] screen-md:!pb-[30px]`,
@@ -110,7 +111,7 @@ function NoisyNeighborCasePageView({ saleUrl }: IPageStatus) {
         data={ourSolutionsContentData}
         desktopViewOnXL
         classes={{
-          section: 'py-[80px] screen-lg:pt-[60px] screen-md:pt-[40px]',
+          section: '!py-[80px] screen-lg:!py-[60px] screen-md:!py-[40px]',
         }}
       />
       <RunningColsBlock

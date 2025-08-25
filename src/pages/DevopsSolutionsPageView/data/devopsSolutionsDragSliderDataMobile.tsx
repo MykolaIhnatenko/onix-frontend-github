@@ -1,5 +1,6 @@
 import { ICaseStudiesData } from 'components/CaseStudyCarouselItem/interfaces/ICaseStudyCarouselItem';
 import DevopsSolutionsDragSliderItem from '../components/DevopsSolutionsDragSliderItem';
+
 import DevopsHoverAccordionImgMobile1 from '@/images/devopsSolutionsPageView/hoverAccordion/img_hoverAccordionMobile1.webp';
 import DevopsHoverAccordionImgMobile2 from '@/images/devopsSolutionsPageView/hoverAccordion/img_hoverAccordionMobile2.webp';
 import DevopsHoverAccordionImgMobile3 from '@/images/devopsSolutionsPageView/hoverAccordion/img_hoverAccordionMobile3.webp';

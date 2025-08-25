@@ -15,6 +15,19 @@ import servicesData from './data/servicesData';
 import businessContextData from './data/businessContextData';
 import { ButtonType } from '../../constants/enums';
 import IPageStatus from 'interfaces/IPageStatus';
+import howOnixDevelopedData from './data/howOnixDevelopedData';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import DragInfoBlock from 'components/DragInfoBlock/DragInfoBlock';
+import projectPhasesData from './data/projectPhases';
+import PhasesSectionTablet from './components/PhasesSectionTablet';
+import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
+import RunningColsBlock from 'components/RunningColsBlock/RunningColsBlock';
+import runningColsData from './data/runningCols';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextWithTable from 'components/BusinessContextWithTables/BusinessContextWithTable';
+import businessContext from './data/businessContext';
+
 import ServicesBg from '@/images/chinEasy/services/img_services_bg.webp';
 import ServicesBgTablet from '@/images/chinEasy/services/img_services_bg_tablet.webp';
 import CardBlockBg from '@/images/chinEasy/projectPhase/img_CardBlockBg.webp';
@@ -28,22 +41,10 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import howOnixDevelopedData from './data/howOnixDevelopedData';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import DragInfoBlock from 'components/DragInfoBlock/DragInfoBlock';
-import projectPhasesData from './data/projectPhases';
-import PhasesSectionTablet from './components/PhasesSectionTablet';
-import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
-import RunningColsBlock from 'components/RunningColsBlock/RunningColsBlock';
-import runningColsData from './data/runningCols';
 import RunningColsBgXXXL from '@/images/runningColsBlock/img_runningColsBgXXXL.webp';
 import RunningColsBg from '@/images/runningColsBlock/img_runningColsBg.webp';
 import RunningColsBgTablet from '@/images/runningColsBlock/img_runningColsBgTablet.webp';
 import RunningColsBgMobile from '@/images/runningColsBlock/img_runningColsBgMobile.webp';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextWithTable from 'components/BusinessContextWithTables/BusinessContextWithTable';
-import businessContext from './data/businessContext';
 
 function ChinEasyPageView({ saleUrl }: IPageStatus) {
   const {
@@ -108,6 +109,11 @@ function ChinEasyPageView({ saleUrl }: IPageStatus) {
         content={productScopeContent.progressBlockContent}
         background={getBackground().resultsBlock}
         productScope
+        classes={{
+          background: `after:absolute after:content-[""] after:w-full after:h-[120px]
+            after:bg-gradient-to-b from-[rgba(253,253,253,0)_5%] to-black
+            after:bottom-0 after:left-0 screen-md:after:bg-gradient-to-b from-[rgba(253,253,253,0)_5%] to-black`,
+        }}
       />
       {!saleUrl && (
         <VRARCallToActionComponent
@@ -126,7 +132,7 @@ function ChinEasyPageView({ saleUrl }: IPageStatus) {
           classes={{
             cta: '!p-[120px_0] screen-lg:!p-[80px_30px] screen-md:!p-[80px_30px] screen-sm:!p-[80px_15px]',
             background: `after:absolute after:content-[""] after:w-full after:h-[170px]
-            after:bg-gradient-to-t from-[rgba(253,253,253,0)_15%] to-black
+            after:bg-gradient-to-t from-[rgba(253,253,253,0)_5%] to-black
             after:top-0 after:left-0 screen-md:after:bg-gradient-to-t from-[rgba(216,213,213,0)] to-black`,
             image: '!object-right-bottom',
             title: '!pb-[40px] !max-w-[900px] screen-lg:!max-w-[643px] screen-md:max-w-[none] screen-md:!pb-[30px]',

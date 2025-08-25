@@ -1,4 +1,8 @@
 import PageLinks from '../../../constants/PageLinks';
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+
 import PDTestingServicesImage from '@/images/productDiscovery/img_testing_services.webp';
 import PDDesignAuditServicesImage from '@/images/productDiscovery/img_design_audit_services.webp';
 import PDBrandingServicesImage from '@/images/productDiscovery/img_branding.webp';
@@ -7,9 +11,6 @@ import PDAndroidServicesImage from '@/images/productDiscovery/img_android_develo
 import PDDedicatedTeamServicesImage from '@/images/productDiscovery/img_dedicated_team_services.webp';
 import PDWebDevelopmentServicesImage from '@/images/productDiscovery/img_web_development_services.webp';
 import PDDesignServicesImage from '@/images/productDiscovery/img_ui_ux_services.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
 
 const ourExpertiseSectionContentData: IAccordionData[] = [
   {

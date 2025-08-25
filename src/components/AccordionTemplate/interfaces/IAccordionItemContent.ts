@@ -9,6 +9,7 @@ export default interface IAccordionItemContent {
   isAccordionBlack?: boolean;
   accordionStyleTypes?: AccordionWhiteStyleTypes | AccordionBlackStyleTypes;
   borderBottomLast?: boolean;
+  borderTopFirst?: boolean;
   smallerTitleText?: boolean;
   classes?: {
     showContent?: string;

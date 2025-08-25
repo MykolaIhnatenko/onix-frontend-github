@@ -12,8 +12,6 @@ function FeedbackCard({
   description,
   videoSrc,
   specification,
-  activeVideo,
-  setActiveVideo,
   id,
 }: IFeedbackCard) {
   return (
@@ -34,8 +32,6 @@ function FeedbackCard({
             progressBar: '!mt-[9px] screen-md:!mt-0',
             zoomButton: '!ml-[20px] screen-md:!mb-0',
           }}
-          activeVideo={activeVideo}
-          setActiveVideo={setActiveVideo}
         />
       </div>
       <MainTitle tag="h3" className={styles.title}>{title}</MainTitle>

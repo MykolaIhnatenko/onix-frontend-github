@@ -3,13 +3,13 @@ import { useRouter } from 'next/router';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import useBackground from '../../../hook/useBackground';
-import BlogsCalculateImg from '@/images/blogsPage/img_blogs_calculate@2x.webp';
-import BlogsCalculateImgMobile from '@/images/blogsPage/img_blogs_calculate_mobile@2x.webp';
 import { MD_DEVICE } from '../../../constants/constants';
 import PageLinks from '../../../constants/PageLinks';
 import BlogButtonSectionImage from '../../../components/BlogButtonSection/components/BlogButtonSectionImage';
 import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 
+import BlogsCalculateImgMobile from '@/images/blogsPage/img_blogs_calculate_mobile@2x.webp';
+import BlogsCalculateImg from '@/images/blogsPage/img_blogs_calculate@2x.webp';
 import styles from '../sass/calculate.module.scss';
 
 function Calculate() {

@@ -1,4 +1,5 @@
 import { IProcessAccordionItem, IProcessImage } from '../../MainPage/interfaces/IProcess';
+
 import ProcessImgTabletWebp1 from '@/images/spaceNewsPage/solutions/img_solution_tablet_1.webp';
 import ProcessImgTabletWebp2 from '@/images/spaceNewsPage/solutions/img_solution_tablet_2.webp';
 import ProcessImgTabletWebp3 from '@/images/spaceNewsPage/solutions/img_solution_tablet_3.webp';

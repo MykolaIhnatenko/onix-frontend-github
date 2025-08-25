@@ -6,13 +6,13 @@ import Plx from 'react-plx';
 import { LG_DEVICE } from '../../../constants/constants';
 import IColumnAnimation from '../interfaces/IColumnAnimation';
 import ImageComponent from 'components/Image/Image';
+
 import ImageFirstColumnBottom from '@/images/travelbid/mobileDesignSection/img_first-column-bottom.webp';
 import ImageFirstColumnTop from '@/images/travelbid/mobileDesignSection/img_first-column-top.webp';
 import ImageSecondColumnBottom from '@/images/travelbid/mobileDesignSection/img_second-column-bottom.webp';
 import ImageSecondColumnTop from '@/images/travelbid/mobileDesignSection/img_second-column-top.webp';
 import ImageThirdColumnBottom from '@/images/travelbid/mobileDesignSection/img_third-column-bottom.webp';
 import ImageThirdColumnTop from '@/images/travelbid/mobileDesignSection/img_third-column-top.webp';
-
 import styles from '../sass/MobileDesignSlider.module.scss';
 
 function MobileDesignSlider({ isMobile }: { isMobile: boolean }) {
@@ -99,11 +99,13 @@ function MobileDesignSlider({ isMobile }: { isMobile: boolean }) {
       >
         <ImageComponent
           src={ImageFirstColumnTop}
+          alt="First column top image"
           width={pictureSize.width}
           height={pictureSize.height}
         />
         <ImageComponent
           src={ImageFirstColumnBottom}
+          alt="First column bottom image"
           width={pictureSize.width}
           height={pictureSize.height}
         />
@@ -115,11 +117,13 @@ function MobileDesignSlider({ isMobile }: { isMobile: boolean }) {
       >
         <ImageComponent
           src={ImageSecondColumnTop}
+          alt="Second column top image"
           width={pictureSize.width}
           height={pictureSize.height}
         />
         <ImageComponent
           src={ImageSecondColumnBottom}
+          alt="Second column bottom image"
           width={pictureSize.width}
           height={pictureSize.height}
         />
@@ -131,11 +135,13 @@ function MobileDesignSlider({ isMobile }: { isMobile: boolean }) {
       >
         <ImageComponent
           src={ImageThirdColumnTop}
+          alt="Third column top image"
           width={pictureSize.width}
           height={pictureSize.height}
         />
         <ImageComponent
           src={ImageThirdColumnBottom}
+          alt="Third column bottom image"
           width={pictureSize.width}
           height={pictureSize.height}
         />

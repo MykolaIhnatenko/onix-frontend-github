@@ -650,10 +650,51 @@ const IconResultsMisterBnB1 = dynamic(() => import('./misterBnB/img_resultsIcon1
 const IconResultsMisterBnB2 = dynamic(() => import('./misterBnB/img_resultsIcon2.svg'), { ssr: false });
 const IconResultsMisterBnB3 = dynamic(() => import('./misterBnB/img_resultsIcon3.svg'), { ssr: false });
 const IconResultsMisterBnB4 = dynamic(() => import('./misterBnB/img_resultsIcon4.svg'), { ssr: false });
-
+const IconListMarker = dynamic(() => import('./ic_listMarker.svg'), {ssr: false});
+const IconExpert1 = dynamic(() => import('./mainPage/ic_expert1.svg'), {ssr: false});
+const IconExpert2 = dynamic(() => import('./mainPage/ic_expert2.svg'), {ssr: false});
+const IconExpert3 = dynamic(() => import('./mainPage/ic_expert3.svg'), {ssr: false});
+const IconLogoSmall = dynamic(() => import('./mainPage/ic_logo.svg'), { ssr: false });
+const IconLine = dynamic(() => import('./mainPage/ic_line.svg'), { ssr: false });
+const IconCheckMark = dynamic(() => import('./mainPage/ic_checkMark.svg'), { ssr: false });
+const IconLogoAdoric = dynamic(() => import('./logosOfOurClients/ic_adoric.svg'), { ssr: false });
+const IconLogoLearningpool = dynamic(() => import('./logosOfOurClients/ic_learningpool.svg'), { ssr: false });
+const IconLogoImpesa = dynamic(() => import('./logosOfOurClients/ic_impesa.svg'), { ssr: false });
+const IconLogoMisterbb = dynamic(() => import('./logosOfOurClients/ic_misterb&b.svg'), { ssr: false });
+const IconLogoJsa = dynamic(() => import('./logosOfOurClients/ic_jsa.svg'), { ssr: false });
+const IconLogoColoradosports = dynamic(() => import('./logosOfOurClients/ic_coloradosports.svg'), { ssr: false });
+const IconLogoPhlex = dynamic(() => import('./logosOfOurClients/ic_phlex.svg'), { ssr: false });
+const IconLogoDuscholux = dynamic(() => import('./logosOfOurClients/ic_duscholux.svg'), { ssr: false });
+const IconLogoMipaddle = dynamic(() => import('./logosOfOurClients/ic_mipaddle.svg'), { ssr: false });
+const IconLogoRoi = dynamic(() => import('./logosOfOurClients/ic_roi.svg'), { ssr: false });
+const IconLogoMifos = dynamic(() => import('./logosOfOurClients/ic_mifos.svg'), { ssr: false });
+const IconLogoClubhouse = dynamic(() => import('./logosOfOurClients/ic_clubhouse.svg'), { ssr: false });
+const IconLogoProjectx = dynamic(() => import('./logosOfOurClients/ic_projectx.svg'), { ssr: false });
+const IconLogoHaas = dynamic(() => import('./logosOfOurClients/ic_haas.svg'), { ssr: false });
+const IconLogoBetterme = dynamic(() => import('./logosOfOurClients/ic_betterme.svg'), { ssr: false });
+const IconLogoInner = dynamic(() => import('./logosOfOurClients/ic_inner.svg'), { ssr: false });
+const IconTestimonialsPhlex = dynamic(() => import('./mainPage/testimonialsSliderData/ic_phlex.svg'), { ssr: false });
+const IconTestimonialsSecretFlights = dynamic(() => import('./mainPage/testimonialsSliderData/ic_secretFlights.svg'), { ssr: false });
+const IconTestimonialsBracketology = dynamic(() => import('./mainPage/testimonialsSliderData/ic_bracketology.svg'), { ssr: false });
+const IconTestimonialsColoradoSports = dynamic(() => import('./mainPage/testimonialsSliderData/ic_coloradoSports.svg'), { ssr: false });
+const IconTestimonialsBlueberryBagel = dynamic(() => import('./mainPage/testimonialsSliderData/ic_blueberryBagel.svg'), { ssr: false });
+const IconTestimonialsBarCrawlNation = dynamic(() => import('./mainPage/testimonialsSliderData/ic_barCrawlNation.svg'), { ssr: false });
+const IconBlueCheck = dynamic(() => import('./mainPage/ic_check.svg'), { ssr: false });
+const IconGreyClose = dynamic(() => import('./mainPage/ic_close.svg'), { ssr: false });
+const IconLogoBeats = dynamic(() => import('./mainPage/ic_logoBeats.svg'), { ssr: false });
+const IconBlueBgCheck = dynamic(() => import('./mainPage/ic_checkBlue.svg'), { ssr: false });
+const IconCelendar = dynamic(() => import('./mainPage/ic_celendar.svg'), { ssr: false });
+const IconUser = dynamic(() => import('./mainPage/ic_users.svg'), { ssr: false });
+const IconLineMain = dynamic(() => import('./ic_line_main.svg'), { ssr: false });
+const IconChatGPT = dynamic(() => import('./blog/ic_chatGPT.svg'), { ssr: false });
+const IconPerplexity = dynamic(() => import('./blog/ic_perplexity.svg'), { ssr: false });
+const IconClaude = dynamic(() => import('./blog/ic_claude.svg'), { ssr: false });
+const IconGrok = dynamic(() => import('./blog/ic_grok.svg'), { ssr: false });
+const IconGoogleAi = dynamic(() => import('./blog/ic_googleAi.svg'), { ssr: false });
 
 const importedIcons = {
   IconDevices,
+  IconLineMain,
   IconMacbook,
   IconPwa,
   IconresponciveDesign,
@@ -1300,6 +1341,46 @@ const importedIcons = {
   IconResultsMisterBnB2,
   IconResultsMisterBnB3,
   IconResultsMisterBnB4,
+  IconListMarker,
+  IconExpert1,
+  IconExpert2,
+  IconExpert3,
+  IconLogoSmall,
+  IconLine,
+  IconCheckMark,
+  IconLogoAdoric,
+  IconLogoLearningpool,
+  IconLogoImpesa,
+  IconLogoMisterbb,
+  IconLogoJsa,
+  IconLogoColoradosports,
+  IconLogoPhlex,
+  IconLogoDuscholux,
+  IconLogoMipaddle,
+  IconLogoRoi,
+  IconLogoMifos,
+  IconLogoClubhouse,
+  IconLogoProjectx,
+  IconLogoHaas,
+  IconLogoBetterme,
+  IconLogoInner,
+  IconTestimonialsPhlex,
+  IconTestimonialsSecretFlights,
+  IconTestimonialsBracketology,
+  IconTestimonialsColoradoSports,
+  IconTestimonialsBlueberryBagel,
+  IconTestimonialsBarCrawlNation,
+  IconBlueCheck,
+  IconGreyClose,
+  IconLogoBeats,
+  IconBlueBgCheck,
+  IconCelendar,
+  IconUser,
+  IconChatGPT,
+  IconPerplexity,
+  IconClaude,
+  IconGrok,
+  IconGoogleAi,
 };
 
 type IconName = keyof typeof importedIcons;

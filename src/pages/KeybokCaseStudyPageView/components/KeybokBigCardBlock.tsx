@@ -6,11 +6,11 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import BigNumberCard from '../../../components/BigNumberCard/BigNumberCard';
 import cardsData from '../data/cardData';
 import { BigNumberCardVariant } from '../../../constants/enums';
+
 import KeyBokBgLarge from '@/images/keyBokPage/cards/img_cardsBgLarge.webp';
 import KeyBokBgDesktop from '@/images/keyBokPage/cards/img_cardsBg.webp';
 import KeyBokBgTablet from '@/images/keyBokPage/cards/img_cardsBgTablet.webp';
 import KeyBokBgMobile from '@/images/keyBokPage/cards/img_cardsBgMobile.webp';
-
 import styles from '../sass/bigCard.module.scss';
 
 function KeybokBigCardBlock() {

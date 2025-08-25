@@ -1,3 +1,5 @@
+import getRunningColsData from 'utils/getRunningColsData';
+
 import Phone1_1 from '@/images/confettiPage/runningColsBlock/img_11@2x.webp';
 import Phone1_2 from '@/images/confettiPage/runningColsBlock/img_12@2x.webp';
 import Phone1_3 from '@/images/confettiPage/runningColsBlock/img_13@2x.webp';
@@ -13,7 +15,6 @@ import Phone4_3 from '@/images/confettiPage/runningColsBlock/img_43@2x.webp';
 import Phone5_1 from '@/images/confettiPage/runningColsBlock/img_51@2x.webp';
 import Phone5_2 from '@/images/confettiPage/runningColsBlock/img_52@2x.webp';
 import Phone5_3 from '@/images/confettiPage/runningColsBlock/img_53@2x.webp';
-import getRunningColsData from 'utils/getRunningColsData';
 
 const images = [
   [Phone1_1, Phone1_2, Phone1_3, Phone1_1, Phone1_2, Phone1_3],

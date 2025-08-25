@@ -1,8 +1,8 @@
 import ImageComponent from '../../../../components/Image/Image';
 import VRARContent from '../../../../components/VRARContent/VRARContent';
 import { muktaVaaniFont } from '../../../../fonts/MainFonts';
-import WorkerImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_workerImage.webp';
 
+import WorkerImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_workerImage.webp';
 import styles from '../sass/metroCaseProjectBeginning.module.scss';
 
 function MetroCaseProjectBeginning() {

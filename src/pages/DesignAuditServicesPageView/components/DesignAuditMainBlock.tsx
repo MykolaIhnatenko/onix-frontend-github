@@ -8,6 +8,9 @@ import ImageComponent from '../../../components/Image/Image';
 import TiltedCarousel from '../../../components/TiltedCarousel/TiltedCarousel';
 import { ButtonType, TransparentCardVariant } from '../../../constants/enums';
 import designAuditModelsData from '../data/designAuditModelsData.json';
+import IStore from '../../../store/interfaces/IStore';
+import { IApp } from '../../../store/app/interfaces/IApp';
+
 import DesignAuditMainBlockBotMobileBg from '@/images/designAuditServicesPage/mainBlock/img_design_main_bot_mobile_bg@2x.webp';
 import DesignAuditMainBlockBotTabletBg from '@/images/designAuditServicesPage/mainBlock/img_design_main_bot_tablet_bg@2x.webp';
 import DesignAuditMainBlockBotBigBg from '@/images/designAuditServicesPage/mainBlock/img_design_main_bot_big_bg@2x.webp';
@@ -16,9 +19,6 @@ import DesignAuditMainBlockTopMobileBg from '@/images/designAuditServicesPage/ma
 import DesignAuditMainBlockTopTabletBg from '@/images/designAuditServicesPage/mainBlock/img_design_main_top_tablet_bg@2x.webp';
 import DesignAuditMainBlockTopBigBg from '@/images/designAuditServicesPage/mainBlock/img_design_main_top_bg_big@2x.webp';
 import DesignAuditMainBlockTopBg from '@/images/designAuditServicesPage/mainBlock/img_design_main_top_bg@2x.webp';
-import IStore from '../../../store/interfaces/IStore';
-import { IApp } from '../../../store/app/interfaces/IApp';
-
 import styles from '../sass/designAuditMainBlock.module.scss';
 
 function DesignAuditMainBlock() {

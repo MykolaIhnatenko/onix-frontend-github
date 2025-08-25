@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../src/layout/Layout';
 import getSeoData from '../src/api/getSeoData';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import ErrorPageView from '../src/pages/ErrorPageView/ErrorPageView';
 import SpatioMetaverseCaseStudyView from '../src/pages/SpatioMetaverseCaseStudyView/SpatioMetaverseCaseStudyView';
 import useIsSaleUrl from '../src/hook/useCheckSaleUrl';

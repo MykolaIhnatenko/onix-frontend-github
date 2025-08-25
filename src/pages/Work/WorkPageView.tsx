@@ -3,13 +3,13 @@ import { useSelector } from 'react-redux';
 import WorkMainSection from './components/WorkMainSection';
 import ProjectsSection from './components/ProjectsSection';
 import CallToActionComponent from '../../components/CallToActionBlock/CallToActionComponent';
-import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import IWork from './interfaces/IWork';
 import { IScreenSizes } from '../../store/app/interfaces/IApp';
 import IStore from '../../store/interfaces/IStore';
 import ModalLayout from '../../layout/ModalLayout/ModalLayout';
 import FilterMenuMobile from '../../components/FilterMenuMobile/FilterMenuMobile';
 
+import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import styles from './sass/workPage.module.scss';
 
 function WorkPageView({

@@ -1,5 +1,6 @@
 import { ICaseStudiesData } from 'components/CaseStudyCarouselItem/interfaces/ICaseStudyCarouselItem';
 import GameArtOutsourcingItem from '../components/GameArtOutsourcingItem';
+
 import GameArtOutsourcingItem1 from '@/images/gameArt/artOutsourcing/img_gameArtOutsourcingItem1@2x.webp';
 import GameArtOutsourcingItem2 from '@/images/gameArt/artOutsourcing/img_gameArtOutsourcingItem2@2x.webp';
 import GameArtOutsourcingItem3 from '@/images/gameArt/artOutsourcing/img_gameArtOutsourcingItem3@2x.webp';

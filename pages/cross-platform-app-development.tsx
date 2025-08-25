@@ -7,7 +7,7 @@ import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import getBlogsByIds from '../src/api/getBlogsByIds';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import PagesToSalesChannels from '../src/constants/PageToSalesChannels';
 import { TitlePages } from '../src/constants/enums';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
@@ -21,6 +21,8 @@ function CrossPlatformAppDevelopment({
     TitlePages.SERVICES,
     TitlePages.CROSS_PLATFORM,
   );
+  const achievements = seoData.achievements?.data || [];
+
   return (
     <Layout
       footerContent={footerContent}
@@ -31,7 +33,7 @@ function CrossPlatformAppDevelopment({
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <CrossPlatformAppDevelopmentPageView pageBlogs={pageBlogs} />
+      <CrossPlatformAppDevelopmentPageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

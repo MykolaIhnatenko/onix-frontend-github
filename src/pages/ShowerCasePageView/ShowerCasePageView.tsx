@@ -9,6 +9,21 @@ import { businessContextBlockData, businessContextBlockDataSecond, businessConte
 import ourSolutionsData from './data/ourSolutionsData';
 import coreTechnologyData from './data/coreTechnologyData.json';
 import runningRowsBlockData from './data/runningRowsBlockData';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
+import MainBlock from './components/MainBlock';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
+import testimonialData from './data/testimonialData';
+import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
+import devServicesData from './data/devServicesData';
+import FourCardsTable from 'components/FourCardsTable/FourCardsTable';
+import cardsData from './data/cardsData';
+import ValueDeliveredList from 'components/ValueDeliveredList/ValueDeliveredList';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -20,28 +35,14 @@ import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
 import RunningRowsBlockBg from '@/images/healthcareProviderPortalCaseStudy/runningRowsBlock/img_runningRowsBlockBg@2x.webp';
 import RunningRowsBlockBgTablet from '@/images/healthcareProviderPortalCaseStudy/runningRowsBlock/img_runningRowsBlockBgTablet@2x.webp';
 import RunningRowsBlockBgMobile from '@/images/healthcareProviderPortalCaseStudy/runningRowsBlock/img_runningRowsBlockBgMobile@2x.webp';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
-import MainBlock from './components/MainBlock';
 import MainBg from '@/images/shower/mainBlock/img_mainBg.webp';
 import MainBgBigTablet from '@/images/shower/mainBlock/img_main_bg_big_tablet.webp';
 import MainBgTablet from '@/images/shower/mainBlock/img_mainBgTablet.webp';
 import MainBgMobile from '@/images/shower/mainBlock/img_mainBgMobile.webp';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
-import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
-import testimonialData from './data/testimonialData';
-import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
-import devServicesData from './data/devServicesData';
-import FourCardsTable from 'components/FourCardsTable/FourCardsTable';
-import cardsData from './data/cardsData';
 import TableBg from '@/images/fourCardsTable/img_whiteBg.webp';
 import TableBgXXXL from '@/images/fourCardsTable/img_whiteBgXXXL.webp';
 import TableBgTablet from '@/images/fourCardsTable/img_whiteBgTablet.webp';
 import TableBgMobile from '@/images/fourCardsTable/img_whiteBgMobile.webp';
-import ValueDeliveredList from 'components/ValueDeliveredList/ValueDeliveredList';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 
 function ShowerCasePageView({ saleUrl }: IPageStatus) {
   const {

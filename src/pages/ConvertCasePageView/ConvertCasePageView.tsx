@@ -20,6 +20,9 @@ import designSolutionsData from './data/designSolutionsData';
 import { ButtonType } from '../../constants/enums';
 import IPageStatus from 'interfaces/IPageStatus';
 import RunningColsBlock from 'components/RunningColsBlock/RunningColsBlock';
+import resultsBlockWhite from 'constants/tailwindStyle';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import ResultBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteBg@2x.webp';
 import ResultBgTablet from '@/images/ResultsBlockBg/img_resultsBlockWhiteTabletBg@2x.webp';
 import ResultBgMobile from '@/images/ResultsBlockBg/img_resultsBlockWhiteMobileBg@2x.webp';
@@ -32,12 +35,10 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import resultsBlockWhite from 'constants/tailwindStyle';
 import RunningColsBgXXXL from '@/images/runningColsBlock/img_runningColsBgXXXL.webp';
 import RunningColsBg from '@/images/runningColsBlock/img_runningColsBg.webp';
 import RunningColsBgTablet from '@/images/runningColsBlock/img_runningColsBgTablet.webp';
 import RunningColsBgMobile from '@/images/runningColsBlock/img_runningColsBgMobile.webp';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function ConvertCasePageView({ saleUrl }: IPageStatus) {
   const {

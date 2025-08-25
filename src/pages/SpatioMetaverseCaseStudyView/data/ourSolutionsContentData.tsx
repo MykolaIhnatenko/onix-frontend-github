@@ -1,3 +1,5 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+
 import OurSolutionsImg1 from '@/images/spatio/ourSolutions/img_ourSolutions1.webp';
 import OurSolutionsImg2 from '@/images/spatio/ourSolutions/img_ourSolutions2.webp';
 import OurSolutionsImg3 from '@/images/spatio/ourSolutions/img_ourSolutions3.webp';
@@ -16,7 +18,6 @@ import OurSolutionsImgMobile3 from '@/images/spatio/ourSolutions/img_ourSolution
 import OurSolutionsImgMobile4 from '@/images/spatio/ourSolutions/img_ourSolutionsMobile4.webp';
 import OurSolutionsImgMobile5 from '@/images/spatio/ourSolutions/img_ourSolutionsMobile5.webp';
 import OurSolutionsImgMobile6 from '@/images/spatio/ourSolutions/img_ourSolutionsMobile6.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

@@ -3,10 +3,10 @@ import Icon from '../../../assets/icon';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import ImageComponent from '../../../components/Image/Image';
 import caseStudyItems from '../data/caseStudyItemsData';
+
 import BetterMeGirl from '@/images/BetterMe/img_girl.webp';
 import BetterMeGirlPhone from '@/images/BetterMe/img_girlPhone.webp';
 import BetterMeGirlTablet from '@/images/BetterMe/img_girlTablet.webp';
-
 import styles from '../sass/caseStudy.module.scss';
 
 function CaseStudy() {

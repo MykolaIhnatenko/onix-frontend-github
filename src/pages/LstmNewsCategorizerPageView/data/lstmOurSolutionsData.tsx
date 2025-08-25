@@ -1,3 +1,5 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+
 import OurSolutionsImg1 from '@/images/lstmNewsCategorizerPage/ourSolutions/img_ourSolutions1@2x.webp';
 import OurSolutionsImg2 from '@/images/lstmNewsCategorizerPage/ourSolutions/img_ourSolutions2@2x.webp';
 import OurSolutionsImg3 from '@/images/lstmNewsCategorizerPage/ourSolutions/img_ourSolutions3@2x.webp';
@@ -13,7 +15,6 @@ import OurSolutionsImgMobile2 from '@/images/lstmNewsCategorizerPage/ourSolution
 import OurSolutionsImgMobile3 from '@/images/lstmNewsCategorizerPage/ourSolutions/img_ourSolutionsMobile3@2x.webp';
 import OurSolutionsImgMobile4 from '@/images/lstmNewsCategorizerPage/ourSolutions/img_ourSolutionsMobile4@2x.webp';
 import OurSolutionsImgMobile5 from '@/images/lstmNewsCategorizerPage/ourSolutions/img_ourSolutionsMobile5@2x.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 
 const lstmOurSolutionsData: IOurSolutionsData[] = [
   {

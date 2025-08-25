@@ -1,10 +1,11 @@
+import { IApproachData } from '../interfaces/IApproachImgBlock';
+
 import ServicesApproach1Tablet from '@/images/services/img_approach1_tablet@2x.webp';
 import ServicesApproach2Tablet from '@/images/services/img_approach2_tablet@2x.webp';
 import ServicesApproach1 from '@/images/services/img_approach1@2x.webp';
 import ServicesApproach2 from '@/images/services/img_approach2@2x.webp';
 import ServicesApproach2Mobile from '@/images/services/img_approach2_mobile@2x.webp';
 import ServicesApproach1Mobile from '@/images/services/img_approach1_mobile@2x.webp';
-import { IApproachData } from '../interfaces/IApproachImgBlock';
 
 const approachData: IApproachData[] = [
   {

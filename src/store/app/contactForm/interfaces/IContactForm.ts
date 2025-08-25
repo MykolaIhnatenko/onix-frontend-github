@@ -22,7 +22,7 @@ export interface IContactFormValues {
   company: string,
   country: string,
   message: string,
-  client: Blob[],
+  client: File[],
   project: string[],
   salesChannel: string
   modeltype: Modeltype,

@@ -1,10 +1,11 @@
+import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
+
 import CooperateBlock1 from '@/images/salesforcePage/cooperateBlock/img_cooperateBlock1@2x.webp';
 import CooperateBlock2 from '@/images/salesforcePage/cooperateBlock/img_cooperateBlock2@2x.webp';
 import CooperateBlock3 from '@/images/salesforcePage/cooperateBlock/img_cooperateBlock3@2x.webp';
 import CooperateBlock4 from '@/images/salesforcePage/cooperateBlock/img_cooperateBlock4@2x.webp';
 import CooperateBlock5 from '@/images/salesforcePage/cooperateBlock/img_cooperateBlock5@2x.webp';
 import CooperateBlock6 from '@/images/salesforcePage/cooperateBlock/img_cooperateBlock6@2x.webp';
-import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
 const salesforceCooperateBlockData: IAccordionHorizontalData[] = [
   {

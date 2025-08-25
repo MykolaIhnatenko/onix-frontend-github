@@ -6,10 +6,10 @@ import { MD_DEVICE } from '../../../../constants/constants';
 import BstevrCaseStudyVideo from './BstevrCaseStudyVideo';
 import bstevrFlowData from '../data/bstevrFlowData';
 import IBstevrCaseStudyPage from '../interfaces/IBstevrCaseStudyPage';
+
 import ImageMain1 from '@/images/BstevrCaseSudy/img_man1.webp';
 import ImageMain2 from '@/images/BstevrCaseSudy/img_man2.webp';
 import VideoBg from '@/images/BstevrCaseSudy/img_Video.webp';
-
 import styles from '../sass/bstevrContentBlock.module.scss';
 
 function BstevrFlowSection({ videoStarted, videoClickHandler }: IBstevrCaseStudyPage) {
@@ -74,7 +74,7 @@ function BstevrFlowSection({ videoStarted, videoClickHandler }: IBstevrCaseStudy
                     videoClickHandler={videoClickHandler}
                   />
                 )
-                : <ImageComponent src={VideoBg} className={styles.imageVideo} />}
+                : <ImageComponent src={VideoBg} alt="image" className={styles.imageVideo} />}
             </VRARContent>
           </div>
         </div>

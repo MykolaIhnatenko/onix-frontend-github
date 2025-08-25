@@ -12,12 +12,15 @@ import Layout from '../src/layout/Layout';
 import MainPageSale from 'pages/MainPageSale/MainPageSale';
 import ErrorPageView from 'pages/ErrorPageView/ErrorPageView';
 import { checkSaleUrl } from 'utils/helpers';
+import { getBlogsList, sortArrById } from '../src/utils/blogsHelpers';
+import ClientOnly from 'pages/MainPageSale/components/ClientOnly';
 
-function Home({ seoData, footerContent }:IPages) {
+function Home({ seoData, footerContent, pageBlogs }:IPages) {
   const router = useRouter();
   const { referral } = router.query;
   const saleDomain = checkSaleUrl();
   const saleUrl = saleDomain && seoData.sale;
+  const achievements = seoData.achievements?.data || [];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -62,9 +65,11 @@ function Home({ seoData, footerContent }:IPages) {
       footerContent={footerContent}
     >
       {saleUrl ? (
-        <MainPageSale />
+        <ClientOnly>
+          <MainPageSale />
+        </ClientOnly>
       ) : (
-        <MainPage />
+        <MainPage pageBlogs={pageBlogs} achievements={achievements} />
       )}
     </Layout>
   );
@@ -79,11 +84,12 @@ export async function getStaticProps() {
       notFound: true,
     };
   }
-
+  const { pageBlogs, arrayId } = await getBlogsList(seoData, [0]);
   return {
     props: {
       seoData,
       footerContent,
+      pageBlogs: sortArrById(pageBlogs, arrayId),
     },
   };
 }

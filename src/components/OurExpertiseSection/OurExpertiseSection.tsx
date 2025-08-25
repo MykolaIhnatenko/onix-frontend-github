@@ -6,7 +6,8 @@ import AccordionBlack from 'components/AccordionBlack/AccordionBlack';
 import AccordionWhite from 'components/AccordionWhite/AccordionWhite';
 
 function OurExpertiseSection({
-  upTitle, title, firstText, secondText, data, borderBottomLast = false, blackBlock, classes = {},
+  upTitle, title, firstText, secondText, data, borderBottomLast = false,
+  borderTopFirst = true, blackBlock, classes = {},
 }: IOurExpertiseSection) {
   return (
     <section className={`${classes?.section || ''}`}>
@@ -56,7 +57,7 @@ function OurExpertiseSection({
           <AccordionWhite
             data={data}
             activeFirst
-            borderTopFirst
+            borderTopFirst={borderTopFirst}
             borderBottomLast={borderBottomLast}
             classes={{ accordionItemContent: 'min-lg:px-0' }}
           />
@@ -64,7 +65,7 @@ function OurExpertiseSection({
           <AccordionBlack
             data={data}
             activeFirst
-            borderTopFirst
+            borderTopFirst={borderTopFirst}
             borderBottomLast={borderBottomLast}
             classes={{ accordionItemContent: 'min-lg:px-0' }}
           />

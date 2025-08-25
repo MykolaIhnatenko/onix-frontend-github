@@ -14,7 +14,9 @@ function LinkComponent({
   id,
   sale = false,
 }: ILink) {
-  const basePath = sale ? process.env.NEXT_PUBLIC_BASE_SALE_URL as string : process.env.NEXT_PUBLIC_BASE_URL as string;
+  const basePath = sale
+    ? process.env.NEXT_PUBLIC_BASE_SALE_URL ?? ''
+    : process.env.NEXT_PUBLIC_BASE_URL ?? '';
 
   const getHref = () => {
     let path = href;

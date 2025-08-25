@@ -1,10 +1,10 @@
 import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ImageComponent from '../../../components/Image/Image';
+
 import Icon1 from '@/images/vyraCasePage/developmentServices/img_icon1.webp';
 import Icon2 from '@/images/vyraCasePage/developmentServices/img_icon2.webp';
 import Icon3 from '@/images/vyraCasePage/developmentServices/img_icon3.webp';
-
 import styles from '../sass/vyraDevelopmentServices.module.scss';
 
 const developmentCardData = [

@@ -4,7 +4,7 @@ import Layout from '../src/layout/Layout';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import IPages from '../src/interfaces/IPages';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import Icon from '../src/assets/icon';
 import BetterMePageView from '../src/pages/BetterMeView/BetterMePageView';

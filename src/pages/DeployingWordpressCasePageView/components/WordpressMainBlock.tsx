@@ -5,11 +5,11 @@ import ImageComponent from '../../../components/Image/Image';
 import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
+
 import WordpressMainBg from '@/images/wordpressCasePage/mainBlock/img_main_bg.webp';
 import WordpressMainTablet from '@/images/wordpressCasePage/mainBlock/img_main_bg_tablet.webp';
 import WordpressMainMobile from '@/images/wordpressCasePage/mainBlock/img_main_bg_mobile.webp';
 import WordpressLabel from '@/images/wordpressCasePage/mainBlock/img_label_main.webp';
-
 import styles from '../sass/wordpessMainSection.module.scss';
 
 function WordpressMainBlock() {

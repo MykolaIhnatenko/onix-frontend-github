@@ -3,9 +3,9 @@ import { useAppSelector } from '../../../hook/reduxToolkit';
 import ImageComponent from '../../../components/Image/Image';
 import BracketologyPageContainer from './BracketologyPageContainer';
 import BracketologyText from './BracketologyText';
-import mobileBg from '@/images/bracketology/resultSection/img_bg_mobile.webp';
 import Icons from '../../../assets/icon';
 
+import mobileBg from '@/images/bracketology/resultSection/img_bg_mobile.webp';
 import styles from '../sass/BracketologyResultSection.module.scss';
 
 const resultVideo = '/static/video/bracketology-result-video.mp4';

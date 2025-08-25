@@ -14,6 +14,7 @@ export interface IOurInsightsBlogs {
   blogs?: IOurInsightBlog[];
   classes?: {
     blogTitle?: string;
+    wrapper?: string;
   };
 }
 

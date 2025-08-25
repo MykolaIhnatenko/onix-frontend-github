@@ -265,7 +265,7 @@ export const technologies: ITechnologies = {
     },
     {
       title: 'MATLAB',
-      icon: <Icons.IconMatlab width={48} height={48} />,
+      icon: <Icons.IconMatlab width={54} height={48} />,
     },
     {
       title: 'Java',
@@ -365,6 +365,10 @@ export const technologies: ITechnologies = {
       icon: <Icons.IconGoogleCloud width={48} height={48} />,
     },
     {
+      title: 'GCP (Google Cloud Platform)',
+      icon: <Icons.IconGoogle width={55} height={48} />,
+    },
+    {
       title: 'Microsoft Azure',
       icon: <Icons.IconMicrosoft width={62} height={48} />,
     },
@@ -406,7 +410,7 @@ export const technologies: ITechnologies = {
     },
     {
       title: 'Pillow',
-      icon: <Icons.IconPillow width={48} height={48} />,
+      icon: <Icons.IconPillow width={53} height={48} />,
     },
     {
       title: 'Matplotlib',
@@ -660,7 +664,7 @@ export const technologies: ITechnologies = {
   'Cloud storage': [
     {
       title: 'AWS',
-      icon: <Icons.IconAws width={67} height={40} />,
+      icon: <Icons.IconAws width={67} height={48} />,
     },
     {
       title: 'Azure',

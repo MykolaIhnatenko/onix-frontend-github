@@ -3,13 +3,13 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import useAdaptiveImage from '../../../hook/useAdaptiveImage';
 import ImageComponent from '../../../components/Image/Image';
 import useBackground from '../../../hook/useBackground';
+
 import AIImageClassificationMain from '@/images/aiImageClassifacationSolution/mainSection/img_main@2x.webp';
 import AIImageClassificationMainMobile from '@/images/aiImageClassifacationSolution/mainSection/img_main_mobile@2x.webp';
 import AIImageClassificationMainTablet from '@/images/aiImageClassifacationSolution/mainSection/img_main_tablet@2x.webp';
 import AIIMageClassificationMainBg from '@/images/aiImageClassifacationSolution/mainSection/img_bg_main@2x.webp';
 import AIIMageClassificationMainBgTablet from '@/images/aiImageClassifacationSolution/mainSection/img_bg_main_tablet@2x.webp';
 import AIIMageClassificationMainBgMobile from '@/images/aiImageClassifacationSolution/mainSection/img_bg_main_mobile@2x.webp';
-
 import styles from '../sass/aiImageClassificationMainSecion.module.scss';
 
 function AIImageClassificationMainSection() {

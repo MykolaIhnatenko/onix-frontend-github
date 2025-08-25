@@ -4,9 +4,6 @@ import { StaticImageData } from 'next/image';
 
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
-import BackgroundImage from '@/images/machineLearning/servicePackage/img_servicePackageBg@2x.webp';
-import BackgroundImageTablet from '@/images/machineLearning/servicePackage/img_servicePackageTabletBg@2x.webp';
-import BackgroundImageMobile from '@/images/machineLearning/servicePackage/img_servicePackageMobileBg@2x.webp';
 import ImageComponent from 'components/Image/Image';
 import MainTitle from 'components/MainTitle/MainTitle';
 import machineLServicePackageData from '../data/machineLServicePackageData';
@@ -16,6 +13,9 @@ import Icons from '../../../assets/icon';
 import Modeltype from 'constants/Modeltype';
 import ButtonLight from 'components/UI/ButtonLight/ButtonLight';
 
+import BackgroundImageMobile from '@/images/machineLearning/servicePackage/img_servicePackageMobileBg@2x.webp';
+import BackgroundImageTablet from '@/images/machineLearning/servicePackage/img_servicePackageTabletBg@2x.webp';
+import BackgroundImage from '@/images/machineLearning/servicePackage/img_servicePackageBg@2x.webp';
 import styles from '../sass/servicePackage.module.scss';
 
 function ServicePackage() {

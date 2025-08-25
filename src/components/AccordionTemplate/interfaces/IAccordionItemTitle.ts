@@ -35,9 +35,11 @@ export default interface IAccordionItemTitle {
   onMouseEnter?: () => void;
   activeItem: boolean;
   withoutAccordion?: boolean;
+  borderTop?: boolean;
   isAccordionBlack?: boolean;
   accordionStyleTypes?: AccordionWhiteStyleTypes | AccordionBlackStyleTypes;
   smallerTitleText?: boolean;
+  firstOfType?: boolean;
   classes?: {
     accordionItemTitle?: string;
     accordionItemTitleOpen?: string;

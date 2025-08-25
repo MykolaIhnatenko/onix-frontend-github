@@ -1,11 +1,12 @@
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
+import IAchievements from '../../../interfaces/IAchievements';
 import AchievementsBlock from '../../../components/AchievementBlock/AchievementsBlock';
 
 import styles from '../sass/industriesAwardsSecion.module.scss';
 
-function IndustriesAwardsSection() {
+function IndustriesAwardsSection({ achievements }: IAchievements) {
   return (
     <section className={styles.awardsSection}>
       <PageContainer className={styles.container}>
@@ -16,7 +17,7 @@ function IndustriesAwardsSection() {
           Onix is your reliable tech partner that delivers first-class industry-specific software solutions!
         </ContentText>
       </PageContainer>
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
     </section>
   );
 }

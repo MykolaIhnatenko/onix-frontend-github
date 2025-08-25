@@ -11,4 +11,8 @@ export interface IOurSolutionsWithCarouselAndCards {
   };
   cardsData: ISolutionsCard[];
   carouselBlockBackground?: StaticImageData;
+  classes?: {
+    section?: string;
+    cardsBlock?: string;
+  }
 }

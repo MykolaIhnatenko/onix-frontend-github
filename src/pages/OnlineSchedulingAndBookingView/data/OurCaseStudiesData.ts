@@ -1,3 +1,6 @@
+import { IOurCaseStudiesData } from 'components/OurCaseStudies/interfaces/IOurCaseStudies';
+import PageLinks from 'constants/PageLinks';
+
 import img_medicalTablet from '@/images/booking/img_medicalTablet.webp';
 import img_medicalMobile from '@/images/booking/img_medicalMobile.webp';
 import img_misterBAndBTablet from '@/images/booking/img_misterBAndBTablet.webp';
@@ -7,8 +10,6 @@ import img_travelBidTablet from '@/images/booking/img_travelBidTablet.webp';
 import misterBAndB from '@/images/booking/img_misterB&B.webp';
 import medical from '@/images/booking/img_medical.webp';
 import travelBid from '@/images/booking/img_travelBid.webp';
-import { IOurCaseStudiesData } from 'components/OurCaseStudies/interfaces/IOurCaseStudies';
-import PageLinks from 'constants/PageLinks';
 
 const cardStudies: IOurCaseStudiesData[] = [
   {

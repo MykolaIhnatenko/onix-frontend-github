@@ -6,7 +6,7 @@ import Layout from '../src/layout/Layout';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import useWindowSize from '../src/hook/useWindowSize';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
@@ -20,6 +20,7 @@ function TravelSoftwareDevelopmentServices({
   const { width } = useWindowSize();
   const [isBannerHidden, setIsBannerHidden] = useState(false);
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.TRAVEL_LP, TitlePages.INDUSTRIES);
+  const achievements = seoData.achievements?.data || [];
 
   useEffect(() => {
     handleScroll(width, setIsBannerHidden);
@@ -42,6 +43,7 @@ function TravelSoftwareDevelopmentServices({
       <TravelSoftwarePageView
         pageBlogs={pageBlogs}
         isBannerHidden={isBannerHidden}
+        achievements={achievements}
       />
     </Layout>
   );

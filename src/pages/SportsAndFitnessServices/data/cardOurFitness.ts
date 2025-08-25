@@ -1,3 +1,6 @@
+import PageLinks from 'constants/PageLinks';
+import { IOurCaseStudiesData } from 'components/OurCaseStudies/interfaces/IOurCaseStudies';
+
 import img_PhlexNew from '@/images/fitness/img_PhlexNew.webp';
 import img_ProjectNew from '@/images/fitness/img_ProjectNew.webp';
 import img_MiPaddleNew from '@/images/fitness/img_MiPaddleNew.webp';
@@ -7,8 +10,6 @@ import img_PhlexTablet from '@/images/fitness/img_PhlexTablet.webp';
 import img_PhlexMobile from '@/images/fitness/img_PhlexMobile.webp';
 import img_MiPaddleTablet from '@/images/fitness/img_MiPaddleTablet.webp';
 import img_MiPaddleMobile from '@/images/fitness/img_MiPaddleMobile.webp';
-import PageLinks from 'constants/PageLinks';
-import { IOurCaseStudiesData } from 'components/OurCaseStudies/interfaces/IOurCaseStudies';
 
 const cardOurFitness: IOurCaseStudiesData[] = [
   {

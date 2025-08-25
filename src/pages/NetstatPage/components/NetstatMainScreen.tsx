@@ -7,10 +7,10 @@ import NetstatAnimationBlock from './NetstatAnimationBlock';
 import NetstatAnimationText from './NetstatAnimationText';
 import ImageComponent from '../../../components/Image/Image';
 import IPageStatus from '../../../interfaces/IPageStatus';
+
 import NetstatLogo2x from '@/images/NetstatPage/img_netstat-logo@2x.webp';
 import AppstoreDownloadBtn2x from '@/images/NetstatPage/img_download-btn@2x.webp';
 import Office from '@/images/NetstatPage/img_netstat-office@2x.webp';
-
 import netstatStyles from '../sass/netstat.module.scss';
 
 function NetstatMainScreen({ saleUrl }: IPageStatus) {

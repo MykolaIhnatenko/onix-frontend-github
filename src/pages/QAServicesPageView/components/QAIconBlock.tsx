@@ -3,10 +3,10 @@ import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import useBackground from '../../../hook/useBackground';
 import iconContentData from '../data/iconsContentData';
+
 import QAIconBlockTablet from '@/images/qaServicesPage/img_icon_block_tablet.webp';
 import QAIconBlockMobile from '@/images/qaServicesPage/img_icon_block_mobile.webp';
 import QAIconBlockBG from '@/images/qaServicesPage/img_icon_block_bg.webp';
-
 import styles from '../sass/qaIconBlock.module.scss';
 
 function QAIconBlock() {

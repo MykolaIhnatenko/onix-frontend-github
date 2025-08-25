@@ -32,13 +32,43 @@
     }
 
     .titleBlock {
+      .dateBlock {
+        gap: toRem(10);
+        display: flex;
+        align-items: center;
+        padding-top: toRem(30);
+
+        @media only screen and (max-width: $screen-md - 1) {
+          padding-top: toRem(20);
+        }
+
+        .circle {
+          width: toRem(4);
+          height: toRem(4);
+          background-color: var(--color-black);
+          border-radius: 50%;
+        }
+
+        .blogInfo {
+          margin: 0;
+          font-size: toRem(16);
+          line-height: getLineHeight(22, 16);
+          font-weight: 500;
+
+          @media only screen and (max-width: $screen-md - 1) {
+            font-size: toRem(14);
+            line-height: getLineHeight(22, 14);
+          }
+        }
+      }
+
       .title {
         color: var(--color-black);
-        padding-top: toRem(30);
+        padding-top: toRem(15);
         padding-bottom: toRem(40);
 
         @media only screen and (max-width: $screen-md - 1) {
-          padding-top: toRem(15);
+          padding-top: toRem(10);
           padding-bottom: toRem(20);
         }
       }

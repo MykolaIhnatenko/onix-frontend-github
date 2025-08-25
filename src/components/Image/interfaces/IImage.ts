@@ -12,5 +12,6 @@ export default interface IImage {
   priority?: boolean;
   className?: string;
   loading?: 'eager' | 'lazy';
+  fetchPriority?: 'high' | 'low' | 'auto',
   style?: CSSProperties;
 }

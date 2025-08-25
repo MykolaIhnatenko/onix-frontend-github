@@ -1,7 +1,7 @@
 import ImageComponent from '../../../../components/Image/Image';
 import IBstevrCaseStudyPage from '../interfaces/IBstevrCaseStudyPage';
-import VideoBg from '@/images/BstevrCaseSudy/img_Video.webp';
 
+import VideoBg from '@/images/BstevrCaseSudy/img_Video.webp';
 import styles from '../sass/bstevrCaseStudyVideo.module.scss';
 
 function BstevrCaseStudyVideo({ videoStarted, videoClickHandler }: IBstevrCaseStudyPage) {

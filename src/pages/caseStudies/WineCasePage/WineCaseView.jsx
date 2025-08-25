@@ -8,7 +8,7 @@ import Target from './components/Target';
 import UserFlow from './components/UserFlow';
 import TechStack from './components/TechStack';
 import ImageComponent from '../../../components/Image/Image';
-import WineCaseImg12x from '@/images/caseStudiesPage/WineCasePage/img_wine-case-img-1@2x.webp';
+import WineCaseImg12x from '../../../assets/images/caseStudiesPage/WineCasePage/img_wine-case-img-1@2x.webp';
 import { muktaVaaniFont } from '../../../fonts/MainFonts';
 
 import careersStyles from './sass/CareersPage.module.scss';

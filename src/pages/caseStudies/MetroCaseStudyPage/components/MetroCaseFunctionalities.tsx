@@ -1,12 +1,12 @@
 import HalfFilledContactUs from './HalfFilledContactUs';
 import FunctionalitiesList from './FunctionalitiesList';
-import ContactUsImageV2 from '@/images/caseStudiesPage/MetroCaseStudyPage/img_contactUsImageV2.webp';
 import Icon from '../../../../assets/icon';
 import { muktaVaaniFont } from '../../../../fonts/MainFonts';
 import VRARContent from '../../../../components/VRARContent/VRARContent';
 import IPageStatus from '../../../../interfaces/IPageStatus';
 import { ButtonType } from 'constants/enums';
 
+import ContactUsImageV2 from '@/images/caseStudiesPage/MetroCaseStudyPage/img_contactUsImageV2.webp';
 import styles from '../sass/metroCaseFunctionalities.module.scss';
 
 function MetroCaseFunctionalities({ saleUrl }: IPageStatus) {

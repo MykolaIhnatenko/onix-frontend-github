@@ -27,7 +27,7 @@
     }
 
     @media only screen and (max-width: $screen-lg) {
-      @include generalSansFont(26, 500, 46);
+      @include generalSansFont(36, 500, 46);
       padding: 0 toRem(30);
       margin-bottom: toRem(60);
       max-width: toRem(600);

@@ -2,9 +2,9 @@ import ImageComponent from '../../../components/Image/Image';
 import StridistAccordion from './StridistAccordion';
 import useWindowSize from '../../../hook/useWindowSize';
 import { MD_DEVICE } from '../../../constants/constants';
+
 import DesignSolution from '@/images/StridistPage/img_design-solution@2x.webp';
 import DesignSolutionTablet from '@/images/StridistPage/img_design-solution-tablet@2x.webp';
-
 import styles from '../sass/stridistDesignSolutionsSection.module.scss';
 
 function StridistDesignSolutionsSection() {

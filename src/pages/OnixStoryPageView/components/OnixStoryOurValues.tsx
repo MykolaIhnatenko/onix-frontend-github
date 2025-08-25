@@ -1,8 +1,8 @@
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ImageComponent from '../../../components/Image/Image';
 import onixStoryOurValuesData from '../data/onixStoryOurValuesData';
-import OnixStoryOurValuesBg from '@/images/onixStory/ourValues/img_our_values_bg.webp';
 
+import OnixStoryOurValuesBg from '@/images/onixStory/ourValues/img_our_values_bg.webp';
 import styles from '../sass/onixStoryOurValues.module.scss';
 
 function OnixStoryOurValues() {

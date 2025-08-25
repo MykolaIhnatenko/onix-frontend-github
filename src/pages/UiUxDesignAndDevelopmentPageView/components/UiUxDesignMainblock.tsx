@@ -8,9 +8,9 @@ import useWindowSize from '../../../hook/useWindowSize';
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
 import ContentText from '../../../components/ContentText/ContentText';
 import { LG_DEVICE, MD_DEVICE } from '../../../constants/constants';
-import VideoPosterTablet from '@/images/uiUxPage/mainBlock/img_video_poster_tablet.webp';
 import { setUiUxSoudn } from '../../../store/cursorFollower/slice';
 
+import VideoPosterTablet from '@/images/uiUxPage/mainBlock/img_video_poster_tablet.webp';
 import styles from '../sass/uiUxDesignMainblock.module.scss';
 
 export const getHeadingStylesTablets1 = (scrollProgress: number) => ({

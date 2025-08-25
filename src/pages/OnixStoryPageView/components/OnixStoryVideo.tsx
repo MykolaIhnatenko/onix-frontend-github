@@ -1,12 +1,9 @@
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
-import OnixStoryVideoPoster from '@/images/onixStory/img_onix_Serhii_Kholin.webp';
-import IFeedbackCard from '../../VideoTestimonialsPageView/interfaces/IFeedbackCard';
 
+import OnixStoryVideoPoster from '@/images/onixStory/img_onix_Serhii_Kholin.webp';
 import styles from '../sass/onixStoryVideo.module.scss';
 
-type OnixStoryVideoProps = Pick<Partial<IFeedbackCard>, 'activeVideo' | 'setActiveVideo'>;
-
-function OnixStoryVideo({ activeVideo, setActiveVideo }: OnixStoryVideoProps) {
+function OnixStoryVideo() {
   const videoSrc = '/static/video/welcome-to-onix-systems.mp4';
 
   return (
@@ -15,8 +12,6 @@ function OnixStoryVideo({ activeVideo, setActiveVideo }: OnixStoryVideoProps) {
         id={2}
         src={videoSrc}
         poster={OnixStoryVideoPoster}
-        activeVideo={activeVideo}
-        setActiveVideo={setActiveVideo}
       />
     </section>
   );

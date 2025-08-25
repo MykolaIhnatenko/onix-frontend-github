@@ -7,10 +7,10 @@ import { IApp } from '../../../store/app/interfaces/IApp';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ImageComponent from '../../../components/Image/Image';
 import whatWeOfferInfos from '../data/careersWhatWeOfferData';
+
 import CareersWhatWeOfferBg from '@/images/careers/whatWeOffer/img_WhatWeOffer.webp';
 import CareersWhatWeOfferBgTablets from '@/images/careers/whatWeOffer/img_WhatWeOfferTablet.webp';
 import CareersWhatWeOfferBgMobile from '@/images/careers/whatWeOffer/img_WhatWeOfferMobile.webp';
-
 import styles from '../sass/WhatWeOfferBlock.module.scss';
 
 function WhatWeOfferBlock() {

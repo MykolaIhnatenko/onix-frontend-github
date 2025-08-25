@@ -19,9 +19,19 @@ import getTechnologies from '../../utils/getTechnologies';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import {
-  ButtonType, UsabilityTestingMainBlockVariant,
+  ButtonType,
 } from '../../constants/enums';
 import IPageStatus from '../../interfaces/IPageStatus';
+import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
+import testimonialData from './data/testimonialData';
+import carouselData from './data/carouselData';
+import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import Running1RowsBg from '@/images/switzerlandLivingPageView/runningRowsBlock/img_runningRowsBg@2x.webp';
 import Running1RowsTabletBg from '@/images/switzerlandLivingPageView/runningRowsBlock/img_runningRowsTabletBg@2x.webp';
 import Running1RowsMobileBg from '@/images/switzerlandLivingPageView/runningRowsBlock/img_runningRowsMobileBg@2x.webp';
@@ -34,11 +44,6 @@ import MainBgMobile from '@/images/switzerlandLivingPageView/mainBlock/img_mainB
 import MainImage from '@/images/switzerlandLivingPageView/mainBlock/img_mainImage@2x.webp';
 import MainImageTablet from '@/images/switzerlandLivingPageView/mainBlock/img_mainImageTablet@2x.webp';
 import MainImageMobile from '@/images/switzerlandLivingPageView/mainBlock/img_mainImageMobile@2x.webp';
-import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
-import testimonialData from './data/testimonialData';
-import carouselData from './data/carouselData';
-import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -47,10 +52,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function SwitzerlandLivingPageView({ saleUrl }: IPageStatus) {
   const {
@@ -100,18 +101,33 @@ function SwitzerlandLivingPageView({ saleUrl }: IPageStatus) {
           <>
             Cost Comparison Platform
             {' '}
-            <br />
+            <br className="!hidden screen-xl:!block" />
             {' '}
             to Help Weigh
             {' '}
-            <span className="inline_block">Up Municipalities</span>
+            <span className="inline_block screen-md:inline">Up Municipalities</span>
             {' '}
-            <span className="inline_block">in Switzerland</span>
+            <span className="inline_block screen-md:inline">in Switzerland</span>
           </>
         )}
         background={getBackground().mainBg}
         image={getBackground().mainImage}
-        variant={UsabilityTestingMainBlockVariant.SWITZERLAND}
+        classes={{
+          container: 'max-1390:!h-screen screen-xl:!h-[1024px] screen-md:!h-[calc(70vw+356px)]',
+          background: '!bottom-0 !right-0 !h-full !w-full',
+          backgroundImage: `!w-full !h-full !object-cover !object-left screen-lg:!object-center
+            screen-md:!object-bottom`,
+          contentContainer: 'screen-md:!h-fit',
+          content: `!flex !gap-[90px] !px-[70px] !justify-between min-xxxl:!px-[80px] screen-xl:!px-[30px]
+            screen-xl:!flex-col screen-xl:!gap-[80px] screen-md:!px-[15px] screen-md:!gap-[40px]`,
+          textContainer: '!flex !items-center',
+          title: `!max-w-[540px] !pb-0 screen-xl:!max-w-[668px] screen-xl:!text-[45px] screen-xl:!leading-[55px]
+            screen-lg:!max-w-[620px] screen-lg:!text-[40px] screen-lg:!leading-[56px] screen-md:!max-w-[384px]
+            screen-md:!text-[25px] screen-md:!leading-[35px]`,
+          image: `!w-[670px] !h-[500px] min-xxxl:!w-[938px] min-xxxl:!h-[700px] screen-xl:!mx-auto
+            screen-md:!w-full screen-md:!h-auto`,
+          imageContent: '!w-full !h-full !object-cover',
+        }}
       />
       <AboutProjectSection
         title={switzerlandHowOnixDeveloped.blockTitle}
@@ -129,6 +145,10 @@ function SwitzerlandLivingPageView({ saleUrl }: IPageStatus) {
         content={switzerlandResultsBlockData.content}
         background={getBackground().resultsBlock}
         productScope
+        classes={{
+          background: `after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-b from-[rgba(0,0,0,0)_5%] to-black screen-lg:after:h-[80px]`,
+        }}
       />
       {!saleUrl && (
         <VRARCallToActionComponent
@@ -152,7 +172,7 @@ function SwitzerlandLivingPageView({ saleUrl }: IPageStatus) {
           classes={{
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_30px] screen-sm:!p-[80px_15px]',
             background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
-            after:bg-gradient-to-t from-[rgba(0,0,0,0)_15%] to-black`,
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)_5%] to-black screen-lg:after:h-[80px]`,
             image: '!object-bottom',
             title: '!max-w-[1020px] !pb-[40px] screen-md:!pb-[30px]',
           }}
@@ -168,7 +188,7 @@ function SwitzerlandLivingPageView({ saleUrl }: IPageStatus) {
         data={switzerlandOurSolutionsData}
         desktopViewOnXL
         classes={{
-          section: '!pt-0 !pb-[80px]',
+          section: '!pt-0 !pb-[80px] screen-lg:!pb-[60px] screen-md:!pb-[40px]',
           title: '!text-[40px]/[56px] screen-lg:!text-[36px]/[46px] screen-md:!text-[20px]/[28px]',
         }}
       />

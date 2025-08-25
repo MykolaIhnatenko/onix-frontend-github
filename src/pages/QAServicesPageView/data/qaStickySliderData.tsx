@@ -1,10 +1,11 @@
 import ContentText from '../../../components/ContentText/ContentText';
+import { IStickySliderData } from 'components/StickySlider/interfaces/IStickySliderItem';
+
 import QAExpertise1 from '@/images/qaServicesPage/expertiese/img_qa_expertise_1.webp';
 import QAExpertise2 from '@/images/qaServicesPage/expertiese/img_qa_expertise_2.webp';
 import QAExpertise3 from '@/images/qaServicesPage/expertiese/img_qa_expertise_3.webp';
 import QAExpertise4 from '@/images/qaServicesPage/expertiese/img_qa_expertise_4.webp';
 import QAExpertise5 from '@/images/qaServicesPage/expertiese/img_qa_expertise_5.webp';
-import { IStickySliderData } from 'components/StickySlider/interfaces/IStickySliderItem';
 
 const textStyles = '!m-0 pb-[20px] screen-md:pb-[15px]';
 

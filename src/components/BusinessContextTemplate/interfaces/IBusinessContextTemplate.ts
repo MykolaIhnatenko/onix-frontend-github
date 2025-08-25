@@ -9,6 +9,9 @@ interface IBusinessContextTemplate {
   subText?: string | ReactNode;
   children: ReactNode;
   blackTheme?: boolean;
+  isJakarta?: boolean;
+  isButton?: boolean;
+  buttonText?: string;
   classes?: {
     section?: string;
     upTitle?: string;

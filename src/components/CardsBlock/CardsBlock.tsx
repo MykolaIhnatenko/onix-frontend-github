@@ -7,7 +7,7 @@ import Card from './components/Card';
 import ImageComponent from '../Image/Image';
 import { ICardBlockData } from './interfaces/ICardsBlock';
 import { setShowContactForm } from '../../store/app/contactForm/slice';
-import { ButtonPathVariant, CardBlockVariant, DropBlockVariant } from '../../constants/enums';
+import { ButtonPathVariant, DropBlockVariant } from '../../constants/enums';
 import PageLinks from '../../constants/PageLinks';
 import ContentText from '../ContentText/ContentText';
 import VRARContent from '../VRARContent/VRARContent';
@@ -18,7 +18,7 @@ import ButtonLight from 'components/UI/ButtonLight/ButtonLight';
 import AnimatedGradientBackground from '../GradientBackground/GradientBackground';
 
 function CardsBlock({
-  data, variant, mobileBg, tabletBg, bg,
+  data, mobileBg, tabletBg, bg, isJakarta,
   dropBlockBtnVariant, dropBlockVariant,
   disableBg, dropBlockText, classes,
   disableInfoBlock, withoutAnimate = true,
@@ -27,6 +27,7 @@ function CardsBlock({
   dropBlockTitle = 'Set your budget and we will optimally adjust software development to it!',
   dropBlockBtnTitle = 'Speak to our expert',
   dropBlockBg = DropBlockBgWebp, idBtn, animatedGradient = false,
+  isPInDropBlockTitle, hiddenTitleInTablet,
 }: ICardBlockData) {
   const [activeId, setActiveId] = useState<string>('00');
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ function CardsBlock({
       isXSDevice,
     },
   } = useAppSelector((state) => state?.app);
+  const isMobile = isXSDevice || isSMDevice || isMDDevice;
 
   const getBackground = () => {
     const bgImage = {
@@ -81,6 +83,8 @@ function CardsBlock({
           list={list}
           withoutAnimate={withoutAnimate}
           cardIndex={index}
+          isJakarta={isJakarta}
+          hiddenTitleInTablet={hiddenTitleInTablet}
         />
       ))}
       {dropBlockVariant !== DropBlockVariant.WITHOUT_DROP_BLOCK && !disableInfoBlock && (
@@ -102,7 +106,7 @@ function CardsBlock({
           )}
           <div>
             <VRARContent withoutAnimate={withoutAnimate}>
-              {variant === CardBlockVariant.APPLICATION ? (
+              {isPInDropBlockTitle ? (
                 <p className={`
                   font-medium text-[25px] leading-[35px] text-white font-generalSans
                   min-md:text-[40px] min-md:leading-[56px] min-md:text-center min-md:max-w-[708px] min-md:mx-auto
@@ -160,8 +164,8 @@ function CardsBlock({
           sizes="100vw"
         />
       )}
-      {animatedGradient && (
-      <AnimatedGradientBackground lightMode />
+      {animatedGradient && !isMobile && (
+        <AnimatedGradientBackground lightMode />
       )}
     </div>
   );

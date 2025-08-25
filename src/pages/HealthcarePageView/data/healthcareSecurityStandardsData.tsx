@@ -1,5 +1,6 @@
 import Icon from '../../../assets/icon';
 import { ISecurityStandards, ISecurityStandardsItem } from '../../../components/SecurityStandards/interfaces/ISecurityStandards';
+
 import HealthcareSecurityStandardsImg1 from '@/images/healthcare/securityStandards/img_securityStandardsImg1@2x.webp';
 import HealthcareSecurityStandardsImg2 from '@/images/healthcare/securityStandards/img_securityStandardsImg2@2x.webp';
 import HealthcareSecurityStandardsImg3 from '@/images/healthcare/securityStandards/img_securityStandardsImg3@2x.webp';

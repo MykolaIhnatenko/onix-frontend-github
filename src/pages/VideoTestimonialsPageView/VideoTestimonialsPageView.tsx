@@ -5,6 +5,8 @@ import TestimonialsBlock from './components/TestimonialsBlock';
 import CallToActionComponent from '../../components/CallToActionBlock/CallToActionComponent';
 import mainScreenData from './data/mainScreenData';
 import ButtonTypes from '../../constants/ButtonTypes';
+import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
+
 import MainScreenRighImg from '@/images/videoTestimonials/main/img_main_right_side.webp';
 import MainScreenBg from '@/images/videoTestimonials/main/img_main_bg.webp';
 import MainScreenBgTablet from '@/images/videoTestimonials/main/img_main_bg_tablet.webp';
@@ -12,7 +14,6 @@ import MainScreenBgMobile from '@/images/videoTestimonials/main/img_main_bg_mobi
 import CTABg from '@/images/videoTestimonials/cta/img_cta.webp';
 import CTABg_Tablet from '@/images/videoTestimonials/cta/img_cta_tablet.webp';
 import CTABg_Mobile from '@/images/videoTestimonials/cta/img_cta_mobile.webp';
-import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
 
 function VideoTestimonialsPageView() {
   const {

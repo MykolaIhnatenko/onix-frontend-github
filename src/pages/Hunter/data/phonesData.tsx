@@ -1,3 +1,5 @@
+import getRunningColsData from 'utils/getRunningColsData';
+
 import IPhone1_1 from '@/images/hunter/runColsSection/img_1@2x.webp';
 import IPhone1_2 from '@/images/hunter/runColsSection/img_2@2x.webp';
 import IPhone1_3 from '@/images/hunter/runColsSection/img_3@2x.webp';
@@ -13,7 +15,6 @@ import IPhone4_3 from '@/images/hunter/runColsSection/img_12@2x.webp';
 import IPhone5_1 from '@/images/hunter/runColsSection/img_13@2x.webp';
 import IPhone5_2 from '@/images/hunter/runColsSection/img_14@2x.webp';
 import IPhone5_3 from '@/images/hunter/runColsSection/img_15@2x.webp';
-import getRunningColsData from 'utils/getRunningColsData';
 
 const images = [
   [IPhone1_1, IPhone1_2, IPhone1_3, IPhone1_1, IPhone1_2, IPhone1_3],

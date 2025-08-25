@@ -1,6 +1,6 @@
 import ImageComponent from '../../../../components/Image/Image';
-import WineCaseImg22x from '@/images/caseStudiesPage/WineCasePage/img_wine-case-img-2@2x.webp';
-import WineCaseImg32x from '@/images/caseStudiesPage/WineCasePage/img_wine-case-img-3@2x.webp';
+import WineCaseImg22x from '../../../../assets/images/caseStudiesPage/WineCasePage/img_wine-case-img-2.webp';
+import WineCaseImg32x from '../../../../assets/images/caseStudiesPage/WineCasePage/img_wine-case-img-3@2x.webp';
 
 import articleContentStyles from '../sass/ArticleContent.module.scss';
 import storyStyles from '../sass/StoryPageView.module.scss';

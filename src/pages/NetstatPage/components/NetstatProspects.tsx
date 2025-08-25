@@ -7,12 +7,12 @@ import NetstatAnimationText from './NetstatAnimationText';
 import NetstatAnimationBlock from './NetstatAnimationBlock';
 import ImageComponent from '../../../components/Image/Image';
 import IPageStatus from '../../../interfaces/IPageStatus';
-import AppstoreDownloadBtn2x from '@/images/NetstatPage/img_download-btn@2x.webp';
 import { useAppSelector } from 'hook/reduxToolkit';
+
+import AppstoreDownloadBtn2x from '@/images/NetstatPage/img_download-btn@2x.webp';
 import ProspectsIphone from '@/images/NetstatPage/img_netstat-iphone@2x.webp';
 import ProspectsIphoneTablet from '@/images/NetstatPage/img_netstat-iphone-tablet@2x.webp';
 import ProspectsIphoneMobile from '@/images/NetstatPage/img_netstat-iphone-mobile@2x.webp';
-
 import netstatStyles from '../sass/netstat.module.scss';
 
 function NetstatProspects({ saleUrl }: IPageStatus) {

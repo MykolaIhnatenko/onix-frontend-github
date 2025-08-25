@@ -4,9 +4,9 @@ import VRARContent from 'components/VRARContent/VRARContent';
 import GuideSection from './GuideSection';
 import upperPlacedIcons from '../data/upperPlacedIcons';
 import lowerPlacedIcons from '../data/lowerPlacedIcons';
+
 import ImageSolution from '@/images/MarineSafetyPage/img_solution-img.webp';
 import ImageSolutionTablet from '@/images/MarineSafetyPage/img_solution-tablet.webp';
-
 import styles from '../sass/MarineSafety.module.scss';
 
 function SolutionSection() {

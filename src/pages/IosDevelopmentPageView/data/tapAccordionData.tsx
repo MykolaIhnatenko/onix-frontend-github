@@ -1,9 +1,10 @@
 import Icons from '../../../assets/icon';
+import { ITapAccordionItem } from '../../../components/TapAccordion/interfaces/ITapAccordionData';
+
 import IosTapAccordionBgItem1 from '@/images/iosPage/img_card_bg1@2x.webp';
 import IosTapAccordionBgItem2 from '@/images/iosPage/img_card_bg2@2x.webp';
 import IosTapAccordionBgItem3 from '@/images/iosPage/img_card_bg3@2x.webp';
 import IosTapAccordionBgItem4 from '@/images/iosPage/img_card_bg4@2x.webp';
-import { ITapAccordionItem } from '../../../components/TapAccordion/interfaces/ITapAccordionData';
 
 const tapAccordionData: ITapAccordionItem[] = [
   {

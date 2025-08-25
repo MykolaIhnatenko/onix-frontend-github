@@ -1,3 +1,5 @@
+import ISliderItem from '../interfaces/ISliderItem';
+
 import MotionGraphicsSlider2Main from '@/images/motionGraphics/imageSlider/img_2_main@2x.webp';
 import MotionGraphicsSlider3Main from '@/images/motionGraphics/imageSlider/img_3_main@2x.webp';
 import MotionGraphicsSlider3Secondary from '@/images/motionGraphics/imageSlider/img_3_secondary@2x.webp';
@@ -6,7 +8,6 @@ import MotionGraphicsSlider4Secondary from '@/images/motionGraphics/imageSlider/
 import MotionGraphicsSlider5Main from '@/images/motionGraphics/imageSlider/img_5_main@2x.webp';
 import MotionGraphicsSlider5Secondary from '@/images/motionGraphics/imageSlider/img_5_secondary@2x.webp';
 import MotionGraphicsSlider6Main from '@/images/motionGraphics/imageSlider/img_6_main@2x.webp';
-import ISliderItem from '../interfaces/ISliderItem';
 
 const motionGraphicsSliderData: ISliderItem[] = [
 

@@ -1,11 +1,11 @@
 import CallToActionComponent from '../../components/CallToActionBlock/CallToActionComponent';
-import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import IDesignPortfolio from './interfaces/IDesignPortfolio';
 import ActiveTitleHeader from '../../components/ActiveTitleHeader/ActiveTitleHeader';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import SkeletonLoader from '../../components/SkeletonLoader/SkeletonLoader';
 import { EASY_PROJECTS_PAGINATION_LIMIT } from '../../constants/constants';
 
+import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import styles from './sass/DesignPortfolio.module.scss';
 
 function DesignPortfolioView({

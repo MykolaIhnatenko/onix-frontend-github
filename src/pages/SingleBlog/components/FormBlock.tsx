@@ -1,9 +1,6 @@
 import { useSelector } from 'react-redux';
 import { StaticImageData } from 'next/image';
 
-import SingleBlogFormBg from '@/images/singleBlog/img_blogs_form@2x.webp';
-import SingleBlogFormBgTablet from '@/images/singleBlog/img_blogs_form_tablet@2x.webp';
-import SingleBlogFormBgMobile from '@/images/singleBlog/img_blogs_form_mobile@2x.webp';
 import ImageComponent from '../../../components/Image/Image';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
@@ -17,6 +14,9 @@ import BlogsFormModal from '../../Blogs/components/BlogsFormModal';
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
 
+import SingleBlogFormBgMobile from '@/images/singleBlog/img_blogs_form_mobile@2x.webp';
+import SingleBlogFormBgTablet from '@/images/singleBlog/img_blogs_form_tablet@2x.webp';
+import SingleBlogFormBg from '@/images/singleBlog/img_blogs_form@2x.webp';
 import styles from '../sass/formBlock.module.scss';
 
 function FormBlock({ salesChannel }: IFormBlock) {

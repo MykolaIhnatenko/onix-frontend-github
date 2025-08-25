@@ -3,7 +3,7 @@ import getFooterContent from 'api/getFooterContent';
 import IPages from '../src/interfaces/IPages';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import Layout from '../src/layout/Layout';
 import NetstatPageView from '../src/pages/NetstatPage/NetstatPageView';

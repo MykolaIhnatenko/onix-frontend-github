@@ -1,5 +1,6 @@
 import {
   Mukta_Vaani as MuktaVaani,
+  Plus_Jakarta_Sans as PlusJakartaSans,
 } from 'next/font/google';
 import localFont from 'next/font/local';
 
@@ -48,6 +49,14 @@ export const muktaVaaniFont = MuktaVaani({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700', '800'],
   variable: '--muktaVaani',
+  preload: true,
+  display: 'swap',
+});
+
+export const plusJakartaSans = PlusJakartaSans({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  variable: '--jakartaSans',
   preload: true,
   display: 'swap',
 });

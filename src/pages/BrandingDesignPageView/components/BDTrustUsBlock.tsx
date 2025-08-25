@@ -1,10 +1,10 @@
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import CardsBlock from '../../../components/CardsBlock/CardsBlock';
 import ImageComponent from '../../../components/Image/Image';
-import VRTrustUsBackground from '@/images/vrServicesPage/img_trust_us_bg.webp';
-import TrustUsBackgroundMobileWebp from '@/images/img_trust_us_mobile_bg@2x.webp';
 import { ITrustUsBlock } from '../../MachineLearningPageView/interfaces/ITrustUsBlock';
 
+import VRTrustUsBackground from '@/images/vrServicesPage/img_trust_us_bg.webp';
+import TrustUsBackgroundMobileWebp from '@/images/img_trust_us_mobile_bg@2x.webp';
 import styles from '../sass/trustUsBlock.module.scss';
 
 function BDTrustUsBlock({ title, data }: ITrustUsBlock) {

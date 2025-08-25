@@ -1,6 +1,6 @@
 import ImageComponent from '../../../components/Image/Image';
-import WorksScreens2x from '@/images/NetstatPage/img_works-screen@2x.webp';
 
+import WorksScreens2x from '@/images/NetstatPage/img_works-screen@2x.webp';
 import netstatStyles from '../sass/netstat.module.scss';
 
 function NetstatWorksScreens() {

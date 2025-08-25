@@ -2,9 +2,6 @@ import { useMemo } from 'react';
 
 import Ellipse from './Ellipse';
 import Ellipses from './Ellipses';
-import mainImgSrc2x from '@/images/JamesSmith/mainSection/img_phone@2x.webp';
-import mainImgSrcTablet2x from '@/images/JamesSmith/mainSection/img_phoneTablet@2x.webp';
-import mainImgSrcMobile2x from '@/images/JamesSmith/mainSection/img_phoneMobile@2x.webp';
 import { useAppSelector } from '../../../hook/reduxToolkit';
 import ImageComponent from '../../../components/Image/Image';
 import specificationData from '../data/specificationData';
@@ -13,6 +10,9 @@ import JSAPageContainer from './JSAPageContainer';
 import JSAText from './JSAText';
 import BlueSpan from './BlueSpan';
 
+import mainImgSrcMobile2x from '@/images/JamesSmith/mainSection/img_phoneMobile@2x.webp';
+import mainImgSrcTablet2x from '@/images/JamesSmith/mainSection/img_phoneTablet@2x.webp';
+import mainImgSrc2x from '@/images/JamesSmith/mainSection/img_phone@2x.webp';
 import styles from '../sass/JSAMainSection.module.scss';
 
 function JSAMainSection() {

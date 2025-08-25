@@ -1,6 +1,6 @@
 import ImageComponent from '../../../components/Image/Image';
-import Result from '@/images/caseStudiesPage/ColoradoSports/img_result.webp';
 
+import Result from '@/images/caseStudiesPage/ColoradoSports/img_result.webp';
 import styles from '../sass/coloradoSportsVideoResultImage.module.scss';
 
 function ColoradoSportsVideoResultImage({ imageStyle }: { imageStyle :'mobile' | 'desk' }) {

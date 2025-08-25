@@ -1,3 +1,8 @@
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+import ItemList from 'components/ItemList/ItemList';
+
 import img_LMS from '@/images/elernings/img_LMS.webp';
 import img_LRS from '@/images/elernings/img_LRS.webp';
 import img_ElerningPortals from '@/images/elernings/img_ElerningPortals.webp';
@@ -19,10 +24,6 @@ import img_VirtualClassroomsMobile from '@/images/elernings/img_VirtualClassroom
 import img_KMSMobile from '@/images/elernings/img_KMSMobile.webp';
 import img_LXPMobile from '@/images/elernings/img_LXPMobile.webp';
 import img_MobileLearningApplicationsMobile from '@/images/elernings/img_MobileLearningApplicationsMobile.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
-import ItemList from 'components/ItemList/ItemList';
 
 const cardElerningsData: IAccordionData[] = [
   {

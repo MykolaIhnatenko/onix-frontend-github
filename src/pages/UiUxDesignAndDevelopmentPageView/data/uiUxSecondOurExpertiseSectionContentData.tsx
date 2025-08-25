@@ -1,13 +1,14 @@
 import PageLinks from '../../../constants/PageLinks';
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+
 import UiUxOurExpertiseFirstImg1 from '@/images/uiUxPage/ourExpertiseSectionFirst/img_iuUxOurExpertiseFirstImg1.webp';
 import UiUxOurExpertiseFirstImg2 from '@/images/uiUxPage/ourExpertiseSectionFirst/img_iuUxOurExpertiseFirstImg2.webp';
 import UiUxOurExpertiseFirstImg3 from '@/images/uiUxPage/ourExpertiseSectionFirst/img_iuUxOurExpertiseFirstImg3.webp';
 import UiUxOurExpertiseFirstImg4 from '@/images/uiUxPage/ourExpertiseSectionFirst/img_iuUxOurExpertiseFirstImg4.gif';
 import UiUxOurExpertiseFirstImg5 from '@/images/uiUxPage/ourExpertiseSectionFirst/img_iuUxOurExpertiseFirstImg5.webp';
 import UiUxOurExpertiseFirstImg6 from '@/images/uiUxPage/ourExpertiseSectionFirst/img_iuUxOurExpertiseFirstImg6.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
 
 const uiUxSecondOurExpertiseSectionContentData = (isMobile: boolean): IAccordionData[] => ([
   {

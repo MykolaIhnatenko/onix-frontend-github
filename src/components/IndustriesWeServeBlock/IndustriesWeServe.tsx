@@ -5,6 +5,7 @@ import ContentTextNew from 'components/ContentTextNew/ContentTextNew';
 import MainTitle from 'components/MainTitle/MainTitle';
 import ItemText from 'components/ItemText/ItemText';
 import PageContainer from 'components/PageContainer/PageContainer';
+import VRARContent from '../VRARContent/VRARContent';
 
 // Default background
 // import IndustriesBgXXXL from '@/images/industriesWeServe/img_bgXXXL.webp';
@@ -15,7 +16,7 @@ import PageContainer from 'components/PageContainer/PageContainer';
 function IndustriesWeServeBlock({
   upTitle, title, text, carouselTop, carouselBottom,
   carouselTopClasses, carouselBottomClasses,
-  withoutBorder, background, classes,
+  withoutBorder, background, classes, withoutAnimate = true,
 }: IIndustriesWeServeBlock) {
   return (
     <section className={`relative bg-color-black text-color-white ${classes?.section || ''}`}>
@@ -47,13 +48,15 @@ function IndustriesWeServeBlock({
             />
           )}
           {title && (
-            <MainTitle className={`
+            <VRARContent withoutAnimate={withoutAnimate}>
+              <MainTitle className={`
                 min-lg:max-w-[1080px] min-xxxl:max-w-[1480px]
                 ${classes?.title || ''}
               `}
-            >
-              {title}
-            </MainTitle>
+              >
+                {title}
+              </MainTitle>
+            </VRARContent>
           )}
           {text && (
             <div>

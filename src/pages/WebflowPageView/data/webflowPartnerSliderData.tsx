@@ -1,5 +1,7 @@
 import { IPartnerSliderData } from '../../../components/PartnerSection/interfaces/IPartnerSection';
 import Icons from '../../../assets/icon';
+import TransparentCard from '../../../components/TransparentCard/TransparentCard';
+
 import WebflowPartnerSectionItemMobileBg2 from '@/images/webflowPage/img_webflow_partner_sectionItem_mobile_bg_2.webp';
 import MachineSliderBgMobile1 from '@/images/machineLearning/partnerSlider/img_bg_slider_item_mobile1.webp';
 import MachineSliderBgMobile2 from '@/images/machineLearning/partnerSlider/img_bg_slider_item_mobile2.webp';
@@ -8,8 +10,6 @@ import MachineSliderBg1 from '@/images/machineLearning/partnerSlider/img_bg_slid
 import MachineSliderBg2 from '@/images/machineLearning/partnerSlider/img_bg_slider_item2.webp';
 import MachineSliderBg3 from '@/images/machineLearning/partnerSlider/img_bg_slider_item3.webp';
 import MachineSliderBg4 from '@/images/machineLearning/partnerSlider/img_bg_slider_item4.webp';
-import TransparentCard from '../../../components/TransparentCard/TransparentCard';
-
 import styles from '../../../components/TransparentCard/sass/transparentCard.module.scss';
 
 const webflowPartnerSliderData: IPartnerSliderData[] = [

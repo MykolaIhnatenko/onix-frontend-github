@@ -1,4 +1,5 @@
 import { IHoverAccordionItemData } from '../../../components/HoverAccordion/interfaces/IHoverAccordion';
+
 import TravelHoverAccordionImg1 from '@/images/travelHospitalityPage/hoverAccordion/Img_travelHoverAccordion1@2x.webp';
 import TravelHoverAccordionImg2 from '@/images/travelHospitalityPage/hoverAccordion/Img_travelHoverAccordion2@2x.webp';
 import TravelHoverAccordionImg3 from '@/images/travelHospitalityPage/hoverAccordion/Img_travelHoverAccordion3@2x.webp';

@@ -15,6 +15,7 @@ function AccordionBlack({
   borderBottomLast,
   smallerTitleText,
   classes,
+  borderTop,
 }: IAccordionBlack) {
   return (
     <AccordionTemplate
@@ -27,6 +28,7 @@ function AccordionBlack({
       isAccordionBlack
       accordionStyleTypes={accordionStyleTypes}
       borderTopFirst={borderTopFirst}
+      borderTop={borderTop}
       borderBottomLast={borderBottomLast}
       smallerTitleText={smallerTitleText}
       classes={classes}

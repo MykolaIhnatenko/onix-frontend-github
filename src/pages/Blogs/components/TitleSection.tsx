@@ -3,13 +3,13 @@ import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import useBackground from '../../../hook/useBackground';
-import BlogBg from '@/images/blog/img_blogs@2x.webp';
-import BlogBgTablet from '@/images/blog/img_blogs_tablet@2x.webp';
-import BlogBgMobile from '@/images/blog/img_blogs_mobile@2x.webp';
 import { TitleSectionType } from '../../../interfaces/IBlogsPage';
 import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 import { ClickHandler } from 'components/UI/interfaces/IButton';
 
+import BlogBg from '@/images/blog/img_blogs@2x.webp';
+import BlogBgTablet from '@/images/blog/img_blogs_tablet@2x.webp';
+import BlogBgMobile from '@/images/blog/img_blogs_mobile@2x.webp';
 import styles from '../sass/titleSection.module.scss';
 
 function TitleSection({ seoData, description }: TitleSectionType) {

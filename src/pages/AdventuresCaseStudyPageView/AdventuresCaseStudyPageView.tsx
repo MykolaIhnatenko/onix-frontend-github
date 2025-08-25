@@ -15,18 +15,19 @@ import servicesData from './data/servicesData';
 import aboutBlockData from './data/aboutBlockData';
 import { ButtonType } from '../../constants/enums';
 import ButtonTypes from '../../constants/ButtonTypes';
-import RunningBg from '@/images/adventurePage/runningRowsBlock/img_runningRowsBlock_bg.webp';
-import RunningBgTablet from '@/images/adventurePage/runningRowsBlock/img_runningRowsBlock_bg_tablet.webp';
-import RunningBgMobile from '@/images/adventurePage/runningRowsBlock/img_runningRowsBlock_bg_mobile.webp';
-import CTAFirstBg from '@/images/adventurePage/cta/img_cta_first_bg.webp';
-import CTAFirstBgTablet from '@/images/adventurePage/cta/img_cta_first_bg_tablet.webp';
-import CTAFirstBgMobile from '@/images/adventurePage/cta/img_cta_first_bg_mobile.webp';
 import IPageStatus from '../../interfaces/IPageStatus';
 import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
 import OurSolutions from 'components/OurSolutions/OurSolutions';
 import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 import BusinessContext from 'components/BusinessContext/BusinessContext';
+
+import RunningBg from '@/images/adventurePage/runningRowsBlock/img_runningRowsBlock_bg.webp';
+import RunningBgTablet from '@/images/adventurePage/runningRowsBlock/img_runningRowsBlock_bg_tablet.webp';
+import RunningBgMobile from '@/images/adventurePage/runningRowsBlock/img_runningRowsBlock_bg_mobile.webp';
+import CTAFirstBg from '@/images/adventurePage/cta/img_cta_first_bg.webp';
+import CTAFirstBgTablet from '@/images/adventurePage/cta/img_cta_first_bg_tablet.webp';
+import CTAFirstBgMobile from '@/images/adventurePage/cta/img_cta_first_bg_mobile.webp';
 
 function AdventuresCaseStudyPageView({ saleUrl }: IPageStatus) {
   const {

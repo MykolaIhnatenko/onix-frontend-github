@@ -8,12 +8,12 @@ import styles from '../sass/showButton.module.scss';
 function ShowButton({ setIsShowAll, prevState }: IShowButton) {
   const variantsShowAll = {
     hidden: { y: '0' },
-    visible: { y: '-22px' },
+    visible: { y: '-25px' },
   };
 
   const variantsShowLess = {
     hidden: { y: '0' },
-    visible: { y: '-22px' },
+    visible: { y: '-25px' },
   };
 
   return (

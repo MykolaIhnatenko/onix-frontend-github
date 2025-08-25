@@ -34,7 +34,7 @@ function ProjectsSection({
             url={attributes?.page?.data?.attributes?.url || ''}
             image={attributes?.picture?.data?.attributes?.url}
             header={attributes.header}
-            description={attributes?.description || attributes?.page?.data?.attributes?.description}
+            description={attributes?.page?.data?.attributes?.description}
           />
         ))}
         {isLoading && new Array(DEFAULT_PROJECTS_PAGINATION_LIMIT).fill(0).map((_, index) => (

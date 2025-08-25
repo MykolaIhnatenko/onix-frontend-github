@@ -48,7 +48,7 @@ function ResultsBlock({
             width={0}
             height={0}
             sizes="100vw"
-            className="object-cover object-top w-full h-auto max-h-[100%]"
+            className={`object-cover object-top w-full h-auto max-h-[100%] + ${classes?.backgroundImage || ''}`}
           />
         </div>
       )}

@@ -40,14 +40,16 @@ import IosContactUsBg3 from '../../assets/images/iosPage/img_contact_us_bg3@2x.w
 import IosContactUsBgTablet3 from '../../assets/images/iosPage/img_contact_us_bg3_tablet@2x.webp';
 import IosContactUsBgMobile3 from '../../assets/images/iosPage/img_contact_us_bg3_mobile@2x.webp';
 import IosContactUsBigBg1 from '../../assets/images/iosPage/img_contact_us_big_bg1@2x.webp';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import iosCaseStudiesData from './data/iosCaseStudiesData';
+import IAchievements from '../../interfaces/IAchievements';
+
 import ModelsBgXXXL from '@/images/modelsSection/img_backgroundXXXL.webp';
 import ModelsBg from '@/images/modelsSection/img_background.webp';
 import ModelsBgTablet from '@/images/modelsSection/img_backgroundTablet.webp';
 import ModelsBgMobile from '@/images/modelsSection/img_backgroundMobile.webp';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
-import iosCaseStudiesData from './data/iosCaseStudiesData';
 
-function IosDevelopmentPageView({ pageBlogs }: IPageBlogs) {
+function IosDevelopmentPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isSMDevice,
@@ -92,7 +94,7 @@ function IosDevelopmentPageView({ pageBlogs }: IPageBlogs) {
         btnText={iosMainSectionData.btnText}
         data={iosMainSectionData.data}
       />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <IosServicesSection />
       <IosNumbersSection />
       <IosProductDiscoverySection />

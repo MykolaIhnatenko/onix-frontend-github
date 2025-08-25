@@ -1,3 +1,7 @@
+import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
+import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
+import PageLinks from 'constants/PageLinks';
+
 import BookCarousel from '@/images/carousel/img_book.webp';
 import ElearningCarousel from '@/images/carousel/img_elearning.webp';
 import FintechCarousel from '@/images/carousel/img_fintech.webp';
@@ -6,15 +10,6 @@ import OpenCarousel from '@/images/carousel/img_open.webp';
 import RetailCarousel from '@/images/carousel/img_retail.webp';
 import SportsCarousel from '@/images/carousel/img_sports.webp';
 import TravelCarousel from '@/images/carousel/img_travel.webp';
-import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
-import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
-import PageLinks from 'constants/PageLinks';
-
-export const industriesWeServeBlockData = {
-  upTitle: '[ Industries we serve ]',
-  pageTitle: `We’re a competent software development\u00A0team that delivers reliable
-    products for various\u00A0industry\u00A0domains:`,
-};
 
 export const carouselTop: ICarouselAutomaticData[] = [
   {

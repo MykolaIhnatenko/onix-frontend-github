@@ -14,6 +14,7 @@ interface IResultsBlock {
   classes?: {
     resultBlock?: string;
     background?: string;
+    backgroundImage?: string;
     container?: string;
     name?: string;
     titleBlock?: string;

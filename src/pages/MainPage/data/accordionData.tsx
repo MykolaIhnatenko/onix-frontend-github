@@ -276,7 +276,7 @@ export const softwareProductContentData = getAccordionTextData(mainSoftwareData)
 export const faqData: IAccordionData[] = [
   {
     id: 1,
-    title: 'Are you a Ukrainian software development company?',
+    title: 'How can your software development services rescue a failing software project?',
     content: (
       <div>
         <ContentText tag="p" className={textStyle}>

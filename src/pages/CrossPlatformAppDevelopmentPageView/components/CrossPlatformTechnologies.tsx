@@ -9,10 +9,10 @@ import PageContainer from '../../../components/PageContainer/PageContainer';
 import CrossPlatformTechnologiesData from '../data/CrossPlatformTechnologiesData';
 import ImageComponent from '../../../components/Image/Image';
 import useBackground from '../../../hook/useBackground';
+
 import CrossPlatformTechnologiesBg from '@/images/crossplatformDesign/img_technologies@2x.webp';
 import CrossPlatformTechnologiesTabletBg from '@/images/crossplatformDesign/img_technologiesTablet@2x.webp';
 import CrossPlatformTechnologiesMobileBg from '@/images/crossplatformDesign/img_technologiesMobile@2x.webp';
-
 import styles from '../sass/CrossPlatformTechnologies.module.scss';
 
 export default function CrossPlatformTechnologies() {

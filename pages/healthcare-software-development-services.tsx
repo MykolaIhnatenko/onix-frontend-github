@@ -8,7 +8,7 @@ import HealthcarePageView from '../src/pages/HealthcarePageView/HealthcarePageVi
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import getBlogsByIds from '../src/api/getBlogsByIds';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
@@ -17,6 +17,7 @@ function HealthcareSoftwareDevelopmentServices({
   seoData, footerContent, pageBlogs,
 }:IPages) {
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.HEALTHCARE_DEV, TitlePages.INDUSTRIES);
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -28,7 +29,7 @@ function HealthcareSoftwareDevelopmentServices({
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <HealthcarePageView pageBlogs={pageBlogs} />
+      <HealthcarePageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

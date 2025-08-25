@@ -1,3 +1,5 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+
 import OurSolutionsImg1 from '@/images/healthcareProviderPortalCaseStudy/ourSolutions/img_ourSolutions1@2x.webp';
 import OurSolutionsImg2 from '@/images/healthcareProviderPortalCaseStudy/ourSolutions/img_ourSolutions2@2x.webp';
 import OurSolutionsImg3 from '@/images/healthcareProviderPortalCaseStudy/ourSolutions/img_ourSolutions3@2x.webp';
@@ -16,7 +18,6 @@ import OurSolutionsImgMobile3 from '@/images/healthcareProviderPortalCaseStudy/o
 import OurSolutionsImgMobile4 from '@/images/healthcareProviderPortalCaseStudy/ourSolutions/img_ourSolutionsMobile4@2x.webp';
 import OurSolutionsImgMobile5 from '@/images/healthcareProviderPortalCaseStudy/ourSolutions/img_ourSolutionsMobile5@2x.webp';
 import OurSolutionsImgMobile6 from '@/images/healthcareProviderPortalCaseStudy/ourSolutions/img_ourSolutionsMobile6@2x.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

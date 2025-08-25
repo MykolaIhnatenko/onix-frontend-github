@@ -5,10 +5,6 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import useBackground from '../../../hook/useBackground';
-import ServicesMainImage from '@/images/services/img_main@2x.webp';
-import ServicesMainBg from '@/images/services/img_main_bg@2x.webp';
-import ServicesMainBgTablet from '@/images/services/img_main_bg_tablet@2x.webp';
-import ServicesMainBgMobile from '@/images/services/img_main_bg_mobile@2x.webp';
 import IStore from '../../../store/interfaces/IStore';
 import { IScreenSizes } from '../../../store/app/interfaces/IApp';
 import PageLinks from '../../../constants/PageLinks';
@@ -17,6 +13,10 @@ import { ButtonType } from '../../../constants/enums';
 import LinkButtonPrimary from 'components/UI/LinkButtonPrimary/LinkButtonPrimary';
 import ButtonTransparent from 'components/UI/ButtonTransparent/ButtonTransparent';
 
+import ServicesMainBgMobile from '@/images/services/img_main_bg_mobile@2x.webp';
+import ServicesMainBgTablet from '@/images/services/img_main_bg_tablet@2x.webp';
+import ServicesMainBg from '@/images/services/img_main_bg@2x.webp';
+import ServicesMainImage from '@/images/services/img_main@2x.webp';
 import styles from '../sass/servicesMainSecion.module.scss';
 
 function ServicesMainSection() {

@@ -9,7 +9,7 @@ import { sortArrById } from '../src/utils/blogsHelpers';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import DevopsSolutionsPageView from '../src/pages/DevopsSolutionsPageView/DevopsSolutionsPageView';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
@@ -17,6 +17,7 @@ function DevopsServices({
   seoData, footerContent, pageBlogs,
 }:IPages) {
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.DEVOPS, TitlePages.SERVICES);
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -28,7 +29,7 @@ function DevopsServices({
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <DevopsSolutionsPageView pageBlogs={pageBlogs} />
+      <DevopsSolutionsPageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

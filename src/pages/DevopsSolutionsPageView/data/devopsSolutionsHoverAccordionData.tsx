@@ -1,4 +1,5 @@
 import { IHoverAccordionItemData } from '../../../components/HoverAccordion/interfaces/IHoverAccordion';
+
 import DevopsHoverAccordionImg1 from '@/images/devopsSolutionsPageView/hoverAccordion/img_hoverAccordion1.webp';
 import DevopsHoverAccordionImg2 from '@/images/devopsSolutionsPageView/hoverAccordion/img_hoverAccordion2.webp';
 import DevopsHoverAccordionImg3 from '@/images/devopsSolutionsPageView/hoverAccordion/img_hoverAccordion3.webp';

@@ -16,6 +16,9 @@ import ourSolutionsData from './data/ourSolutionsData';
 import technologyData from './data/technologyData.json';
 import { ButtonType } from '../../constants/enums';
 import IPageStatus from 'interfaces/IPageStatus';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -29,8 +32,6 @@ import MainBg from '@/images/misterBnB/main/img_main_bg.webp';
 import MainBgBigTablet from '@/images/misterBnB/main/img_main_bg_big_tablet.webp';
 import MainBgTablet from '@/images/misterBnB/main/img_main_bg_tablet.webp';
 import MainBgMobile from '@/images/misterBnB/main/img_main_bg_mobile.webp';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function MisterBnBPageView({ saleUrl }: IPageStatus) {
   const {
@@ -99,8 +100,8 @@ function MisterBnBPageView({ saleUrl }: IPageStatus) {
           background={getBackground().first}
           withButton
           classes={{
-            background: `after:content-[""] after:absolute after:top-[-20px] after:left-0 after:w-full
-            after:h-[80px] after:bg-gradient-to-b from-[rgba(0,0,0,0)_10%] to-black`,
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full
+            after:h-[120px] after:bg-gradient-to-t from-[rgba(0,0,0,0)_10%] to-black screen-lg:after:h-[80px]`,
             image: '!object-center screen-lg:!object-top',
             title: '!max-w-[600px] screen-lg:!max-w-[510px] screen-md:!max-w-[320px]',
           }}

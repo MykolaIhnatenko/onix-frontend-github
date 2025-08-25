@@ -6,34 +6,6 @@ export enum ButtonPathVariant {
   CALCULATE = 'calculate',
 }
 
-export enum CardBlockVariant {
-  IOS = 'ios',
-  DEDICATED_TEAM = 'dedicatedTeam',
-  INDUSTRIES = 'industries',
-  MACHINE_LEARNING = 'machineLearning',
-  CALCULATE = 'calculate',
-  SERVICES = 'services',
-  SALESFORCE = 'salesforce',
-  VR = 'vr',
-  DESIGN_AUDIT = 'designAudit',
-  BRANDING_DESIGN = 'brandingDesign',
-  WEB_DESIGN = 'webDesign',
-  BOOKING = 'booking',
-  HEALTHCARE = 'healthcare',
-  UX_AUDIT = 'uxAudit',
-  DEVOPS_SOLUTIONS = 'devopsSolutions',
-  DEVOPS_SOLUTIONS_SECOND = 'devopsSolutionsSecond',
-  QA = 'qa',
-  GAME_ART = 'gameArt',
-  UI_UX = 'uiUx',
-  TRAVEL = 'travel',
-  MOTION_GRAPHICS = 'motionGraphics',
-  FINTECH = 'fintech',
-  ANDROID = 'android',
-  APPLICATION = 'application',
-  AI_IMAGE_CLASSIFICATION = 'aiImageClassification',
-}
-
 export enum ErrorVariant {
   ATTACH_ERROR = 'attachError',
   DESCRIPTION_ERROR = 'descriptionError',
@@ -204,6 +176,10 @@ export enum TitlePages {
   LIVBOX = 'Livbox',
   AR_CAR_SHOWROOM = 'AR Car Showroom',
   JOOBS_CASE = 'Joobs',
+  HYDRA = 'ERP Hydra Case Study',
+  ARMY_HEALTH = 'Army Health System',
+  CRYPTOCURRENCY_BLOG = 'Cryptocurrency blog',
+  HOTEL4BOX = 'Hotel4Box',
 }
 
 export enum ScrollVariant {
@@ -256,23 +232,6 @@ export enum ColorFileAttachment {
 
 export enum CategoryVariant {
   CATEGORY_PAGE = 'categoryPage',
-}
-
-export enum AboutColorTextBlockVariant {
-  TRAVEL = 'travel',
-  TRAVEL_SECOND = 'travelSecond',
-  FITNESS = 'fitnessPadding',
-  E_LEARNING = 'eLearning',
-}
-
-export enum BenefitsSectionVariant {
-  TRAVEL = 'travel',
-  DEVOPS_SOLUTIONS = 'devopsSolutions',
-}
-
-export enum ChooseOnixVariant {
-  TRAVEL = 'travel',
-  BOOKING = 'booking',
 }
 
 export enum FormMessageButtonVariant {
@@ -357,22 +316,6 @@ export enum BigNumberCardVariant {
   USABILITY_TESTING_SECOND = 'usabilityTestingSecond',
   TRVLPAGE_DESIGN = 'trvlpageDesign',
   CONVERT = 'convert',
-}
-
-export enum UsabilityTestingMainBlockVariant {
-  TRVLPAGE_DESIGN = 'trvlpageDesign',
-  LSTM_NEWS = 'lstmNews',
-  INNERAI = 'innerai',
-  SWITZERLAND = 'switzerland',
-  CUSTOM_CRM = 'customCrm',
-  APARTMENT_BOOKING = 'apartmentBooking',
-  VOLKSWAGEN = 'volkswagen',
-  HCP_PORTAL = 'HCPPortal',
-  VIRTUAL_TOURS_APP = 'virtualToursApp',
-  ANALYTICS_PLATFORM = 'analyticsPlatform',
-  CREATIVITY_MANAGEMENT = 'creativityManagement',
-  AR_CAR_SHOWROOM = 'arCarShowroom',
-  CONFETTI = 'confetti',
 }
 
 export enum FileAttachmentVariant {

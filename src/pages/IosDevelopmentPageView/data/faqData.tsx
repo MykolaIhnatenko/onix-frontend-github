@@ -44,7 +44,6 @@ const faqData: IAccordionData[] = [
           Check out our case studies
           {' '}
           <LinkComponent
-            prefetch={false}
             href={PageLinks.CASE_STUDIES}
             className={textLink}
           >

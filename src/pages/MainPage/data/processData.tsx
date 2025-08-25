@@ -1,5 +1,6 @@
 import { IProcessImage, IProcessAccordionItem } from '../interfaces/IProcess';
 import MainTitle from '../../../components/MainTitle/MainTitle';
+
 import ProcessImgWebp1 from '@/images/mainPage/processBlock/img_1@2x.webp';
 import ProcessImgWebp2 from '@/images/mainPage/processBlock/img_2@2x.webp';
 import ProcessImgWebp3 from '@/images/mainPage/processBlock/img_3@2x.webp';

@@ -28,11 +28,12 @@ import webflowCardSliderVertical from './data/webflowCardSliderVertical';
 import { trustUsBlockFor6Cards } from 'constants/tailwindStyle';
 import {
   ButtonType,
-  CardBlockVariant,
   DropBlockVariant,
   PartnerSectionScrollVariant,
   PartnerSectionVariant,
 } from '../../constants/enums';
+import IAchievements from '../../interfaces/IAchievements';
+
 import WebflowCardSliderVerticalTabletBg from '@/images/webflowPage/cardSliderVertical/img_card_slider_vertical_tablet_bg.webp';
 import WebflowCardSliderVerticalMobileBg from '@/images/webflowPage/cardSliderVertical/img_card_slider_vertical_mobile_bg.webp';
 import WebflowCardSliderVerticalBg from '@/images/webflowPage/cardSliderVertical/img_card_slider_vertical_bg.webp';
@@ -54,7 +55,7 @@ import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_
 import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import TellUsAboutSM from '@/images/img_tell_us_about_sm.webp';
 
-function WebflowPageView() {
+function WebflowPageView({ achievements }: IAchievements) {
   const {
     screenSizes: {
       isMDDevice,
@@ -102,7 +103,7 @@ function WebflowPageView() {
         rightImg={WebflowPageImg}
       />
       <WeOffer />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <ReviewBlock
         quotesList={webflowQuotesList}
       />
@@ -163,11 +164,13 @@ function WebflowPageView() {
       <TrustUsBlock
         data={webflowTrustUsCardsData}
         title="With our Webflow design services you'll get"
-        variant={CardBlockVariant.DESIGN_AUDIT}
         dropBlockVariant={DropBlockVariant.WITHOUT_DROP_BLOCK}
         classes={{
-          cardClasses: {
-            card: trustUsBlockFor6Cards,
+          sectionTitle: '!mb-[40px] min-xxl:!max-w-[1100px] screen-md:!mb-[30px]',
+          CardsBlockClasses: {
+            cardClasses: {
+              card: trustUsBlockFor6Cards,
+            },
           },
         }}
       />

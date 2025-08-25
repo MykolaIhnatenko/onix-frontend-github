@@ -1,11 +1,11 @@
 import Icon from '../../../assets/icon';
 
-import styles from '../../UsabilityTestingPageView/sass/usabilityTestingMainBlock.module.scss';
-
 const trvlpageMainBlockData = {
   title: 'Trvlpage',
   text: 'Redesigning a travel-centric social media app',
-  icon: <Icon.IconTrvlpageMainBlock className={styles.icon} />,
+  icon: <Icon.IconTrvlpageMainBlock
+    className="!w-[70px] !h-[70px] screen-lg:!w-[60px] screen-lg:!h-[60px] screen-md:!w-[50px] screen-md:!h-[50px]"
+  />,
 };
 
 export default trvlpageMainBlockData;

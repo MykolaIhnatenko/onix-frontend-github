@@ -7,13 +7,13 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import VRARCallToActionComponent from '../../../components/VRARCallToActionBlock/VRARCallToActionComponent';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import { ButtonType } from 'constants/enums';
+
 import ApplicationOurTeamNeededBg from '@/images/applicationMigrationCaseStudies/ourTeamNeeded/img_OurTeamNeededBg@2x.webp';
 import ApplicationOurTeamNeededTabletBg from '@/images/applicationMigrationCaseStudies/ourTeamNeeded/img_OurTeamNeededTabletBg@2x.webp';
 import ApplicationOurTeamNeededMobileBg from '@/images/applicationMigrationCaseStudies/ourTeamNeeded/img_OurTeamNeededMobileBg@2x.webp';
 import ApplicationOurTeamNeededImg from '@/images/applicationMigrationCaseStudies/ourTeamNeeded/img_OurTeamNeeded@2x.webp';
 import ApplicationOurTeamNeededTabletImg from '@/images/applicationMigrationCaseStudies/ourTeamNeeded/img_OurTeamNeededTablet@2x.webp';
 import ApplicationOurTeamNeededMobileImg from '@/images/applicationMigrationCaseStudies/ourTeamNeeded/img_OurTeamNeededMobile@2x.webp';
-
 import styles from '../sass/ourTeamNeeded.module.scss';
 
 function OurTeamNeeded({ saleUrl }: { saleUrl: boolean }) {
@@ -67,6 +67,7 @@ function OurTeamNeeded({ saleUrl }: { saleUrl: boolean }) {
           <VRARContent>
             <ImageComponent
               src={getBackground().image}
+              alt="Our Team Needed"
               sizes="100vw"
             />
           </VRARContent>

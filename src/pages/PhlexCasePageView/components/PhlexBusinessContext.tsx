@@ -5,6 +5,7 @@ import { businessContextDataThird } from '../data/businessContextData';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import ContentText from '../../../components/ContentText/ContentText';
 import BusinessContextWithTable from '../../../components/BusinessContextWithTables/BusinessContextWithTable';
+
 import Icon1 from '@/images/phlexCase/businessContext/img_icon_1.webp';
 import Icon2 from '@/images/phlexCase/businessContext/img_icon_2.webp';
 import Icon3 from '@/images/phlexCase/businessContext/img_icon_3.webp';

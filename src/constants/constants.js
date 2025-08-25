@@ -76,6 +76,12 @@ export const BADGE_TYPE = {
   DOMAIN: 'domain',
   DURATION: 'duration',
 };
+export const cursorFollowerEnabledPaths = [
+  '/ui-ux-design-and-development-services',
+  '/convert-case-study',
+  '/phlex-case-study',
+  '/digital-healthcare-at-home-case-study',
+];
 
 export const HOSTS = {
   SALE: 'sales.onix.company',

@@ -1,9 +1,9 @@
 import Icon from '../../../assets/icon';
+
 import CardBg1 from '@/images/bonus/achievements/img_bonusCardBg1.webp';
 import CardBg2 from '@/images/bonus/achievements/img_bonusCardBg2.webp';
 import CardMobileBg1 from '@/images/bonus/achievements/img_bonusCardMobileBg1.webp';
 import CardMobileBg2 from '@/images/bonus/achievements/img_bonusCardMobileBg2.webp';
-
 import styles from '../sass/achievements.module.scss';
 
 const currentYear = new Date().getFullYear();

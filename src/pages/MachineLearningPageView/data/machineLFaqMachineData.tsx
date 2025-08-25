@@ -141,7 +141,6 @@ function MachineLFaqMachineData() {
                 Yes, as an experienced machine learning app development company, we have a
                 {' '}
                 <LinkComponent
-                  prefetch={false}
                   absolute={false}
                   target="_blank"
                   href="https://works.onix-systems.com/collection/ml"

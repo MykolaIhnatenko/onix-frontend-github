@@ -1,5 +1,7 @@
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import ContentText from '../../../components/ContentText/ContentText';
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+
 import OurSolutionsImg1 from '@/images/apartmentBookingWebsiteView/ourSolutions/img_ourSolutions1@2x.webp';
 import OurSolutionsImg2 from '@/images/apartmentBookingWebsiteView/ourSolutions/img_ourSolutions2@2x.webp';
 import OurSolutionsImg3 from '@/images/apartmentBookingWebsiteView/ourSolutions/img_ourSolutions3@2x.webp';
@@ -15,7 +17,6 @@ import OurSolutionsImgMobile2 from '@/images/apartmentBookingWebsiteView/ourSolu
 import OurSolutionsImgMobile3 from '@/images/apartmentBookingWebsiteView/ourSolutions/img_ourSolutionsMobile3@2x.webp';
 import OurSolutionsImgMobile4 from '@/images/apartmentBookingWebsiteView/ourSolutions/img_ourSolutionsMobile4@2x.webp';
 import OurSolutionsImgMobile5 from '@/images/apartmentBookingWebsiteView/ourSolutions/img_ourSolutionsMobile5@2x.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

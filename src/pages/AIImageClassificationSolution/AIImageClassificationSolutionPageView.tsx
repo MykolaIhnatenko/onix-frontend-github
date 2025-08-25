@@ -15,14 +15,6 @@ import servicesData from './data/servicesData';
 import AIImageClassificationResult from './components/AIImageClassificationResultSection';
 import TrustUsBlock from '../MainPage/components/TrustUsBlock';
 import trustUsCardsData from './data/trustUsCardsData.json';
-import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
-import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
-import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
-import ResultsBlockXXXLBg from '@/images/ResultsBlockBg/img_resultsBlockBlackXXXLBg@2x.webp';
-import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
-import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
-import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
-import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
 import ResultsBlock from '../../components/ResultsBlock/ResultsBlock';
 import BorderedTechnologiesBlock from '../../components/BorderedTechnologiesBlock/BorderedTechnologiesBlock';
 import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
@@ -31,6 +23,15 @@ import { useAppSelector } from 'hook/reduxToolkit';
 import DevelopmentServicesWhite from '../../components/DevelopmentServicesWhite/DevelopmentServicesWhite';
 import OurSolutions from 'components/OurSolutions/OurSolutions';
 import solutionWeProvide from 'pages/AIImageClassificationSolution/data/solutionWeProvide';
+
+import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
+import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
+import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
+import ResultsBlockXXXLBg from '@/images/ResultsBlockBg/img_resultsBlockBlackXXXLBg@2x.webp';
+import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
+import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
+import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
+import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
 
 function AIIMageClassificationPageView({ saleUrl }: IPageStatus) {
   const {
@@ -114,14 +115,16 @@ function AIIMageClassificationPageView({ saleUrl }: IPageStatus) {
         disableBg
         mobileBgVariant
         classes={{
-          cardClasses: {
-            card: `min-xl:!flex-[0_1_25%] [&:nth-of-type(4)]:!border-b-[2px] [&:nth-of-type(4)]:!border-black
-            min-xl:[&:nth-of-type(4)]:!border-l-0 min-md:[&:nth-of-type(3)]:!border-b-[2px]
-            min-md:[&:nth-of-type(3)]:!border-black min-xl:[&:nth-of-type(2)]:!border-b-[2px]
-            min-xl:[&:nth-of-type(2)]:!border-black min-xl:[&:nth-of-type(1)]:!border-b-[2px]
-            min-xl:[&:nth-of-type(1)]:!border-black`,
-            title: 'min-lg:!text-[24px] min-lg:!leading-[1.42]',
-            boxText: 'min-md:!text-[18px] min-md:!leading-[1.44] min-md:!pr-0 min-lg:!tracking-[-0.9px]',
+          CardsBlockClasses: {
+            cardClasses: {
+              card: `min-xl:!flex-[0_1_25%] [&:nth-of-type(4)]:!border-b-[2px] [&:nth-of-type(4)]:!border-black
+              min-xl:[&:nth-of-type(4)]:!border-l-0 min-md:[&:nth-of-type(3)]:!border-b-[2px]
+              min-md:[&:nth-of-type(3)]:!border-black min-xl:[&:nth-of-type(2)]:!border-b-[2px]
+              min-xl:[&:nth-of-type(2)]:!border-black min-xl:[&:nth-of-type(1)]:!border-b-[2px]
+              min-xl:[&:nth-of-type(1)]:!border-black`,
+              title: 'min-lg:!text-[24px] min-lg:!leading-[1.42]',
+              boxText: 'min-md:!text-[18px] min-md:!leading-[1.44] min-md:!pr-0 min-lg:!tracking-[-0.9px]',
+            },
           },
         }}
       />

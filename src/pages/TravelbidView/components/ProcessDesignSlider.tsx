@@ -4,6 +4,8 @@ import Plx from 'react-plx';
 import { LG_DEVICE, MD_DEVICE } from '../../../constants/constants';
 import IColumnAnimation from '../interfaces/IColumnAnimation';
 import ImageComponent from 'components/Image/Image';
+import { useAppSelector } from 'hook/reduxToolkit';
+
 import ImageBottomFirst from '@/images/travelbid/processDesignSection/img_bottom-row-first-picture.webp';
 import ImageBottomSecond from '@/images/travelbid/processDesignSection/img_bottom-row-second-picture.webp';
 import ImageBottomThird from '@/images/travelbid/processDesignSection/img_bottom-row-third-picture.webp';
@@ -12,8 +14,6 @@ import ImageTopFirst from '@/images/travelbid/processDesignSection/img_top-row-f
 import ImageTopSecond from '@/images/travelbid/processDesignSection/img_top-row-second-picture.webp';
 import ImageTopThird from '@/images/travelbid/processDesignSection/img_top-row-third-picture.webp';
 import ImageTopFourth from '@/images/travelbid/processDesignSection/img_top-row-fourth-picture.webp';
-import { useAppSelector } from 'hook/reduxToolkit';
-
 import styles from '../sass/ProcessDesignSlider.module.scss';
 
 function ProcessDesignSlider({ isMobile }: { isMobile: boolean }) {

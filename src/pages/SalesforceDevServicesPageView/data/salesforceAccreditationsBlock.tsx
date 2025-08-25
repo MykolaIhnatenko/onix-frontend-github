@@ -1,4 +1,5 @@
 import { IAccreditationsBlockItem } from '../../../components/AccreditationsBlock/interfaces/IAccreditationsBlock';
+
 import SalesforceAccreditations1 from '@/images/salesforcePage/accreditations/img_Accreditations1.png';
 import SalesforceAccreditations2 from '@/images/salesforcePage/accreditations/img_Accreditations2.png';
 import SalesforceAccreditations3 from '@/images/salesforcePage/accreditations/img_Accreditations3.png';

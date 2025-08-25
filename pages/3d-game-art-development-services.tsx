@@ -8,12 +8,13 @@ import { getBlogsList, sortArrById } from '../src/utils/blogsHelpers';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import GameArtDevelopmentServicesPageView from '../src/pages/GameArtDevelopmentServicesPageView/GameArtDevelopmentServicesPageView';
 import { TitlePages } from '../src/constants/enums';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
 function GameArtDevelopmentServices({ seoData, footerContent, pageBlogs }:IPages) {
   const breadcrumbs: IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.GAME_ART, TitlePages.SERVICES);
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -25,7 +26,7 @@ function GameArtDevelopmentServices({ seoData, footerContent, pageBlogs }:IPages
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <GameArtDevelopmentServicesPageView pageBlogs={pageBlogs} />
+      <GameArtDevelopmentServicesPageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

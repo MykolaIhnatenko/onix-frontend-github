@@ -4,7 +4,7 @@ import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import { TitlePages } from '../src/constants/enums';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import IPages from '../src/interfaces/IPages';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
 import { checkSaleUrl } from '../src/utils/helpers';

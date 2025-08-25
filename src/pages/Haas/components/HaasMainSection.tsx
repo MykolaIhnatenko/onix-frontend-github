@@ -1,10 +1,10 @@
-import mobileBg from '@/images/haas/mainSection/img_mobileBg.webp';
 import { IHaasMain } from '../interfaces/IHaasMain';
 import ImageComponent from '../../../components/Image/Image';
 import HaasText from './HaasText';
 import Icons from '../../../assets/icon';
 import PageContainer from 'components/PageContainer/PageContainer';
 
+import mobileBg from '@/images/haas/mainSection/img_mobileBg.webp';
 import styles from '../sass/HaasMainSection.module.scss';
 
 const video = '/static/video/haas-banner.mp4';

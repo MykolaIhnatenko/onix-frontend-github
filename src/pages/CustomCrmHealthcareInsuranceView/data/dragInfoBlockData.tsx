@@ -62,7 +62,7 @@ const dragInfoBlockData = [
         <MainTitleWithoutSize tag="h3" className={cardTitle}>
           Healthcare Data Security
         </MainTitleWithoutSize>
-        <ContentText tag="p" className={text}>
+        <ContentText tag="p" className={listTitle}>
           Development started in January 2023 with one back-end and one front-end developer,
           overseen by a part-time project manager. Measures to ensure healthcare data security included:
         </ContentText>

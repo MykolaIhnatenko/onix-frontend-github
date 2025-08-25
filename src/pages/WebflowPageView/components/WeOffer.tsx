@@ -8,10 +8,10 @@ import ButtonTypes from '../../../constants/ButtonTypes';
 import webflowIconsContentData from '../data/webflowIconsContentData';
 import webflowNumberData from '../data/webflowNumberData';
 import { ButtonType } from '../../../constants/enums';
+
 import WebflowWeOfferMobilebg from '@/images/webflowPage/weOffer/img_we_offer_mobile_bg@2x.webp';
 import WebflowWeOfferbg from '@/images/webflowPage/weOffer/img_we_offer_bg@2x.webp';
 import WebflowWeOfferTabletbg from '@/images/webflowPage/weOffer/img_we_offer_tablet_bg@2x.webp';
-
 import styles from '../sass/weOffer.module.scss';
 
 function WeOffer() {

@@ -4,11 +4,11 @@ import { StaticImageData } from 'next/image';
 import NetstatAnimationH2 from './NetstatAnimationH2';
 import NetstatAnimationBlock from './NetstatAnimationBlock';
 import ImageComponent from '../../../components/Image/Image';
+import { useAppSelector } from 'hook/reduxToolkit';
+
 import WorksPhone from '@/images/NetstatPage/img_netstat-works-phone@2x.webp';
 import WorksPhoneTablet from '@/images/NetstatPage/img_netstat-works-phone-tablet@2x.webp';
 import WorksPhoneMobile from '@/images/NetstatPage/img_netstat-works-phone-mobile@2x.webp';
-import { useAppSelector } from 'hook/reduxToolkit';
-
 import netstatStyles from '../sass/netstat.module.scss';
 
 function NetstatWorks() {

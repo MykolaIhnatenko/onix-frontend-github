@@ -1,14 +1,17 @@
 import { ITechnologiesBlocksData } from '../../../components/Technologies/interfaces/ITechnologies';
 
 export const technologiesBlocksNames = {
-  'Backend development': [
-    'Python', 'Node.js', 'Java', 'Ruby', 'PHP',
+  'Backend and API development': [
+    'Python', 'Node.js', 'Java', 'PHP', 'Ruby',
   ],
   'Frontend development': [
     'React.js', 'Vue.js', 'CSS', 'HTML5',
   ],
   'Mobile development': [
     'Kotlin', 'Flutter', 'Swift', 'Objective-C', 'React Native',
+  ],
+  AI: [
+    'MATLAB', 'TensorFlow', 'PyTorch', 'SciKit-Learn', 'Pillow',
   ],
   'Platform customization': [
     'Shopify', 'WordPress', 'Salesforce', 'Magento', 'OpenCart', 'Canva',
@@ -17,7 +20,7 @@ export const technologiesBlocksNames = {
     'Unity', 'Visual Studio', 'Blender', 'Maya', 'Houdini', 'V-Ray',
   ],
   'Cloud storage': [
-    'AWS', 'Azure', 'Google Cloud Platform', 'Heroku', 'DigitalOcean',
+    'AWS', 'Azure', 'Heroku', 'DigitalOcean', 'GCP (Google Cloud Platform)',
   ],
 };
 

@@ -3,12 +3,12 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import CardsBlock from '../../../components/CardsBlock/CardsBlock';
 import workData from '../data/workData.json';
+import ImageComponent from '../../../components/Image/Image';
+import { ButtonPathVariant, ButtonType } from '../../../constants/enums';
+
 import DedicatedTeamWorkBg from '@/images/dedicatedTeamPage/img_work@2x.webp';
 import DedicatedTeamWorkBgTablet from '@/images/dedicatedTeamPage/img_work_tablet@2x.webp';
 import DedicatedTeamWorkBgMobile from '@/images/dedicatedTeamPage/img_work_mobile@2x.webp';
-import ImageComponent from '../../../components/Image/Image';
-import { ButtonPathVariant, ButtonType, CardBlockVariant } from '../../../constants/enums';
-
 import styles from '../sass/dedicatedTeamWorkSecion.module.scss';
 
 function DedicatedTeamWorkSection() {
@@ -47,7 +47,6 @@ function DedicatedTeamWorkSection() {
           </>
         )}
         dropBlockBtnTitle="Get a 100% dedicated team"
-        variant={CardBlockVariant.DEDICATED_TEAM}
         classes={{
           dropBlock: `min-md:!flex min-md:!justify-between min-md:!items-stretch min-md:!flex-[0_1_50%] min-md:!h-auto 
           min-md:!p-[28px_20px_20px_15px] min-xl:!flex-[0_1_33.33333%] min-xl:!p-[25px]`,

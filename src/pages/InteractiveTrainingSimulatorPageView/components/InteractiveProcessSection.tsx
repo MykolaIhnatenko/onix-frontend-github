@@ -4,11 +4,11 @@ import IStore from 'store/interfaces/IStore';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import { processContent } from '../data/data';
 import ImageComponent from '../../../components/Image/Image';
-import ProcessDesk from '@/images/caseStudiesPage/InteractiveTrainingSimulator/process-img-desk.webp';
-import ProcessTablet from '@/images/caseStudiesPage/InteractiveTrainingSimulator/process-img-tablet.webp';
 import { IScreenSizes } from 'store/app/interfaces/IApp';
 import InteractiveTitleBlock from './InteractiveTitleBlock';
 
+import ProcessDesk from '@/images/caseStudiesPage/InteractiveTrainingSimulator/process-img-desk.webp';
+import ProcessTablet from '@/images/caseStudiesPage/InteractiveTrainingSimulator/process-img-tablet.webp';
 import styles from '../sass/InteractiveProcessSection.module.scss';
 
 function InteractiveProcessSection() {

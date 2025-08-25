@@ -2,9 +2,6 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import ContentText from '../../../components/ContentText/ContentText';
 import useBackground from '../../../hook/useBackground';
-import BlogsSubscribeBg from '@/images/blogsPage/img_subscribe_blogs@2x.webp';
-import BlogsSubscribeBgTablet from '@/images/blogsPage/img_subscribe_blogs_tablet@2x.webp';
-import BlogsSubscribeBgMobile from '@/images/blogsPage/img_subscribe_blogs_mobile@2x.webp';
 import { MD_DEVICE } from '../../../constants/constants';
 import ImageComponent from '../../../components/Image/Image';
 import SubscribeForm from './SubscribeForm';
@@ -13,6 +10,9 @@ import pageToSalesChannels from '../../../constants/PageToSalesChannels';
 import BlogsFormModal from './BlogsFormModal';
 import { FormMessageButtonVariant } from '../../../constants/enums';
 
+import BlogsSubscribeBgMobile from '@/images/blogsPage/img_subscribe_blogs_mobile@2x.webp';
+import BlogsSubscribeBgTablet from '@/images/blogsPage/img_subscribe_blogs_tablet@2x.webp';
+import BlogsSubscribeBg from '@/images/blogsPage/img_subscribe_blogs@2x.webp';
 import styles from '../sass/subscribeBlock.module.scss';
 
 function SubscribeBlock({ categories }: ISubscribeBlock) {

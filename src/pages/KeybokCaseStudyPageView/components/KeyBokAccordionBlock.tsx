@@ -4,11 +4,11 @@ import VRARContent from '../../../components/VRARContent/VRARContent';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import { accordionData, listData } from '../data/accordionData';
 import ImageComponent from 'components/Image/Image';
+import OurSolutionsAccordion from 'components/OurSolutionsAccordion/OurSolutionsAccordion';
+
 import Image from '@/images/keyBokPage/whereToUse/img_WhereToUse.webp';
 import ImageTablet from '@/images/keyBokPage/whereToUse/img_WhereToUseTablet.webp';
 import ImageMobile from '@/images/keyBokPage/whereToUse/img_WhereToUseMobile.webp';
-import OurSolutionsAccordion from 'components/OurSolutionsAccordion/OurSolutionsAccordion';
-
 import styles from '../sass/accordionBlock.module.scss';
 
 function KeyBokAccordionBlock() {

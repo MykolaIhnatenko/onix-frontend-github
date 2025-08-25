@@ -51,7 +51,7 @@ function OurInsightsBlogs({ blogs, classes }: IOurInsightsBlogs) {
         }}
       >
         <motion.div
-          className="flex gap-[20px]"
+          className={`flex gap-[20px] ${classes?.wrapper || ''}`}
           drag="x"
           dragConstraints={carousel}
           dragMomentum={false}
@@ -80,7 +80,7 @@ function OurInsightsBlogs({ blogs, classes }: IOurInsightsBlogs) {
                 >
                   <ImageComponent
                     src={picture}
-                    alt={title}
+                    alt="Blog Image"
                     fill
                     sizes="100vw"
                     className={`group-hover/blog:scale-[1.3] transition-all duration-300

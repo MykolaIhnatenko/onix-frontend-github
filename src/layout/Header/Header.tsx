@@ -2,15 +2,9 @@ import MobileMenu from './components/MobileMenu';
 import MainMenu from './components/MainMenu';
 import NavSubMenuLinks from './components/NavSubMenuLinks';
 import navLinks from './data/navLinks';
-import { HeaderColorVariant } from '../../constants/enums';
+import IHeaderProps from './interfaces/IHeader';
 
 import styles from './sass/HeaderContainer.module.scss';
-
-interface IHeaderProps {
-  fixHeader: boolean;
-  headerColorVariant?: HeaderColorVariant;
-  isMDDevice: boolean;
-}
 
 function Header({
   fixHeader, headerColorVariant, isMDDevice,
@@ -34,9 +28,5 @@ function Header({
     </header>
   );
 }
-
-Header.defaultProps = {
-  headerColorVariant: undefined,
-};
 
 export default Header;

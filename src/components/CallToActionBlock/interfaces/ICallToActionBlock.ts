@@ -31,4 +31,5 @@ export default interface ICallToActionBlock {
     textContainer?: string;
     icon?: string;
   };
+  isJakarta?: boolean;
 }

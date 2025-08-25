@@ -3,9 +3,9 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import '../pages/App/sass/globals.scss';
 
-import trustUsCardsData from '../pages/MainPage/data/trustUsCardsData.json';
+import trustUsCardsData from '../pages/MainPage/data/trustUsCardsData';
 import CardsBlock from '../components/CardsBlock/CardsBlock';
-import { CardBlockVariant, DropBlockVariant } from '../constants/enums';
+import { DropBlockVariant } from '../constants/enums';
 
 const meta: Meta<typeof CardsBlock> = {
   title: 'CardsBlock',
@@ -14,12 +14,6 @@ const meta: Meta<typeof CardsBlock> = {
   argTypes: {
     dropBlockBtnVariant: {
       options: Object.values(DropBlockVariant),
-      control: {
-        type: 'radio',
-      },
-    },
-    variant: {
-      options: Object.values(CardBlockVariant),
       control: {
         type: 'radio',
       },

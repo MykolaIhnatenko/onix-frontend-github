@@ -1,8 +1,9 @@
+import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
+
 import PDSoftwareEngineerImage from '@/images/productDiscovery/img_software_engineer.webp';
 import PDUiUxExpertImage from '@/images/productDiscovery/img_uiux_expert.webp';
 import PDSolutionArchitectImage from '@/images/productDiscovery/img_solution_architect.webp';
 import PDProjectManagerImage from '@/images/productDiscovery/img_project_manager.webp';
-import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
 const cooperateList: IAccordionHorizontalData[] = [
   {

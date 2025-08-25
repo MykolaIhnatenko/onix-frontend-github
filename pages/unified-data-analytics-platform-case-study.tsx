@@ -5,7 +5,7 @@ import { TitlePages } from '../src/constants/enums';
 import IPages from '../src/interfaces/IPages';
 import Layout from '../src/layout/Layout';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { checkSaleUrl } from '../src/utils/helpers';
 import ErrorPageView from 'pages/ErrorPageView/ErrorPageView';
 import AnalyticView from '../src/pages/AnalyticView/AnalyticView';

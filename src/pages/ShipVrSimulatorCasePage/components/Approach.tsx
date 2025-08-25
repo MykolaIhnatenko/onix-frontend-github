@@ -2,10 +2,10 @@ import Plx from 'react-plx';
 
 import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
-import ApproachImg from '@/images/shipVrSimulatorCasePage/img_aproach-content@2x.webp';
-import Ship from '@/images/shipVrSimulatorCasePage/img_aproach-content-ship@2x.webp';
 import approachContent from '../data/approachContentData';
 
+import ApproachImg from '@/images/shipVrSimulatorCasePage/img_aproach-content@2x.webp';
+import Ship from '@/images/shipVrSimulatorCasePage/img_aproach-content-ship@2x.webp';
 import styles from '../sass/shipVrSimulatorCasePage.module.scss';
 
 function Approach({ isBigTablet }: { isBigTablet : boolean }) {

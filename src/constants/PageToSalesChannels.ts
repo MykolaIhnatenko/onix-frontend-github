@@ -1,5 +1,5 @@
 enum PagesToSalesChannels {
-  HOME = 'Home Page',
+  HOME = 'Home page',
   STATUS = 'Statement on Ukraine',
   SERVICES = 'Services overview',
   WEB_DEVELOPMENT = 'Web development',
@@ -137,6 +137,10 @@ enum PagesToSalesChannels {
   LIVBOX_CASE_STUDY = 'Livbox Case Study',
   AR_CAR_SHOWROOM = 'AR Car Showroom Case',
   JOOBS_CASE = 'Joobs Platform Case Study',
+  HYDRA = 'ERP Hydra Case Study',
+  ARMY_HEALTH = 'Army Health System Case',
+  CRYPTOCURRENCY_BLOG = 'Cryptocurrency Blog Case Study',
+  HOTEL4BOX = 'Hotel4Box Case Study',
 }
 
 export default PagesToSalesChannels;

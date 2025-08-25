@@ -14,11 +14,11 @@ import StridistValueSection from './components/StridistValueSection';
 import { ButtonType } from 'constants/enums';
 import businessChallengeContent from './data/businessChallengeContent';
 import approachContent from './data/approachContent';
-import BusinessChallenge from '@/images/StridistPage/img_business-challenge@2x.webp';
-import Approach from '@/images/StridistPage/img_approach@2x.webp';
 import IPageStatus from '../../interfaces/IPageStatus';
 import SatoshiFont from '../../fonts/SatoshiFont';
 
+import BusinessChallenge from '@/images/StridistPage/img_business-challenge@2x.webp';
+import Approach from '@/images/StridistPage/img_approach@2x.webp';
 import styles from './sass/stridistPageView.module.scss';
 
 function StridistPageView({ saleUrl }: IPageStatus) {

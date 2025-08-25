@@ -1,7 +1,6 @@
 import VisualApp from '@/images//shipVrSimulatorCasePage/img_visual-app-heroes@2x.webp';
 import Controls from '@/images//shipVrSimulatorCasePage/img_controls@2x.webp';
 import DisplaysAndScreens from '@/images//shipVrSimulatorCasePage/img_displays-and-screens@2x.webp';
-
 import styles from '../sass/shipVrSimulatorCasePage.module.scss';
 
 const challengeContent = [

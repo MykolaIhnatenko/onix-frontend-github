@@ -1,7 +1,8 @@
+import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
+
 import QATestAutomation from '@/images/qaServicesPage/cooperate/img_qa_test_automation.webp';
 import QAConsultiong from '@/images/qaServicesPage/cooperate/img_qa_consulting.webp';
 import QAManualQuality from '@/images/qaServicesPage/cooperate/img_qa_manual.webp';
-import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
 const qaCooperateList: IAccordionHorizontalData[] = [
   {

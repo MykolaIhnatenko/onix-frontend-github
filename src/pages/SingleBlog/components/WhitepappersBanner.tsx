@@ -1,7 +1,4 @@
 import PageContainer from '../../../components/PageContainer/PageContainer';
-import WhitepappersBg from '@/images/singleBlog/img_whitepappers@2x.webp';
-import WhitepappersBgTablet from '@/images/singleBlog/img_whitepappers_tablet@2x.webp';
-import WhitepappersBgMobile from '@/images/singleBlog/img_whitepappers_mobile@2x.webp';
 import useBackground from '../../../hook/useBackground';
 import { MD_DEVICE, PATH_TO_BACKEND_IMAGES } from '../../../constants/constants';
 import ImageComponent from '../../../components/Image/Image';
@@ -13,6 +10,9 @@ import DownloadForm from '../../Blogs/components/DownloadForm';
 import BlogsFormModal from '../../Blogs/components/BlogsFormModal';
 import PagesToSalesChannels from '../../../constants/PageToSalesChannels';
 
+import WhitepappersBgMobile from '@/images/singleBlog/img_whitepappers_mobile@2x.webp';
+import WhitepappersBgTablet from '@/images/singleBlog/img_whitepappers_tablet@2x.webp';
+import WhitepappersBg from '@/images/singleBlog/img_whitepappers@2x.webp';
 import styles from '../sass/whitepappersBanner.module.scss';
 
 function WhitepappersBanner({

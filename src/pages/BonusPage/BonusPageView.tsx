@@ -8,11 +8,12 @@ import Achievements from './components/Achievements';
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
 import mainScreenData from './data/mainScreenData.json';
+import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
+
 import RightImage from '@/images/bonus/img_rightImage@2x.webp';
 import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.webp';
 import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
 import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
-import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
 
 function BonusPageView() {
   const {

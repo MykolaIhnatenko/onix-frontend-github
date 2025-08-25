@@ -21,8 +21,10 @@ function AccordionTemplate({
   borderBottomLast,
   smallerTitleText,
   classes,
+  multiOpen = false,
+  borderTop,
 }: IAccordion) {
-  const [activeItem, setActiveItem] = useState(activeFirst ? 0 : -1);
+  const [activeItems, setActiveItems] = useState<number[]>(activeFirst ? [0] : []);
   const {
     screenSizes: {
       isMDDevice,
@@ -40,13 +42,13 @@ function AccordionTemplate({
   const isOpenHover = isDesktop && !withoutAccordion && openByHover;
 
   useEffect(() => {
-    setActiveItem(activeFirst ? 0 : -1);
+    setActiveItems(activeFirst ? [0] : []);
   }, [activeFirst]);
 
   const onOpen = (index: number) => {
-    if (scrollToTopBlock && index !== activeItem) {
+    if (scrollToTopBlock && !activeItems.includes(index)) {
       const elementPosition = ref.current?.getBoundingClientRect().top;
-      const offsetPosition = elementPosition && elementPosition - 70;
+      const offsetPosition = elementPosition && elementPosition - 68;
 
       window.scrollBy({
         top: offsetPosition,
@@ -54,10 +56,10 @@ function AccordionTemplate({
       });
     }
 
-    if (faq && index !== activeItem && scrollToTopItem) {
+    if (faq && !activeItems.includes(index) && scrollToTopItem) {
       setTimeout(() => {
         const elementPosition = document.getElementById(`faq${index}`)?.getBoundingClientRect().top;
-        const offsetPosition = elementPosition && elementPosition - 70;
+        const offsetPosition = elementPosition && elementPosition - 68;
 
         window.scrollBy({
           top: offsetPosition,
@@ -67,9 +69,22 @@ function AccordionTemplate({
     }
 
     if (openByHover) {
-      setActiveItem(index);
+      if (multiOpen) {
+        if (!activeItems.includes(index)) {
+          setActiveItems([...activeItems, index]);
+        }
+      } else {
+        setActiveItems([index]);
+      }
+      return;
+    }
+
+    if (multiOpen) {
+      setActiveItems((prev) => (prev.includes(index)
+        ? prev.filter((i) => i !== index)
+        : [...prev, index]));
     } else {
-      setActiveItem(index === activeItem ? -1 : index);
+      setActiveItems((prev) => (prev.includes(index) ? [] : [index]));
     }
   };
 
@@ -102,18 +117,20 @@ function AccordionTemplate({
             number={number}
             title={title}
             tagTitle={tagTitle}
-            activeItem={activeItem === index}
+            activeItem={activeItems.includes(index)}
             withoutAccordion={withoutAccordion}
             isAccordionBlack={isAccordionBlack}
             accordionStyleTypes={accordionStyleTypes}
             smallerTitleText={smallerTitleText}
             classes={classes}
+            borderTop={borderTop}
+            firstOfType={index === 0}
             onMouseEnter={() => isOpenHover && onOpen(index)}
             onClick={() => (!withoutAccordion && onOpen(index))}
           />
           <AccordionItemContent
             content={content}
-            activeItem={activeItem === index}
+            activeItem={activeItems.includes(index)}
             isLastItem={index === data.length - 1}
             isAccordionBlack={isAccordionBlack}
             accordionStyleTypes={accordionStyleTypes}

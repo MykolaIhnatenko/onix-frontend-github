@@ -1,6 +1,3 @@
-import HealthcarePartnerSectionTabletBg from '@/images/healthcare/partnerSection/img_partnerSectionTabletBg.webp';
-import HealthcarePartnerSectionMobileBg from '@/images/healthcare/partnerSection/img_partnerSectionMobileBg.webp';
-import HealthcarePartnerSectionBg from '@/images/healthcare/partnerSection/img_partnerSectionBg.webp';
 import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
@@ -9,6 +6,9 @@ import PartnerSection from '../../../components/PartnerSection/PartnerSection';
 import useBackground from '../../../hook/useBackground';
 import healthcarePartnerSliderData from '../data/healthcarePartnerSliderData';
 
+import HealthcarePartnerSectionBg from '@/images/healthcare/partnerSection/img_partnerSectionBg.webp';
+import HealthcarePartnerSectionMobileBg from '@/images/healthcare/partnerSection/img_partnerSectionMobileBg.webp';
+import HealthcarePartnerSectionTabletBg from '@/images/healthcare/partnerSection/img_partnerSectionTabletBg.webp';
 import styles from '../sass/healthcarePartnerSection.module.scss';
 
 function HealthcarePartnerSection() {

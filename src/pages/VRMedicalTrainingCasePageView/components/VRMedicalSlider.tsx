@@ -5,12 +5,12 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import DragSlider from '../../../components/DragSlider/DragSlider';
 import projectPhasesData from '../data/projectPhases';
 import ImageComponent from '../../../components/Image/Image';
-import BgTablet from '@/images/faceReplacingCasePage/sliderBlock/img_tablet_bg.webp';
-import BgMobile from '@/images/faceReplacingCasePage/sliderBlock/img_mobile_bg.webp';
-import BgDesktop from '@/images/vrMedicalTrainingCasePage/img_desktop_bg@2x.webp';
 import { useAppSelector } from '../../../hook/reduxToolkit';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 
+import BgTablet from '@/images/faceReplacingCasePage/sliderBlock/img_tablet_bg.webp';
+import BgMobile from '@/images/faceReplacingCasePage/sliderBlock/img_mobile_bg.webp';
+import BgDesktop from '@/images/vrMedicalTrainingCasePage/img_desktop_bg@2x.webp';
 import styles from '../sass/VRMedicalSlider.module.scss';
 
 function VRMedicalSlider() {

@@ -1,3 +1,6 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+import ItemList from 'components/ItemList/ItemList';
+
 import OurSolutionsImg1 from '@/images/vrMedicalTrainingCasePage/ourSolutions/img_ourSolutions1@2x.webp';
 import OurSolutionsImg2 from '@/images/vrMedicalTrainingCasePage/ourSolutions/img_ourSolutions2@2x.webp';
 import OurSolutionsImg3 from '@/images/vrMedicalTrainingCasePage/ourSolutions/img_ourSolutions3@2x.webp';
@@ -7,8 +10,6 @@ import OurSolutionsImgTablet3 from '@/images/vrMedicalTrainingCasePage/ourSoluti
 import OurSolutionsImgMobile1 from '@/images/vrMedicalTrainingCasePage/ourSolutions/img_ourSolutions1_mobile@2x.webp';
 import OurSolutionsImgMobile2 from '@/images/vrMedicalTrainingCasePage/ourSolutions/img_ourSolutions2_mobile@2x.webp';
 import OurSolutionsImgMobile3 from '@/images/vrMedicalTrainingCasePage/ourSolutions/img_ourSolutions3_mobile@2x.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
-import ItemList from 'components/ItemList/ItemList';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

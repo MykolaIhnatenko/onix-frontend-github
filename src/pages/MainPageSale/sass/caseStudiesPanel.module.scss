@@ -280,7 +280,7 @@
       padding: toRem(30) 0 toRem(40);
 
       @media only screen and (max-width: $screen-lg) {
-        padding-top: toRem(20) 0 toRem(30);
+        padding: toRem(20) 0 toRem(30);
       }
 
       .tagFilterItem {

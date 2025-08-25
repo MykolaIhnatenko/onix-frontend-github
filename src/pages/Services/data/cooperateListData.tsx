@@ -1,7 +1,8 @@
+import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
+
 import ServicesCooperateBlockImg1 from '@/images/services/img_cooperate_block1.webp';
 import ServicesCooperateBlockImg2 from '@/images/services/img_cooperate_block2.webp';
 import ServicesCooperateBlockImg3 from '@/images/services/img_cooperate_block3.webp';
-import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
 const cooperateList: IAccordionHorizontalData[] = [
   {

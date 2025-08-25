@@ -1,5 +1,6 @@
 import DevopsSolutionsDragSliderItem from '../../DevopsSolutionsPageView/components/DevopsSolutionsDragSliderItem';
 import { ICaseStudiesData } from 'components/CaseStudyCarouselItem/interfaces/ICaseStudyCarouselItem';
+
 import TravelHoverAccordionImg1 from '@/images/costOptimizationCaseStudyPageView/hoverAccordion/img_hoverAccordion1@2x.webp';
 import TravelHoverAccordionImg2 from '@/images/costOptimizationCaseStudyPageView/hoverAccordion/img_hoverAccordion2@2x.webp';
 import TravelHoverAccordionImg3 from '@/images/costOptimizationCaseStudyPageView/hoverAccordion/img_hoverAccordion3@2x.webp';

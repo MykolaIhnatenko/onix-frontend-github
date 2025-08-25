@@ -33,6 +33,15 @@ export interface IAboutScheduling {
   textSecond: string;
   revertBlock?: boolean;
   variant?: VariantColorText;
+  classes?: {
+    aboutOurScheduling?: string;
+    content?: string;
+    titleAbout?: string;
+    contentBox?: string;
+    textBlack?: string;
+    textGray?: string;
+    reverseText?: string;
+  },
 }
 
 export interface IOurInsightsBlockItem {

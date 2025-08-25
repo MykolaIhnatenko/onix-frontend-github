@@ -1,12 +1,13 @@
+import { IProcessImage, IProcessAccordionItem } from '../../MainPage/interfaces/IProcess';
+import MainTitle from '../../../components/MainTitle/MainTitle';
+import ContentText from '../../../components/ContentText/ContentText';
+
 import PDPlanningImage from '@/images/productDiscovery/img_planning.webp';
 import PDPlanningImageTablet from '@/images/productDiscovery/img_planning_tablet.webp';
 import PDAnalysisImage from '@/images/productDiscovery/img_analysis.webp';
 import PDAnalysisImageTablet from '@/images/productDiscovery/img_analysis_tablet.webp';
 import PDFinalVisionImage from '@/images/productDiscovery/img_finalizing_product_vision.webp';
 import PDFinalVisionImageTablet from '@/images/productDiscovery/img_finalizing_product_vision_tablet.webp';
-import { IProcessImage, IProcessAccordionItem } from '../../MainPage/interfaces/IProcess';
-import MainTitle from '../../../components/MainTitle/MainTitle';
-import ContentText from '../../../components/ContentText/ContentText';
 
 export const processImages: IProcessImage[] = [
   {

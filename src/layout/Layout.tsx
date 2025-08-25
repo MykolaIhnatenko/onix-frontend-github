@@ -1,33 +1,29 @@
 import { useEffect, useState } from 'react';
-import { shallowEqual, useDispatch, useSelector } from 'react-redux';
+import { shallowEqual, useDispatch } from 'react-redux';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Head from 'next/head';
+import { usePathname } from 'next/navigation';
 
 import ILayout from './interfaces/ILayout';
 import CustomHead from './CustomHead/CustomHead';
 import Header from './Header/Header';
-import { generalSans, ibmPlexMono, muktaVaaniFont } from '../fonts/MainFonts';
+import {
+  generalSans, ibmPlexMono, muktaVaaniFont, plusJakartaSans,
+} from '../fonts/MainFonts';
 import {
   setIsFontReady, setNavSubMenuVisibility, setScreenSizes, setWindowWidth,
 } from '../store/app/slice';
-import { setShowLeavingForm } from '../store/app/leavingForm/slice';
 import {
+  cursorFollowerEnabledPaths,
   LG_DEVICE, MD_DEVICE, SM_DEVICE, XL_DEVICE, XS_DEVICE, XXL_DEVICE, XXXL_DEVICE,
 } from '../constants/constants';
-import IStore from '../store/interfaces/IStore';
-import { IApp } from '../store/app/interfaces/IApp';
 import { setIsDragListen } from '../store/app/contactForm/slice';
 import Breadcrumbs from './Breadcrumbs/Breadcrumbs';
-import { IContactForm } from '../store/app/contactForm/interfaces/IContactForm';
 import useScrollBlocked from '../hook/useScrollBlocked';
-import { ISubscribeForm } from '../store/app/subscribeForm/interfaces/ISubscribeForm';
-import { IDownloadForm } from '../store/app/downloadForm/interfaces/IDownloadForm';
-import { ICareers } from '../store/careers/interfaces/ICareers';
 import NavigateButton from '../components/NavigateButton/NavigateButton';
 import Footer from './Footer/Footer';
 import CursorFollower from './CursorFollower/CursorFollower';
-import { ILeavingForm } from 'store/app/leavingForm/interfaces/ILeavingForm';
 import { HeaderColorVariant } from 'constants/enums';
 import ContactFormModalLazy from '../components/ContactFormModal/ContactFormModal';
 import BreadcrumbsJsonLd from '../components/BreadcrumbsJsonLd/BreadcrumbsJsonLd';
@@ -35,19 +31,22 @@ import { checkSaleUrl } from 'utils/helpers';
 import HeaderSale from './HeaderSale/HeaderSale';
 import FooterSale from './FooterSale/FooterSale';
 import { useAppSelector } from 'hook/reduxToolkit';
+import ArticleJsonLd from 'components/ArticleJsonLd/ArticleJsonLd';
 
 import styles from './sass/Layout.module.scss';
 
 function Layout({
   children,
   seoData,
-  showFooter,
+  showFooter = true,
   salesChannel,
   breadcrumbs,
   layoutBackground,
   className,
   breadcrumbsVariant,
   footerContent,
+  blogAttributes,
+  articleType,
   showNavigateButton = true,
   fixHeader = true,
   isBlogsPage = false,
@@ -65,23 +64,22 @@ function Layout({
       isXSDevice,
       screenWidth,
     },
-  } = useSelector<IStore, IApp>((state) => state?.app);
+  } = useAppSelector((state) => state?.app);
 
   const isTablet = isMDDevice || isSMDevice || isXSDevice;
-  const cursorFollowerVisible = screenWidth > 1024;
   const { videoFullScreen } = useAppSelector((state) => state.videoFullScreen);
-  const { isShowContactForm } = useSelector<IStore, IContactForm>((state) => state?.contactForm, shallowEqual);
-  const { isShowDownloadForm } = useSelector<IStore, IDownloadForm>((state) => state?.downloadForm, shallowEqual);
-  const { isShowSubscribeForm } = useSelector<IStore, ISubscribeForm>((state) => state?.subscribeForm, shallowEqual);
-  const { isShowCareersModal } = useSelector<IStore, ICareers>((state) => state?.careers, shallowEqual);
-  const { isBlockShowLeavingForm } = useSelector<IStore, ILeavingForm>((state) => state.leavingForm, shallowEqual);
-  const [startTime] = useState(Date.now());
-  const [timeRemaining, setTimeRemaining] = useState(30000);
+  const { isShowContactForm } = useAppSelector((state) => state?.contactForm, shallowEqual);
+  const { isShowDownloadForm } = useAppSelector((state) => state?.downloadForm, shallowEqual);
+  const { isShowSubscribeForm } = useAppSelector((state) => state?.subscribeForm, shallowEqual);
+  const { isShowCareersModal } = useAppSelector((state) => state?.careers, shallowEqual);
   const [isScroll, setIsScroll] = useState(false);
   const [showArrow, setShowArrow] = useState(<> </>);
   const [showForm, setShowForm] = useState(<> </>);
   const [showFooterRender, setShowFooterRender] = useState(<> </>);
   const saleUrl = checkSaleUrl();
+  const pathname = usePathname();
+  const cursorFollowerVisible = screenWidth > 1024;
+  const enableCursorFollower = cursorFollowerEnabledPaths.includes(pathname);
 
   const getSalesChannel = () => {
     if (asPath.split('/')[1] !== 'blog') return salesChannel;
@@ -211,36 +209,9 @@ function Layout({
     isFontsReady().catch(() => '');
   }, [asPath, dispatch]);
 
-  useEffect(() => {
-    if (!isBlockShowLeavingForm) {
-      const mouseleave = (event: MouseEvent) => {
-        if (event.clientY <= 0 || event.clientY >= window.innerHeight
-        || event.clientX <= 0 || event.clientX >= window.innerWidth) {
-          dispatch(setShowLeavingForm({ showLeavingForm: false }));
-        }
-      };
-
-      let timerId: NodeJS.Timeout;
-
-      if (isShowContactForm) {
-        setTimeRemaining((prev) => prev - (Date.now() - startTime));
-      } else {
-        timerId = setTimeout(() => {
-          document.addEventListener('mouseleave', mouseleave);
-        }, timeRemaining);
-      }
-
-      return () => {
-        clearTimeout(timerId);
-        document.removeEventListener('mouseleave', mouseleave);
-      };
-    }
-    return () => {};
-  }, [dispatch, isShowContactForm]);
-
   return (
     <div id="modal" className={`${className || ''}`}>
-      {cursorFollowerVisible && (
+      {cursorFollowerVisible && enableCursorFollower && (
         <CursorFollower />
       )}
       <CustomHead seoData={seoData} />
@@ -251,6 +222,11 @@ function Layout({
         <Head>
           <meta name="robots" content="noindex, nofollow" />
           <meta name="googlebot" content="noindex" />
+        </Head>
+      )}
+      {blogAttributes && (
+        <Head>
+          {ArticleJsonLd({ attributes: blogAttributes, articleType: articleType || 'BlogPosting' })}
         </Head>
       )}
       <div style={{
@@ -279,7 +255,8 @@ function Layout({
       </div>
       <main
         id="mainkk"
-        className={`${ibmPlexMono.variable} ${generalSans.variable} ${muktaVaaniFont.variable}`}
+        className={`${ibmPlexMono.variable} ${generalSans.variable} ${muktaVaaniFont.variable}
+          ${plusJakartaSans.variable}`}
       >
         {layoutBackground
         && (
@@ -314,10 +291,5 @@ function Layout({
     </div>
   );
 }
-
-Layout.defaultProps = {
-  showFooter: true,
-  showHeader: true,
-};
 
 export default Layout;

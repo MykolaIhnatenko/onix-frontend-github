@@ -20,9 +20,9 @@ import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import IPageStatus from '../../interfaces/IPageStatus';
 import ButtonTypes from 'constants/ButtonTypes';
-import {
-  ButtonType, UsabilityTestingMainBlockVariant,
-} from 'constants/enums';
+import { ButtonType } from 'constants/enums';
+import challengesInfoData from './data/challengesInfoData.json';
+
 import MainSectionBg from '@/images/volkswagen/img_VolkswagenMain@2x.webp';
 import MainSectionBgTablet from '@/images/volkswagen/img_VolkswagenMainTablet@2x.webp';
 import MainSectionBgMobile from '@/images/volkswagen/img_VolkswagenMainMobile@2x.webp';
@@ -32,7 +32,6 @@ import ContactUsMobile from '@/images/volkswagen/img_VolkContactUsBGMobile@2x.we
 import OurSolutionBg from '@/images/volkswagen/img_OurSolutionBG.webp';
 import OurSolutionBgTablet from '@/images/volkswagen/img_OurSolutionBGTablet.webp';
 import OurSolutionBgMobile from '@/images/volkswagen/img_OurSolutionBGMobile.webp';
-import challengesInfoData from './data/challengesInfoData.json';
 import Volk from '@/images/volkswagen/img_Volk.webp';
 
 function VolkswagenBeetleCarView({ saleUrl }: IPageStatus) {
@@ -67,7 +66,17 @@ function VolkswagenBeetleCarView({ saleUrl }: IPageStatus) {
       <UsabilityTestingMainBlock
         title="Volkswagen Beetle Car Promo Website Design Concept"
         background={getBackground().Main}
-        variant={UsabilityTestingMainBlockVariant.VOLKSWAGEN}
+        classes={{
+          container: '!h-screen !relative screen-md:!min-h-[700px]',
+          background: '!absolute !bottom-0 !right-0 !h-full !w-full',
+          backgroundImage: '!w-full !h-full !object-cover !object-[left_top] screen-lg:!object-center',
+          contentContainer: `!relative !h-full !flex !flex-col !justify-center max-1390:!flex
+            max-1390:!pt-0 screen-lg:!block screen-lg:!pt-[146px] screen-md:!pt-[136px]`,
+          content: '!pl-[70px] min-xxxl:!pl-[80px] screen-lg:!pl-[30px] screen-md:!pl-[15px] screen-md:!pr-[15px]',
+          title: `!text-white !max-w-[649px] !pb-0 min-xxxl:!max-w-[780px] max-1390:!text-[50px]
+            max-1390:!leading-[64px] screen-lg:!max-w-[708px] screen-lg:!text-[40px] screen-lg:!leading-[56px]
+            screen-md:!text-[25px] screen-md:!leading-[35px]`,
+        }}
       />
       <ResultsBlock
         title={'Onix illustrates a unique user interface and motion design capabilities with the'

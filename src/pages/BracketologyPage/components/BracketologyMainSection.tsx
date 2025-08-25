@@ -8,10 +8,10 @@ import { IApp } from '../../../store/app/interfaces/IApp';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import BracketologyPageContainer from './BracketologyPageContainer';
 import BracketologyText from './BracketologyText';
+
 import logo from '@/images/bracketology/mainSection/img_logo@2x.webp';
 import mainPhones from '@/images/bracketology/mainSection/img_main_phones.webp';
 import mainPhones2x from '@/images/bracketology/mainSection/img_main_phones@2x.webp';
-
 import styles from '../sass/BracketologyMainSection.module.scss';
 
 function BracketologyMainSection({ mainBackground }: IBracketologyMainSection) {

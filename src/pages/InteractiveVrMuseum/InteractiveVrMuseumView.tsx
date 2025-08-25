@@ -14,13 +14,21 @@ import ProductScopeData from './data/productScopeData';
 import {
   ButtonType,
 } from '../../constants/enums';
+import IPageStatus from 'interfaces/IPageStatus';
+import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import resultsBlockWhite from 'constants/tailwindStyle';
+import businessContextData, { businessContextDataSecond } from './data/businessContextData';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+import OurSolutionVirtual from 'components/OurSolutionVirtual/OurSolutionVirtual';
+import TestimonialVideoSection from '../../components/TestimonialVideoSection/TestimonialVideoSection';
+
 import MainSectionBg from '@/images/InteractiveVrMuseum/img_HeroScreen.webp';
 import MainSectionBgTablet from '@/images/InteractiveVrMuseum/img_HeroScreenTablet.webp';
 import MainSectionBgMobile from '@/images/InteractiveVrMuseum/img_HeroScreenMobile.webp';
 import Slide from '@/images/InteractiveVrMuseum/img_VideoSlide.webp';
-import IPageStatus from 'interfaces/IPageStatus';
-import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -29,13 +37,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import resultsBlockWhite from 'constants/tailwindStyle';
-import businessContextData, { businessContextDataSecond } from './data/businessContextData';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
-import OurSolutionVirtual from 'components/OurSolutionVirtual/OurSolutionVirtual';
-import TestimonialVideoSection from '../../components/TestimonialVideoSection/TestimonialVideoSection';
 import ProjectDetailsBgMobile from '@/images/InteractiveVrMuseum/img_ProjectDetailsBgMobile.webp';
 import ProjectDetailsBgTablet from '@/images/InteractiveVrMuseum/img_ProjectDetailsBgTablet.webp';
 import ProjectDetailsBg from '@/images/InteractiveVrMuseum/img_ProjectDetailsBg.webp';

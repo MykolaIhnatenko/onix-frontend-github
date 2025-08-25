@@ -43,7 +43,7 @@ function OurSolutionVirtualItem({
           src={getBackground().image}
           alt={title}
           sizes="100vw"
-          className="block w-full h-full object-cover screen-lg:h-auto"
+          className={`block w-full h-full object-cover screen-lg:h-auto ${classes?.image || ''}`}
         />
       </div>
       <div

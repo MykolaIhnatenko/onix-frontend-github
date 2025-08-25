@@ -168,6 +168,7 @@ enum PageLinks {
   SAVII_CASE_STUDY = '/kids-banking-app-case-study',
   ANALYTICALS_CASE_STUDY = '/unified-data-analytics-platform-case-study',
   VYRA_CASE_STUDY = '/learning-platform-development-case-study',
+  HEALTHCARE_PORTAL_CASE = '/healthcare-provider-portal-case-study',
   BLOGS_HEALTHCARE = '/blogs/healthcare',
   BLOGS_ECOMMERCE = '/blogs/ecommerce',
   BLOGS_ARTIFICIAL_INTELLIGENCE = '/blogs/artificial-intelligence',

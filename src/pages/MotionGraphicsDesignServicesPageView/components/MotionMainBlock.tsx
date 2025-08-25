@@ -10,9 +10,9 @@ import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import { LG_DEVICE } from '../../../constants/constants';
 import motionGraphicsSliderData from '../data/motionGraphicsSliderData';
+
 import MotionMainBlockBg from '@/images/motionGraphics/background/img_motionMainBg.webp';
 import MotionGraphicsSlider4MobileMain from '@/images/motionGraphics/imageSlider/img_4_mobile_main@.webp';
-
 import styles from '../sass/motionMainblock.module.scss';
 
 export const getHeadingStylesTablets1 = (scrollProgress: number) => ({
@@ -130,6 +130,7 @@ function MotionMainBlock() {
               >
                 <ImageComponent
                   sizes="(max-width: 768px) 50vw, (min-width: 768px) 100vw"
+                  alt="Motion Graphics Slider 4 Mobile Main"
                   width={320}
                   className={styles.imageBig}
                   src={MotionGraphicsSlider4MobileMain}
@@ -166,6 +167,7 @@ function MotionMainBlock() {
                 >
                   <ImageComponent
                     sizes="(max-width: 768px) 50vw, (min-width: 768px) 100vw"
+                    alt={`Image ${id}`}
                     width={320}
                     className={styles.imageBig}
                     src={mainImage}
@@ -188,6 +190,7 @@ function MotionMainBlock() {
                   <ImageComponent
                     className={styles.image}
                     src={secondaryImage}
+                    alt={`Image ${id}`}
                     priority
                   />
                   )}

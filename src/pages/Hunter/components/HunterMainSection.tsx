@@ -5,10 +5,10 @@ import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import ImageComponent from 'components/Image/Image';
+
 import HunterMainBg from '@/images/hunter/mainSection/img_bg@2x.webp';
 import HunterMainBgTablet from '@/images/hunter/mainSection/img_bg_tablet@2x.webp';
 import HunterMainBgMobile from '@/images/hunter/mainSection/img_bg_mobile@2x.webp';
-
 import styles from '../sass/hunterMainSecion.module.scss';
 
 function HunterMainSection() {

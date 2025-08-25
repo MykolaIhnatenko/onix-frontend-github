@@ -1,5 +1,3 @@
-import { BlogSubcategoryVariant } from '../../../constants/enums';
-
 interface IBlogSubcategory {
   id: number | string;
   attributes: {
@@ -9,5 +7,8 @@ interface IBlogSubcategory {
 }
 export default interface IBlogSubcategoryTagList {
   data?: IBlogSubcategory[] | [];
-  variant?: BlogSubcategoryVariant;
+  classes?: {
+    container?: string;
+    tag?: string;
+  }
 }

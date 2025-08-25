@@ -4,7 +4,7 @@ import Layout from '../src/layout/Layout';
 import CombinedPage from '../src/pages/CombinedPage/CombinedPage';
 import { BreadcrumbsVariant, TitlePages } from '../src/constants/enums';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import IPages from '../src/interfaces/IPages';
 import { LatestBlogType } from '../src/interfaces/IBlog';
 import getSeoData from '../src/api/getSeoData';

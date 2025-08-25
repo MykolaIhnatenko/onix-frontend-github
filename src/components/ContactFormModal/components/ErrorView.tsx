@@ -2,9 +2,9 @@ import MainTitle from '../../MainTitle/MainTitle';
 import ContentText from '../../ContentText/ContentText';
 import FormMessagesButton from './FormMessagesButton';
 import ImageComponent from '../../Image/Image';
-import ErrorBg from '@/images/img_bg_error@2x.webp';
 import LinkComponent from '../../Link/Link';
 
+import ErrorBg from '@/images/img_bg_error@2x.webp';
 import styles from '../sass/errorView.module.scss';
 
 function ErrorView() {

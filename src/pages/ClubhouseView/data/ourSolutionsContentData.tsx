@@ -1,6 +1,7 @@
 import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import ContentText from '../../../components/ContentText/ContentText';
+
 import OurSolutionsImg1 from '@/images/clubhouse/ourSolutions/img_ourSolutions1.webp';
 import OurSolutionsImg2 from '@/images/clubhouse/ourSolutions/img_ourSolutions2.webp';
 import OurSolutionsImgTablet1 from '@/images/clubhouse/ourSolutions/img_ourSolutionsTablet1.webp';

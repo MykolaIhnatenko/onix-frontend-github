@@ -36,7 +36,6 @@ const travelFaqData = [
           {' '}
           <LinkComponent
             href={PageLinks.DEDICATED_TEAM_CALCULATOR}
-            prefetch={false}
             className={textLink}
           >
             calculate your development costs.
@@ -72,7 +71,6 @@ const travelFaqData = [
           {' '}
           <LinkComponent
             href={PageLinks.DEDICATED_TEAM}
-            prefetch={false}
             className={textLink}
           >
             dedicated development team.

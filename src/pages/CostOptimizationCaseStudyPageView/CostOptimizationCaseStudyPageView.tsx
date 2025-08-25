@@ -13,6 +13,16 @@ import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import IPageStatus from '../../interfaces/IPageStatus';
 import ButtonTypes from 'constants/ButtonTypes';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import CostOptimizationMainScreen from './components/CostOptimizationMainScreen';
+import costBusinessContextDataFirst from './data/costBusinessContextDataFirst.json';
+import ImageComponent from 'components/Image/Image';
+import TechnologiesBlock from 'components/TechnologiesBlock/TechnologiesBlock';
+import { getTechnologiesBooking } from 'utils/getTechnologies';
+import coreTechnologyData from './data/coreTechnologyData.json';
+import resultsBlockWhite from 'constants/tailwindStyle';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaWhiteBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaWhiteTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaWhiteMobileBg@2x.webp';
@@ -28,18 +38,9 @@ import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteBg@2x.w
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteMobileBg@2x.webp';
 import ResultsBlockXXXLBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteXXXLBg@2x.webp';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
-import CostOptimizationMainScreen from './components/CostOptimizationMainScreen';
-import costBusinessContextDataFirst from './data/costBusinessContextDataFirst.json';
 import SolutionsBlockImage from '@/images/costOptimizationCaseStudyPageView/solutionsBlock/img_solutionsBlockImage@2x.webp';
 import SolutionsBlockImageTablet from '@/images/costOptimizationCaseStudyPageView/solutionsBlock/img_solutionsBlockImageTablet@2x.webp';
 import SolutionsBlockImageMobile from '@/images/costOptimizationCaseStudyPageView/solutionsBlock/img_solutionsBlockImageMobile@2x.webp';
-import ImageComponent from 'components/Image/Image';
-import TechnologiesBlock from 'components/TechnologiesBlock/TechnologiesBlock';
-import { getTechnologiesBooking } from 'utils/getTechnologies';
-import coreTechnologyData from './data/coreTechnologyData.json';
-import resultsBlockWhite from 'constants/tailwindStyle';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function CostOptimizationCaseStudyPageView({ saleUrl }: IPageStatus) {
   const {

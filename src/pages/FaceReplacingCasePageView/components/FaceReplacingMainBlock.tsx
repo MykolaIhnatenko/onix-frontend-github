@@ -4,10 +4,10 @@ import { useAppSelector } from '../../../hook/reduxToolkit';
 import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
+
 import MainBg from '@/images/faceReplacingCasePage/mainBlock/img_main_bg.webp';
 import MainBgTablet from '@/images/faceReplacingCasePage/mainBlock/img_main_bg_tablet.webp';
 import MainBgMobile from '@/images/faceReplacingCasePage/mainBlock/img_main_bg_mobile.webp';
-
 import styles from '../sass/faceReplacingMainBlock.module.scss';
 
 function FaceReplacingMainBlock() {

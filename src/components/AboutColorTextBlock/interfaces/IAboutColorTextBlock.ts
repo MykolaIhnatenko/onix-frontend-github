@@ -1,5 +1,3 @@
-import { AboutColorTextBlockVariant } from '../../../constants/enums';
-
 export default interface IAboutColorTextBlock {
   title: string;
   afterTextGray?: string;
@@ -12,5 +10,12 @@ export default interface IAboutColorTextBlock {
   textGraySecondBlock?: string;
   textThirtyBlock?: string;
   textGrayThirtyBlock?: string;
-  variant?: AboutColorTextBlockVariant;
+  classes?: {
+    containerColorBlock?: string;
+    titleColorBox?: string;
+    contentBox?: string;
+    textBlack?: string;
+    textGray?: string;
+    secondBlock?: string;
+  }
 }

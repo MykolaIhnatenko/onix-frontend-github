@@ -4,12 +4,12 @@ import { StaticImageData } from 'next/image';
 import NetstatAnimationText from './NetstatAnimationText';
 import NetstatAnimationH2 from './NetstatAnimationH2';
 import ImageComponent from '../../../components/Image/Image';
+import { useAppSelector } from 'hook/reduxToolkit';
+
 import DesignedBg2x from '@/images/NetstatPage/img_background-designed2x.webp';
 import DesignedScreens2x from '@/images/NetstatPage/img_designed-screens2x.webp';
 import DesignedScreensTablet2x from '@/images/NetstatPage/img_designed-screens-tablet2x.webp';
 import DesignedScreensMobile2x from '@/images/NetstatPage/img_designed-screens-mobile2x.webp';
-import { useAppSelector } from 'hook/reduxToolkit';
-
 import netstatStyles from '../sass/netstat.module.scss';
 
 function NetstatDesigned() {

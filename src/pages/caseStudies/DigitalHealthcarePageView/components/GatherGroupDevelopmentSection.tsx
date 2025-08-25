@@ -8,11 +8,11 @@ import digitalHealthcareSecondBusinessData from '../data/digitalHealthcareSecond
 import IStore from '../../../../store/interfaces/IStore';
 import { IApp } from '../../../../store/app/interfaces/IApp';
 import killerFeaturesSliderContent from '../data/killerFeaturesSliderContent';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import Background from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/developmentSection/img_bgDesk@2x.webp';
 import BackgroundTablet from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/developmentSection/img_bgTablet@2x.webp';
 import BackgroundMobile from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/developmentSection/img_bgMobile@2x.webp';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-
 import styles from '../sass/gatherGroupDevelopmentSection.module.scss';
 
 function GatherGroupDevelopmentSection() {

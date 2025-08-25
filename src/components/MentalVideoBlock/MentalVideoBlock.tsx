@@ -8,10 +8,8 @@ import ImageComponent from '../Image/Image';
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import IMentalVideoBlock from './interfaces/IMentalVideoBlock';
 
-import styles from './sass/MentalVideoBlock.module.scss';
-
 function MentalVideoBlock({
-  video, image, classes = {}, title, animImage, idVideoBlock, styleContainer,
+  video, image, classes = {}, title, animImage, idVideoBlock,
 }: IMentalVideoBlock) {
   const {
     screenSizes: {
@@ -23,9 +21,13 @@ function MentalVideoBlock({
   const dispatch = useDispatch();
 
   return (
-    <div className={`${styles.container} ${styleContainer ? styles[styleContainer] : ''}`}>
+    <div className={`relative h-screen min-h-[550px] max-h-[1400px] overflow-hidden
+                     screen-lg:min-h-[1024px] screen-lg:max-h-full 
+                     screen-md:min-h-[640px] screen-md:max-h-full ${classes?.container || ''}`}
+    >
       <motion.div
-        className={styles.videoWrapper}
+        className="absolute top-0 right-0 w-full h-[calc(100vh+1px)] min-h-[669px]
+         screen-lg:min-h-[1024px] screen-md:min-h-[640px]"
         onClick={() => dispatch(setUiUxSoudn())}
       >
         {video && !isMobile ? (
@@ -35,7 +37,7 @@ function MentalVideoBlock({
             classes={{
               video: classes?.video || '',
               videoPlayer: classes?.videoPlayer || '',
-              container: classes?.container || '',
+              container: classes?.videoContainer || '',
             }}
             autoPlayVariant
             mutedVariant
@@ -55,11 +57,22 @@ function MentalVideoBlock({
             />
           ))}
       </motion.div>
-      <div className={styles.titleScreen}>
+      <div className={`w-full h-full p-[0_70px_0] flex items-center z-[1] relative pointer-events-none 
+            min-xxxl:p-[0_80px_0] 
+            screen-lg:p-[154px_30px_0] screen-lg:items-start 
+            screen-md:p-[139px_15px_0] 
+            ${classes?.titleScreen || ''}`}
+      >
         {title || ''}
       </div>
       {animImage && (
-        <div className={styles.animContainer}>
+        <div className="flex absolute w-full h-full max-w-[584px] max-h-[832px] z-[2] pointer-events-none
+                        right-[50px] bottom-[-200px]
+                        screen-xl:right-[-120px]
+                        screen-lg:max-w-[478px] screen-lg:max-h-[680px] screen-lg:right-[-80px]
+                        screen-lg:bottom-[-170px]
+                        screen-md:hidden"
+        >
           <AnimImage image={animImage} />
         </div>
       )}

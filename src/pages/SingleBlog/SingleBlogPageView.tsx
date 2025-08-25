@@ -10,15 +10,15 @@ import PageToSalesChannels from '../../constants/PageToSalesChannels';
 import ImageComponent from 'components/Image/Image';
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
+import CallToActionComponent from 'components/CallToActionBlock/CallToActionComponent';
+import { ButtonType } from 'constants/enums';
+
 import RelatedBlogsBg from '@/images/blog/img_relatedBlogBg@2x.webp';
 import RelatedBlogsTabletBg from '@/images/blog/img_relatedBlogTabletBg@2x.webp';
 import RelatedBlogsMobileBg from '@/images/blog/img_relatedBlogMobileBg@2x.webp';
-import CallToActionComponent from 'components/CallToActionBlock/CallToActionComponent';
 import BlogsCallToActionBlockBg from '@/images/blogsPage/img_blogs_call_to_action_block@2x.webp';
 import BlogsCallToActionBlockBgTablet from '@/images/blogsPage/img_blogs_call_to_action_block_tablet@2x.webp';
 import BlogsCallToActionBlockBgMobile from '@/images/blogsPage/img_blogs_call_to_action_block_mobile@2x.webp';
-import { ButtonType } from 'constants/enums';
-
 import styles from './sass/singleBlogPage.module.scss';
 
 const RelatedBlogsBlock = dynamic(() => import(
@@ -88,6 +88,7 @@ function SingleBlogPageView({ blog, isWhitepapers }: ISingleBlogPageView) {
           <div className={styles.relatedBlogsBackground}>
             <ImageComponent
               src={getBackground().relatedBlogsBg}
+              alt="Related blogs background"
               sizes="(max-width: 768px) 50vw, (min-width: 768px) 100vw"
               loading="lazy"
             />

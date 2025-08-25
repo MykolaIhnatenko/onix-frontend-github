@@ -24,10 +24,14 @@ import { IApp } from '../../store/app/interfaces/IApp';
 import { IPageBlogs } from '../../interfaces/IPages';
 import {
   ButtonType,
-  CardBlockVariant,
   DropBlockVariant,
 } from '../../constants/enums';
 import HealthcareMainSection from './components/HealthcareMainSection';
+import StickySliderData from './data/healthcareStickySliderData';
+import StickySlider from '../../components/StickySlider/StickySlider';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import IAchievements from '../../interfaces/IAchievements';
+
 import HealthcareCTAFirstTabletBg from '@/images/healthcare/callToAction/img_healthcareCTAFirstTabletBg.webp';
 import HealthcareCTASecondTabletBg from '@/images/healthcare/callToAction/img_healthcareCTASecondTabletBg@2x.webp';
 import HealthcareCTAFirstMobileBg from '@/images/healthcare/callToAction/img_healthcareCTAFirstMobileBg@2x.webp';
@@ -35,14 +39,11 @@ import HealthcareCTATellUsTabletBg from '@/images/healthcare/callToAction/img_he
 import HealthcareCTATellUsMobileBg from '@/images/healthcare/callToAction/img_healthcareCtaTellUsMobile@2x.webp';
 import HealthcareCTAFirstBg from '@/images/healthcare/callToAction/img_healthcareCTAFirstBg.webp';
 import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
-import StickySliderData from './data/healthcareStickySliderData';
-import StickySlider from '../../components/StickySlider/StickySlider';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
 import CaseStudiesBgIndustriesDesk from '@/images/industriesPage/img_bg_case_studies_industries@2x.webp';
 import CaseStudiesBgIndustriesTablet from '@/images/industriesPage/img_bg_case_studies_industries_tablet@2x.webp';
 import CaseStudiesBgIndustriesMobile from '@/images/healthcare/caseStudies/img_bg_case_studies_mobile@2x.webp';
 
-function HealthcarePageView({ pageBlogs }: IPageBlogs) {
+function HealthcarePageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isMDDevice,
@@ -169,19 +170,20 @@ function HealthcarePageView({ pageBlogs }: IPageBlogs) {
           imagesBlock: 'min-md:max-h-[820px] min-xl:max-h-[920px]',
         }}
       />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <HealthcareNumbersBlock />
       <TrustUsBlock
         data={healthcareTrustUsCardsData}
         title="Why Choose Onix for Healthcare Development"
-        variant={CardBlockVariant.HEALTHCARE}
         dropBlockVariant={DropBlockVariant.WITHOUT_DROP_BLOCK}
         classes={{
-          cardClasses: {
-            card: `!h-[420px] min-md:!h-[430px] min-xl:!h-[500px] [&:last-of-type]:!border-b-2
-            [&:last-of-type]:!border-black
-            min-md:[&:nth-of-type(5)]:!border-b-2 min-md:[&:nth-of-type(5)]:!border-black
-            min-xl:[&:nth-of-type(4)]:!border-b-2 min-xl:[&:nth-of-type(4)]:!border-black`,
+          CardsBlockClasses: {
+            cardClasses: {
+              card: `!h-[420px] min-md:!h-[430px] min-xl:!h-[500px] [&:last-of-type]:!border-b-2
+              [&:last-of-type]:!border-black
+              min-md:[&:nth-of-type(5)]:!border-b-2 min-md:[&:nth-of-type(5)]:!border-black
+              min-xl:[&:nth-of-type(4)]:!border-b-2 min-xl:[&:nth-of-type(4)]:!border-black`,
+            },
           },
         }}
       />

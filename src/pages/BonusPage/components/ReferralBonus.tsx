@@ -9,11 +9,11 @@ import referralBonusData from '../data/referralBonusData';
 import { setShowContactForm } from 'store/app/contactForm/slice';
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
+import ButtonLight from 'components/UI/ButtonLight/ButtonLight';
+
 import ImageBackground from '@/images/bonus/referralBlock/img_referralBg@2x.webp';
 import ImageBackgroundTablet from '@/images/bonus/referralBlock/img_referralTabletBg@2x.webp';
 import ImageBackgroundMobile from '@/images/bonus/referralBlock/img_referralMobileBg@2x.webp';
-import ButtonLight from 'components/UI/ButtonLight/ButtonLight';
-
 import styles from '../sass/bonusReferral.module.scss';
 
 function ReferralBonus() {

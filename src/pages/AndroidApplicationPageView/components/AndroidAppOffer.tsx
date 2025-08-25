@@ -7,10 +7,10 @@ import NumbersBlock from '../../../components/NumbersBlock/NumbersBlock';
 import { ButtonType } from '../../../constants/enums';
 import androidAppIconsContentData from '../data/androidAppIconsContentData';
 import androidAppNumberBlockData from '../data/androidAppNumberBlockData';
+
 import AndroidAppOfferBg from '@/images/androidApplication/offerBlock/img_androidAppOfferBg@2x.webp';
 import AndroidAppOfferTabletBg from '@/images/androidApplication/offerBlock/img_androidAppOfferTabletBg@2x.webp';
 import AndroidAppOfferMobileBg from '@/images/androidApplication/offerBlock/img_androidAppOfferMobileBg@2x.webp';
-
 import styles from '../sass/androidAppOffer.module.scss';
 
 function AndroidAppOffer() {

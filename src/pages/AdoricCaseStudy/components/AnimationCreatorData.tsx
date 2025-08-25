@@ -1,15 +1,15 @@
 import { useSelector } from 'react-redux';
 
 import IAnimationCreatorData from '../interfaces/IAnimationCreatorData';
-import Background from '@/images/AdoricCase/img_BackgroundBottom.webp';
-import BackgroundTablet from '@/images/AdoricCase/img_BackgroundBottomTablet.webp';
-import BackgroundMobile from '@/images/AdoricCase/img_BackgroundBottomMobile.webp';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
 import ImageComponent from '../../../components/Image/Image';
 import VRARMainTitle from 'components/VRARMainTitle/VRARMainTitle';
 import VRARContentText from 'components/VRARContentText/VRARContentText';
 
+import BackgroundMobile from '@/images/AdoricCase/img_BackgroundBottomMobile.webp';
+import BackgroundTablet from '@/images/AdoricCase/img_BackgroundBottomTablet.webp';
+import Background from '@/images/AdoricCase/img_BackgroundBottom.webp';
 import styles from '../sass/AnimationCreatorData.module.scss';
 
 function AnimationCreatorData({ title, listPerformance, desc }: IAnimationCreatorData) {

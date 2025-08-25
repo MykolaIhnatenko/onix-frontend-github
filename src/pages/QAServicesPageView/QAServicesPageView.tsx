@@ -21,15 +21,6 @@ import {
   ButtonType,
 } from '../../constants/enums';
 import getTechnologies from '../../utils/getTechnologies';
-import QACallTopTablet from '@/images/qaServicesPage/callToAction/img_qa_call_top_tb.webp';
-import QACallTopMobile from '@/images/qaServicesPage/callToAction/img_qa_call_top_mb.webp';
-import QACallCenterDesktop from '@/images/qaServicesPage/callToAction/img_qa_call_center_desktop.webp';
-import QACallCenterTablet from '@/images/qaServicesPage/callToAction/img_qa_call_center_tablet.webp';
-import QACallCenterMobile from '@/images/qaServicesPage/callToAction/img_qa_call_center_mobile.webp';
-import QACallTopDesktop from '@/images/qaServicesPage/callToAction/img_qa_call_top_dt.webp';
-import BDCallBottomDesktop from '@/images/brandingDesign/img_bd_call_bottom_desktop.webp';
-import BDCallBottomTablet from '@/images/img_tell_us_about_md@2x.webp';
-import BDCallBottomMobile from '@/images/img_tell_us_about_sm@2x.webp';
 import ButtonTypes from '../../constants/ButtonTypes';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
@@ -39,13 +30,24 @@ import StickySlider from '../../components/StickySlider/StickySlider';
 import StickySliderData from './data/qaStickySliderData';
 import CooperateBlock from 'components/CooperateBlock/CooperateBlock';
 import qaCooperateList from './data/qaCooperateList';
+import IAchievements from '../../interfaces/IAchievements';
+
+import BDCallBottomMobile from '@/images/img_tell_us_about_sm@2x.webp';
+import BDCallBottomTablet from '@/images/img_tell_us_about_md@2x.webp';
+import BDCallBottomDesktop from '@/images/brandingDesign/img_bd_call_bottom_desktop.webp';
+import QACallTopDesktop from '@/images/qaServicesPage/callToAction/img_qa_call_top_dt.webp';
+import QACallCenterMobile from '@/images/qaServicesPage/callToAction/img_qa_call_center_mobile.webp';
+import QACallCenterTablet from '@/images/qaServicesPage/callToAction/img_qa_call_center_tablet.webp';
+import QACallCenterDesktop from '@/images/qaServicesPage/callToAction/img_qa_call_center_desktop.webp';
+import QACallTopMobile from '@/images/qaServicesPage/callToAction/img_qa_call_top_mb.webp';
+import QACallTopTablet from '@/images/qaServicesPage/callToAction/img_qa_call_top_tb.webp';
 
 interface IBackground {
   first: StaticImageData,
   second: StaticImageData,
   third: StaticImageData,
 }
-function QAServicesPageView({ pageBlogs }: IPageBlogs) {
+function QAServicesPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const { screenSizes: { isMDDevice, isSMDevice, isXSDevice } } = useSelector<IStore, IApp>((state) => state?.app);
 
   const getBackground = () => {
@@ -107,7 +109,7 @@ function QAServicesPageView({ pageBlogs }: IPageBlogs) {
           },
         }}
       />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <CooperateBlock
         title="QA and Software Testing Services&nbsp;at&nbsp;Onix"
         subtitle={`We provide a full line of software testing and quality

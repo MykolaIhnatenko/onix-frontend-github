@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { StaticImageData } from 'next/image';
 
 interface IOurSolutionsItem {
-  title?: string;
+  title?: string | ReactNode;
   text: ReactNode | string | string[];
   img: StaticImageData;
   animationUrl?: string;

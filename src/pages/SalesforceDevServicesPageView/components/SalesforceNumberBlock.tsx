@@ -5,10 +5,10 @@ import NumbersBlock from '../../../components/NumbersBlock/NumbersBlock';
 import Icon from '../../../assets/icon';
 import salesforceNumberData from '../data/salesforceNumberData';
 import { ButtonType } from '../../../constants/enums';
+
 import NumbersBlockBg from '@/images/salesforcePage/callToAction/img_number_block.webp';
 import NumbersBlockTabletBg from '@/images/salesforcePage/callToAction/img_number_block_tablet.webp';
 import NumbersBlockMobileBg from '@/images/salesforcePage/callToAction/img_number_block_mobile.webp';
-
 import styles from '../sass/salesforceNumberBlock.module.scss';
 
 function SalesforceNumberBlock() {

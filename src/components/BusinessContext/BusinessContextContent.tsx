@@ -5,7 +5,9 @@ import VRARContent from 'components/VRARContent/VRARContent';
 import VRARContentTextList from 'components/VRARContentTextList/VRARContentTextList';
 import IBusinessContextContent from './interfaces/IBusinessContextContent';
 
-function BusinessContextContent({ leftContent, rightContent, classes }: IBusinessContextContent) {
+function BusinessContextContent({
+  leftContent, rightContent, classes, isJakarta,
+}: IBusinessContextContent) {
   const getContent = (content: string | string[] | ReactNode, className?: string) => {
     if (typeof content === 'string') {
       return (
@@ -33,7 +35,10 @@ function BusinessContextContent({ leftContent, rightContent, classes }: IBusines
     }
 
     return (
-      <VRARContent className="flex-1">
+      <VRARContent className={`flex-1 font-ibmPlexMono font-normal text-[18px]/[26px]
+       screen-md:text-[16px]/[24px] ${isJakarta
+        ? '!font-jakartaSans normal-case font-medium tracking-[-0.01em]' : ''}`}
+      >
         {content}
       </VRARContent>
     );
@@ -44,6 +49,7 @@ function BusinessContextContent({ leftContent, rightContent, classes }: IBusines
         flex justify-between gap-[60px] screen-xxxl:gap-[40px] screen-xxxl:max-w-[1300px]
         screen-lg:flex-col screen-lg:max-w-full screen-lg:gap-[30px] screen-md:gap-[20px]
         ${classes?.contentContainer || ''}
+        ${isJakarta ? '!font-jakartaSans normal-case font-medium tracking-[-0.01em]' : ''}
       `}
     >
       {getContent(leftContent, classes?.leftContent)}

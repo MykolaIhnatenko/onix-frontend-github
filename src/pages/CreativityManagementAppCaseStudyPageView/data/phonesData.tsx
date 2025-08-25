@@ -1,3 +1,5 @@
+import getRunningColsData from 'utils/getRunningColsData';
+
 import IPhone1_1 from '@/images/creativityManagementAppCaseStudy/runningColsBlock/img_phone1_1@2x.webp';
 import IPhone1_2 from '@/images/creativityManagementAppCaseStudy/runningColsBlock/img_phone1_2@2x.webp';
 import IPhone1_3 from '@/images/creativityManagementAppCaseStudy/runningColsBlock/img_phone1_3@2x.webp';
@@ -13,7 +15,6 @@ import IPhone4_3 from '@/images/creativityManagementAppCaseStudy/runningColsBloc
 import IPhone5_1 from '@/images/creativityManagementAppCaseStudy/runningColsBlock/img_phone5_1@2x.webp';
 import IPhone5_2 from '@/images/creativityManagementAppCaseStudy/runningColsBlock/img_phone5_2@2x.webp';
 import IPhone5_3 from '@/images/creativityManagementAppCaseStudy/runningColsBlock/img_phone5_3@2x.webp';
-import getRunningColsData from 'utils/getRunningColsData';
 
 const images = [
   [IPhone1_1, IPhone1_2, IPhone1_3, IPhone1_1, IPhone1_2, IPhone1_3],

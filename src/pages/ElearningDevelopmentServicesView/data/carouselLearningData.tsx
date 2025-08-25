@@ -1,8 +1,9 @@
+import OurInsightsBlockItem from '../../OnlineSchedulingAndBookingView/components/OurInsightsBlockItem';
+
 import img_TechnologiesImpact from '@/images/blog/img_TechnologiesImpact.webp';
 import img_onlineCourses from '@/images/blog/img_onlineCourses.webp';
 import img_learningWebsite from '@/images/blog/img_learningWebsite.webp';
 import img_eLearningSimilarUdemy from '@/images/blog/img_eLearningSimilarUdemy.webp';
-import OurInsightsBlockItem from '../../OnlineSchedulingAndBookingView/components/OurInsightsBlockItem';
 
 const CarouselLearningData = [
   {

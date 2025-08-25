@@ -9,6 +9,14 @@ import neededBlockData from './data/neededBlockData';
 import FeaturesData from './data/FeaturesData';
 import TechList from './data/TechList';
 import { ButtonType } from 'constants/enums';
+import IPageStatus from 'interfaces/IPageStatus';
+import TestimonialVideoSection from 'components/TestimonialVideoSection/TestimonialVideoSection';
+import businessContextData, { businessContextDataSecond } from './data/businessContextData';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import aboutContent from './data/aboutContent.json';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import MainSectionBg from '@/images/GolfLive/mainSection/img_MainSection.webp';
 import MainSectionTabletBg from '@/images/GolfLive/mainSection/img_MainSectionTablet.webp';
 import MainSectionMobileBg from '@/images/GolfLive/mainSection/img_MainSectionMobile.webp';
@@ -21,13 +29,6 @@ import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.we
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
 import TestimonialPreview from '@/images/GolfLive/testimonialSection/img_testimonial_poster.webp';
-import IPageStatus from 'interfaces/IPageStatus';
-import TestimonialVideoSection from 'components/TestimonialVideoSection/TestimonialVideoSection';
-import businessContextData, { businessContextDataSecond } from './data/businessContextData';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import aboutContent from './data/aboutContent.json';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function GolfLiveView({ saleUrl }: IPageStatus) {
   const {

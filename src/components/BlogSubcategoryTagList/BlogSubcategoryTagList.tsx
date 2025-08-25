@@ -1,11 +1,12 @@
 import BlogSubcategoryTag from '../BlogSubcategoryTag/BlogSubcategoryTag';
 import IBlogSubcategoryTagList from '../../pages/Blogs/interfaces/IBlogSubcategoryTagList';
 
-import styles from './sass/blogSubcategoryTagList.module.scss';
-
-function BlogSubcategoryTagList({ data = [], variant }:IBlogSubcategoryTagList) {
+function BlogSubcategoryTagList({ data = [], classes }:IBlogSubcategoryTagList) {
   return (
-    <div className={`d-flex d-row ${styles.container} ${variant ? styles[variant] : ''}`}>
+    <div className={`hidden min-md:flex-row min-md:flex min-md:p-[15px] min-md:flex-wrap
+      min-md:absolute min-md:max-w-[330px] min-lg:max-w-[407px]
+      ${classes?.container || ''}`}
+    >
       {data?.map(({
         id,
         attributes: { name } = {},
@@ -13,7 +14,7 @@ function BlogSubcategoryTagList({ data = [], variant }:IBlogSubcategoryTagList) 
         <BlogSubcategoryTag
           key={id}
           text={name || ''}
-          variant={variant}
+          classes={classes?.tag || ''}
         />
       ))}
     </div>

@@ -1,7 +1,7 @@
 import Layout from '../src/layout/Layout';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { checkSaleUrl } from 'utils/helpers';
 import ErrorPageView from 'pages/ErrorPageView/ErrorPageView';
 import PhlexCasePageView from '../src/pages/PhlexCasePageView/PhlexCasePageView';

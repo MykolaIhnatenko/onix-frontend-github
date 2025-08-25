@@ -1,7 +1,4 @@
 import useBackground from '../../../hook/useBackground';
-import BlogsDownloadEbookBg from '@/images/blogsPage/img_dowload_ebook@2x.webp';
-import BlogsDownloadEbookBgTablet from '@/images/blogsPage/img_dowload_ebook_tablet@2x.webp';
-import BlogsDownloadEbookBgMobile from '@/images/blogsPage/img_dowload_ebook_mobile@2x.webp';
 import { MD_DEVICE } from '../../../constants/constants';
 import ImageComponent from '../../../components/Image/Image';
 import PageContainer from '../../../components/PageContainer/PageContainer';
@@ -13,6 +10,9 @@ import PagesToSalesChannels from '../../../constants/PageToSalesChannels';
 import BlogsFormModal from './BlogsFormModal';
 import { FormMessageButtonVariant } from '../../../constants/enums';
 
+import BlogsDownloadEbookBgMobile from '@/images/blogsPage/img_dowload_ebook_mobile@2x.webp';
+import BlogsDownloadEbookBgTablet from '@/images/blogsPage/img_dowload_ebook_tablet@2x.webp';
+import BlogsDownloadEbookBg from '@/images/blogsPage/img_dowload_ebook@2x.webp';
 import styles from '../sass/downloadEbookBlock.module.scss';
 
 function DownloadEbookBlock() {

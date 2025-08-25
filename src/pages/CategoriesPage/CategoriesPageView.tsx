@@ -1,7 +1,4 @@
 import useBackground from '../../hook/useBackground';
-import CategoriesBg from '@/images/categories/img_categories@2x.webp';
-import CategoriesBgTablet from '@/images/categories/img_categories_tablet@2x.webp';
-import CategoriesBgMobile from '@/images/categories/img_categories_mobile@2x.webp';
 import ImageComponent from '../../components/Image/Image';
 import PageContainer from '../../components/PageContainer/PageContainer';
 import SearchInputBlock from '../../components/SearchInputBlock/SearchInputBlock';
@@ -9,6 +6,9 @@ import ICategoriesPageView from './interfaces/ICategoriesPageView';
 import Categories from './components/CategoriesBlock';
 import RecommendedBlock from './components/RecommendedBlock';
 
+import CategoriesBgMobile from '@/images/categories/img_categories_mobile@2x.webp';
+import CategoriesBgTablet from '@/images/categories/img_categories_tablet@2x.webp';
+import CategoriesBg from '@/images/categories/img_categories@2x.webp';
 import styles from './sass/categoriesPageView.module.scss';
 
 function CategoriesPageView({

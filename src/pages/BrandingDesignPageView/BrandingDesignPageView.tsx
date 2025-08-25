@@ -25,6 +25,15 @@ import solutionTableData from './data/solutionTableData';
 import {
   ButtonType,
 } from '../../constants/enums';
+import { IPageBlogs } from '../../interfaces/IPages';
+import IStore from '../../store/interfaces/IStore';
+import { IApp } from '../../store/app/interfaces/IApp';
+import CooperateBlock from 'components/CooperateBlock/CooperateBlock';
+import cooperateList from './data/servicesWeOfferData';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import bdCaseStudiesData from './data/bdCaseStudiesData';
+import IAchievements from '../../interfaces/IAchievements';
+
 import BDBenefitsSectionMobile from '@/images/brandingDesign/img_bd_benefits_section_mobile.webp';
 import BDBenefitsSectionTablet from '@/images/brandingDesign/img_bd_benefits_section_tablet.webp';
 import BDBenefitsSectionBG from '@/images/brandingDesign/img_bd_benefits_sectionBG.webp';
@@ -37,13 +46,6 @@ import BDCallCenterMobile from '@/images/brandingDesign/img_bd_call_center_mobil
 import BDCallTopDesktop from '@/images/brandingDesign/img_bd_call_top_desktop.webp';
 import BDCallTopTablet from '@/images/brandingDesign/img_bd_call_top_tablet.webp';
 import BDCallTopMobile from '@/images/brandingDesign/img_bd_call_top_mobile.webp';
-import { IPageBlogs } from '../../interfaces/IPages';
-import IStore from '../../store/interfaces/IStore';
-import { IApp } from '../../store/app/interfaces/IApp';
-import CooperateBlock from 'components/CooperateBlock/CooperateBlock';
-import cooperateList from './data/servicesWeOfferData';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
-import bdCaseStudiesData from './data/bdCaseStudiesData';
 import CaseStudiesBg from '@/images/caseStudiesBlock/img_bottomBg.webp';
 import CaseStudiesBgTablet from '@/images/caseStudiesBlock/img_bottomBgTablet.webp';
 
@@ -55,7 +57,7 @@ interface IBackground {
   caseStudiesBg: StaticImageData | undefined;
 }
 
-function BrandingDesignPageView({ pageBlogs }: IPageBlogs) {
+function BrandingDesignPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const { screenSizes: { isMDDevice, isSMDevice, isXSDevice } } = useSelector<IStore, IApp>((state) => state?.app);
 
   const getBackground = () => {
@@ -118,7 +120,7 @@ function BrandingDesignPageView({ pageBlogs }: IPageBlogs) {
           },
         }}
       />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <ReviewBlock
         quotesList={quotesList}
         classes={{

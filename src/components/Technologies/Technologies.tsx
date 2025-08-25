@@ -1,16 +1,20 @@
 import { ITechnologiesData } from './interfaces/ITechnologies';
+import VRARContent from '../VRARContent/VRARContent';
 
 function Technologies({
   technologies,
   noShowIcon,
   withoutComma,
   classes,
+  isJakarta = false,
+  animatedText = false,
 }: ITechnologiesData) {
   return (
     <>
       {Object.keys(technologies).map((key) => (
-        <div
+        <VRARContent
           key={key}
+          withoutAnimate={!animatedText}
           className={
             `overflow-hidden [&:not(:last-child)]:border-b-2 [&:not(:last-child)]:border-black
             ${classes?.technology || ''}`
@@ -20,7 +24,8 @@ function Technologies({
             className={`font-generalSans font-medium text-[20px] leading-[1.4] pt-[20px] 
               min-md:text-[30px] min-md:leading-[1.33] min-md:pt-[40px] 
               min-lg:pt-[40px] min-lg:pb-[40px] min-lg:w-[475px] min-lg:float-left 
-              ${classes?.keyTitle || ''}`}
+              ${classes?.keyTitle || ''}
+               ${isJakarta ? '!font-jakartaSans normal-case font-medium tracking-[-0.01em]' : ''}`}
           >
             {key}
           </p>
@@ -38,7 +43,9 @@ function Technologies({
                   leading-[1.5] mr-[15px] py-[5px] cursor-default 
                   min-md:text-[20px] min-md:leading-[1.4] min-md:py-[7px] 
                   min-lg:py-[23px] min-lg:mr-[30px] min-lg:leading-[1.75] 
-                  ${classes?.item || ''}`}
+                  ${classes?.item || ''}
+                   ${isJakarta ? '!font-jakartaSans normal-case font-medium tracking-[-0.01em]' : ''}
+                   `}
               >
                 <div
                   className={`
@@ -50,7 +57,7 @@ function Technologies({
                   {!noShowIcon && (
                     <div
                       className={`
-                        absolute opacity-0 grayscale transition-opacity duration-[400ms]
+                        absolute opacity-0 grayscale transition-opacity duration-[200ms]
                         top-[55%] left-[50%] -translate-x-1/2 -translate-y-1/2
                         group-hover:min-lg:opacity-100
                         ${classes?.icon || ''}
@@ -72,7 +79,7 @@ function Technologies({
               </div>
             ))}
           </div>
-        </div>
+        </VRARContent>
       ))}
     </>
   );

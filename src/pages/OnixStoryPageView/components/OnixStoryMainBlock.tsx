@@ -5,13 +5,13 @@ import ImageComponent from '../../../components/Image/Image';
 import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import { LG_DEVICE } from '../../../constants/constants';
+
 import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.webp';
 import IndustriesMainBgBigDesc from '@/images/industriesPage/img_industries_main_bgBigDesc@2x.webp';
 import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
 import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
 import OnixStoryRomanSerebryakov from '@/images/onixStory/img_main_man.webp';
 import OnixStoryRomanSerebryakovMobile from '@/images/onixStory/img_main_man_mobile@2x.webp';
-
 import styles from '../sass/onixStoryMain.module.scss';
 
 function OnixStoryMainBlock() {

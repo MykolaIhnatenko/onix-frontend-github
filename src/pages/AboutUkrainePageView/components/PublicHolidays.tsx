@@ -4,12 +4,12 @@ import useBackground from '../../../hook/useBackground';
 import ImageComponent from '../../../components/Image/Image';
 import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
+import ButtonLight from 'components/UI/ButtonLight/ButtonLight';
+
 import AboutUkraineHolidaysMobile from '@/images/aboutUkraine/img_holidays_mobile.webp';
 import AboutUkraineHolidaysTablet from '@/images/aboutUkraine/img_holidays_tablet.webp';
 import AboutUkraineHolidaysBg from '@/images/aboutUkraine/img_holidays_bg.webp';
 import AboutUkraineHolidaysGirl from '@/images/aboutUkraine/img_holidays_girl.webp';
-import ButtonLight from 'components/UI/ButtonLight/ButtonLight';
-
 import styles from '../sass/publicHolidays.module.scss';
 
 function PublicHolidays() {

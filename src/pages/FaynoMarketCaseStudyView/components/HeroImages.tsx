@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 
 import ImageComponent from '../../../components/Image/Image';
-import Person from '@/images/faynoMarket/mainSection/img_person.webp';
-import Showcase from '@/images/faynoMarket/mainSection/img_showcase.webp';
 import IHeroImages from '../interfaces/IHeroImages';
 
+import Person from '@/images/faynoMarket/mainSection/img_person.webp';
+import Showcase from '@/images/faynoMarket/mainSection/img_showcase.webp';
 import styles from '../sass/HeroImages.module.scss';
 
 function HeroImages({ translateY, translateYSecond }: IHeroImages) {

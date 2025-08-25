@@ -8,11 +8,11 @@ import PageContainer from 'components/PageContainer/PageContainer';
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
 import referralProgramDataMobile from '../data/referralProgramDataMobile.json';
+import ReferralProgramDesk from './ReferralProgramDesk';
+
 import ImageBackground from '@/images/bonus/referralProgram/img_referralProgramBg@2x.webp';
 import ImageBackgroundTablet from '@/images/bonus/referralProgram/img_referralProgramTabletBg@2x.webp';
 import ImageBackgroundMobile from '@/images/bonus/referralProgram/img_referralProgramMobileBg@2x.webp';
-import ReferralProgramDesk from './ReferralProgramDesk';
-
 import styles from '../sass/bonusReferralProgram.module.scss';
 
 function ReferralProgram() {

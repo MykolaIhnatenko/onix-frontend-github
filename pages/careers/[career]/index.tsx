@@ -2,7 +2,7 @@ import React from 'react';
 
 import getSeoData from '../../../src/api/getSeoData';
 import getSingleCareer from '../../../src/api/getSingleCareer';
-import { getBreadcrumbsData } from '../../../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../../../src/utils/helperHandlerPages';
 import { TitlePages } from '../../../src/constants/enums';
 import SingleCareerView from '../../../src/pages/SingleCareer/SingleCareerView';
 import Layout from '../../../src/layout/Layout';

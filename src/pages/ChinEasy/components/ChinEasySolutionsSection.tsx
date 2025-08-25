@@ -3,12 +3,12 @@ import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import VRARPageAppearAnimation from '../../../components/VRARPageAppearAnimation/VRARPageAppearAnimation';
 import ImageComponent from '../../../components/Image/Image';
-import ChinEasySoltions from '@/images/chinEasy/solutionsSection/img_chin_easy_solution@2x.webp';
-import ChinEasySoltionsTablet from '@/images/chinEasy/solutionsSection/img_chin_easy_solution_tablet@2x.webp';
-import ChinEasySoltionsMobile from '@/images/chinEasy/solutionsSection/img_chin_easy_solution_mobile@2x.webp';
 import useAdaptiveImage from '../../../hook/useAdaptiveImage';
 import solutionsSection from '../data/solutionsSection';
 
+import ChinEasySoltions from '@/images/chinEasy/solutionsSection/img_chin_easy_solution@2x.webp';
+import ChinEasySoltionsTablet from '@/images/chinEasy/solutionsSection/img_chin_easy_solution_tablet@2x.webp';
+import ChinEasySoltionsMobile from '@/images/chinEasy/solutionsSection/img_chin_easy_solution_mobile@2x.webp';
 import styles from '../sass/chinEasySolutionsSecion.module.scss';
 
 function ChinEasySolutionsSection() {
@@ -56,6 +56,7 @@ function ChinEasySolutionsSection() {
                 && (
                 <ImageComponent
                   src={bg}
+                  alt="ChinEasy Solutions"
                   width={imgWidth}
                   height={imgHeight}
                   sizes="(max-width: 768px) 50vw, (min-width: 768px) 100vw"

@@ -4,11 +4,11 @@ import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import webDesignBenefitsData from '../data/webDesignBenefitsData';
+import AccordionBlack from 'components/AccordionBlack/AccordionBlack';
+
 import WebDesignBenefitsMobileBg from '@/images/webDesignPage/benefitsBlock/img_web_design_benefits_mobile_bg@2x.webp';
 import WebDesignBenefitsTabletBg from '@/images/webDesignPage/benefitsBlock/img_web_design_benefits_tablet_bg@2x.webp';
 import WebDesignBenefitsBg from '@/images/webDesignPage/benefitsBlock/img_web_design_benefits_bg@2x.webp';
-import AccordionBlack from 'components/AccordionBlack/AccordionBlack';
-
 import styles from '../sass/webDesignBenefits.module.scss';
 
 function WebDesignBenefits() {

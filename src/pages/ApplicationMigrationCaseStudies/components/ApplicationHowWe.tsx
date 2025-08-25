@@ -5,6 +5,8 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import ContentText from '../../../components/ContentText/ContentText';
 import developmentServicesSecondData from '../data/developmentServicesSecondData';
+import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
+
 import ApplicationHowWeTopBg from '@/images/applicationMigrationCaseStudies/applicationHowWe/img_HowWeTopBg@2x.webp';
 import ApplicationHowWeTopTabletBg from '@/images/applicationMigrationCaseStudies/applicationHowWe/img_HowWeTopTabletBg@2x.webp';
 import ApplicationHowWeTopMobileBg from '@/images/applicationMigrationCaseStudies/applicationHowWe/img_HowWeTopMobileBg@2x.webp';
@@ -13,8 +15,6 @@ import ApplicationHowWeBottomTabletBg from '@/images/applicationMigrationCaseStu
 import ApplicationHowWeCardBg from '@/images/applicationMigrationCaseStudies/applicationHowWe/img_HowWeCardBg@2x.webp';
 import ApplicationHowWeCardTabletBg from '@/images/applicationMigrationCaseStudies/applicationHowWe/img_HowWeCardTabletBg@2x.webp';
 import ApplicationHowWeCardMobileBg from '@/images/applicationMigrationCaseStudies/applicationHowWe/img_HowWeCardMobileBg@2x.webp';
-import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
-
 import styles from '../sass/applicationHowWe.module.scss';
 
 function ApplicationHowWe() {

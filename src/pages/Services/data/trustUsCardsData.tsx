@@ -1,7 +1,6 @@
+import { trustUsBlockSubtitle } from 'constants/tailwindStyle';
 import ICardsBlock from '../../../components/CardsBlock/interfaces/ICardsBlock';
 import ContentText from '../../../components/ContentText/ContentText';
-
-import styles from '../../MainPage/sass/trustUsBlock.module.scss';
 
 const trustUsCardsData: ICardsBlock[] = [
   {
@@ -50,12 +49,16 @@ export const trustUsCardsContent = {
         + 'Custom Software with Onix',
   text: (
     <>
-      <ContentText tag="p" className={styles.sectionSubTitle}>
+      <ContentText tag="p" className={`${trustUsBlockSubtitle} !m-0 min-lg:!max-w-[1066px]`}>
         After more than 23 years of successfully rendering custom software development services, we have
         mastered the highest service standards and know that an individual solution is a basic requirement
         that can take a product to a successful launch.
       </ContentText>
-      <ContentText tag="p" className={`${styles.sectionSubTitle} ${styles.lastSectionSubTitle}`}>
+      <ContentText
+        tag="p"
+        className={`${trustUsBlockSubtitle}
+        !m-0 !pt-[30px] !pb-[30px] min-lg:!pt-[40px] min-lg:!pb-[56px] min-lg:!max-w-[933px]`}
+      >
         We have established a well-defined software development cycle that ensures product quality,
         helps meet deadlines, and sticks to a client’s budget limits. But there’s more than that.
       </ContentText>

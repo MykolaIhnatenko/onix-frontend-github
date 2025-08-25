@@ -2,12 +2,12 @@ import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
-import NationalHolidaysBg from '@/images/nationalHolidays/img_main_bg@2x.webp';
-import NationalHolidaysImg from '@/images/nationalHolidays/img_nationalHolidays.webp';
 import { INationalHolidaysMainBlock } from '../interfaces/INationalHolidaysMainBlockData';
 import { INationalHolidays } from '../../../interfaces/INationalHolidays';
 import { BACKEND_URL } from '../../../constants/constants';
 
+import NationalHolidaysImg from '@/images/nationalHolidays/img_nationalHolidays.webp';
+import NationalHolidaysBg from '@/images/nationalHolidays/img_main_bg@2x.webp';
 import styles from '../sass/nationalHolidaysMainBlock.module.scss';
 
 function NationalHolidaysMainBlock({

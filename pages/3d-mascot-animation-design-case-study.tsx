@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../src/layout/Layout';
 import getSeoData from '../src/api/getSeoData';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import ErrorPageView from '../src/pages/ErrorPageView/ErrorPageView';
 import useIsSaleUrl from '../src/hook/useCheckSaleUrl';
 import getFooterContent from '../src/api/getFooterContent';

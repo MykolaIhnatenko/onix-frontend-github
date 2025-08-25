@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 
 import VideoPlayer from '../components/VideoPlayer/VideoPlayer';
+
 import Poster from '@/images/InteractiveVrMuseum/img_VideoSlide.webp';
 import '../pages/App/sass/globals.scss';
 

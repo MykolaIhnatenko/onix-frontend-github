@@ -6,7 +6,7 @@ import Layout from '../src/layout/Layout';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import IPages from '../src/interfaces/IPages';
 import BonusPageView from '../src/pages/BonusPage/BonusPageView';
-import { getBreadcrumbsData } from 'utils/helperHundlerPages';
+import { getBreadcrumbsData } from 'utils/helperHandlerPages';
 import { IBreadcrumbsItem } from 'layout/interfaces/IBreadcrumbs';
 import { TitlePages } from 'constants/enums';
 

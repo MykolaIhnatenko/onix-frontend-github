@@ -4,7 +4,7 @@ import ButtonTemplate from '../ButtonTemplate/ButtonTemplate';
 function ButtonTransparent({
   text, styleContainer, hasArrow, id,
   onClick, disabled, arrowVariant,
-  fontSizeSmallOnMobile, classes, typeButton,
+  fontSizeSmallOnMobile, classes, typeButton, isJakarta,
 }: IButton) {
   return (
     <ButtonTemplate
@@ -17,6 +17,7 @@ function ButtonTransparent({
       arrowVariant={arrowVariant}
       fontSizeSmallOnMobile={fontSizeSmallOnMobile}
       typeButton={typeButton}
+      isJakarta={isJakarta}
       classes={{
         ...classes,
         customContainer: `

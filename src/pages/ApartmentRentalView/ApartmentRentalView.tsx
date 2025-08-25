@@ -6,12 +6,6 @@ import TitleMainSection from './data/TitleMainSection';
 import TechList from './data/TechList';
 import BusinessData from './data/BusinessData';
 import { ButtonType } from 'constants/enums';
-import MainSectionBg from '@/images/apartmentRental/mainSection/img_MainSection.webp';
-import MainSectionTabletBg from '@/images/apartmentRental/mainSection/img_MainSectionTablet.webp';
-import MainSectionMobileBg from '@/images/apartmentRental/mainSection/img_MainSectionMobile.webp';
-import CTABg from '@/images/GolfLive/cta/img_CTA_bg.webp';
-import CTABgTablet from '@/images/GolfLive/cta/img_CTA_bg_tablet.webp';
-import CTABgMobile from '@/images/GolfLive/cta/img_CTA_bg_mobile.webp';
 import IPageStatus from 'interfaces/IPageStatus';
 import howOnixDevelopedData from './data/howOnixDevelopedData';
 import BusinessDataSecond from './data/BusinessDataSecond';
@@ -33,6 +27,13 @@ import AboutProjectSection from 'components/AboutProject/AboutProject';
 import OurSolutions from 'components/OurSolutions/OurSolutions';
 import BusinessContext from 'components/BusinessContext/BusinessContext';
 import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
+import CTABgMobile from '@/images/GolfLive/cta/img_CTA_bg_mobile.webp';
+import CTABgTablet from '@/images/GolfLive/cta/img_CTA_bg_tablet.webp';
+import CTABg from '@/images/GolfLive/cta/img_CTA_bg.webp';
+import MainSectionMobileBg from '@/images/apartmentRental/mainSection/img_MainSectionMobile.webp';
+import MainSectionTabletBg from '@/images/apartmentRental/mainSection/img_MainSectionTablet.webp';
+import MainSectionBg from '@/images/apartmentRental/mainSection/img_MainSection.webp';
 
 function ApartmentRentalView({ saleUrl }: IPageStatus) {
   const {

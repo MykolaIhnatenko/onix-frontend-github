@@ -2,11 +2,12 @@ import { StaticImageData } from 'next/image';
 
 import { useAppSelector } from '../../../hook/reduxToolkit';
 import CallToActionComponent from '../../../components/CallToActionBlock/CallToActionComponent';
+import { ButtonType } from 'constants/enums';
+import { generalSans } from 'fonts/MainFonts';
+
 import BlogsCallToActionBlockBg from '@/images/blogsPage/img_blogs_call_to_action_block@2x.webp';
 import BlogsCallToActionBlockBgTablet from '@/images/blogsPage/img_blogs_call_to_action_block_tablet@2x.webp';
 import BlogsCallToActionBlockBgMobile from '@/images/blogsPage/img_blogs_call_to_action_block_mobile@2x.webp';
-import { ButtonType } from 'constants/enums';
-import { generalSans } from 'fonts/MainFonts';
 
 function BlogsLastSections() {
   const { screenSizes: { isMDDevice, isSMDevice, isXSDevice } } = useAppSelector((state) => state?.app);

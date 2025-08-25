@@ -14,6 +14,15 @@ import resultsBlockData from './data/resultsBlockData';
 import TechListData from './data/TechListData.json';
 import { ButtonType } from '../../constants/enums';
 import IPageStatus from '../../interfaces/IPageStatus';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import carouselData from './data/carouselData';
+import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
+import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
+import aboutContent from './data/aboutContent.json';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import MainSectionBg from '@/images/BeautyBookingServices/img_MainSection.webp';
 import MainSectionBgTablet from '@/images/BeautyBookingServices/img_MainSectionTablet.webp';
 import MainSectionBgMobile from '@/images/BeautyBookingServices/img_MainSectionMobile.webp';
@@ -35,14 +44,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
-import carouselData from './data/carouselData';
-import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
-import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
-import aboutContent from './data/aboutContent.json';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function BeautyBookingServicesView({ saleUrl }: IPageStatus) {
   const {

@@ -79,7 +79,7 @@ function BlogPreviewCarousel({
           </div>
         ) : (
           <Swiper
-            slidesPerView={variant === BlogPreviewsCarouselVariant.SINGLE_BLOG ? 2.17 : 1.11}
+            slidesPerView={variant === BlogPreviewsCarouselVariant.SINGLE_BLOG ? 2.17 : 1.05}
             spaceBetween={spaceBetween}
             className={styles.innerCarousel}
             allowSlideNext={isEnabled}

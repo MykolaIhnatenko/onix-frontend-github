@@ -1,7 +1,7 @@
 import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
-import BetterMePhone from '@/images/BetterMe/img_phone.png';
 
+import BetterMePhone from '@/images/BetterMe/img_phone.png';
 import styles from '../sass/results.module.scss';
 
 function Results() {

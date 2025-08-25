@@ -1,4 +1,5 @@
 import { ITiltedCarouselData } from '../../../components/TiltedCarousel/interfaces/ITiltedCarouselItem';
+
 import DesignAuditTiltedCarousel1Row1 from '@/images/designAuditServicesPage/tiltedCarousel/img_tilted_carousel_1_row_1@2x.webp';
 import DesignAuditTiltedCarousel1Row2 from '@/images/designAuditServicesPage/tiltedCarousel/img_tilted_carousel_1_row_2@2x.webp';
 import DesignAuditTiltedCarousel1Row3 from '@/images/designAuditServicesPage/tiltedCarousel/img_tilted_carousel_1_row_3@2x.webp';

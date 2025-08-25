@@ -21,7 +21,7 @@ async function getTechnologies():Promise<ITechnologiesList> {
     const categoriesResponse = await fetch(categoriesUrl);
     const { data } = await categoriesResponse.json() as ITechnologiesList;
 
-    return { data } || {};
+    return { data };
   } catch (error) {
     if (error instanceof Error) {
       console.error('Error fetching:', error.message);

@@ -1,19 +1,22 @@
 import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
+import IAndroidAppEngagementModels from '../../AndroidApplicationPageView/interfaces/IAndroidAppEngagementModels';
+import { itemTextContainerClasses, itemTextTopClasses, itemTitleClasses } from 'pages/AndroidApplicationPageView/components/AndroidAppEngagementModels';
+import MainTitleWithoutSize from 'components/MainTitleWithoutSize/MainTitleWithoutSize';
+
 import Staff from '@/images/fintech/img_Staff.webp';
 import StaffTablet from '@/images/fintech/img_StaffTablet.webp';
 import StaffMobile from '@/images/fintech/img_StaffMobile.webp';
 import DedicatedTeamMob from '@/images/fintech/img_DedicatedTeamMob.webp';
 import DedicatedTeamTablet from '@/images/fintech/img_DedicatedTeamTablet.webp';
 import DedicatedTeamFintech from '@/images/fintech/img_DedicatedTeam.webp';
-import IAndroidAppEngagementModels from '../../AndroidApplicationPageView/interfaces/IAndroidAppEngagementModels';
-
-import styles from '../../AndroidApplicationPageView/sass/androidAppEngagementModels.module.scss';
 
 const fintechEngagementModelsData: IAndroidAppEngagementModels = {
   pageTitle: (
-    <div className={styles.pageTitleFintech}>
-      <p className={styles.textSubTitle}>
+    <div className="flex flex-col">
+      <p className={`text-[20px] font-normal leading-[28px] mb-[20px] screen-md:text-[14px]
+        screen-md:leading-[16px] font-ibmPlexMono`}
+      >
         [ Our engagement models ]
       </p>
       <MainTitle>
@@ -23,19 +26,19 @@ const fintechEngagementModelsData: IAndroidAppEngagementModels = {
 
   ),
   firstItemTitle: (
-    <MainTitle className={`${styles.itemTitle} ${styles.fintechTitleDev}`} tag="h3">
+    <MainTitleWithoutSize className={itemTitleClasses} tag="h3">
       <span style={{ marginRight: 20 }}>
         01
       </span>
       Dedicated team
-    </MainTitle>
+    </MainTitleWithoutSize>
   ),
   firstItemText: (
-    <div className={styles.itemTextContainer}>
-      <ContentText tag="p" className={`${styles.itemTextTop} ${styles.fintechContentDev}`}>
+    <div className={itemTextContainerClasses}>
+      <ContentText tag="p" className={`${itemTextTopClasses} screen-lg:!text-[16px]/[24px]`}>
         Hire an allocated group of remote employees who work exclusively on your project.
       </ContentText>
-      <ContentText tag="p" className={`${styles.itemTextBottom} ${styles.fintechContentDev}`}>
+      <ContentText tag="p" marginAbsent className="screen-lg:!text-[16px]/[24px]">
         You can fully rely on experts to fully manage your project. We form a dedicated team of experts
         hand‑picked specifically for your business goals and requirements.
       </ContentText>
@@ -45,20 +48,20 @@ const fintechEngagementModelsData: IAndroidAppEngagementModels = {
   firstItemImgTablet: DedicatedTeamTablet,
   firstItemImgMobile: DedicatedTeamMob,
   secondItemTitle: (
-    <MainTitle className={`${styles.itemTitle} ${styles.fintechTitleDev}`} tag="h3">
+    <MainTitleWithoutSize className={itemTitleClasses} tag="h3">
       <span style={{ marginRight: 20 }}>
         02
       </span>
       Staff augmentation
-    </MainTitle>
+    </MainTitleWithoutSize>
   ),
   secondItemText: (
-    <div className={styles.itemTextContainer}>
-      <ContentText tag="p" className={`${styles.itemTextTop} ${styles.fintechContentDev}`}>
+    <div className={itemTextContainerClasses}>
+      <ContentText tag="p" className={`${itemTextTopClasses} screen-lg:!text-[16px]/[24px]`}>
         If you need the expertise of one or several professionals,
         Onix will assign an overseas team with the required set of skills.
       </ContentText>
-      <ContentText tag="p" className={`${styles.itemTextBottom} ${styles.fintechContentDev}`}>
+      <ContentText tag="p" marginAbsent className="screen-lg:!text-[16px]/[24px]">
         Our experts proficiently support your projects on an ongoing
         basis together with your already existing team.
       </ContentText>

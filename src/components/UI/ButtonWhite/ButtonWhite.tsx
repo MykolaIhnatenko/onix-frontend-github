@@ -4,7 +4,7 @@ import ButtonTemplate from '../ButtonTemplate/ButtonTemplate';
 function ButtonWhite({
   text, styleContainer, hasArrow, id,
   onClick, disabled, arrowVariant, fontSizeSmallOnMobile,
-  classes, typeButton,
+  classes, typeButton, isJakarta,
 }: IButton) {
   return (
     <ButtonTemplate
@@ -17,6 +17,7 @@ function ButtonWhite({
       arrowVariant={arrowVariant}
       fontSizeSmallOnMobile={fontSizeSmallOnMobile}
       typeButton={typeButton}
+      isJakarta={isJakarta}
       classes={{
         ...classes,
         customContainer: `

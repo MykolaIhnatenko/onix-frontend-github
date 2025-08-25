@@ -3,12 +3,12 @@ import { StaticImageData } from 'next/image';
 
 import { useAppSelector } from '../../../hook/reduxToolkit';
 import ImageComponent from '../../../components/Image/Image';
+
 import GoogleIcon from '@/images/Photowhy/img_google_icon.webp';
 import AppIcon from '@/images/Photowhy/img_app_icon.webp';
 import ResultTablet from '@/images/Photowhy/img_result_tablet.webp';
 import ResultMobile from '@/images/Photowhy/img_result_mobile.webp';
 import ResultDesctop from '@/images/Photowhy/img_result_desctop.webp';
-
 import styles from '../sass/photowhyResultSection.module.scss';
 
 function PhotowhyResultSection({ isMobile }: { isMobile:boolean }) {

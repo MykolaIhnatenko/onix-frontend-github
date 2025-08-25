@@ -1,4 +1,8 @@
 import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
+import IndustriesWeServeCarouselItem
+  from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
+import PageLinks from 'constants/PageLinks';
+
 import CrossPlatformFintechImage from '@/images/crossplatformDesign/img_fintech.webp';
 import CrossPlatformElearningImage from '@/images/crossplatformDesign/img_elearning.webp';
 import CrossPlatformSportsImage from '@/images/crossplatformDesign/img_Sports_&_Fitness.webp';
@@ -8,9 +12,6 @@ import CrossPlatformReatilImage from '@/images/crossplatformDesign/img_Retail_&_
 import CrossPlatformGamingImage from '@/images/crossplatformDesign/img_gaming.webp';
 import CrossPlatformSocialNetworkingImage from '@/images/crossplatformDesign/img_social_networking.webp';
 import CrossPlatformMoreImage from '@/images/crossplatformDesign/img_and_many_more...webp';
-import IndustriesWeServeCarouselItem
-  from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
-import PageLinks from 'constants/PageLinks';
 
 export const weServeBlockData = {
   upTitle: '[ Industries we serve ]',

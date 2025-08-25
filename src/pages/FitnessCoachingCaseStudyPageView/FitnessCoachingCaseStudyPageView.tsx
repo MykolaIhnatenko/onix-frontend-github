@@ -22,6 +22,16 @@ import fitnessCoachingAchievedBusinessData from './data/fitnessCoachingAchievedB
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import { ButtonType } from '../../constants/enums';
+import IPageStatus from 'interfaces/IPageStatus';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import carouselData from './data/carouselData';
+import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
+import StickySliderData from './data/fitnessCoachingStickySliderData';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextWithTable from 'components/BusinessContextWithTables/BusinessContextWithTable';
+
 import RebrandingBlockBg from '@/images/fitnessCoachingCaseStudyPageView/rebrandingBlock/img_rebrandingBlockBg@2x.webp';
 import RebrandingBlockTabletBg from '@/images/fitnessCoachingCaseStudyPageView/rebrandingBlock/img_rebrandingBlockTabletBg@2x.webp';
 import RebrandingBlockMobileBg from '@/images/fitnessCoachingCaseStudyPageView/rebrandingBlock/img_rebrandingBlockMobileBg@2x.webp';
@@ -36,15 +46,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import IPageStatus from 'interfaces/IPageStatus';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
-import carouselData from './data/carouselData';
-import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
-import StickySliderData from './data/fitnessCoachingStickySliderData';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextWithTable from 'components/BusinessContextWithTables/BusinessContextWithTable';
 
 function FitnessCoachingCaseStudyPageView({ saleUrl }: IPageStatus) {
   const {

@@ -2,7 +2,7 @@ import Layout from '../src/layout/Layout';
 import NibulonCasePageView from '../src/pages/NibulonCasePageView/NibulonCasePageView';
 import ErrorPageView from 'pages/ErrorPageView/ErrorPageView';
 import { checkSaleUrl } from '../src/utils/helpers';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';

@@ -1,5 +1,6 @@
 import { IOurCaseStudiesData } from '../../../components/OurCaseStudies/interfaces/IOurCaseStudies';
 import PageLinks from '../../../constants/PageLinks';
+
 import img_LearningPool from '@/images/elernings/img_LearningPool.webp';
 import img_LearningPoolTablet from '@/images/elernings/img_LearningPoolTablet.webp';
 import img_LearningPoolMobile from '@/images/elernings/img_LearningPoolMobile.webp';

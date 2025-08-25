@@ -9,8 +9,8 @@ import data from '../data/bdMainSectionData';
 import {
   getSlideClassName, transitionText, variantTextMobile,
 } from '../animationVariants';
-import BDBackgroundMobile from '@/images/brandingDesign/img_main_block_mobile.webp';
 
+import BDBackgroundMobile from '@/images/brandingDesign/img_main_block_mobile.webp';
 import styles from '../sass/bdMainSectionMobile.module.scss';
 
 function BDMainSectionMobile() {

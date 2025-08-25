@@ -18,13 +18,14 @@ import CTA_Bg from '../../assets/images/nibulon/cta/img_cta.webp';
 import CTA_BgTablet from '../../assets/images/nibulon/cta/img_cta_tablet.webp';
 import CTA_BgMobile from '../../assets/images/nibulon/cta/img_cta_mobile.webp';
 import technologyData from './data/technologyData.json';
-import RunningRowsBg from '@/images/nibulon/runningRowsBlock/img_bg.webp';
-import RunningRowsBgTablet from '@/images/nibulon/runningRowsBlock/img_bg_tablet.webp';
-import RunningRowsBgMobile from '@/images/nibulon/runningRowsBlock/img_bg_mobile.webp';
 import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
 import OurSolutions from 'components/OurSolutions/OurSolutions';
 import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+
+import RunningRowsBgMobile from '@/images/nibulon/runningRowsBlock/img_bg_mobile.webp';
+import RunningRowsBgTablet from '@/images/nibulon/runningRowsBlock/img_bg_tablet.webp';
+import RunningRowsBg from '@/images/nibulon/runningRowsBlock/img_bg.webp';
 
 function NibulonCasePageView({ saleUrl }: IPageStatus) {
   const { screenSizes: { isMDDevice, isSMDevice, isXSDevice } } = useAppSelector((state) => state?.app);
@@ -102,7 +103,7 @@ function NibulonCasePageView({ saleUrl }: IPageStatus) {
         title="Summing up all our work for this project, these are our leading solutions:"
         data={ourSolutionsData}
         classes={{
-          section: '!pt-[0]',
+          section: '!pt-[0] !pb-[80px] screen-lg:!pb-[60px] screen-md:!pb-[40px]',
           title: '!text-[40px]/[56px] screen-lg:!text-[36px]/[46px] screen-md:!text-[20px]/[28px]',
         }}
       />

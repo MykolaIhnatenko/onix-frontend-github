@@ -4,8 +4,8 @@ import useWindowSize from '../../../hook/useWindowSize';
 import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import { LG_DEVICE, MD_DEVICE } from '../../../constants/constants';
-import Business from '@/images/caseStudiesPage/ColoradoSports/img_business.webp';
 
+import Business from '@/images/caseStudiesPage/ColoradoSports/img_business.webp';
 import styles from '../sass/coloradoSportsVideoBusinessSection.module.scss';
 
 function ColoradoSportsVideoBusinessSection() {

@@ -1,8 +1,8 @@
 import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
+
 import FutureTablet from '@/images/Photowhy/img_future_tablet.webp';
 import Future from '@/images/Photowhy/img_future.webp';
-
 import styles from '../sass/photowhyFuturesSection.module.scss';
 
 function PhotowhyFuturesSection({ isMinDesktop }:{ isMinDesktop: boolean }) {
@@ -14,6 +14,7 @@ function PhotowhyFuturesSection({ isMinDesktop }:{ isMinDesktop: boolean }) {
           <div className={styles.futuresImg}>
             <ImageComponent
               src={isMinDesktop ? FutureTablet : Future}
+              alt="Photowhy Futures"
               sizes="100vw"
               width={isMinDesktop ? 253 : 2402}
               height={isMinDesktop ? 511 : 1790}

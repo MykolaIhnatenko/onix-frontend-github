@@ -1,11 +1,12 @@
 import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
 import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
+import PageLinks from 'constants/PageLinks';
+
 import TravelCarousel from '@/images/carousel/img_travel.webp';
 import ElearningCarousel from '@/images/carousel/img_elearning.webp';
 import RetailCarousel from '@/images/carousel/img_retail.webp';
 import SportsCarousel from '@/images/carousel/img_sports.webp';
 import BookCarousel from '@/images/carousel/img_book.webp';
-import PageLinks from 'constants/PageLinks';
 
 export const industriesTitle = {
   title: 'Industries we serve',

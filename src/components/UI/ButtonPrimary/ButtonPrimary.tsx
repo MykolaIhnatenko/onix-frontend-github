@@ -4,7 +4,7 @@ import ButtonTemplate from '../ButtonTemplate/ButtonTemplate';
 function ButtonPrimary({
   text, styleContainer, hasArrow, id,
   onClick, disabled, arrowVariant,
-  fontSizeSmallOnMobile, classes, typeButton,
+  fontSizeSmallOnMobile, classes, typeButton, isJakarta,
 }: IButton) {
   return (
     <ButtonTemplate
@@ -17,6 +17,7 @@ function ButtonPrimary({
       arrowVariant={arrowVariant}
       fontSizeSmallOnMobile={fontSizeSmallOnMobile}
       typeButton={typeButton}
+      isJakarta={isJakarta}
       classes={{
         ...classes,
         customContainer: 'text-color-white bg-[#E7E7E7] before:bg-color-black',

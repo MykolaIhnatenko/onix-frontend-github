@@ -41,3 +41,21 @@ export const businessContextDataThird = {
     },
   ],
 };
+
+export const businessContextDataFourth = {
+  upTitle: '[ Results ]',
+  title: 'Onix\'s collaboration with Phlex led to measurable improvements '
+    + 'across performance, reliability, and user engagement.',
+  subTitle: 'After refactoring the legacy iOS codebase and launching the Android app and Apple Watch companion, '
+    + 'the team achieved a 30% reduction in bug reports and improved overall code stability and scalability.',
+  firstText: 'With robust DevOps pipelines and Agile workflows, deployment frequency increased by 40%,'
+    + ' while deployment-related errors dropped by 25%. Additionally, proactive bug fixing and post-launch'
+    + ' support reduced critical issues by 35%, resulting in a smoother user experience'
+    + ' and fewer support requests.',
+  secondText: 'Seamless integration with Apple Watch, Android Watch, and Polar devices expanded platform'
+    + ' compatibility, driving a 20% increase in user adoption and a 15% boost in positive feedback'
+    + ' related to hardware connectivity.',
+  subText: 'Within three months post-launch, user acquisition grew by 10%, and continued feature updates and '
+    + 'reliable performance helped maintain an 85% retention rate, with a steady 12% '
+    + 'increase in active users month-over-month.',
+};

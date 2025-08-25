@@ -4,7 +4,7 @@ import Layout from '../src/layout/Layout';
 import IPages from '../src/interfaces/IPages';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import AdoricCaseView from '../src/pages/caseStudies/AdoricCasePage/AdoricCaseView';
 

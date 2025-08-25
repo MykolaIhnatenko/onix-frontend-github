@@ -42,4 +42,22 @@ export const containerActiveBlocksBooking = {
   cardBlock: containerActiveBlocksClasses,
 };
 
+export const benefitsClasses = {
+  card: `bg-black text-white p-[30px] border-b-[2px] border-white transition-all
+  duration-[400ms] min-lg:hover:bg-white min-lg:hover:text-black screen-lg:pointer-events-none screen-md:border-b-[0px]
+  screen-md:pb-0 screen-md:px-[15px]`,
+  number: 'text-[36px] leading-[46px] mb-[120px] screen-md:text-[24px] screen-md:leading-[34px] screen-md:mb-[40px]',
+  text: `text-[30px] leading-[40px] screen-md:pb-[28px] screen-md:border-b-[2px] screen-md:border-white
+  screen-md:text-[20px] screen-md:leading-[28px]`,
+};
+
+export const trustUsBlockSubtitle = `mb-[40px] px-[15px] z-[2] relative max-w-[670px] 
+  min-md:pl-[30px] min-md:mb-[60px] 
+  min-lg:mb-[80px] min-lg:pl-[70px] 
+  min-xxxl:pl-[80px]`;
+
+export const usabilityTestingMainBlockIcon = `w-[258px] h-[56px]
+  max-1390:w-[202px] max-1390:h-[44px]
+  screen-md:w-[147px] screen-md:h-[32px]`;
+
 export default resultsBlockWhite;

@@ -1,11 +1,11 @@
 import { StaticImageData } from 'next/image';
 
-import { ButtonPathVariant, CardBlockVariant, DropBlockVariant } from '../../../constants/enums';
+import { ButtonPathVariant, DropBlockVariant } from '../../../constants/enums';
 
 export default interface ICard {
   id: string;
-  title: string;
-  content: string;
+  title: string | React.ReactNode;
+  content: string | React.ReactNode;
   list?: string[];
 }
 
@@ -28,14 +28,15 @@ export interface ICardClasses {
 
 export interface ICardProps {
   id: string;
-  title: string;
-  content: string;
+  title: string | React.ReactNode;
+  content: string | React.ReactNode;
   activeId: string;
   setActiveId: (id: string) => void;
-  variant?: CardBlockVariant;
   list?: string[];
   withoutAnimate?: boolean;
   cardIndex: number;
+  isJakarta?: boolean;
+  hiddenTitleInTablet?: boolean;
   classes?: ICardClasses;
 }
 
@@ -61,8 +62,6 @@ export interface ICardBlockData {
   dropBlockBtnTitle?: string;
   dropBlockTitleVariant?: string,
   dropBlockText?: string,
-  dropBlockBgVariant?: CardBlockVariant,
-  variant?: CardBlockVariant;
   dropBlockBg?: StaticImageData;
   dropBlockBtnVariant?: ButtonPathVariant;
   disableBg?: boolean;
@@ -74,4 +73,7 @@ export interface ICardBlockData {
   idBtn?: string;
   classes?: ICardBlockClasses;
   animatedGradient?: boolean;
+  isPInDropBlockTitle?: boolean;
+  isJakarta?: boolean;
+  hiddenTitleInTablet?: boolean;
 }

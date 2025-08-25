@@ -3,11 +3,11 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ImageComponent from '../../../components/Image/Image';
 import utilizeData from '../data/utilizeData';
 import useBackground from '../../../hook/useBackground';
+
 import DedicatedTeamMan from '@/images/dedicatedTeamPage/img_man@2x.webp';
 import DedicatedTeamUtilize from '@/images/dedicatedTeamPage/img_utilize@2x.webp';
 import DedicatedTeamUtilizeTablet from '@/images/dedicatedTeamPage/img_utilize_tablet@2x.webp';
 import DedicatedTeamUtilizeMobile from '@/images/dedicatedTeamPage/img_utilize_mobile@2x.webp';
-
 import styles from '../sass/dedicatedTeamUtilizeSecion.module.scss';
 
 function DedicatedTeamUtilizeSection() {

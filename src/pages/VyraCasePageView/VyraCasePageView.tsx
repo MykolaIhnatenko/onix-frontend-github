@@ -19,6 +19,9 @@ import { ButtonType } from '../../constants/enums';
 import coreTechnologyData from './data/technologyData.json';
 import scrollTextData from './data/scrollTextData';
 import IPageStatus from 'interfaces/IPageStatus';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -27,8 +30,6 @@ import CTAResultBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAResultTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAResultMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAResultXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function VyraCasePageView({ saleUrl }: IPageStatus) {
   const {

@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import IPageStatus from '../../interfaces/IPageStatus';
-import { UsabilityTestingMainBlockVariant } from 'constants/enums';
 import UsabilityTestingMainBlock from 'pages/UsabilityTestingPageView/components/UsabilityTestingMainBlock';
 import AboutProjectSection from 'components/AboutProject/AboutProject';
 import VRARCallToActionComponent from 'components/VRARCallToActionBlock/VRARCallToActionComponent';
@@ -15,6 +14,12 @@ import developmentServicesData from './data/developmentServicesData';
 import KillerFeaturesData from './data/killerFeaturesData';
 import TechData from './data/techData.json';
 import ProductScopeData from './data/productScopeData';
+import resultsBlockWhite from 'constants/tailwindStyle';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import MainSectionBgTablet from '@/images/analyticsPlatform/img_AnalyticBGTablet.webp';
 import MainSectionBgMobile from '@/images/analyticsPlatform/img_AnalyticBGMobile.webp';
 import MainSectionBgXL from '@/images/analyticsPlatform/img_AnalyticBGMax.webp';
@@ -25,15 +30,10 @@ import ResultBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteBg@2x.webp';
 import ResultTabletBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteTabletBg@2x.webp';
 import ResultMobileBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteMobileBg@2x.webp';
 import ResultXXXLBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteXXXLBg@2x.webp';
-import resultsBlockWhite from 'constants/tailwindStyle';
 import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
-import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function AnalyticView({ saleUrl }: IPageStatus) {
   const {
@@ -84,7 +84,29 @@ function AnalyticView({ saleUrl }: IPageStatus) {
           </>
         )}
         background={getBackground().Main}
-        variant={UsabilityTestingMainBlockVariant.ANALYTICS_PLATFORM}
+        classes={{
+          container: `!h-screen !min-h-[900px] !max-h-[1100px] !relative
+          !bg-[linear-gradient(111deg,_#CFE8FF_0%,_#CFE8FF_50%)] screen-xl:!min-h-[1200px]
+          screen-lg:!min-h-[1024px] screen-md:!min-h-[760px] screen-md:!max-h-[572px]
+          max-560:!min-h-[700px] max-460:!min-h-[620px] max-400:!min-h-[572px]`,
+          background: '!absolute !bottom-0 !right-0 !h-full !w-full',
+          backgroundImage: `!w-full !h-full !object-cover !object-[25%_30%]
+          min-xxl:!object-[25%_25%] screen-xl:!object-[25%_70%] max-1100:!object-[40%_85%]
+          screen-lg:!object-[50%_65%] screen-md:!object-[50%_80%]`,
+          contentContainer: `!relative !h-full !flex !flex-col !justify-center
+          max-1390:!flex max-1390:!pt-0 screen-xl:!block screen-xl:!pt-[146px] screen-md:!pt-[136px]`,
+          content: '!pl-[70px] min-xxxl:!pl-[80px] screen-xl:!pl-[30px] screen-md:!pl-[15px] screen-md:!pr-[15px]',
+          title: `!max-w-[550px] !pb-0
+          max-1390:!text-[50px] max-1390:!leading-[64px]
+          screen-xl:!max-w-[708px] screen-xl:!text-[40px] screen-xl:!leading-[56px]
+          screen-lg:!max-w-[708px]
+          screen-md:!text-[25px] screen-md:!leading-[35px]`,
+          text: `!text-[var(--color-white)] !max-w-[440px] !m-0 !font-normal !text-[18px]
+          !leading-[26px] !font-[var(--ibmPlexMono)] screen-xxxl:!max-w-[550px]
+          screen-xl:!text-[16px] screen-xl:!leading-[24px]
+          screen-lg:!max-w-[670px] screen-lg:!text-[18px] screen-lg:!leading-[26px]
+          screen-md:!max-w-none screen-md:!text-[16px] screen-md:!leading-[24px]`,
+        }}
       />
       <AboutProjectSection
         content={aboutData.content}

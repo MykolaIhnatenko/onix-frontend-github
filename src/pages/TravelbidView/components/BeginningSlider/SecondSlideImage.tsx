@@ -1,9 +1,9 @@
 import ISlideImage from '../../interfaces/ISlideImage';
 import ImageComponent from 'components/Image/Image';
+
 import ImageSecondBig from '@/images/travelbid/beginningSection/img_second-picture-big.webp';
 import ImageSecondSmall from '@/images/travelbid/beginningSection/img_second-picture-small.webp';
 import ImageSecondSmall2 from '@/images/travelbid/beginningSection/img_second-picture-small2.webp';
-
 import styles from '../../sass/BeginningSlider/SecondSlideImage.module.scss';
 import commonStyles from '../../sass/BeginningSlider/common/commonStyles.module.scss';
 

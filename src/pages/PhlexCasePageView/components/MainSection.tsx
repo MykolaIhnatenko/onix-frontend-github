@@ -3,6 +3,7 @@ import { StaticImageData } from 'next/image';
 import ImageComponent from '../../../components/Image/Image';
 import PageContainer from 'components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
+
 import Logo from '@/images/phlexCase/main/img_logo.webp';
 
 function MainSection({ backgroundImg }: { backgroundImg: StaticImageData }) {

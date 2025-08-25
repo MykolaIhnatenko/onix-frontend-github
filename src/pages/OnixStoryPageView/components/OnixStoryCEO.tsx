@@ -2,10 +2,10 @@ import useBackground from '../../../hook/useBackground';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
+
 import OnixStoryCEOSerhiiKholin from '@/images/onixStory/img_Serhii_Kholin.webp';
 import OnixStoryCEOSerhiiKholinTablet from '@/images/onixStory/img_Serhii_Kholin_tablet.webp';
 import OnixStoryCEOBg from '@/images/onixStory/img_CEO_block_bg.webp';
-
 import styles from '../sass/onixStoryCEO.module.scss';
 
 function OnixStoryCEO() {

@@ -608,5 +608,25 @@
     "id": 3,
     "title": "Joobs",
     "path": "/job-search-experience-platform-case-study"
+  },
+  {
+    "id": 3,
+    "title": "ERP Hydra Case Study",
+    "path": "/erp-system-development-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Army Health System",
+    "path": "/digital-military-wellness-solution-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Cryptocurrency blog",
+    "path": "/cryptocurrency-blog-development-case-study"
+  },
+  {
+    "id": 3,
+    "title": "Hotel4Box",
+    "path": "/erp-delivery-platform-case-study"
   }
 ]

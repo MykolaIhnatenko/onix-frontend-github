@@ -5,7 +5,7 @@ import useWindowSize from '../src/hook/useWindowSize';
 import IPages from '../src/interfaces/IPages';
 import { TitlePages } from '../src/constants/enums';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHandlerPages';
 import Layout from '../src/layout/Layout';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import getSeoData from '../src/api/getSeoData';

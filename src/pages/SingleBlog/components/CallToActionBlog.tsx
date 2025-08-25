@@ -32,7 +32,7 @@ function CallToActionBlog({
           href={sanitizedUrl}
           target="_blank"
           className="btnContainer"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <div
             className="d-flex d-row d-item-center d-justify-center content"

@@ -1,10 +1,10 @@
 import ISlideImage from '../../interfaces/ISlideImage';
+import ImageComponent from 'components/Image/Image';
+
 import ImageTopRight from '@/images/travelbid/beginningSection/img_first-picture-top-right.webp';
 import ImageTopLeft from '@/images/travelbid/beginningSection/img_first-picture-top-left.webp';
 import ImageBottomRight from '@/images/travelbid/beginningSection/img_first-picture-bottom-right.webp';
 import ImageBottomLeft from '@/images/travelbid/beginningSection/img_first-picture-bottom-left.webp';
-import ImageComponent from 'components/Image/Image';
-
 import styles from '../../sass/BeginningSlider/FirstSlideImage.module.scss';
 import commonStyles from '../../sass/BeginningSlider/common/commonStyles.module.scss';
 

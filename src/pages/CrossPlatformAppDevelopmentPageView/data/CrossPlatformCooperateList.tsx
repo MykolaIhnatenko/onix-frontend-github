@@ -1,8 +1,9 @@
+import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
+
 import CrossPlatformCommunicationsImage from '@/images/crossplatformDesign/img_communication.webp';
 import CrossPlatformTimeEfficiencyImage from '@/images/crossplatformDesign/img_time_and_cost_efficiency.webp';
 import CrossPlatformCustomSolutionsImage from '@/images/crossplatformDesign/img_custom_solutions.webp';
 import CrossPlatformExpertiseImage from '@/images/crossplatformDesign/img_expertise.webp';
-import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
 const cooperateList: IAccordionHorizontalData[] = [
   {

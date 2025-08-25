@@ -18,6 +18,11 @@ import { ButtonType } from '../../constants/enums';
 import IPageStatus from '../../interfaces/IPageStatus';
 import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 import resultsBlockWhite from 'constants/tailwindStyle';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -26,10 +31,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function VrMedicalTrainingCasePageView({ saleUrl }: IPageStatus) {
   const {
@@ -100,8 +101,8 @@ function VrMedicalTrainingCasePageView({ saleUrl }: IPageStatus) {
           background={getBackground().ctaLast}
           withButton
           classes={{
-            cta: `!p-[32px_70px_120px] screen-lg:!p-[0_30px_80px] screen-md:!p-[0_30px_80px]
-            screen-sm:!p-[0_15px_80px]`,
+            cta: `!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_30px]
+            screen-sm:!p-[80px_15px]`,
             title: '!max-w-[1078px]',
           }}
         />

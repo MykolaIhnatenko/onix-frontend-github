@@ -7,10 +7,10 @@ import ContentText from '../../../components/ContentText/ContentText';
 import IconLinkedin from '../../../assets/icon/blog/ic_linkedin.svg';
 import IconEmail from '../../../assets/icon/blog/ic_email.svg';
 import { IntroductionSectionType } from '../interfaces/IAuthorPageView';
+
 import AuthorBgTablet from '@/images/author/img_author_bg_tablet@2x.webp';
 import AuthorBgMobile from '@/images/author/img_author_bg_mobile@2x.webp';
 import AuthorBg from '@/images/author/img_author_bg@2x.webp';
-
 import styles from '../sass/introductionSection.module.scss';
 
 function IntroductionSection({ author }:IntroductionSectionType) {

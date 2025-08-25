@@ -28,7 +28,7 @@ function SpatioRunningRowsBlock({ background }:{ background:StaticImageData }) {
         data={ourSolutionsContentData}
         desktopViewOnXL
         classes={{
-          section: 'py-[80px] screen-lg:pt-[60px] screen-md:pt-[40px]',
+          section: 'pt-[80px] pb-[120px] screen-lg:pt-[60px] screen-md:pt-[40px]',
         }}
       />
     </section>

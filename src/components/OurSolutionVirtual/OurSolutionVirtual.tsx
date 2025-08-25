@@ -27,6 +27,7 @@ function OurSolutionVirtual({
             imgMobile={imgMobile}
             title={titleCard}
             text={text}
+            classes={classes}
           />
         )) }
       </div>

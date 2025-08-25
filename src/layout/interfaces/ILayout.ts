@@ -6,6 +6,7 @@ import PagesToSalesChannels from '../../constants/PageToSalesChannels';
 import { IBreadcrumbsItem } from './IBreadcrumbs';
 import { BreadcrumbsVariant, HeaderColorVariant } from '../../constants/enums';
 import IFooterContent from 'interfaces/IFooterContent';
+import { IBlogAttributes } from 'interfaces/IBlog';
 
 export default interface ILayout {
   children: React.ReactNode;
@@ -25,4 +26,6 @@ export default interface ILayout {
   footerContent?: IFooterContent,
   smoothScroll?: boolean,
   isBlockedIp?: boolean,
+  blogAttributes?: IBlogAttributes,
+  articleType?: 'Article' | 'BlogPosting',
 }

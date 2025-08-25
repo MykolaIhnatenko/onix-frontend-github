@@ -42,6 +42,7 @@ export default async function getSeoData(
           project,
           popularBlogs,
           sale,
+          achievements,
         } = {},
       } = await getSinglePage(page);
 
@@ -72,6 +73,7 @@ export default async function getSeoData(
         description,
         popularBlogs,
         sale,
+        ...(achievements !== undefined ? { achievements } : {}),
       };
       return pageData || defaultSeoData;
     },

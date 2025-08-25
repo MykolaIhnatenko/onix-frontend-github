@@ -6,6 +6,6 @@ export interface ICareersContactForm {
   howFoundOutAboutUs: string,
   message: string,
   jobVacancy: string,
-  client: Blob[],
-  [key: string]: string | Blob[];
+  client: File[];
+  [key: string]: string | File[];
 }

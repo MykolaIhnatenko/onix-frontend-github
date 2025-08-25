@@ -1,7 +1,7 @@
 import VRARContent from 'components/VRARContent/VRARContent';
 import ImageComponent from 'components/Image/Image';
-import MainImage from '@/images/MarineSafetyPage/img_hero-image.webp';
 
+import MainImage from '@/images/MarineSafetyPage/img_hero-image.webp';
 import styles from '../sass/MarineSafety.module.scss';
 
 function HeroSection() {

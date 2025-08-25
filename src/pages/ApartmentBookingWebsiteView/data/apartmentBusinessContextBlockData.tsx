@@ -4,6 +4,8 @@ import ContentText from 'components/ContentText/ContentText';
 
 import styles from '../sass/businessContextBlock.module.scss';
 
+const flexStyles = '!flex !gap-[10px]';
+
 const apartmentBusinessContextBlockData = {
   upTitle: '[ Business goals and context ]',
   title: (
@@ -30,17 +32,28 @@ const apartmentBusinessContextBlockData = {
         The objectives were:
       </span>
       {' '}
-      ﹂To enable guests to book directly on the Kozystay website, ensuring an efficient, seamless process.
+      <span className={flexStyles}>
+        <span>﹂</span>
+        <span>To enable guests to book directly on the Kozystay website, ensuring an efficient, seamless process.</span>
+      </span>
     </ContentText>
   ),
   secondText: (
     <ContentText tag="p" marginAbsent>
-      <span className={styles.spanWithMargin}>
-        ﹂To integrate the website with Kozystay’s existing channel management software for the management
-        of&nbsp;reservations, availability, and pricing.
+      <span className={`${styles.spanWithMargin} ${flexStyles}`}>
+        <span>﹂</span>
+        <span>
+          To integrate the website with Kozystay’s existing channel management software for the management
+          of&nbsp;reservations, availability, and pricing.
+        </span>
       </span>
-      ﹂To design a platform that can accommodate an expanding property portfolio and geography without compromising
-      the&nbsp;ease of management.
+      <span className={flexStyles}>
+        <span>﹂</span>
+        <span>
+          To design a platform that can accommodate an expanding property portfolio and geography without compromising
+          the&nbsp;ease of management.
+        </span>
+      </span>
     </ContentText>
   ),
   subText: `Kozystay’s management started looking for a creative web design and development team capable of building

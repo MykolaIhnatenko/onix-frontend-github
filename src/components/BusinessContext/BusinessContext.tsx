@@ -3,7 +3,8 @@ import BusinessContextTemplate from 'components/BusinessContextTemplate/Business
 import BusinessContextContent from './BusinessContextContent';
 
 function BusinessContext({
-  upTitle, title, subTitle, leftContent, rightContent, subText, blackTheme, background, classes,
+  upTitle, title, subTitle, leftContent, rightContent, subText,
+  blackTheme, background, classes, isJakarta, isButton, buttonText,
 }: IBusinessContext) {
   return (
     <BusinessContextTemplate
@@ -14,10 +15,14 @@ function BusinessContext({
       subText={subText}
       blackTheme={blackTheme}
       classes={classes}
+      isJakarta={isJakarta}
+      isButton={isButton}
+      buttonText={buttonText}
     >
       <BusinessContextContent
         leftContent={leftContent}
         rightContent={rightContent}
+        isJakarta={isJakarta}
         classes={classes}
       />
     </BusinessContextTemplate>

@@ -24,6 +24,17 @@ export default interface IPage {
         },
       ]
     }
+    achievements?: {
+      data: {
+        id: number,
+        attributes: {
+          title: string,
+          url: string,
+          description: string,
+          image: IPicture,
+        }
+      }[]
+    },
     project?: {
       data: {
         attributes: {

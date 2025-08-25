@@ -16,14 +16,14 @@ import {
 } from '../../../constants/constants';
 import { getErrorValue } from '../../../utils/helpers';
 import careersContactSchema from '../../../validators/careersContactSchema';
-import ContactFormBg from '@/images/careers/img_CareerContactBg.webp';
 import ButtonCareer from 'components/UI/ButtonCareer/ButtonCareer';
 
+import ContactFormBg from '@/images/careers/img_CareerContactBg.webp';
 import styles from '../sass/CareersContactForm.module.scss';
 
 function CareerContactForm({ vacancyName }: { vacancyName: string }) {
   const dispatch = useAppDispatch();
-  const [uploadedFiles, setUploadedFiles] = useState<Blob[]>([]);
+  const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
 
   const initialValues = {
     name: '',

@@ -1,7 +1,7 @@
 import Layout from '../src/layout/Layout';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import ConfettiPageView from '../src/pages/Confetti/ConfettiPageView';
 import { TitlePages } from '../src/constants/enums';
 import PagesToSalesChannels from '../src/constants/PageToSalesChannels';

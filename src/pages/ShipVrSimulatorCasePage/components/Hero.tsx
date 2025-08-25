@@ -1,10 +1,10 @@
 import ImageComponent from '../../../components/Image/Image';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import { IHeroProps } from '../interfaces/IShipVRSimulatorPage';
-import introductionVideo2x from '@/images/shipVrSimulatorCasePage/img_introduction-video@2x.webp';
-import banner from '@/images/shipVrSimulatorCasePage/img_banner@2x.webp';
 import heroContent from '../data/heroContentData';
 
+import introductionVideo2x from '@/images/shipVrSimulatorCasePage/img_introduction-video@2x.webp';
+import banner from '@/images/shipVrSimulatorCasePage/img_banner@2x.webp';
 import styles from '../sass/shipVrSimulatorCasePage.module.scss';
 
 function Hero({ topVideoClicked, handleVideoClick }: IHeroProps) {

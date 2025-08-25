@@ -2,10 +2,10 @@ import { StaticImageData } from 'next/image';
 
 import { useAppSelector } from '../../../hook/reduxToolkit';
 import ImageComponent from '../../../components/Image/Image';
+
 import PhotoTablet from '@/images/Photowhy/img_photo_tablet.webp';
 import PhotoMobile from '@/images/Photowhy/img_photo_mobile.webp';
 import PhotoDesktop from '@/images/Photowhy/img_photo_desktop.webp';
-
 import styles from '../sass/photowhyPhotoSection.module.scss';
 
 function PhotowhyPhotoSection() {

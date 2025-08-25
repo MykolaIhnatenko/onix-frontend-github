@@ -9,7 +9,7 @@ import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import OnlineSchedulingAndBookingView from '../src/pages/OnlineSchedulingAndBookingView/OnlineSchedulingAndBookingView';
 import useWindowSize from '../src/hook/useWindowSize';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import getBlogsByIds from '../src/api/getBlogsByIds';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';

@@ -6,9 +6,6 @@ import runningCols from '../data/runningCols';
 import ourSolutionsContentData from '../data/ourSolutionsContentData';
 import { businessContextDataSecond } from '../data/businessContextData';
 import { LG_DEVICE, MD_DEVICE } from '../../../constants/constants';
-import BgDesktop from '@/images/confettiPage/solutionSection/img_bg@2x.webp';
-import BgTablet from '@/images/confettiPage/solutionSection/img_bg-tablet@2x.webp';
-import BgMobile from '@/images/confettiPage/solutionSection/img_bg-mobile@2x.webp';
 import RunningColsBlock from 'components/RunningColsBlock/RunningColsBlock';
 import carouselData from '../data/carouselData';
 import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
@@ -16,6 +13,9 @@ import OurSolutions from 'components/OurSolutions/OurSolutions';
 import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 import MainTitle from 'components/MainTitle/MainTitle';
 
+import BgMobile from '@/images/confettiPage/solutionSection/img_bg-mobile@2x.webp';
+import BgTablet from '@/images/confettiPage/solutionSection/img_bg-tablet@2x.webp';
+import BgDesktop from '@/images/confettiPage/solutionSection/img_bg@2x.webp';
 import styles from '../sass/confettiSolutionsSection.module.scss';
 
 function ConfettiSolutionsSection() {

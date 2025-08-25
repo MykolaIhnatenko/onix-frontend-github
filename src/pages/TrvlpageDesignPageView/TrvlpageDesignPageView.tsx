@@ -18,8 +18,11 @@ import trvlpageCoreTechnologyData from './data/trvlpageCoreTechnologyData';
 import trvlpageBusinessContextSecondData from './data/trvlpageBusinessContextSecondData';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
-import { ButtonType, UsabilityTestingMainBlockVariant } from '../../constants/enums';
+import { ButtonType } from '../../constants/enums';
 import IPageStatus from '../../interfaces/IPageStatus';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -35,8 +38,6 @@ import MainBlockImage from '@/images/trvlpageDesignPageView/mainBlock/img_mainIm
 import MainBlockMinDesImage from '@/images/trvlpageDesignPageView/mainBlock/img_mainImageMinDes@2x.webp';
 import MainBlockTabletImage from '@/images/trvlpageDesignPageView/mainBlock/img_mainImageTablet@2x.webp';
 import MainBlockMobileImage from '@/images/trvlpageDesignPageView/mainBlock/img_mainImageMobile@2x.webp';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function TrvlpageDesignPageView({ saleUrl }: IPageStatus) {
   const {
@@ -82,7 +83,24 @@ function TrvlpageDesignPageView({ saleUrl }: IPageStatus) {
         text={trvlpageMainBlockData.text}
         icon={trvlpageMainBlockData.icon}
         background={getBackground().mainBackground}
-        variant={UsabilityTestingMainBlockVariant.TRVLPAGE_DESIGN}
+        classes={{
+          container: '!bg-white !bg-none !h-screen screen-lg:!h-[1024px] screen-md:!h-[640px]',
+          background: `!w-[63vw] !h-auto !flex !bottom-0 screen-xl:!w-[57vw] screen-lg:!w-[738px]
+            screen-lg:!h-[719px] screen-md:!w-[345px] screen-md:!h-[391px] screen-md:!bottom-0
+            after:!content-[''] after:!absolute after:!top-0 after:!left-0 after:!w-full
+            after:!h-0 after:bg-[linear-gradient(0deg,rgba(253,253,253,0)_15%,#ffffff_100%)]
+            screen-lg:after:!h-[70px] screen-md:after:!h-[40px]`,
+          contentContainer: `!relative !h-full !flex !flex-col !justify-center max-1390:!flex
+            max-1390:!pt-0 screen-lg:!block screen-lg:!pt-[146px] screen-md:!pt-[136px]`,
+          content: 'max-1390:!pl-[70px] screen-lg:!pl-[30px] screen-md:!pl-[15px] screen-md:!pr-[15px]',
+          logo: '!pb-[40px] screen-lg:!pb-[30px] screen-md:!pb-[15px]',
+          title: `max-1390:!pb-[40px] max-1390:!text-[50px] max-1390:!leading-[64px] screen-lg:!pb-[30px]
+            screen-lg:!max-w-[708px] screen-lg:!text-[40px] screen-lg:!leading-[56px] screen-md:!pb-[15px]
+            screen-md:!text-[25px] screen-md:!leading-[35px]`,
+          text: `!max-w-[400px] !m-0 !text-[28px] !leading-[40px] screen-lg:!max-w-[unset]
+            screen-lg:!text-[24px] screen-lg:!leading-[34px] screen-md:!max-w-[280px]
+            screen-md:!text-[20px] screen-md:!leading-[28px]`,
+        }}
       />
       <AboutProjectSection content={aboutBlockData.content} title={aboutBlockData.blockTitle} />
       <BusinessContext
@@ -103,6 +121,10 @@ function TrvlpageDesignPageView({ saleUrl }: IPageStatus) {
         content={trvlpageResultsBlockData.content}
         background={getBackground().resultsBlock}
         productScope
+        classes={{
+          background: `after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full
+            after:h-[120px] after:bg-gradient-to-b from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[80px]`,
+        }}
       />
       {!saleUrl && (
         <VRARCallToActionComponent
@@ -120,7 +142,8 @@ function TrvlpageDesignPageView({ saleUrl }: IPageStatus) {
           classes={{
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_15px]',
             background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full
-            after:h-[50px] after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black`,
+            after:h-[120px] after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[80px]`,
+            image: '!object-bottom',
             title: `!max-w-[1078px] screen-lg:!pb-[30px] screen-lg:!max-w-[630px]
             screen-md:!max-w-[300px] screen-md:!pb-[30px]`,
           }}

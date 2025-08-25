@@ -1,8 +1,9 @@
 import Icons from '../../../assets/icon';
+import { ITapAccordionItem } from '../../../components/TapAccordion/interfaces/ITapAccordionData';
+
 import HealthcareTapAccordionBgItem3 from '@/images/healthcare/tapAccordion/img_card_bg3@2x.webp';
 import IosTapAccordionBgItem1 from '@/images/iosPage/img_card_bg1@2x.webp';
 import IosTapAccordionBgItem2 from '@/images/iosPage/img_card_bg2@2x.webp';
-import { ITapAccordionItem } from '../../../components/TapAccordion/interfaces/ITapAccordionData';
 
 const healthcareTapAccordionData: ITapAccordionItem[] = [
   {

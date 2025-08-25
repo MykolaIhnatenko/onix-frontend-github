@@ -1,4 +1,5 @@
 import { IAdvantagesData } from '../../../components/AdvantagesBlock/interfaces/IAdvantagesBlock';
+
 import img_Chatbots from '@/images/elernings/img_Chatbots.webp';
 import img_ARVR from '@/images/elernings/img_ARVR.webp';
 import img_ArtifactIntelligence from '@/images/elernings/img_ArtifactIntelligence.webp';

@@ -1,8 +1,9 @@
 import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import IMainBlock from '../interfaces/IMainBlock';
-import Logo from '@/images/joobs/mainBlock/img_logo.webp';
 import PageContainer from 'components/PageContainer/PageContainer';
+
+import Logo from '@/images/joobs/mainBlock/img_logo.webp';
 
 function MainBlock({ background, macImage }: IMainBlock) {
   return (

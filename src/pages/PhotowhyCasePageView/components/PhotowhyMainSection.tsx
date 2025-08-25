@@ -6,9 +6,9 @@ import 'swiper/css/pagination';
 
 import ImageComponent from '../../../components/Image/Image';
 import mainImages from '../data/mainImages';
+
 import MainPhone2x from '@/images/Photowhy/img_main-phone@2x.webp';
 import MainPhoneMobile2x from '@/images/Photowhy/img_main-phone-mobile@2x.webp';
-
 import styles from '../sass/photowhyMainSection.module.scss';
 
 function PhotowhyMainSection({ cellSpacing, isMobile }: { cellSpacing: number, isMobile: boolean }) {

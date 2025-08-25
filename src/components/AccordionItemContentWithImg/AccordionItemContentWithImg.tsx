@@ -6,7 +6,7 @@ import ImageComponent from 'components/Image/Image';
 import LinkButtonPrimary from 'components/UI/LinkButtonPrimary/LinkButtonPrimary';
 
 function AccordionItemContentWithImg({
-  children, imageAlt, image, imageTablet, imageMobile, button, staticImageHeight, contentReverse,
+  children, imageAlt, image, imageTablet, imageMobile, button, staticImageHeight, contentReverse, classes,
 }: IAccordionItemContentWithImg) {
   const {
     screenSizes: {
@@ -33,10 +33,12 @@ function AccordionItemContentWithImg({
     <div className={`
       flex gap-[80px] px-[70px] pb-[30px] screen-xl:flex-col screen-xl:gap-[30px] screen-md:px-0 screen-md:pb-[20px]
       ${contentReverse ? 'screen-xl:flex-col-reverse' : ''}
+      ${classes?.container || ''}
       `}
     >
       <div
-        className="flex flex-col gap-[30px] justify-between max-w-[770px] w-[93%] screen-xl:w-full screen-xl:min-w-full"
+        className={`flex flex-col gap-[30px] justify-between max-w-[770px] w-[93%] screen-xl:w-full screen-xl:min-w-full
+          ${classes?.content || ''}`}
       >
         <div>
           {children}

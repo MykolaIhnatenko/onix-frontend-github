@@ -5,7 +5,6 @@ import ResultsBlock from '../../components/ResultsBlock/ResultsBlock';
 import VRARCallToActionComponent from '../../components/VRARCallToActionBlock/VRARCallToActionComponent';
 import {
   ButtonType,
-  UsabilityTestingMainBlockVariant,
 } from '../../constants/enums';
 import howOnixDevelopedData from './data/howOnixDevelopedData.json';
 import ButtonTypes from '../../constants/ButtonTypes';
@@ -24,10 +23,6 @@ import TestimonialTextSection from 'components/TestimonialTextSection/Testimonia
 import testimonialData from './data/testimonialData';
 import RunningColsBlock from 'components/RunningColsBlock/RunningColsBlock';
 import phonesData from './data/phonesData';
-import RunningColsBgXXXL from '@/images/runningColsBlock/img_runningColsBgXXXL.webp';
-import RunningColsBg from '@/images/runningColsBlock/img_runningColsBg.webp';
-import RunningColsBgTablet from '@/images/runningColsBlock/img_runningColsBgTablet.webp';
-import RunningColsBgMobile from '@/images/runningColsBlock/img_runningColsBgMobile.webp';
 import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 import ScrollTextAnimation from 'components/ScrollTextAnimation/ScrollTextAnimation';
 import scrollTextAnimationData from './data/scrollTextAnimationData';
@@ -36,6 +31,15 @@ import MainXXXLBg from '../../assets/images/creativityManagementAppCaseStudy/img
 import MainTabletBg from '../../assets/images/creativityManagementAppCaseStudy/img_mainTabletBg@2x.webp';
 import MainMobileBg from '../../assets/images/creativityManagementAppCaseStudy/img_mainMobileBg@2x.webp';
 import UsabilityTestingMainBlock from 'pages/UsabilityTestingPageView/components/UsabilityTestingMainBlock';
+import resultsBlockWhite, { aboutProjectSectionWhite } from 'constants/tailwindStyle';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
+import RunningColsBgXXXL from '@/images/runningColsBlock/img_runningColsBgXXXL.webp';
+import RunningColsBg from '@/images/runningColsBlock/img_runningColsBg.webp';
+import RunningColsBgTablet from '@/images/runningColsBlock/img_runningColsBgTablet.webp';
+import RunningColsBgMobile from '@/images/runningColsBlock/img_runningColsBgMobile.webp';
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockWhiteMobileBg@2x.webp';
@@ -44,10 +48,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaWhiteBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaWhiteTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaWhiteMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaWhiteXXXLBg@2x.webp';
-import resultsBlockWhite, { aboutProjectSectionWhite } from 'constants/tailwindStyle';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function CreativityManagementAppCaseStudyPageView({ saleUrl }: IPageStatus) {
   const {
@@ -92,8 +92,22 @@ function CreativityManagementAppCaseStudyPageView({ saleUrl }: IPageStatus) {
         text="A smart, intuitive iOS app development for creative individuals"
         btnText="Talk with an expert"
         background={getBackground().main}
-        variant={UsabilityTestingMainBlockVariant.CREATIVITY_MANAGEMENT}
         saleUrl={saleUrl}
+        classes={{
+          container: '!text-white max-1390:!h-screen screen-md:!min-h-[570px]',
+          background: '!absolute !bottom-0 !right-0 !h-full !w-full',
+          backgroundImage: `!w-full !h-full !object-cover !object-center max-1390:!object-left
+          screen-xl:![object-position:_-50px] screen-lg:!object-center screen-md:!object-center`,
+          contentContainer: 'max-1390:!flex max-1390:!pt-0 screen-lg:!block screen-lg:!pt-[146px]',
+          content: 'max-1390:!pl-[70px] screen-lg:!pl-[30px] screen-md:!pl-[15px]',
+          logo: '!pb-[40px] screen-lg:!pb-[30px] screen-md:!pb-[15px]',
+          title: `!max-w-[520px] !pb-[40px] max-1390:!text-[50px]
+          max-1390:!leading-[64px] screen-lg:!text-[40px] screen-lg:!leading-[56px]
+          screen-lg:!max-w-[unset] screen-lg:!pb-[30px] screen-md:!text-[25px]
+          screen-md:!leading-[35px] screen-md:!pb-[15px]`,
+          text: '!max-w-[520px] !pb-[40px] screen-lg:!pb-[30px] screen-md:!pb-[15px] screen-lg:!max-w-[430px]',
+          btn: '!max-w-[420px] screen-lg:!max-w-[400px] screen-md:!max-w-[330px]',
+        }}
       />
       <AboutProjectSection
         title={howOnixDevelopedData.blockTitle}

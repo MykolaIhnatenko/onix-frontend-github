@@ -1,7 +1,6 @@
 import ImageRide from '@/images/MarineSafetyPage/img_ride2x.webp';
 import ImageHike from '@/images/MarineSafetyPage/img_hike2x.webp';
 import ImageTravel from '@/images/MarineSafetyPage/img_travel2x.webp';
-
 import styles from '../sass/MarineSafety.module.scss';
 
 const images = [

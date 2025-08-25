@@ -1,19 +1,22 @@
 import ContentText from '../../../components/ContentText/ContentText';
-import MainTitle from '../../../components/MainTitle/MainTitle';
+import MainTitleWithoutSize from '../../../components/MainTitleWithoutSize/MainTitleWithoutSize';
 import { ICardSliderItem } from '../../../components/CardSlider/interfaces/ICardSlider';
 
-import styles from '../../../components/CardSlider/sass/cardSlider.module.scss';
+const titleStyles = `mb-[30px] text-[30px] leading-[40px] font-[500]
+screen-md:mb-[15px] screen-md:text-[20px] screen-md:leading-[28px]`;
+const textStyles = `!m-0 !text-[18px] !leading-[26px] font-[400] 
+screen-md:!text-[14px] screen-md:!leading-[20px]`;
 
 const designAuditCardSliderData: ICardSliderItem[] = [
   {
     id: '01',
     title: (
-      <MainTitle tag="h3" className={styles.cardTitle}>
+      <MainTitleWithoutSize tag="h3" className={titleStyles}>
         User Research and Understanding
-      </MainTitle>
+      </MainTitleWithoutSize>
     ),
     text: (
-      <ContentText tag="p" className={styles.cardText}>
+      <ContentText tag="p" className={textStyles}>
         Onix conducts thorough user research, including interviews and usability testing, to
         gain deep insights into user needs, preferences, and behavior.
       </ContentText>
@@ -22,12 +25,12 @@ const designAuditCardSliderData: ICardSliderItem[] = [
   {
     id: '02',
     title: (
-      <MainTitle tag="h3" className={styles.cardTitle}>
+      <MainTitleWithoutSize tag="h3" className={titleStyles}>
         Innovation and Differentiation
-      </MainTitle>
+      </MainTitleWithoutSize>
     ),
     text: (
-      <ContentText tag="p" className={styles.cardText}>
+      <ContentText tag="p" className={textStyles}>
         Onix employs a team of creative designers who stay up-to-date with the latest design
         trends and innovative approaches, ensuring unique and standout designs.
       </ContentText>
@@ -36,12 +39,12 @@ const designAuditCardSliderData: ICardSliderItem[] = [
   {
     id: '03',
     title: (
-      <MainTitle tag="h3" className={styles.cardTitle}>
+      <MainTitleWithoutSize tag="h3" className={titleStyles}>
         User Experience and Usability
-      </MainTitle>
+      </MainTitleWithoutSize>
     ),
     text: (
-      <ContentText tag="p" className={styles.cardText}>
+      <ContentText tag="p" className={textStyles}>
         Onix focuses on creating intuitive and user-friendly interfaces, employing user-centered
         design principles to optimize the user experience.
       </ContentText>
@@ -50,12 +53,12 @@ const designAuditCardSliderData: ICardSliderItem[] = [
   {
     id: '04',
     title: (
-      <MainTitle tag="h3" className={styles.cardTitle}>
+      <MainTitleWithoutSize tag="h3" className={titleStyles}>
         Technical Constraints and Feasibility
-      </MainTitle>
+      </MainTitleWithoutSize>
     ),
     text: (
-      <ContentText tag="p" className={styles.cardText}>
+      <ContentText tag="p" className={textStyles}>
         Onix collaborates closely with developers and engineers to ensure that design concepts are
         feasible and compatible with technical requirements.
       </ContentText>
@@ -64,12 +67,12 @@ const designAuditCardSliderData: ICardSliderItem[] = [
   {
     id: '05',
     title: (
-      <MainTitle tag="h3" className={styles.cardTitle}>
+      <MainTitleWithoutSize tag="h3" className={titleStyles}>
         Time and Resource Management
-      </MainTitle>
+      </MainTitleWithoutSize>
     ),
     text: (
-      <ContentText tag="p" className={styles.cardText}>
+      <ContentText tag="p" className={textStyles}>
         Onix follows a structured design process, utilizing project management techniques to manage
         time and resources and meet deadlines effectively.
       </ContentText>
@@ -78,12 +81,12 @@ const designAuditCardSliderData: ICardSliderItem[] = [
   {
     id: '06',
     title: (
-      <MainTitle tag="h3" className={styles.cardTitle}>
+      <MainTitleWithoutSize tag="h3" className={titleStyles}>
         Stakeholder Alignment and Communication
-      </MainTitle>
+      </MainTitleWithoutSize>
     ),
     text: (
-      <ContentText tag="p" className={styles.cardText}>
+      <ContentText tag="p" className={textStyles}>
         Onix maintains clear and constant communication with stakeholders, involving them in the design
         process and addressing their feedback and concerns.
       </ContentText>

@@ -1,11 +1,11 @@
 import customerRoleContent from '../data/customerRoleContent.json';
 import serviceRoleContent from '../data/serviceRoleContent.json';
 import Card from './Card';
-import ImageCustomer from '@/images/travelbid/problemsSection/img_customer-role.webp';
-import ImageService from '@/images/travelbid/problemsSection/img_service-role.webp';
 import ImageComponent from 'components/Image/Image';
 import VRARContent from 'components/VRARContent/VRARContent';
 
+import ImageCustomer from '@/images/travelbid/problemsSection/img_customer-role.webp';
+import ImageService from '@/images/travelbid/problemsSection/img_service-role.webp';
 import styles from '../sass/TravelbidView.module.scss';
 
 function ProblemsSection() {

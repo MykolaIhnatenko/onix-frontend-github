@@ -3,8 +3,8 @@ import { useMemo } from 'react';
 import { useAppSelector } from '../../../hook/reduxToolkit';
 import ImageComponent from '../../../components/Image/Image';
 import Icon from '../../../assets/icon';
-import BetterMePhones from '@/images/BetterMe/img_phones.png';
 
+import BetterMePhones from '@/images/BetterMe/img_phones.png';
 import styles from '../sass/betterMeMainSection.module.scss';
 
 function BetterMeMainSection() {

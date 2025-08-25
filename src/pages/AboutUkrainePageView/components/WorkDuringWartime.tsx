@@ -3,12 +3,12 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import { LG_DEVICE, MD_DEVICE } from '../../../constants/constants';
-import AboutUkraineWartimePhoto from '@/images/aboutUkraine/img_wartime_photo.webp';
 import workDuringWartimeData from '../data/workDuringWartimeData.json';
+
+import AboutUkraineWartimePhoto from '@/images/aboutUkraine/img_wartime_photo.webp';
 import AboutUkraineWartimeBg from '@/images/aboutUkraine/img_wartimeBg.webp';
 import AboutUkraineWartimeBgTablet from '@/images/aboutUkraine/img_wartimeBgTablet.webp';
 import AboutUkraineWartimeBgMobile from '@/images/aboutUkraine/img_wartimeBgMobile.webp';
-
 import styles from '../sass/workDuringWartime.module.scss';
 
 function WorkDuringWartime() {

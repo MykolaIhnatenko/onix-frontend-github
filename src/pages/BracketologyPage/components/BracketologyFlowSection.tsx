@@ -9,15 +9,15 @@ import BracketologyText from './BracketologyText';
 import { IBracketologyFlowSection } from '../interfaces/IBracketologyFlowSection';
 import ImageComponent from '../../../components/Image/Image';
 import flowCarouselItems from '../data/flowCarouselItems';
-import flowBg from '@/images/bracketology/flowSection/img_petals@2x.webp';
-import flowBgTablet from '@/images/bracketology/flowSection/img_petals_tablet@2x.webp';
-import flowPhone1 from '@/images/bracketology/flowSection/img_flow_phone1@2x.webp';
-import flowPhone2 from '@/images/bracketology/flowSection/img_flow_phone2@2x.webp';
 import BracketologyPhoneItem from './BracketologyPhoneItem';
 import FlowCarousel from './FlowCarousel';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
 
+import flowBg from '@/images/bracketology/flowSection/img_petals@2x.webp';
+import flowBgTablet from '@/images/bracketology/flowSection/img_petals_tablet@2x.webp';
+import flowPhone1 from '@/images/bracketology/flowSection/img_flow_phone1@2x.webp';
+import flowPhone2 from '@/images/bracketology/flowSection/img_flow_phone2@2x.webp';
 import styles from '../sass/BracketologyFlowSection.module.scss';
 
 function BracketologyFlowSection({

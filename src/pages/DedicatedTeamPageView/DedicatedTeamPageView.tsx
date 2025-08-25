@@ -40,10 +40,10 @@ import DedicatedTeamCallToActionFourthBg from '../../assets/images/dedicatedTeam
 import DedicatedTeamCallToActionFourthBgTablet from '../../assets/images/img_lastCtaTablet@2x.webp';
 import DedicatedTeamCallToActionFourthBgMobile from '../../assets/images/img_lastCtaMobile@2x.webp';
 import DedicatedTeamCallToActionSecondBigBg from '../../assets/images/dedicatedTeamPage/img_call_to_action_second_big@2x.webp';
+
 import DedicatedTeamCaseStudiesBgMobile from '@/images/dedicatedTeamPage/img_case_studies_bg_mobile@2x.webp';
 import DedicatedTeamCaseStudiesBgTablet from '@/images/dedicatedTeamPage/img_dedicated_team_case_sudies_tablet_bg@2x.webp';
 import DedicatedTeamCaseStudiesBg from '@/images/dedicatedTeamPage/img_dedicated_team_case_sudies_bg@2x.webp';
-
 import styles from './sass/dedicatedTeamPageView.module.scss';
 
 interface IBackground {

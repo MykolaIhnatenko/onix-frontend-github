@@ -5,10 +5,21 @@ import IImage from './interfaces/IImage';
 import Diamond from '../../assets/images/img_diamond@2x.webp';
 
 function ImageComponent({
-  src, alt, width, height,
-  fill, sizes, priority, quality,
-  className, style, loading,
-}:IImage) {
+  src,
+  alt = 'Onix',
+  width,
+  height,
+  fill = false,
+  sizes = `(max-width: 768px) 100vw,
+           (max-width: 1200px) 50vw,
+           33vw`,
+  priority = false,
+  quality = 100,
+  className,
+  style,
+  loading,
+  fetchPriority = 'low',
+}: IImage) {
   const [error, setError] = useState(false);
 
   const getSrc = () => {
@@ -21,7 +32,7 @@ function ImageComponent({
 
   return (
     <Image
-      src={getSrc() || Diamond}
+      src={getSrc()}
       alt={alt}
       width={width}
       height={height}
@@ -34,19 +45,9 @@ function ImageComponent({
       draggable="false"
       loading={loading}
       style={style || { userSelect: 'none' }}
+      fetchPriority={priority ? undefined : fetchPriority}
     />
   );
 }
-
-ImageComponent.defaultProps = {
-  alt: 'Onix',
-  fill: false,
-  priority: false,
-  sizes: `(max-width: 768px) 100vw,
-          (max-width: 1200px) 50vw,
-          33vw`,
-  quality: 100,
-  className: undefined,
-};
 
 export default ImageComponent;

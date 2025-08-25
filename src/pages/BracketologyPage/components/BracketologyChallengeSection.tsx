@@ -5,8 +5,8 @@ import challengeCards from '../data/challengeCards';
 import challengeContent from '../data/challengeContent';
 import BracketologyPageContainer from './BracketologyPageContainer';
 import BracketologyText from './BracketologyText';
-import challengeRose from '@/images/bracketology/challengeSection/rose2@2x.webp';
 
+import challengeRose from '@/images/bracketology/challengeSection/rose2@2x.webp';
 import styles from '../sass/BracketologyChallengeSection.module.scss';
 
 function BracketologyChallengeSection() {

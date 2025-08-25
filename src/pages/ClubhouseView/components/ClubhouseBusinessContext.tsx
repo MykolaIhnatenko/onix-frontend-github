@@ -6,6 +6,7 @@ import BusinessContext from '../../../components/BusinessContext/BusinessContext
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import ContentText from '../../../components/ContentText/ContentText';
+
 import Icon1 from '@/images/clubhouse/businessContext/img_icon_1.webp';
 import Icon2 from '@/images/clubhouse/businessContext/img_icon_2.webp';
 import Icon3 from '@/images/clubhouse/businessContext/img_icon_3.webp';

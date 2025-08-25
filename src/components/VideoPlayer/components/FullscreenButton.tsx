@@ -1,18 +1,28 @@
 import React from 'react';
 
 import IFullscreenButton from '../interfaces/IFullscreenButton';
-import useScrollBlocked from '../../../hook/useScrollBlocked';
 import IconZoomOut from '../../../assets/icon/videoPlayer/ic_zoom_out.svg';
 import IconZoomIn from '../../../assets/icon/videoPlayer/ic_zoom_in.svg';
+import { useAppDispatch, useAppSelector } from '../../../hook/reduxToolkit';
+import { setVideoFullScreen } from '../../../store/app/videoFullScreenSlice/slice';
 
 import styles from '../sass/videoPlayer.module.scss';
 
-function FullscreenButton({ isFullscreen, onClick, classes = '' }: IFullscreenButton) {
-  useScrollBlocked(isFullscreen);
+function FullscreenButton({ classes = '' }: IFullscreenButton) {
+  const { videoFullScreen } = useAppSelector((state) => state?.videoFullScreen);
+  const dispatch = useAppDispatch();
+
+  const toggleFullscreen = () => {
+    if (videoFullScreen) {
+      dispatch(setVideoFullScreen(false));
+    } else {
+      dispatch(setVideoFullScreen(true));
+    }
+  };
 
   return (
     <button
-      onClick={onClick}
+      onClick={toggleFullscreen}
       type="button"
       className={`
         ${styles.buttonControls}
@@ -21,7 +31,7 @@ function FullscreenButton({ isFullscreen, onClick, classes = '' }: IFullscreenBu
       `}
     >
       <span className="w-[24px] h-[24px] block">
-        {isFullscreen ? (
+        {videoFullScreen ? (
           <IconZoomOut />
         ) : (
           <IconZoomIn />

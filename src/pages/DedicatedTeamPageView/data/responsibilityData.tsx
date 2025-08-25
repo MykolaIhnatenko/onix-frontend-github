@@ -1,10 +1,10 @@
 import Icon from '../../../assets/icon';
+
 import DedicatedTeamResponsibility1 from '@/images/dedicatedTeamPage/img_responsibility1@2x.webp';
 import DedicatedTeamResponsibility2 from '@/images/dedicatedTeamPage/img_responsibility2@2x.webp';
 import DedicatedTeamResponsibilityTablet1 from '@/images/dedicatedTeamPage/img_responsibility1_tablet@2x.webp';
 import DedicatedTeamResponsibilityTablet2 from '@/images/dedicatedTeamPage/img_responsibility2_tablet@2x.webp';
 import DedicatedTeamResponsibilityMobile2 from '@/images/dedicatedTeamPage/img_responsibility2_mobile@2x.webp';
-
 import styles from '../../../components/TransparentCard/sass/transparentCard.module.scss';
 
 const responsibilityData = [

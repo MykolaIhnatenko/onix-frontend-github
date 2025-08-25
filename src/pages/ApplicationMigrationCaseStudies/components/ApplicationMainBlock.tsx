@@ -5,13 +5,13 @@ import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
+
 import ApplicationMainBlockImg from '@/images/applicationMigrationCaseStudies/mainBlock/img_ApplicationMainBlock@2x.webp';
 import ApplicationMainBlockTabletImg from '@/images/applicationMigrationCaseStudies/mainBlock/img_ApplicationMainBlockTablet@2x.webp';
 import ApplicationMainBlockMobileImg from '@/images/applicationMigrationCaseStudies/mainBlock/img_ApplicationMainBlockMobile@2x.webp';
 import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.webp';
 import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
 import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
-
 import styles from '../sass/applicationMainBlock.module.scss';
 
 function ApplicationMainBlock() {
@@ -43,6 +43,7 @@ function ApplicationMainBlock() {
       <div className={styles.background}>
         <ImageComponent
           src={getBackground().background}
+          alt="Background Image"
           priority
           sizes="100vw"
         />
@@ -62,6 +63,7 @@ function ApplicationMainBlock() {
         </PageContainer>
         <div className={styles.image}>
           <ImageComponent
+            alt="Application Migration Main Block Image"
             src={getBackground().image}
             priority
             sizes="100vw"

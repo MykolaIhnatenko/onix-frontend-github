@@ -9,7 +9,7 @@ import UiUxDesignAndDevelopmentPageView
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
@@ -17,6 +17,7 @@ function UiUxDesignAndDevelopmentServices({
   seoData, footerContent, pageBlogs,
 }:IPages) {
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.UI_UX_DESIGN, TitlePages.SERVICES);
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -28,7 +29,7 @@ function UiUxDesignAndDevelopmentServices({
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <UiUxDesignAndDevelopmentPageView pageBlogs={pageBlogs} />
+      <UiUxDesignAndDevelopmentPageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

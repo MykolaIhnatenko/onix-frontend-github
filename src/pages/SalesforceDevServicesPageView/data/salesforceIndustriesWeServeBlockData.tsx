@@ -1,5 +1,7 @@
 import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
 import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
+import PageLinks from 'constants/PageLinks';
+
 import ManufacruringSalesforceCarousel from '@/images/salesforcePage/carousel/img_manufacruringSalesforceCarousel.webp';
 import HospitalitySalesforceCarousel from '@/images/salesforcePage/carousel/img_hospitalitySalesforceCarousel.webp';
 import InsuranceSalesforceCarousel from '@/images/salesforcePage/carousel/img_insuranceSalesforceCarousel.webp';
@@ -7,7 +9,6 @@ import FinancialSalesforceCarousel from '@/images/salesforcePage/carousel/img_fi
 import retailCarousel from '@/images/machineLearning/carousel/img_retailCarousel.webp';
 import healthcareCarousel from '@/images/machineLearning/carousel/img_healthcareCarousel.webp';
 import educationCarousel from '@/images/machineLearning/carousel/img_educationCarousel.webp';
-import PageLinks from 'constants/PageLinks';
 
 export const salesforceIndustriesWeServeBlockData = {
   upTitle: '[ Industries we serve ]',

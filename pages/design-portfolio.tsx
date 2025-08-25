@@ -10,7 +10,7 @@ import { TitlePages } from '../src/constants/enums';
 import Layout from '../src/layout/Layout';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
 import { IDesignPortfolioPages } from '../src/pages/DesignPortfolioView/interfaces/IDesignPortfolio';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import DesignPortfolioView from '../src/pages/DesignPortfolioView/DesignPortfolioView';
 import getDesignTags from '../src/api/getDesignTags';
 import { IDesignTagList } from '../src/interfaces/ITechnologies';

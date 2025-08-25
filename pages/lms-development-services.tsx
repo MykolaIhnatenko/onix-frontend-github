@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 
-import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHandlerPages';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import Layout from '../src/layout/Layout';
 import { sortArrById } from '../src/utils/blogsHelpers';

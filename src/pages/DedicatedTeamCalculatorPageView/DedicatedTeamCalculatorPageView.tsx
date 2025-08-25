@@ -11,6 +11,8 @@ import IDedicatedTeamCalculatorPageView from './interfaces/IDedicatedTeamCalcula
 import { FormModalVariants } from '../../store/app/contactForm/interfaces/IContactForm';
 import { setModalView } from '../../store/app/contactForm/slice';
 import { ButtonType } from 'constants/enums';
+import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
+
 import DTCFirstCTAImage from '@/images/dedicatedTeamCalculator/img_bg_first_CTA@2x.webp';
 import DTCFirstCTATabletImage from '@/images/dedicatedTeamCalculator/img_bg_first_CTA_tablet@2x.webp';
 import DTCFirstCTAMobileImage from '@/images/dedicatedTeamCalculator/img_bg_first_CTA_mobile@2x.webp';
@@ -21,7 +23,6 @@ import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.
 import IndustriesMainBgBigDesc from '@/images/industriesPage/img_industries_main_bgBigDesc@2x.webp';
 import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
 import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
-import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
 import DTCMainPeopleImage from '@/images/dedicatedTeamCalculator/img_main_bg.webp';
 
 function DedicatedTeamCalculatorPageView({

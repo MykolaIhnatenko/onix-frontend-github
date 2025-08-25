@@ -1,3 +1,6 @@
+import { IProcessImage, IProcessAccordionItem } from '../../MainPage/interfaces/IProcess';
+import MainTitle from '../../../components/MainTitle/MainTitle';
+
 import ImplementationSupportImage from '@/images/uxAudit/img_implementation_support.webp';
 import ImplementationSupportTabletImage from '@/images/uxAudit/img_implementation_support_tablet.webp';
 import ImplementationSupportMobileImage from '@/images/uxAudit/img_implementation_support_mobile.webp';
@@ -13,8 +16,6 @@ import DiscoveryMobileImage from '@/images/uxAudit/img_discovery_mobile.webp';
 import EvaluationImage from '@/images/uxAudit/img_evaluation.webp';
 import EvaluationTabletImage from '@/images/uxAudit/img_evaluation_tablet.webp';
 import EvaluationMobileImage from '@/images/uxAudit/img_evaluation_mobile.webp';
-import { IProcessImage, IProcessAccordionItem } from '../../MainPage/interfaces/IProcess';
-import MainTitle from '../../../components/MainTitle/MainTitle';
 
 export const processImages: IProcessImage[] = [
   {

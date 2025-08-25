@@ -9,7 +9,7 @@ import PagesToSalesChannels from '../src/constants/PageToSalesChannels';
 import WorkPageView from '../src/pages/Work/WorkPageView';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
 import { ITechnologiesList } from '../src/interfaces/ITechnologies';

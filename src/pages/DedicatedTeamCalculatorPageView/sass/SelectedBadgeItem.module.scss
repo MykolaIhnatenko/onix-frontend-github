@@ -6,6 +6,7 @@
   padding: toRem(5) toRem(10);
   position: relative;
   display: flex;
+  gap: toRem(10);
   align-items: center;
   justify-content: space-between;
   font-family: var(--ibmPlexMono);

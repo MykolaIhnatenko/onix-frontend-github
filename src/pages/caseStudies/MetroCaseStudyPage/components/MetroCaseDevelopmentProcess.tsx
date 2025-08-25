@@ -1,10 +1,10 @@
 import ImageComponent from '../../../../components/Image/Image';
 import VRARContent from '../../../../components/VRARContent/VRARContent';
 import { muktaVaaniFont } from '../../../../fonts/MainFonts';
+
 import SwiftIcon from '@/images/caseStudiesPage/MetroCaseStudyPage/img_swiftIcon.webp';
 import KotlinIcon from '@/images/caseStudiesPage/MetroCaseStudyPage/img_kotlinIcon.webp';
 import DjangoIcon from '@/images/caseStudiesPage/MetroCaseStudyPage/img_djangoIcon.webp';
-
 import styles from '../sass/metroCaseDevelopmentProcess.module.scss';
 
 function MetroCaseDevelopmentProcess() {

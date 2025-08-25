@@ -1,10 +1,10 @@
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
+
 import IPhone1 from '@/images/phlexCase/killer/img_iPhone_1@2x.webp';
 import IPhone2 from '@/images/phlexCase/killer/img_iPhone_2@2x.webp';
 import IPhone3 from '@/images/phlexCase/killer/img_iPhone_3@2x.webp';
 import IPhone4 from '@/images/phlexCase/killer/img_iPhone_4@2x.webp';
-
 import styles from '../../ConvertCasePageView/sass/killerFeaturesBlock.module.scss';
 
 const killerSliderData = [

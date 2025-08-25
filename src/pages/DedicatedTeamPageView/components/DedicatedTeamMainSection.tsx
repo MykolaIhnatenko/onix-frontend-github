@@ -8,12 +8,12 @@ import PagesToSalesChannels from '../../../constants/PageToSalesChannels';
 import useBackground from '../../../hook/useBackground';
 import { setShowContactForm } from '../../../store/app/contactForm/slice';
 import Modeltype from '../../../constants/Modeltype';
-import DedicatedTeamMainBgMobile from '@/images/dedicatedTeamPage/img_main_bg_mobile@2x.webp';
-import DedicatedTeamMainBg from '@/images/dedicatedTeamPage/img_main_bg@2x.webp';
-import DedicatedTeamMainBgTablet from '@/images/dedicatedTeamPage/img_main_bg_tablet@2x.webp';
 import ImageComponent from '../../../components/Image/Image';
 import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 
+import DedicatedTeamMainBgMobile from '@/images/dedicatedTeamPage/img_main_bg_mobile@2x.webp';
+import DedicatedTeamMainBg from '@/images/dedicatedTeamPage/img_main_bg@2x.webp';
+import DedicatedTeamMainBgTablet from '@/images/dedicatedTeamPage/img_main_bg_tablet@2x.webp';
 import styles from '../sass/dedicatedTeamMainSecion.module.scss';
 
 function DedicatedTeamMainSection() {

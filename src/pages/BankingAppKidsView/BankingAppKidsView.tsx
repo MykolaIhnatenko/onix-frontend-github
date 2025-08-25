@@ -19,6 +19,14 @@ import DragInfoBlock from 'components/DragInfoBlock/DragInfoBlock';
 import ImageBlock from './components/ImageBlock';
 import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
 import coreTechnologyData from './data/technologyData.json';
+import RunningColsBlock from 'components/RunningColsBlock/RunningColsBlock';
+import OurSolutionsAccordion from 'components/OurSolutionsAccordion/OurSolutionsAccordion';
+import solutionSectionData from './data/solutionSectionData';
+import challengesInfoData from './data/challengesInfoData';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -35,13 +43,6 @@ import RunningBg from '@/images/runningColsBlock/img_runningColsBg.webp';
 import RunningBgTablet from '@/images/runningColsBlock/img_runningColsBgTablet.webp';
 import RunningBgMobile from '@/images/runningColsBlock/img_runningColsBgMobile.webp';
 import OfferedBg from '@/images/banking-app/img_OfferedBg.webp';
-import RunningColsBlock from 'components/RunningColsBlock/RunningColsBlock';
-import OurSolutionsAccordion from 'components/OurSolutionsAccordion/OurSolutionsAccordion';
-import solutionSectionData from './data/solutionSectionData';
-import challengesInfoData from './data/challengesInfoData';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function BankingAppKidsView({ saleUrl }: IPageStatus) {
   const {
@@ -130,8 +131,8 @@ function BankingAppKidsView({ saleUrl }: IPageStatus) {
           background={getBackground().cta}
           classes={{
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_30px] screen-sm:!p-[80px_15px]',
-            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[50px]
-            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black`,
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[80px]`,
             image: 'screen-md:!object-bottom',
             title: `!max-w-[1078px] screen-lg:!pb-[40px] screen-lg:!max-w-[630px] screen-md:max-w-[none]
             screen-md:!pb-[30px] screen-md:br:hidden`,
@@ -163,8 +164,8 @@ function BankingAppKidsView({ saleUrl }: IPageStatus) {
           id={ButtonType.CASE}
           classes={{
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_30px] screen-sm:!p-[80px_15px]',
-            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[50px]
-            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black`,
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[80px]`,
             image: 'screen-md:!object-bottom',
             title: `!max-w-[1078px] screen-lg:!pb-[40px] screen-lg:!max-w-[630px] screen-md:max-w-[none]
             screen-md:!pb-[30px] screen-md:br:hidden`,

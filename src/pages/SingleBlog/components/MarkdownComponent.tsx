@@ -14,16 +14,20 @@ function MarkdownComponent({ html, imagesPriority }: IMarkdownComponent) {
         // eslint-disable-next-line react/no-unstable-nested-components
         img: ({
           src, alt, width = 700, height = 700,
-        }) => src && (
-          <ImageComponent
-            src={src}
-            width={+width}
-            height={+height}
-            alt={alt || 'Blog picture'}
-            priority={imagesPriority}
-            sizes="(max-width: 768px) 50vw, (min-width: 768px) 100vw"
-          />
-        ),
+        }) => {
+          if (!src) return null;
+
+          return (
+            <ImageComponent
+              src={src}
+              width={+width}
+              height={+height}
+              alt={alt || 'Blog picture'}
+              priority={imagesPriority}
+              sizes="(max-width: 768px) 50vw, (min-width: 768px) 100vw"
+            />
+          );
+        },
         // eslint-disable-next-line react/no-unstable-nested-components
         div: ({ children, node: _, ...props }) => (
           // eslint-disable-next-line react/jsx-props-no-spreading

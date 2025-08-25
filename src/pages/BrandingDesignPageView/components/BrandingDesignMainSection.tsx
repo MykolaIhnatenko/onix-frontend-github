@@ -11,9 +11,9 @@ import {
   variantText,
   variantTitleImage,
 } from '../animationVariants';
-import BDBackgroundMain from '@/images/brandingDesign/img_bd_Main_bg.webp';
 import Icons from '../../../assets/icon';
 
+import BDBackgroundMain from '@/images/brandingDesign/img_bd_Main_bg.webp';
 import styles from '../sass/brandingDesignMainSection.module.scss';
 
 function BrandingDesignMainSection() {

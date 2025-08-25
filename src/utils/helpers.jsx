@@ -5,6 +5,7 @@ import isEmpty from './isEmpty';
 import TableOfContent from '../pages/SingleBlog/components/TabletOfContent';
 import CallToActionBlog from 'pages/SingleBlog/components/CallToActionBlog';
 import { StylesNameCombinePage } from 'constants/enums';
+import AICallToActionBlog from 'pages/SingleBlog/components/AICallToActionBlog';
 
 export const setHiddenAndVisibleAnimation = (
   hiddenDuration,
@@ -74,6 +75,36 @@ const blogCTAcreator = (array, content, variant) => {
   return result;
 };
 
+const blogAICTAcreator = (array, content) => {
+  let result = content;
+  if (array) {
+    array.forEach((item) => {
+      if (
+        item.match(/uploads\/([^<}\s]+)(?:(?:<\/span>|})[^<}\s]*)?/)
+        && item.match(/summaryNote=\{(.*?)\}/)[1]
+        && item.match(/text=\{(.*?)\}/)[1]
+        && item.match(/url=\{(.*?)\}/)[1]
+      ) {
+        result = result.replace(
+          item,
+          ReactDOMServer.renderToStaticMarkup(
+            <AICallToActionBlog
+              background={item.match(/uploads\/([^<}\s]+)(?:(?:<\/span>|})[^<}\s]*)?/)[1]}
+              title={item.match(/text=\{(.*?)\}/)[1]}
+              alt={item.match(/alt=\{(.*?)\}/) ? item.match(/alt=\{(.*?)\}/)[1] : 'blog image'}
+              summaryNote={item.match(/summaryNote=\{(.*?)\}/)[1]}
+              url={item.match(/url=\{(.*?)\}/)[1]}
+            />,
+          ),
+        );
+      } else {
+        result = result.replace(item, '');
+      }
+    });
+  }
+  return result;
+};
+
 export const prepareContent = (content, contentTable) => {
   let result = content?.replace(/\.\.\/\.\.\/\.\.\/\.\./g, PATH_TO_BACKEND_IMAGES)
     .replaceAll('<iframe', '<iframe loading="lazy" ')
@@ -89,8 +120,11 @@ export const prepareContent = (content, contentTable) => {
   const replacementCTAPatternLeft = /<p class="ctaContentLeft">[{]!!!Here will be displayed CTA content on the left text={.*} btnText={.*} img={.*} url={.*} contentColor={.*}!!![}]<[/]p>/g;
   // eslint-disable-next-line max-len
   const replacementCTAPatternCenter = /<p class="ctaContentCenter">[{]!!!Here will be displayed CTA content centered text={.*} btnText={.*} img={.*} url={.*} contentColor={.*}!!![}]<[/]p>/g;
+  // eslint-disable-next-line max-len
+  const replacementAICTA = /<p class="aicta">[{]!!!Here will be displayed AICTA text={.*} summaryNote={.*} img={.*} alt={.*} url={.*}!!![}]<[/]p>/g;
   const isCTALeftExist = result.match(replacementCTAPatternLeft);
   const isCTACenterExist = result.match(replacementCTAPatternCenter);
+  const isAICTA = result.match(replacementAICTA);
   const isContentTableExist = result.match(replacementPattern);
 
   if (isContentTableExist) {
@@ -112,6 +146,7 @@ export const prepareContent = (content, contentTable) => {
 
   result = blogCTAcreator(isCTACenterExist, result, false);
   result = blogCTAcreator(isCTALeftExist, result, true);
+  result = blogAICTAcreator(isAICTA, result);
 
   return result;
 };

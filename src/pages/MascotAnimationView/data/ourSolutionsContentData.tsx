@@ -1,3 +1,5 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+
 import OurSolutionsImg1 from '@/images/MascotAnimation/img_SolutionAnime1.webp';
 import OurSolutionsImgTablet1 from '@/images/MascotAnimation/img_SolutionAnime1Tablet.webp';
 import OurSolutionsImgMobile1 from '@/images/MascotAnimation/img_SolutionAnime1Mobile.webp';
@@ -10,7 +12,6 @@ import OurSolutionsImgMobile3 from '@/images/MascotAnimation/img_SolutionAnime3M
 import OurSolutionsImg4 from '@/images/MascotAnimation/img_Solution.webp';
 import OurSolutionsImgTablet4 from '@/images/MascotAnimation/img_SolutionTablet.webp';
 import OurSolutionsImgMobile4 from '@/images/MascotAnimation/img_SolutionMobile.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

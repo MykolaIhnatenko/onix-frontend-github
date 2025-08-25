@@ -12,12 +12,17 @@ import IPageStatus from 'interfaces/IPageStatus';
 import { IApp } from 'store/app/interfaces/IApp';
 import IStore from 'store/interfaces/IStore';
 import usabilityTestingMainBlockData from './data/usabilityTestingMainBlockData';
-import { UsabilityTestingMainBlockVariant } from 'constants/enums';
 import technologyData from './data/technologyData.json';
 import howOnixDevelopedData from './data/howOnixDevelopedData.json';
 import businessContextData from './data/businessContextData.json';
 import resultsBlockData from './data/resultsBlockData';
 import businessContextSecondData from './data/businessContextSecondData';
+import resultsBlockWhite, { aboutProjectSectionWhite } from 'constants/tailwindStyle';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import ourSolutionVirtualData from './data/ourSolutionVirtualData';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import MainXlBg from '@/images/virtualToursAppDevelopmentPageView/img_mainBgXl@2x.webp';
 import MainBg from '@/images/virtualToursAppDevelopmentPageView/img_mainBg@2x.webp';
 import MainTabletBg from '@/images/virtualToursAppDevelopmentPageView/img_mainBgTablet@2x.webp';
@@ -30,11 +35,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaWhiteBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaWhiteTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaWhiteMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaWhiteXXXLBg@2x.webp';
-import resultsBlockWhite, { aboutProjectSectionWhite } from 'constants/tailwindStyle';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import ourSolutionVirtualData from './data/ourSolutionVirtualData';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function VirtualToursAppDevelopmentPageView({ saleUrl }: IPageStatus) {
   const {
@@ -74,7 +74,17 @@ function VirtualToursAppDevelopmentPageView({ saleUrl }: IPageStatus) {
         title={usabilityTestingMainBlockData.title}
         icon={usabilityTestingMainBlockData.icon}
         background={getBackground().mainBackground}
-        variant={UsabilityTestingMainBlockVariant.VIRTUAL_TOURS_APP}
+        classes={{
+          container: '!text-white max-1390:!h-screen screen-md:!min-h-[570px]',
+          background: '!absolute !bottom-0 !right-0 !h-full !w-full max-1390:!h-full max-1390:!w-full',
+          backgroundImage: `!w-full !h-full !object-cover !object-center max-1390:!object-left
+            screen-xl:![object-position:_-50px] screen-lg:!object-center screen-md:!object-center`,
+          contentContainer: 'max-1390:!flex max-1390:!pt-0 screen-lg:!block screen-lg:!pt-[146px]',
+          content: 'max-1390:!pl-[70px] screen-lg:!pl-[30px] screen-md:!pl-[15px]',
+          logo: '!pb-[40px] screen-lg:!pb-[30px] screen-md:!pb-[15px]',
+          title: `!max-w-[520px] !pb-0 max-1390:!text-[50px] max-1390:!leading-[64px] screen-lg:!text-[40px]
+            screen-lg:!leading-[56px] screen-lg:!max-w-[unset] screen-md:!text-[25px] screen-md:!leading-[35px]`,
+        }}
       />
       <AboutProjectSection
         title={howOnixDevelopedData.blockTitle}

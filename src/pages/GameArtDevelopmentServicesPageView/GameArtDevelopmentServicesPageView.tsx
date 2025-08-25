@@ -1,16 +1,6 @@
 import { useSelector } from 'react-redux';
 import { StaticImageData } from 'next/image';
 
-import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
-import TellUsAboutMD from '@/images/img_lastCtaTablet@2x.webp';
-import TellUsAboutSM from '@/images/img_lastCtaMobile@2x.webp';
-import GameArtCTAFirstBg from '@/images/gameArt/callToAction/img_gameArtCTSFirstBg@2x.webp';
-import GameArtCTAFirstTabletBg from '@/images/gameArt/callToAction/img_gameArtCTSFirstTabletBg@2x.webp';
-import GameArtCTAFirstMobileBg from '@/images/gameArt/callToAction/img_gameArtCTSFirstMobileBg@2x.webp';
-import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.webp';
-import IndustriesMainBgBigDesc from '@/images/industriesPage/img_industries_main_bgBigDesc@2x.webp';
-import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
-import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
 import CallToActionComponent from '../../components/CallToActionBlock/CallToActionComponent';
 import OurInsights from '../../components/OurInsightsSection/OurInsights';
 import TrustUsBlock from '../MainPage/components/TrustUsBlock';
@@ -31,19 +21,30 @@ import { IApp } from '../../store/app/interfaces/IApp';
 import { IPageBlogs } from '../../interfaces/IPages';
 import {
   ButtonType,
-  CardBlockVariant,
 } from '../../constants/enums';
 import GameArtOutsourcing from './components/GameArtOutsourcing';
 import GameArtMainScreen from './components/GameArtMainScreen';
 import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import AchievementsBlock from '../../components/AchievementBlock/AchievementsBlock';
+import IAchievements from '../../interfaces/IAchievements';
+
 import CaseStudiesBgIndustriesDesk from '@/images/industriesPage/img_bg_case_studies_industries@2x.webp';
 import GameArtOutsourcingBg from '@/images/gameArt/artOutsourcing/img_bg_game_art_outsourcing@2x.webp';
 import GameArtOutsourcingBigBg from '@/images/gameArt/artOutsourcing/img_bg_game_art_outsourcing_big@2x.webp';
 import GameArtOutsourcingTabletBg from '@/images/gameArt/artOutsourcing/img_bg_game_art_outsourcing_tablet@2x.webp';
 import GameArtOutsourcingMobileBg from '@/images/gameArt/artOutsourcing/img_bg_game_art_outsourcing_mobile@2x.webp';
-import AchievementsBlock from '../../components/AchievementBlock/AchievementsBlock';
+import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
+import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
+import IndustriesMainBgBigDesc from '@/images/industriesPage/img_industries_main_bgBigDesc@2x.webp';
+import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.webp';
+import GameArtCTAFirstMobileBg from '@/images/gameArt/callToAction/img_gameArtCTSFirstMobileBg@2x.webp';
+import GameArtCTAFirstTabletBg from '@/images/gameArt/callToAction/img_gameArtCTSFirstTabletBg@2x.webp';
+import GameArtCTAFirstBg from '@/images/gameArt/callToAction/img_gameArtCTSFirstBg@2x.webp';
+import TellUsAboutSM from '@/images/img_lastCtaMobile@2x.webp';
+import TellUsAboutMD from '@/images/img_lastCtaTablet@2x.webp';
+import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 
-function GameArtDevelopmentServicesPageView({ pageBlogs }: IPageBlogs) {
+function GameArtDevelopmentServicesPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isMDDevice,
@@ -97,21 +98,24 @@ function GameArtDevelopmentServicesPageView({ pageBlogs }: IPageBlogs) {
         idBtn={ButtonType.LAND2}
         data={gameArtTrustUsCardsData}
         title="Benefits of Our 3D Art Development Services"
-        variant={CardBlockVariant.GAME_ART}
         dropBlockTitle="Our superpower is Smart 3D Art services with a balanced approach to
          implementing non-standard projects."
         dropBlockBtnTitle="Talk to our expert"
         classes={{
-          dropBlock: `!p-[30px] !flex-[33.3333%] screen-xxl:!h-[580px] screen-xl:!h-[500px]
-          screen-xl:!p-[20px] screen-xl:!flex-[33.3333%] screen-xl:!justify-between screen-lg:!h-[480px]
-          screen-md:!h-[430px]`,
-          dropBlockBg: '!opacity-0',
-          dropBlockTitle: `!text-left !max-w-none screen-lg:!text-start screen-lg:!m-0
-          screen-lg:!text-[24px] screen-lg:!leading-[34px] screen-md:!pb-[55px]
-          screen-md:!text-[25px] screen-md:!leading-[35px]`,
-          buttonWrapper: 'screen-xl:!m-0 screen-xl:!max-w-none',
-          cardClasses: {
-            card: 'screen-xxl:!h-[580px] screen-xl:!h-[500px] screen-lg:!h-[480px] screen-md:!h-[430px]',
+          sectionTitle: `!max-w-[920px] !mb-[40px] screen-xxxl:!max-w-[930px] screen-lg:!max-w-[850px]
+          screen-md:!mb-[30px]`,
+          CardsBlockClasses: {
+            dropBlock: `!p-[30px] !flex-[33.3333%] screen-xxl:!h-[580px] screen-xl:!h-[500px]
+            screen-xl:!p-[20px] screen-xl:!flex-[33.3333%] screen-xl:!justify-between screen-lg:!h-[480px]
+            screen-md:!h-[430px]`,
+            dropBlockBg: '!opacity-0',
+            dropBlockTitle: `!text-left !max-w-none screen-lg:!text-start screen-lg:!m-0
+            screen-lg:!text-[24px] screen-lg:!leading-[34px] screen-md:!pb-[55px]
+            screen-md:!text-[25px] screen-md:!leading-[35px]`,
+            buttonWrapper: 'screen-xl:!m-0 screen-xl:!max-w-none',
+            cardClasses: {
+              card: 'screen-xxl:!h-[580px] screen-xl:!h-[500px] screen-lg:!h-[480px] screen-md:!h-[430px]',
+            },
           },
         }}
       />
@@ -130,6 +134,7 @@ function GameArtDevelopmentServicesPageView({ pageBlogs }: IPageBlogs) {
         }}
       />
       <AchievementsBlock
+        achievements={achievements}
         title="Why Choose Onix for 3D Game Art Outsourcing Development Services"
       />
       <NumbersBlock

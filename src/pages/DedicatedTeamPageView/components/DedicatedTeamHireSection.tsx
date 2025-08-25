@@ -1,12 +1,12 @@
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
-import DedicatedTeamHireBg from '@/images/dedicatedTeamPage/img_hire@2x.webp';
-import DedicatedTeamHireBgTablet from '@/images/dedicatedTeamPage/img_hire_tablet@2x.webp';
-import DedicatedTeamHireBgMobile from '@/images/dedicatedTeamPage/img_hire_mobile@2x.webp';
 import hireData from '../data/hireData.json';
 import useBackground from '../../../hook/useBackground';
 import ImageComponent from '../../../components/Image/Image';
 
+import DedicatedTeamHireBg from '@/images/dedicatedTeamPage/img_hire@2x.webp';
+import DedicatedTeamHireBgTablet from '@/images/dedicatedTeamPage/img_hire_tablet@2x.webp';
+import DedicatedTeamHireBgMobile from '@/images/dedicatedTeamPage/img_hire_mobile@2x.webp';
 import styles from '../sass/dedicatedTeamHireSecion.module.scss';
 
 function DedicatedTeamHireSection() {

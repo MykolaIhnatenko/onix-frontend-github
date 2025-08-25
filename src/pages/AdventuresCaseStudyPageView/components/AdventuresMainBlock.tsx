@@ -5,11 +5,11 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
+
 import AdventuresLog from '@/images/adventurePage/mainBlock/img_main_logo.webp';
 import AdvenuresMainBgMobile from '@/images/adventurePage/mainBlock/img_main_bg_mobile.webp';
 import AdvenuresMainBgTablet from '@/images/adventurePage/mainBlock/img_main_bg_tablet@2x.webp';
 import AdvenuresMainBg from '@/images/adventurePage/mainBlock/img_main_bg.webp';
-
 import styles from '../sass/adventuresMainBlock.module.scss';
 
 function AdvenuresMainBlock() {

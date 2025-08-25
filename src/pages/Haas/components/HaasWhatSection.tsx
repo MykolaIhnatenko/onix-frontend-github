@@ -5,9 +5,9 @@ import { IHaasWhat } from '../interfaces/IHaasWhat';
 import HaasText from './HaasText';
 import { IParallaxConfig } from '../interfaces/IParallaxConfig';
 import ImageComponent from '../../../components/Image/Image';
-import Bg from '@/images/haas/whatSection/img_what-bg.webp';
 import PageContainer from 'components/PageContainer/PageContainer';
 
+import Bg from '@/images/haas/whatSection/img_what-bg.webp';
 import styles from '../sass/HaasWhatSection.module.scss';
 
 function HaasWhatSection({

@@ -5,14 +5,14 @@ import PageContainer from 'components/PageContainer/PageContainer';
 import TapAccordion from 'components/TapAccordion/TapAccordion';
 import IIosMainSection from '../interfaces/IHealthcareMainSection';
 import { setShowContactForm } from 'store/app/contactForm/slice';
-import IosMainBg from '@/images/iosPage/img_main_bg@2x.webp';
-import IosMainBgTablet from '@/images/iosPage/img_main_bg_tablet@2x.webp';
-import IosMainBgMobile from '@/images/healthcare/mainSection/img_main_bg_mobile@2x.webp';
 import { ButtonType } from 'constants/enums';
 import ImageComponent from 'components/Image/Image';
 import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 import { SM_DEVICE } from '../../../constants/constants';
 
+import IosMainBgMobile from '@/images/healthcare/mainSection/img_main_bg_mobile@2x.webp';
+import IosMainBgTablet from '@/images/iosPage/img_main_bg_tablet@2x.webp';
+import IosMainBg from '@/images/iosPage/img_main_bg@2x.webp';
 import styles from '../sass/healthcareMainSection.module.scss';
 
 function HealthcareMainSection({

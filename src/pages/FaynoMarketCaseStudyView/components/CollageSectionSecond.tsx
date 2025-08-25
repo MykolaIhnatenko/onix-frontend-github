@@ -1,12 +1,12 @@
 import ImageComponent from '../../../components/Image/Image';
+import ICollageSection from '../interfaces/ICollageSection';
+
 import Image1 from '@/images/faynoMarket/collageSecond/img_collage2-1.webp';
 import Image2 from '@/images/faynoMarket/collageSecond/img_collage2-2.webp';
 import Image1Tablet from '@/images/faynoMarket/collageSecond/img_collage2-1Tablet.webp';
 import Image2Tablet from '@/images/faynoMarket/collageSecond/img_collage2-2Tablet.webp';
 import Image1Mobile from '@/images/faynoMarket/collageSecond/img_collage2-1Mobile.webp';
 import Image2Mobile from '@/images/faynoMarket/collageSecond/img_collage2-2Mobile.webp';
-import ICollageSection from '../interfaces/ICollageSection';
-
 import styles from '../sass/CollageSectionSecond.module.scss';
 
 function CollageSectionSecond({ isXSDevice, isSMDevice, isMDDevice }: ICollageSection) {

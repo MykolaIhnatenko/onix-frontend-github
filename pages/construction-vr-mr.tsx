@@ -4,7 +4,7 @@ import IPages from '../src/interfaces/IPages';
 import PagesToSalesChannels from '../src/constants/PageToSalesChannels';
 import { BreadcrumbsVariant, TitlePages } from '../src/constants/enums';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { LatestBlogType } from '../src/interfaces/IBlog';
 import getDataPage from '../src/utils/helperCaseStudiesPages';
 import CaseStudiesLayout from '../src/layout/CaseStudiesLayout/CaseStudiesLayout';

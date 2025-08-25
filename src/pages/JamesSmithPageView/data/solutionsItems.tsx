@@ -1,4 +1,5 @@
 import BlueSpan from '../components/BlueSpan';
+
 import solution0 from '@/images/JamesSmith/solutionsSection/img_solution0.webp';
 import solution1 from '@/images/JamesSmith/solutionsSection/img_solution1.webp';
 import solution2 from '@/images/JamesSmith/solutionsSection/img_solution2.webp';

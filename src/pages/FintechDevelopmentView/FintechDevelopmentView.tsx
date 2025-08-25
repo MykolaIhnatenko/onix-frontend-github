@@ -38,6 +38,13 @@ import fintechQuoteList from './data/fintechQuoteList';
 import ContentText from '../../components/ContentText/ContentText';
 import ButtonOpenContactForm from '../../components/ButtonOpenContactForm/ButtonOpenContactForm';
 import { setShowContactForm } from '../../store/app/contactForm/slice';
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import { textStyle } from 'components/FAQBlock/tailwindStyle/tailwindStyle';
+import IAchievements from '../../interfaces/IAchievements';
+
 import WebDesignCTAFirstBigBg from '@/images/webDesignPage/callToAction/img_cta_first_big_bg@2x.webp';
 import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import AndroidAppCallTellUsBg from '@/images/img_android_tell_us_bg.webp';
@@ -57,18 +64,13 @@ import CtaSecondTabletBg from '@/images/fintech/cta/img_ctaSecondTablet.webp';
 import CtaSecondMobileBg from '@/images/fintech/cta/img_ctaSecondMobile.webp';
 import CtaThirdTabletBg from '@/images/fintech/cta/img_ctaThirdTablet.webp';
 import CtaThirdMobileBg from '@/images/fintech/cta/img_ctaThirdMobile.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
-import { textStyle } from 'components/FAQBlock/tailwindStyle/tailwindStyle';
-
 import fintechIndustries from './sass/fintechIndustries.module.scss';
 
 function FintechDevelopmentView({
   isBannerHidden,
   pageBlogs,
-}: IFintechDevelopmentView) {
+  achievements,
+}: IFintechDevelopmentView & IAchievements) {
   const {
     screenSizes: {
       isMDDevice,
@@ -300,7 +302,7 @@ function FintechDevelopmentView({
           },
         }}
       />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <AboutColorTextBlock
         title="[ Fintech software & app development services we offer ]"
         text="At Onix, we offer a comprehensive range of fintech software development services "

@@ -14,6 +14,7 @@ async function getSinglePage(url = '/'):Promise<IPage> {
     'populate[project][populate][0]': 'picture',
     'populate[createdAt]': 'createdAt',
     'populate[updatedAt]': 'updatedAt',
+    'populate[achievements][populate][0]': 'image',
   };
   const pageUrl = getUrl('pages', params);
 

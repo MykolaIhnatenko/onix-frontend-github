@@ -5,11 +5,12 @@ import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import IPages from '../src/interfaces/IPages';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 
 function TheOnixStory({ seoData, footerContent }:IPages) {
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.THE_ONIX_STORY, '');
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -18,7 +19,7 @@ function TheOnixStory({ seoData, footerContent }:IPages) {
       salesChannel={PageToSalesChannels.ONIX_STORY}
       breadcrumbs={breadcrumbs}
     >
-      <OnixStoryPageView />
+      <OnixStoryPageView achievements={achievements} />
     </Layout>
   );
 }

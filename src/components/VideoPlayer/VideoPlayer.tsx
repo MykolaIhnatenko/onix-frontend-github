@@ -1,11 +1,10 @@
 import React, {
-  CSSProperties,
   useCallback, useEffect, useRef, useState,
 } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import IVideoPlayerProps, { ICustomHTMLVideoElement } from './interfaces/IVideoPlayer';
+import IVideoPlayerProps from './interfaces/IVideoPlayer';
 import ImageComponent from '../Image/Image';
 import { useAppDispatch, useAppSelector } from '../../hook/reduxToolkit';
 import MutedButton from './components/MutedButton';
@@ -16,6 +15,7 @@ import VolumeBar from './components/VolumeBar';
 import { LG_DEVICE, MD_DEVICE } from '../../constants/constants';
 import ButtonPlay from './components/ButtonPlay';
 import { setVideoFullScreen } from 'store/app/videoFullScreenSlice/slice';
+import { setActiveVideoId } from '../../store/app/activeVideoSlice/slice';
 
 function VideoPlayer({
   src,
@@ -23,7 +23,7 @@ function VideoPlayer({
   testimonialVariant = false,
   autoPlayVariant,
   mutedVariant,
-  id,
+  id = 0,
   loopVariant,
   withoutBtn,
   controls = true,
@@ -31,11 +31,13 @@ function VideoPlayer({
   priorityImage = false,
   multiPlayer = false,
   playlist = [],
-  activeVideo,
-  setActiveVideo,
   classes = {},
+  isJakarta = false,
 }: IVideoPlayerProps) {
   const { screenSizes: { screenWidth } } = useAppSelector((state) => state?.app);
+  const { activeVideoId } = useAppSelector((state) => state?.activeVideo);
+  const { videoFullScreen } = useAppSelector((state) => state?.videoFullScreen);
+  const { isShowContactForm } = useAppSelector((state) => state?.contactForm);
   const isMobile = screenWidth < MD_DEVICE;
   const isTablet = screenWidth <= LG_DEVICE;
 
@@ -43,10 +45,10 @@ function VideoPlayer({
 
   const [videoWrapperRef, inView] = useInView();
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [isMuted, setIsMuted] = useState<boolean>(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
   const [buttonVisible, setButtonVisible] = useState(true);
   const [showVideo, setShowVideo] = useState(false);
   const [isVisibleVolumeBar, setIsVisibleVolumeBar] = useState(false);
@@ -66,9 +68,6 @@ function VideoPlayer({
   const isPlaylistAvailable = () => multiPlayer && playlist.length > 0;
   const getVideoSource = () => (isPlaylistAvailable() ? playlist[currentVideoIndex].src : src);
   const getPosterSource = () => (currentVideoIndex === 0 ? poster?.src : '');
-  const getStyles = (): CSSProperties => (testimonialVariant
-    ? { position: isFullscreen ? ('fixed' as const) : ('unset' as const) }
-    : {});
 
   const getMotionVariants = (isMobileDevice: boolean) => ({
     initial: {
@@ -95,9 +94,7 @@ function VideoPlayer({
   };
 
   const handleSetActiveVideo = () => {
-    if (setActiveVideo) {
-      setActiveVideo(Number(id));
-    }
+    dispatch(setActiveVideoId(Number(id)));
   };
 
   useEffect(() => {
@@ -108,7 +105,7 @@ function VideoPlayer({
     return () => {
       video.removeEventListener('play', handleSetActiveVideo);
     };
-  }, [id, setActiveVideo, videoRef.current, showVideo]);
+  }, [id, videoRef.current, showVideo]);
 
   useEffect(() => {
     if (videoRef.current) {
@@ -121,12 +118,12 @@ function VideoPlayer({
   }, [videoRef.current?.paused]);
 
   useEffect(() => {
-    if (activeVideo && id && activeVideo !== Number(id)) {
+    if (activeVideoId && id && activeVideoId !== Number(id)) {
       if (videoRef.current) {
         videoRef?.current?.pause();
       }
     }
-  }, [activeVideo]);
+  }, [activeVideoId]);
 
   useEffect(() => {
     setShowControls(controls);
@@ -259,25 +256,17 @@ function VideoPlayer({
     }
   };
 
-  const toggleFullscreen = () => {
-    if (videoRef.current) {
-      dispatch(setVideoFullScreen(!isFullscreen));
-      handleSetActiveVideo();
-      if (!isMobile) {
-        setIsFullscreen(!isFullscreen);
-        return;
+  useEffect(() => {
+    if (activeVideoId === id) {
+      if (videoFullScreen) {
+        if (wrapperRef.current) {
+          wrapperRef.current.requestFullscreen().catch(() => {});
+        }
+      } else {
+        document.exitFullscreen().catch(() => {});
       }
-      const videoElement = videoRef.current as ICustomHTMLVideoElement;
-      if (videoElement.webkitEnterFullscreen) {
-        videoElement.webkitEnterFullscreen();
-      }
-      if (videoElement.enterFullscreen) {
-        videoElement.enterFullscreen();
-      }
-      videoElement.controls = false;
-      setIsFullscreen(!isFullscreen);
     }
-  };
+  }, [videoFullScreen, activeVideoId, id]);
 
   const changeVolume = (value: number) => {
     if (videoRef.current) {
@@ -291,7 +280,7 @@ function VideoPlayer({
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
-    if (videoRef.current && inView && ['Space', 'ArrowRight', 'ArrowLeft', 'Escape'].includes(event.code)) {
+    if (videoRef.current && inView && ['Space', 'ArrowRight', 'ArrowLeft'].includes(event.code)) {
       event.preventDefault();
 
       if (event.code === 'Space') {
@@ -301,22 +290,35 @@ function VideoPlayer({
         seek(videoRef.current.currentTime + 5);
       } else if (event.code === 'ArrowLeft') {
         seek(videoRef.current.currentTime - 5);
-      } else if (event.code === 'Escape' && isFullscreen) {
-        setIsFullscreen(false);
-        dispatch(setVideoFullScreen(!isFullscreen));
       }
     }
   };
 
   useEffect(() => {
-    if ((activeVideo === id && showControls) || isFullscreen) {
+    const onFullScreenChange = () => {
+      if (!document.fullscreenElement) {
+        dispatch(setVideoFullScreen(false));
+      } else {
+        dispatch(setVideoFullScreen(true));
+      }
+    };
+    if ((activeVideoId === id && showControls)) {
+      document.addEventListener('fullscreenchange', onFullScreenChange);
+    }
+    return () => {
+      document.removeEventListener('fullscreenchange', onFullScreenChange);
+    };
+  }, [dispatch]);
+
+  useEffect(() => {
+    if ((activeVideoId === id && showControls && !isShowContactForm)) {
       window.addEventListener('keydown', handleKeyDown);
     }
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [activeVideo, id, showControls, isFullscreen, isPlaying, inView]);
+  }, [activeVideoId, id, showControls, isPlaying, inView, isShowContactForm]);
 
   const handlePreviousVideo = (e:React.MouseEvent<HTMLElement> | React.TouchEvent<HTMLButtonElement>) => {
     e.stopPropagation();
@@ -380,20 +382,18 @@ function VideoPlayer({
   };
 
   return (
-    <div className={`relative w-full ${classes?.container || ''}`}>
+    <div ref={wrapperRef} className={`relative w-full ${classes?.container || ''}`}>
       {showVideo ? (
         <div
           ref={videoWrapperRef}
-          className={`
+          className={`relative
           w-full h-full aspect-[16/9]
           ${classes?.videoPlayer || ''} 
-          ${isFullscreen ? 'fixed top-0 left-0 w-full h-full min-w-screen min-h-screen z-[500000] bg-black'
-            : 'relative'}`}
-          style={getStyles()}
+          ${buttonVisible ? 'z-0' : 'z-[1]'}`}
         >
           <video
             id={String(id)}
-            className={`w-full h-full object-cover  ${isFullscreen ? '!object-contain' : ''} ${classes.video || ''}`}
+            className={`w-full h-full object-contain ${classes.video || ''}`}
             poster={getPosterSource()}
             ref={videoRef}
             autoPlay={autoPlayVariant}
@@ -487,7 +487,7 @@ function VideoPlayer({
                       isVisibleVolumeBar={isVisibleVolumeBar}
                     />
                   </div>
-                  <FullscreenButton isFullscreen={isFullscreen} onClick={toggleFullscreen} />
+                  <FullscreenButton />
                 </div>
               </motion.div>
             )}
@@ -506,6 +506,7 @@ function VideoPlayer({
         showButton={buttonVisible && !withoutBtn}
         buttonText={buttonText}
         handlePlayPause={handleTogglePlay}
+        isJakarta={isJakarta}
       />
     </div>
   );

@@ -2,11 +2,11 @@ import { useAppSelector } from '../../../hook/reduxToolkit';
 import ImageComponent from '../../../components/Image/Image';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
+
 import KeybokMainBg from '@/images/keyBokPage/mainBlock/img_bgImageLarge.webp';
 import KeybokMainBgTablet from '@/images/keyBokPage/mainBlock/img_bgImageTablet.webp';
 import KeybokMainBgMobile from '@/images/keyBokPage/mainBlock/img_bgImageMobile.webp';
 import Icon from '@/images/keyBokPage/mainBlock/icon.webp';
-
 import styles from '../sass/keyBokMainSection.module.scss';
 
 function KeyBokMainBlock() {

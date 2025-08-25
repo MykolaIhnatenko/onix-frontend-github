@@ -5,7 +5,7 @@ import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import { TitlePages } from '../src/constants/enums';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import ConvertCasePageView from '../src/pages/ConvertCasePageView/ConvertCasePageView';
 import { checkSaleUrl } from 'utils/helpers';
 import ErrorPageView from 'pages/ErrorPageView/ErrorPageView';

@@ -5,6 +5,7 @@ import VRARContentText from 'components/VRARContentText/VRARContentText';
 
 function BusinessContextWithTable({
   upTitle, title, subTitle, subText, content, leftContent, rightContent, withoutAnimateTable, classes, blackTheme,
+  background,
 }: IBusinessContextWithTable) {
   return (
     <BusinessContextTemplate
@@ -12,6 +13,7 @@ function BusinessContextWithTable({
       title={title}
       subTitle={subTitle}
       subText={subText}
+      background={background}
       blackTheme={blackTheme}
       classes={classes}
     >
@@ -25,7 +27,7 @@ function BusinessContextWithTable({
         <div className={`
             flex justify-between gap-[60px] screen-xxxl:gap-[40px] screen-xxxl:max-w-[1300px]
             screen-lg:flex-col screen-lg:max-w-full screen-lg:gap-[30px] screen-md:gap-[20px]
-            mt-[40px] screen-md:mt-[30px]
+            mt-[40px] screen-md:mt-[30px] re
             ${classes?.contentContainer || ''}
           `}
         >

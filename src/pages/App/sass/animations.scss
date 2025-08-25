@@ -17,55 +17,16 @@
   }
 
   .button-animation {
-    animation: MoveUpInitial .2s forwards, MoveUpEnd .2s forwards .2s;
+    animation:
+      MoveUpInitial 0.2s forwards,
+      MoveUpEnd 0.2s forwards 0.2s;
   }
-
 
   // carousel animations
 
-  @keyframes achievements-ticker {
-    0% {
-      transform: translate3d(-3360px, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  @keyframes achievements-ticker-revert {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(-6848px, 0, 0);
-    }
-  }
-
-  @keyframes achievements-ticker-mobile {
-    0% {
-      transform: translate3d(-1540px, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  @keyframes achievements-ticker-revert-mobile {
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(-3520px, 0, 0);
-    }
-  }
-
   @keyframes projects-ticker {
     0% {
-      transform: translate3d(-3128px, 0, 0);
+      transform: translate3d(-3040px, 0, 0);
     }
 
     100% {
@@ -79,13 +40,13 @@
     }
 
     100% {
-      transform: translate3d(-3128px, 0, 0);
+      transform: translate3d(-3040px, 0, 0);
     }
   }
 
   @keyframes projects-ticker-tablet {
     0% {
-      transform: translate3d(-1600px, 0, 0);
+      transform: translate3d(-1680px, 0, 0);
     }
 
     100% {
@@ -99,15 +60,15 @@
     }
 
     100% {
-      transform: translate3d(-1600px, 0, 0);
+      transform: translate3d(-1680px, 0, 0);
     }
   }
 
   @keyframes projects-ticker-mobile {
     0% {
       will-change: transform;
-      transform: translate3d(-1020px, 0, 0);
-      -webkit-transform: translate3d(-1020px, 0, 0);
+      transform: translate3d(-1080px, 0, 0);
+      -webkit-transform: translate3d(-1080px, 0, 0);
     }
 
     100% {
@@ -126,8 +87,8 @@
 
     100% {
       will-change: transform;
-      transform: translate3d(-1020px, 0, 0);
-      -webkit-transform: translate3d(-1020px, 0, 0);
+      transform: translate3d(-1080px, 0, 0);
+      -webkit-transform: translate3d(-1080px, 0, 0);
     }
   }
 
@@ -572,36 +533,6 @@
     }
   }
 
-  @keyframes achievements-ticker-devops {
-    0% {
-      transform: translate3d(-7276px, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  @keyframes achievements-ticker-tablet-devops {
-    0% {
-      transform: translate3d(-2800px, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  @keyframes achievements-ticker-mobile-devops {
-    0% {
-      transform: translate3d(-3740px, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
   @keyframes cross-platform-projects-ticker {
     0% {
       transform: translate3d(-3910px, 0, 0);
@@ -688,32 +619,31 @@
     }
   }
 
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes testimonials-slider {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-3300px, 0, 0);
+    }
+  }
+
+  .animate-rotate {
+    animation: rotate 10s linear infinite;
+  }
+
   .animate-skeleton-loading {
     animation: skeleton-loading 1s ease-in-out infinite;
-  }
-
-  .animate-achievements-projects {
-    animation: cross-platform-projects-ticker 68s linear infinite;
-  }
-
-  .animate-achievements-projects-revert {
-    animation: cross-platform-projects-ticker-revert 55s linear infinite;
-  }
-
-  .animate-achievements-projects-tablet {
-    animation: cross-platform-projects-ticker-tablet 55s linear infinite;
-  }
-
-  .animate-achievements-projects-tablet-revert {
-    animation: cross-platform-projects-ticker-revert-tablet 68s linear infinite;
-  }
-
-  .animate-achievements-projects-mobile {
-    animation: cross-platform-projects-ticker-mobile 50s linear infinite;
-  }
-
-  .animate-achievements-projects-mobile-revert {
-    animation: cross-platform-projects-ticker-revert-mobile 40s linear infinite;
   }
 
   .animate-crossPlatform-projects {
@@ -787,7 +717,6 @@
   .animate-main-projects-mobile-revert {
     animation: projects-ticker-revert-mobile 40s linear infinite;
   }
-
 
   .animate-salesforce-projects {
     animation: salesforce-projects-ticker 45s linear infinite;
@@ -885,22 +814,6 @@
     animation: vr-projects-ticker-revert-mobile 50s linear infinite;
   }
 
-  .animate-achievements-devops {
-    animation: achievements-ticker-devops 95s linear infinite;
-  }
-
-  .animate-achievements-devops-revert {
-    animation: achievements-ticker-revert 95s linear infinite;
-  }
-
-  .animate-achievements-devops-mobile {
-    animation: achievements-ticker-mobile-devops 74s linear infinite;
-  }
-
-  .animate-achievements-devops-revert-mobile {
-    animation: achievements-ticker-revert-mobile 74s linear infinite;
-  }
-
   .animate-dedicated-team-projects-ticker {
     animation: dedicated-team-projects-ticker 47s linear infinite;
   }
@@ -915,5 +828,40 @@
 
   .animate-shrink-expand {
     animation: shrink-expand 1.5s ease infinite;
+  }
+
+  .animate-testimonials-slider {
+    animation: testimonials-slider 30s linear infinite;
+  }
+
+  .ticker {
+    animation: slideLoop var(--duration) linear infinite;
+  }
+
+  .ticker-reverse {
+    animation: slideLoopReverse var(--duration) linear infinite;
+  }
+
+  @keyframes slideLoop {
+    0% {
+      transform: translateX(calc(var(--distance) * -1));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideLoopReverse {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(var(--distance) * -1));
+    }
+  }
+
+  .ticker:hover,
+  .ticker-reverse:hover {
+    animation-play-state: paused;
   }
 }

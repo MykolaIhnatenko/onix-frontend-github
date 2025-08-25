@@ -3,8 +3,8 @@ import { useInView } from 'react-intersection-observer';
 import NetstatAnimationH3 from './NetstatAnimationH2';
 import NetstatAnimationBlock from './NetstatAnimationBlock';
 import ImageComponent from '../../../components/Image/Image';
-import IntroScreensImg2x from '@/images/NetstatPage/img_introduction-screens2x.webp';
 
+import IntroScreensImg2x from '@/images/NetstatPage/img_introduction-screens2x.webp';
 import netstatStyles from '../sass/netstat.module.scss';
 
 function NetstatIntro() {

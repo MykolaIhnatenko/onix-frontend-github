@@ -1,9 +1,9 @@
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
-import TravelTailLogo from '@/images/travelTail/mainSection/img_logo@2x.webp';
-import TravelTailMainBig from '@/images//travelTail/mainSection/img_main@3x.webp';
 import ImageComponent from '../../../components/Image/Image';
 
+import TravelTailLogo from '@/images/travelTail/mainSection/img_logo@2x.webp';
+import TravelTailMainBig from '@/images//travelTail/mainSection/img_main@3x.webp';
 import styles from '../sass/travelTailMainSecion.module.scss';
 
 function TravelTailMainSection() {

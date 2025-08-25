@@ -8,7 +8,7 @@ import LinkComponent from 'components/Link/Link';
 import IIndustriesWeServeCarouselItem from '../interfaces/IIndustriesWeServeCarouselItem';
 
 function IndustriesWeServeCarouselItem({
-  title, img, alt, url, classes,
+  title, img, alt, url, classes, isJakarta,
 }: IIndustriesWeServeCarouselItem) {
   const getMeasurements = () => {
     const width = INDUSTRIES_WE_SERVE_CAROUSEL_ITEM_WIDTH;
@@ -36,13 +36,15 @@ function IndustriesWeServeCarouselItem({
           quality={92}
           className={`
             w-[380px] h-[240px] screen-lg:w-[300px] screen-lg:h-[190px] screen-md:w-[240px] screen-md:h-[150px]
+            ${classes?.img || ''}
           `}
         />
       </LinkComponent>
       {title && (
         <div className={`
             ml-[40px] flex flex-col justify-between screen-lg:m-[20px_0_0]
-            screen-lg:block screen-md:mt-[10px]
+            screen-lg:block screen-md:mt-[15px]
+            ${isJakarta ? 'font-jakartaSans normal-case font-medium tracking-[-0.01em]' : ''}
           `}
         >
           <LinkComponent
@@ -55,6 +57,7 @@ function IndustriesWeServeCarouselItem({
                 text-color-white !text-[40px]/[56px]
                 screen-lg:!text-[36px]/[46px] screen-md:!text-[20px]/[30px]
                 ${classes?.title || ''}
+                ${isJakarta ? '!font-jakartaSans normal-case font-medium tracking-[-0.01em]' : ''}
               `}
             >
               {title}

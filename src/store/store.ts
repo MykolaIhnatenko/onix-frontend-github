@@ -9,6 +9,7 @@ import contactForm from './app/contactForm/slice';
 import leavingForm from './app/leavingForm/slice';
 import blogs from './blogs/slice';
 import subscribeForm from './app/subscribeForm/slice';
+import subscribeFormMain from './app/subscribeMainForm/slice';
 import downloadForm from './app/downloadForm/slice';
 import bracketology from './app/bracketology/slice';
 import trainingSimulatorSlice from './interactiveTrainingSimulator/reducer';
@@ -17,6 +18,7 @@ import cursorFollower from './cursorFollower/slice';
 import caseStudySelector from './caseStudySelector/slice';
 import designPortfolio from './designPortfolio/slice';
 import videoFullScreen from './app/videoFullScreenSlice/slice';
+import activeVideo from './app/activeVideoSlice/slice';
 
 let store: Store<IStore>;
 
@@ -37,6 +39,8 @@ export const setupStore = (preloadedState: IStore) => (
       cursorFollower,
       caseStudySelector,
       designPortfolio,
+      subscribeFormMain,
+      activeVideo,
     },
     preloadedState,
   })

@@ -5,6 +5,7 @@ import { setModalView, setShowContactForm, setIsFormSendFromPage } from '../../.
 import { FormModalVariants } from '../../../store/app/contactForm/interfaces/IContactForm';
 import { useAppSelector } from '../../../hook/reduxToolkit';
 import { setIsOpenTopics, setIsShowSubscribeForm } from '../../../store/app/subscribeForm/slice';
+import { setIsShowSubscribeMainForm } from '../../../store/app/subscribeMainForm/slice';
 import { setIsShowDownloadForm } from '../../../store/app/downloadForm/slice';
 import { ibmPlexMono } from '../../../fonts/MainFonts';
 import { setShowCareersModal } from '../../../store/careers/slice';
@@ -40,7 +41,7 @@ function FormMessagesButton({ title, variant }: IButtonView) {
       dispatch(setModalView({ modalView: FORM }));
       dispatch(setBlockShowLeavingForm({ isBlockShowLeavingForm: true }));
     }
-
+    dispatch(setIsShowSubscribeMainForm({ isShowSubscribeFormMein: false }));
     dispatch(setModalView({ modalView: FORM }));
     dispatch(setIsFormSendFromPage({ isFormSendFromPage: false }));
   };

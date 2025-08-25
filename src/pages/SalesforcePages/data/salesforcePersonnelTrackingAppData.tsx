@@ -16,7 +16,6 @@ import Apex from '@/images/salesforcePersonnelTrackingApp/technologySection/img_
 import Salesforce from '@/images/salesforcePersonnelTrackingApp/technologySection/img_salesforce.webp';
 import Visualforce from '@/images/salesforcePersonnelTrackingApp/technologySection/img_visualforce.webp';
 import Road from '@/images/salesforcePersonnelTrackingApp/technologySection/img_road.webp';
-
 import challengesStyles from '../sass/salesforceChallengesSection.module.scss';
 import mainStyles from '../sass/salesforceMainSection.module.scss';
 

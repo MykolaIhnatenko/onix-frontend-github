@@ -3,7 +3,7 @@ import React from 'react';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import Layout from '../src/layout/Layout';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import MetroCaseStudyPageView from '../src/pages/caseStudies/MetroCaseStudyPage/MetroCaseStudyPageView';
 import { checkSaleUrl } from '../src/utils/helpers';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';

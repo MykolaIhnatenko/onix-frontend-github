@@ -19,6 +19,8 @@ export default interface ITextField {
   errorVariant?: ErrorVariant;
   spanTop?: boolean;
   focusOnName?: boolean;
+  dontFocus?: boolean;
   classVariant?: TextFieldVariant;
   id?: 'focus' | 'unfocused';
+  isJakarta?: boolean;
 }

@@ -56,6 +56,7 @@ function OnixStoryOurClients() {
         <div className={styles.mapImage}>
           <ImageComponent
             src={getBackground().map}
+            alt="map"
             fill
             className={styles.mapImage}
             sizes="(max-width: 768px) 50vw, (min-width: 768px) 100vw"

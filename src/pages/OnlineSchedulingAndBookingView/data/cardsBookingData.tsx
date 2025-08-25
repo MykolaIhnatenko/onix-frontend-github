@@ -1,10 +1,11 @@
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+
 import bookingSystem from '@/images/booking/img_booking-system.webp';
 import bookingSolutions from '@/images/booking/img_booking-solutions.webp';
 import bookingCustomization from '@/images/booking/img_booking-customization.webp';
 import bookingIntegrations from '@/images/booking/img_booking-integrations.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
 
 const cardBookingData: IAccordionData[] = [
   {

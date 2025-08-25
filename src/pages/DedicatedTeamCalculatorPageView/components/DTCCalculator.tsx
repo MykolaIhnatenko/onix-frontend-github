@@ -22,11 +22,11 @@ import { IApp } from '../../../store/app/interfaces/IApp';
 import { SM_DEVICE } from '../../../constants/constants';
 import DTCFormSuccessBg from '../../../assets/images/dedicatedTeamCalculator/img_form_bg_success.webp';
 import DTCFormSuccessBgTablet from '../../../assets/images/dedicatedTeamCalculator/img_form_bg_success_tablet.webp';
+import { setModalView, setShowContactForm } from '../../../store/app/contactForm/slice';
+
 import DTCCalculatorFormBg from '@/images/dedicatedTeamCalculator/img_form_bg@2x.webp';
 import DTCCalculatorFormTabletBg from '@/images/dedicatedTeamCalculator/img_form_tablet_bg@2x.webp';
 import DTCCalculatorFormMobileBg from '@/images/dedicatedTeamCalculator/img_form_mobile_bg@2x.webp';
-import { setModalView, setShowContactForm } from '../../../store/app/contactForm/slice';
-
 import styles from '../sass/DTCCalculator.module.scss';
 
 function DTCCalculatorView({
@@ -106,6 +106,7 @@ function DTCCalculatorView({
           <div className={`${styles.backgroundForm} ${isSuccess ? styles.backgroundSuccess : ''}`}>
             <ImageComponent
               src={isSuccess ? getBackground().success : getBackground().form}
+              alt="Dedicated Team Calculator Form Background"
               sizes="100vw"
             />
           </div>

@@ -1,5 +1,4 @@
 import { useAppSelector } from '../../hook/reduxToolkit';
-import HeroSection from '../../components/HeroSection/HeroSection';
 import ModelsSection from '../../components/ModelsSection/ModelsSection';
 import AnimationTypographySection from '../../components/AnimationTypographySection/AnimationTypographySection';
 import TechnologiesBlock from '../../components/TechnologiesBlock/TechnologiesBlock';
@@ -14,7 +13,6 @@ import BusinessContextDiagonal from 'components/BusinessContextDiagonal/Business
 import BusinessContextWithTable from 'components/BusinessContextWithTables/BusinessContextWithTable';
 import TechnologiesData from './data/TechnologiesData.json';
 import businessContextBlockData from './data/businessContextBlockData';
-import titleHeroSection from './data/TitleHeroSection';
 import ModelsSectionData from './data/ModelsSectionData';
 import ourSolutionsData from './data/ourSolutionsData';
 import ourSolutionsContentData from './data/ourSolutionsContentData';
@@ -27,6 +25,8 @@ import SchedulerResultsBlock from './components/SchedulerResultsBlock';
 import { getTechnologiesBooking } from '../../utils/getTechnologies';
 import { ButtonType } from '../../constants/enums';
 import IPageStatus from 'interfaces/IPageStatus';
+import MainBlockVolkswagen from '../../components/MainBlockVolkswagen/MainBlockVolkswagen';
+
 import HeroScreen from '@/images/scheduleDoctor/img_HeroSection@2x.webp';
 import HeroScreenXXXL from '@/images/scheduleDoctor/img_HeroSectionXXXL@2x.webp';
 import HeroScreenTablet from '@/images/scheduleDoctor/img_HeroSectionTablet@2x.webp';
@@ -38,9 +38,7 @@ import ResultsBlockXXXLBg from '@/images/ResultsBlockBg/img_resultsBlockBlackXXX
 import SolutionBg from '@/images/scheduleDoctor/img_Solution@2x.webp';
 import SolutionBgTablet from '@/images/scheduleDoctor/img_SolutionTablet@2x.webp';
 import SolutionBgMobile from '@/images/scheduleDoctor/img_SolutionMobile@2x.webp';
-
 import classes from './sass/schedulerStyles.module.scss';
-import styles from './sass/TitleHeroSection.module.scss';
 
 function SchedulerForMedicalDoctorsView({ saleUrl }: IPageStatus) {
   const {
@@ -75,12 +73,33 @@ function SchedulerForMedicalDoctorsView({ saleUrl }: IPageStatus) {
 
   return (
     <>
-      <HeroSection
-        title={titleHeroSection}
+      <MainBlockVolkswagen
+        title={(
+          <>
+            Scheduler for&nbsp;medical
+            {' '}
+            <br className="screen-lg:hidden" />
+            {' '}
+            doctors and clinic
+            {' '}
+            <br className="screen-lg:hidden" />
+            {' '}
+            administrators
+          </>
+        )}
         backgroundImg={getBackground().Main}
-        styleTitleContainer={styles.titleContainer}
-        styleContainer={styles.styleContainer}
+        classes={{
+          container: 'h-screen min-h-[750px] max-h-[1400px] '
+            + 'screen-lg:h-full screen-lg:!min-h-[950px] screen-lg:max-h-full '
+            + 'screen-md:h-[780px] '
+            + 'screen-sm:h-[640px] ',
+          titleContainer: 'max-w-[700px] screen-xl:max-w-[500px] screen-lg:min-h-[100vh] screen-lg:max-w-full '
+            + 'screen-lg:!pt-[144px] '
+            + 'screen-md:!pt-[129px]',
+          title: '!text-color-black',
+        }}
       />
+
       <AboutProjectSection
         title={howOnixDevelopedData.blockTitle}
         subtitle={howOnixDevelopedData.blockText}

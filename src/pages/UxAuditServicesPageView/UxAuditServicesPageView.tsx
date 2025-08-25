@@ -28,18 +28,20 @@ import ButtonTypes from '../../constants/ButtonTypes';
 import UXCallToActionSecondImage from '../../assets/images/uxAudit/img_bg_how_much.webp';
 import UXCallToActionSecondTabletImage from '../../assets/images/uxAudit/img_bg_how_much_tablet.webp';
 import UXCallToActionSecondMobileImage from '../../assets/images/uxAudit/img_bg_how_much_mobile.webp';
-import TellUsAboutLG from '@/images/img_lastCta@2x.webp';
-import TellUsAboutMD from '@/images/img_lastCtaTablet@2x.webp';
-import TellUsAboutSM from '@/images/img_lastCtaMobile@2x.webp';
 import UXCallToActionImage from '../../assets/images/uxAudit/img_bg_we.webp';
 import UXCallToActionTabletImage from '../../assets/images/uxAudit/img_bg_we_tablet.webp';
 import UXCallToActionMobileImage from '../../assets/images/uxAudit/img_bg_we_moblie.webp';
 import IosContactUsBigBg1 from '../../assets/images/iosPage/img_contact_us_big_bg1@2x.webp';
 import UXCallToActionSecondBigImage from '../../assets/images/uxAudit/img_cta_big_bg@2x.webp';
+import IAchievements from '../../interfaces/IAchievements';
+
 import CaseStudiesBg from '@/images/caseStudiesBlock/img_bottomBg.webp';
 import CaseStudiesBgTablet from '@/images/caseStudiesBlock/img_bottomBgTablet.webp';
+import TellUsAboutSM from '@/images/img_lastCtaMobile@2x.webp';
+import TellUsAboutMD from '@/images/img_lastCtaTablet@2x.webp';
+import TellUsAboutLG from '@/images/img_lastCta@2x.webp';
 
-function UXAuditPageView({ pageBlogs }: IPageBlogs) {
+function UXAuditPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isSMDevice,
@@ -142,6 +144,7 @@ function UXAuditPageView({ pageBlogs }: IPageBlogs) {
         }}
       />
       <AchievementsBlock
+        achievements={achievements}
         title="Why Choose Onix for Design Audit"
       />
       <UXBenefitsSection />

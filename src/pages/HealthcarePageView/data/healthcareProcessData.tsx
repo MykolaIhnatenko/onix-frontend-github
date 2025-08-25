@@ -1,5 +1,6 @@
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import { IProcessAccordionItem, IProcessImage } from '../../MainPage/interfaces/IProcess';
+
 import ProcessHealthcareImgTablet1 from '@/images/healthcare/processBlock/img_processHealthcareImgTablet1@2x.webp';
 import ProcessHealthcareImgTablet2 from '@/images/healthcare/processBlock/img_processHealthcareImgTablet2@2x.webp';
 import ProcessHealthcareImgTablet3 from '@/images/healthcare/processBlock/img_processHealthcareImgTablet3@2x.webp';

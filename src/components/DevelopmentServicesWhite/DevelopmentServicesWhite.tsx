@@ -2,6 +2,7 @@ import { IDevelopmentServicesWhite } from './interfaces/IDevelopmentServicesWhit
 import { useAppSelector } from '../../hook/reduxToolkit';
 import DevelopmentServicesTemplate from 'components/DevelopmentServicesTemplate/DevelopmentServicesTemplate';
 import { XXXL_DEVICE } from '../../constants/constants';
+
 import BgWhiteLarge from '@/images/developmentServicesWhite/img_devServicesWhiteLarge.webp';
 import BgWhite from '@/images/developmentServicesWhite/img_devServicesWhite.webp';
 import BgWhiteTablet from '@/images/developmentServicesWhite/img_devServicesWhiteTablet.webp';

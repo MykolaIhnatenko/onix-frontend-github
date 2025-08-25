@@ -1,6 +1,3 @@
-import MobileInHandImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_mobileInHandImage.webp';
-import MobileImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_mobileImage.webp';
-import MetroMap from '@/images/caseStudiesPage/MetroCaseStudyPage/img_metroMap.webp';
 import FilledContactUs from './FilledContactUs';
 import ImageComponent from '../../../../components/Image/Image';
 import Icon from '../../../../assets/icon';
@@ -9,6 +6,9 @@ import VRARContent from '../../../../components/VRARContent/VRARContent';
 import IPageStatus from '../../../../interfaces/IPageStatus';
 import { ButtonType } from 'constants/enums';
 
+import MetroMap from '@/images/caseStudiesPage/MetroCaseStudyPage/img_metroMap.webp';
+import MobileImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_mobileImage.webp';
+import MobileInHandImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_mobileInHandImage.webp';
 import styles from '../sass/metroCaseBusinessNeeds.module.scss';
 
 function MetroCaseBusinessNeeds({ saleUrl }: IPageStatus) {

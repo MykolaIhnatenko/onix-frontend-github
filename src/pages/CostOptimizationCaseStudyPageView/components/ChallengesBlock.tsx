@@ -12,10 +12,10 @@ import costHoverAccordionSliderData from '../data/costHoverAccordionSliderData';
 import costHoverAccordionData from '../data/costHoverAccordionData';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
+
 import ChallengesBlockBg from '@/images/costOptimizationCaseStudyPageView/challengesBlock/img_challengesBlockBg@2x.webp';
 import ChallengesBlockTabletBg from '@/images/costOptimizationCaseStudyPageView/challengesBlock/img_challengesBlockTabletBg@2x.webp';
 import ChallengesBlockMobileBg from '@/images/costOptimizationCaseStudyPageView/challengesBlock/img_challengesBlockMobileBg@2x.webp';
-
 import styles from '../sass/challengesBlock.module.scss';
 
 function ChallengesBlock() {

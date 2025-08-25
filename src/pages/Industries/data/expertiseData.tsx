@@ -1,4 +1,9 @@
 import PageLinks from '../../../constants/PageLinks';
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+import ItemList from 'components/ItemList/ItemList';
+
 import IndustriesExpertise2 from '@/images/industriesPage/img_expertise2@2x.webp';
 import IndustriesExpertise3 from '@/images/industriesPage/img_expertise3@2x.webp';
 import IndustriesExpertise4 from '@/images/industriesPage/img_expertise4@2x.webp';
@@ -6,10 +11,6 @@ import IndustriesExpertise5 from '@/images/industriesPage/img_expertise5@2x.webp
 import IndustriesExpertise6 from '@/images/industriesPage/img_expertise6@2x.webp';
 import IndustriesExpertise7 from '@/images/industriesPage/img_expertise7@2x.webp';
 import IndustriesExpertise1 from '@/images/industriesPage/img_expertise1@2x.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
-import ItemList from 'components/ItemList/ItemList';
 
 const expertiseData: IAccordionData[] = [
   {

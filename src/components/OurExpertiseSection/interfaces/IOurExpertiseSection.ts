@@ -2,11 +2,12 @@ import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordi
 
 interface IOurExpertiseSection {
   upTitle?: string,
-  title: string,
+  title?: string,
   firstText?: string,
   secondText?: string,
   data: IAccordionData[],
   borderBottomLast?: boolean;
+  borderTopFirst?: boolean;
   blackBlock?: boolean;
   classes?: {
     section?: string;

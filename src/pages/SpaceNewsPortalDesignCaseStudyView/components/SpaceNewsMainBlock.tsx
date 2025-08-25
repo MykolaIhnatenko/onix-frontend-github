@@ -12,13 +12,13 @@ import ISpaceNewsMainBlok from '../interfaces/ISpaceNewsMainBlok';
 import { SpaceNewsMainBlokVariant } from '../../../constants/enums';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
+
 import MainBg from '@/images/spaceNewsPage/mainBlock/img_main_bg.webp';
 import MainBgTablet from '@/images/spaceNewsPage/mainBlock/img_main_bg_tablet.webp';
 import MainBgMobile from '@/images/spaceNewsPage/mainBlock/img_main_bg_mobile.webp';
 import DarkMainBg from '@/images/animatedConceptCaseStudyPage/mainBlock/img_dark_main_bg.webp';
 import DarkMainBgTablet from '@/images/animatedConceptCaseStudyPage/mainBlock/img_dark_main_bg_tablet.webp';
 import DarkMainBgMobile from '@/images/animatedConceptCaseStudyPage/mainBlock/img_dark_main_bg_mobile.webp';
-
 import styles from '../sass/spaceNewsMainBlok.module.scss';
 
 function SpaceNewsMainBlok({

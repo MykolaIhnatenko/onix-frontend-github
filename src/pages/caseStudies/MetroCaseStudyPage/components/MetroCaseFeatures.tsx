@@ -3,13 +3,13 @@ import ImageComponent from '../../../../components/Image/Image';
 import Icon from '../../../../assets/icon';
 import VRARContent from '../../../../components/VRARContent/VRARContent';
 import { muktaVaaniFont } from '../../../../fonts/MainFonts';
+
 import MetroAppDiscountImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_metroAppDiscountImage.webp';
 import MetroAppLoyaltyImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_metroAppLoyaltyImage.webp';
 import MetroAppScannerImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_metroAppScannerImage.webp';
 import MetroAppShoppingImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_metroAppShoppingImage.webp';
 import MetroAppVoucherImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_metroAppVoucherImage.webp';
 import FeaturesResultImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_featuresResultImage.webp';
-
 import styles from '../sass/metroCaseFeatures.module.scss';
 
 function MetroCaseFeatures() {

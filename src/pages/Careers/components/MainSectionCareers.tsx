@@ -7,11 +7,11 @@ import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
+
 import CareerMainSectionBg from '@/images/careers/mainScreen/img_CareerMainSectionBg@2x.webp';
 import CareersMainScreenBg from '@/images/careers/mainScreen/main_screen_bg@2x.webp';
 import CareersMainScreenBgTablets from '@/images/careers/mainScreen/main_screen_bg_tablets@2x.webp';
 import CareersMainScreenBgMobile from '@/images/careers/mainScreen/main_screen_bg_mobile@2x.webp';
-
 import styles from '../sass/MainSectionCareers.module.scss';
 
 function MainSectionCareers() {

@@ -37,6 +37,8 @@ function UxAuditServicesPage({
       path: '/ux-audit-services',
     },
   ];
+  const achievements = seoData.achievements?.data || [];
+
   return (
     <>
       <Script
@@ -54,7 +56,7 @@ function UxAuditServicesPage({
         <Head>
           {ServiceJsonLd(seoData)}
         </Head>
-        <UxAuditServicesPageView pageBlogs={pageBlogs} />
+        <UxAuditServicesPageView pageBlogs={pageBlogs} achievements={achievements} />
       </Layout>
     </>
   );

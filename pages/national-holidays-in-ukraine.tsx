@@ -5,7 +5,7 @@ import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import NationalHolidaysPageView from '../src/pages/NationalHolidaysPageView/NationalHolidaysPageView';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import getNationalHolidays from '../src/api/getNationalHolidays';
 import IPages from '../src/interfaces/IPages';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';

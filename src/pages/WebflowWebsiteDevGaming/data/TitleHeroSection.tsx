@@ -1,7 +1,7 @@
-import WebflowWebsiteLogo from '@/images/WebflowWebsiteDev/img_GameMe.webp';
 import ImageComponent from '../../../components/Image/Image';
 import MainTitle from 'components/MainTitle/MainTitle';
 
+import WebflowWebsiteLogo from '@/images/WebflowWebsiteDev/img_GameMe.webp';
 import styles from '../sass/TitleHroSection.module.scss';
 
 const titleHeroSection = (

@@ -1,3 +1,5 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+
 import OurSolutionsImg1 from '@/images/noisyNeighborCasePage/ourSolutions/img_ourSolutions1.webp';
 import OurSolutionsImg2 from '@/images/noisyNeighborCasePage/ourSolutions/img_ourSolutions2.webp';
 import OurSolutionsImg3 from '@/images/noisyNeighborCasePage/ourSolutions/img_ourSolutions3.webp';
@@ -10,7 +12,6 @@ import OurSolutionsImgMobile1 from '@/images/noisyNeighborCasePage/ourSolutions/
 import OurSolutionsImgMobile2 from '@/images/noisyNeighborCasePage/ourSolutions/img_ourSolutionsMobile2.webp';
 import OurSolutionsImgMobile3 from '@/images/noisyNeighborCasePage/ourSolutions/img_ourSolutionsMobile3.webp';
 import OurSolutionsImgMobile4 from '@/images/noisyNeighborCasePage/ourSolutions/img_ourSolutionsMobile4.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

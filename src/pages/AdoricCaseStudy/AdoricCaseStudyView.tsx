@@ -1,15 +1,5 @@
 import { useSelector } from 'react-redux';
 
-import MainSectionBg from '@/images/AdoricCase/img_AdoricMain.webp';
-import MainSectionBgTablet from '@/images/AdoricCase/img_AdoricMainTablet.webp';
-import MainSectionBgMobile from '@/images/AdoricCase/img_AdoricMainMobile@2x.webp';
-import BackgroundBottom from '@/images/AdoricCase/img_BackgroundBottom.webp';
-import BackgroundBottomTablet from '@/images/AdoricCase/img_BackgroundBottomTablet.webp';
-import BackgroundBottomMobile from '@/images/AdoricCase/img_BackgroundBottomMobile.webp';
-import TestimonialPreview from '@/images/AdoricCase/testimonial/testimonialPreview.webp';
-import TestimonialPreviewTablet from '@/images/AdoricCase/testimonial/testimonialPreviewTablet.webp';
-import TestimonialPreviewMobile from '@/images/AdoricCase/testimonial/testimonialPreviewMobile.webp';
-import AdoricLogo from '@/images/AdoricCase/img_AdoricLogo.webp';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import MainBlockVolkswagen from '../../components/MainBlockVolkswagen/MainBlockVolkswagen';
@@ -23,7 +13,6 @@ import AdoricTextData from './data/AdoricTextData.json';
 import carouselData from './data/carouselData';
 import AnimationCreatorData from './components/AnimationCreatorData';
 import AnimationProductConsistBlock from '../../components/AnimationProductConsistBlock/AnimationProductConsistBlock';
-import SliderBg from '@/images/AdoricCase/img_BackgroundEnd.webp';
 import { projectListAdoric, projectListAdoricSlider } from '../../components/BrandsBlock/projectList';
 import AdoricBrands from '../../components/AdoricBrands/AdoricBrands';
 import AnimNumberBlock from '../../components/AnimNumberBlock/AnimNumberBlock';
@@ -36,14 +25,6 @@ import VRARCallToActionComponent from 'components/VRARCallToActionBlock/VRARCall
 import TestimonialVideoSection from 'components/TestimonialVideoSection/TestimonialVideoSection';
 import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
 import ResultsBlock from 'components/ResultsBlock/ResultsBlock';
-import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
-import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
-import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
-import ResultsBlockXXXLBg from '@/images/ResultsBlockBg/img_resultsBlockBlackXXXLBg@2x.webp';
-import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
-import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
-import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
-import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
 import CoreTechnology from '../../components/CoreTechnology/CoreTechnology';
 import AboutProjectSection from 'components/AboutProject/AboutProject';
 import aboutContent from './data/aboutContent.json';
@@ -53,6 +34,26 @@ import BusinessContext from 'components/BusinessContext/BusinessContext';
 import BusinessBg from '../../assets/images/AdoricCase/img_Product.webp';
 import BusinessBgTablet from '../../assets/images/AdoricCase/img_ProductTablet.webp';
 import BusinessBgMobile from '../../assets/images/AdoricCase/img_ProductMobile.webp';
+
+import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
+import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
+import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
+import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
+import ResultsBlockXXXLBg from '@/images/ResultsBlockBg/img_resultsBlockBlackXXXLBg@2x.webp';
+import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
+import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
+import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
+import SliderBg from '@/images/AdoricCase/img_BackgroundEnd.webp';
+import AdoricLogo from '@/images/AdoricCase/img_AdoricLogo.webp';
+import TestimonialPreviewMobile from '@/images/AdoricCase/testimonial/testimonialPreviewMobile.webp';
+import TestimonialPreviewTablet from '@/images/AdoricCase/testimonial/testimonialPreviewTablet.webp';
+import TestimonialPreview from '@/images/AdoricCase/testimonial/testimonialPreview.webp';
+import BackgroundBottomMobile from '@/images/AdoricCase/img_BackgroundBottomMobile.webp';
+import BackgroundBottomTablet from '@/images/AdoricCase/img_BackgroundBottomTablet.webp';
+import BackgroundBottom from '@/images/AdoricCase/img_BackgroundBottom.webp';
+import MainSectionBgMobile from '@/images/AdoricCase/img_AdoricMainMobile@2x.webp';
+import MainSectionBgTablet from '@/images/AdoricCase/img_AdoricMainTablet.webp';
+import MainSectionBg from '@/images/AdoricCase/img_AdoricMain.webp';
 
 function AdoricCaseStudyView({ saleUrl }: IPageStatus) {
   const {
@@ -120,6 +121,10 @@ function AdoricCaseStudyView({ saleUrl }: IPageStatus) {
         content={ProductScopeData.listPerformance}
         background={getBackground().ProductScopeBg}
         productScope
+        classes={{
+          background: `after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgb(0,0,0)] screen-lg:after:h-[80px]`,
+        }}
       />
       {!saleUrl && (
         <VRARCallToActionComponent
@@ -136,8 +141,8 @@ function AdoricCaseStudyView({ saleUrl }: IPageStatus) {
           background={getBackground().CtaBg}
           classes={{
             cta: '!bg-transparent !pt-[120px] !pb-[120px] screen-lg:!p-[80px_30px] screen-md:!p-[60px_15px_80px]',
-            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[80px]
-            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgb(0,0,0)]`,
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-[rgb(0,0,0)] screen-lg:after:h-[80px]`,
             image: '!object-right-bottom',
             title: '!pb-[40px] !text-center !text-white !max-w-[1080px] screen-md:!pb-[30px] screen-md:!max-w-[310px]',
           }}
@@ -167,7 +172,7 @@ function AdoricCaseStudyView({ saleUrl }: IPageStatus) {
         title={AdoricOurSolutionsContentData.blockTitle}
         firstText={AdoricOurSolutionsContentData.firstText}
         data={AdoricOurSolutionsContentData.data}
-        classes={{ section: '!pb-0' }}
+        classes={{ section: '!pb-0 !pt-[80px] screen-lg:!pt-[60px] screen-md:!pt-[40px]' }}
       />
       <CoreTechnology data={TechListData} />
       <TestimonialVideoSection

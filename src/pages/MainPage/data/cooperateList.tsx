@@ -1,9 +1,10 @@
+import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
+
 import StaffAugmentation from '@/images/mainPage/img_staffAugmentation@2x.webp';
 import DedicatedTeam from '@/images/mainPage/img_dedicatedTeam@2x.webp';
 import TmOurly from '@/images/mainPage/img_tmOurly@2x.webp';
 import FixPrice from '@/images/mainPage/img_fixedPrice@2x.webp';
 import FullProcessDevelopment from '@/images/mainPage/img_fullProcessDevelopment@2x.webp';
-import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
 const cooperateList: IAccordionHorizontalData[] = [
   {

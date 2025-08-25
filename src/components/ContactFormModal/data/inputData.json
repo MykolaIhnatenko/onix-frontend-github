@@ -12,7 +12,7 @@
   {
     "inputName": "company",
     "label": "Company",
-    "isAsterisk": false
+    "isAsterisk": true
   },
   {
     "inputName": "country",

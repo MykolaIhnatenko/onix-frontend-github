@@ -7,13 +7,13 @@ import BstevrContentBlock from './BstevrContentBlock';
 import bstevrDesingnData from '../data/bstevrDesingnData';
 import IStore from '../../../../store/interfaces/IStore';
 import { IApp } from '../../../../store/app/interfaces/IApp';
+
 import ImageAgile from '@/images/BstevrCaseSudy/img_IconAgile.webp';
 import ImageAgile2x from '@/images/BstevrCaseSudy/img_agile@2x.webp';
 import ImageAgile3x from '@/images/BstevrCaseSudy/img_IconAgile@3x.webp';
 import ImageFigma from '@/images/BstevrCaseSudy/img_figma.webp';
 import ImageFigma2x from '@/images/BstevrCaseSudy/img_figma@2x.webp';
 import ImageFigma3x from '@/images/BstevrCaseSudy/img_figma@3x.webp';
-
 import styles from '../sass/bstevrContentBlock.module.scss';
 
 function BstevrDesignSection() {

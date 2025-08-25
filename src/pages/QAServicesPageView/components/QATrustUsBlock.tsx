@@ -3,10 +3,10 @@ import CardsBlock from '../../../components/CardsBlock/CardsBlock';
 import ImageComponent from '../../../components/Image/Image';
 import trustUsCardsData from '../data/trustUsCardsData.json';
 import { ButtonType } from '../../../constants/enums';
+
 import QADropBlockBg from '@/images/qaServicesPage/img_qa_drop_block.webp';
 import DedicatedTeamWorkBgMobile from '@/images/dedicatedTeamPage/img_work_mobile@2x.webp';
 import TrustUsBackgroundMobileWebp from '@/images/img_trust_us_mobile_bg@2x.webp';
-
 import styles from '../sass/qaTrustUsBlock.module.scss';
 
 function QATrustUsBlock() {

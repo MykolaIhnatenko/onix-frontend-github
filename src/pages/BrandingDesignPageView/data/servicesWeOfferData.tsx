@@ -1,9 +1,9 @@
-import BDLogoDesign from '@/images/brandingDesign/img_logo_design.webp';
-import BDBrandGuidelines from '@/images/brandingDesign/img_brand_guidelines.webp';
-import BDBrandDesign from '@/images/brandingDesign/img_brand_design.webp';
 import ContentText from '../../../components/ContentText/ContentText';
 import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
+import BDLogoDesign from '@/images/brandingDesign/img_logo_design.webp';
+import BDBrandGuidelines from '@/images/brandingDesign/img_brand_guidelines.webp';
+import BDBrandDesign from '@/images/brandingDesign/img_brand_design.webp';
 import styles from '../sass/servicesWeOffer.module.scss';
 
 const cooperateList: IAccordionHorizontalData[] = [

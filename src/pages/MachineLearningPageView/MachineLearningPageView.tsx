@@ -25,6 +25,20 @@ import MachineLFaqMachineData from './data/machineLFaqMachineData';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import { IPageBlogs } from '../../interfaces/IPages';
+import CTAImageBg from '../../assets/images/machineLearning/CTAImages/img_CTABg@2x.webp';
+import CTAImageTabletBg from '../../assets/images/machineLearning/CTAImages/img_CTATabletBg@2x.webp';
+import CTAImageMobileBg from '../../assets/images/machineLearning/CTAImages/img_CTAMobileBg@2x.webp';
+import { ButtonType } from '../../constants/enums';
+import MLTableBlock from './components/MLTableBlock';
+import ConsultingServices from './components/ConsultingServices';
+import ButtonTypes from 'constants/ButtonTypes';
+import machineLCardData from './data/machineLCardData';
+import AboutCardBlock from 'components/AboutCardBlock/AboutCardBlock';
+import MachineLServicesHelpText from './components/MachineLServicesHelpText';
+import ServicePackage from './components/ServicePackage';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+
 import TellUsAboutMachineSM from '@/images/machineLearning/img_tell_us_about_machineSM.webp';
 import MachineSliderBlockBg from '@/images/machineLearning/partnerSlider/img@2x.webp';
 import MachineSliderBlockBgTablet from '@/images/machineLearning/partnerSlider/img_bgTablet@2x.webp';
@@ -34,26 +48,12 @@ import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import CalculateBackgroundSM from '@/images/img_calculate_background_sm.webp';
 import CalculateBackgroundMD from '@/images/img_calculate_background_md.webp';
 import CalculateBackgroundLG from '@/images/img_calculate_background_lg.webp';
-import CTAImageBg from '../../assets/images/machineLearning/CTAImages/img_CTABg@2x.webp';
-import CTAImageTabletBg from '../../assets/images/machineLearning/CTAImages/img_CTATabletBg@2x.webp';
-import CTAImageMobileBg from '../../assets/images/machineLearning/CTAImages/img_CTAMobileBg@2x.webp';
-import { ButtonType, CardBlockVariant } from '../../constants/enums';
-import MLTableBlock from './components/MLTableBlock';
-import ConsultingServices from './components/ConsultingServices';
-import ButtonTypes from 'constants/ButtonTypes';
-import machineLCardData from './data/machineLCardData';
-import AboutCardBlock from 'components/AboutCardBlock/AboutCardBlock';
-import MachineLServicesHelpText from './components/MachineLServicesHelpText';
-import ServicePackage from './components/ServicePackage';
 import MachineLMainBlockBg from '@/images/machineLearning/startBlock/img_machine_l_main_block_bg@2x.webp';
 import MachineLMainBlockBgTablet from '@/images/machineLearning/startBlock/img_machine_l_main_block_bg_tablet@2x.webp';
 import MachineLMainBlockBgMobile from '@/images/machineLearning/startBlock/img_machine_l_main_block_bg_mobile@2x.webp';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
 import CaseStudiesBg from '@/images/machineLearning/caseStudies/img_caseStudiesBg@2x.webp';
 import CaseStudiesBgTablet from '@/images/machineLearning/caseStudies/img_caseStudiesTabletBg@2x.webp';
 import CaseStudiesBgMobile from '@/images/machineLearning/caseStudies/img_caseStudiesMobileBg@2x.webp';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
-
 import styles from './sass/pageView.module.scss';
 
 function MachineLearningPageView({ pageBlogs }: IPageBlogs) {
@@ -110,19 +110,21 @@ function MachineLearningPageView({ pageBlogs }: IPageBlogs) {
         subtitle={machineLTrustUsBlockData.subtitle}
         dropBlockTitle={machineLTrustUsBlockData.lastCardTitle}
         dropBlockBtnTitle={machineLTrustUsBlockData.btnTitle}
-        variant={CardBlockVariant.MACHINE_LEARNING}
         withoutDropBlockBg
         classes={{
-          dropBlock: `!relative !p-[20px] !h-auto min-md:!h-auto min-md:!p-[80px_30px] min-xl:!p-[30px]
-          min-xl:!h-auto
-          after:!content-[""] after:!w-full after:!h-[170px] after:!absolute after:!bottom-0
-          after:!left-0 after:!bg-gradient-to-b after:!from-transparent after:!to-black after:!z-[-1]`,
-          dropBlockTitle: `!text-[25px] !leading-[35px] !font-medium min-md:!text-[30px] !p-[0_0_40px_0]
-          min-md:!leading-[40px] min-md:!text-center
-          min-xl:!max-w-full min-xl:!text-left min-xl:!m-0 min-xl:!pb-0`,
-          buttonWrapper: '!w-full screen-xl:!max-w-[420px]',
-          cardClasses: {
-            card: '!h-[470px] min-md:!h-[500px] min-xl:!h-[535px] min-xxxl:!h-[540px]',
+          sectionTitle: '!mb-[30px] min-lg:!mb-[40px]',
+          CardsBlockClasses: {
+            dropBlock: `!relative !p-[20px] !h-auto min-md:!h-auto min-md:!p-[80px_30px] min-xl:!p-[30px]
+            min-xl:!h-auto
+            after:!content-[""] after:!w-full after:!h-[170px] after:!absolute after:!bottom-0
+            after:!left-0 after:!bg-gradient-to-b after:!from-transparent after:!to-black after:!z-[-1]`,
+            dropBlockTitle: `!text-[25px] !leading-[35px] !font-medium min-md:!text-[30px] !p-[0_0_40px_0]
+            min-md:!leading-[40px] min-md:!text-center
+            min-xl:!max-w-full min-xl:!text-left min-xl:!m-0 min-xl:!pb-0`,
+            buttonWrapper: '!w-full screen-xl:!max-w-[420px]',
+            cardClasses: {
+              card: '!h-[470px] min-md:!h-[500px] min-xl:!h-[535px] min-xxxl:!h-[540px]',
+            },
           },
         }}
       />

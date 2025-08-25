@@ -3,11 +3,11 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import LocationsBlock from '../../../components/LocationsBlock/LocationsBlock';
 import ImageComponent from '../../../components/Image/Image';
 import useBackground from '../../../hook/useBackground';
+import { MD_DEVICE } from '../../../constants/constants';
+
 import DedicatedTeamMap from '@/images/dedicatedTeamPage/img_map_desk@2x.webp';
 import DedicatedTeamMapMobile from '@/images/dedicatedTeamPage/img_map_mob@2x.webp';
 import DedicatedTeamMapTablet from '@/images/dedicatedTeamPage/img_map_tabl@2x.webp';
-import { MD_DEVICE } from '../../../constants/constants';
-
 import styles from '../sass/dedicatedTeamLocationsSecion.module.scss';
 
 function DedicatedTeamLocationSection() {

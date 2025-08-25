@@ -8,12 +8,13 @@ import getFooterContent from 'api/getFooterContent';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import AndroidApplicationPageView from '../src/pages/AndroidApplicationPageView/AndroidApplicationPageView';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
 function AndroidApplicationPage({ seoData, footerContent }:IPages) {
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.ANDROID_DEV, TitlePages.SERVICES);
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -25,7 +26,7 @@ function AndroidApplicationPage({ seoData, footerContent }:IPages) {
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <AndroidApplicationPageView />
+      <AndroidApplicationPageView achievements={achievements} />
     </Layout>
   );
 }

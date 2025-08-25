@@ -6,9 +6,9 @@ import NetstatAnimationH2 from './NetstatAnimationH2';
 import ImageComponent from '../../../components/Image/Image';
 import { useAppSelector } from '../../../hook/reduxToolkit';
 import NetstatAnimationBlock from './NetstatAnimationBlock';
+
 import Bg from '@/images//NetstatPage/img_netstat-helps-bg.webp';
 import BgMobile from '@/images//NetstatPage/img_netstat-helps-bg-mobile.webp';
-
 import netstatStyles from '../sass/netstat.module.scss';
 
 function NetstatHelps() {

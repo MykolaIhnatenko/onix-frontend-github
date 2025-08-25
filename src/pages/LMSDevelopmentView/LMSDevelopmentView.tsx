@@ -1,12 +1,6 @@
 import { StaticImageData } from 'next/image';
 import { useSelector } from 'react-redux';
 
-import img_LmsBg from '@/images/LMS/img_LmsBg@2x.webp';
-import img_LmsBgTablet from '@/images/LMS/img_LmsBgTablet.webp';
-import img_LmsBgMobile from '@/images/LMS/img_LmsBgMobile.webp';
-import BDCallBottomDesktop from '@/images/brandingDesign/img_bd_call_bottom_desktop.webp';
-import bgOffer from '@/images/booking/img_bg_Weoffer.webp';
-import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import { IApp } from '../../store/app/interfaces/IApp';
 import IStore from '../../store/interfaces/IStore';
 import ILMSDevelopment from './interfaces/ILMSDevelopment';
@@ -16,7 +10,7 @@ import BlackTextBlock from '../../components/BlackTextBlock/BlackTextBlock';
 import aboutLMSData from './data/aboutLMSData.json';
 import AboutCardBlock from '../../components/AboutCardBlock/AboutCardBlock';
 import {
-  ButtonPathVariant, ButtonType, VariantColorText,
+  ButtonPathVariant, ButtonType,
 } from '../../constants/enums';
 import cardsLMSData from './data/cardsLMSData';
 import OurCaseStudies from '../../components/OurCaseStudies/OurCaseStudies';
@@ -40,6 +34,12 @@ import titleSpeakExpertLMS from './data/titlesLMS';
 import DevelopmentServicesBlack from 'components/DevelopmentServicesBlack/DevelopmentServicesBlack';
 import { containerActiveBlocksBooking } from 'constants/tailwindStyle';
 
+import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
+import bgOffer from '@/images/booking/img_bg_Weoffer.webp';
+import BDCallBottomDesktop from '@/images/brandingDesign/img_bd_call_bottom_desktop.webp';
+import img_LmsBgMobile from '@/images/LMS/img_LmsBgMobile.webp';
+import img_LmsBgTablet from '@/images/LMS/img_LmsBgTablet.webp';
+import img_LmsBg from '@/images/LMS/img_LmsBg@2x.webp';
 import styles from './sass/view.module.scss';
 
 function LMSDevelopmentView({ isBannerHidden, pageBlogs }: ILMSDevelopment) {
@@ -148,8 +148,13 @@ function LMSDevelopmentView({ isBannerHidden, pageBlogs }: ILMSDevelopment) {
         textGraySecond="Our software development model "
         textSecond="is fully transparent and efficient since we use the agile
          approach to manage the development process."
-        variant={VariantColorText.LMS_BOTTOM_PADDING}
         revertBlock
+        classes={{
+          aboutOurScheduling: `!p-[80px_70px_40px] min-xxxl:!p-[80px_80px_40px]
+          screen-lg:!p-[80px_30px_80px] screen-md:!p-[60px_15px_0]`,
+          textBlack: '!mb-0',
+          reverseText: '!mb-[60px] last:!mb-[60px] screen-lg:last:!mb-[40px] screen-md:last:!mb-[30px]',
+        }}
       />
       <ContainerActiveBlocks
         idBtn={ButtonType.LAND2}

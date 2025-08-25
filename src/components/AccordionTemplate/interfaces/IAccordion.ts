@@ -15,8 +15,10 @@ export default interface IAccordion {
   isAccordionBlack?: boolean;
   accordionStyleTypes?: AccordionWhiteStyleTypes | AccordionBlackStyleTypes;
   borderTopFirst?: boolean;
+  borderTop?: boolean;
   borderBottomLast?: boolean;
   smallerTitleText?: boolean;
+  multiOpen?: boolean;
   classes?: {
     accordion?: string;
     accordionItem?: string;

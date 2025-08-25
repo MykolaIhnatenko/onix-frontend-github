@@ -6,7 +6,6 @@ import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import {
   ButtonType,
-  CardBlockVariant,
   DropBlockVariant,
 } from '../../constants/enums';
 import motionGraphicsCardsBlockData, { motionGraphicsCardsHeading } from './data/motionGraphicsCardsBlockData';
@@ -32,6 +31,13 @@ import { IPageBlogs } from '../../interfaces/IPages';
 import MotionGraphicsFaqData from './components/MotionGraphicsFaqData';
 import TrustUsBlock from '../MainPage/components/TrustUsBlock';
 import MotionMainBlock from './components/MotionMainBlock';
+import ButtonTypes from '../../constants/ButtonTypes';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import motionGraphicsDesignServicesData from './data/motionGraphicsDesignServicesData';
+import { trustUsBlockFor6Cards } from 'constants/tailwindStyle';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import IAchievements from '../../interfaces/IAchievements';
+
 import CaseStudiesBg from '@/images/caseStudiesBlock/img_bottomBg.webp';
 import MotionGraphicsCtaSecond from '@/images/motionGraphics/cta/img_CtaSecond@2x.webp';
 import MotionGraphicsCtaSecondTablet from '@/images/motionGraphics/cta/img_CtaSecondTablet@2x.webp';
@@ -40,18 +46,12 @@ import MotionGraphicsCtaTellUs from '@/images/motionGraphics/cta/img_CtaTellUs@2
 import MotionGraphicsCtaTellUsTablet from '@/images/motionGraphics/cta/img_CtaTellUsTablet@2x.webp';
 import MotionGraphicsCtaTellUsMobile from '@/images/motionGraphics/cta/img_CtaTellUsMobile@2x.webp';
 import IosContactUsBigBg1 from '@/images/iosPage/img_contact_us_big_bg1@2x.webp';
-import ButtonTypes from '../../constants/ButtonTypes';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import motionGraphicsDesignServicesData from './data/motionGraphicsDesignServicesData';
-import { trustUsBlockFor6Cards } from 'constants/tailwindStyle';
 import DedicatedTeamCaseStudiesBgMobile from '@/images/dedicatedTeamPage/img_case_studies_bg_mobile@2x.webp';
 import DedicatedTeamCaseStudiesBgTablet from '@/images/dedicatedTeamPage/img_dedicated_team_case_sudies_tablet_bg@2x.webp';
 import DedicatedTeamCaseStudiesBg from '@/images/dedicatedTeamPage/img_dedicated_team_case_sudies_bg@2x.webp';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
-
 import styles from './sass/MotionGraphicsDesignServicesPageView.module.scss';
 
-function MotionGraphicsDesignServicesPageView({ pageBlogs }: IPageBlogs) {
+function MotionGraphicsDesignServicesPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isMDDevice,
@@ -106,7 +106,7 @@ function MotionGraphicsDesignServicesPageView({ pageBlogs }: IPageBlogs) {
         }}
       />
       <MotionGraphicsNumbersBlock />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <ReviewBlock
         quotesList={motionGraphicsQuotesList}
       />
@@ -166,11 +166,13 @@ function MotionGraphicsDesignServicesPageView({ pageBlogs }: IPageBlogs) {
         title="What you get with our motion graphics design services"
         dropBlockBtnTitle={motionGraphicsCardsHeading}
         data={motionGraphicsCardsBlockData}
-        variant={CardBlockVariant.MOTION_GRAPHICS}
         dropBlockVariant={DropBlockVariant.WITHOUT_DROP_BLOCK}
         classes={{
-          cardClasses: {
-            card: trustUsBlockFor6Cards,
+          sectionTitle: 'min-md:!mb-[60px] min-xl:!max-w-[1000px] min-xl:!mb-[40px]',
+          CardsBlockClasses: {
+            cardClasses: {
+              card: trustUsBlockFor6Cards,
+            },
           },
         }}
       />

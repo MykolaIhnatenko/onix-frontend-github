@@ -75,6 +75,7 @@ function MainBlockWith2TextBtn({
         <ImageComponent
           className="absolute inset-0 w-full h-full object-cover"
           src={rightImg}
+          alt="Right Image"
           priority
         />
       </div>

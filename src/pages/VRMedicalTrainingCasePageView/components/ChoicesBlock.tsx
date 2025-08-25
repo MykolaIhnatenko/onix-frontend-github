@@ -6,10 +6,10 @@ import PageContainer from '../../../components/PageContainer/PageContainer';
 import VRARContent from '../../../components/VRARContent/VRARContent';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import { firstColumnData, secondColumnData } from '../data/choicesBlockData';
+
 import Bg from '@/images/vrMedicalTrainingCasePage/choicesBlock/img_choices_bg.webp';
 import BgTablet from '@/images/vrMedicalTrainingCasePage/choicesBlock/img_choices_bg_tablet.webp';
 import BgMobile from '@/images/vrMedicalTrainingCasePage/choicesBlock/img_choices_bg_mobile.webp';
-
 import styles from '../sass/choicesBlock.module.scss';
 
 function ChoicesBlock() {

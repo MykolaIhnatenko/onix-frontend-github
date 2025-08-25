@@ -3,15 +3,15 @@ import { useMemo } from 'react';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import IndustriesResultsItem from './CrossPlatformResultsItem';
-import CrossPlatformCTAIdeas from '@/images/crossplatformDesign/img_cta_cross_ideas@2x.webp';
-import CrossPlatformCTAIdeasTablet from '@/images/crossplatformDesign/img_cta_cross_ideas_tablets@2x.webp';
-import CrossPlatformCTAIdeasMobile from '@/images/crossplatformDesign/img_cta_cross_ideas_mobile@2x.webp';
 import resultsData from '../data/resultsData.json';
 import useWindowSize from '../../../hook/useWindowSize';
 import { MD_DEVICE, XL_DEVICE } from '../../../constants/constants';
 import CallToActionComponent from '../../../components/CallToActionBlock/CallToActionComponent';
 import ImageComponent from '../../../components/Image/Image';
 
+import CrossPlatformCTAIdeasMobile from '@/images/crossplatformDesign/img_cta_cross_ideas_mobile@2x.webp';
+import CrossPlatformCTAIdeasTablet from '@/images/crossplatformDesign/img_cta_cross_ideas_tablets@2x.webp';
+import CrossPlatformCTAIdeas from '@/images/crossplatformDesign/img_cta_cross_ideas@2x.webp';
 import styles from '../sass/CrossPlatformResultsSection.module.scss';
 
 function CrossPlatformResultsSection() {

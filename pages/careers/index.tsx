@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import getSeoData from '../../src/api/getSeoData';
 import getCareerList from '../../src/api/getCareerList';
-import { getBreadcrumbsData } from '../../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../../src/utils/helperHandlerPages';
 import CareersView from '../../src/pages/Careers/CareersView';
 import Layout from '../../src/layout/Layout';
 import PageToSalesChannels from '../../src/constants/PageToSalesChannels';
@@ -15,7 +15,7 @@ import getDepartments from '../../src/api/getDepartments';
 import getFooterContent from 'api/getFooterContent';
 
 function CareersPage({
-  seoData, careerList, departments, hotJobs, footerContent,
+  seoData, careerList, departments, footerContent,
 }: ICareerPage) {
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.ONIX, TitlePages.CAREER);
   const [chosenDepartment, setChosenDepartment] = useState<ICareerDepartment>({ value: 'all', label: 'All' });
@@ -54,7 +54,6 @@ function CareersPage({
         departmentList={departmentList}
         chosenDepartment={chosenDepartment}
         setChosenDepartment={setChosenDepartment}
-        hotJobs={hotJobs}
       />
     </Layout>
   );
@@ -72,7 +71,6 @@ export async function getStaticProps() {
 
   const careerList = await getCareerList();
   const departments = await getDepartments();
-  const hotJobs = careerList.length > 0 ? careerList.filter((el) => el?.attributes?.hotJob) : [];
 
   return {
     props: {
@@ -80,7 +78,6 @@ export async function getStaticProps() {
       footerContent,
       careerList,
       departments,
-      hotJobs,
     },
   };
 }

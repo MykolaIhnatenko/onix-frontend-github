@@ -8,10 +8,10 @@ import MainTitle from '../../../../components/MainTitle/MainTitle';
 import digitalHealthcareUniqueness from '../data/digitalHealthcareUniqueness';
 import IStore from '../../../../store/interfaces/IStore';
 import { IApp } from '../../../../store/app/interfaces/IApp';
+
 import mainImg from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/uniquenessSection/img_bg@2x.webp';
 import mainImgTablet from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/uniquenessSection/img_bg-tablet@2x.webp';
 import mainImgMobile from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/uniquenessSection/img_bg-mobile@2x.webp';
-
 import styles from '../sass/gatherGroupUniquenessSection.module.scss';
 
 function GatherGroupUniquenessSection() {

@@ -17,10 +17,12 @@ import coreTechnologyData from './data/coreTechnologyData';
 import trustUsBlockData from './data/trustUsBlockData.json';
 import {
   ButtonType,
-  CardBlockVariant,
 } from '../../constants/enums';
 import resultsBlockDataSecond from './data/resultsBlockDataSecond';
 import IPageStatus from 'interfaces/IPageStatus';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import resultsBlockWhite from 'constants/tailwindStyle';
+
 import ApplicationCoreTechnologyMobileBg from '@/images/applicationMigrationCaseStudies/coreTechnology/img_CoreTechnologyMobileBg@2x.webp';
 import ApplicationCoreTechnologyTabletBg from '@/images/applicationMigrationCaseStudies/coreTechnology/img_CoreTechnologyTabletBg@2x.webp';
 import ApplicationCoreTechnologyBg from '@/images/applicationMigrationCaseStudies/coreTechnology/img_CoreTechnologyBg@2x.webp';
@@ -33,8 +35,6 @@ import ApplicationDevelopmentServicesFirstTabletBg from '@/images/applicationMig
 import ApplicationDevelopmentServicesFirstMobileBg from '@/images/applicationMigrationCaseStudies/developmentServices/img_developmentServicesFirstMobileBg@2x.webp';
 import ApplicationTrustUsBlockTablet from '@/images/applicationMigrationCaseStudies/trustUsBlock/img_trustUsBlockTabletBg@2x.webp';
 import ApplicationTrustUsBlockMobile from '@/images/applicationMigrationCaseStudies/trustUsBlock/img_trustUsBlockMobileBg@2x.webp';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import resultsBlockWhite from 'constants/tailwindStyle';
 
 function ApplicationMigrationCaseStudies({ saleUrl }: IPageStatus) {
   const {
@@ -94,7 +94,6 @@ function ApplicationMigrationCaseStudies({ saleUrl }: IPageStatus) {
           data={trustUsBlockData}
           title="How AWS solves these issues"
           withoutAnimate={false}
-          variant={CardBlockVariant.APPLICATION}
           dropBlockTitle="Migrating to AWS offers greater flexibility, scalability,
             functionality, and cost savings than Heroku."
           withBtn={false}
@@ -102,17 +101,22 @@ function ApplicationMigrationCaseStudies({ saleUrl }: IPageStatus) {
           trustUsBlockBg={ApplicationTrustUsBlockMobile}
           tabletBg={ApplicationTrustUsBlockTablet}
           saleUrl={saleUrl || false}
+          isPInDropBlockTitle
           classes={{
-            dropBlock: `!bg-transparent !w-full !flex-[100%] !relative !z-[2] !p-[60px_160px_120px]
-            !justify-between !h-auto screen-xl:!p-[40px_30px_80px] screen-md:!p-[30px_15px_80px]`,
-            dropBlockTitle: `!max-w-none !text-black !font-ibmPlexMono !text-[32px] !leading-[45px]
-            !font-normal screen-xl:!text-[24px] screen-xl:!leading-[33px] screen-xl:!p-0
-            screen-xl:!text-left screen-md:!text-[20px] screen-md:!leading-[28px]`,
-            cardClasses: {
-              card: `screen-lg:!h-[470px] screen-md:!h-[500px] [&:nth-of-type(6)]:!border-b-[2px]
-              [&:nth-of-type(6)]:!border-black min-md:[&:nth-of-type(5)]:!border-b-[2px]
-              min-md:[&:nth-of-type(5)]:!border-black min-xl:[&:nth-of-type(4)]:!border-b-[2px]
-              min-xl:[&:nth-of-type(4)]:!border-black`,
+            container: 'screen-md:!pt-[80px]',
+            sectionTitle: '!mb-[40px] screen-md:!mb-[30px]',
+            CardsBlockClasses: {
+              dropBlock: `!bg-transparent !w-full !flex-[100%] !relative !z-[2] !p-[60px_160px_120px]
+              !justify-between !h-auto screen-xl:!p-[40px_30px_80px] screen-md:!p-[30px_15px_80px]`,
+              dropBlockTitle: `!max-w-none !text-black !font-ibmPlexMono !text-[32px] !leading-[45px]
+              !font-normal screen-xl:!text-[24px] screen-xl:!leading-[33px] screen-xl:!p-0
+              screen-xl:!text-left screen-md:!text-[20px] screen-md:!leading-[28px]`,
+              cardClasses: {
+                card: `screen-lg:!h-[470px] screen-md:!h-[500px] [&:nth-of-type(6)]:!border-b-[2px]
+                [&:nth-of-type(6)]:!border-black min-md:[&:nth-of-type(5)]:!border-b-[2px]
+                min-md:[&:nth-of-type(5)]:!border-black min-xl:[&:nth-of-type(4)]:!border-b-[2px]
+                min-xl:[&:nth-of-type(4)]:!border-black`,
+              },
             },
           }}
         />

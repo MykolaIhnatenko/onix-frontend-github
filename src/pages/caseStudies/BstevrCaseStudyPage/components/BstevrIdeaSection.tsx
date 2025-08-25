@@ -1,11 +1,11 @@
 import BstevrContentBlock from './BstevrContentBlock';
 import VRARContent from '../../../../components/VRARContent/VRARContent';
 import ImageComponent from '../../../../components/Image/Image';
+
 import IdeaPic from '@/images/BstevrCaseSudy/img_PicTheIdea.webp';
 import Baller from '@/images/BstevrCaseSudy/img_baller.webp';
 import Sportsman from '@/images/BstevrCaseSudy/img_sportsman.webp';
 import PicBg from '@/images/BstevrCaseSudy/img_PicBg.webp';
-
 import styles from '../sass/bstevrContentBlock.module.scss';
 
 function BstevrIdeaSection() {

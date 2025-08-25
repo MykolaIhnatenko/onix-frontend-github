@@ -1,12 +1,13 @@
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+
 import AboutUkraineOurExpertie1 from '@/images/aboutUkraine/ourExpertise/img_our_expertise1.webp';
 import AboutUkraineOurExpertie2 from '@/images/aboutUkraine/ourExpertise/img_our_expertise2.webp';
 import AboutUkraineOurExpertie3 from '@/images/aboutUkraine/ourExpertise/img_our_expertise3.webp';
 import AboutUkraineOurExpertie4 from '@/images/aboutUkraine/ourExpertise/img_our_expertise4.webp';
 import AboutUkraineOurExpertie5 from '@/images/aboutUkraine/ourExpertise/img_our_expertise5.webp';
 import AboutUkraineOurExpertie6 from '@/images/aboutUkraine/ourExpertise/img_our_expertise6.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
 
 const aboutUkraineOurExpertiseSectionContentData: IAccordionData[] = [
   {

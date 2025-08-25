@@ -28,11 +28,13 @@ import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import { IPageBlogs } from '../../interfaces/IPages';
 import {
-  CardBlockVariant,
-  AndroidAppEngagementModelsVariant,
   ButtonPathVariant,
   ButtonType,
 } from '../../constants/enums';
+import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+
 import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import TellUsAboutMD from '@/images/img_tell_us_about_md@2x.webp';
 import TellUsAboutSM from '@/images/img_tell_us_about_sm@2x.webp';
@@ -49,14 +51,9 @@ import WebDesignCTASecondMobileBg from '@/images/webDesignPage/callToAction/img_
 import WebDesignTrustUsBlockBg from '@/images/webDesignPage/trustUsBlock/img_trust_us_block_bg.webp';
 import IndustriesMainBgBigDesc from '@/images/industriesPage/img_industries_main_bgBigDesc@2x.webp';
 import WebDesignCTAFirstBigBg from '@/images/webDesignPage/callToAction/img_cta_first_big_bg@2x.webp';
-import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
 import WebDesignCaseStudiesBlockMobileBg from '@/images/webDesignPage/caseStudies/img_case_studies_mobile_bg@2x.webp';
 import WebDesignCaseStudiesBlockBg from '@/images/webDesignPage/caseStudies/img_case_studies_bg@2x.webp';
 import WebDesignCaseStudiesBlockTabletBg from '@/images/webDesignPage/caseStudies/img_case_studies_tablet_bg@2x.webp';
-
-import stylesTrust from './sass/webDesignTrustUsBlock.module.scss';
 
 function WebDesignAndDevelopmentPageView({ pageBlogs }: IPageBlogs) {
   const {
@@ -110,7 +107,13 @@ function WebDesignAndDevelopmentPageView({ pageBlogs }: IPageBlogs) {
         data={webDesignTrustUsCardsData}
         title="Offshore Website Development Services We Offer"
         subtitle={(
-          <ContentText tag="p" className={stylesTrust.text}>
+          <ContentText
+            tag="p"
+            className={`relative z-[1] !m-0 pl-[70px] pb-[60px] max-w-[872px] 
+              min-xxxl:pl-[80px] 
+              screen-lg:pl-[30px] screen-lg:max-w-[648px] 
+              screen-md:pl-[15px] screen-md:text-[18px] screen-md:leading-[26px]`}
+          >
             Web development services at Onix comprise well-established methodologies and a vast
             experience in conveying working and viable web solutions. Build a solid product with
             our top-notch web development services:
@@ -118,38 +121,41 @@ function WebDesignAndDevelopmentPageView({ pageBlogs }: IPageBlogs) {
         )}
         dropBlockBtnTitle="Contact us"
         dropBlockTitle="Sounds interesting? Share your product idea with our expert team."
-        variant={CardBlockVariant.WEB_DESIGN}
         dropBlockText="Talk to our experts and get a free consultation."
         dropBlockBgVariant={WebDesignTrustUsBlockBg}
         idBtn={ButtonType.LAND2}
         classes={{
-          dropBlock:
-            `!flex-[66.6666%] !p-[30px] screen-xl-1:!p-[80px_30px] screen-xl-1:!h-auto
-            screen-lg:!h-[420px] screen-md:!p-[20px_20px_40px] screen-sm:!h-[430px]`,
-          dropBlockTitle:
-            `!text-[36px] !leading-[46px] !pb-[30px] !max-w-[667px] screen-xl-1:!pb-[40px]
-            screen-xl-1:!text-[40px] screen-xl-1:!leading-[56px] screen-md:!pb-[20px]
-            screen-md:!text-[25px] screen-md:!leading-[35px]`,
-          dropBlockText:
-            `!relative !z-[2] !m-0 !text-white !max-w-[340px] !text-[20px] !leading-[28px]
-            screen-xl-1:!mx-auto screen-xl-1:!pb-[40px] screen-xl-1:!max-w-[667px]
-            screen-xl-1:!text-center screen-md:!text-start screen-md:!mx-0`,
-          buttonWrapper:
-            `!max-w-[420px] screen-xl-1:!max-w-[320px] screen-xl-1:!mx-auto screen-lg:!max-w-[320px]
-            screen-md:!min-h-[56px] screen-md:!w-full screen-md:!m-0`,
-          button:
-            '!max-w-[538px] screen-xl-1:!min-w-[320px] screen-md:!m-0 screen-md:!min-w-auto',
-          cardClasses: {
-            card:
-              `screen-lg:!h-[420px] screen-sm:!h-[430px] [&:nth-child(7)]:!border-b-0
-              [&:nth-child(8)]:!border-b-0 [&:nth-child(10)]:!border-b-[2px]
-              [&:nth-child(10)]:!border-black screen-xl-1:[&:nth-child(10)]:!border-b-0`,
-            title:
-              `!text-[36px] !leading-[34px] screen-lg:!text-[24px] screen-lg:!leading-[32px]
-              screen-md:!text-[20px] screen-md:!leading-[26px]`,
-            boxText:
-              `!pr-[5px] screen-xxl:!text-[18px] screen-xxl:!leading-[24px] screen-xl-1:!text-[16px]
-              screen-xl-1:!leading-[24px] screen-md:!text-[14px] screen-md:!leading-[20px]`,
+          sectionTitle: `!mb-[40px] !max-w-[850px] screen-lg:!max-w-[708px]
+          screen-md:!mb-[30px] screen-md:!max-w-[314px]`,
+          CardsBlockClasses: {
+            dropBlock:
+              `!flex-[66.6666%] !p-[30px] screen-xl-1:!p-[80px_30px] screen-xl-1:!h-auto
+              screen-lg:!h-[420px] screen-md:!p-[20px_20px_40px] screen-sm:!h-[430px]`,
+            dropBlockTitle:
+              `!text-[36px] !leading-[46px] !pb-[30px] !max-w-[667px] screen-xl-1:!pb-[40px]
+              screen-xl-1:!text-[40px] screen-xl-1:!leading-[56px] screen-md:!pb-[20px]
+              screen-md:!text-[25px] screen-md:!leading-[35px]`,
+            dropBlockText:
+              `!relative !z-[2] !m-0 !text-white !max-w-[340px] !text-[20px] !leading-[28px]
+              screen-xl-1:!mx-auto screen-xl-1:!pb-[40px] screen-xl-1:!max-w-[667px]
+              screen-xl-1:!text-center screen-md:!text-start screen-md:!mx-0`,
+            buttonWrapper:
+              `!max-w-[420px] screen-xl-1:!max-w-[320px] screen-xl-1:!mx-auto screen-lg:!max-w-[320px]
+              screen-md:!min-h-[56px] screen-md:!w-full screen-md:!m-0`,
+            button:
+              '!max-w-[538px] screen-xl-1:!min-w-[320px] screen-md:!m-0 screen-md:!min-w-auto',
+            cardClasses: {
+              card:
+                `screen-lg:!h-[420px] screen-sm:!h-[430px] [&:nth-child(7)]:!border-b-0
+                [&:nth-child(8)]:!border-b-0 [&:nth-child(10)]:!border-b-[2px]
+                [&:nth-child(10)]:!border-black screen-xl-1:[&:nth-child(10)]:!border-b-0`,
+              title:
+                `!text-[36px] !leading-[34px] screen-lg:!text-[24px] screen-lg:!leading-[32px]
+                screen-md:!text-[20px] screen-md:!leading-[26px]`,
+              boxText:
+                `!pr-[5px] screen-xxl:!text-[18px] screen-xxl:!leading-[24px] screen-xl-1:!text-[16px]
+                screen-xl-1:!leading-[24px] screen-md:!text-[14px] screen-md:!leading-[20px]`,
+            },
           },
         }}
       />
@@ -238,7 +244,9 @@ function WebDesignAndDevelopmentPageView({ pageBlogs }: IPageBlogs) {
         secondItemImg={webDesignEngagementModelsData.secondItemImg}
         secondItemImgTablet={webDesignEngagementModelsData.secondItemImgTablet}
         secondItemImgMobile={webDesignEngagementModelsData.secondItemImgMobile}
-        variant={AndroidAppEngagementModelsVariant.WEB_DESIGN}
+        classes={{
+          contentContainer: '!pt-0',
+        }}
       />
       <CallToActionComponent
         background={getBackground().callToActionSecond}

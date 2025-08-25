@@ -5,8 +5,8 @@ import ImageComponent from 'components/Image/Image';
 import GuideSection from './GuideSection';
 import PageLinks from 'constants/PageLinks';
 import IPageStatus from '../../../interfaces/IPageStatus';
-import ProjectImage from '@/images/MarineSafetyPage/img_project-img-tablet.webp';
 
+import ProjectImage from '@/images/MarineSafetyPage/img_project-img-tablet.webp';
 import styles from '../sass/MarineSafety.module.scss';
 
 function ProjectSection({ saleUrl }: IPageStatus) {

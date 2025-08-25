@@ -4,7 +4,7 @@ import Layout from '../src/layout/Layout';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { BreadcrumbsVariant, TitlePages } from '../src/constants/enums';
 import { getGoogleReview, getLatestBlogs } from '../src/api/api';
 import IPages from '../src/interfaces/IPages';

@@ -1,3 +1,11 @@
+import PageLinks from '../constants/PageLinks';
+import CaseStudiesSeeAllCases from '../components/CaseStudiesSeeAllCases/CaseStudiesSeeAllCases';
+import CaseStudiesSeeAllCasesSmall from '../components/CaseStudiesSeeAllCasesSmall/CaseStudiesSeeAllCasesSmall';
+import CaseStudyCarouselItem from 'components/CaseStudyCarouselItem/CaseStudyCarouselItem';
+import CaseStudyCarouselItemSmall from 'components/CaseStudyCarouselItemSmall/CaseStudyCarouselItemSmall';
+import { ICaseStudiesData } from 'components/CaseStudyCarouselItem/interfaces/ICaseStudyCarouselItem';
+import CaseStudyVideoCarouselItem from 'components/CaseStudyVideoCarouselItem/CaseStudyVideoCarouselItem';
+
 import InnerVRLogo from '@/images/caseStudies/img_innerVRLogo.webp';
 import InnerVRBg from '@/images/caseStudies/img_innerVRBg@2x.webp';
 import InnerVRBgTablet from '@/images/caseStudies/img_innerVRBgTablet@2x.webp';
@@ -277,10 +285,27 @@ import AnalyticsBg from '@/images/caseStudies/analytics/img_analyticsBg.webp';
 import AnalyticsBgTablet from '@/images/caseStudies/analytics/img_analyticsBgTablet.webp';
 import AnalyticsBgMobile from '@/images/caseStudies/analytics/img_analyticsBgMobile.webp';
 import AnalyticsLogo from '@/images/caseStudies/analytics/img_analyticsLogo.webp';
-import PageLinks from '../constants/PageLinks';
-import CaseStudiesSeeAllCases from '../components/CaseStudiesSeeAllCases/CaseStudiesSeeAllCases';
-import CaseStudyCarouselItem from 'components/CaseStudyCarouselItem/CaseStudyCarouselItem';
-import { ICaseStudiesData } from 'components/CaseStudyCarouselItem/interfaces/ICaseStudyCarouselItem';
+import GolfVideoBg from '@/images/caseStudies/img_golfCaseStudyVideoBg@2x.webp';
+import GolfVideoBgTablet from '@/images/caseStudies/img_golfCaseStudyVideoTabletBg@2x.webp';
+import GolfVideoBgMobile from '@/images/caseStudies/img_golfCaseStudyVideoMobileBg@2x.webp';
+import GolfVideoLogo from '@/images/caseStudies/img_golfCaseStudyVideoLogo@2x.webp';
+import VyraVideoLogo from '@/images/caseStudies/img_vyraVideoLogo@2x.webp';
+import VyraVideoBg from '@/images/caseStudies/img_vyraVideoBg@2x.webp';
+import VyraVideoBgTablet from '@/images/caseStudies/img_vyraVideoTabletBg@2x.webp';
+import VyraVideoBgMobile from '@/images/caseStudies/img_vyraVideoMobileBg@2x.webp';
+import PhlexVideoLogo from '@/images/caseStudies/img_phlexVideoLogo@2x.webp';
+import PhlexVideoBg from '@/images/caseStudies/img_phlexVideoBg@2x.webp';
+import PhlexVideoBgTablet from '@/images/caseStudies/img_phlexVideoTabletBg@2x.webp';
+import PhlexVideoBgMobile from '@/images/caseStudies/img_phlexVideoMobileBg@2x.webp';
+import AdoricVideoLogo from '@/images/caseStudies/img_adoricVideoLogo@2x.webp';
+import AdoricVideoBg from '@/images/caseStudies/img_adoricVideoBg@2x.webp';
+import AdoricVideoBgTablet from '@/images/caseStudies/img_adoricVideoTabletBg@2x.webp';
+import AdoricVideoBgMobile from '@/images/caseStudies/img_adoricVideoMobileBg@2x.webp';
+import ProductScopeLogoSmall from '@/images/caseStudies/img_productScopeLogoSmall.webp';
+import HCPLogo from '@/images/caseStudies/img_HCP_Logo.webp';
+import HCPBg from '@/images/caseStudies/img_HCP_bg.webp';
+import HCPBgTablet from '@/images/caseStudies/img_HCP_bg_tablet.webp';
+import HCPBgMobile from '@/images/caseStudies/img_HCP_bg_mobile.webp';
 
 export const caseStudiesData: ICaseStudiesData[] = [
   {
@@ -474,7 +499,7 @@ export const caseStudiesData: ICaseStudiesData[] = [
   {
     id: 5,
     content: <CaseStudyCarouselItem
-      id="caseStudyIdentificator_3"
+      id="caseStudyIdentificator_5"
       icon={ManiLogo}
       logoSizes={{
         lg: {
@@ -2659,11 +2684,11 @@ export const caseStudiesData: ICaseStudiesData[] = [
       logoSizes={{
         lg: {
           width: 320,
-          height: 42,
+          height: 60,
         },
         sm: {
-          width: 165,
-          height: 24,
+          width: 213,
+          height: 40,
         },
       }}
       img={{
@@ -2697,6 +2722,7 @@ export const caseStudiesData: ICaseStudiesData[] = [
       url={PageLinks.TRAVEL_MARKETPLACE_DESIGN_CASE_STUDY}
       eyeBlackStyle
       eyeBlackStyleMobile
+      cucumberVariant
     />,
   },
   {
@@ -2952,12 +2978,12 @@ export const caseStudiesData: ICaseStudiesData[] = [
       icon={SolomiyaLogo}
       logoSizes={{
         lg: {
-          width: 194,
-          height: 42,
+          width: 320,
+          height: 60,
         },
         sm: {
-          width: 129,
-          height: 28,
+          width: 214,
+          height: 40,
         },
       }}
       img={{
@@ -3003,12 +3029,12 @@ export const caseStudiesData: ICaseStudiesData[] = [
       icon={TravelTailLogo}
       logoSizes={{
         lg: {
-          width: 247,
-          height: 39,
+          width: 320,
+          height: 60,
         },
         sm: {
-          width: 165,
-          height: 26,
+          width: 213,
+          height: 40,
         },
       }}
       img={{
@@ -3045,6 +3071,7 @@ export const caseStudiesData: ICaseStudiesData[] = [
       )}
       data={['Sweden', 'Travel']}
       url={PageLinks.PET_TRAVEL_PLATFORM_DEVELOPMENT_CASE_STUDY}
+      cucumberVariant
       eyeBlackStyle
       eyeBlackStyleMobile
     />,
@@ -3515,6 +3542,363 @@ export const caseStudiesData: ICaseStudiesData[] = [
       data={['Ireland', 'EdTech']}
       url={PageLinks.VYRA_CASE_STUDY}
     />,
+  },
+  {
+    id: 71,
+    content: <CaseStudyVideoCarouselItem
+      id="caseStudyVideoIdentificator_71"
+      videoId={71}
+      icon={GolfVideoLogo}
+      logoSizes={{
+        xxl: {
+          width: 320,
+          height: 60,
+        },
+        lg: {
+          width: 213,
+          height: 40,
+        },
+        sm: {
+          width: 107,
+          height: 20,
+        },
+      }}
+      img={{
+        sm: GolfVideoBgMobile,
+        md: GolfVideoBgTablet,
+        lg: GolfVideoBg,
+      }}
+      title="Online Golf Coaching App"
+      text="From a broken vendor handoff to a scalable platform."
+      clients={[
+        {
+          name: 'Keith Scioli',
+          position: 'CEO and founder, Golf Live',
+        },
+      ]}
+      cucumbersData={{
+        duration: '2+ years',
+        teamSize: '8 developers',
+      }}
+      btnText="More about project"
+      videoSrc="/static/video/golf-live.mp4"
+      url={PageLinks.GOLF_LIVE_CASE_STUDY}
+    />,
+  },
+  {
+    id: 72,
+    content: <CaseStudyVideoCarouselItem
+      id="caseStudyVideoIdentificator_72"
+      videoId={72}
+      icon={VyraVideoLogo}
+      logoSizes={{
+        xxl: {
+          width: 320,
+          height: 60,
+        },
+        lg: {
+          width: 213,
+          height: 40,
+        },
+        sm: {
+          width: 107,
+          height: 20,
+        },
+      }}
+      img={{
+        sm: VyraVideoBgMobile,
+        md: VyraVideoBgTablet,
+        lg: VyraVideoBg,
+      }}
+      title="Learning Platform Development"
+      text="From MVP to a full-scale B2B solution."
+      clients={[
+        {
+          name: 'Eoin Le Masney',
+          position: 'CTO, Vyra',
+        },
+        {
+          name: 'Jack Dwyer',
+          position: 'CEO, Vyra',
+        },
+      ]}
+      cucumbersData={{
+        duration: '4+ years',
+        teamSize: '9 developers',
+      }}
+      btnText="More about project"
+      videoSrc="/static/video/vyra.mp4"
+      url={PageLinks.VYRA_CASE_STUDY}
+    />,
+  },
+  {
+    id: 73,
+    content: <CaseStudyVideoCarouselItem
+      id="caseStudyVideoIdentificator_73"
+      videoId={73}
+      icon={AdoricVideoLogo}
+      logoSizes={{
+        xxl: {
+          width: 320,
+          height: 60,
+        },
+        lg: {
+          width: 213,
+          height: 40,
+        },
+        sm: {
+          width: 107,
+          height: 20,
+        },
+      }}
+      img={{
+        sm: AdoricVideoBgMobile,
+        md: AdoricVideoBgTablet,
+        lg: AdoricVideoBg,
+      }}
+      title="SaaS Marketing Platform"
+      text="From bug-fixes to a complete product rescue."
+      clients={[
+        {
+          name: 'Tal Revivo',
+          position: 'CEO and founder, Adoric',
+        },
+      ]}
+      cucumbersData={{
+        duration: '10+ years',
+        teamSize: '10 developers',
+      }}
+      btnText="More about project"
+      videoSrc="/static/video/tal-revivo.mp4"
+      url={PageLinks.SAAS_MARKETING_PLATFORM_CASE_STUDY}
+    />,
+  },
+  {
+    id: 74,
+    content: <CaseStudyVideoCarouselItem
+      id="caseStudyVideoIdentificator_74"
+      videoId={74}
+      icon={PhlexVideoLogo}
+      logoSizes={{
+        xxl: {
+          width: 320,
+          height: 60,
+        },
+        lg: {
+          width: 213,
+          height: 40,
+        },
+        sm: {
+          width: 107,
+          height: 20,
+        },
+      }}
+      img={{
+        sm: PhlexVideoBgMobile,
+        md: PhlexVideoBgTablet,
+        lg: PhlexVideoBg,
+      }}
+      title="Smart Swim Training Tracker"
+      text="From concept to a community-loved app."
+      clients={[
+        {
+          name: 'Ryan Rosenbaum',
+          position: 'CPO, Phlex',
+        },
+      ]}
+      cucumbersData={{
+        duration: '3+ years',
+        teamSize: '9 developers',
+      }}
+      btnText="More about project"
+      videoSrc="/static/video/phlex.mp4"
+      url={PageLinks.PHLEX_CASE_STUDY}
+    />,
+  },
+  {
+    id: 75,
+    content: <CaseStudyCarouselItemSmall
+      id="caseIdentificator_75"
+      icon={MisterbbLogo}
+      logoSizes={{
+        lg: { width: 320, height: 60 },
+        sm: { width: 213, height: 40 },
+      }}
+      img={{
+        sm: MisterbbMobileBg,
+        md: MisterbbTabletBg,
+        lg: MisterbbBg,
+      }}
+      title="From broken code to global success"
+      solution={(
+        <>
+          Onix rebuilt the platform with modern tech, new features, and performance at scale.
+        </>
+      )}
+      result={(
+        <>
+          1 M+ listings in 200+ countries, Forbes-featured as the “gay Airbnb”, 900 K+ members.
+        </>
+      )}
+      data={['France', 'Tourism']}
+      url={PageLinks.MISTERBNB_CASE_STUDY}
+    />,
+  },
+  {
+    id: 76,
+    content: <CaseStudyCarouselItemSmall
+      id="caseIdentificator_76"
+      icon={DigitalHealthLogo}
+      logoSizes={{
+        lg: { width: 293, height: 60 },
+        sm: { width: 196, height: 40 },
+      }}
+      img={{
+        sm: DigitalHealthMobileBg,
+        md: DigitalHealthTabletBg,
+        lg: DigitalHealthBg,
+      }}
+      title="From an outdated system to modern care"
+      solution={(
+        <>
+          We launched branded apps, added AI-powered automation, and rebuilt the architecture.
+        </>
+      )}
+      result={(
+        <>
+          A white-label telehealth platform improving care and reducing errors.
+        </>
+      )}
+      data={['Australia', 'Healthcare']}
+      cucumberVariant
+      url={PageLinks.DIGITAL_HEALTHCARE_AT_HOME_CASE_STUDY}
+    />,
+  },
+  {
+    id: 77,
+    content: <CaseStudyCarouselItemSmall
+      id="caseIdentificator_77"
+      icon={StridistLogo}
+      logoSizes={{
+        lg: { width: 260, height: 60 },
+        sm: { width: 174, height: 40 },
+      }}
+      img={{
+        sm: StridistMobileBg,
+        md: StridistTabletBg,
+        lg: StridistTabletBg,
+      }}
+      title="From scaling issues to seamless coaching"
+      solution={(
+        <>
+          Onix fixed architecture, UX, and payments to launch a sleek, scalable SaaS for fitness pros.
+        </>
+      )}
+      result={(
+        <>
+          A thriving platform used by countless coaches and clients.
+        </>
+      )}
+      data={['USA', 'Sports & Fitness']}
+      url={PageLinks.STRIDIST_CASE_STUDY}
+      eyeBlackStyle
+    />,
+  },
+  {
+    id: 78,
+    content: <CaseStudyCarouselItemSmall
+      id="caseIdentificator_78"
+      icon={ProductScopeLogoSmall}
+      logoSizes={{
+        lg: {
+          width: 320,
+          height: 60,
+        },
+        sm: {
+          width: 214,
+          height: 40,
+        },
+      }}
+      img={{
+        sm: ProductScopeMobileBg,
+        md: ProductScopeTabletBg,
+        lg: ProductScopeBg,
+      }}
+      title="From idea to AI-powered skin insights"
+      solution={(
+        <>
+          We built a cross-platform mobile app with advanced computer vision and AI to detect
+          skin issues and analyze cosmetic compatibility.
+        </>
+      )}
+      result={(
+        <>
+          An innovative dermatology tool with 250K+ downloads, 50K+ monthly users, and
+          high user trust—empowering better skincare decisions worldwide.
+        </>
+      )}
+      data={['USA', 'Beauty, Cosmetics']}
+      cucumberVariant
+      url={PageLinks.COSMETICS_ANALYSIS_AI_APP_CASE_STUDY}
+    />,
+  },
+  {
+    id: 79,
+    content: <CaseStudyCarouselItem
+      id="caseStudyIdentificator_79"
+      icon={HCPLogo}
+      cucumberVariant
+      eyeBlackStyle
+      eyeBlackStyleMobile
+      logoSizes={{
+        lg: {
+          width: 320,
+          height: 60,
+        },
+        sm: {
+          width: 214,
+          height: 40,
+        },
+      }}
+      img={{
+        sm: HCPBgMobile,
+        md: HCPBgTablet,
+        lg: HCPBg,
+      }}
+      description={(
+        <>
+          The new HCP portal raised
+          {' '}
+          <br />
+          {' '}
+          the support team efficiency
+          {' '}
+          <br />
+          {' '}
+          and provider satisfaction
+        </>
+      )}
+      title={(
+        <>
+          Cutting-edge HCP portal for
+          a&nbsp;state-wide network
+        </>
+      )}
+      subTitle="The new HCP portal raised the support team efficiency and provider satisfaction"
+      text={(
+        <>
+          The portal let customers self-serve operational needs,
+          leading to 3X faster claims/referrals processing and 95%
+          drop in inbound phone calls and emails
+        </>
+      )}
+      data={['USA', 'Healthcare']}
+      url={PageLinks.HEALTHCARE_PORTAL_CASE}
+    />,
+  },
+  {
+    id: 1001,
+    content: <CaseStudiesSeeAllCasesSmall />,
   },
 ];
 

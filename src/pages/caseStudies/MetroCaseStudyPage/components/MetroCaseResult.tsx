@@ -5,11 +5,11 @@ import HalfFilledContactUs from './HalfFilledContactUs';
 import { muktaVaaniFont } from '../../../../fonts/MainFonts';
 import ImageComponent from '../../../../components/Image/Image';
 import IPageStatus from '../../../../interfaces/IPageStatus';
+import { ButtonType } from 'constants/enums';
+
 import GooglePlayImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_googlePlayImage.webp';
 import ContactUsImageV2 from '@/images/caseStudiesPage/MetroCaseStudyPage/img_contactUsImageV2.webp';
 import AppStoreImage from '@/images/caseStudiesPage/MetroCaseStudyPage/img_appStoreImage.webp';
-import { ButtonType } from 'constants/enums';
-
 import styles from '../sass/metroCaseResult.module.scss';
 
 function MetroCaseResult({ saleUrl }: IPageStatus) {

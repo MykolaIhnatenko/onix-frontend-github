@@ -5,10 +5,10 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
 import { firstGameArtHowBuildData, secondGameArtHowBuildData } from '../data/gameArtHowBuildData';
-import PreProduction from '@/images/gameArt/howBuild/img_Pre_Production@2x.webp';
-import Production from '@/images/gameArt/howBuild/img_Production@2x.webp';
 import AccordionBlack from 'components/AccordionBlack/AccordionBlack';
 
+import PreProduction from '@/images/gameArt/howBuild/img_Pre_Production@2x.webp';
+import Production from '@/images/gameArt/howBuild/img_Production@2x.webp';
 import styles from '../sass/gameArtHowBuild.module.scss';
 
 function GameArtHowBuild() {

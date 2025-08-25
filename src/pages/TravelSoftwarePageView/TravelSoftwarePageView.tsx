@@ -30,14 +30,14 @@ import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import ButtonTypes from '../../constants/ButtonTypes';
 import ITravelSoftwarePageView from './interfaces/ITravelSoftwarePageView';
+import IAchievements from '../../interfaces/IAchievements';
 import {
-  AboutColorTextBlockVariant,
-  BenefitsSectionVariant,
   ButtonPathVariant,
   ButtonType,
-  ChooseOnixVariant,
   DropBlockVariant,
 } from '../../constants/enums';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+
 import TravelCallToActionFirst from '@/images/travelHospitalityPage/callToActionBlock/img_TravelCTABg.webp';
 import TravelCallToActionMobileFirst from '@/images/travelHospitalityPage/callToActionBlock/img_TravelCTAMobileBg.webp';
 import TravelCallToActionTabletFirst from '@/images/travelHospitalityPage/callToActionBlock/img_TravelCTATabletBg.webp';
@@ -56,13 +56,11 @@ import BgCaseStudiesMobile from '@/images/travelHospitalityPage/caseStudies/img_
 import TravelHoverAccordionBg from '@/images/travelHospitalityPage/hoverAccordion/img_travelHoverAccordionBg.webp';
 import TravelHoverAccordionBgTablet from '@/images/travelHospitalityPage/hoverAccordion/img_travelHoverAccordionBgTablet.webp';
 import TravelHoverAccordionBgMobile from '@/images/travelHospitalityPage/hoverAccordion/img_travelHoverAccordionBgMobile.webp';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
-
 import travelIndustries from './sass/travelIndustries.module.scss';
 
 function TravelSoftwarePageView({
-  isBannerHidden, pageBlogs,
-}: ITravelSoftwarePageView) {
+  isBannerHidden, pageBlogs, achievements,
+}: ITravelSoftwarePageView & IAchievements) {
   const {
     screenSizes: {
       isSMDevice,
@@ -117,7 +115,9 @@ function TravelSoftwarePageView({
         textSecondBlock="We get the most out of cutting-edge technologies to build reliable travel
          and hospitality solutions that"
         textGraySecondBlock=" accomplish your business goals and keep users satisfied."
-        variant={AboutColorTextBlockVariant.TRAVEL}
+        classes={{
+          secondBlock: '!mt-0',
+        }}
       />
       <TravelHoverAccordion background={getBackground().travelHoverAccordionBg} />
       <CallToActionComponent
@@ -158,7 +158,7 @@ function TravelSoftwarePageView({
           },
         }}
       />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <ReviewBlock
         quotesList={travelQuotesList}
       />
@@ -204,7 +204,12 @@ function TravelSoftwarePageView({
       <BenefitsSection
         title="Using our travel software development services you can:"
         data={travelBenefitsSectionData}
-        variant={BenefitsSectionVariant.TRAVEL}
+        classes={{
+          container: '!bg-black',
+          title: '!w-auto !max-w-[1080px]',
+          cardsBlock: `!grid !gap-x-[30px] !gap-y-[30px] [grid-template-areas:'first_third''second_fourth']
+          screen-lg:!flex screen-lg:!flex-col screen-lg:!gap-[20px] screen-md:!gap-[15px] screen-md:!pb-[60px]`,
+        }}
       />
       <AdvantagesBlock
         blockTitle="Choose what works for you"
@@ -241,7 +246,11 @@ function TravelSoftwarePageView({
          transforms unstructured ideas into technical description documents, "
         textGraySecondBlock="creates working prototypes that visualize the project's concept, and searches
          for the best technology strategies and solutions."
-        variant={AboutColorTextBlockVariant.TRAVEL_SECOND}
+        classes={{
+          containerColorBlock: `!p-[80px_70px_40px] min-xxxl:!p-[80px_80px_40px] screen-lg:!p-[80px_30px_40px]
+          screen-md:!p-[80px_15px_40px]`,
+          secondBlock: '!mt-0',
+        }}
       />
       <ContainerActiveBlocks
         data={travelProcessData}
@@ -289,7 +298,13 @@ function TravelSoftwarePageView({
       <ChooseOnix
         data={travelChooseOnixData}
         title="Why choose Onix as your travel software development company"
-        variant={ChooseOnixVariant.TRAVEL}
+        classes={{
+          container: '!bg-black',
+          title: '!text-white',
+          textItem: `!text-white !text-[24px] !leading-[34px] screen-lg:!w-auto
+          screen-lg:!max-w-[572px] screen-lg:!text-[20px] screen-lg:!leading-[24px] screen-lg:!mb-0`,
+          item: '!text-white !border-b-[2px] !border-white last:!border-b-transparent',
+        }}
       />
       <OurInsights
         pageBlogs={pageBlogs}

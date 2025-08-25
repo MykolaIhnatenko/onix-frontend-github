@@ -8,10 +8,10 @@ import PageContainer from 'components/PageContainer/PageContainer';
 import { IApp } from 'store/app/interfaces/IApp';
 import IStore from 'store/interfaces/IStore';
 import achievementsData from '../data/achievementsData';
+
 import ImageBackground from '@/images/bonus/achievements/img_achievementsBg@2x.webp';
 import ImageBackgroundTablet from '@/images/bonus/achievements/img_achievementsTabletBg@2x.webp';
 import ImageBackgroundMobile from '@/images/bonus/achievements/img_achievementsMobileBg@2x.webp';
-
 import styles from '../sass/achievements.module.scss';
 
 function Achievements() {

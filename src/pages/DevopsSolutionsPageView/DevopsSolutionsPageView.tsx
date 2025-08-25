@@ -29,10 +29,12 @@ import devopsSolutionsFaqData from './data/devopsSolutionsFaqData';
 import devopsSolutionsBenefitsSectionData from './data/devopsSolutionsBenefitsSectionData';
 import devopsSolutionsClickSliderData from './data/devopsSolutionsClickSliderData';
 import {
-  CardBlockVariant,
-  BenefitsSectionVariant,
   ButtonType,
 } from '../../constants/enums';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import IAchievements from '../../interfaces/IAchievements';
+
 import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import TellUsAboutSM from '@/images/img_lastCtaMobile@2x.webp';
 import DevopsSolutionsTechnologiesBg from '@/images/devopsSolutionsPageView/Technologies/img_devopsSolutionsTechnologiesBg@2x.webp';
@@ -42,13 +44,11 @@ import DevopsHoverBenefitsBg from '@/images/devopsSolutionsPageView/benefitsSect
 import DevopsHoverBenefitsTabletBg from '@/images/devopsSolutionsPageView/benefitsSection/img_benefitsSectionTabletBg@2x.webp';
 import DevopsDropBlock2 from '@/images/devopsSolutionsPageView/img_devopsDropBlock2@2x.webp';
 import DevopsTellUsTablet from '@/images/img_lastCtaTablet@2x.webp';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
 import SalesforceCaseStudiesBg from '@/images/salesforcePage/caseStudies/img_caseStudiesSalesforceBg.webp';
 import SalesforceCaseStudiesTabletBg from '@/images/salesforcePage/caseStudies/img_caseStudiesSalesforceTabletBg.webp';
 import SalesforceCaseStudiesMobileBg from '@/images/caseStudiesBlock/img_bgMobile.webp';
 
-function DevopsSolutionsPageView({ pageBlogs }: IPageBlogs) {
+function DevopsSolutionsPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isMDDevice,
@@ -115,7 +115,7 @@ function DevopsSolutionsPageView({ pageBlogs }: IPageBlogs) {
           },
         }}
       />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <ReviewBlock
         quotesList={devopsSolutionsQuotesList}
       />
@@ -128,13 +128,15 @@ function DevopsSolutionsPageView({ pageBlogs }: IPageBlogs) {
         subtitle={devopsSolutionsTrustUsBlockDataFirst.subtitle}
         dropBlockTitle={devopsSolutionsTrustUsBlockDataFirst.lastCardTitle}
         dropBlockBtnTitle={devopsSolutionsTrustUsBlockDataFirst.btnTitle}
-        variant={CardBlockVariant.DEVOPS_SOLUTIONS}
         classes={{
-          dropBlock: `screen-lg:!h-auto screen-lg:!py-[80px] screen-lg:!px-[30px]
-          screen-md:!h-[360px] screen-md:!p-[20px]`,
-          buttonWrapper: '!max-w-[420px] screen-md:!max-w-none',
-          button: `!max-w-[538px] screen-lg:!max-w-[538px] screen-md:text-center
-          screen-md:py-[15px] screen-md:px-[6px]`,
+          sectionTitle: '!mb-[40px] screen-lg:!mb-[30px] screen-md:!mb-[40px]',
+          CardsBlockClasses: {
+            dropBlock: `screen-lg:!h-auto screen-lg:!py-[80px] screen-lg:!px-[30px]
+            screen-md:!h-[360px] screen-md:!p-[20px]`,
+            buttonWrapper: '!max-w-[420px] screen-md:!max-w-none',
+            button: `!max-w-[538px] screen-lg:!max-w-[538px] screen-md:text-center
+            screen-md:py-[15px] screen-md:px-[6px]`,
+          },
         }}
         disableBg
         mobileBgVariant
@@ -150,7 +152,11 @@ function DevopsSolutionsPageView({ pageBlogs }: IPageBlogs) {
         background={getBackground().benefits}
         title="With our DevOps services, you'll get"
         data={devopsSolutionsBenefitsSectionData}
-        variant={BenefitsSectionVariant.DEVOPS_SOLUTIONS}
+        classes={{
+          section: '!bg-black screen-md:!mt-[40px]',
+          background: '!h-[608px] screen-lg:!h-[520px] screen-md:!hidden top-[unset] bottom-0',
+          title: '!w-auto',
+        }}
       />
       <DevelopmentServicesWhite
         title={devopsSolutionsDevelopmentServicesData.title}
@@ -195,12 +201,14 @@ function DevopsSolutionsPageView({ pageBlogs }: IPageBlogs) {
         title="Why choose Onix for DevOps services"
         dropBlockTitle="Let's optimize your software development and delivery with our DevOps services!"
         dropBlockBtnTitle="Talk to our experts"
-        variant={CardBlockVariant.DEVOPS_SOLUTIONS_SECOND}
         classes={{
-          dropBlock: `screen-lg:!h-auto screen-lg:!py-[80px] screen-lg:!px-[30px]
-          screen-md:!h-[360px] screen-md:!p-[20px]`,
-          buttonWrapper: '!max-w-[420px] screen-md:!max-w-none',
-          button: 'screen-md:!text-center screen-md:!py-[16px] screen-md:!px-[6px]',
+          sectionTitle: '!mb-[40px]',
+          CardsBlockClasses: {
+            dropBlock: `screen-lg:!h-auto screen-lg:!py-[80px] screen-lg:!px-[30px]
+            screen-md:!h-[360px] screen-md:!p-[20px]`,
+            buttonWrapper: '!max-w-[420px] screen-md:!max-w-none',
+            button: 'screen-md:!text-center screen-md:!py-[16px] screen-md:!px-[6px]',
+          },
         }}
         dropBlockBgVariant={DevopsDropBlock2}
       />

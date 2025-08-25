@@ -2,13 +2,10 @@ import { motion } from 'framer-motion';
 import {
   useEffect, useRef, useState,
 } from 'react';
-import { useSelector } from 'react-redux';
 
 import Icon from '../../assets/icon';
-import ContentText from '../../components/ContentText/ContentText';
-import IStore from '../../store/interfaces/IStore';
-import ICursorFollower from '../../store/cursorFollower/interfaces/ICursorFollower';
 import { generalSans, ibmPlexMono } from '../../fonts/MainFonts';
+import { useAppSelector } from '../../hook/reduxToolkit';
 
 import styles from './sass/cursorFollower.module.scss';
 
@@ -17,18 +14,11 @@ function CursorFollower() {
   const [coordinates, setCoordinates] = useState({ left: 0, top: -15 });
   const [btnContent, setBtnContent] = useState<JSX.Element>(<div />);
   const [uiuxText, setUiUxText] = useState('sound on');
-  const { uiUxSoudn } = useSelector<IStore, ICursorFollower>((state) => state?.cursorFollower);
+  const { uiUxSoudn } = useAppSelector((state) => state?.cursorFollower);
 
   const cursorFollowerModifier = (element: Element) => {
     const cursorType = getComputedStyle(element).cursor;
     const elemId = element.id;
-    const videoPlayer = element?.closest('#videoPlayer');
-
-    if (cursorType === 'pointer') {
-      refBtn.current?.classList.add(styles.pointer);
-    } else {
-      refBtn.current?.classList.remove(styles.pointer);
-    }
 
     if (cursorType === 'none') {
       refBtn.current?.classList.add(styles.pointerDrag);
@@ -46,24 +36,8 @@ function CursorFollower() {
           </>
         ));
         break;
-      case elemId.includes('caseStudyIdentificator'):
-        refBtn.current?.classList.add(styles.pointerCaseStudy);
-        setBtnContent(() => (
-          <>
-            <Icon.IconWhiteArrow className={styles.cursorFollowerIcon} />
-            <ContentText className={styles.cursorFollowerText}>
-              View case
-            </ContentText>
-          </>
-        ));
-        break;
-      case Boolean(videoPlayer):
-        refBtn.current?.classList.add(styles.videoPlayer);
-        break;
       default:
         refBtn.current?.classList.remove(styles.pointerUiUx);
-        refBtn.current?.classList.remove(styles.pointerCaseStudy);
-        refBtn.current?.classList.remove(styles.videoPlayer);
         setBtnContent(() => <div />);
     }
   };

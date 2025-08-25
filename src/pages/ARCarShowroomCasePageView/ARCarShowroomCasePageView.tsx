@@ -14,11 +14,12 @@ import resultsBlockData from './data/resultsBlockData';
 import businessContextData from './data/businessContextData';
 import projectData from './data/aboutContent';
 import { aboutProjectSectionWhite } from '../../constants/tailwindStyle';
-import { UsabilityTestingMainBlockVariant } from '../../constants/enums';
 import IPageStatus from '../../interfaces/IPageStatus';
 import ButtonTypes from '../../constants/ButtonTypes';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import CTASecondBg from '@/images/arCarShowroomCase/img_CTASecondBg@2x.webp';
 import CTASecondBgXXXL from '@/images/arCarShowroomCase/img_CTASecondBg_xxxl@2x.webp';
 import CTASecondTabletBg from '@/images/arCarShowroomCase/img_CTASecondTabletBg@2x.webp';
@@ -28,7 +29,6 @@ import HerobgBig from '@/images/arCarShowroomCase/hero/img_Hero_big.webp';
 import HeroBgTablet from '@/images/arCarShowroomCase/hero/img_Hero_tablet.webp';
 import HeroBgBigTablet from '@/images/arCarShowroomCase/hero/img_Hero_big_tablet.webp';
 import HeroBgMobile from '@/images/arCarShowroomCase/hero/img_Hero_mobile.webp';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function ArCarShowroomCasePageView({ saleUrl }: IPageStatus) {
   const {
@@ -71,7 +71,19 @@ function ArCarShowroomCasePageView({ saleUrl }: IPageStatus) {
           </>
         )}
         background={getBackground().main}
-        variant={UsabilityTestingMainBlockVariant.AR_CAR_SHOWROOM}
+        classes={{
+          container: `!bg-[var(--color-black)] !text-[var(--color-white)] !h-screen 
+          screen-lg:!max-h-[1300px] 
+          screen-md:!min-h-[600px] screen-md:!max-h-[800px] 
+          screen-sm:!min-h-[570px] screen-sm:!max-h-[700px]`,
+          background: `!absolute !bottom-0 !right-0 !h-full !w-full max-1390:!h-full
+          max-1390:!w-full screen-lg:!w-full`,
+          backgroundImage: '!h-full !w-full !object-cover !object-center',
+          contentContainer: '!pt-0 !flex screen-lg:!block screen-lg:!pt-[146px]',
+          content: 'min-lg:!pl-[70px] min-xxxl:!pl-[80px]',
+          title: `!p-0 !max-w-[520px] screen-xl:!text-[40px] screen-xl:!leading-[56px]
+          screen-md:!text-[25px] screen-md:!leading-[35px]`,
+        }}
       />
       <AboutProjectSection
         title={projectData.title}

@@ -1,3 +1,5 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+
 import JoobsOurSolutionsImg1 from '@/images/joobs/ourSolutions/img_ourSolutions1.webp';
 import JoobsOurSolutionsImg2 from '@/images/joobs/ourSolutions/img_ourSolutions2.webp';
 import JoobsOurSolutionsImg3 from '@/images/joobs/ourSolutions/img_ourSolutions3.webp';
@@ -16,7 +18,6 @@ import JoobsOurSolutionsImgMobile3 from '@/images/joobs/ourSolutions/img_ourSolu
 import JoobsOurSolutionsImgMobile4 from '@/images/joobs/ourSolutions/img_ourSolutionsMobile4.webp';
 import JoobsOurSolutionsImgMobile5 from '@/images/joobs/ourSolutions/img_ourSolutionsMobile5.webp';
 import JoobsOurSolutionsImgMobile6 from '@/images/joobs/ourSolutions/img_ourSolutionsMobile6.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

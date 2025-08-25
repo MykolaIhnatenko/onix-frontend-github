@@ -2,13 +2,13 @@ import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import responsibilityData from '../data/responsibilityData';
 import TransparentCard from '../../../components/TransparentCard/TransparentCard';
-import DedicatedTeamResponsibilityBg from '@/images/dedicatedTeamPage/img_responsibility_bg@2x.webp';
-import DedicatedTeamResponsibilityBgTablet from '@/images/dedicatedTeamPage/img_responsibility_bg_tablet@2x.webp';
-import DedicatedTeamResponsibilityBgMobile from '@/images/dedicatedTeamPage/img_responsibility_bg_mobile@2x.webp';
 import useBackground from '../../../hook/useBackground';
 import ImageComponent from '../../../components/Image/Image';
 import { TransparentCardVariant } from '../../../constants/enums';
 
+import DedicatedTeamResponsibilityBg from '@/images/dedicatedTeamPage/img_responsibility_bg@2x.webp';
+import DedicatedTeamResponsibilityBgTablet from '@/images/dedicatedTeamPage/img_responsibility_bg_tablet@2x.webp';
+import DedicatedTeamResponsibilityBgMobile from '@/images/dedicatedTeamPage/img_responsibility_bg_mobile@2x.webp';
 import styles from '../sass/dedicatedTeamResponsibilitySecion.module.scss';
 
 function DedicatedTeamResponsibilitySection() {

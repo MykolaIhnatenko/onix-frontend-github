@@ -1,4 +1,7 @@
 import ImageComponent from '../../../components/Image/Image';
+import MainTitle from '../../../components/MainTitle/MainTitle';
+import ContentText from '../../../components/ContentText/ContentText';
+
 import AboutUkraineITIndustry1 from '@/images/aboutUkraine/itIndustry/img_it_industry_one.webp';
 import AboutUkraineITIndustry2 from '@/images/aboutUkraine/itIndustry/img_it_industry_two.webp';
 import AboutUkraineITIndustry3 from '@/images/aboutUkraine/itIndustry/img_it_industry_three.webp';
@@ -13,9 +16,6 @@ import AboutUkraineITIndustry11 from '@/images/aboutUkraine/itIndustry/img_it_in
 import AboutUkraineITIndustry12 from '@/images/aboutUkraine/itIndustry/img_it_industry_twelve.webp';
 import AboutUkraineITIndustry13 from '@/images/aboutUkraine/itIndustry/img_it_industry_thirteen.webp';
 import AboutUkraineITIndustry14 from '@/images/aboutUkraine/itIndustry/img_it_industry_fourteen.webp';
-import MainTitle from '../../../components/MainTitle/MainTitle';
-import ContentText from '../../../components/ContentText/ContentText';
-
 import styles from '../sass/itIndustryDragComponent.module.scss';
 
 const itIndustryDragComponentData = [

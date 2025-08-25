@@ -19,6 +19,8 @@ export interface ITechnologiesData {
   technologies: ITechnologies,
   noShowIcon?: boolean,
   withoutComma?: boolean;
+  isJakarta?: boolean;
+  animatedText?: boolean;
   classes?: ITechnologiesDataClasses
 }
 
@@ -30,6 +32,8 @@ export interface ITechnologiesBlock {
   titleBlock?: string;
   titleDesc?: string | React.ReactNode;
   withoutComma?: boolean;
+  isJakarta?: boolean;
+  animatedText?: boolean;
   classes?: {
     container?: string;
     sectionTitle?: string;

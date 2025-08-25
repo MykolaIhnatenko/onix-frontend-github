@@ -1,3 +1,6 @@
+import PageLinks from 'constants/PageLinks';
+import { IOurCaseStudiesData } from 'components/OurCaseStudies/interfaces/IOurCaseStudies';
+
 import MiPaddleLearn2x from '@/images/LMS/img_MiPaddleLearn2x.webp';
 import LearningPool2x from '@/images/LMS/img_LearningPool2x.webp';
 import Edplus2x from '@/images/LMS/img_Edplus2x.webp';
@@ -7,8 +10,6 @@ import img_EdplusMobile from '@/images/elernings/img_EdplusMobile.webp';
 import img_EdplusTablet from '@/images/elernings/img_EdplusTablet.webp';
 import img_LearningPoolTablet from '@/images/elernings/img_LearningPoolTablet.webp';
 import img_LearningPoolMobile from '@/images/elernings/img_LearningPoolMobile.webp';
-import PageLinks from 'constants/PageLinks';
-import { IOurCaseStudiesData } from 'components/OurCaseStudies/interfaces/IOurCaseStudies';
 
 const cardOurLMS: IOurCaseStudiesData[] = [
   {

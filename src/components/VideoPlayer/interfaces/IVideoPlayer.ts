@@ -12,6 +12,7 @@ export default interface IVideoPlayerProps {
   controls?: boolean;
   linkSource?: boolean;
   id?: number | string;
+  isJakarta?: boolean;
   buttonText?: string;
   priorityImage?: boolean;
   multiPlayer?: boolean;

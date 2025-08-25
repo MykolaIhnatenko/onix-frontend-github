@@ -9,10 +9,10 @@ import useBackground from '../../../hook/useBackground';
 import bdNumbersData from '../data/statisticsNumberData';
 import ButtonTypes from '../../../constants/ButtonTypes';
 import { ButtonType } from 'constants/enums';
+
 import BDStatisticsMobile from '@/images/brandingDesign/img_bd_statistics_mobile.webp';
 import BDStatisticsTablet from '@/images/brandingDesign/img_bd_statistics_tablet.webp';
 import BDStatisticsDesk from '@/images/brandingDesign/img_bd_statistics_desk.webp';
-
 import styles from '../sass/statisticsBlock.module.scss';
 
 function StatisticsBlock() {

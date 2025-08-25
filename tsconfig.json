@@ -20,6 +20,6 @@
       "@/images/*": ["/assets/images/*"]
     }
   },
-  "include": ["next-env.d.ts", "sourcebuster.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "src/pages/LstmNewsCategorizerPageView/data/lstmBusinessContextData."],
+  "include": ["next-env.d.ts", "sourcebuster.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules"]
 }

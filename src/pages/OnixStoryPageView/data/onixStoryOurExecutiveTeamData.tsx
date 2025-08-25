@@ -1,4 +1,5 @@
 import ImageComponent from '../../../components/Image/Image';
+
 import OnixStoryKholin from '@/images/onixStory/OurExecutive/img_kholin.webp';
 import OnixStorySheremetov from '@/images/onixStory/OurExecutive/img_sheremetov.webp';
 import OnixStoryIvanchenko from '@/images/onixStory/OurExecutive/img_ivanchenko.webp';
@@ -7,7 +8,6 @@ import OnixStoryMakarevich from '@/images/onixStory/OurExecutive/img_makarevich.
 import OnixStoryNevmerzhytska from '@/images/onixStory/OurExecutive/img_nevmerzhytska.webp';
 import OnixStoryPemakhova from '@/images/onixStory/OurExecutive/img_pemakhova.webp';
 import OnixStoryKatarovskyi from '@/images/onixStory/OurExecutive/img_katarovskyi.webp';
-
 import styles from '../sass/onixStoryOurExecutiveTeam.module.scss';
 
 const onixStoryOurExecutiveTeamData = [

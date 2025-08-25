@@ -9,12 +9,12 @@ import devopsSolutionsHoverAccordionData from '../data/devopsSolutionsHoverAccor
 import devopsSolutionsDragSliderDataMobile from '../data/devopsSolutionsDragSliderDataMobile';
 import IStore from '../../../store/interfaces/IStore';
 import { IScreenSizes } from '../../../store/app/interfaces/IApp';
+import DragSlider from '../../../components/DragSlider/DragSlider';
+
 import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.webp';
 import IndustriesMainBgBigDesc from '@/images/industriesPage/img_industries_main_bgBigDesc@2x.webp';
 import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
 import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
-import DragSlider from '../../../components/DragSlider/DragSlider';
-
 import styles from '../sass/devopsSolutionsMainBlock.module.scss';
 
 function DevopsSolutionsMainBlock() {

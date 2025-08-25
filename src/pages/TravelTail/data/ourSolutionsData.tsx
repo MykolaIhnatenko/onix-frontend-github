@@ -1,3 +1,6 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+import ItemList from 'components/ItemList/ItemList';
+
 import OurSolutionsImg1 from '@/images/travelTail/ourSolutions/img_ourSolutions1@2x.webp';
 import OurSolutionsImg2 from '@/images/travelTail/ourSolutions/img_ourSolutions2@2x.webp';
 import OurSolutionsImg3 from '@/images/travelTail/ourSolutions/img_ourSolutions3@2x.webp';
@@ -13,8 +16,6 @@ import OurSolutionsImgMobile2 from '@/images/travelTail/ourSolutions/img_ourSolu
 import OurSolutionsImgMobile3 from '@/images/travelTail/ourSolutions/img_ourSolutions3Mobile@2x.webp';
 import OurSolutionsImgMobile4 from '@/images/travelTail/ourSolutions/img_ourSolutions4Mobile@2x.webp';
 import OurSolutionsImgMobile5 from '@/images/travelTail/ourSolutions/img_ourSolutions5Mobile@2x.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
-import ItemList from 'components/ItemList/ItemList';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

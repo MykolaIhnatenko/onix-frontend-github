@@ -4,6 +4,17 @@ export default interface ISeoData {
   seoTitle?: string,
   title?: string,
   sale?: boolean,
+  achievements?: {
+    data: {
+      id: number,
+      attributes: {
+        title: string,
+        url: string,
+        description: string,
+        image: IPicture,
+      }
+    }[]
+  },
   keywords?: string,
   description?: string,
   markupTitle?: string,

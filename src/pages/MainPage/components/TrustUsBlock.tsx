@@ -4,7 +4,6 @@ import { StaticImageData } from 'next/image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ImageComponent from '../../../components/Image/Image';
 import { generalSans, ibmPlexMono } from '../../../fonts/MainFonts';
-import TrustUsBackgroundMobileWebp from '@/images/img_trust_us_mobile_bg@2x.webp';
 import CardsBlock from '../../../components/CardsBlock/CardsBlock';
 import { ITrustUsBlock } from '../../MachineLearningPageView/interfaces/ITrustUsBlock';
 import { setShowContactForm } from '../../../store/app/contactForm/slice';
@@ -12,14 +11,14 @@ import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
 import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 
-import styles from '../sass/trustUsBlock.module.scss';
+import TrustUsBackgroundMobileWebp from '@/images/img_trust_us_mobile_bg@2x.webp';
 
 function TrustUsBlock({
-  title, subtitle = null, data, dropBlockTitle, dropBlockBtnTitle, variant, classes,
+  title, subtitle = null, data, dropBlockTitle, dropBlockBtnTitle, classes,
   dropBlockBgVariant, buttonText, dropBlockVariant, mobileBg, dropBlockText, disableBg,
   mobileBgVariant, buttonFontSizeSmall, withBtn, withoutDropBlockBg, tabletBg,
   trustUsBlockBg = TrustUsBackgroundMobileWebp, withoutAnimate = true, saleUrl, idBtn,
-  trustUsBlockMobileBg, animatedGradient = false,
+  trustUsBlockMobileBg, animatedGradient = false, isPInDropBlockTitle,
 }: ITrustUsBlock) {
   const dispatch = useDispatch();
   const {
@@ -44,10 +43,10 @@ function TrustUsBlock({
 
   return (
     <div className={`
-      ${styles.container} 
+      max-w-[1920px] pt-[80px] mx-auto relative bg-white
       ${generalSans.variable} 
       ${ibmPlexMono.variable} 
-      ${variant ? styles[variant] : ''}
+      ${classes?.container || ''}
       `}
     >
       {(!mobileBgVariant && trustUsBlockBg) && (
@@ -55,20 +54,27 @@ function TrustUsBlock({
           src={getBackground().background}
           alt="TrustUsBackground"
           fill
-          className={styles.bgMobile}
+          className={`min-md:hidden ${classes?.bgMobile || ''}`}
           sizes="100vw"
         />
       )}
-      <MainTitle className={`${styles.sectionTitle} ${subtitle ? styles.sectionTitleWithSub : ''}`}>
+      <MainTitle
+        className={`normal-case mb-[40px] px-[15px] z-[2] relative min-md:pl-[30px]
+          min-md:mb-[60px] min-lg:mb-[80px] min-lg:pl-[70px] min-xxxl:pl-[80px]
+          ${classes?.sectionTitle || ''}`}
+      >
         {title}
       </MainTitle>
       {subtitle}
       {buttonText && !saleUrl && (
-        <div className={styles.buttonWrapper}>
+        <div
+          className={`px-[15px] pb-[80px] min-md:px-[30px] min-md:pb-[60px] min-lg:px-[70px]
+            min-lg:pb-[40px] min-xxxl:px-[80px] ${classes?.buttonWrapper || ''}`}
+        >
           <ButtonPrimary
             id={idBtn}
             text={buttonText}
-            styleContainer={styles.button}
+            styleContainer={`max-w-[420px] text-[18px] leading-[24px] ${classes?.button || ''}`}
             onClick={() => dispatch(setShowContactForm({ showContactForm: true }))}
             fontSizeSmallOnMobile={buttonFontSizeSmall}
           />
@@ -88,8 +94,9 @@ function TrustUsBlock({
         withBtn={withBtn}
         withoutDropBlockBg={withoutDropBlockBg}
         tabletBg={tabletBg}
-        classes={classes}
+        classes={classes?.CardsBlockClasses}
         animatedGradient={animatedGradient}
+        isPInDropBlockTitle={isPInDropBlockTitle}
       />
     </div>
   );

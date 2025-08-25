@@ -6,5 +6,4 @@ export default interface ICareersView {
   chosenDepartment: ICareerDepartment;
   setChosenDepartment: (department: ICareerDepartment) => void;
   careerList: ICareer[];
-  hotJobs: ICareer[];
 }

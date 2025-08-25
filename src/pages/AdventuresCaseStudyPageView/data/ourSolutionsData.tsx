@@ -1,3 +1,5 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+
 import OurSolutionsImg1 from '@/images/adventurePage/ourSolutions/img_ourSolutions1@2x.webp';
 import OurSolutionsImg2 from '@/images/adventurePage/ourSolutions/img_ourSolutions2@2x.gif';
 import OurSolutionsImg3 from '@/images/adventurePage/ourSolutions/img_ourSolutions3@2x.webp';
@@ -14,7 +16,6 @@ import OurSolutionsImgMobile3 from '@/images/adventurePage/ourSolutions/img_ourS
 import OurSolutionsImgMobile4 from '@/images/adventurePage/ourSolutions/img_ourSolutionsMobile4@2x.webp';
 import OurSolutionsImgMobile5 from '@/images/adventurePage/ourSolutions/img_ourSolutionsMobile5@2x.webp';
 import OurSolutionsImgMobile6 from '@/images/adventurePage/ourSolutions/img_ourSolutionsMobile6@2x.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

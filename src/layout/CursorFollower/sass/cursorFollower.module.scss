@@ -9,12 +9,11 @@
   flex-direction: column;
   align-items: center;
   pointer-events: none;
+  width: 0;
+  height: 0;
   z-index: 10000;
-  width: toRem(24);
-  height: toRem(24);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  background: var(--color-cruise);
   border: none;
   color: #fff;
   opacity: .6;
@@ -31,26 +30,7 @@
     width: toRem(60);
     height: toRem(60);
   }
-
-  &.pointerCaseStudy {
-    background: var(--color-blue);
-    width: toRem(240);
-    height: toRem(240);
-    opacity: 1;
-    .cursorFollowerText {
-      opacity: 1;
-      font-size: toRem(20);
-    }
-
-    .cursorFollowerIcon {
-      opacity: 1;
-    }
-  }
   
-  &.videoPlayer {
-    opacity: 0;
-  }
-
   &.pointerDrag {
     background: var(--color-blue);
     width: toRem(120);

@@ -43,7 +43,7 @@ function LatestBlogs({
                       || ''}`}
                       width={345}
                       height={247}
-                      alt={title}
+                      alt="Blog Image"
                     />
                     )}
                   </div>

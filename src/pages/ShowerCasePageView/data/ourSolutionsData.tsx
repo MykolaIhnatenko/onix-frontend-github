@@ -1,3 +1,5 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+
 import ShowerOurSolutionsImg1 from '@/images/shower/ourSolutions/img_ourSolutions1.webp';
 import ShowerOurSolutionsImg2 from '@/images/shower/ourSolutions/img_ourSolutions2.webp';
 import ShowerOurSolutionsImg3 from '@/images/shower/ourSolutions/img_ourSolutions3.webp';
@@ -13,7 +15,6 @@ import ShowerOurSolutionsImgMobile2 from '@/images/shower/ourSolutions/img_ourSo
 import ShowerOurSolutionsImgMobile3 from '@/images/shower/ourSolutions/img_ourSolutionsMobile3.webp';
 import ShowerOurSolutionsImgMobile4 from '@/images/shower/ourSolutions/img_ourSolutionsMobile4.webp';
 import ShowerOurSolutionsImgMobile5 from '@/images/shower/ourSolutions/img_ourSolutionsMobile5.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

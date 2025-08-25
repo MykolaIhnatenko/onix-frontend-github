@@ -1,8 +1,9 @@
 import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ISoftwareProductBlock from '../../../components/SoftwareProductBlock/interfaces/ISoftwareProductBlock';
-import AndroidAppTechGeeksBackgroundLeftMobile from '@/images/androidApplication/img_androidAppTechGeeksBackgroundLeftMobile@2x.webp';
 import doubleAccordionData from './androidSoftwareProductData';
+
+import AndroidAppTechGeeksBackgroundLeftMobile from '@/images/androidApplication/img_androidAppTechGeeksBackgroundLeftMobile@2x.webp';
 
 const androidAppSoftwareProductData: ISoftwareProductBlock = {
   title: (

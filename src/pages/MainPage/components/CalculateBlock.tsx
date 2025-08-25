@@ -1,8 +1,8 @@
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
-import CalculateBackgroundLG from '@/images/img_calculate_background_lg.webp';
 import ButtonLight from 'components/UI/ButtonLight/ButtonLight';
 
+import CalculateBackgroundLG from '@/images/img_calculate_background_lg.webp';
 import styles from '../sass/calculateBlock.module.scss';
 
 function CalculateBlock() {

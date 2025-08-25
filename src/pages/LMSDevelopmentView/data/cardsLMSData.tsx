@@ -1,3 +1,7 @@
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+
 import img_DesignLMS from '@/images/LMS/img_DesignLMS.webp';
 import img_SupportAndMaintaince from '@/images/LMS/img_SupportAndMaintaince.webp';
 import img_DedicatedTeam from '@/images/LMS/img_DedicatedTeam.webp';
@@ -7,9 +11,6 @@ import img_CustomLXP from '@/images/LMS/img_CustomLXP.webp';
 import img_CustomLearningLRS from '@/images/LMS/img_CustomLearningLRS.webp';
 import img_UpgradeLMS from '@/images/LMS/img_UpgradeLMS.webp';
 import img_CustomLMS from '@/images/LMS/img_CustomLMS.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
 
 const cardsLMSData: IAccordionData[] = [
   {

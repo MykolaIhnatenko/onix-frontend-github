@@ -12,7 +12,6 @@ import { IApp } from 'store/app/interfaces/IApp';
 import IStore from 'store/interfaces/IStore';
 import ButtonTypes from 'constants/ButtonTypes';
 import IPageStatus from 'interfaces/IPageStatus';
-import { UsabilityTestingMainBlockVariant } from 'constants/enums';
 import { getTechnologiesBooking } from 'utils/getTechnologies';
 import howOnixDevelopedData from './data/howOnixDevelopedData.json';
 import resultsBlockData from './data/resultsBlockData';
@@ -21,6 +20,10 @@ import ourSolutionsData from './data/ourSolutionsData';
 import coreTechnologyData from './data/coreTechnologyData.json';
 import runningRowsBlockData from './data/runningRowsBlockData';
 import resultsBlockSecondData from './data/resultsBlockSecondData';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContextWithTable from 'components/BusinessContextWithTables/BusinessContextWithTable';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -50,9 +53,6 @@ import MainBgXL from '@/images/healthcareProviderPortalCaseStudy/mainBlock/img_m
 import MainBg from '@/images/healthcareProviderPortalCaseStudy/mainBlock/img_mainBg@2x.webp';
 import MainBgTablet from '@/images/healthcareProviderPortalCaseStudy/mainBlock/img_mainBgTablet@2x.webp';
 import MainBgMobile from '@/images/healthcareProviderPortalCaseStudy/mainBlock/img_mainBgMobile@2x.webp';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContextWithTable from 'components/BusinessContextWithTables/BusinessContextWithTable';
 
 function HealthcareProviderPortalCaseStudy({ saleUrl }: IPageStatus) {
   const {
@@ -108,8 +108,23 @@ function HealthcareProviderPortalCaseStudy({ saleUrl }: IPageStatus) {
       <UsabilityTestingMainBlock
         title="HCP portal development"
         background={getBackground().mainBg}
-        variant={UsabilityTestingMainBlockVariant.HCP_PORTAL}
         image={getBackground().iMac}
+        classes={{
+          container: `!text-white max-1390:!h-screen max-1390:!max-h-[990px] screen-md:!min-h-[570px]
+            screen-md:!h-[760px] screen-sm:!h-[572px] screen-sm:!overflow-hidden`,
+          background: '!absolute !bottom-0 !right-0 !h-full !w-full',
+          backgroundImage: `!w-full !h-full !object-cover !object-top max-1390:!object-left
+          screen-xl:![object-position:_-50px] screen-lg:!object-top screen-md:!object-center`,
+          contentContainer: '!relative max-1390:!flex max-1390:!pt-0 screen-lg:!block screen-lg:!pt-[146px]',
+          content: 'max-1390:!pl-[70px] screen-lg:!pl-[30px] screen-md:!pl-[15px]',
+          title: `!text-black !max-w-[440px] !pb-0 max-1390:!text-[50px] max-1390:!leading-[64px]
+            screen-lg:!text-[40px] screen-lg:!leading-[56px] screen-lg:!max-w-[unset]
+            screen-md:!text-[25px] screen-md:!leading-[35px]`,
+          image: `!absolute !top-[16%] !left-[38%] !h-[80%] !w-auto !pr-[80px] screen-lg:!pr-0 screen-lg:!top-[unset]
+            screen-lg:!bottom-[60px] screen-lg:!left-1/2 screen-lg:!translate-x-[-50%] screen-lg:!h-[60%]
+            screen-lg:!w-max screen-sm:!h-[52%]`,
+          imageContent: '!w-full !h-full !object-contain screen-lg:!object-cover screen-lg:!block',
+        }}
       />
       <AboutProjectSection
         title={howOnixDevelopedData.blockTitle}
@@ -134,6 +149,10 @@ function HealthcareProviderPortalCaseStudy({ saleUrl }: IPageStatus) {
         content={resultsBlockData.content}
         background={getBackground().resultsBlock}
         productScope
+        classes={{
+          background: `after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-b from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[80px]`,
+        }}
       />
       {!saleUrl && (
         <VRARCallToActionComponent
@@ -148,8 +167,8 @@ function HealthcareProviderPortalCaseStudy({ saleUrl }: IPageStatus) {
           background={getBackground().ctaFirst}
           classes={{
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_15px]',
-            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[70px]
-            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black`,
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[80px]`,
             image: '!object-bottom',
             title: '!pb-[40px] !max-w-[780px] screen-lg:!max-w-[620px] screen-md:!pb-[30px] screen-md:!max-w-[380px]',
           }}
@@ -169,8 +188,8 @@ function HealthcareProviderPortalCaseStudy({ saleUrl }: IPageStatus) {
           buttonType={ButtonTypes.PRIMARY}
           classes={{
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_15px]',
-            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[50px]
-            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-white`,
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-white screen-lg:after:h-[80px]`,
             image: '!object-bottom',
             title: '!pb-[40px] !text-black !max-w-full screen-md:!pb-[30px]',
           }}

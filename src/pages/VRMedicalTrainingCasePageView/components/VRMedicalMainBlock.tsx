@@ -1,12 +1,12 @@
 import { StaticImageData } from 'next/image';
 
 import { useAppSelector } from '../../../hook/reduxToolkit';
-import MainBg from '@/images/vrMedicalTrainingCasePage/mainBlock/img_main_bg.webp';
-import MainBgTablet from '@/images/vrMedicalTrainingCasePage/mainBlock/img_main_bg_tablet.webp';
-import MainBgMobile from '@/images/vrMedicalTrainingCasePage/mainBlock/img_main_bg_mobile.webp';
 import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 
+import MainBg from '@/images/vrMedicalTrainingCasePage/mainBlock/img_main_bg.webp';
+import MainBgTablet from '@/images/vrMedicalTrainingCasePage/mainBlock/img_main_bg_tablet.webp';
+import MainBgMobile from '@/images/vrMedicalTrainingCasePage/mainBlock/img_main_bg_mobile.webp';
 import styles from '../sass/vrMedicalMainBlock.module.scss';
 
 function VrMedicalMainBlock() {

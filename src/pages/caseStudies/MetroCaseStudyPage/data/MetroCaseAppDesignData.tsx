@@ -1,8 +1,8 @@
 import Icon from '../../../../assets/icon';
+
 import SketchIcon from '@/images/caseStudiesPage/MetroCaseStudyPage/img_sketchIcon.webp';
 import InvisionIcon from '@/images/caseStudiesPage/MetroCaseStudyPage/img_invisionIcon.webp';
 import FigmaIcon from '@/images/caseStudiesPage/MetroCaseStudyPage/img_figmaIcon.webp';
-
 import styles from '../sass/metroCaseAppDesign.module.scss';
 
 export const steps = [

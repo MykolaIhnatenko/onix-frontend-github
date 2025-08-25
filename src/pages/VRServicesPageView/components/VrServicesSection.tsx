@@ -4,8 +4,8 @@ import ContentText from '../../../components/ContentText/ContentText';
 import CardsBlock from '../../../components/CardsBlock/CardsBlock';
 import VRServicesData from '../data/vrServicesData.json';
 import { ButtonType } from '../../../constants/enums';
-import VRTrustUsBackground from '@/images/vrServicesPage/img_trust_us_bg.webp';
 
+import VRTrustUsBackground from '@/images/vrServicesPage/img_trust_us_bg.webp';
 import styles from '../sass/vrServicesSection.module.scss';
 
 function VRServicesSection() {

@@ -5,8 +5,8 @@ import { useSelector } from 'react-redux';
 import ImageComponent from '../../../components/Image/Image';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
-import Table from '@/images/costOptimizationCaseStudyPageView/table/img_table@2x.webp';
 
+import Table from '@/images/costOptimizationCaseStudyPageView/table/img_table@2x.webp';
 import styles from '../sass/costOptimizationTable.module.scss';
 
 function CostOptimizationTable() {

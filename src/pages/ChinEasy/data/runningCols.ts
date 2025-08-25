@@ -1,3 +1,5 @@
+import getRunningColsData from 'utils/getRunningColsData';
+
 import Phone1 from '@/images/chinEasy/runningCols/img_1@2x.webp';
 import Phone2 from '@/images/chinEasy/runningCols/img_2@2x.webp';
 import Phone3 from '@/images/chinEasy/runningCols/img_3@2x.webp';
@@ -13,7 +15,6 @@ import Phone12 from '@/images/chinEasy/runningCols/img_12@2x.webp';
 import Phone13 from '@/images/chinEasy/runningCols/img_13@2x.webp';
 import Phone14 from '@/images/chinEasy/runningCols/img_14@2x.webp';
 import Phone15 from '@/images/chinEasy/runningCols/img_15@2x.webp';
-import getRunningColsData from 'utils/getRunningColsData';
 
 const images = [
   [Phone1, Phone2, Phone3, Phone1, Phone2, Phone3],

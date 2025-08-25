@@ -1,3 +1,8 @@
+import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
+import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
+import OurInsightsBlockItem from '../components/OurInsightsBlockItem';
+import PageLinks from 'constants/PageLinks';
+
 import Group1 from '@/images/carousel/img_group_1.webp';
 import Group2 from '@/images/carousel/img_group_2.webp';
 import Group3 from '@/images/carousel/img_group_3.webp';
@@ -10,10 +15,6 @@ import FintechCarousel from '@/images/carousel/img_fintech.webp';
 import HealthcareCarousel from '@/images/carousel/img_healthcare.webp';
 import ElearningCarousel from '@/images/carousel/img_elearning.webp';
 import RetailCarousel from '@/images/carousel/img_retail.webp';
-import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
-import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
-import OurInsightsBlockItem from '../components/OurInsightsBlockItem';
-import PageLinks from 'constants/PageLinks';
 
 export const carouselTop:ICarouselAutomaticData[] = [
   {

@@ -5,6 +5,8 @@ import ImageComponent from '../../../components/Image/Image';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
+import { useAppSelector } from 'hook/reduxToolkit';
+
 import CrossPlatfromIPhone from '@/images/crossplatformDesign/img_iphone.webp';
 import CrossPlatfromSamsung from '@/images/crossplatformDesign/img_samsung.webp';
 import BgImg from '@/images/crossplatformDesign/img_main_bg.webp';
@@ -12,8 +14,6 @@ import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.
 import IndustriesMainBgBigDesc from '@/images/industriesPage/img_industries_main_bgBigDesc@2x.webp';
 import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
 import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
-import { useAppSelector } from 'hook/reduxToolkit';
-
 import styles from '../sass/CrossPlatformMainSection.module.scss';
 
 function CrossPlatformMainSection() {

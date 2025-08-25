@@ -1,4 +1,8 @@
 import Icons from '../../../assets/icon';
+import { IPartnerSliderData } from '../../../components/PartnerSection/interfaces/IPartnerSection';
+import TransparentCard from '../../../components/TransparentCard/TransparentCard';
+import { TransparentCardVariant } from 'constants/enums';
+
 import IosSliderBgMobile1 from '@/images/iosPage/img_bg_slider_item_mobile1.webp';
 import IosSliderBgMobile2 from '@/images/iosPage/img_bg_slider_item_mobile2.webp';
 import IosSliderBgMobile3 from '@/images/iosPage/img_bg_slider_item_mobile3.webp';
@@ -9,10 +13,6 @@ import IosSliderBg2 from '@/images/iosPage/img_bg_slider_item2.webp';
 import IosSliderBg3 from '@/images/iosPage/img_bg_slider_item3.webp';
 import IosSliderBg4 from '@/images/iosPage/img_bg_slider_item4.webp';
 import IosSliderBg5 from '@/images/iosPage/img_bg_slider_item5.webp';
-import { IPartnerSliderData } from '../../../components/PartnerSection/interfaces/IPartnerSection';
-import TransparentCard from '../../../components/TransparentCard/TransparentCard';
-import { TransparentCardVariant } from 'constants/enums';
-
 import styles from '../../../components/TransparentCard/sass/transparentCard.module.scss';
 
 const partnerSliderData: IPartnerSliderData[] = [

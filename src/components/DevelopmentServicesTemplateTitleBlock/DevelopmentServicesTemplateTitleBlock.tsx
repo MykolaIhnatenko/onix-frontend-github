@@ -15,7 +15,7 @@ function DevelopmentServicesTemplateTitleBlock({
           <ContentText
             marginAbsent
             tag="p"
-            className="!mb-[20px] screen-md:!mb-[15px]"
+            className="!mb-[20px] screen-md:!mb-[15px] screen-md:!text-[14px]"
           >
             {upTitle}
           </ContentText>

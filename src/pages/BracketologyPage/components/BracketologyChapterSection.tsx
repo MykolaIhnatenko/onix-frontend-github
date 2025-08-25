@@ -6,12 +6,12 @@ import ImageComponent from '../../../components/Image/Image';
 import chapterCards from '../data/chapterCards';
 import BracketologyPageContainer from './BracketologyPageContainer';
 import BracketologyText from './BracketologyText';
-import mobileBg from '@/images/bracketology/chapterSection/img_bg_mobile.webp';
-import aloa from '@/images/bracketology/chapterSection/img_aloa@2x.webp';
-import onix from '@/images/bracketology/chapterSection/img_onix@2x.webp';
 import IBracketologyChapter from '../interfaces/IBracketologyChapter';
 import PageLinks from 'constants/PageLinks';
 
+import mobileBg from '@/images/bracketology/chapterSection/img_bg_mobile.webp';
+import aloa from '@/images/bracketology/chapterSection/img_aloa@2x.webp';
+import onix from '@/images/bracketology/chapterSection/img_onix@2x.webp';
 import styles from '../sass/BracketologyChapterSection.module.scss';
 
 const chapterVideo = '/static/video/bracketology-video.mp4';

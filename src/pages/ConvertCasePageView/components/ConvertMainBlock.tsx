@@ -2,13 +2,13 @@ import { StaticImageData } from 'next/image';
 
 import ImageComponent from '../../../components/Image/Image';
 import MainTitle from '../../../components/MainTitle/MainTitle';
+import PageContainer from '../../../components/PageContainer/PageContainer';
+import { useAppSelector } from '../../../hook/reduxToolkit';
+
 import ConvertMainMobile from '@/images/convertCasePage/mainBlock/img_main_mobile_bg@2x.webp';
 import ConvertMainTablet from '@/images/convertCasePage/mainBlock/img_main_tablet_bg@2x.webp';
 import ConvertMainBg from '@/images/convertCasePage/mainBlock/img_main_bg@2x.webp';
 import ConvertMainBgXXXL from '@/images/convertCasePage/mainBlock/img_main_xxxl_bg@2x.webp';
-import PageContainer from '../../../components/PageContainer/PageContainer';
-import { useAppSelector } from '../../../hook/reduxToolkit';
-
 import styles from '../sass/convertMainSection.module.scss';
 
 function ConvertMainBlock() {

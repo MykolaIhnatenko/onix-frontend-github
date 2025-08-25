@@ -4,14 +4,14 @@ import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import ImageComponent from '../../../components/Image/Image';
-import IndustriesDevelopers from '@/images/industriesPage/img_developers@2x.webp';
-import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.webp';
-import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
-import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
 import { LG_DEVICE, MD_DEVICE } from '../../../constants/constants';
 import { useAppSelector } from 'hook/reduxToolkit';
 import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 
+import IndustriesDevelopers from '@/images/industriesPage/img_developers@2x.webp';
+import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.webp';
+import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
+import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
 import styles from '../sass/industriesMainSecion.module.scss';
 
 function IndustriesMainSection() {

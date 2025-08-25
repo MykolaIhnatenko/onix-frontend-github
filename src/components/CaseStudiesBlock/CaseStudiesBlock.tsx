@@ -12,7 +12,8 @@ import ContentTextNew from 'components/ContentTextNew/ContentTextNew';
 // import CaseStudiesBgTablet from '@/images/caseStudiesBlock/img_bottomBgTablet.webp';
 
 function CaseStudiesBlock({
-  sliderIds, upTitle, title = 'See other related projects', desc, desc2, background, classes, saleUrl,
+  sliderIds, upTitle, title = 'See other related projects',
+  desc, desc2, background, classes, saleUrl, withoutDots,
 }: ICaseStudiesBlock) {
   const {
     isMDDevice, isSMDevice, isXSDevice,
@@ -79,7 +80,7 @@ function CaseStudiesBlock({
         </PageContainer>
 
         {isMobileOrTablet ? (
-          <DragSlider data={caseStudiesData} />
+          <DragSlider data={caseStudiesData} withoutDots={withoutDots} />
         ) : (
           <ScrollSliderDefault data={caseStudiesData} />
         )}

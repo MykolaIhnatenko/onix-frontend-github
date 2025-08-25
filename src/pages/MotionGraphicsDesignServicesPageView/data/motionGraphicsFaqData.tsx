@@ -69,7 +69,6 @@ const motionGraphicsFaqData = [
         To get started with our motion design services, simply reach out to us through our
         {' '}
         <LinkComponent
-          prefetch={false}
           href="/contact-us"
           className={faqBlockStyles.iosLink}
         >

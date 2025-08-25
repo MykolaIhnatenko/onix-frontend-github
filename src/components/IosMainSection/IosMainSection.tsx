@@ -7,11 +7,12 @@ import PageContainer from '../PageContainer/PageContainer';
 import TapAccordion from '../TapAccordion/TapAccordion';
 import IIosMainSection from './interfaces/IIosMainSection';
 import { setShowContactForm } from '../../store/app/contactForm/slice';
+import { ButtonType } from '../../constants/enums';
+import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
+
 import IosMainBg from '@/images/iosPage/img_main_bg@2x.webp';
 import IosMainBgTablet from '@/images/iosPage/img_main_bg_tablet@2x.webp';
 import IosMainBgMobile from '@/images/iosPage/img_main_bg_mobile@2x.webp';
-import { ButtonType } from '../../constants/enums';
-import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 
 function IosMainSection({
   sectionTitle, firstText, secondText, btnText, data,

@@ -7,8 +7,8 @@ import caseStudyCardContent from '../data/caseStudyCardContent';
 import caseStudyImages from '../data/caseStudyImages';
 import caseStudyCards from '../data/caseStudyCards';
 import caseStudyDescription from '../data/caseStudyDescription';
-import ImagePhoto from '@/images/EdplusPage/img_case-study-photo.webp';
 
+import ImagePhoto from '@/images/EdplusPage/img_case-study-photo.webp';
 import styles from '../sass/edplusCaseStudy.module.scss';
 
 function EdplusCaseStudy() {

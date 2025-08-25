@@ -26,6 +26,8 @@ import resultsBlockData from './data/resultsBlockData';
 import { businessContextDataSecond } from './data/businessContextData';
 import runningRowsBlockData from './data/runningRowsBlockData';
 import ourSolutionsData from './data/ourSolutionsContentData';
+import BusinessContextDiagonal from '../../components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
@@ -52,7 +54,6 @@ import BusinessContextBlockBgTablet
   from '@/images/clubhouse/businessContext/img_business_bg_tablet.webp';
 import BusinessContextBlockBgMobile
   from '@/images/clubhouse/businessContext/img_business_bg_mobile.webp';
-import BusinessContextDiagonal from '../../components/BusinessContextDiagonal/BusinessContextDiagonal';
 
 function ClubhouseView({ saleUrl }: IPageStatus) {
   const {
@@ -125,7 +126,7 @@ function ClubhouseView({ saleUrl }: IPageStatus) {
         data={ourSolutionsData}
         desktopViewOnXL
         classes={{
-          section: 'py-[80px] screen-lg:!py-[60px] screen-md:!p-[40px_0_80px]',
+          section: 'py-[80px] screen-lg:!py-[60px] screen-md:!p-[40px_0]',
         }}
       />
       <RunningRowsBlock background={getBackground().runningRowsBg} runningRows={runningRowsBlockData} />

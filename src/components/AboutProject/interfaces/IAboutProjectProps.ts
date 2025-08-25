@@ -24,7 +24,7 @@ export default interface IAboutProjectProps {
 export interface IAboutProjectContent {
   id: number;
   title: string | ReactNode;
-  text: string;
+  text: string | ReactNode;
 }
 
 export interface IAboutProjectBlockProps {

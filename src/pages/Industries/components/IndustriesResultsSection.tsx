@@ -4,14 +4,14 @@ import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ImageComponent from '../../../components/Image/Image';
 import IndustriesResultsItem from './IndustriesResultsItem';
-import IndustriesResultsMobileBg from '@/images/industriesPage/img_results_mobile_bg@2x.webp';
-import IndustriesResultsDesktopBg from '@/images/industriesPage/img_results_desk_bg@2x.webp';
 import resultsData from '../data/resultsData.json';
 import { MD_DEVICE, XL_DEVICE } from '../../../constants/constants';
 import CallToActionComponent from '../../../components/CallToActionBlock/CallToActionComponent';
 import { ButtonPathVariant } from '../../../constants/enums';
 import { useAppSelector } from 'hook/reduxToolkit';
 
+import IndustriesResultsDesktopBg from '@/images/industriesPage/img_results_desk_bg@2x.webp';
+import IndustriesResultsMobileBg from '@/images/industriesPage/img_results_mobile_bg@2x.webp';
 import styles from '../sass/industriesResultsSecion.module.scss';
 
 function IndustriesResultsSection() {

@@ -1,3 +1,7 @@
+import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
+import VRARContent from 'components/VRARContent/VRARContent';
+import ContentText from 'components/ContentText/ContentText';
+
 import OurSolutionsImg1 from '@/images/confettiPage/solutionSection/img_card1_desk@2x.webp';
 import OurSolutionsImg2 from '@/images/confettiPage/solutionSection/img_card2_desk@2x.webp';
 import OurSolutionsImg3 from '@/images/confettiPage/solutionSection/img_card3_desk@2x.webp';
@@ -13,9 +17,6 @@ import OurSolutionsImgMobile2 from '@/images/confettiPage/solutionSection/img_ca
 import OurSolutionsImgMobile3 from '@/images/confettiPage/solutionSection/img_card3_mobile@2x.webp';
 import OurSolutionsImgMobile4 from '@/images/confettiPage/solutionSection/img_card4_mobile@2x.webp';
 import OurSolutionsImgMobile5 from '@/images/confettiPage/solutionSection/img_card5_mobile@2x.webp';
-import { IOurSolutionsData } from 'components/OurSolutions/interfaces/IOurSolutions';
-import VRARContent from 'components/VRARContent/VRARContent';
-import ContentText from 'components/ContentText/ContentText';
 
 const ourSolutionsData: IOurSolutionsData[] = [
   {

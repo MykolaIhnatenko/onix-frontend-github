@@ -1,11 +1,12 @@
 import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
 import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
+import PageLinks from 'constants/PageLinks';
+
 import SocialCarousel from '@/images/androidApplication/carousel/img_social.webp';
 import GamingCarousel from '@/images/androidApplication/carousel/img_gaming.webp';
 import TravelCarousel from '@/images/carousel/img_travel.webp';
 import OpenCarousel from '@/images/carousel/img_open.webp';
 import FintechCarousel from '@/images/carousel/img_fintech.webp';
-import PageLinks from 'constants/PageLinks';
 
 export const androidAppIndustriesCarouselData = {
   upTitle: '[ Industries we serve ]',

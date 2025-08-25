@@ -18,6 +18,10 @@ import { IPageBlogs } from '../../interfaces/IPages';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import { ButtonType } from '../../constants/enums';
+import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+import IAchievements from '../../interfaces/IAchievements';
+
 import IndustriesCallToActionBlockBg from '@/images/industriesPage/img_industries_call_to_action_block_bg@2x.webp';
 import IndustriesCallToActionBlockBgMobile from '@/images/industriesPage/img_industries_call_to_action_block_bg_mobile@2x.webp';
 import IndustriesCallToActionBlockBgTablet from '@/images/industriesPage/img_industries_call_to_action_block_bg_tablet@2x.webp';
@@ -27,13 +31,11 @@ import IndustriesMainBg from '@/images/industriesPage/img_industries_main_bg@2x.
 import IndustriesMainBgMobile from '@/images/industriesPage/img_industries_main_bg_mobile@2x.webp';
 import IndustriesMainBgTablet from '@/images/industriesPage/img_industries_main_bg_tablet@2x.webp';
 import WebDesignCTAFirstBigBg from '@/images/industriesPage/img_cta_first_big_bg@2x.webp';
-import MainBlockWith1TextBtn from 'components/MainBlockWith1TextBtn/MainBlockWith1TextBtn';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
 import CaseStudiesBgIndustriesDesk from '@/images/industriesPage/img_bg_case_studies_industries@2x.webp';
 import CaseStudiesBgIndustriesTablet from '@/images/industriesPage/img_bg_case_studies_industries_tablet@2x.webp';
 import CaseStudiesBgIndustriesMobile from '@/images/industriesPage/img_bg_case_studies_industries_mobile@2x.webp';
 
-function IndustriesPageView({ pageBlogs }: IPageBlogs) {
+function IndustriesPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isSMDevice,
@@ -94,7 +96,7 @@ function IndustriesPageView({ pageBlogs }: IPageBlogs) {
           title: 'screen-md:!max-w-[300px]',
         }}
       />
-      <IndustriesAwardsSection />
+      <IndustriesAwardsSection achievements={achievements} />
       <CooperateBlock
         title="Services enriched with our deep domain and industry expertise"
         data={cooperateList}

@@ -1,13 +1,14 @@
+import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
+import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
+import ItemText from 'components/ItemText/ItemText';
+import ItemList from 'components/ItemList/ItemList';
+
 import SportStreamingApps from '@/images/fitness/img_sportStreamingApps.webp';
 import SportsApps from '@/images/fitness/img_sportsApps.webp';
 import SportEventBookingApps from '@/images/fitness/img_sportEventBookingApps.webp';
 import MobileApps from '@/images/fitness/img_mobileApps.webp';
 import CoachingApps from '@/images/fitness/img_coachingApps.webp';
 import AppsDev from '@/images/fitness/img_appsDev.webp';
-import { IAccordionData } from 'components/AccordionTemplate/interfaces/IAccordion';
-import AccordionItemContentWithImg from 'components/AccordionItemContentWithImg/AccordionItemContentWithImg';
-import ItemText from 'components/ItemText/ItemText';
-import ItemList from 'components/ItemList/ItemList';
 
 const cardFitnessData: IAccordionData[] = [
   {

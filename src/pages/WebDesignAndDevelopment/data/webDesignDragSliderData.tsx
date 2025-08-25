@@ -1,10 +1,11 @@
 import { ICaseStudiesData } from 'components/CaseStudyCarouselItem/interfaces/ICaseStudyCarouselItem';
+import DragSliderItem from '../../../components/DragSlider/components/DragSliderItem';
+
 import WebDesignDragSliderImg1 from '@/images/webDesignPage/dragSlider/img_web_design_drag_slider_img_1@2x.webp';
 import WebDesignDragSliderImg2 from '@/images/webDesignPage/dragSlider/img_web_design_drag_slider_img_2@2x.webp';
 import WebDesignDragSliderImg3 from '@/images/webDesignPage/dragSlider/img_web_design_drag_slider_img_3@2x.webp';
 import WebDesignDragSliderImg4 from '@/images/webDesignPage/dragSlider/img_web_design_drag_slider_img_4@2x.webp';
 import WebDesignDragSliderImg5 from '@/images/webDesignPage/dragSlider/img_web_design_drag_slider_img_5@2x.webp';
-import DragSliderItem from '../../../components/DragSlider/components/DragSliderItem';
 
 const dragSliderData: ICaseStudiesData[] = [
   {

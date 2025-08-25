@@ -23,10 +23,14 @@ import salesforceCooperateBlockData from './data/salesforceCooperateBlockData';
 import salesforceMainScreenData from './data/salesforceMainSectionData';
 import salesforceAccreditationsBlock from './data/salesforceAccreditationsBlock';
 import {
-  CardBlockVariant,
   DropBlockVariant,
   ButtonType,
 } from '../../constants/enums';
+import MainBlockWith2TextBtn from 'components/MainBlockWith2TextBtn/MainBlockWith2TextBtn';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import { trustUsBlockFor6Cards } from 'constants/tailwindStyle';
+import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
+
 import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import TellUsAboutMD from '@/images/salesforcePage/img_tell_us_about_md@2x.webp';
 import TellUsAboutSM from '@/images/img_tell_us_about_sm.webp';
@@ -41,14 +45,10 @@ import SalesforceMainScreenImg from '@/images/salesforcePage/img_salesforceMain@
 import SalesforceAccreditationsBg from '@/images/salesforcePage/accreditations/img_accreditationsBlockBg.webp';
 import SalesforceAccreditationsTabletBg from '@/images/salesforcePage/accreditations/img_accreditationsBlockTabletBg.webp';
 import SalesforceAccreditationsMobileBg from '@/images/salesforcePage/accreditations/img_accreditationsBlockMobileBg.webp';
-import MainBlockWith2TextBtn from 'components/MainBlockWith2TextBtn/MainBlockWith2TextBtn';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import { trustUsBlockFor6Cards } from 'constants/tailwindStyle';
 import IndustriesBgXXXL from '@/images/industriesWeServe/img_bgXXXL.webp';
 import IndustriesBg from '@/images/industriesWeServe/img_bg.webp';
 import IndustriesBgTablet from '@/images/industriesWeServe/img_bgTablet.webp';
 import IndustriesBgMobile from '@/images/industriesWeServe/img_bgMobile.webp';
-import CaseStudiesBlock from 'components/CaseStudiesBlock/CaseStudiesBlock';
 import SalesforceCaseStudiesBg from '@/images/salesforcePage/caseStudies/img_caseStudiesSalesforceBg.webp';
 import SalesforceCaseStudiesMobileBg from '@/images/salesforcePage/caseStudies/img_caseStudiesSalesforceMobileBg_new.webp';
 import SalesforceCaseStudiesTabletBg from '@/images/salesforcePage/caseStudies/img_caseStudiesSalesforceTabletBg_new.webp';
@@ -197,11 +197,13 @@ function SalesforceDevServicesPageView({ pageBlogs }: IPageBlogs) {
       <TrustUsBlock
         data={salesforceTrustUsCardsData}
         title="Why Hire Onix Salesforce Developers?"
-        variant={CardBlockVariant.SALESFORCE}
         dropBlockVariant={DropBlockVariant.WITHOUT_DROP_BLOCK}
         classes={{
-          cardClasses: {
-            card: trustUsBlockFor6Cards,
+          sectionTitle: 'min-md:!mb-[40px] min-xl:!max-w-[680px] min-xl:!mb-[80px]',
+          CardsBlockClasses: {
+            cardClasses: {
+              card: trustUsBlockFor6Cards,
+            },
           },
         }}
       />

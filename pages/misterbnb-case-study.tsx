@@ -7,7 +7,7 @@ import IPages from '../src/interfaces/IPages';
 import Layout from '../src/layout/Layout';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
 import MisterBnBPageView from '../src/pages/MisterBnBPageView/MisterBnBPageView';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import ErrorPageView from 'pages/ErrorPageView/ErrorPageView';
 
 function MisterBnBPage({ seoData, footerContent }:IPages) {

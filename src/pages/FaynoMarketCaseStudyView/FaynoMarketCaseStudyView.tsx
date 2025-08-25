@@ -28,18 +28,19 @@ import RunningColsData from './data/RunningColsData';
 import OurSolutionsData from './data/OurSolutionsData';
 import IPageStatus from 'interfaces/IPageStatus';
 import { ButtonType } from 'constants/enums';
-import MainSectionBg from '@/images/faynoMarket/mainSection/img_MainSection.webp';
-import MainSectionTabletBg from '@/images/faynoMarket/mainSection/img_MainSectionTablet.webp';
-import MainSectionMobileBg from '@/images/faynoMarket/mainSection/img_MainSectionMobile.webp';
-import CTABg from '@/images/GolfLive/cta/img_CTA_bg.webp';
-import CTABgTablet from '@/images/GolfLive/cta/img_CTA_bg_tablet.webp';
-import CTABgMobile from '@/images/GolfLive/cta/img_CTA_bg_mobile.webp';
 import RunningColsBg from '../../assets/images/faynoMarket/runningCols/img_runningColsBg.webp';
 import RunningColsBgTablet from '../../assets/images/faynoMarket/runningCols/img_runningColsBgTablet.webp';
 import RunningColsBgMobile from '../../assets/images/faynoMarket/runningCols/img_runningColsBgMobile.webp';
 import InterfaceBg from '../../assets/images/faynoMarket/interfaces/img_interfaces.webp';
 import InterfaceBgTablet from '../../assets/images/faynoMarket/interfaces/img_interfacesTablet.webp';
 import InterfaceBgMobile from '../../assets/images/faynoMarket/interfaces/img_interfacesMobile.webp';
+
+import MainSectionBg from '@/images/faynoMarket/mainSection/img_MainSection.webp';
+import MainSectionTabletBg from '@/images/faynoMarket/mainSection/img_MainSectionTablet.webp';
+import MainSectionMobileBg from '@/images/faynoMarket/mainSection/img_MainSectionMobile.webp';
+import CTABg from '@/images/GolfLive/cta/img_CTA_bg.webp';
+import CTABgTablet from '@/images/GolfLive/cta/img_CTA_bg_tablet.webp';
+import CTABgMobile from '@/images/GolfLive/cta/img_CTA_bg_mobile.webp';
 
 function FaynoMarketCaseStudyView({ saleUrl }: IPageStatus) {
   const {

@@ -16,9 +16,15 @@ import inneraiCoreTechnologyData from './data/inneraiCoreTechnologyData';
 import inneraiSecondBusinessContextData from './data/inneraiSecondBusinessContextData';
 import inneraiMainBlockData from './data/inneraiMainBlockData';
 import inneraiDevelopmentServices from './data/inneraiDevelopmentServices';
-import {
-  ButtonType, UsabilityTestingMainBlockVariant,
-} from '../../constants/enums';
+import { ButtonType } from '../../constants/enums';
+import IPageStatus from '../../interfaces/IPageStatus';
+import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
+import testimonialData from './data/testimonialData';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import MainBgXXXL from '@/images/inneraiMeditationAppPage/mainBlock/img_mainBgxxxl@2x.webp';
 import MainBg from '@/images/inneraiMeditationAppPage/mainBlock/img_mainBg@2x.webp';
 import MainBgTablet from '@/images/inneraiMeditationAppPage/mainBlock/img_mainTabletBg@2x.webp';
@@ -41,14 +47,6 @@ import DevelopmentBgSecondMobile from '@/images/inneraiMeditationAppPage/develop
 import DevelopmentBgFirst from '@/images/inneraiMeditationAppPage/developmentServices/img_developmentFirst@2x.webp';
 import DevelopmentBgFirstTablet from '@/images/inneraiMeditationAppPage/developmentServices/img_developmentFirstTablet@2x.webp';
 import DevelopmentBgFirstMobile from '@/images/inneraiMeditationAppPage/developmentServices/img_developmentFirstMobile@2x.webp';
-import IPageStatus from '../../interfaces/IPageStatus';
-import TestimonialTextSection from 'components/TestimonialTextSection/TestimonialTextSection';
-import testimonialData from './data/testimonialData';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-
 import styles from './sass/inneraiMeditationAppPageView.module.scss';
 
 function InneraiMeditationAppPageView({ saleUrl }: IPageStatus) {
@@ -101,7 +99,35 @@ function InneraiMeditationAppPageView({ saleUrl }: IPageStatus) {
         text={inneraiMainBlockData.text}
         background={getBackground().mainBg}
         image={getBackground().mainPhones}
-        variant={UsabilityTestingMainBlockVariant.INNERAI}
+        classes={{
+          container: `max-1390:!h-screen screen-lg:!h-[1126px] screen-md:!min-h-[700px]
+            screen-md:!h-screen screen-md:!relative screen-sm:!min-h-[625px]`,
+          background: '!absolute !bottom-0 !right-0 !h-full !w-full',
+          backgroundImage: `!w-full !h-full !object-cover
+            !object-center screen-lg:!object-center
+            screen-md:!object-bottom`,
+          content: `!flex !items-center !justify-between !pr-[60px] min-xxxl:!pr-[170px]
+            screen-lg:!flex-col screen-lg:!items-start`,
+          logo: '!pb-[40px] screen-lg:!pb-[30px] screen-md:!pb-[15px]',
+          title: `!max-w-[649px] !pb-[40px] !text-[50px] max-1390:!max-w-[620px] max-1390:!leading-[1.4]
+            screen-xl:!max-w-[500px]
+            screen-xl:!text-[40px] screen-xl:!leading-[56px] screen-lg:!max-w-[606px] screen-lg:!pb-[30px]
+            screen-md:!pb-[15px] screen-md:!text-[25px] screen-md:!leading-[35px]`,
+          text: `!text-[30px] !leading-[40px] !max-w-[563px] screen-xl:!text-[24px] screen-xl:!leading-[34px]
+            screen-xl:!max-w-[510px] screen-lg:!max-w-[574px] screen-md:!max-w-[420px] screen-md:!text-[20px]
+            screen-md:!leading-[28px]`,
+          image: `!relative !top-[40px] !w-[560px] !h-[610px]
+            min-xxxl:!w-[730px] min-xxxl:!h-[815px]
+            min-xxl:!w-[630px] min-xxl:!h-[690px]
+            screen-xl:!w-[510px] screen-xl:!h-[560px]
+            screen-lg:!top-[50px] screen-lg:!w-[520px] screen-lg:!h-[560px] screen-lg:!left-[calc(50%+30px)]
+            screen-lg:!translate-x-[-50%] screen-lg:!m-0
+            screen-md:!absolute screen-md:!bottom-0 screen-md:!left-[calc(50%+10px)] screen-md:!translate-x-[-50%]
+            screen-md:!top-[unset] screen-md:!w-[430px] screen-md:!h-[357px]
+            screen-sm:!w-[330px] screen-sm:!h-[277px] screen-sm:!left-[calc(50%+8px)]`,
+          imageContent: '!w-full !h-full !object-cover screen-xl:!object-left max-1100:!object-contain '
+            + ' screen-lg:!object-cover screen-lg:!object-center',
+        }}
       />
       <AboutProjectSection
         title={inneraiHowOnixDeveloped.blockTitle}
@@ -120,6 +146,10 @@ function InneraiMeditationAppPageView({ saleUrl }: IPageStatus) {
         content={inneraiResultsBlockData.content}
         background={getBackground().resultsBlock}
         productScope
+        classes={{
+          background: `after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[80px]
+            after:bg-gradient-to-b from-[rgba(0,0,0,0)_5%] to-black`,
+        }}
       />
       {!saleUrl && (
         <VRARCallToActionComponent
@@ -143,7 +173,7 @@ function InneraiMeditationAppPageView({ saleUrl }: IPageStatus) {
           classes={{
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_30px] screen-sm:!p-[80px_15px]',
             background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
-            after:bg-gradient-to-t from-[rgba(0,0,0,0)_15%] to-black`,
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)_5%] to-black`,
             image: '!object-bottom',
             title: '!max-w-[1080px] !pb-[40px] screen-md:!pb-[30px]',
           }}

@@ -4,8 +4,8 @@ import ImageComponent from 'components/Image/Image';
 import GuideSection from './GuideSection';
 import icons from '../data/icons';
 import listItems from '../data/listItems.json';
-import ImageKiller from '@/images/MarineSafetyPage/img_killer-future-img.webp';
 
+import ImageKiller from '@/images/MarineSafetyPage/img_killer-future-img.webp';
 import styles from '../sass/MarineSafety.module.scss';
 
 function KillerFutureSection() {

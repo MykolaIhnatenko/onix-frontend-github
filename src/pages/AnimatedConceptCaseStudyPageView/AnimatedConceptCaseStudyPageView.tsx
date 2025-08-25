@@ -17,6 +17,9 @@ import { ButtonType, SpaceNewsMainBlokVariant } from '../../constants/enums';
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import IPageStatus from 'interfaces/IPageStatus';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -25,8 +28,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function AnimatedConceptCaseStudyPageView({ saleUrl }: IPageStatus) {
   const {

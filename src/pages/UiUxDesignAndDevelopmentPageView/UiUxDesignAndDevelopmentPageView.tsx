@@ -25,11 +25,14 @@ import uiUxQuotesList from './data/uiUxQuotesList';
 import uiUxFaqData from './data/uiUxFaqData';
 import {
   ButtonType,
-  CardBlockVariant,
   DropBlockVariant,
 } from '../../constants/enums';
 import CallToActionComponent from '../../components/CallToActionBlock/CallToActionComponent';
 import StickySlider from '../../components/StickySlider/StickySlider';
+import StickySliderData from 'pages/DesignAuditServicesPageView/data/designAuditStickySliderData';
+import { trustUsBlockFor6Cards } from 'constants/tailwindStyle';
+import IAchievements from '../../interfaces/IAchievements';
+
 import DesignAuditPlatformsServedBg from '@/images/designAuditServicesPage/platformsServed/img_designAuditPlatformsServedBg@2x.webp';
 import DesignAuditPlatformsServedTabletBg from '@/images/designAuditServicesPage/platformsServed/img_designAuditPlatformsServedTabletBg@2x.webp';
 import DesignAuditPlatformsServedMobileBg from '@/images/designAuditServicesPage/platformsServed/img_designAuditPlatformsServedMobileBg@2x.webp';
@@ -40,10 +43,8 @@ import UiUxCTAFirstBg from '@/images/uiUxPage/callToAction/img_uiUxCTAFirst@2x.w
 import UiUxCTAFirstTabletBg from '@/images/uiUxPage/callToAction/img_uiUxCTAFirstTablet@2x.webp';
 import UiUxCTAFirstMobileBg from '@/images/uiUxPage/callToAction/img_uiUxCTAFirstMobile@2x.webp';
 import TrustUsBlockTabletBg from '@/images/uiUxPage/trustUsBlock/img_trustUsBgMobile@2x.webp';
-import StickySliderData from 'pages/DesignAuditServicesPageView/data/designAuditStickySliderData';
-import { trustUsBlockFor6Cards } from 'constants/tailwindStyle';
 
-function UiUxDesignAndDevelopmentPageView({ pageBlogs }: IPageBlogs) {
+function UiUxDesignAndDevelopmentPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isMDDevice,
@@ -130,6 +131,7 @@ function UiUxDesignAndDevelopmentPageView({ pageBlogs }: IPageBlogs) {
         }}
       />
       <AchievementsBlock
+        achievements={achievements}
         title="Why Choose Onix for UI/UX Design"
       />
       <NumbersBlock
@@ -150,14 +152,16 @@ function UiUxDesignAndDevelopmentPageView({ pageBlogs }: IPageBlogs) {
       <TrustUsBlock
         data={uiUxTrustUsCardsData}
         title="There are several reasons why you should choose Onix for your UI/UX design needs:"
-        variant={CardBlockVariant.UI_UX}
         dropBlockVariant={DropBlockVariant.WITHOUT_DROP_BLOCK}
         trustUsBlockMobileBg={TrustUsBlockTabletBg}
         classes={{
-          cards: '!overflow-hidden',
-          bgDesktop: '!h-auto',
-          cardClasses: {
-            card: trustUsBlockFor6Cards,
+          sectionTitle: '!mb-[40px] min-xxl:!max-w-[1100px] screen-md:!mb-[30px]',
+          CardsBlockClasses: {
+            cards: '!overflow-hidden',
+            bgDesktop: '!h-auto',
+            cardClasses: {
+              card: trustUsBlockFor6Cards,
+            },
           },
         }}
       />

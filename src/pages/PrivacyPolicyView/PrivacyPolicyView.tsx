@@ -7,14 +7,14 @@ import CallToActionComponent from '../../components/CallToActionBlock/CallToActi
 import IStore from '../../store/interfaces/IStore';
 import { IApp } from '../../store/app/interfaces/IApp';
 import { generalSans } from '../../fonts/MainFonts';
+import { IPrivacyPolicyView } from './interfaces/IPrivacyPolicyView';
+
 import PrivacyPolicyBg from '@/images/privacyPolicyPage/mainBlock/img_privacy_policy_bg@2x.webp';
 import PrivacyPolicyMobileBg from '@/images/privacyPolicyPage/mainBlock/img_privacy_policy_mobile_bg@2x.webp';
 import PrivacyPolicyTabletBg from '@/images/privacyPolicyPage/mainBlock/img_privacy_policy_tablet_bg@2x.webp';
 import PrivacyPolicyCTABg from '@/images/privacyPolicyPage/img_CTABg@2x.webp';
 import PrivacyPolicyCTATabletBg from '@/images/privacyPolicyPage/img_CTATabletBg@2x.webp';
 import PrivacyPolicyCTAMobileBg from '@/images/privacyPolicyPage/img_CTAMobileBg@2x.webp';
-import { IPrivacyPolicyView } from './interfaces/IPrivacyPolicyView';
-
 import styles from './sass/privacyPolicyView.module.scss';
 
 function PrivacyPolicyView({ data, pageTitle, saleUrl }: IPrivacyPolicyView) {

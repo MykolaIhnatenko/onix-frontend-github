@@ -17,7 +17,8 @@ const contactSchema = yup.object({
     .min(3, 'Name should be of minimum 3 characters length'),
   company: yup
     .string()
-    .transform((value: string) => value.trim()),
+    .transform((value: string) => value.trim())
+    .required('Field is required'),
   country: yup
     .string()
     .transform((value: string) => value.trim()),

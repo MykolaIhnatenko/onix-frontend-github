@@ -17,6 +17,16 @@ interface IAndroidAppEngagementModels {
   secondItemImgTablet: StaticImageData,
   secondItemImgMobile: StaticImageData,
   variant?: AndroidAppEngagementModelsVariant,
+  classes?: {
+    container?: string;
+    contentContainer?: string;
+    firstItemContainer?: string;
+    secondItemContainer?: string;
+    itemFlex?: string;
+    itemContent?: string;
+    imageContainer?: string;
+    image?: string;
+  }
 }
 
 export default IAndroidAppEngagementModels;

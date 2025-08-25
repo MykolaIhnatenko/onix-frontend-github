@@ -6,15 +6,15 @@ import useWindowSize from '../../../hook/useWindowSize';
 import { MD_DEVICE, SM_DEVICE } from '../../../constants/constants';
 import ImageComponent from '../../../components/Image/Image';
 import { setShowContactForm } from '../../../store/app/contactForm/slice';
+import BracketologyPageContainer from './BracketologyPageContainer';
+import BracketologyText from './BracketologyText';
+
 import contactUsBgMobile1 from '@/images/bracketology/contactUs/img_bg_mobile1@2x.webp';
 import contactUsBgMobile2 from '@/images/bracketology/contactUs/img_bg_mobile2@2x.webp';
 import contactUsBgTablet1 from '@/images/bracketology/contactUs/img_bg_tablet1@2x.webp';
 import contactUsBgTablet2 from '@/images/bracketology/contactUs/img_bg_tablet2@2x.webp';
 import contactUsBgDesktop1 from '@/images/bracketology/contactUs/img_bg_desktop1@2x.webp';
 import contactUsBgDesktop2 from '@/images/bracketology/contactUs/img_bg_desktop2@2x.webp';
-import BracketologyPageContainer from './BracketologyPageContainer';
-import BracketologyText from './BracketologyText';
-
 import styles from '../sass/BracketologyContactUs.module.scss';
 
 function BracketologyContactUs({ firstVariant, className = '', idBtn }: IBracketologyContactUs) {

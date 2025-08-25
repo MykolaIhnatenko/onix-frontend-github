@@ -1,5 +1,7 @@
 import IndustriesWeServeCarouselItem from '../../../components/IndustriesWeServeBlock/components/IndustriesWeServeCarouselItem';
 import { ICarouselAutomaticData } from '../../../components/CarouselAutomatic/interfaces/ICarouselAutomatic';
+import PageLinks from 'constants/PageLinks';
+
 import Elearning from '@/images/carousel/img_elearning_1.webp';
 import Networking from '@/images/carousel/img_social_networking.webp';
 import Fintech from '@/images/carousel/img_fintech_1.webp';
@@ -9,7 +11,6 @@ import TravelCarousel from '@/images/carousel/img_travel.webp';
 import OpenCarousel from '@/images/carousel/img_open.webp';
 import FintechCarousel from '@/images/carousel/img_fintech.webp';
 import ElearningCarousel from '@/images/carousel/img_elearning.webp';
-import PageLinks from 'constants/PageLinks';
 
 export const webDesignIndustriesWeServeBlockData = {
   pageTitle: 'Industries we serve',

@@ -1,9 +1,9 @@
-import MachineLCalculateBg from '@/images/machineLearning/calculate/img_calculate_machineL_bg.webp';
 import ContentText from '../../../components/ContentText/ContentText';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import CardSkiderData from './machineLCardSliderData';
 import ICalculateMachineL from '../interfaces/ICalculateMachineL';
 
+import MachineLCalculateBg from '@/images/machineLearning/calculate/img_calculate_machineL_bg.webp';
 import styles from '../sass/calculateMachineL.module.scss';
 
 const machineLCalculateData: ICalculateMachineL = {

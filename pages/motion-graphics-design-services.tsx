@@ -10,7 +10,7 @@ import Layout from '../src/layout/Layout';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import IPages from '../src/interfaces/IPages';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
@@ -22,6 +22,8 @@ function MotionGraphicsDesignServices({
     TitlePages.SERVICES,
     TitlePages.MOTION_DESIGN,
   );
+  const achievements = seoData.achievements?.data || [];
+
   return (
     <Layout
       footerContent={footerContent}
@@ -32,7 +34,7 @@ function MotionGraphicsDesignServices({
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <MotionGraphicsDesignServicesPageView pageBlogs={pageBlogs} />
+      <MotionGraphicsDesignServicesPageView achievements={achievements} pageBlogs={pageBlogs} />
     </Layout>
   );
 }

@@ -4,9 +4,9 @@ import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
 import ITIndustryDragComponent from './ITIndustryDragComponent';
 import itIndustryData from '../data/itIndustryData';
+
 import AboutUkraineITIndustryBg from '@/images/aboutUkraine/itIndustry/img_it_industry_bg.webp';
 import AboutUkraineITIndustryMobile from '@/images/aboutUkraine/itIndustry/img_it_industry_mobile.webp';
-
 import styles from '../sass/itIndustry.module.scss';
 
 function ITIndustry() {

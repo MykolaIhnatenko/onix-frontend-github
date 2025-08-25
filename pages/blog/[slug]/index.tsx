@@ -1,5 +1,4 @@
 import Script from 'next/script';
-import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
 import Layout from '../../../src/layout/Layout';
@@ -16,7 +15,6 @@ import getBlogsByIds from '../../../src/api/getBlogsByIds';
 import sortBlogs from '../../../src/utils/sortBlogs';
 import getRandomBlogs from '../../../src/api/getRandomBlogs';
 import normalizeBlogsData from '../../../src/utils/normalizeBlogData';
-import ArticleJsonLd from '../../../src/components/ArticleJsonLd/ArticleJsonLd';
 import { getSingleBlogBreadcrumbs } from '../../../src/utils/blogsUtils';
 import PagesToSalesChannels from '../../../src/constants/PageToSalesChannels';
 import getFooterContent from 'api/getFooterContent';
@@ -59,9 +57,6 @@ function BlogsPage({
   return (
     <>
       {mailerlite}
-      <Head>
-        {ArticleJsonLd({ attributes: blogData?.attributes, articleType: 'BlogPosting' })}
-      </Head>
       <Layout
         footerContent={footerContent}
         seoData={seoData}

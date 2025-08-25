@@ -2,8 +2,8 @@ import useWindowSize from '../../../hook/useWindowSize';
 import ImageComponent from '../../../components/Image/Image';
 import Icon from '../../../assets/icon';
 import { MD_DEVICE } from '../../../constants/constants';
-import PurposeImage from '@/images/caseStudiesPage/ColoradoSports/img_purpose-image.webp';
 
+import PurposeImage from '@/images/caseStudiesPage/ColoradoSports/img_purpose-image.webp';
 import styles from '../sass/coloradoSportsVideo.module.scss';
 
 const video = '/static/video/purpose-video.mp4';

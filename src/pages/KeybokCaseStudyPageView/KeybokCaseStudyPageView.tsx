@@ -16,9 +16,18 @@ import {
 import { ButtonType } from '../../constants/enums';
 import IPageStatus from '../../interfaces/IPageStatus';
 import ButtonTypes from '../../constants/ButtonTypes';
+import technologyData from './data/technologyData.json';
+import resultsBlockWhite from 'constants/tailwindStyle';
+import { resultsBlockData, resultsBlockSecondData } from './data/resultsBlockData';
+import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
+import ourSolutionsData from './data/ourSolutionsData';
+import phonesData from './data/keyBokPhonesData';
+import OurSolutions from 'components/OurSolutions/OurSolutions';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+
 import ServicesBg from '@/images/keyBokPage/servicesBlock/img_services_bg.webp';
 import ServicesBgTablet from '@/images/keyBokPage/servicesBlock/img_services_bg_tablet.webp';
-import technologyData from './data/technologyData.json';
 import ServicesBgMobile from '@/images/keyBokPage/servicesBlock/img_services_bg_mobile.webp';
 import CallToBgSecond from '@/images/keyBokPage/callToAction/img_call_to_bg_second.webp';
 import CallToBgTabletSecond from '@/images/keyBokPage/callToAction/img_call_to_bg_tablet_second.webp';
@@ -31,19 +40,10 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaWhiteBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaWhiteTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaWhiteMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaWhiteXXXLBg@2x.webp';
-import resultsBlockWhite from 'constants/tailwindStyle';
 import RunningColsBgXXXL from '@/images/runningColsBlock/img_runningColsBgXXXL.webp';
 import RunningColsBg from '@/images/runningColsBlock/img_runningColsBg.webp';
 import RunningColsBgTablet from '@/images/runningColsBlock/img_runningColsBgTablet.webp';
 import RunningColsBgMobile from '@/images/runningColsBlock/img_runningColsBgMobile.webp';
-import { resultsBlockData, resultsBlockSecondData } from './data/resultsBlockData';
-import CoreTechnology from 'components/CoreTechnology/CoreTechnology';
-import ourSolutionsData from './data/ourSolutionsData';
-import phonesData from './data/keyBokPhonesData';
-import OurSolutions from 'components/OurSolutions/OurSolutions';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
-
 import technologyClasses from './sass/technology.module.scss';
 
 function KeybokCaseStudyPageView({ saleUrl }: IPageStatus) {

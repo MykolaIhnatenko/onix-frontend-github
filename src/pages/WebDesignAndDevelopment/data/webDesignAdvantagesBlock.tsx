@@ -1,4 +1,5 @@
 import { IAdvantagesData } from '../../../components/AdvantagesBlock/interfaces/IAdvantagesBlock';
+
 import WebDesignAdvantagesBlockImg1 from '@/images/webDesignPage/advantagesBlock/img_advantages_block_1@2x.webp';
 import WebDesignAdvantagesBlockImg2 from '@/images/webDesignPage/advantagesBlock/img_advantages_block_2@2x.webp';
 import WebDesignAdvantagesBlockImg3 from '@/images/webDesignPage/advantagesBlock/img_advantages_block_3@2x.webp';

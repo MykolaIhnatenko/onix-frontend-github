@@ -1,4 +1,5 @@
 import { IConfetti } from '../interfaces/IConfettiAnimation';
+
 import Confetti1 from '@/images/faynoMarket/confetti/img_confetti01.webp';
 import Confetti2 from '@/images/faynoMarket/confetti/img_confetti02.webp';
 import Confetti3 from '@/images/faynoMarket/confetti/img_confetti03.webp';

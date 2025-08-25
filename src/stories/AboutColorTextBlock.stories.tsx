@@ -3,20 +3,11 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import AboutColorTextBlock from '../components/AboutColorTextBlock/AboutColorTextBlock';
 import '../pages/App/sass/globals.scss';
-import { AboutColorTextBlockVariant } from '../constants/enums';
 
 const meta: Meta<typeof AboutColorTextBlock> = {
   title: 'AboutColorTextBlock',
   component: AboutColorTextBlock,
   tags: ['autodocs'],
-  argTypes: {
-    variant: {
-      options: Object.values(AboutColorTextBlockVariant),
-      control: {
-        type: 'radio',
-      },
-    },
-  },
 };
 
 export default meta;

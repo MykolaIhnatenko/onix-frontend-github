@@ -19,6 +19,8 @@ import SalesforceResultSection from './components/SalesforceResultSection';
 import SalesforceContactUsSection from './components/SalesforceContactUsSection';
 import SalesforceSolutionSection from './components/SalesforceSolutionSection';
 import { muktaVaaniFont } from '../../fonts/MainFonts';
+import IPageStatus from 'interfaces/IPageStatus';
+
 import MainBgDesktop from '@/images/salesforceSupportAutomationApp/img_mainBackground.webp';
 import MainBgPhone from '@/images/salesforceSupportAutomationApp/img_main_bg_phone.webp';
 import Picture1 from '@/images/salesforceSupportAutomationApp/img_secondSectionImg.webp';
@@ -28,8 +30,6 @@ import SolutionImgPhone from '@/images/salesforcePersonnelTrackingApp/solutionSe
 import ResultImgDesktop from '@/images/salesforcePersonnelTrackingApp/resultSection/img_resultImg.webp';
 import ResultImgTablet from '@/images/salesforcePersonnelTrackingApp/resultSection/img_resultImgTablet.webp';
 import ResultImgPhone from '@/images/salesforcePersonnelTrackingApp/resultSection/img_resultImgPhone.webp';
-import IPageStatus from 'interfaces/IPageStatus';
-
 import styles from './sass/salesforcePage.module.scss';
 
 function SalesforceSupportAutomationAppPageView({ saleUrl }: IPageStatus) {

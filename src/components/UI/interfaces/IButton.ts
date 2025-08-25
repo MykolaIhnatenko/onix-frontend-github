@@ -13,6 +13,7 @@ export default interface IButton {
   fontSizeSmallOnMobile?: boolean;
   typeButton?: 'button' | 'submit';
   id?: string;
+  isJakarta?: boolean;
   classes?: {
     container?: string;
     content?: string;

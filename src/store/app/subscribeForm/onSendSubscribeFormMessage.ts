@@ -4,6 +4,7 @@ import { clientIdGA, sourseBusterData } from '../../../utils/customerJourneyMap'
 import { ISubscribeFormSendValues, ISubscribeFormValues } from './interfaces/ISubscribeForm';
 import blogsFormThankHelper from '../../../utils/blogsFormThankHelper';
 import PagesToSalesChannels from '../../../constants/PageToSalesChannels';
+import blacklistedEmails from 'constants/blacklistedEmails';
 
 interface ISendSubscribeFormMessage {
   values: ISubscribeFormValues;
@@ -23,6 +24,13 @@ const onSendSubscribeFormMessage = createAsyncThunk(
         ...values,
         topics: values.topics.join(', '),
       };
+
+      const isBlacklisted = blacklistedEmails.includes(values.email.trim().toLowerCase());
+      if (isBlacklisted) {
+        return {
+          data: true,
+        };
+      }
 
       Object.keys(formattedValues).forEach((key) => {
         formData.set(key, formattedValues[key as keyof typeof values]);

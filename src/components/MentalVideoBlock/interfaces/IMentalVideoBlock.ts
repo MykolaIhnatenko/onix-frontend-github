@@ -6,12 +6,13 @@ export default interface IMentalVideoBlock {
   video?: string;
   image?: string | StaticImageData;
   classes?: {
+    container?: string;
     videoPlayer?: string;
     video?: string;
-    container?: string;
+    videoContainer?: string;
+    titleScreen?: string;
   }
   animImage?: string | StaticImageData;
   withoutBtn?: boolean;
   idVideoBlock?: string;
-  styleContainer?: string;
 }

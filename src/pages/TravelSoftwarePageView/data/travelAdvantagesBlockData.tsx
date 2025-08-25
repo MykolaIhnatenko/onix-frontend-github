@@ -1,8 +1,9 @@
 import { IAdvantagesData } from '../../../components/AdvantagesBlock/interfaces/IAdvantagesBlock';
+import { ButtonType } from '../../../constants/enums';
+
 import TravelAdvantagesBlockImg1 from '@/images/travelHospitalityPage/AdvantagesBlock/img_travelAdvantagesBlockImg1@2x.webp';
 import TravelAdvantagesBlockImg2 from '@/images/travelHospitalityPage/AdvantagesBlock/img_travelAdvantagesBlockImg2@2x.webp';
 import TravelAdvantagesBlockImg3 from '@/images/travelHospitalityPage/AdvantagesBlock/img_travelAdvantagesBlockImg3@2x.webp';
-import { ButtonType } from '../../../constants/enums';
 
 const travelAdvantagesBlockData: IAdvantagesData[] = [
   {

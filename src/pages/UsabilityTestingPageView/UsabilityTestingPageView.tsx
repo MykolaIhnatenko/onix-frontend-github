@@ -26,6 +26,12 @@ import {
   usabilityProcessImagesData,
 } from './data/usabilityProcessBlockData';
 import IPageStatus from '../../interfaces/IPageStatus';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
+import carouselData from './data/carouselData';
+import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
+import AboutProjectSection from 'components/AboutProject/AboutProject';
+import BusinessContext from 'components/BusinessContext/BusinessContext';
+
 import RunningRowsBlockBg from '@/images/usabilityTestingPage/runningRowsBlock/img_RunningRowsBg@2x.webp';
 import RunningRowsBlockTabletBg from '@/images/usabilityTestingPage/runningRowsBlock/img_RunningRowsTabletBg@2x.webp';
 import RunningRowsBlockMobileBg from '@/images/usabilityTestingPage/runningRowsBlock/img_RunningRowsMobileBg@2x.webp';
@@ -34,9 +40,6 @@ import IncreaseBlockBg from '@/images/usabilityTestingPage/increaseBlock/img_Inc
 import IncreaseBlockMibuleBg from '@/images/usabilityTestingPage/increaseBlock/img_IncreaseBlockMobileBg@2x.webp';
 import MainBg from '@/images/usabilityTestingPage/MainBlock/img_mainBlockImg@2x.webp';
 import MainTabletBg from '@/images/usabilityTestingPage/MainBlock/img_mainBlockTabletImg@2x.webp';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
-import carouselData from './data/carouselData';
-import RunningRowsBlock from 'components/RunningRowsBlock/RunningRowsBlock';
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import ResultsBlockTabletBg from '@/images/ResultsBlockBg/img_resultsBlockBlackTabletBg@2x.webp';
 import ResultsBlockMobileBg from '@/images/ResultsBlockBg/img_resultsBlockBlackMobileBg@2x.webp';
@@ -45,8 +48,6 @@ import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import CTAFirstTabletBg from '@/images/ResultsBlockBg/img_ctaBlackTabletBg@2x.webp';
 import CTAFirstMobileBg from '@/images/ResultsBlockBg/img_ctaBlackMobileBg@2x.webp';
 import CTAFirstXXXLBg from '@/images/ResultsBlockBg/img_ctaBlackXXXLBg@2x.webp';
-import AboutProjectSection from 'components/AboutProject/AboutProject';
-import BusinessContext from 'components/BusinessContext/BusinessContext';
 
 function UsabilityTestingPageView({ saleUrl }: IPageStatus) {
   const {
@@ -114,6 +115,10 @@ function UsabilityTestingPageView({ saleUrl }: IPageStatus) {
         content={usabilityResultsBlockData.content}
         background={getBackground().resultsBlock}
         productScope
+        classes={{
+          background: `after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-b from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[90px]`,
+        }}
       />
       {!saleUrl && (
         <VRARCallToActionComponent
@@ -131,8 +136,8 @@ function UsabilityTestingPageView({ saleUrl }: IPageStatus) {
           background={getBackground().ctaFirst}
           classes={{
             cta: '!p-[120px_70px] screen-lg:!p-[80px_30px] screen-md:!p-[80px_30px] screen-sm:!p-[80px_15px]',
-            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[50px]
-            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black`,
+            background: `after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-[120px]
+            after:bg-gradient-to-t from-[rgba(0,0,0,0)] to-black screen-lg:after:h-[80px]`,
             image: 'screen-md:!object-bottom',
             title: '!max-w-[1078px] screen-lg:!max-w-[708px] screen-md:!max-w-full screen-md:!pb-[30px]',
           }}

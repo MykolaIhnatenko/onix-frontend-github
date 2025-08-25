@@ -70,7 +70,7 @@ function FullCycleRow({ item, rowClasses }: IFullCycleRowItem) {
         >
           {item.leftPostfix && (
           <motion.span className={`
-            text-[50px] font-[500]
+            text-[50px] font-[500] 
             screen-md:text-[30px] screen-md:font-[400]
             ${rowClasses?.leftPostfix || ''}
           `}

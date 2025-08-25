@@ -26,11 +26,17 @@ import ButtonTypes from '../../constants/ButtonTypes';
 import {
   ButtonType,
   CalculateMachineLVariant,
-  CardBlockVariant,
   DropBlockVariant,
 } from '../../constants/enums';
 import StickySlider from '../../components/StickySlider/StickySlider';
 import StickySliderData from './data/designAuditStickySliderData';
+import designAuditAccordionData from './data/designAuditSoftwareProductContentData';
+import AccordionWhite from 'components/AccordionWhite/AccordionWhite';
+import { AccordionWhiteStyleTypes } from 'constants/AccordionStyleTypes';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
+import IAchievements from '../../interfaces/IAchievements';
+
 import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
 import TellUsAboutMD from '@/images/img_tell_us_about_md@2x.webp';
 import TellUsAboutSM from '@/images/img_tell_us_about_sm@2x.webp';
@@ -49,13 +55,8 @@ import DesignAuditCTASecondMobileBg from '@/images/designAuditServicesPage/callT
 import DesignAuditPlatformsServedBg from '@/images/designAuditServicesPage/platformsServed/img_designAuditPlatformsServedBg@2x.webp';
 import DesignAuditPlatformsServedTabletBg from '@/images/designAuditServicesPage/platformsServed/img_designAuditPlatformsServedTabletBg@2x.webp';
 import DesignAuditPlatformsServedMobileBg from '@/images/designAuditServicesPage/platformsServed/img_designAuditPlatformsServedMobileBg@2x.webp';
-import designAuditAccordionData from './data/designAuditSoftwareProductContentData';
-import AccordionWhite from 'components/AccordionWhite/AccordionWhite';
-import { AccordionWhiteStyleTypes } from 'constants/AccordionStyleTypes';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-import BusinessContextDiagonal from 'components/BusinessContextDiagonal/BusinessContextDiagonal';
 
-function DesignAuditServicesPageView({ pageBlogs }: IPageBlogs) {
+function DesignAuditServicesPageView({ pageBlogs, achievements }: IPageBlogs & IAchievements) {
   const {
     screenSizes: {
       isMDDevice, isSMDevice, isXSDevice, isXXXLDevice,
@@ -202,7 +203,7 @@ function DesignAuditServicesPageView({ pageBlogs }: IPageBlogs) {
           icon: '!h-[60px] !w-[60px] screen-lg:!h-[50px] screen-lg:!w-[50px] screen-md:!h-[33px] screen-md:!w-[33px]',
         }}
       />
-      <AchievementsBlock />
+      <AchievementsBlock achievements={achievements} />
       <NumbersBlock
         data={designAuditNumberData}
         classes={{
@@ -223,12 +224,14 @@ function DesignAuditServicesPageView({ pageBlogs }: IPageBlogs) {
       <TrustUsBlock
         data={designAuditTrustUsCardsData}
         title="There are several reasons why you should choose Onix for your product design needs:"
-        variant={CardBlockVariant.DESIGN_AUDIT}
         classes={{
-          cardClasses: {
-            card: `[&:last-of-type]:!border-b-[2px] [&:last-of-type]:!border-black
-            min-md:[&:nth-of-type(5)]:!border-b-[2px] min-md:[&:nth-of-type(5)]:!border-black
-            min-xl:[&:nth-of-type(4)]:!border-b-[2px] min-xl:[&:nth-of-type(4)]:!border-black`,
+          sectionTitle: '!mb-[40px] min-xxl:!max-w-[1100px] screen-md:!mb-[30px]',
+          CardsBlockClasses: {
+            cardClasses: {
+              card: `[&:last-of-type]:!border-b-[2px] [&:last-of-type]:!border-black
+              min-md:[&:nth-of-type(5)]:!border-b-[2px] min-md:[&:nth-of-type(5)]:!border-black
+              min-xl:[&:nth-of-type(4)]:!border-b-[2px] min-xl:[&:nth-of-type(4)]:!border-black`,
+            },
           },
         }}
         dropBlockVariant={DropBlockVariant.WITHOUT_DROP_BLOCK}

@@ -4,14 +4,8 @@ import AboutScheduling from './components/AboutScheduling';
 import SystemBuildBlock from './components/SystemBuildBlock';
 import OurCaseStudies from '../../components/OurCaseStudies/OurCaseStudies';
 import CallToActionComponent from '../../components/CallToActionBlock/CallToActionComponent';
-import bgOffer from '@/images/booking/img_bg_Weoffer.webp';
-import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
-import CalculateBackgroundLG from '@/images/img_calculate_background_lg.webp';
-import BookCarouselTablet from '@/images/carousel/img_BookCarouselTablet.webp';
-import BookCarouselMobile from '@/images/carousel/img_BookCarouselMobile.webp';
-import BookCarousel from '@/images/carousel/img_book@2x.webp';
 import {
-  ButtonPathVariant, ButtonType, ChooseOnixVariant,
+  ButtonPathVariant, ButtonType,
 } from '../../constants/enums';
 import ButtonTypes from '../../constants/ButtonTypes';
 import FeaterProvideSystems from '../../components/FeaterProvideSystems/FeaterProvideSystems';
@@ -40,6 +34,12 @@ import ReviewBlock from '../../components/ReviewBlock/ReviewBlock';
 import IndustryBanner from 'components/IndustryBanner/IndustryBanner';
 import { containerActiveBlocksBooking, technologiesBlockBlack } from 'constants/tailwindStyle';
 
+import BookCarousel from '@/images/carousel/img_book@2x.webp';
+import BookCarouselMobile from '@/images/carousel/img_BookCarouselMobile.webp';
+import BookCarouselTablet from '@/images/carousel/img_BookCarouselTablet.webp';
+import CalculateBackgroundLG from '@/images/img_calculate_background_lg.webp';
+import TellUsAboutLG from '@/images/img_tell_us_about_lg.webp';
+import bgOffer from '@/images/booking/img_bg_Weoffer.webp';
 import bookingIndustries from './sass/bookingIndustries.module.scss';
 
 function OnlineSchedulingAndBookingView({
@@ -155,7 +155,12 @@ function OnlineSchedulingAndBookingView({
       <ChooseOnix
         data={chooseOnixData}
         title="Why choose Onix"
-        variant={ChooseOnixVariant.BOOKING}
+        classes={{
+          title: 'screen-md:pb-[40px]',
+          item: 'screen-md:!p-[21px_0] screen-md:!gap-0',
+          textItem: 'screen-md:!text-[20px] screen-md:!leading-[28px]',
+          descItem: 'screen-md:!text-[16px] screen-md:!leading-[24px]',
+        }}
       />
       <CallToActionComponent
         id={ButtonType.LAND}

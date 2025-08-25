@@ -4,10 +4,10 @@ import PageContainer from '../../../components/PageContainer/PageContainer';
 import ProductDiscoveryHelpsYouData from '../data/ProductDiscoveryHelpsYouData';
 import HelpItem from './HelpItem';
 import ImageComponent from 'components/Image/Image';
+
 import HelpsYouBg from '@/images/productDiscovery/img_discovery_helps_you.webp';
 import HelpsYouTabletBg from '@/images/productDiscovery/img_discovery_helps_you_tablet.webp';
 import HelpsYouMobileBg from '@/images/productDiscovery/img_discovery_helps_you_mobile.webp';
-
 import styles from '../sass/ProductDiscoveryHelpsYouSection.module.scss';
 
 export default function ProductDiscoveryHelpsYouSection() {

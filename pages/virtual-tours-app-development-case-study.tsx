@@ -3,7 +3,7 @@ import React from 'react';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
 import Layout from '../src/layout/Layout';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { checkSaleUrl } from '../src/utils/helpers';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import IPages from '../src/interfaces/IPages';

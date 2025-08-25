@@ -1,8 +1,8 @@
 import ISlideImage from '../../interfaces/ISlideImage';
-import ImageThirdLeft from '@/images/travelbid/beginningSection/img_third-picture-left.webp';
-import ImageThirdRight from '@/images/travelbid/beginningSection/img_third-picture-right.webp';
 import ImageComponent from '../../../../components/Image/Image';
 
+import ImageThirdLeft from '@/images/travelbid/beginningSection/img_third-picture-left.webp';
+import ImageThirdRight from '@/images/travelbid/beginningSection/img_third-picture-right.webp';
 import styles from '../../sass/BeginningSlider/ThirdSlideImage.module.scss';
 import commonStyles from '../../sass/BeginningSlider/common/commonStyles.module.scss';
 

@@ -7,6 +7,7 @@ import { IDownloadFormValues } from '../store/app/downloadForm/interfaces/IDownl
 import { ISubscribeFormValues } from '../store/app/subscribeForm/interfaces/ISubscribeForm';
 import getBlogsByIds from 'api/getBlogsByIds';
 import ISeoData from 'interfaces/ISeoData';
+import { ISubscribeFormMainValues } from '../store/app/subscribeMainForm/interfaces/ISubscribeForm';
 
 import styles from '../pages/Blogs/sass/downloadForm.module.scss';
 import subscribeStyles from '../pages/Blogs/sass/subscribeForm.module.scss';
@@ -124,7 +125,7 @@ export const getFormValues = (
         error: touched.company && errors.company,
         label: 'Company',
         className: subscribeStyles.company,
-        isAsterisk: false,
+        isAsterisk: true,
       },
     ];
   }
@@ -134,6 +135,46 @@ export const getFormValues = (
   }
 
   return formValues;
+};
+
+export const getFormValuesMain = (
+  formikObj: FormikProps<ISubscribeFormMainValues>,
+) => {
+  const {
+    values: { name, email, position },
+    touched,
+    errors,
+  } = formikObj;
+
+  return [
+    {
+      id: 1,
+      value: name,
+      name: 'name',
+      error: touched.name && errors.name,
+      label: 'Your Name',
+      className: styles.name,
+      isAsterisk: true,
+    },
+    {
+      id: 2,
+      value: position,
+      name: 'position',
+      error: touched.position && errors.position,
+      label: 'Position',
+      className: styles.company,
+      isAsterisk: true,
+    },
+    {
+      id: 3,
+      value: email,
+      name: 'email',
+      error: touched.email && errors.email,
+      label: 'Email',
+      className: styles.email,
+      isAsterisk: true,
+    },
+  ];
 };
 
 export const getBlogsList = async (seoData: ISeoData, array: number[]) => {

@@ -5,12 +5,12 @@ import ContentText from '../../../components/ContentText/ContentText';
 import onixStoryOurWayData from '../data/onixStoryOurWayData';
 import ImageComponent from '../../../components/Image/Image';
 import { useAppSelector } from '../../../hook/reduxToolkit';
+
 import OnixStoryTimeline from '@/images/onixStory/img_timeline.webp';
 import OnixStoryTimelineBg from '@/images/onixStory/ourWay/img_onixStoryTimelineBg@2x.webp';
 import OnixStoryTimelineBigBg from '@/images/onixStory/ourWay/img_onixStoryTimelineBigBg@2x.webp';
 import OnixStoryTimelineTabletBg from '@/images/onixStory/ourWay/img_onixStoryTimelineTabletBg@2x.webp';
 import OnixStoryTimelineMobileBg from '@/images/onixStory/ourWay/img_onixStoryTimelineMobileBg@2x.webp';
-
 import styles from '../sass/onixStoryOurWay.module.scss';
 
 function OnixStoryOurWay() {
@@ -34,7 +34,7 @@ function OnixStoryOurWay() {
   return (
     <section className={styles.section}>
       <div className={styles.background}>
-        <ImageComponent src={getBackground().background} fill sizes="100vw" />
+        <ImageComponent src={getBackground().background} alt="background" fill sizes="100vw" />
       </div>
       <MainTitle className={styles.title}>
         How we started

@@ -3,12 +3,6 @@ import { useMemo } from 'react';
 import { muktaVaaniFont } from '../../fonts/MainFonts';
 import { IBracketologyPageView } from './interfaces/IBracketologyPageView';
 import BracketologyMainSection from './components/BracketologyMainSection';
-import processBg from '@/images/bracketology/processSection/img_process_bg@2x.webp';
-import processBgTablet from '@/images/bracketology/processSection/img_process_bg_tablet@2x.webp';
-import processBgMobile from '@/images/bracketology/processSection/img_process_bg_mobile@2x.webp';
-import mainBg from '@/images/bracketology/mainSection/img_main_bg@2x.webp';
-import mainBgTablet from '@/images/bracketology/mainSection/img_main_bg_tablet@2x.webp';
-import mainBgMobile from '@/images/bracketology/mainSection/img_main_bg_mobile@2x.webp';
 import BracketologyContactUs from './components/BracketologyContactUs';
 import BracketologyTodaySection from './components/BracketologyTodaySection';
 import BracketologyBachelorSection from './components/BracketologyBachelorSection';
@@ -22,6 +16,12 @@ import BracketologyChallengeSection from './components/BracketologyChallengeSect
 import BracketologyResultSection from './components/BracketologyRelultSection';
 import { ButtonType } from 'constants/enums';
 
+import mainBgMobile from '@/images/bracketology/mainSection/img_main_bg_mobile@2x.webp';
+import mainBgTablet from '@/images/bracketology/mainSection/img_main_bg_tablet@2x.webp';
+import mainBg from '@/images/bracketology/mainSection/img_main_bg@2x.webp';
+import processBgMobile from '@/images/bracketology/processSection/img_process_bg_mobile@2x.webp';
+import processBgTablet from '@/images/bracketology/processSection/img_process_bg_tablet@2x.webp';
+import processBg from '@/images/bracketology/processSection/img_process_bg@2x.webp';
 import styles from './sass/BracketologyPageView.module.scss';
 
 function BracketologyPageView({

@@ -4,15 +4,16 @@ import { useState } from 'react';
 import MainTitleWithoutSize from 'components/MainTitleWithoutSize/MainTitleWithoutSize';
 import ContentText from '../../../components/ContentText/ContentText';
 import useBackground from '../../../hook/useBackground';
-import BlogsCase from '@/images/blogsPage/img_blogs_case@2x.webp';
-import BlogsCaseMobile from '@/images/blogsPage/img_blogs_case_mobile@2x.webp';
-import BlogsPortfolio from '@/images/blogsPage/img_blogs_portfolio@2x.webp';
-import BlogsPortfolioMobile from '@/images/blogsPage/img_blogs_portfolio_mobile@2x.webp';
 import { MD_DEVICE } from '../../../constants/constants';
 import PageLinks from '../../../constants/PageLinks';
 import BlogButtonSectionImage from '../../../components/BlogButtonSection/components/BlogButtonSectionImage';
 import switchSectionData from '../data/SwitchSectionData';
 import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
+
+import BlogsPortfolioMobile from '@/images/blogsPage/img_blogs_portfolio_mobile@2x.webp';
+import BlogsPortfolio from '@/images/blogsPage/img_blogs_portfolio@2x.webp';
+import BlogsCaseMobile from '@/images/blogsPage/img_blogs_case_mobile@2x.webp';
+import BlogsCase from '@/images/blogsPage/img_blogs_case@2x.webp';
 
 function Switch() {
   const router = useRouter();

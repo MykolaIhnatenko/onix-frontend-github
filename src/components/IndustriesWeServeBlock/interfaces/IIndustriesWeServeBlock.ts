@@ -21,6 +21,7 @@ export interface IIndustriesWeServeBlock {
     animation?: string;
   };
   withoutBorder?: boolean;
+  withoutAnimate?: boolean;
   classes?: {
     section?: string;
     container?: string;

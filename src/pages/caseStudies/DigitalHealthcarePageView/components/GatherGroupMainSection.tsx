@@ -5,13 +5,13 @@ import Text from '../../../../components/CasesComponents/Text/Text';
 import ImageComponent from '../../../../components/Image/Image';
 import IStore from '../../../../store/interfaces/IStore';
 import { IApp } from '../../../../store/app/interfaces/IApp';
+
 import MainImg from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/mainSection/img_bg-desk@2x.webp';
 import MainImgTablet from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/mainSection/img_bg-tablet@2x.webp';
 import MainImgMobile from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/mainSection/img_bg-mobile@2x.webp';
 import PhoneImg from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/mainSection/img_phone@2x.webp';
 import PhoneTabletImg from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/mainSection/img_phone-tablet@2x.webp';
 import PhoneMobileImg from '@/images/caseStudiesPage/DigitalHealthcareCaseStudy/mainSection/img_phone-mobile@2x.webp';
-
 import styles from '../sass/gatherGroupMainSection.module.scss';
 
 function GatherGroupMainSection() {

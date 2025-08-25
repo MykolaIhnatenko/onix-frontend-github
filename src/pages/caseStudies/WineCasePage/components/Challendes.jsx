@@ -1,8 +1,8 @@
 import ImageComponent from '../../../../components/Image/Image';
-import WineCasePhone12x from '@/images/caseStudiesPage/WineCasePage/img_wine-case-phone-1@2x.webp';
-import WineCasePhone22x from '@/images/caseStudiesPage/WineCasePage/img_wine-case-phone-2@2x.webp';
-import WineCasePhone32x from '@/images/caseStudiesPage/WineCasePage/img_wine-case-phone-3@2x.webp';
-import WineCasePhone42x from '@/images/caseStudiesPage/WineCasePage/img_wine-case-phone-4@2x.webp';
+import WineCasePhone12x from '../../../../assets/images/caseStudiesPage/WineCasePage/img_wine-case-phone-1@2x.webp';
+import WineCasePhone22x from '../../../../assets/images/caseStudiesPage/WineCasePage/img_wine-case-phone-2@2x.webp';
+import WineCasePhone32x from '../../../../assets/images/caseStudiesPage/WineCasePage/img_wine-case-phone-3@2x.webp';
+import WineCasePhone42x from '../../../../assets/images/caseStudiesPage/WineCasePage/img_wine-case-phone-4@2x.webp';
 
 import articleContentStyles from '../sass/ArticleContent.module.scss';
 import storyStyles from '../sass/StoryPageView.module.scss';

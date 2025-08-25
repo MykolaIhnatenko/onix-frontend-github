@@ -2,6 +2,7 @@ import { IDevelopmentServicesBlack } from './interfaces/IDevelopmentServicesBlac
 import { useAppSelector } from '../../hook/reduxToolkit';
 import DevelopmentServicesTemplate from 'components/DevelopmentServicesTemplate/DevelopmentServicesTemplate';
 import { XXXL_DEVICE } from '../../constants/constants';
+
 import BgBlackLarge from '@/images/developmentServicesBlack/img_devServicesBlackLarge.webp';
 import BgBlack from '@/images/developmentServicesBlack/img_devServicesBlack.webp';
 import BgBlackTablet from '@/images/developmentServicesBlack/img_devServicesBlackTablet.webp';

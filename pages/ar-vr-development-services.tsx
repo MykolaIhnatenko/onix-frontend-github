@@ -8,7 +8,7 @@ import getFooterContent from 'api/getFooterContent';
 import PagesToSalesChannels from '../src/constants/PageToSalesChannels';
 import IPages from '../src/interfaces/IPages';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
 
@@ -16,6 +16,7 @@ function VirtualRealityPage({
   seoData, footerContent, pageBlogs,
 }: IPages) {
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.VR_AR_DEV, TitlePages.SERVICES);
+  const achievements = seoData.achievements?.data || [];
 
   return (
     <Layout
@@ -27,7 +28,7 @@ function VirtualRealityPage({
       <Head>
         {ServiceJsonLd(seoData)}
       </Head>
-      <VRServicesPageView pageBlogs={pageBlogs} />
+      <VRServicesPageView pageBlogs={pageBlogs} achievements={achievements} />
     </Layout>
   );
 }

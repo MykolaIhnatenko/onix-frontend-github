@@ -15,14 +15,12 @@ import Modal from './components/Modal';
 import { setShowContactForm, setModalView } from '../../store/app/contactForm/slice';
 import { generalSans, ibmPlexMono } from '../../fonts/MainFonts';
 import RobotoFont from '../../fonts/RobotoFont';
-import ContactFormBackground from '@/images/mainPage/img_contactFormBackground.webp';
 
-import styles from './sass/contactFormModal.module.scss';
+import ContactFormBackground from '@/images/mainPage/img_contactFormBackground.webp';
 
 function ContactFormModal({ salesChannel }: IContactFormModal) {
   const dispatch = useDispatch();
   const { route } = useRouter();
-  const isReferralPage = route === '/referral-program';
 
   const {
     isShowContactForm, modalView,
@@ -36,12 +34,12 @@ function ContactFormModal({ salesChannel }: IContactFormModal) {
   };
 
   const getBgClassName = () => {
-    let className = styles.bg;
+    let className = 'absolute right-0 bottom-0 w-full h-full z-[-1]';
     if (modalView === FORM) {
-      className = styles.formBg;
+      className = 'absolute right-0 bottom-0 w-full h-full z-[-1] screen-lg:hidden';
     }
     if (modalView === ERROR) {
-      className = styles.errorBg;
+      className = 'hidden';
     }
 
     return className;
@@ -86,9 +84,11 @@ function ContactFormModal({ salesChannel }: IContactFormModal) {
         variants={modal}
         initial="hidden"
         animate={isShowContactForm ? 'visible' : 'hidden'}
-        className={`d-flex  ${styles.wrapper} 
-        ${isReferralPage ? styles.referralWrapper : styles.contactWrapper}
-        ${modalView === SUCCESS || modalView === ERROR ? styles.successAndErrorWrapper : ''}
+        className={`d-flex relative flex justify-center items-center p-[64px_20px_0_20px]
+            overflow-auto overflow-y-hidden min-h-[calc(100vh-70px)] bg-white mt-[70px] gap-[100px] 
+            screen-lg:mt-[145px] screen-lg:min-h-[calc(100vh-145px)] screen-lg:p-[80px_49px_40px] 
+            screen-sm:mt-[70px] screen-sm:p-[80px_0_100px_0] screen-sm:min-h-[calc(100vh-70px)]
+        ${modalView === SUCCESS || modalView === ERROR ? '!pb-[64px]' : ''}
         ${ibmPlexMono.variable} ${generalSans.variable} ${RobotoFont.variable}`}
         onClick={onClickHandler}
       >
@@ -97,6 +97,7 @@ function ContactFormModal({ salesChannel }: IContactFormModal) {
             src={ContactFormBackground}
             fill
             alt="form-background"
+            className="w-full h-full object-cover"
           />
         </div>
         <CloseButton
@@ -108,7 +109,6 @@ function ContactFormModal({ salesChannel }: IContactFormModal) {
             container: 'absolute right-[20px] top-[20px] '
               + 'screen-lg:right-[30px] screen-lg:top-[30px] '
               + 'screen-md:right-[15px] screen-md:top-[20px]',
-            rectangle: styles.closeButtonRectangle,
           }}
         />
         {modalView === FORM && (<FormView salesChannel={salesChannel} />)}

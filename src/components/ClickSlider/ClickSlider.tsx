@@ -73,7 +73,7 @@ function ClickSlider({ data, activeShadow, classes }: IClickSlider) {
   }, [nextSlide, prevSlide, trajectory]);
 
   useEffect(() => {
-    let intervalId: NodeJS.Timer;
+    let intervalId: ReturnType<typeof setInterval>;
 
     const handleVisibilityChange = () => {
       if (document.visibilityState === 'visible') {

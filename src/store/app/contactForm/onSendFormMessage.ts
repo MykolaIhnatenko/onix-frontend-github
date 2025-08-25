@@ -3,6 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { clientIdGA, sourseBusterData } from '../../../utils/customerJourneyMap';
 import { IAdditionalValues, IContactFormSendValues, IContactFormValues } from './interfaces/IContactForm';
 import IStore from '../../interfaces/IStore';
+import blacklistedEmails from 'constants/blacklistedEmails';
 
 const onSendFormMessage = createAsyncThunk(
   'app/onSendFormMessage',
@@ -10,6 +11,17 @@ const onSendFormMessage = createAsyncThunk(
   { values: IContactFormValues, additionalValues?: IAdditionalValues }, { rejectWithValue, getState }) => {
     const { client, ...restValues } = values;
     const { leavingForm, contactForm } = getState() as IStore;
+
+    const isBlacklisted = blacklistedEmails.includes(values.email.trim().toLowerCase());
+    if (isBlacklisted) {
+      return {
+        data: true,
+        isShowContact: contactForm.isShowContactForm,
+        isShowLeaving: leavingForm.isShowLeavingForm,
+        salesChannel: values.salesChannel,
+      };
+    }
+
     try {
       const formData = new FormData();
       const sbData = sourseBusterData();

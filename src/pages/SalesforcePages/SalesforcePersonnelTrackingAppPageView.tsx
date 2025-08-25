@@ -18,6 +18,8 @@ import {
   secondContent,
   secondSectionContent, technologies,
 } from './data/salesforcePersonnelTrackingAppData';
+import IPageStatus from 'interfaces/IPageStatus';
+
 import MainBg from '@/images/salesforcePersonnelTrackingApp/img_mainBackground.webp';
 import Picture1 from '@/images/salesforcePersonnelTrackingApp/img_secondSectionImg.webp';
 import Picture2 from '@/images/salesforcePersonnelTrackingApp/img_challengesBg.webp';
@@ -26,8 +28,6 @@ import SolutionImgPhone from '@/images/salesforcePersonnelTrackingApp/solutionSe
 import ResultImgDesktop from '@/images/salesforcePersonnelTrackingApp/resultSection/img_resultImg.webp';
 import ResultImgTablet from '@/images/salesforcePersonnelTrackingApp/resultSection/img_resultImgTablet.webp';
 import ResultImgPhone from '@/images/salesforcePersonnelTrackingApp/resultSection/img_resultImgPhone.webp';
-import IPageStatus from 'interfaces/IPageStatus';
-
 import styles from './sass/salesforcePage.module.scss';
 
 function SalesforcePersonnelTrackingAppPageView({ saleUrl }: IPageStatus) {

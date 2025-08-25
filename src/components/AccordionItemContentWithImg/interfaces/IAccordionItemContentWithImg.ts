@@ -17,4 +17,8 @@ export default interface IAccordionItemContentWithImg {
   };
   staticImageHeight?: boolean;
   contentReverse?: boolean;
+  classes?: {
+    container?: string;
+    content?: string;
+  };
 }

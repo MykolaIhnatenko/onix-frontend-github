@@ -1,4 +1,5 @@
 import { IClickSliderData } from '../../../components/ClickSlider/interfaces/IClickSlider';
+
 import DevopsClickSliderTablet1 from '@/images/devopsSolutionsPageView/clickSlider/img_clickSliderImgTablet1.webp';
 import DevopsClickSliderTablet2 from '@/images/devopsSolutionsPageView/clickSlider/img_clickSliderImgTablet2.webp';
 import DevopsClickSliderTablet3 from '@/images/devopsSolutionsPageView/clickSlider/img_clickSliderImgTablet3.webp';

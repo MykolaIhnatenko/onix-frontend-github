@@ -1,8 +1,9 @@
+import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
+
 import SupportIndustries from '@/images/industriesPage/img_support_industries@2x.webp';
 import DedicatedTeamIndustries from '@/images/industriesPage/img_dedicated_team_industries@2x.webp';
 import ConsultingIndustries from '@/images/industriesPage/img_consulting_industries@2x.webp';
 import CustomSoftvareDevIndustries from '@/images/industriesPage/img_custom_software_dev_industries@2x.webp';
-import { IAccordionHorizontalData } from 'components/AccordionHorizontal/interfaces/IAccordionHorizontal';
 
 const cooperateList: IAccordionHorizontalData[] = [
   {

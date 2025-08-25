@@ -7,7 +7,7 @@ import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import useWindowSize from '../src/hook/useWindowSize';
 import SportsAndFitnessServicesView from '../src/pages/SportsAndFitnessServices/SportsAndFitnessServicesView';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';

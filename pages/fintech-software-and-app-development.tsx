@@ -9,7 +9,7 @@ import getFooterContent from 'api/getFooterContent';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import FintechDevelopmentView from '../src/pages/FintechDevelopmentView/FintechDevelopmentView';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
-import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData, handleScroll } from '../src/utils/helperHandlerPages';
 import { TitlePages } from '../src/constants/enums';
 import { getBlogsList, sortArrById } from '../src/utils/blogsHelpers';
 import ServiceJsonLd from 'components/ServiceJsonLd/ServiceJsonLd';
@@ -18,6 +18,7 @@ function FintechDevelopment({ seoData, footerContent, pageBlogs }:IPages) {
   const breadcrumbs:IBreadcrumbsItem[] = getBreadcrumbsData(TitlePages.FINTECH_DEVELOPMENT, TitlePages.INDUSTRIES);
   const { screenSizes: { screenWidth } } = useAppSelector((state) => state?.app);
   const [isBannerHidden, setIsBannerHidden] = useState(false);
+  const achievements = seoData.achievements?.data || [];
 
   useEffect(() => {
     handleScroll(screenWidth, setIsBannerHidden);
@@ -40,6 +41,7 @@ function FintechDevelopment({ seoData, footerContent, pageBlogs }:IPages) {
       <FintechDevelopmentView
         isBannerHidden={isBannerHidden}
         pageBlogs={pageBlogs}
+        achievements={achievements}
       />
     </Layout>
   );

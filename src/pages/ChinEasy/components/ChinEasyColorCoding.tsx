@@ -13,6 +13,7 @@ function ColorCoding({
       <div className={styles.image}>
         <ImageComponent
           src={img}
+          alt="Color Coding Image"
           width={240}
           height={240}
           sizes="(max-width: 768px) 50vw, (min-width: 768px) 100vw"

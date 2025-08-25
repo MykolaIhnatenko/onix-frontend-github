@@ -7,13 +7,13 @@ import ImageComponent from '../../../components/Image/Image';
 import InteractiveContactUsBlock from './InteractiveContactUsBlock';
 import InteractiveTitleBlock from './InteractiveTitleBlock';
 import { appContent } from '../data/data';
-import InteractiveTrainingSimulator from '@/images/caseStudiesPage/InteractiveTrainingSimulator/app-bg.webp';
-import InteractiveTrainingSimulatorTablet from '@/images/caseStudiesPage/InteractiveTrainingSimulator/app-bg-tablet.webp';
-import InteractiveTrainingSimulatorMobile from '@/images/caseStudiesPage/InteractiveTrainingSimulator/app-bg-mobile.webp';
 import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
 import { ButtonType } from 'constants/enums';
 
+import InteractiveTrainingSimulator from '@/images/caseStudiesPage/InteractiveTrainingSimulator/app-bg.webp';
+import InteractiveTrainingSimulatorTablet from '@/images/caseStudiesPage/InteractiveTrainingSimulator/app-bg-tablet.webp';
+import InteractiveTrainingSimulatorMobile from '@/images/caseStudiesPage/InteractiveTrainingSimulator/app-bg-mobile.webp';
 import styles from '../sass/InteractiveAppSection.module.scss';
 
 function InteractiveAppSection({ saleUrl }: IInteractiveAppSection) {

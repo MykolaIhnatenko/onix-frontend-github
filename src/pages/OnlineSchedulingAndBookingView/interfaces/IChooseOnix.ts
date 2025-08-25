@@ -1,9 +1,14 @@
-import { ChooseOnixVariant } from '../../../constants/enums';
-
 export interface IChooseOnix {
   title: string;
   data: IChooseOnixData[];
-  variant?: ChooseOnixVariant;
+  classes?: {
+    container?: string;
+    title?: string;
+    item?: string;
+    titleBox?: string;
+    textItem?: string;
+    descItem?: string;
+  };
 }
 
 export interface IChooseOnixData {

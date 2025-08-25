@@ -1,9 +1,8 @@
 import { StaticImageData } from 'next/image';
 
-import IPageStatus from '../../interfaces/IPageStatus';
+import { useAppSelector } from '../../hook/reduxToolkit';
 import VRARCallToActionComponent from '../../components/VRARCallToActionBlock/VRARCallToActionComponent';
 import ResultsBlock from '../../components/ResultsBlock/ResultsBlock';
-import { useAppSelector } from '../../hook/reduxToolkit';
 import BusinessContextDiagonal from '../../components/BusinessContextDiagonal/BusinessContextDiagonal';
 import OurSolutions from '../../components/OurSolutions/OurSolutions';
 import PhlexBusinessContext from './components/PhlexBusinessContext';
@@ -14,17 +13,22 @@ import CoreTechnology from '../../components/CoreTechnology/CoreTechnology';
 import BusinessContext from '../../components/BusinessContext/BusinessContext';
 import AboutProjectSection from '../../components/AboutProject/AboutProject';
 import KillerFeaturesBlock from '../ConvertCasePageView/components/KillerFeaturesBlock';
+import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 import coreTechnologyData from './data/coreTechnologyData.json';
 import aboutBlockData from './data/aboutBlockData';
 import testimonialData from './data/testimonialData';
-import resultsBlockData from './data/resultsBlockData';
 import resultsBlockDataFirst from './data/resultsBlockDataFirst';
 import killerSliderData from './data/killerFeaturesBlockData';
 import phonesData from './data/phonesData';
 import ourSolutionsData from './data/ourSolutionsData';
-import { businessContextDataFirst, businessContextDataSecond } from './data/businessContextData';
-import resultsBlockWhite from '../../constants/tailwindStyle';
+import {
+  businessContextDataFirst,
+  businessContextDataFourth,
+  businessContextDataSecond,
+} from './data/businessContextData';
 import { ButtonType } from '../../constants/enums';
+import IPageStatus from '../../interfaces/IPageStatus';
+
 import ResultsBlockBg from '@/images/ResultsBlockBg/img_resultsBlockBlackBg@2x.webp';
 import CTAFirstBg from '@/images/ResultsBlockBg/img_ctaBlackBg@2x.webp';
 import BusinessContextBlockBg from '@/images/clubhouse/businessContext/img_business_bg.webp';
@@ -45,7 +49,6 @@ import RunningColsBgMobile from '@/images/runningColsBlock/img_runningColsBgMobi
 import RunningColsBgTablet from '@/images/runningColsBlock/img_runningColsBgTablet.webp';
 import RunningColsBg from '@/images/runningColsBlock/img_runningColsBg.webp';
 import RunningColsBgXXXL from '@/images/runningColsBlock/img_runningColsBgXXXL.webp';
-import CaseStudiesBlockForCases from 'components/CaseStudiesBlockForCases/CaseStudiesBlockForCases';
 
 function PhlexCasePageView({ saleUrl }: IPageStatus) {
   const {
@@ -168,11 +171,13 @@ function PhlexCasePageView({ saleUrl }: IPageStatus) {
         authorPosition={testimonialData.authorPosition}
         authorName={testimonialData.authorName}
       />
-      <ResultsBlock
-        name={resultsBlockData.name}
-        title={resultsBlockData.title}
-        content={resultsBlockData.content}
-        classes={resultsBlockWhite}
+      <BusinessContext
+        upTitle={businessContextDataFourth.upTitle}
+        title={businessContextDataFourth.title}
+        subTitle={businessContextDataFourth.subTitle}
+        leftContent={businessContextDataFourth.firstText}
+        rightContent={businessContextDataFourth.secondText}
+        subText={businessContextDataFourth.subText}
       />
       <CaseStudiesBlockForCases
         sliderIds={[40, 41, 70, 1000]}

@@ -1,12 +1,13 @@
 import { ISolutionsCardBlock } from './interfaces/ISolutionsCardBlock';
 import SolutionCard from './components/SolutionCard';
 
-function SolutionCardsBlock({ cards }: ISolutionsCardBlock) {
+function SolutionCardsBlock({ cards, classes }: ISolutionsCardBlock) {
   return (
     <div
       className={`pt-[40px] pb-[50px]
         min-md:pt-[60px] min-md:pb-[20px]
         min-lg:pt-[10px] min-lg:pb-0
+        ${classes || ''}
       `}
     >
       {cards.map(({

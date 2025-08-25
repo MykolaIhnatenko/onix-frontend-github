@@ -7,14 +7,14 @@ import VRARContent from '../../../components/VRARContent/VRARContent';
 import costDevelopmentServicesData from '../data/costDevelopmentServicesData';
 import IStore from '../../../store/interfaces/IStore';
 import { IApp } from '../../../store/app/interfaces/IApp';
+import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
+
 import BottomImage from '@/images/costOptimizationCaseStudyPageView/solutionsBlock/img_bottomImage@2x.webp';
 import BottomImageTablet from '@/images/costOptimizationCaseStudyPageView/solutionsBlock/img_bottomImageTablet@2x.webp';
 import BottomImageMobile from '@/images/costOptimizationCaseStudyPageView/solutionsBlock/img_bottomImageMobile@2x.webp';
 import SolutionsBlockBg from '@/images/costOptimizationCaseStudyPageView/solutionsBlock/img_solutionsBlockBg@2x.webp';
 import SolutionsBlockTabletBg from '@/images/costOptimizationCaseStudyPageView/solutionsBlock/img_solutionsBlockTabletBg@2x.webp';
 import SolutionsBlockMobileBg from '@/images/costOptimizationCaseStudyPageView/solutionsBlock/img_solutionsBlockMobileBg@2x.webp';
-import DevelopmentServicesWhite from 'components/DevelopmentServicesWhite/DevelopmentServicesWhite';
-
 import styles from '../sass/solutionsBlock.module.scss';
 
 function SolutionsBlock() {

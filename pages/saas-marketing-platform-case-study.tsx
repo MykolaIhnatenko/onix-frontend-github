@@ -7,7 +7,7 @@ import IPages from '../src/interfaces/IPages';
 import Layout from '../src/layout/Layout';
 import { IBreadcrumbsItem } from '../src/layout/interfaces/IBreadcrumbs';
 import AdoricCaseStudyView from '../src/pages/AdoricCaseStudy/AdoricCaseStudyView';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import ErrorPageView from 'pages/ErrorPageView/ErrorPageView';
 
 function AdoricCaseStudy({ seoData, footerContent }:IPages) {

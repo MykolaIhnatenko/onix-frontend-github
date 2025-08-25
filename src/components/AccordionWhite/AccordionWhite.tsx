@@ -13,6 +13,7 @@ function AccordionWhite({
   borderTopFirst,
   borderBottomLast,
   smallerTitleText,
+  multiOpen,
   classes,
 }: IAccordionWhite) {
   return (
@@ -26,6 +27,7 @@ function AccordionWhite({
       borderTopFirst={borderTopFirst}
       borderBottomLast={borderBottomLast}
       smallerTitleText={smallerTitleText}
+      multiOpen={multiOpen}
       classes={classes}
     />
   );

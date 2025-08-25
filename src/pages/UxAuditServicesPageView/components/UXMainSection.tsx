@@ -4,9 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import PageContainer from '../../../components/PageContainer/PageContainer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import ContentText from '../../../components/ContentText/ContentText';
-import UXMainBG from '@/images/uxAudit/img_bg_main.webp';
-import UXMainTabletBG from '@/images/uxAudit/img_bg_main_tablet.webp';
-import UXMainMobileBG from '@/images/uxAudit/img_bg_main_mobile.webp';
 import MainAnimationImage from '../../../assets/images/uxAudit/img_main_animation.png';
 import { setShowContactForm } from '../../../store/app/contactForm/slice';
 import ImageComponent from '../../../components/Image/Image';
@@ -15,6 +12,9 @@ import IStore from 'store/interfaces/IStore';
 import { IApp } from 'store/app/interfaces/IApp';
 import ButtonPrimary from 'components/UI/ButtonPrimary/ButtonPrimary';
 
+import UXMainMobileBG from '@/images/uxAudit/img_bg_main_mobile.webp';
+import UXMainTabletBG from '@/images/uxAudit/img_bg_main_tablet.webp';
+import UXMainBG from '@/images/uxAudit/img_bg_main.webp';
 import styles from '../sass/UXMainSection.module.scss';
 
 function UXMainSection() {

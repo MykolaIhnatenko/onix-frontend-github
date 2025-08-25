@@ -7,7 +7,7 @@ function AccordionItemTitleContainer({
   number, title, tagTitle, smallerTitleText, classes,
 }: IAccordionItemTitleContainer) {
   return (
-    <div className={`flex ${classes?.titleContainer || ''}`}>
+    <div className={`flex h-fit ${classes?.titleContainer || ''}`}>
       {number && (
         <span className={`
           font-generalSans font-medium text-3xl/10 screen-md:text-xl

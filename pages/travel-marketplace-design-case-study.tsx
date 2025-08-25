@@ -2,7 +2,7 @@ import Layout from '../src/layout/Layout';
 import AdventuresCaseStudyPageView from '../src/pages/AdventuresCaseStudyPageView/AdventuresCaseStudyPageView';
 import getSeoData from '../src/api/getSeoData';
 import getFooterContent from 'api/getFooterContent';
-import { getBreadcrumbsData } from '../src/utils/helperHundlerPages';
+import { getBreadcrumbsData } from '../src/utils/helperHandlerPages';
 import { checkSaleUrl } from '../src/utils/helpers';
 import PageToSalesChannels from '../src/constants/PageToSalesChannels';
 import { TitlePages } from '../src/constants/enums';

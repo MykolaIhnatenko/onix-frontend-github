@@ -4,11 +4,11 @@ import ImageComponent from '../../../components/Image/Image';
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
 import MainTitle from '../../../components/MainTitle/MainTitle';
 import PageContainer from '../../../components/PageContainer/PageContainer';
-import VRVideoPlaceholder from '@/images/vrServicesPage/img_vr_placeholder_video.webp';
-import VRVideoBg from '@/images/vrServicesPage/img_vr_bg_video.webp';
 import { MD_DEVICE } from '../../../constants/constants';
 import IVideoBlockProps from '../interfaces/IVideoBlock';
 
+import VRVideoPlaceholder from '@/images/vrServicesPage/img_vr_placeholder_video.webp';
+import VRVideoBg from '@/images/vrServicesPage/img_vr_bg_video.webp';
 import styles from '../sass/videoBlock.module.scss';
 
 function VideoBlock({ title, subtitle }: IVideoBlockProps) {

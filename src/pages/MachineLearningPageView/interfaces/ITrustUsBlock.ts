@@ -2,7 +2,7 @@ import { StaticImageData } from 'next/image';
 import { ReactNode } from 'react';
 
 import ICard, { ICardBlockClasses } from '../../../components/CardsBlock/interfaces/ICardsBlock';
-import { CardBlockVariant, DropBlockVariant } from '../../../constants/enums';
+import { DropBlockVariant } from '../../../constants/enums';
 
 export interface ITrustUsBlock {
   title?: ReactNode,
@@ -10,8 +10,14 @@ export interface ITrustUsBlock {
   data: ICard[],
   dropBlockTitle?: string | ReactNode,
   dropBlockBtnTitle?: string,
-  variant?: CardBlockVariant,
-  classes?: ICardBlockClasses,
+  classes?: {
+    container?: string,
+    bgMobile?: string,
+    sectionTitle?: string,
+    buttonWrapper?: string,
+    button?: string,
+    CardsBlockClasses: ICardBlockClasses,
+  }
   dropBlockBgVariant?: StaticImageData,
   dropBlockVariant?: DropBlockVariant,
   buttonText?: string,
@@ -29,6 +35,8 @@ export interface ITrustUsBlock {
   idBtn?: string;
   trustUsBlockMobileBg?: StaticImageData;
   animatedGradient?: boolean;
+  isPInDropBlockTitle?: boolean;
+  hiddenTitleInTablet?: boolean;
 }
 
 export interface ITrustUsDataBlock {

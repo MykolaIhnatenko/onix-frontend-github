@@ -13,8 +13,8 @@ function AnimationBankingAccordionBlock({ title, data }: IAnimationBankingAccord
       <PageContainer className="relative flex justify-between screen-lg:flex-col screen-md:!p-0">
         <VRARContent>
           <MainTitle
-            className="pr-[60px] max-w-[450px] screen-lg:mb-[60px] screen-lg:font-[40px]
-            screen-lg:max-w-full screen-md:!font-[25px] screen-md:mb-[40px] screen-md:mx-[15px]"
+            className="pr-[60px] max-w-[450px] screen-lg:mb-[60px] screen-lg:text-[40px]
+            screen-lg:max-w-full screen-md:!text-[25px] screen-md:mb-[40px] screen-md:mx-[15px]"
           >
             {title}
           </MainTitle>

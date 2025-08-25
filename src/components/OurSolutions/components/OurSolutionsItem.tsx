@@ -51,7 +51,6 @@ function OurSolutionsItem({
             src={img}
             alt="background"
             sizes="100vw"
-            quality={98}
             className={`
               w-full h-full max-h-[912px] screen-lg:max-h-[760px] object-cover
               ${classes?.itemImage || ''}
